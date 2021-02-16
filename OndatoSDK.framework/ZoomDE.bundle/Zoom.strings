@@ -1,0 +1,28 @@
+
+"FaceTec_action_continue" = "Weiter";
+"FaceTec_action_im_ready" = "Ich bin bereit";
+
+"FaceTec_camera_permission_header" = "Kamera aktivieren";
+"FaceTec_camera_permission_message_enroll" = "Bitte aktiviere die Frontkamera";
+"FaceTec_camera_permission_message_auth" = "ZoOm hat festgestellt, dass die Kameraberechtigung deaktiviert ist. Tippe auf die Schaltfläche unten, um deine Betriebssystemeinstellungen zu bearbeiten.";
+"FaceTec_camera_permission_enable_camera" = "Kamera aktivieren";
+"FaceTec_camera_permission_launch_settings" = "Grundeinstellungen";
+
+"FaceTec_feedback_center_face" = "Zentrieren dein Gesicht";
+"FaceTec_feedback_face_not_found" = "Positioniere dein Gesicht";
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Geradeaus schauen";
+"FaceTec_feedback_face_not_upright" = "Halten den Kopf gerade";
+"FaceTec_feedback_hold_steady" = "Ruhig halten";
+"FaceTec_feedback_move_phone_away" = "Etwas mehr Abstand";
+"FaceTec_feedback_move_phone_closer" = "Näher heranrücken";
+"FaceTec_feedback_move_phone_even_closer" = "Noch näher";
+"FaceTec_feedback_move_phone_to_eye_level" = "Kamera bis auf Augenhöhe anheben";
+"FaceTec_feedback_use_even_lighting" = "Gesicht gleichmäßiger aufhellen";
+
+"FaceTec_instructions_header_lighting" = "Gleichmäßig helles Gesicht";
+"FaceTec_instructions_header_face_angle" = "Kamera auf Augenhöhe halten";
+"FaceTec_instructions_header_ready" = "Mach dich bereit für dein Video-Selfie!";
+"FaceTec_instructions_message_ready" = "Bitte halte dein Gesicht erst in den kleinen und danach in den großen Ovalen Kreis";
+
+"FaceTec_result_facescan_upload_message" = "Laden\Bitte warten";
+"FaceTec_result_success_message" = "Gesicht erfolgreich erkannt";

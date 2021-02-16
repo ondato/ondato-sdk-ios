@@ -25,7 +25,7 @@ We recommend you to lock your app to a portrait orientation.
 
 ## Getting started
 
-- SDK supports iOS 10.0
+- SDK supports iOS 11.0
 - SDK supports Swift 5
 - SDK Xcode Version 12.1
 
@@ -38,59 +38,11 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ```
 ### 2. Installation 
 
-### Manually
-Download `OndatoSDK.framework` from latest sdk release. Add it to your project and select `Embed & Sign`
+### CocoaPods
 
-#### Add the following Run Script phases to your Build Phases
-
-Remove unnecessary architectures, needed for release.
 ```
-# skip if we run in debug
-if [ "$CONFIGURATION" == "Debug" ]; then
-echo "Skip frameworks cleaning in debug version"
-exit 0
-fi
-
-APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
-
-# This script loops through the frameworks embedded in the application and
-# removes unused architectures.
-find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
-do
-FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
-FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
-echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
-
-EXTRACTED_ARCHS=()
-
-for ARCH in $ARCHS
-do
-echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
-lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
-EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
-done
-
-echo "Merging extracted architectures: ${ARCHS}"
-lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
-rm "${EXTRACTED_ARCHS[@]}"
-
-echo "Replacing original executable with thinned version"
-rm "$FRAMEWORK_EXECUTABLE_PATH"
-mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
-
-done
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.6.2'
 ```
-
-Codesign framework
-```
-pushd "${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/Frameworks/OndatoSDK.framework/Frameworks"
-for EACH in *.framework; do
-    echo "-- signing ${EACH}"
-    /usr/bin/codesign --force --deep --sign "${EXPANDED_CODE_SIGN_IDENTITY}" --entitlements "${TARGET_TEMP_DIR}/${PRODUCT_NAME}.app.xcent" --timestamp=none $EACH
-done
-popd
-```
-
 
 ### 3. Initializing and configuring the SDK 
 

@@ -1,0 +1,28 @@
+
+"FaceTec_action_continue" = "Tęsti";
+"FaceTec_action_im_ready" = "Pasiruošęs";
+
+"FaceTec_camera_permission_header" = "Aktyvuoti kamerą";
+"FaceTec_camera_permission_message_enroll" = "Prašome aktyvuoti priekinę kamerą";
+"FaceTec_camera_permission_message_auth" = "Kameros leidimai yra blokuoti. Prašome nuspausti mygtuką, kad galėtumėte keisti OS nustatymus.";
+"FaceTec_camera_permission_enable_camera" = "Aktyvuoti kamerą";
+"FaceTec_camera_permission_launch_settings" = "Aktyvuoti nustatymus";
+
+"FaceTec_feedback_center_face" = "Centruokite savo veidą";
+"FaceTec_feedback_face_not_found" = "Įstatykite veidą į rėmėlį";
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Žiūrėkite tiesiai";
+"FaceTec_feedback_face_not_upright" = "Laikykite galvą tiesiai";
+"FaceTec_feedback_hold_steady" = "Nejudėkite";
+"FaceTec_feedback_move_phone_away" = "Patraukite telefoną nuo savęs";
+"FaceTec_feedback_move_phone_closer" = "Priartinkite telefoną";
+"FaceTec_feedback_move_phone_even_closer" = "Priartinkite arčiau";
+"FaceTec_feedback_move_phone_to_eye_level" = "Pakelkite telefoną į akių lygį";
+"FaceTec_feedback_use_even_lighting" = "Išlaikykite tolygų veido apšvietimą";
+
+"FaceTec_instructions_header_lighting" = "Išlaikykite tolygų veido apšvietimą";
+"FaceTec_instructions_header_face_angle" = "Išlaikykite kamerą akių lygyje";
+"FaceTec_instructions_header_ready" = "Pasiruoškite nufotografuoti savo veido atvaizdą!";
+"FaceTec_instructions_message_ready" = "Įstatykite veidą į pateiktą rėmėlį";
+
+"FaceTec_result_facescan_upload_message" = "Prašome palaukti.\nKraunama...";
+"FaceTec_result_success_message" = "Sėkmingai atpažintas veidas";
