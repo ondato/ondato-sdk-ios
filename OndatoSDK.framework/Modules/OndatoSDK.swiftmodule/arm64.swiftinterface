@@ -58,11 +58,12 @@ import UIKit
   @objc deinit
   @objc override dynamic public init()
 }
-@_inheritsConvenienceInitializers @objc(OndatoGDRPAppearance) public class OndatoConsentAppearance : ObjectiveC.NSObject {
+@objc(OndatoGDRPAppearance) public class OndatoConsentAppearance : ObjectiveC.NSObject {
   @objc public var header: OndatoSDK.OndatoLabelAppearance
   @objc public var body: OndatoSDK.OndatoTextViewAppearance
   @objc public var acceptButton: OndatoSDK.OndatoButtonAppearance
   @objc public var declineButton: OndatoSDK.OndatoButtonAppearance
+  public init(header: OndatoSDK.OndatoLabelAppearance = OndatoLabelAppearance(), body: OndatoSDK.OndatoTextViewAppearance = OndatoTextViewAppearance(), acceptButton: OndatoSDK.OndatoButtonAppearance = OndatoButtonAppearance(), declineButton: OndatoSDK.OndatoButtonAppearance = OndatoButtonAppearance())
   @objc override dynamic public init()
   @objc deinit
 }

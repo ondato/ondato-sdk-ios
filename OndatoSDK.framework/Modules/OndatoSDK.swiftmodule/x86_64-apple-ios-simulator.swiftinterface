@@ -122,8 +122,8 @@ import UIKit
   @objc public var flowConfiguration: OndatoSDK.OndatoFlowConfiguration
   @objc public var recorderConfiguration: OndatoSDK.OndatoRecorderConfiguration
   @objc public var mode: OndatoSDK.OndatoEnvironment
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OndatoFlowConfiguration) public class OndatoFlowConfiguration : ObjectiveC.NSObject {
   @objc public var showSplashScreen: Swift.Bool
