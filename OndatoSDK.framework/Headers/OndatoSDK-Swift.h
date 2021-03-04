@@ -313,6 +313,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum OndatoSupportedLanguage l
 @end
 
 
+SWIFT_CLASS("_TtC9OndatoSDK9OndatoLog")
+@interface OndatoLog : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS_NAMED("OndatoRecorderConfiguration")
 @interface OndatoRecorderConfiguration : NSObject
 @property (nonatomic) NSInteger bitate;

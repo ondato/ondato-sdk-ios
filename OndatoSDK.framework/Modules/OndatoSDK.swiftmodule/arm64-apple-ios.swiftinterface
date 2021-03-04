@@ -101,6 +101,14 @@ import UIKit
   }
   public init?(rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue)
 }
+@objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
+  public static var shared: OndatoSDK.OndatoLog
+  public var logs: [Swift.String] {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc(OndatoServerMode) public enum OndatoEnvironment : Swift.Int {
   case test = 0
   case live = 1
