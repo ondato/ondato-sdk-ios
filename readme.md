@@ -153,9 +153,9 @@ OndatoLocalizeHelper.language = OndatoLanguage.EN // OndatoLanguage.LT, OndatoLa
 To override liveness check strings, add a `.bundle` file which contains `Zoom.strings` table to your project and pass that bundle to the SDK
 ```swift
 class OndatoService {
-	var livenessLocalizationLT: Bundle?
-	var livenessLocalizationEN: Bundle?
-	var livenessLocalizationDE: Bundle?
+	var faceTecLocalizationBundleLT: Bundle?
+	var faceTecLocalizationBundleLT: Bundle?
+	var faceTecLocalizationBundleLT: Bundle?
 }
 
 if let bundleURL = Bundle.main.url(forResource: "LivenessLT", withExtension: "bundle"), let bundle = Bundle(url: bundleURL) {
