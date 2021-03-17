@@ -27,15 +27,9 @@ import UIKit
   }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoService) public class OndatoService : ObjectiveC.NSObject {
+  public static var shared: OndatoSDK.OndatoService
   @objc public var flowDelegate: OndatoSDK.OndatoFlowDelegate?
   @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
-  @objc public var faceTecLocalizationBundleLT: Foundation.Bundle?
-  @objc public var faceTecLocalizationBundleEN: Foundation.Bundle?
-  @objc public var faceTecLocalizationBundleDE: Foundation.Bundle?
-  @objc public var ondatoLocalizationFileLT: Foundation.URL?
-  @objc public var ondatoLocalizationFileEN: Foundation.URL?
-  @objc public var ondatoLocalizationFileDE: Foundation.URL?
-  public static var shared: OndatoSDK.OndatoService
   @objc public var identificationId: Swift.String {
     @objc get
     @objc set(value)
@@ -92,14 +86,25 @@ import UIKit
   @objc deinit
 }
 @objc(OndatoSupportedLanguage) public enum OndatoSupportedLanguage : Swift.Int, Swift.RawRepresentable {
-  case LT
-  case EN
   case DE
+  case EN
+  case EE
+  case LT
+  case LV
   public typealias RawValue = Swift.String
   public var rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue {
     get
   }
+  public var displayName: Swift.String {
+    get
+  }
   public init?(rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue)
+}
+extension OndatoSupportedLanguage : Swift.CaseIterable {
+  public typealias AllCases = [OndatoSDK.OndatoSupportedLanguage]
+  public static var allCases: [OndatoSDK.OndatoSupportedLanguage] {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
   public static var shared: OndatoSDK.OndatoLog
@@ -146,7 +151,7 @@ import UIKit
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OndatoRecorderConfiguration) public class OndatoRecorderConfiguration : ObjectiveC.NSObject {
-  @objc public var bitate: Swift.Int
+  @objc public var bitrate: Swift.Int
   @objc public var resolutionRatio: Swift.Float
   @objc override dynamic public init()
   @objc deinit
@@ -163,5 +168,6 @@ import UIKit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLocalizeHelper) public class OndatoLocalizeHelper : ObjectiveC.NSObject {
   @objc public static var language: OndatoSDK.OndatoSupportedLanguage
+  @objc public static func setLocalizationBundle(_ bundle: Foundation.Bundle, for language: OndatoSDK.OndatoSupportedLanguage)
   @objc deinit
 }

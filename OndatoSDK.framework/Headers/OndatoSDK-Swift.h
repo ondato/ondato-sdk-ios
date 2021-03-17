@@ -189,7 +189,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -302,14 +301,16 @@ SWIFT_CLASS_NAMED("OndatoLabelAppearance")
 @end
 
 enum OndatoSupportedLanguage : NSInteger;
+@class NSBundle;
 
 SWIFT_CLASS_NAMED("OndatoLocalizeHelper")
 @interface OndatoLocalizeHelper : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum OndatoSupportedLanguage language;)
 + (enum OndatoSupportedLanguage)language SWIFT_WARN_UNUSED_RESULT;
 + (void)setLanguage:(enum OndatoSupportedLanguage)value;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)setLocalizationBundle:(NSBundle * _Nonnull)bundle for:(enum OndatoSupportedLanguage)language;
 @end
 
 
@@ -321,24 +322,17 @@ SWIFT_CLASS("_TtC9OndatoSDK9OndatoLog")
 
 SWIFT_CLASS_NAMED("OndatoRecorderConfiguration")
 @interface OndatoRecorderConfiguration : NSObject
-@property (nonatomic) NSInteger bitate;
+@property (nonatomic) NSInteger bitrate;
 @property (nonatomic) float resolutionRatio;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class OndatoServiceConfiguration;
-@class NSBundle;
 
 SWIFT_CLASS_NAMED("OndatoService")
 @interface OndatoService : NSObject
 @property (nonatomic, strong) id <OndatoFlowDelegate> _Nullable flowDelegate;
 @property (nonatomic, strong) OndatoServiceConfiguration * _Nonnull configuration;
-@property (nonatomic, strong) NSBundle * _Nullable faceTecLocalizationBundleLT;
-@property (nonatomic, strong) NSBundle * _Nullable faceTecLocalizationBundleEN;
-@property (nonatomic, strong) NSBundle * _Nullable faceTecLocalizationBundleDE;
-@property (nonatomic, copy) NSURL * _Nullable ondatoLocalizationFileLT;
-@property (nonatomic, copy) NSURL * _Nullable ondatoLocalizationFileEN;
-@property (nonatomic, copy) NSURL * _Nullable ondatoLocalizationFileDE;
 @property (nonatomic, copy) NSString * _Nonnull identificationId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -367,9 +361,11 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoError, "OndatoServiceError", open) {
 static NSString * _Nonnull const OndatoErrorDomain = @"OndatoSDK.OndatoServiceError";
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoSupportedLanguage, "OndatoSupportedLanguage", open) {
-  OndatoSupportedLanguageLT = 0,
+  OndatoSupportedLanguageDE = 0,
   OndatoSupportedLanguageEN = 1,
-  OndatoSupportedLanguageDE = 2,
+  OndatoSupportedLanguageEE = 2,
+  OndatoSupportedLanguageLT = 3,
+  OndatoSupportedLanguageLV = 4,
 };
 
 

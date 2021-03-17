@@ -41,7 +41,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ### CocoaPods
 
 ```
-pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.6.5'
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.6.6'
 ```
 
 ### 3. Initializing and configuring the SDK 
@@ -147,31 +147,10 @@ Ondato iOS SDK already comes with out-of-the-box translations for the following 
 - German (de) :de:
 
 ```swift
-OndatoLocalizeHelper.language = OndatoLanguage.EN // OndatoLanguage.LT, OndatoLanguage.DE
+OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .EE, .EN, .LT, .LV
 ```
 
-To override liveness check strings, add a `.bundle` file which contains `Zoom.strings` table to your project and pass that bundle to the SDK
+To override any localization strings, please pass a `.bundle` file which contains `Localizable.strings` table to `OndatoLocalizeHelper`
 ```swift
-class OndatoService {
-	var faceTecLocalizationBundleLT: Bundle?
-	var faceTecLocalizationBundleLT: Bundle?
-	var faceTecLocalizationBundleLT: Bundle?
-}
-
-if let bundleURL = Bundle.main.url(forResource: "LivenessLT", withExtension: "bundle"), let bundle = Bundle(url: bundleURL) {
-    OndatoService.shared.zoomLocalizationBundleLT = bundle
-}
-```
-
-To override Ondato strings, add a `.strings` file to the project directory and pass the URL to that file to the SDK
-```swift
-class OndatoService {
-	var ondatoLocalizationFileLT: URL?
-	var ondatoLocalizationFileEN: URL?
-	var ondatoLocalizationFileDE: URL?
-}
-
-if let fileURL = Bundle.main.url(forResource: "OndatoLT", withExtension: "strings") {
-    OndatoService.shared.ondatoLocalizationFileLT = fileURL
-}
+OndatoLocalizeHelper.setLocalizationBundle(bundle, for: .LT)
 ```
