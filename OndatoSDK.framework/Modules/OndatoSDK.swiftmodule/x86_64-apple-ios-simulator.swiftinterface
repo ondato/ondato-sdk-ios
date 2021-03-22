@@ -91,6 +91,7 @@ import UIKit
   case EE
   case LT
   case LV
+  case RU
   public typealias RawValue = Swift.String
   public var rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue {
     get

@@ -366,6 +366,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoSupportedLanguage, "OndatoSupportedLan
   OndatoSupportedLanguageEE = 2,
   OndatoSupportedLanguageLT = 3,
   OndatoSupportedLanguageLV = 4,
+  OndatoSupportedLanguageRU = 5,
 };
 
 
