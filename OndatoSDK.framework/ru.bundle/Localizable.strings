@@ -14,7 +14,7 @@
 "FaceTec_feedback_move_phone_closer" = "Приблизьте к себе телефон";
 "FaceTec_feedback_move_phone_even_closer" = "Приблизьте еще немного";
 "FaceTec_feedback_move_phone_to_eye_level" = "Поднимите телефон до уровня глаз";
-"FaceTec_feedbac k_use_even_lighting" = "Следите за равномерным освещением лица";
+"FaceTec_feedback_use_even_lighting" = "Следите за равномерным освещением лица";
 "FaceTec_instructions_header_lighting" = "Следите за равномерным освещением лица";
 "FaceTec_instructions_header_face_angle" = "Держите камеру телефона на уровне глаз";
 "FaceTec_instructions_header_ready" = "Приготовьтесь и сфотографируйтe свое лицо";

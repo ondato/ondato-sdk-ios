@@ -17,7 +17,7 @@
 "FaceTec_feedback_move_phone_closer" = "Move Closer";
 "FaceTec_feedback_move_phone_even_closer" = "Even Closer";
 "FaceTec_feedback_move_phone_to_eye_level" = "Raise Camera Up To Eye Level";
-"FaceTec_feedbac k_use_even_lighting" = "Light Face More Evenly";
+"FaceTec_feedback_use_even_lighting" = "Light Face More Evenly";
 
 "FaceTec_instructions_header_lighting" = "Light Face Evenly";
 "FaceTec_instructions_header_face_angle" = "Hold Camera\nAt Eye Level";

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name OndatoSDK
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name OndatoSDK
 import AVFoundation
 import AVKit
 import CoreGraphics
@@ -27,22 +27,16 @@ import UIKit
   }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoService) public class OndatoService : ObjectiveC.NSObject {
+  public static var shared: OndatoSDK.OndatoService
   @objc public var flowDelegate: OndatoSDK.OndatoFlowDelegate?
   @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
-  @objc public var faceTecLocalizationBundleLT: Foundation.Bundle?
-  @objc public var faceTecLocalizationBundleEN: Foundation.Bundle?
-  @objc public var faceTecLocalizationBundleDE: Foundation.Bundle?
-  @objc public var ondatoLocalizationFileLT: Foundation.URL?
-  @objc public var ondatoLocalizationFileEN: Foundation.URL?
-  @objc public var ondatoLocalizationFileDE: Foundation.URL?
-  public static var shared: OndatoSDK.OndatoService
   @objc public var identificationId: Swift.String {
     @objc get
     @objc set(value)
   }
   @objc public func initialize(username: Swift.String, password: Swift.String)
   @objc public func initialize(accessToken: Swift.String)
-  @objc public func instantiateOndatoViewController() -> UIKit.UIViewController
+  @objc public func instantiateOndatoViewController() -> OndatoSDK.OndatoMainViewController
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OndatoAppearance) public class OndatoAppearance : ObjectiveC.NSObject {
@@ -58,12 +52,11 @@ import UIKit
   @objc deinit
   @objc override dynamic public init()
 }
-@objc(OndatoGDRPAppearance) public class OndatoConsentAppearance : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(OndatoGDRPAppearance) public class OndatoConsentAppearance : ObjectiveC.NSObject {
   @objc public var header: OndatoSDK.OndatoLabelAppearance
   @objc public var body: OndatoSDK.OndatoTextViewAppearance
   @objc public var acceptButton: OndatoSDK.OndatoButtonAppearance
   @objc public var declineButton: OndatoSDK.OndatoButtonAppearance
-  public init(header: OndatoSDK.OndatoLabelAppearance = OndatoLabelAppearance(), body: OndatoSDK.OndatoTextViewAppearance = OndatoTextViewAppearance(), acceptButton: OndatoSDK.OndatoButtonAppearance = OndatoButtonAppearance(), declineButton: OndatoSDK.OndatoButtonAppearance = OndatoButtonAppearance())
   @objc override dynamic public init()
   @objc deinit
 }
@@ -93,14 +86,43 @@ import UIKit
   @objc deinit
 }
 @objc(OndatoSupportedLanguage) public enum OndatoSupportedLanguage : Swift.Int, Swift.RawRepresentable {
-  case LT
-  case EN
   case DE
+  case EN
+  case ET
+  case LT
+  case LV
+  case RU
   public typealias RawValue = Swift.String
   public var rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue {
     get
   }
+  public var displayName: Swift.String {
+    get
+  }
   public init?(rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue)
+}
+extension OndatoSupportedLanguage : Swift.CaseIterable {
+  public typealias AllCases = [OndatoSDK.OndatoSupportedLanguage]
+  public static var allCases: [OndatoSDK.OndatoSupportedLanguage] {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class OndatoMainViewController : UIKit.UINavigationController {
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc deinit
+  @available(iOS 5.0, *)
+  @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+@objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
+  public static var shared: OndatoSDK.OndatoLog
+  public var logs: [Swift.String] {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc(OndatoServerMode) public enum OndatoEnvironment : Swift.Int {
   case test = 0
@@ -139,7 +161,7 @@ import UIKit
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OndatoRecorderConfiguration) public class OndatoRecorderConfiguration : ObjectiveC.NSObject {
-  @objc public var bitate: Swift.Int
+  @objc public var bitrate: Swift.Int
   @objc public var resolutionRatio: Swift.Float
   @objc override dynamic public init()
   @objc deinit
@@ -156,5 +178,6 @@ import UIKit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLocalizeHelper) public class OndatoLocalizeHelper : ObjectiveC.NSObject {
   @objc public static var language: OndatoSDK.OndatoSupportedLanguage
+  @objc public static func setLocalizationBundle(_ bundle: Foundation.Bundle, for language: OndatoSDK.OndatoSupportedLanguage)
   @objc deinit
 }

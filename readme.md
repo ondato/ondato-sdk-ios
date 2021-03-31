@@ -41,7 +41,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ### CocoaPods
 
 ```
-pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.6.7'
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.6.8'
 ```
 
 ### 3. Initializing and configuring the SDK 
@@ -109,9 +109,11 @@ class OndatoAppearance {
 
 #### Swift
 
+An identification ID can be provided to the SDK. If one is not provided, the SDK will retrieve one by itself during the flow
 
 ```swift
 let sdk = OndatoService.shared.instantiateOndatoViewController()
+sdk.identificationId = <Optional identification ID>
 sdk.modalPresentationStyle = .fullScreen
 present(sdk, animated: true, completion: nil) 
 ```
@@ -142,12 +144,15 @@ optional func viewForLoading(progress: Float) -> UIView
 ### 4. Localization
 
 Ondato iOS SDK already comes with out-of-the-box translations for the following locales:
-- English (en) :uk:
-- Lithuanian (lt) :lt:
-- German (de) :de:
+- English (en) 🇬🇧
+- Lithuanian (lt) 🇱🇹
+- German (de) 🇩🇪
+- Latvian (lv) 🇱🇻
+- Estonian (et) 🇪🇪
+- Russian (ru) 🇷🇺
 
 ```swift
-OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .EE, .EN, .LT, .LV
+OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .ET, .EN, .LT, .LV, .RU
 ```
 
 To override any localization strings, please pass a `.bundle` file which contains `Localizable.strings` table to `OndatoLocalizeHelper`

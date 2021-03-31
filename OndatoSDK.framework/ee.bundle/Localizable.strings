@@ -14,7 +14,7 @@
 "FaceTec_feedback_move_phone_closer" = "Liigu lähemale";
 "FaceTec_feedback_move_phone_even_closer" = "Veel lähemale";
 "FaceTec_feedback_move_phone_to_eye_level" = "Tõstke telefon silmade kõrgusele";
-"FaceTec_feedbac k_use_even_lighting" = "Säilitage ühtlane näovalgus";
+"FaceTec_feedback_use_even_lighting" = "Säilitage ühtlane näovalgus";
 "FaceTec_instructions_header_lighting" = "Säilitage ühtlane näovalgus";
 "FaceTec_instructions_header_face_angle" = "Hoidke kaamerat silmade kõrgusel";
 "FaceTec_instructions_header_ready" = "Ole valmis oma nägu pildistama!";

@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -319,6 +320,22 @@ SWIFT_CLASS("_TtC9OndatoSDK9OndatoLog")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9OndatoSDK24OndatoMainViewController")
+@interface OndatoMainViewController : UINavigationController
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+
+
+
 
 SWIFT_CLASS_NAMED("OndatoRecorderConfiguration")
 @interface OndatoRecorderConfiguration : NSObject
@@ -338,7 +355,7 @@ SWIFT_CLASS_NAMED("OndatoService")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeWithUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password;
 - (void)initializeWithAccessToken:(NSString * _Nonnull)accessToken;
-- (UIViewController * _Nonnull)instantiateOndatoViewController SWIFT_WARN_UNUSED_RESULT;
+- (OndatoMainViewController * _Nonnull)instantiateOndatoViewController SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -363,7 +380,7 @@ static NSString * _Nonnull const OndatoErrorDomain = @"OndatoSDK.OndatoServiceEr
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoSupportedLanguage, "OndatoSupportedLanguage", open) {
   OndatoSupportedLanguageDE = 0,
   OndatoSupportedLanguageEN = 1,
-  OndatoSupportedLanguageEE = 2,
+  OndatoSupportedLanguageET = 2,
   OndatoSupportedLanguageLT = 3,
   OndatoSupportedLanguageLV = 4,
   OndatoSupportedLanguageRU = 5,

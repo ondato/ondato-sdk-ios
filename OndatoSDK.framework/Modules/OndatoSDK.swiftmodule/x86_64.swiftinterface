@@ -36,7 +36,7 @@ import UIKit
   }
   @objc public func initialize(username: Swift.String, password: Swift.String)
   @objc public func initialize(accessToken: Swift.String)
-  @objc public func instantiateOndatoViewController() -> UIKit.UIViewController
+  @objc public func instantiateOndatoViewController() -> OndatoSDK.OndatoMainViewController
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OndatoAppearance) public class OndatoAppearance : ObjectiveC.NSObject {
@@ -88,7 +88,7 @@ import UIKit
 @objc(OndatoSupportedLanguage) public enum OndatoSupportedLanguage : Swift.Int, Swift.RawRepresentable {
   case DE
   case EN
-  case EE
+  case ET
   case LT
   case LV
   case RU
@@ -106,6 +106,15 @@ extension OndatoSupportedLanguage : Swift.CaseIterable {
   public static var allCases: [OndatoSDK.OndatoSupportedLanguage] {
     get
   }
+}
+@_hasMissingDesignatedInitializers @objc public class OndatoMainViewController : UIKit.UINavigationController {
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc deinit
+  @available(iOS 5.0, *)
+  @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
 }
 @objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
   public static var shared: OndatoSDK.OndatoLog
