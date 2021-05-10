@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name OndatoSDK
 import AVFoundation
 import AVKit
@@ -17,12 +17,12 @@ import UIKit
   case invalidServerResponse
   case invalidCredentials
   case unexpectedInternalError
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
-  public var rawValue: Swift.Int {
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
     get
   }
-  public static var _nsErrorDomain: Swift.String {
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -49,8 +49,8 @@ import UIKit
   @objc public var logoImage: UIKit.UIImage?
   @objc public var regularFontName: Swift.String?
   @objc public var mediumFontName: Swift.String?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OndatoGDRPAppearance) public class OndatoConsentAppearance : ObjectiveC.NSObject {
   @objc public var header: OndatoSDK.OndatoLabelAppearance
@@ -110,11 +110,11 @@ extension OndatoSupportedLanguage : Swift.CaseIterable {
 @_hasMissingDesignatedInitializers @objc public class OndatoMainViewController : UIKit.UINavigationController {
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @objc deinit
   @available(iOS 5.0, *)
   @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
   @objc override dynamic public init(rootViewController: UIKit.UIViewController)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
   public static var shared: OndatoSDK.OndatoLog
@@ -127,11 +127,14 @@ extension OndatoSupportedLanguage : Swift.CaseIterable {
 @objc(OndatoServerMode) public enum OndatoEnvironment : Swift.Int {
   case test = 0
   case live = 1
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
+}
+extension UIDevice {
+  public static var modelName: Swift.String
 }
 @objc(OndatoFlowDelegate) public protocol OndatoFlowDelegate {
   @objc optional func viewControllerForStart(startPressed: @escaping () -> Swift.Void) -> UIKit.UIViewController
@@ -170,8 +173,8 @@ extension OndatoSupportedLanguage : Swift.CaseIterable {
   case passport = 0
   case idCard = 1
   case drivingLicence = 2
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
