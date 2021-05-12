@@ -19,7 +19,29 @@
 "FaceTec_instructions_header_face_angle" = "Hoidke kaamerat silmade kõrgusel";
 "FaceTec_instructions_header_ready" = "Ole valmis oma nägu pildistama!";
 "FaceTec_instructions_message_ready" = "Pange oma nägu selleks ettenähtud raami";
+"FaceTec_instructions_header_ready_1" = "Ole valmis oma";
+"FaceTec_instructions_header_ready_2" = "nägu pildistama!";
+"FaceTec_instructions_message_ready_1" = "Pange oma nägu";
+"FaceTec_instructions_message_ready_2" = "selleks ettenähtud raami";
 "FaceTec_result_facescan_upload_message" = "Oodake laadimist";
+
+"FaceTec_presession_frame_your_face" = "Sea oma nägu ovaaliga kohakuti";
+"FaceTec_presession_position_face_straight_in_oval" = "Vaata otse";
+"FaceTec_presession_hold_steady_3" = "Püsi paigal: 3";
+"FaceTec_presession_hold_steady_2" = "Püsi paigal: 2";
+"FaceTec_presession_hold_steady_1" = "Püsi paigal: 1";
+"FaceTec_presession_eyes_straight_ahead" = "Vaata otse";
+"FaceTec_presession_remove_dark_glasses" = "Eemalda tumedad prillid";
+"FaceTec_presession_neutral_expression" = "Neutraalne ilme, naeratuseta";
+"FaceTec_presession_conditions_too_bright" = "Liiga hele keskkond";
+"FaceTec_presession_brighten_your_environment" = "Muuda keskkonda heledamaks";
+"FaceTec_retry_header" = "Proovime uuesti...";
+"FaceTec_retry_subheader_message" = "Meil on tarvis selgemat videoselfit.";
+"FaceTec_retry_instruction_message_1" = "Neutraalne ilme, naeratuseta";
+"FaceTec_retry_instruction_message_2" = "Väldi pimestavat või liiga tugevat valgust";
+"FaceTec_retry_instruction_message_3" = "Liiga hägune, puhasta kaamerat";
+"FaceTec_retry_your_image_label" = "Sinu selfi";
+"FaceTec_retry_ideal_image_label" = "Ideaalne poos";
 
 "ondato_start_title" = "Identifitseerimise algus";
 "ondato_start_subtitle" = "Klõpsake nuppu \"Alustama\" ja järgige juhiseid";

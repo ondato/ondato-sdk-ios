@@ -19,7 +19,29 @@
 "FaceTec_instructions_header_face_angle" = "Turiet kameru acu līmenī";
 "FaceTec_instructions_header_ready" = "Gatavojieties nofotografēt seju!";
 "FaceTec_instructions_message_ready" = "Ielieciet seju paredzētajā rāmī";
+"FaceTec_instructions_header_ready_1" = "Gatavojieties";
+"FaceTec_instructions_header_ready_2" = "nofotografēt seju!";
+"FaceTec_instructions_message_ready_1" = "Ielieciet seju";
+"FaceTec_instructions_message_ready_2" = "paredzētajā rāmī";
 "FaceTec_result_facescan_upload_message" = "Lūdzu, uzgaidiet iekraušanu";
+
+"FaceTec_presession_frame_your_face" = "Ievietojiet seju ovālā";
+"FaceTec_presession_position_face_straight_in_oval" = "Skatieties taisni uz priekšu";
+"FaceTec_presession_hold_steady_3" = "Nekustieties: 3";
+"FaceTec_presession_hold_steady_2" = "Nekustieties: 2";
+"FaceTec_presession_hold_steady_1" = "Nekustieties: 1";
+"FaceTec_presession_eyes_straight_ahead" = "Skatieties taisni uz priekšu";
+"FaceTec_presession_remove_dark_glasses" = "Novelciet saulesbrilles";
+"FaceTec_presession_neutral_expression" = "Neitrāla sejas izteiksme, nesmaidīt";
+"FaceTec_presession_conditions_too_bright" = "Pārāk spilgta vide";
+"FaceTec_presession_brighten_your_environment" = "Paspilgtiniet savu vidi";
+"FaceTec_retry_header" = "Pamēģināsim vēlreiz...";
+"FaceTec_retry_subheader_message" = "Mums ir nepieciešama skaidrāka video pašbilde.";
+"FaceTec_retry_instruction_message_1" = "Neitrāla sejas izteiksme, nesmaidīt";
+"FaceTec_retry_instruction_message_2" = "Bez atspulgiem vai pārmērīga apgaismojuma";
+"FaceTec_retry_instruction_message_3" = "Pārāk izplūdis attēls, tīriet kameru";
+"FaceTec_retry_your_image_label" = "Jūsu pašbilde";
+"FaceTec_retry_ideal_image_label" = "Ideāla poza";
 
 "ondato_start_title" = "Identifikācijas sākums";
 "ondato_start_subtitle" = "Noklikšķiniet uz pogas Sākt un izpildiet norādījumus";

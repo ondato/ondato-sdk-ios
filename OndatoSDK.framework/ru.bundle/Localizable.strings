@@ -19,7 +19,29 @@
 "FaceTec_instructions_header_face_angle" = "Держите камеру телефона на уровне глаз";
 "FaceTec_instructions_header_ready" = "Приготовьтесь и сфотографируйтe свое лицо";
 "FaceTec_instructions_message_ready" = "Поместите лицо в указанную рамку";
+"FaceTec_instructions_header_ready_1" = "Приготовьтесь";
+"FaceTec_instructions_header_ready_2" = "и сфотографируйтe свое лицо";
+"FaceTec_instructions_message_ready_1" = "Поместите лицо";
+"FaceTec_instructions_message_ready_2" = "в указанную рамку";
 "FaceTec_result_facescan_upload_message" = "Пожалуйста, подождите. Идет загрузка...";
+
+"FaceTec_presession_frame_your_face" = "Поместите лицо в овальную область";
+"FaceTec_presession_position_face_straight_in_oval" = "Смотрите прямо в камеру";
+"FaceTec_presession_hold_steady_3" = "Не двигайтесь: 3";
+"FaceTec_presession_hold_steady_2" = "Не двигайтесь: 2";
+"FaceTec_presession_hold_steady_1" = "Не двигайтесь: 1";
+"FaceTec_presession_eyes_straight_ahead" = "Смотрите прямо в камеру";
+"FaceTec_presession_remove_dark_glasses" = "Снимите солнечные очки";
+"FaceTec_presession_neutral_expression" = "Нейтральное выражение лица. Не улыбайтесь";
+"FaceTec_presession_conditions_too_bright" = "Слишком яркое освещение";
+"FaceTec_presession_brighten_your_environment" = "Недостаточно света";
+"FaceTec_retry_header" = "Давайте попробуем еще раз...";
+"FaceTec_retry_subheader_message" = "Нам нужно более четкое видеоселфи.";
+"FaceTec_retry_instruction_message_1" = "Нейтральное выражение лица. Не улыбайтесь";
+"FaceTec_retry_instruction_message_2" = "Избегайте бликов или слишком яркого освещения";
+"FaceTec_retry_instruction_message_3" = "Изображение размыто, протрите камеру";
+"FaceTec_retry_your_image_label" = "Ваше селфи";
+"FaceTec_retry_ideal_image_label" = "Идеальная поза";
 
 "ondato_start_title" = "Начало идентификации";
 "ondato_start_subtitle" = "Нажмите на кнопку \"Начать\" и следуйте инструкциям";

@@ -8,6 +8,24 @@
 "FaceTec_camera_permission_enable_camera" = "Aktyvuoti kamerą";
 "FaceTec_camera_permission_launch_settings" = "Aktyvuoti nustatymus";
 
+"FaceTec_presession_frame_your_face" = "Įstatykite veidą į rėmėlį";
+"FaceTec_presession_position_face_straight_in_oval" = "Žiūrėkite tiesiai";
+"FaceTec_presession_hold_steady_3" = "Nejudėkite: 3";
+"FaceTec_presession_hold_steady_2" = "Nejudėkite: 2";
+"FaceTec_presession_hold_steady_1" = "Nejudėkite: 1";
+"FaceTec_presession_eyes_straight_ahead" = "Žiūrėkite tiesiai"; 
+"FaceTec_presession_remove_dark_glasses" = "Nusiimkite saulės akinius"; 
+"FaceTec_presession_neutral_expression" = "Neutrali veido išraiška, nesišypsokite"; 
+"FaceTec_presession_conditions_too_bright" = "Ryškus apšvietimas"; 
+"FaceTec_presession_brighten_your_environment" = "Apšvieskite patalpą"; 
+"FaceTec_retry_header" = "Pabandykite dar kartą...";
+"FaceTec_retry_subheader_message" = "Mums reikia ryškesnio asmenukės video.";
+"FaceTec_retry_instruction_message_1" = "Neutrali veido išraiška, nesišypsokite";
+"FaceTec_retry_instruction_message_2" = "Venkite atspindžių ir ryškaus apšvietimo";
+"FaceTec_retry_instruction_message_3" = "Neryškus vaizdas, nuvalykite kamerą";
+"FaceTec_retry_your_image_label" = "Jūsų asmenukė";
+"FaceTec_retry_ideal_image_label" = "Ideali poza";
+
 "FaceTec_feedback_center_face" = "Centruokite savo veidą";
 "FaceTec_feedback_face_not_found" = "Įstatykite veidą į rėmėlį";
 "FaceTec_feedback_face_not_looking_straight_ahead" = "Žiūrėkite tiesiai";
@@ -23,6 +41,10 @@
 "FaceTec_instructions_header_face_angle" = "Išlaikykite kamerą akių lygyje";
 "FaceTec_instructions_header_ready" = "Pasiruoškite nufotografuoti savo veido atvaizdą!";
 "FaceTec_instructions_message_ready" = "Įstatykite veidą į pateiktą rėmėlį";
+"FaceTec_instructions_header_ready_1" = "Pasiruoškite nufotografuoti";
+"FaceTec_instructions_header_ready_2" = "savo veido atvaizdą!";
+"FaceTec_instructions_message_ready_1" = "Įstatykite veidą";
+"FaceTec_instructions_message_ready_2" = "į pateiktą rėmėlį";
 
 "FaceTec_result_facescan_upload_message" = "Prašome palaukti.\nKraunama...";
 "FaceTec_result_success_message" = "Sėkmingai atpažintas veidas";

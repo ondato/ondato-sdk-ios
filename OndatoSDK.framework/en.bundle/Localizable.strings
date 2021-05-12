@@ -19,10 +19,32 @@
 "FaceTec_feedback_move_phone_to_eye_level" = "Raise Camera Up To Eye Level";
 "FaceTec_feedback_use_even_lighting" = "Light Face More Evenly";
 
+"FaceTec_presession_frame_your_face" = "Frame Your Face In The Oval";
+"FaceTec_presession_position_face_straight_in_oval" = "Look Straight Ahead";
+"FaceTec_presession_hold_steady_3" = "Hold Steady For: 3";
+"FaceTec_presession_hold_steady_2" = "Hold Steady For: 2";
+"FaceTec_presession_hold_steady_1" = "Hold Steady For: 1";
+"FaceTec_presession_eyes_straight_ahead" = "Look Straight Ahead";
+"FaceTec_presession_remove_dark_glasses" = "Remove Dark Glasses";
+"FaceTec_presession_neutral_expression" = "Neutral Expression, No Smiling";
+"FaceTec_presession_conditions_too_bright" = "Conditions Too Bright";
+"FaceTec_presession_brighten_your_environment" = "Brighten Your Environment";
+"FaceTec_retry_header" = "Let's try that again...";
+"FaceTec_retry_subheader_message" = "We need a clearer video selfie.";
+"FaceTec_retry_instruction_message_1" = "Neutral Expression, No Smiling";
+"FaceTec_retry_instruction_message_2" = "No Glare or Extreme Lighting";
+"FaceTec_retry_instruction_message_3" = "Too Blurry, Clean Your Camera";
+"FaceTec_retry_your_image_label" = "Your Selfie";
+"FaceTec_retry_ideal_image_label" = "Ideal Pose";
+
 "FaceTec_instructions_header_lighting" = "Light Face Evenly";
 "FaceTec_instructions_header_face_angle" = "Hold Camera\nAt Eye Level";
 "FaceTec_instructions_header_ready" = "Get Ready For\nYour Video Selfie!";
 "FaceTec_instructions_message_ready" = "Please Frame Your Face In\nThe Small Oval, Then The Big Oval";
+"FaceTec_instructions_header_ready_1" = "Get Ready For";
+"FaceTec_instructions_header_ready_2" = "Your Video Selfie!";
+"FaceTec_instructions_message_ready_1" = "Please Frame Your Face In";
+"FaceTec_instructions_message_ready_2" = "The Small Oval, Then The Big Oval";
 
 "FaceTec_result_facescan_upload_message" = "Loading\nplease wait";
 "FaceTec_result_success_message" = "Face is recognized successfully";

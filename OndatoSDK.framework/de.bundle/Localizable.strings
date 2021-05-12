@@ -19,10 +19,32 @@
 "FaceTec_feedback_move_phone_to_eye_level" = "Kamera bis auf Augenhöhe anheben";
 "FaceTec_feedback_use_even_lighting" = "Gesicht gleichmäßiger aufhellen";
 
+"FaceTec_presession_frame_your_face" = "Rahmen Sie Ihr Gesicht mit dem Oval ein";
+"FaceTec_presession_position_face_straight_in_oval" = "Geradeaus blicken";
+"FaceTec_presession_hold_steady_3" = "Stillhalten für: 3";
+"FaceTec_presession_hold_steady_2" = "Stillhalten für: 2";
+"FaceTec_presession_hold_steady_1" = "Stillhalten für: 1";
+"FaceTec_presession_eyes_straight_ahead" = "Geradeaus blicken";
+"FaceTec_presession_remove_dark_glasses" = "Dunkle Brille abnehmen";
+"FaceTec_presession_neutral_expression" = "Neutraler Gesichtsausdruck, kein Lächeln";
+"FaceTec_presession_conditions_too_bright" = "Bedingungen zu hell";
+"FaceTec_presession_brighten_your_environment" = "Erhellen Sie Ihre Umgebung";
+"FaceTec_retry_header" = "Versuchen wir das noch einmal...";
+"FaceTec_retry_subheader_message" = "Wir benötigen ein klareres Video-Selfie.";
+"FaceTec_retry_instruction_message_1" = "Neutraler Gesichtsausdruck, kein Lächeln";
+"FaceTec_retry_instruction_message_2" = "Keine Blendung oder extreme Beleuchtung";
+"FaceTec_retry_instruction_message_3" = "Zu unscharf, säubern Sie Ihre Kamera";
+"FaceTec_retry_your_image_label" = "Ihr Selfie";
+"FaceTec_retry_ideal_image_label" = "Ideale Pose";
+
 "FaceTec_instructions_header_lighting" = "Gleichmäßig helles Gesicht";
 "FaceTec_instructions_header_face_angle" = "Kamera auf Augenhöhe halten";
 "FaceTec_instructions_header_ready" = "Mach dich bereit für dein Video-Selfie!";
 "FaceTec_instructions_message_ready" = "Bitte halte dein Gesicht erst in den kleinen und danach in den großen Ovalen Kreis";
+"FaceTec_instructions_header_ready_1" = "Mach dich bereit für";
+"FaceTec_instructions_header_ready_2" = "dein Video-Selfie!";
+"FaceTec_instructions_message_ready_1" = "Bitte halte dein Gesicht erst in den kleinen";
+"FaceTec_instructions_message_ready_2" = "und danach in den großen Ovalen Kreis";
 
 "FaceTec_result_facescan_upload_message" = "Laden\Bitte warten";
 "FaceTec_result_success_message" = "Gesicht erfolgreich erkannt";
