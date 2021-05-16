@@ -210,7 +210,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class OndatoGDRPAppearance;
 @class UIColor;
 @class UIImage;
-@class NSString;
 
 SWIFT_CLASS_NAMED("OndatoAppearance")
 @interface OndatoAppearance : NSObject
@@ -220,9 +219,9 @@ SWIFT_CLASS_NAMED("OndatoAppearance")
 @property (nonatomic, strong) UIColor * _Nonnull errorTextColor;
 @property (nonatomic, strong) UIColor * _Nonnull buttonColor;
 @property (nonatomic, strong) UIColor * _Nonnull buttonTextColor;
+@property (nonatomic, strong) UIColor * _Nonnull textColor;
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
 @property (nonatomic, strong) UIImage * _Nullable logoImage;
-@property (nonatomic, copy) NSString * _Nullable regularFontName;
-@property (nonatomic, copy) NSString * _Nullable mediumFontName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -280,6 +279,7 @@ SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 
 @class UIViewController;
 @class UIView;
+@class NSString;
 enum OndatoError : NSInteger;
 
 SWIFT_PROTOCOL_NAMED("OndatoFlowDelegate")

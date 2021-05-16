@@ -46,9 +46,9 @@ import UIKit
   @objc public var errorTextColor: UIKit.UIColor
   @objc public var buttonColor: UIKit.UIColor
   @objc public var buttonTextColor: UIKit.UIColor
+  @objc public var textColor: UIKit.UIColor
+  @objc public var backgroundColor: UIKit.UIColor
   @objc public var logoImage: UIKit.UIImage?
-  @objc public var regularFontName: Swift.String?
-  @objc public var mediumFontName: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }

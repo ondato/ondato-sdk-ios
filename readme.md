@@ -41,7 +41,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ### CocoaPods
 
 ```
-pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.6.10'
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.6.11'
 ```
 
 ### 3. Initializing and configuring the SDK 
@@ -100,8 +100,8 @@ class OndatoAppearance {
     var buttonTextColor: UIColor // background color of the primary action buttons text
     var errorColor: UIColor // background color of the error message background
     var errorTextColor: UIColor // background color of the error message text color
-    var regularFontName: String // regular text font 
-    var mediumFontName: String // medium text font
+    var textColor: UIColor // Text color
+    var backgroundColor: UIColor //  background color in certain situations
     var consentWindow: OndatoConsentAppearance() // appearance of header, body, acceptButton, declineButton in consent screen
 ```
 
