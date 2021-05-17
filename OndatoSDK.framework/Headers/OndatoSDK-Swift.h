@@ -271,8 +271,8 @@ SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 @property (nonatomic) BOOL showConsentScreen;
 @property (nonatomic) BOOL showSelfieAndDocumentScreen;
 @property (nonatomic) BOOL showSuccessWindow;
-@property (nonatomic) BOOL ignoreLivenessErrors;
-@property (nonatomic) BOOL ignoreVerificationErrors;
+@property (nonatomic) BOOL ignoreLivenessErrors SWIFT_DEPRECATED_MSG("Currently disabled");
+@property (nonatomic) BOOL ignoreVerificationErrors SWIFT_DEPRECATED_MSG("Currently disabled");
 @property (nonatomic) BOOL recordProcess;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -157,8 +157,16 @@ extension UIDevice {
   @objc public var showConsentScreen: Swift.Bool
   @objc public var showSelfieAndDocumentScreen: Swift.Bool
   @objc public var showSuccessWindow: Swift.Bool
-  @objc public var ignoreLivenessErrors: Swift.Bool
-  @objc public var ignoreVerificationErrors: Swift.Bool
+  @available(*, deprecated, message: "Currently disabled")
+  @objc public var ignoreLivenessErrors: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
+  @available(*, deprecated, message: "Currently disabled")
+  @objc public var ignoreVerificationErrors: Swift.Bool {
+    @objc get
+    @objc set(newValue)
+  }
   @objc public var recordProcess: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
