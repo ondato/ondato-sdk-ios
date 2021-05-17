@@ -38,6 +38,13 @@ typedef NS_ENUM(NSInteger, FaceTecSecurityWatermarkImage) {
     FaceTecSecurityWatermarkImageFaceTec = 1,
 };
 
+/** For setting FaceTec Vocal Guidance mode. */
+typedef NS_ENUM(NSInteger, FaceTecVocalGuidanceMode) {
+    FaceTecVocalGuidanceModeNoVocalGuidance = 0,
+    FaceTecVocalGuidanceModeMinimalVocalGuidance = 1,
+    FaceTecVocalGuidanceModeFullVocalGuidance = 2,
+};
+
 @protocol FaceTecSDKProtocol;
 
 __attribute__((visibility("default")))
@@ -71,7 +78,9 @@ typedef NS_ENUM(NSInteger, FaceTecCameraPermissionStatus) {
 @class FaceTecResultScreenCustomization;
 @class FaceTecOverlayCustomization;
 @class FaceTecIDScanCustomization;
+@class FaceTecOCRConfirmationCustomization;
 @class FaceTecSessionTimerCustomization;
+@class FaceTecVocalGuidanceCustomization;
 
 @protocol FaceTecCustomAnimationDelegate;
 /**
@@ -119,6 +128,8 @@ __attribute__((visibility("default")))
 @interface FaceTecCustomization : NSObject
 /** Customize the timers used during the Session and Photo ID Match Screens. */
 @property (nonatomic, strong) FaceTecSessionTimerCustomization * _Nonnull sessionTimerCustomization;
+/** Customize the User OCR Confirmation Screen. */
+@property (nonatomic, strong) FaceTecOCRConfirmationCustomization * _Nonnull ocrConfirmationCustomization;
 /** Customize the Photo ID Match Screens. */
 @property (nonatomic, strong) FaceTecIDScanCustomization * _Nonnull idScanCustomization;
 /** Customize the Overlay, separating the Interface from the presenting application context. */
@@ -140,6 +151,9 @@ __attribute__((visibility("default")))
 /** Customize the FaceTec Security Watermark Image by selecting from 1 of the 3 available FaceTec watermarks. */
 @property (nonatomic) enum FaceTecSecurityWatermarkImage securityWatermarkImage;
 
+/** Customize FaceTec Vocal Guidance feature like settings run mode or providing sound files.*/
+@property (nonatomic, strong) FaceTecVocalGuidanceCustomization * _Nonnull vocalGuidanceCustomization;
+
 /**
  * Customize the transition out animation for an unsuccessful Session.
  * Default is FaceTecExitAnimationStyleNone.
@@ -152,13 +166,21 @@ __attribute__((visibility("default")))
 @property (nonatomic) enum FaceTecExitAnimationStyle exitAnimationSuccess;
 
 /**
- * This function allows special runtime control of the success message shown when the success animation occurs.
+ * This function allows special runtime control of the success message shown when the success animation occurs for a FaceScan.
  * Please note that you can also customize this string via the standard customization/localization methods provided.
  * Special runtime access is enabled to this text because the developer may wish to change this text depending on the mode of operation.
- * Default is "Success"
+ * This method does not update the success message for an ID Scan. For runtime control over the result messages displayed for an ID Scan, use the method setIDScanResultScreenMessageOverrides.
  */
-+ (NSString * _Nullable) overrideResultScreenSuccessMessage;
 + (void) setOverrideResultScreenSuccessMessage:(NSString * _Nonnull)value;
++ (NSString * _Nullable) overrideResultScreenSuccessMessage;
+
+/**
+ * This function allows special runtime control of the various possible result messages shown when the result animation occurs for an ID Scan Session.
+ * Please note that you can also customize these strings via the standard customization/localization methods provided.
+ * Special runtime access is enabled to this text because the developer may wish to change this text depending on the mode of operation.
+ */
++ (void) setIDScanResultScreenMessageOverridesForSuccessFrontSide:(NSString * _Nonnull)successFrontSide successFrontSideBackNext:(NSString * _Nonnull)successFrontSideBackNext successBackSide:(NSString * _Nonnull)successBackSide successUserConfirmation:(NSString * _Nonnull)successUserConfirmation retryFaceDidNotMatch:(NSString * _Nonnull)retryFaceDidNotMatch retryIDNotFullyVisible:(NSString * _Nonnull)retryIDNotFullyVisible retryOCRResultsNotGoodEnough:(NSString * _Nonnull)retryOCRResultsNotGoodEnough NS_SWIFT_NAME(setIDScanResultScreenMessageOverrides(successFrontSide:successFrontSideBackNext:successBackSide:successUserConfirmation:retryFaceDidNotMatch:retryIDNotFullyVisible:retryOCRResultsNotGoodEnough:));
++ (NSDictionary * _Nullable) idScanResultScreenMessageOverrides;
 
 @property (nonatomic) NSDictionary* _Nullable featureFlagsMap;
 
@@ -226,10 +248,187 @@ __attribute__((visibility("default")))
 @end
 
 /**
+ * Customize the User OCR Confirmation Screen.
+ */
+__attribute__((visibility("default")))
+@interface FaceTecOCRConfirmationCustomization : NSObject
+/**
+ * Color of the User OCR Confirmation Screen background.
+ * Default is white.
+ */
+@property (nonatomic, strong) NSArray<UIColor *> * _Nonnull backgroundColors;
+/**
+ * Color of the line below the main header on the User OCR Confirmation Screen.
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull mainHeaderDividerLineColor;
+/**
+ * Thickness of the line below the main header on the User OCR Confirmation Screen.
+ * Default is dynamically configured per device at runtime.
+ */
+@property (nonatomic) int mainHeaderDividerLineWidth;
+/**
+ * Font of the the main header text on the User OCR Confirmation Screen.
+ * Default is bold system font.
+ */
+@property (nonatomic, strong) UIFont * _Nonnull mainHeaderFont;
+/**
+ * Color of the main header text on the User OCR Confirmation Screen.
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull mainHeaderTextColor;
+/**
+ * Font of the section headers' text on the User OCR Confirmation Screen.
+ * Default is bold system font.
+ */
+@property (nonatomic, strong) UIFont * _Nonnull sectionHeaderFont;
+/**
+ * Color of the section headers' text on the User OCR Confirmation Screen.
+ * Default is off-black.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull sectionHeaderTextColor;
+/**
+ * Font of the field labels' text on the User OCR Confirmation Screen.
+ * Default is light system font.
+ */
+@property (nonatomic, strong) UIFont * _Nonnull fieldLabelFont;
+/**
+ * Color of the field labels' text on the User OCR Confirmation Screen.
+ * Default is off-black.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull fieldLabelTextColor;
+/**
+ * Font of the field values' text on the User OCR Confirmation Screen.
+ * Default is light system font.
+ */
+@property (nonatomic, strong) UIFont * _Nonnull fieldValueFont;
+/**
+ * Color of the field values' text on the User OCR Confirmation Screen.
+ * Default is off-black.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull fieldValueTextColor;
+/**
+ * Color of the input fields' backgrounds on the User OCR Confirmation Screen.
+ * Default is transparent.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull inputFieldBackgroundColor;
+/**
+ * Font of the input fields' text on the User OCR Confirmation Screen.
+ * If this value is nil, the font of the input fields' text will use the value configured for .fieldValueFont.
+ * Default is nil.
+ */
+@property (nonatomic, strong) UIFont * _Nullable inputFieldFont;
+/**
+ * Color of the input fields' text on the User OCR Confirmation Screen.
+ * If this value is nil, the color of the input fields' text will use the value configured for .fieldValueTextColor.
+ * Default is nil.
+ */
+@property (nonatomic, strong) UIColor * _Nullable inputFieldTextColor;
+/**
+ * Color of the input fields' borders on the User OCR Confirmation Screen.
+ * Default is off-black.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull inputFieldBorderColor;
+/**
+ * Thickness of the input fields' borders on the User OCR Confirmation Screen.
+ * Default is dynamically configured per device at runtime.
+ */
+@property (nonatomic) int inputFieldBorderWidth;
+/**
+ * Corner radius of the input fields' borders on the User OCR Confirmation Screen.
+ * Default is dynamically configured per device at runtime.
+ */
+@property (nonatomic) int inputFieldCornerRadius;
+/**
+ * Font of the input fields' placeholder text on the User OCR Confirmation Screen.
+ * If this value is nil, the font of the input fields' placeholder text will use the value configured for .inputFieldFont unless that value is nil, in which case the font of the input fields' placeholder text will use the value configured for .fieldValueFont.
+ * Default is nil.
+ */
+@property (nonatomic, strong) UIFont * _Nullable inputFieldPlaceholderFont;
+/**
+ * Color of the input fields' placeholder text on the User OCR Confirmation Screen.
+ * If this value is nil, the color of the input fields' placeholder text will use the value configured for .inputFieldTextColor with a 0.4 alpha component unless that value is nil, in which case the color of the input fields' placeholder text will use the value configured for .fieldValueTextColor with a 0.4 alpha component.
+ * Default is nil.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull inputFieldPlaceholderTextColor;
+/**
+ * Control whether the input fields' borders are only displayed along the bottom bounds, or if they are displayed as a full box around the input fields on the User OCR Confirmation Screen.
+ * Default is false (showing full border box around input fields).
+ */
+@property (nonatomic) BOOL showInputFieldBottomBorderOnly;
+/**
+ * Font of the action button's text during the User OCR Confirmation Screen.
+ * Default is a bold system font.
+ */
+@property (nonatomic, strong) UIFont * _Nonnull buttonFont;
+/**
+ * Color of the action button's text during the User OCR Confirmation Screen.
+ * Default is white.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull buttonTextNormalColor;
+/**
+ * Color of the action button's background during the User OCR Confirmation Screen.
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull buttonBackgroundNormalColor;
+/**
+ * Color of the action button's text when the button is pressed during the User OCR Confirmation Screen.
+ * Default is white.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull buttonTextHighlightColor;
+/**
+ * Color of the action button's background when the button is pressed during the User OCR Confirmation Screen.
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull buttonBackgroundHighlightColor;
+/**
+ * Color of the action button's text when the button is disabled during the User OCR Confirmation Screen.
+ * Default is white.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull buttonTextDisabledColor;
+/**
+ * Color of the action button's background when the button is disabled during the User OCR Confirmation Screen.
+ * Default is custom color.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull buttonBackgroundDisabledColor;
+/**
+ * Color of the action button's border during the User OCR Confirmation Screen.
+ * Default is transparent.
+ */
+@property (nonatomic, strong) UIColor * _Nonnull buttonBorderColor;
+/**
+ * Thickness of the action button's border during the User OCR Confirmation Screen.
+ * Default is dynamically configured per device at runtime.
+ */
+@property (nonatomic) int buttonBorderWidth;
+/**
+ * Corner radius of the action button's border during the User OCR Confirmation Screen.
+ * Default is dynamically configured per device at runtime.
+ */
+@property (nonatomic) int buttonCornerRadius;
+
+@end
+
+/**
  * Customize the Photo ID Match Screens.
  */
 __attribute__((visibility("default")))
 @interface FaceTecIDScanCustomization : NSObject
+/**
+ * Controls whether to show the 'FaceTec_branding_logo_id_check' image (or image configured with .selectionScreenBrandingImage) on the Identity Document Type Selection Screen.
+ * Default is false (hidden).
+ */
+@property (nonatomic) BOOL showSelectionScreenBrandingImage;
+/**
+ * Controls whether to show the 'FaceTec_document' image (or image configured with .selectionScreenDocumentImage) on the Identity Document Type Selection Screen.
+ * Default is true (visible).
+ */
+@property (nonatomic) BOOL showSelectionScreenDocumentImage;
+/**
+ * Image displayed on the Identity Document Type Selection Screen below the header message.
+ * Default is configured to use image named 'FaceTec_document' located in application's Assets folder.
+ */
+@property (nonatomic, strong) UIImage * _Nullable selectionScreenDocumentImage;
 /**
  * Color of the Identity Document Type Selection Screen background.
  * Default is white.
@@ -301,10 +500,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIColor * _Nonnull captureScreenFocusMessageTextColor;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between characters of the tap-to-focus message below the Capture Frame during the Identity Document Capture Screen.
  * Default is 0.
  */
-@property (nonatomic) float captureScreenFocusMessageTextSpacing;
+@property (nonatomic) float captureScreenFocusMessageTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Font of the tap-to-focus message text below the Capture Frame during the Identity Document Capture Screen.
  * Default is a light system font.
@@ -356,49 +556,44 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic) int buttonCornerRadius;
 /**
- * Control the percent of the available Frame width to use for the action button during the Photo ID Match Screens.
- * Relative width percent is represented in decimal notation, ranging from 0.0 to 1.0.
- * If the value configured is equal to or greater than 1.0, the action button will be drawn to at max width within the Frame.
- * If the value configured results in a width that is less than the action button's height, the action button's width will equal its height.
- * Note: The Identity Document Review Screen action buttons will be drawn at half the configured width.
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK. Action button width will be dynamically configured to best utilize available space per device.
+ * Percent of the available Frame width to use for the action button during the Photo ID Match Screens.
  * Default is dynamically configured per device at runtime.
  */
-@property (nonatomic) float buttonRelativeWidth;
+@property (nonatomic) float buttonRelativeWidth DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK. Action button width will be dynamically configured to best utilize available space per device.");
 /**
  * Font of the title during the Identity Document Type Selection Screen.
  * Default is a semi-bold system font.
  */
 @property (nonatomic, strong) UIFont * _Nonnull headerFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between characters of the title during the Identity Document Type Selection Screen.
- * Default is 1.5.
+ * Default is 0.
  */
-@property (nonatomic) float headerTextSpacing;
+@property (nonatomic) float headerTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Font of the instruction message text during the Identity Document Capture and Review Screens.
  * Default is a light system font.
  */
 @property (nonatomic, strong) UIFont * _Nonnull subtextFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between characters of the instruction messages during the Identity Document Capture and Review Screens.
  * Default is 0.
  */
-@property (nonatomic) float subtextTextSpacing;
+@property (nonatomic) float subtextTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Font of the action button's text during the Photo ID Match Screens.
  * Default is a bold system font.
  */
 @property (nonatomic, strong) UIFont * _Nonnull buttonFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between characters of the action button's text during the Photo ID Match Screens.
- * Default is 1.5.
+ * Default is 0.
  */
-@property (nonatomic) float buttonTextSpacing;
-/**
- * Controls whether to show the 'FaceTec_branding_logo_id_check' image (or image configured with .selectionScreenBrandingImage) on the Identity Document Type Selection Screen.
- * Default is true (visible).
- */
-@property (nonatomic) BOOL showSelectionScreenBrandingImage;
+@property (nonatomic) float buttonTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Image displayed on the Identity Document Type Selection Screen.
  * Default is configured to use image named 'FaceTec_branding_logo_id_check' located in application's Assets folder.
@@ -500,13 +695,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic) int buttonCornerRadius;
 /**
- * Control the percent of the available Frame width to use for the action button during the New User Guidance and Retry Screens.
- * Relative width percent is represented in decimal notation, ranging from 0.0 to 1.0.
- * If the value configured is equal to or greater than 1.0, the action button will be drawn to at max width within the Frame.
- * If the value configured results in a width that is less than the action button's height, the action button's width will equal its height.
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK. Action button width will be dynamically configured to best utilize available space per device.
+ * Percent of the available Frame width to use for the action button during the New User Guidance and Retry Screens.
  * Default is dynamically configured per device at runtime.
  */
-@property (nonatomic) float buttonRelativeWidth;
+@property (nonatomic) float buttonRelativeWidth DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK. Action button width will be dynamically configured to best utilize available space per device.");
 /**
  * Font of the title during the New User Guidance and Retry Screens.
  * Note: This customization can be overridden for specific text using FaceTecGuidanceCustomization.readyScreenHeaderFont and/or .retryScreenHeaderFont.
@@ -514,11 +707,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIFont * _Nonnull headerFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between characters of the title during the New User Guidance and Retry Screens.
- * Note: This customization can be overridden for specific text using FaceTecGuidanceCustomization.readyScreenHeaderTextSpacing and/or .retryScreenHeaderTextSpacing.
- * Default is 1.5.
+ * Default is 0.
  */
-@property (nonatomic) float headerTextSpacing;
+@property (nonatomic) float headerTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Font of the title's subtext and messages during the New User Guidance and Retry Screens.
  * Note: This customization can be overridden for specific text using FaceTecGuidanceCustomization.readyScreenSubtextFont and/or .retryScreenSubtextFont.
@@ -526,11 +719,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIFont * _Nonnull subtextFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between characters of the title's subtext and messages during the New User Guidance and Retry Screens.
- * Note: This customization can be overridden for specific text using FaceTecGuidanceCustomization.readyScreenSubtextTextSpacing and/or .retryScreenSubtextTextSpacing.
  * Default is 0.
  */
-@property (nonatomic) float subtextTextSpacing;
+@property (nonatomic) float subtextTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Specify an attributed string to use instead of the localized string for the text of the title displayed on the Get Ready  Screen during the New User Guidance and Retry Screens.
  * If this value is nil, the localized string, FaceTecStrings.FaceTec_instructions_header_ready, will be used for the text of the title displayed on the Get Ready Screen during the New User Guidance and Retry Screens.
@@ -545,12 +738,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIFont * _Nullable readyScreenHeaderFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between the characters of the title's text displayed on the Get Ready Screen during the New User Guidance and Retry Screens.
- * Note: This will override the header text spacing configured with FaceTecGuidanceCustomization.headerTextSpacing for the Get Ready Screen.
- * If this value is -1.0f, FaceTecGuidanceCustomization.headerTextSpacing will be used for the character spacing of the title's text displayed on the Get Ready Screen.
- * Default value is -1.0f.
+ * Default value is 0f.
  */
-@property (nonatomic) float readyScreenHeaderTextSpacing;
+@property (nonatomic) float readyScreenHeaderTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Color of the header text displayed on the Get Ready Screen during the New User Guidance and Retry Screens.
  * Note: This will override the header text color configured with FaceTecGuidanceCustomization.foregroundColor for the Get Ready Screen.
@@ -572,12 +764,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIFont * _Nullable readyScreenSubtextFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between the characters of the title's subtext displayed on the Get Ready Screen during the New User Guidance and Retry Screens.
- * Note: This will override the subtext text spacing configured with FaceTecGuidanceCustomization.subtextTextSpacing for the Get Ready Screen.
- * If this value is -1.0f, FaceTecGuidanceCustomization.subtextTextSpacing will be used for the character spacing of the title's subtext displayed on the Get Ready Screen.
- * Default value is -1.0f.
+ * Default value is 0f.
  */
-@property (nonatomic) float readyScreenSubtextTextSpacing;
+@property (nonatomic) float readyScreenSubtextTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Color of the title's subtext displayed on the Get Ready Screen during the New User Guidance and Retry Screens.
  * Note: This will override the title's subtext color configured with FaceTecGuidanceCustomization.foregroundColor for the Get Ready Screen.
@@ -599,12 +790,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIFont * _Nullable retryScreenHeaderFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between the characters of the title's text displayed on the first Retry Screen.
- * Note: This will override the header text spacing configured with FaceTecGuidanceCustomization.headerTextSpacing for the first Retry Screen.
- * If this value is -1.0f, FaceTecGuidanceCustomization.headerTextSpacing will be used for the character spacing of the title's text displayed on the first Retry Screen.
- * Default value is -1.0f.
+ * Default value is 0f.
  */
-@property (nonatomic) float retryScreenHeaderTextSpacing;
+@property (nonatomic) float retryScreenHeaderTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Color of the header text displayed on the first Retry Screen.
  * Note: This will override the header text color configured with FaceTecGuidanceCustomization.foregroundColor for the first Retry Screen.
@@ -626,12 +816,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIFont * _Nullable retryScreenSubtextFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between the characters of the title's subtext and messages displayed on the first Retry Screen.
- * Note: This will override the subtext and message text spacing configured with FaceTecGuidanceCustomization.subtextTextSpacing for the first Retry Screen.
- * If this value is -1.0f, FaceTecGuidanceCustomization.subtextTextSpacing will be used for the character spacing of the title's subtext and messages displayed on the first Retry Screen.
- * Default value is -1.0f.
+ * Default value is 0f.
  */
-@property (nonatomic) float retryScreenSubtextTextSpacing;
+@property (nonatomic) float retryScreenSubtextTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Color of the title's subtext and messages displayed on the first Retry Screen.
  * Note: This will override the title's subtext and message color configured with FaceTecGuidanceCustomization.foregroundColor for the first Retry Screen.
@@ -645,10 +834,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIFont * _Nonnull buttonFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between characters of the action button's text during the New User Guidance and Retry Screens.
- * Default is 1.5.
+ * Default is 0.
  */
-@property (nonatomic) float buttonTextSpacing;
+@property (nonatomic) float buttonTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Background color of the Get Ready Screen text views during the New User Guidance and Retry Screens.
  * This will only be visible on iPhone 4/4s models.
@@ -708,13 +898,12 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIColor * _Nonnull retryScreenOvalStrokeColor;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Control whether to layout the Retry Screen's instruction messages using bullet-points.
- * Applicable localized instruction message strings include: FaceTec_retry_instruction_message_1, FaceTec_retry_instruction_message_2, FaceTec_retry_instruction_message_3.
- * If enabled, each instruction message will be placed on a new line, proceeded with a bullet-point, and will not extend to multiple lines.
- * If disabled, all instruction messages will be concatenated into a multi-line string.
- * Default is true (enabled).
+ * Applicable localized instruction message strings include: FaceTec_retry_instruction_message_1 and FaceTec_retry_instruction_message_2.
+ * Default is false (disabled).
  */
-@property (nonatomic) BOOL enableRetryScreenBulletedInstructions;
+@property (nonatomic) BOOL enableRetryScreenBulletedInstructions DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Image displayed on the Camera Permissions Screen.
  * Default is configured to use image named 'FaceTec_camera' located in application's Assets folder.
@@ -752,10 +941,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) UIFont * _Nonnull messageFont;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between characters displayed on the Result Screen.
- * Default is 1.5.
+ * Default is 0.
  */
-@property (nonatomic) float messageTextSpacing;
+@property (nonatomic) float messageTextSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Color of the activity indicator animation shown during server-side work.
  * Default is custom color.
@@ -867,10 +1057,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic) int cornerRadius;
 /**
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.
  * Spacing between characters displayed within the Feedback Bar.
- * Default is 1.5.
+ * Default is 0.
  */
-@property (nonatomic) float textSpacing;
+@property (nonatomic) float textSpacing DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK.");
 /**
  * Color of the text displayed within the Feedback Bar.
  * Default is white.
@@ -892,13 +1083,11 @@ __attribute__((visibility("default")))
  */
 @property (nonatomic, strong) CAGradientLayer * _Nonnull backgroundColor;
 /**
- * Control the percent of the available Frame width to use for the Feedback Bar's width.
- * Relative width percent is represented in decimal notation, ranging from 0.0 to 1.0.
- * If the value configured is equal to or greater than 1.0, the Feedback Bar will be drawn to at max width within the Frame.
- * If the value configured results in a width that is less than the minimum width, which is 2x the Feedback Bar's height, then the Feedback Bar's width will be set at the minimum.
+ * @deprecated - This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK. Feedback Bar width will be dynamically configured to best utilize available space per device.
+ * Percent of the available Frame width to use for the Feedback Bar's width.
  * Default is dynamically configured per device at runtime.
  */
-@property (nonatomic) float relativeWidth;
+@property (nonatomic) float relativeWidth DEPRECATED_MSG_ATTRIBUTE("This API customization is now a no-op and will be removed in an upcoming version of the FaceTec iOS SDK. Feedback Bar width will be dynamically configured to best utilize available space per device.");
 - (nonnull instancetype) init;
 @end
 
@@ -987,11 +1176,59 @@ __attribute__((visibility("default")))
 - (nonnull instancetype) init;
 @end
 
+/**
+ * Customize Vocal Guidance.
+ */
+__attribute__((visibility("default")))
+@interface FaceTecVocalGuidanceCustomization : NSObject
+/**
+ * Set Vocal Guidance Mode
+ * Default is FaceTecVocalGuidanceMode.MinimalVocalGuidance
+ */
+@property (nonatomic) enum FaceTecVocalGuidanceMode mode;
+
+/**
+ * The sound file for "Please Frame Your Face In The Oval"
+ * Default uses a FaceTec internal sound file.
+ */
+@property (nonatomic) NSString * _Nonnull pleaseFrameYourFaceInTheOvalSoundFile;
+
+/**
+ * The sound file for "Please Move Closer"
+ * Default uses a FaceTec internal sound file.
+ */
+@property (nonatomic) NSString * _Nonnull pleaseMoveCloserSoundFile;
+
+/**
+ * The sound file for "Please Retry"
+ * Default uses a FaceTec internal sound file.
+ */
+@property (nonatomic) NSString * _Nonnull pleaseRetrySoundFile;
+
+/**
+ * The sound file for "Uploading"
+ * Default uses a FaceTec internal sound file.
+ */
+@property (nonatomic) NSString * _Nonnull uploadingSoundFile;
+
+/**
+ * The sound file for "FaceScan Successful"
+ * Default uses a FaceTec internal sound file.
+ */
+@property (nonatomic) NSString * _Nonnull facescanSuccessfulSoundFile;
+
+/**
+ * The sound file for "Please Press The Button To Start"
+ * Default uses a FaceTec internal sound file.
+ */
+@property (nonatomic) NSString * _Nonnull pleasePressTheButtonToStartSoundFile;
+
+- (nonnull instancetype) init;
+@end
+
 enum FaceTecSDKStatus : NSInteger;
 enum FaceTecSessionStatus: NSInteger;
 enum FaceTecIDScanStatus: NSInteger;
-enum FaceTecIDType: NSInteger;
-enum FaceTecIDScanRetryMode: NSInteger;
 enum FaceTecIDScanNextStep: NSInteger;
 
 @class UIViewController;
@@ -1040,7 +1277,14 @@ enum FaceTecIDScanNextStep: NSInteger;
 
  @param lowLightCustomization An instance of FaceTecCustomization or nil
  */
-- (void)setLowLightCustomization:(FaceTecCustomization * _Nullable)lowLightCustomization;
+- (void)setLowLightCustomization:(FaceTecCustomization * _Nullable)lowLightCustomization NS_SWIFT_NAME(setLowLightCustomization(_:));
+
+/**
+ Configures the look and feel when dynamic dimming is active. If not configured or set to nil, we will fallback to using the FaceTecCustomization instance configured with setCustomization(), or our default customizations if setCustomization() has not been called.
+
+ @param dynamicDimmingCustomization An instance of FaceTecCustomization or nil
+ */
+- (void)setDynamicDimmingCustomization:(FaceTecCustomization * _Nullable)dynamicDimmingCustomization NS_SWIFT_NAME(setDynamicDimmingCustomization(_:));
 
 /**
  Returns the current status of the FaceTec SDK.
@@ -1225,10 +1469,12 @@ enum FaceTecSessionStatus : NSInteger;
 @protocol FaceTecFaceScanResultCallback <NSObject>
 - (void)onFaceScanUploadMessageOverride:(NSMutableAttributedString * _Nonnull)uploadMessageOverride NS_SWIFT_NAME(onFaceScanUploadMessageOverride(uploadMessageOverride:));
 - (void)onFaceScanUploadProgress:(float)uploadedPercent NS_SWIFT_NAME(onFaceScanUploadProgress(uploadedPercent:));
-- (void)onFaceScanResultSucceed NS_SWIFT_NAME(onFaceScanResultSucceed());
-- (void)onFaceScanResultSucceedWithIDScanNextStep:(enum FaceTecIDScanNextStep)idScanNextStep NS_SWIFT_NAME(onFaceScanResultSucceedWithIDScanNextStep(idScanNextStep:));
-- (void)onFaceScanResultRetry NS_SWIFT_NAME(onFaceScanResultRetry());
+- (void)onFaceScanResultSucceed NS_SWIFT_NAME(onFaceScanResultSucceed()) DEPRECATED_MSG_ATTRIBUTE("This method has been replaced by onFaceScanResultProceedToNextStep()");
+- (void)onFaceScanResultSucceedWithIDScanNextStep:(enum FaceTecIDScanNextStep)idScanNextStep NS_SWIFT_NAME(onFaceScanResultSucceedWithIDScanNextStep(idScanNextStep:)) DEPRECATED_MSG_ATTRIBUTE("This method has been replaced by onFaceScanResultProceedToNextStep()");
+- (void)onFaceScanResultRetry NS_SWIFT_NAME(onFaceScanResultRetry()) DEPRECATED_MSG_ATTRIBUTE("This method has been replaced by onFaceScanResultProceedToNextStep()");
 - (void)onFaceScanResultCancel NS_SWIFT_NAME(onFaceScanResultCancel());
+- (BOOL)onFaceScanResultProceedToNextStep:(NSString * _Nonnull)scanResultBlob NS_SWIFT_NAME(onFaceScanGoToNextStep(scanResultBlob:));
+- (BOOL)onFaceScanResultProceedToNextStep:(NSString * _Nonnull)scanResultBlob idScanNextStep:(enum FaceTecIDScanNextStep)idScanNextStep NS_SWIFT_NAME(onFaceScanGoToNextStep(scanResultBlob:idScanNextStep:));
 @end
 
 /**
@@ -1237,9 +1483,7 @@ enum FaceTecSessionStatus : NSInteger;
 @protocol FaceTecIDScanResultCallback <NSObject>
 - (void)onIDScanUploadMessageOverride:(NSMutableAttributedString * _Nonnull)uploadMessageOverride NS_SWIFT_NAME(onIDScanUploadMessageOverride(uploadMessageOverride:));
 - (void)onIDScanUploadProgress:(float)uploadedPercent NS_SWIFT_NAME(onIDScanUploadProgress(uploadedPercent:));
-- (void)onIDScanResultSucceed NS_SWIFT_NAME(onIDScanResultSucceed());
-- (void)onIDScanResultRetry:(enum FaceTecIDScanRetryMode)retryMode NS_SWIFT_NAME(onIDScanResultRetry(retryMode:));
-- (void)onIDScanResultRetry:(enum FaceTecIDScanRetryMode)retryMode unsuccessMessage:(NSString * _Nullable)message NS_SWIFT_NAME(onIDScanResultRetry(retryMode:unsuccessMessage:));
+- (BOOL)onIDScanResultProceedToNextStep:(NSString * _Nonnull)scanResultBlob NS_SWIFT_NAME(onIDScanResultProceedToNextStep(scanResultBlob:));
 - (void)onIDScanResultCancel NS_SWIFT_NAME(onIDScanResultCancel());
 @end
 
@@ -1274,8 +1518,6 @@ enum FaceTecSessionStatus : NSInteger;
 @protocol FaceTecIDScanResult <NSObject>
 /** Indicates whether the ID Scan succeeded or the cause of failure. */
 @property (nonatomic, readonly) enum FaceTecIDScanStatus status;
-/** Indicates the ID type. */
-@property (nonatomic, readonly) enum FaceTecIDType idType;
 /** High resolution samples of the front images as compressed Base64 of the Photo ID that can be used for Auditing and Identity Verification. */
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable frontImagesCompressedBase64;
 /** High resolution samples of the back images as compressed Base64 of the Photo ID that can be used for Auditing and Identity Verification. */
@@ -1417,31 +1659,11 @@ typedef NS_ENUM(NSInteger, FaceTecIDScanStatus) {
     FaceTecIDScanStatusSkipped
 };
 
-/** Represents the type of identity document for ID Scan */
-typedef NS_ENUM(NSInteger, FaceTecIDType) {
-    /**
-     ID card type
-     */
-    FaceTecIDTypeIDCard,
-    /**
-     Passport type
-     */
-    FaceTecIDTypePassport,
-    /**
-     ID type was not selected so it is unknown
-     */
-    FaceTecIDTypeNotSelected
-};
-
-/** Represents the optionals available for retrying part or all of the ID Scan process */
-typedef NS_ENUM(NSInteger, FaceTecIDScanRetryMode) {
-    FaceTecIDScanRetryModeFront,
-    FaceTecIDScanRetryModeBack,
-    FaceTecIDScanRetryModeFrontAndBack
-};
-
 /**
- Describes the next step to go into during the Photo ID Match process. By default, when FaceTecFaceScanResultCallback.onFaceScanResultSucceed() is called, the User is taken to the ID Document Type Selection Screen. Passing different values of FaceTecIDScanNextStep as a parameter for FaceTecFaceScanResultCallback.succeed() allows you to control whether you want to skip directly to either the ID Card (with Front and Back) capture process, or the Passport capture process, or to  skip the ID Scan process altogether. You may want to skip directly to a specific type of ID Scan if you know that your Users are only using one particular type of ID. You may want to skip the ID Scan process altogether if you have custom server-side logic that in some cases deems the Photo ID Match flow as not necessary.
+ Describes the next step to go into during the Photo ID Match process.
+ By default, when FaceTecFaceScanResultCallback.onFaceScanResultSucceed() is called, the User is taken to the ID Document Type Selection Screen.
+ Passing different values of FaceTecIDScanNextStep as a parameter for FaceTecFaceScanResultCallback.succeed() allows you to control whether to take the User to the ID Document Type Selection Screen or to  skip the ID Scan process altogether.
+ You may want to skip the ID Scan process altogether if you have custom server-side logic that in some cases deems the Photo ID Match flow as not necessary.
 */
 typedef NS_ENUM(NSInteger, FaceTecIDScanNextStep) {
     /**
@@ -1449,14 +1671,6 @@ typedef NS_ENUM(NSInteger, FaceTecIDScanNextStep) {
      This is the default behavior.
      */
     FaceTecIDScanNextStepSelectionScreen,
-    /**
-     Start ID Scan process with the Capture Screen, pre-configured for an ID card document-type, skipping the Selection Screen.
-     */
-    FaceTecIDScanNextStepSelectIDCard,
-    /**
-     Start ID Scan process with the Capture Screen, pre-configured for a passport document-type, skipping the Selection Screen.
-     */
-    FaceTecIDScanNextStepSelectPassport,
     /**
      Skip the entire ID Scan process, exiting from the FaceTec SDK interface after a successful Session.
      */
