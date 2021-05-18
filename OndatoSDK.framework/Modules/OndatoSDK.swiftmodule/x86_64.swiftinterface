@@ -27,7 +27,7 @@ import UIKit
   }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoService) public class OndatoService : ObjectiveC.NSObject {
-  public static var shared: OndatoSDK.OndatoService
+  @objc public static var shared: OndatoSDK.OndatoService
   @objc public var flowDelegate: OndatoSDK.OndatoFlowDelegate?
   @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
   @objc public var identificationId: Swift.String {
@@ -48,7 +48,6 @@ import UIKit
   @objc public var buttonTextColor: UIKit.UIColor
   @objc public var textColor: UIKit.UIColor
   @objc public var backgroundColor: UIKit.UIColor
-  @objc public var logoImage: UIKit.UIImage?
   @objc override dynamic public init()
   @objc deinit
 }

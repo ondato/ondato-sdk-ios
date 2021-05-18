@@ -209,7 +209,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class OndatoGDRPAppearance;
 @class UIColor;
-@class UIImage;
 
 SWIFT_CLASS_NAMED("OndatoAppearance")
 @interface OndatoAppearance : NSObject
@@ -221,7 +220,6 @@ SWIFT_CLASS_NAMED("OndatoAppearance")
 @property (nonatomic, strong) UIColor * _Nonnull buttonTextColor;
 @property (nonatomic, strong) UIColor * _Nonnull textColor;
 @property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
-@property (nonatomic, strong) UIImage * _Nullable logoImage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -349,6 +347,9 @@ SWIFT_CLASS_NAMED("OndatoRecorderConfiguration")
 
 SWIFT_CLASS_NAMED("OndatoService")
 @interface OndatoService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) OndatoService * _Nonnull shared;)
++ (OndatoService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
++ (void)setShared:(OndatoService * _Nonnull)value;
 @property (nonatomic, strong) id <OndatoFlowDelegate> _Nullable flowDelegate;
 @property (nonatomic, strong) OndatoServiceConfiguration * _Nonnull configuration;
 @property (nonatomic, copy) NSString * _Nonnull identificationId;

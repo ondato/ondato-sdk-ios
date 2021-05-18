@@ -41,7 +41,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ### CocoaPods
 
 ```
-pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.6.12'
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.6.13'
 ```
 
 ### 3. Initializing and configuring the SDK 
@@ -84,8 +84,6 @@ class OndatoFlowConfiguration {
     var showConsentScreen: Bool // Should the consent screen be shown
     var showSelfieAndDocumentScreen // Should a selfie with document be requested when taking document pictures
     var showSuccessWindow: Bool // Should the success window be shown
-    var ignoreLivenessErrors: Bool // Allows user to skip liveness check in case of failure
-    var ignoreVerificationErrors: Bool // Allows user to skip document verification error result checks
     var recordProcess: Bool // Should the verification process be recorded
 }
 ```
