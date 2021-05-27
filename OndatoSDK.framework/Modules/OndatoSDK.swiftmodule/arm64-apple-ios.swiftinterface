@@ -142,6 +142,15 @@ extension UIDevice {
   @objc func flowDidSucceed(identificationId: Swift.String?)
   @objc func flowDidFail(identificationId: Swift.String?, error: OndatoSDK.OndatoServiceError)
 }
+@objc(OndatoLivenessMode) public enum OndatoLivenessMode : Swift.Int {
+  case active
+  case passive
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc(OndatoServiceConfiguration) public class OndatoServiceConfiguration : ObjectiveC.NSObject {
   @objc public var appearance: OndatoSDK.OndatoAppearance
   @objc public var flowConfiguration: OndatoSDK.OndatoFlowConfiguration
@@ -156,6 +165,7 @@ extension UIDevice {
   @objc public var showConsentScreen: Swift.Bool
   @objc public var showSelfieAndDocumentScreen: Swift.Bool
   @objc public var showSuccessWindow: Swift.Bool
+  @objc public var livenessCheck: OndatoSDK.OndatoLivenessMode
   @available(*, deprecated, message: "Currently disabled")
   @objc public var ignoreLivenessErrors: Swift.Bool {
     @objc get

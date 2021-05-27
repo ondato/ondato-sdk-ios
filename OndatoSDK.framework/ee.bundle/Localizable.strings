@@ -151,3 +151,5 @@
 "ZoomRetryReasonFaceAngle_title" = "Näo esitamise vorming on vale";
 "ZoomRetryReasonFaceAngle_subtitle" = "Palume veenduda, et teie nägu sobib märgitud tsooni korralikult. Peate otse kaamerasse vaatama";
 "ZoomRetryReasonBadLightingFailureToAcquire_title" = "Ere valgustus";
+
+"ondato_capture_liveness" = "Pildista";

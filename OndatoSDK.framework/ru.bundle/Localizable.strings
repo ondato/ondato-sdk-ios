@@ -151,3 +151,5 @@
 "ZoomRetryReasonFaceAngle_title" = "Неподходящий угол подачи лица";
 "ZoomRetryReasonFaceAngle_subtitle" = "Пожалуйста, убедитесь в том, что ваше лицо попадает в указанную зону. Смотрите прямо в камеру";
 "ZoomRetryReasonBadLightingFailureToAcquire_title" = "Слишком яркое освещение";
+
+"ondato_capture_liveness" = "Запечатлеть";

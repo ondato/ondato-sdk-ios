@@ -261,6 +261,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoServerMode, "OndatoEnvironment", open)
   OndatoServerModeLive = 1,
 };
 
+enum OndatoLivenessMode : NSInteger;
 
 SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 @interface OndatoFlowConfiguration : NSObject
@@ -269,6 +270,7 @@ SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 @property (nonatomic) BOOL showConsentScreen;
 @property (nonatomic) BOOL showSelfieAndDocumentScreen;
 @property (nonatomic) BOOL showSuccessWindow;
+@property (nonatomic) enum OndatoLivenessMode livenessCheck;
 @property (nonatomic) BOOL ignoreLivenessErrors SWIFT_DEPRECATED_MSG("Currently disabled");
 @property (nonatomic) BOOL ignoreVerificationErrors SWIFT_DEPRECATED_MSG("Currently disabled");
 @property (nonatomic) BOOL recordProcess;
@@ -299,6 +301,11 @@ SWIFT_CLASS_NAMED("OndatoLabelAppearance")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM_NAMED(NSInteger, OndatoLivenessMode, "OndatoLivenessMode", open) {
+  OndatoLivenessModeActive = 0,
+  OndatoLivenessModePassive = 1,
+};
 
 enum OndatoSupportedLanguage : NSInteger;
 @class NSBundle;

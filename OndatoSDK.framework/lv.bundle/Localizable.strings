@@ -151,3 +151,5 @@
 "ZoomRetryReasonFaceAngle_title" = "Nederīgs sejas iesniegšanas formāts";
 "ZoomRetryReasonFaceAngle_subtitle" = "Lūdzam pārliecināties, ka jūsu seja pareizi iederas marķētajā zonā. Jums jāskatās tieši kamerā";
 "ZoomRetryReasonBadLightingFailureToAcquire_title" = "Spilgts apgaismojums apkārtnē";
+
+"ondato_capture_liveness" = "Fotografēt";

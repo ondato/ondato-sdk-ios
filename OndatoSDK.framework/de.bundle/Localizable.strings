@@ -175,3 +175,5 @@
 "ZoomRetryReasonFaceAngle_subtitle" = "Wir bitten dich darauf zu achten, dass dein Gesicht richtig in die markierte Zone passt. Du musst direkt in die Kamera schauen.";
 "ZoomRetryReasonBadLightingFailureToAcquire_title" = "Helle Beleuchtung in der Umgebung";
 "ZoomRetryReasonBadLightingFailureToAcquire_subtitle" = "Bitte beachte, dass während der Identifizierung eine zu Helle Umgebumg um dein Gesicht herum erkannt wurde. Wir bitten dich´ darauf zu achten, dass deine Umgebung nicht zu hell ist.";
+
+"ondato_capture_liveness" = "Aufnehmen";
