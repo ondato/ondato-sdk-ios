@@ -88,6 +88,8 @@ class OndatoFlowConfiguration {
     var livenessCheck: OndatoLivenessMode // [.active, .passive] Should active or passive liveness check mode be used
 }
 ```
+In case Passive Liveness check is configured, please contact Ondato support team support@ondato.com to check if your account is configured accordingly.
+
 
 `appearance` holds the appearance configuration options
 ```swift
@@ -103,7 +105,6 @@ class OndatoAppearance {
     var backgroundColor: UIColor //  background color in certain situations
     var consentWindow: OndatoConsentAppearance() // appearance of header, body, acceptButton, declineButton in consent screen
 ```
-
 ### 4. Starting the flow
 
 #### Swift
