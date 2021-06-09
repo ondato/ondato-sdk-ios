@@ -16,6 +16,7 @@ import UIKit
   case cancelled
   case invalidServerResponse
   case invalidCredentials
+  case recorderPermissions
   case unexpectedInternalError
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int

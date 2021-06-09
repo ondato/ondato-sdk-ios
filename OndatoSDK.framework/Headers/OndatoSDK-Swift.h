@@ -382,7 +382,8 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoError, "OndatoServiceError", open) {
   OndatoErrorCancelled = 0,
   OndatoErrorInvalidServerResponse = 1,
   OndatoErrorInvalidCredentials = 2,
-  OndatoErrorUnexpectedInternalError = 3,
+  OndatoErrorRecorderPermissions = 3,
+  OndatoErrorUnexpectedInternalError = 4,
 };
 static NSString * _Nonnull const OndatoErrorDomain = @"OndatoSDK.OndatoServiceError";
 
