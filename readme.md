@@ -41,7 +41,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ### CocoaPods
 
 ```
-pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.7.1'
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.7.2'
 ```
 
 ### 3. Initializing and configuring the SDK 
@@ -52,6 +52,7 @@ pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.
 // Use one of the provided initializers
 OndatoService.shared.initialize(username: "username", password: "password")
 OndatoService.shared.initialize(accessToken: "accessToken")
+OndatoService.shared.identificationId = <Identification Id>
 ```
 
 You can change the configuration by modifying the configuration property
@@ -113,7 +114,6 @@ An identification ID can be provided to the SDK. If one is not provided, the SDK
 
 ```swift
 let sdk = OndatoService.shared.instantiateOndatoViewController()
-sdk.identificationId = <Optional identification ID>
 sdk.modalPresentationStyle = .fullScreen
 present(sdk, animated: true, completion: nil) 
 ```
