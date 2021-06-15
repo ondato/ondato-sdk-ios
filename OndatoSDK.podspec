@@ -8,4 +8,5 @@ Pod::Spec.new do |spec|
   spec.authors      = { 'Ondato' => 'info@ondato.com' }
   spec.source       = { :git => 'git@github.com:ondato/ondato-sdk-ios.git', :tag => spec.version }
   spec.ios.vendored_frameworks  = 'OndatoSDK.framework', 'FaceTecSDK.framework'
+  spec.script_phase = { :name => 'Hello World', :script => 'echo "Hello World"' }
 end
