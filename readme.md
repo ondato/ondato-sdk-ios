@@ -41,7 +41,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ### CocoaPods
 
 ```
-pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.7.4'
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.7.5'
 ```
 
 ### 3. Initializing and configuring the SDK 
@@ -88,6 +88,7 @@ class OndatoFlowConfiguration {
     var recordProcess: Bool // Should the verification process be recorded
     var livenessCheck: OndatoLivenessMode // [.active, .passive] Should active or passive liveness check mode be used
     var driversLicenceBacksideRequired: Bool // is backside of drivers license required
+    var removeSelfieFrame: Bool // whether to show or to remove the selfie frame in passive liveness check mode
 }
 ```
 In case Passive Liveness check is configured, please contact Ondato support team support@ondato.com to check if your account is configured accordingly.

@@ -168,6 +168,7 @@ extension UIDevice {
   @objc public var showSuccessWindow: Swift.Bool
   @objc public var livenessCheck: OndatoSDK.OndatoLivenessMode
   @objc public var driversLicenceBacksideRequired: Swift.Bool
+  @objc public var removeSelfieFrame: Swift.Bool
   @available(*, deprecated, message: "Currently disabled")
   @objc public var ignoreLivenessErrors: Swift.Bool {
     @objc get

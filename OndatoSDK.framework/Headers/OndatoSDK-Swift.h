@@ -272,6 +272,7 @@ SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 @property (nonatomic) BOOL showSuccessWindow;
 @property (nonatomic) enum OndatoLivenessMode livenessCheck;
 @property (nonatomic) BOOL driversLicenceBacksideRequired;
+@property (nonatomic) BOOL removeSelfieFrame;
 @property (nonatomic) BOOL ignoreLivenessErrors SWIFT_DEPRECATED_MSG("Currently disabled");
 @property (nonatomic) BOOL ignoreVerificationErrors SWIFT_DEPRECATED_MSG("Currently disabled");
 @property (nonatomic) BOOL recordProcess;
