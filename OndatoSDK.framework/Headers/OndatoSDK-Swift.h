@@ -359,7 +359,7 @@ SWIFT_CLASS_NAMED("OndatoService")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) OndatoService * _Nonnull shared;)
 + (OndatoService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 + (void)setShared:(OndatoService * _Nonnull)value;
-@property (nonatomic, strong) id <OndatoFlowDelegate> _Nullable flowDelegate;
+@property (nonatomic, weak) id <OndatoFlowDelegate> _Nullable flowDelegate;
 @property (nonatomic, strong) OndatoServiceConfiguration * _Nonnull configuration;
 @property (nonatomic, copy) NSString * _Nonnull identificationId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

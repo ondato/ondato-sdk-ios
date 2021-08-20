@@ -29,7 +29,7 @@ import UIKit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoService) public class OndatoService : ObjectiveC.NSObject {
   @objc public static var shared: OndatoSDK.OndatoService
-  @objc public var flowDelegate: OndatoSDK.OndatoFlowDelegate?
+  @objc weak public var flowDelegate: OndatoSDK.OndatoFlowDelegate?
   @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
   @objc public var identificationId: Swift.String {
     @objc get
