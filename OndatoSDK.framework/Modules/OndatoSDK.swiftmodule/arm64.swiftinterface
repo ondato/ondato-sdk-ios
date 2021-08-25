@@ -112,8 +112,6 @@ extension OndatoSupportedLanguage : Swift.CaseIterable {
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @available(iOS 5.0, *)
   @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
-  @objc override dynamic public init(rootViewController: UIKit.UIViewController)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
