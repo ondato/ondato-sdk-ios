@@ -49,8 +49,8 @@
 "FaceTec_result_facescan_upload_message" = "Loading\nplease wait";
 "FaceTec_result_success_message" = "Face is recognized successfully";
 
-"ondato_start_title" = "Identify yourself";
-"ondato_start_subtitle" = "Press \"Start\" button to proceed and follow the on-screen instructions";
+"ondato_start_title" = "Welcome to identity verification process";
+"ondato_start_subtitle" = "To continue using this service you need to validate that you fit the requirements. The verification process cosists of 3 steps";
 "ondato_start_button" = "Start";
 
 "ondato_try_again" = "Try again";
@@ -61,7 +61,7 @@
 
 "ondato_button_take_picture" = "Take Picture";
 "ondato_button_try_again" = "Try again";
-"ondato_button_upload" = "Upload";
+"ondato_button_upload" = "Continue";
 "ondato_continue_anyway" = "Continue anyway";
 
 "ondato_loading_title" = "Uploading information";
@@ -73,66 +73,34 @@
 "ondato_error_something_wrong_title" = "Error occured";
 "ondato_error_something_wrong_subtitle" = "Unfortunately there was an error with your identification. Please try again.";
 
-"ondato_choose_document_title" = "Please select the document type you wish to identify yourself with";
+"ondato_choose_document_title" = "Choose a document and start verification";
 "ondato_choose_document_passport" = "Passport";
 "ondato_choose_document_id_card" = "Identity Card";
 "ondato_choose_document_driving_licence" = "Driving Licence";
 
 "ondato_capture_passport_front_title" = "Please capture your passport cover";
-"ondato_capture_passport_front_suggestion" = "Having problems capturing document cover?";
-"ondato_capture_passport_front_info_title" = "How to capture document cover correctly?";
-"ondato_capture_passport_front_info_description" = "We kindly ask to place your passport cover in the marked area and press \"Take picture\". Your passport cover should be clearly seen, taken in a well lit environment, not blurry or pixelated";
-"ondato_capture_passport_front_upload_title" = "Please upload a picture of the document cover";
-"ondato_capture_passport_front_error_title" = "";
-"ondato_capture_passport_front_error_subtitle" = "";
+"ondato_capture_passport_front_description" = "Make sure that the photo on the captured document is clearly visible & the data is readable. If you believe, that the image quality is acceptable, please click the \"Continue\" button";
 
-"ondato_capture_passport_back_title" = "Please take a picture of your document page that contains MRZ zone";
-"ondato_capture_passport_back_suggestion" = "Having problems capturing the main document page?";
-"ondato_capture_passport_back_info_title" = "How to capture document page with MRZ zone correctly?";
-"ondato_capture_passport_back_info_description" = "We kindly ask to place your passport page that contains MRZ zone (as shown on the picture) in the marked area and press \"Take picture\". Your passport page should be clearly seen, taken in a well lit environment, not blurry or pixelated";
-"ondato_capture_passport_back_upload_title" = "Please upload a picture of your document page that contains MRZ zone";
-"ondato_capture_passport_back_error_title" = "Failed to capture the document";
-"ondato_capture_passport_back_error_subtitle" = "MRZ zone exctraction failed. Please provide a photo of the document page that contains MRZ zone. Your document should be clearly seen, taken in a well lit environment, not blurry or pixelated. Please make sure, that MRZ zone of your document is clearly readable and press “Try again”";
+"ondato_capture_passport_back_title" = "Please capture the main document page that contains MRZ zone";
+"ondato_capture_passport_back_description" = "Make sure that the photo on the captured document is clearly visible & the data is readable. If you believe, that the image quality is acceptable, please click the \"Continue\" button";
 
 "ondato_capture_identity_card_front_title" = "Please capture front side of your ID card";
-"ondato_capture_identity_card_front_suggestion" = "Having problems capturing ID card?";
-"ondato_capture_identity_card_front_info_title" = "How to capture front side of ID card correctly?";
-"ondato_capture_identity_card_front_info_description" = "We kindly ask to place the front side of your ID card in the marked area and press \"Take picture\". Your document should be clearly seen, taken in a well lit environment, not blurry or pixelated";
-"ondato_capture_identity_card_front_upload_title" = "Please upload front side of your ID card";
-"ondato_capture_identity_card_front_error_title" = "";
-"ondato_capture_identity_card_front_error_subtitle" = "";
+"ondato_capture_identity_card_front_description" = "Make sure that the photo on the captured document is clearly visible & the data is readable. If you believe, that the image quality is acceptable, please click the \"Continue\" button";
 
 "ondato_capture_identity_card_back_title" = "Please capture back side of your ID card";
-"ondato_capture_identity_card_back_suggestion" = "Having problems capturing ID card?";
-"ondato_capture_identity_card_back_info_title" = "How to capture back side of ID card correctly?";
-"ondato_capture_identity_card_back_info_description" = "We kindly ask to place the back side of ID card that contains MRZ zone (as shown on the picture) in the marked area and press \"Take picture\". Your document should be clearly seen, taken in a well lit environment, not blurry or pixelated";
-"ondato_capture_identity_card_back_upload_title" = "Please upload back side of your ID card";
-"ondato_capture_identity_card_back_error_title" = "Failed to capture the document";
-"ondato_capture_identity_card_back_error_subtitle" = "MRZ zone exctraction failed. Please provide a photo of the back side of your ID card. Your document should be clearly seen, taken in a well lit environment, not blurry or pixelated. Please make sure, that MRZ zone of your document is clearly readable and press “Try again”";
+"ondato_capture_identity_card_back_description" = "Make sure that the photo on the captured document is clearly visible & the data is readable. If you believe, that the image quality is acceptable, please click the \"Continue\" button";
 
 "ondato_capture_driver_licence_front_title" = "Please capture front side of your driving license";
-"ondato_capture_driver_licence_front_suggestion" = "Having problems capturing driving license?";
-"ondato_capture_driver_licence_front_info_title" = "How to capture front side of driving license correctly?";
-"ondato_capture_driver_licence_front_info_description" = "We kindly ask to place the front side of driving license in the marked area and press \"Take picture\". Photo of driving license should be clearly visible, not blurry or pixelated";
-"ondato_capture_driver_licence_front_upload_title" = "Please upload the front side photo of your driving license";
-"ondato_capture_driver_licence_front_error_title" = "";
-"ondato_capture_driver_licence_front_error_subtitle" = "";
+"ondato_capture_driver_licence_front_description" = "Make sure that the photo on the captured document is clearly visible & the data is readable. If you believe, that the image quality is acceptable, please click the \"Continue\" button";
 
 "ondato_capture_driver_licence_back_title" = "Please capture back side of driving license";
-"ondato_capture_driver_licence_back_suggestion" = "Having problems capturing driving license?";
-"ondato_capture_driver_licence_back_info_title" = "How to capture back side of driving license correctly?";
-"ondato_capture_driver_licence_back_info_description" = "We kindly ask to place the back side of driving license in the marked area and press \"Take picture\". Driving license should be clearly visible, not blurry or pixelated";
-"ondato_capture_driver_licence_back_upload_title" = "Please upload a photo of the back side of driving license";
-"ondato_capture_driver_licence_back_error_title" = "Failed to capture the document";
-"ondato_capture_driver_licence_back_error_subtitle" = "";
+"ondato_capture_driver_licence_back_description" = "Make sure that the photo on the captured document is clearly visible & the data is readable. If you believe, that the image quality is acceptable, please click the \"Continue\" button";
 
 "ondato_capture_selfie_title" = "Please take a photo of your face with the document";
-"ondato_capture_selfie_suggestion" = "Having trouble photographing a face with a document?";
-"ondato_capture_selfie_info_title" = "How to properly photograph yourself with a passport?";
-"ondato_capture_selfie_info_description" = "Please hold the document next to your face so that it does not cover it andpress the \"Take a photo\" button. The photo should be taken in a well-lit environment.";
-"ondato_capture_selfie_upload_title" = "Please check the quality of captured photo";
-"ondato_capture_selfie_error_title" = "";
-"ondato_capture_selfie_error_subtitle" = "";
+"ondato_capture_selfie_description" = "Make sure the photo is clear";
+
+"ondato_capture_selfie_document_title" = "Capture yourself while holding your document";
+"ondato_capture_selfie_document_description" = "Hold the document near your face while taking a selfie.";
 
 "ondato_consent_title" = "Consent for personal data processing";
 "ondato_consent_subtitle" = "In order to obtain the service from the Service Provider, with this consent I express my agreement that UAB \"Ondato\" will receive and manage my personal data, including my biometric data, gained from remote identification of my personal identity by taking and/or filming live image of my face, my person\'s identity or the document used to identify it and/or their image and the personal data contained in them and/or check in the population registry: image of my face, name, surname, nationality, gender, personal code, date of birth, numbers of the document that is being used, date of issue and validity, my signature and the transfer of such data to the Service Provider. I also note that I am informed that the controller of my personal data, including my biometric data, specified in this consent is the Service Provider and UAB \"Ondato\" will process my personal data only until the remote identification procedure is over and the results will be transferred to the Service Provider. I also declare that I am informed and agree that my personal data obtained for remote identification and its purposes may be stored by UAB \"Ondato\" for longer period of time than it takes for the identification to be completed or transmission of its results to the Service Provider, but only at the request of the Service Provider or UAB Ondato\'s contractual obligation to the Service Provider, but not longer than it is defined in the Contract that was signed between UAB \"Ondato\" and Service Provider or requested by the Service Provider. I am informed, that I can submit request regarding my personal data for more detailed information at info@ondato.com. Hereby I declare and confirm, that all the personal data I will provide for remote identification of my personal identity purpose, are correct and accurate, and the document, which I will use for this purpose is not false and valid.";
@@ -177,3 +145,25 @@
 "ZoomRetryReasonBadLightingFailureToAcquire_subtitle" = "Please be informed that during your identification harsh lighting surrounding was detected around your face. We kindly ask to make sure that your surrounding is not too bright";
 
 "ondato_capture_liveness" = "Capture";
+
+"ondato_start_step_0" = "Choose a document";
+"ondato_start_step_1" = "Take a photo of the document";
+"ondato_start_step_2" = "Scan your face";
+
+"tutorial_main_mistakes" = "Main mistakes:";
+
+"tutorial_card_mistake_1" = "Too blurry";
+"tutorial_card_mistake_2" = "Too small";
+"tutorial_card_mistake_3" = "Too dark";
+
+"tutorial_card_back_mistake_1" = "Too blurry";
+"tutorial_card_back_mistake_2" = "Too small";
+"tutorial_card_back_mistake_3" = "Too dark";
+
+"tutorial_passport_mistake_1" = "Too blurry";
+"tutorial_passport_mistake_2" = "Too small";
+"tutorial_passport_mistake_3" = "Too dark";
+
+"tutorial_selfie_mistake_1" = "Too blurry";
+"tutorial_selfie_mistake_2" = "Bad lighting";
+"tutorial_selfie_mistake_3" = "Not a neutral face";

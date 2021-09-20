@@ -207,6 +207,25 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@protocol OndatoFlowDelegate;
+@class OndatoServiceConfiguration;
+@class NSString;
+@class OndatoMainViewController;
+
+SWIFT_CLASS_NAMED("Ondato")
+@interface Ondato : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Ondato * _Nonnull sdk;)
++ (Ondato * _Nonnull)sdk SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, weak) id <OndatoFlowDelegate> _Nullable delegate;
+@property (nonatomic, strong) OndatoServiceConfiguration * _Nonnull configuration;
+@property (nonatomic, copy) NSString * _Nonnull identificationId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)initializeWithUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password;
+- (void)initializeWithAccessToken:(NSString * _Nonnull)accessToken;
+- (OndatoMainViewController * _Nonnull)instantiateOndatoViewController SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class OndatoGDRPAppearance;
 @class UIColor;
 
@@ -281,8 +300,7 @@ SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 
 @class UIViewController;
 @class UIView;
-@class NSString;
-enum OndatoError : NSInteger;
+@class OndatoServiceError;
 
 SWIFT_PROTOCOL_NAMED("OndatoFlowDelegate")
 @protocol OndatoFlowDelegate
@@ -292,7 +310,7 @@ SWIFT_PROTOCOL_NAMED("OndatoFlowDelegate")
 - (UIView * _Nonnull)viewForSuccessWithContinue:(void (^ _Nonnull)(void))continue_ SWIFT_WARN_UNUSED_RESULT;
 @required
 - (void)flowDidSucceedWithIdentificationId:(NSString * _Nullable)identificationId;
-- (void)flowDidFailWithIdentificationId:(NSString * _Nullable)identificationId error:(enum OndatoError)error;
+- (void)flowDidFailWithIdentificationId:(NSString * _Nullable)identificationId error:(OndatoServiceError * _Nonnull)error;
 @end
 
 
@@ -309,8 +327,14 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoLivenessMode, "OndatoLivenessMode", op
   OndatoLivenessModePassive = 1,
 };
 
+
+SWIFT_CLASS_NAMED("OndatoLocalizationBundle")
+@interface OndatoLocalizationBundle : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 enum OndatoSupportedLanguage : NSInteger;
-@class NSBundle;
 
 SWIFT_CLASS_NAMED("OndatoLocalizeHelper")
 @interface OndatoLocalizeHelper : NSObject
@@ -319,7 +343,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum OndatoSupportedLanguage l
 + (void)setLanguage:(enum OndatoSupportedLanguage)value;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-+ (void)setLocalizationBundle:(NSBundle * _Nonnull)bundle for:(enum OndatoSupportedLanguage)language;
++ (void)setLocalizationBundle:(OndatoLocalizationBundle * _Nonnull)bundle for:(enum OndatoSupportedLanguage)language;
 @end
 
 
@@ -329,6 +353,7 @@ SWIFT_CLASS("_TtC9OndatoSDK9OndatoLog")
 @end
 
 @class NSCoder;
+@class NSBundle;
 
 SWIFT_CLASS("_TtC9OndatoSDK24OndatoMainViewController")
 @interface OndatoMainViewController : UINavigationController
@@ -345,30 +370,16 @@ SWIFT_CLASS("_TtC9OndatoSDK24OndatoMainViewController")
 
 
 
+
+
+
+
 SWIFT_CLASS_NAMED("OndatoRecorderConfiguration")
 @interface OndatoRecorderConfiguration : NSObject
 @property (nonatomic) NSInteger bitrate;
 @property (nonatomic) float resolutionRatio;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-@class OndatoServiceConfiguration;
-
-SWIFT_CLASS_NAMED("OndatoService")
-@interface OndatoService : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) OndatoService * _Nonnull shared;)
-+ (OndatoService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-+ (void)setShared:(OndatoService * _Nonnull)value;
-@property (nonatomic, weak) id <OndatoFlowDelegate> _Nullable flowDelegate;
-@property (nonatomic, strong) OndatoServiceConfiguration * _Nonnull configuration;
-@property (nonatomic, copy) NSString * _Nonnull identificationId;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)initializeWithUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password;
-- (void)initializeWithAccessToken:(NSString * _Nonnull)accessToken;
-- (OndatoMainViewController * _Nonnull)instantiateOndatoViewController SWIFT_WARN_UNUSED_RESULT;
-@end
-
 
 
 SWIFT_CLASS_NAMED("OndatoServiceConfiguration")
@@ -380,14 +391,20 @@ SWIFT_CLASS_NAMED("OndatoServiceConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM_NAMED(NSInteger, OndatoError, "OndatoServiceError", open) {
-  OndatoErrorCancelled = 0,
-  OndatoErrorInvalidServerResponse = 1,
-  OndatoErrorInvalidCredentials = 2,
-  OndatoErrorRecorderPermissions = 3,
-  OndatoErrorUnexpectedInternalError = 4,
+
+SWIFT_CLASS_NAMED("OndatoServiceError")
+@interface OndatoServiceError : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM_NAMED(NSInteger, OndatoServiceErrorType, "OndatoServiceErrorType", open) {
+  OndatoServiceErrorTypeCancelled = 0,
+  OndatoServiceErrorTypeInvalidServerResponse = 1,
+  OndatoServiceErrorTypeInvalidCredentials = 2,
+  OndatoServiceErrorTypeRecorderPermissions = 3,
+  OndatoServiceErrorTypeUnexpectedInternalError = 4,
 };
-static NSString * _Nonnull const OndatoErrorDomain = @"OndatoSDK.OndatoServiceError";
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoSupportedLanguage, "OndatoSupportedLanguage", open) {
   OndatoSupportedLanguageDE = 0,
@@ -396,6 +413,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoSupportedLanguage, "OndatoSupportedLan
   OndatoSupportedLanguageLT = 3,
   OndatoSupportedLanguageLV = 4,
   OndatoSupportedLanguageRU = 5,
+  OndatoSupportedLanguageSQ = 6,
 };
 
 

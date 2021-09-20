@@ -49,8 +49,8 @@
 "FaceTec_result_facescan_upload_message" = "Prašome palaukti.\nKraunama...";
 "FaceTec_result_success_message" = "Sėkmingai atpažintas veidas";
 
-"ondato_start_title" = "Identifikacijos pradžia";
-"ondato_start_subtitle" = "Spauskite mygtuką \"Pradėti\" ir sekite instrukcijas";
+"ondato_start_title" = "Sveikiname jus pradejus asmens tapatybės nustatymo procesą";
+"ondato_start_subtitle" = "Norėdami toliau naudoti šią paslaugą, turite patvirtinti, kad atitinkate reikalavimus. Patvirtinimo procesą sudaro 3 veiksmai";
 "ondato_start_button" = "Pradėti";
 
 "ondato_try_again" = "Bandyti dar kartą";
@@ -61,7 +61,7 @@
 
 "ondato_button_take_picture" = "Fotografuoti";
 "ondato_button_try_again" = "Bandyti dar kartą";
-"ondato_button_upload" = "Įkelti";
+"ondato_button_upload" = "Toliau";
 "ondato_continue_anyway" = "Tęsti vistiek";
 
 "ondato_loading_title" = "Tikrinama..";
@@ -73,16 +73,16 @@
 "ondato_error_something_wrong_title" = "Įvyko klaida";
 "ondato_error_something_wrong_subtitle" = "Įvyko nenumatyta klaida. Prašome pabandyti dar kartą.";
 
-"ondato_choose_document_title" = "Pasirinkite dokumentą identifikacijai";
+"ondato_choose_document_title" = "Pasirinkite dokumentą ir pradėkite verifikaciją";
 "ondato_choose_document_passport" = "Pasas";
-"ondato_choose_document_id_card" = "ID kortelė";
+"ondato_choose_document_id_card" = "Asmens tapatybės kortelė";
 "ondato_choose_document_driving_licence" = "Vairuotojo pažymėjimas";
 
 "ondato_capture_passport_front_title" = "Nufotografuokite paso viršelį";
 "ondato_capture_passport_front_suggestion" = "Turite problemų identifikuojant dokumento viršelį?";
 "ondato_capture_passport_front_info_title" = "Kaip teisingai nufotografuoti paso viršelį?";
 "ondato_capture_passport_front_info_description" = "Pateikite paso viršelį į pažymėtą rėmelį ir spauskite \"Fotografuoti\". Nuotrauka turėtų būti daroma gerai apšviestoje aplinkoje, kurioje dokumento viršelis būtų aiškiai matomas. Nuotrauka turi būti ryški, kokybiška";
-"ondato_capture_passport_front_upload_title" = "Įkelkite paso viršelio nuotrauką";
+"ondato_capture_passport_front_description" = "Įsitikinkite, kad nuotraukoje aiškiai matosi visa reikiama informacija ir duomenys lengvai perskaitomi. Jeigu nuotraukos kokybė tinkama, spauskite „Toliau“";
 "ondato_capture_passport_front_error_title" = "";
 "ondato_capture_passport_front_error_subtitle" = "";
 
@@ -90,7 +90,7 @@
 "ondato_capture_passport_back_suggestion" = "Turite problemų identifikuojant pagrindinį dokumento puslapį?";
 "ondato_capture_passport_back_info_title" = "Kaip teisingai nufotografuoti paso puslapį su mašininio nuskaitymo zona?";
 "ondato_capture_passport_back_info_description" = "Pateikite paso puslapį, kuriame yra mašininio nuskaitymo zona į pažymėtą rėmelį ir spauskite \"Fotografuoti\". Nuotrauka turėtų būti daroma gerai apšviestoje aplinkoje, kurioje dokumento puslapis būtų aiškiai matomas. Nuotrauka turi būti ryški, kokybiška";
-"ondato_capture_passport_back_upload_title" = "Įkelkite dokumento puslapį, kuriame yra Jūsų nuotrauka";
+"ondato_capture_passport_back_description" = "Įsitikinkite, kad nuotraukoje aiškiai matosi visa reikiama informacija ir duomenys lengvai perskaitomi. Jeigu nuotraukos kokybė tinkama, spauskite „Toliau“";
 "ondato_capture_passport_back_error_title" = "Dokumento nuskaityti nepavyko";
 "ondato_capture_passport_back_error_subtitle" = "Mašininio nuskaitymo zonos atpažinimas nepavyko. Prašome įsitikinti, kad zona matoma aiškiai ir spauskite mygtuką “Bandyti dar kartą”";
 
@@ -98,7 +98,7 @@
 "ondato_capture_identity_card_front_suggestion" = "Turite problemų identifikuojant ID kortelės priekį?";
 "ondato_capture_identity_card_front_info_title" = "Kaip teisingai nufotografuoti dokumento priekį?";
 "ondato_capture_identity_card_front_info_description" = "Pateikite priekinę ID kortelės pusę į pažymėtą rėmelį ir spauskite \"Fotografuoti\". Nuotrauka turėtų būti daroma gerai apšviestoje aplinkoje, kurioje dokumentas būtų aiškiai matomas. Nuotrauka turi būti ryški, kokybiška";
-"ondato_capture_identity_card_front_upload_title" = "Įkelkite ID kortelės priekio nuotrauką";
+"ondato_capture_identity_card_front_description" = "Įsitikinkite, kad nuotraukoje aiškiai matosi visa reikiama informacija ir duomenys lengvai perskaitomi. Jeigu nuotraukos kokybė tinkama, spauskite „Toliau“";
 "ondato_capture_identity_card_front_error_title" = "";
 "ondato_capture_identity_card_front_error_subtitle" = "";
 
@@ -106,7 +106,7 @@
 "ondato_capture_identity_card_back_suggestion" = "Turite problemų identifikuojant ID kortelės galą?";
 "ondato_capture_identity_card_back_info_title" = "Kaip teisingai nufotografuoti dokumento galą su mašininio nuskaitymo zona?";
 "ondato_capture_identity_card_back_info_description" = "Pateikite galinę ID kortelės pusę, kurioje yra mašininio nuskaitymo zona nuotrauką į pažymėtą rėmelį ir spauskite \"Fotografuoti\". Nuotrauka turėtų būti daroma gerai apšviestoje aplinkoje, kurioje dokumentas būtų aiškiai matomas. Nuotrauka turi būti ryški, kokybiška";
-"ondato_capture_identity_card_back_upload_title" = "Įkelkite ID kortelės galo nuotrauką";
+"ondato_capture_identity_card_back_description" = "Įsitikinkite, kad nuotraukoje aiškiai matosi visa reikiama informacija ir duomenys lengvai perskaitomi. Jeigu nuotraukos kokybė tinkama, spauskite „Toliau“";
 "ondato_capture_identity_card_back_error_title" = "Dokumento nuskaityti nepavyko";
 "ondato_capture_identity_card_back_error_subtitle" = "Mašininio nuskaitymo zonos atpažinimas nepavyko. Prašome įsitikinti, kad zona matoma aiškiai ir spauskite mygtuką “Bandyti dar kartą”";
 
@@ -114,7 +114,7 @@
 "ondato_capture_driver_licence_front_suggestion" = "Turite problemų fotografuojant vairuotojo pažymėjimą?";
 "ondato_capture_driver_licence_front_info_title" = "Kaip teisingai nufotografuoti dokumento priekinę pusę?";
 "ondato_capture_driver_licence_front_info_description" = "Pateikite priekinę vairuotojo pažymėjimo pusę į pažymėtą rėmelį ir spauskite \"Fotografuoti\". Nuotrauka turėtų būti daroma gerai apšviestoje aplinkoje, kurioje dokumentas būtų aiškiai matomas. Nuotrauka turi būti ryški, kokybiška";
-"ondato_capture_driver_licence_front_upload_title" = "Prašome įkelti vairuotojo pažymėjimo, priekinės pusės nuotrauką";
+"ondato_capture_driver_licence_front_description" = "Įsitikinkite, kad nuotraukoje aiškiai matosi visa reikiama informacija ir duomenys lengvai perskaitomi. Jeigu nuotraukos kokybė tinkama, spauskite „Toliau“";
 "ondato_capture_driver_licence_front_error_title" = "";
 "ondato_capture_driver_licence_front_error_subtitle" = "";
 
@@ -122,7 +122,7 @@
 "ondato_capture_driver_licence_back_suggestion" = "Turite problemų fotografuojant vairuotojo pažymėjimą?";
 "ondato_capture_driver_licence_back_info_title" = "Kaip teisingai nufotografuoti dokumento galinę pusę?";
 "ondato_capture_driver_licence_back_info_description" = "Pateikite galinę vairuotojo pažymėjimo pusę į pažymėtą rėmelį ir spauskite \"Fotografuoti\". Nuotrauka turėtų būti daroma gerai apšviestoje aplinkoje, kurioje dokumentas būtų aiškiai matomas. Nuotrauka turi būti ryški, kokybiška";
-"ondato_capture_driver_licence_back_upload_title" = "Prašome įkelti vairuotojo pažymėjimo, galinės pusės nuotrauką";
+"ondato_capture_driver_licence_back_description" = "Įsitikinkite, kad nuotraukoje aiškiai matosi visa reikiama informacija ir duomenys lengvai perskaitomi. Jeigu nuotraukos kokybė tinkama, spauskite „Toliau“";
 "ondato_capture_driver_licence_back_error_title" = "Nepavyko nufotografuoti vairuotojo pažymėjimo";
 "ondato_capture_driver_licence_back_error_subtitle" = "";
 
@@ -130,7 +130,7 @@
 "ondato_capture_selfie_suggestion" = "Turite problemų fotografuojant veidą su dokumentu?";
 "ondato_capture_selfie_info_title" = "Kaip teisingai nufotografuoti save su dokumentu?";
 "ondato_capture_selfie_info_description" = "Lakykite dokumentą šalia savo veido taip, kad jis neuždengtų jo ir spauskite mygtuką \"Fotografuoti\". Nuotrauka turėtų būti daroma gerai apšviestoje aplinkoje.";
-"ondato_capture_selfie_upload_title" = "Prašome patikrinti nufotografuotos nuotraukos kokybę";
+"ondato_capture_selfie_description" = "Įsitikinkite, kad nuotrauka aiški";
 "ondato_capture_selfie_error_title" = "";
 "ondato_capture_selfie_error_subtitle" = "";
 
@@ -177,3 +177,47 @@
 "ondato_consent_button_decline" = "Nesutinku";
 
 "ondato_capture_liveness" = "Fotografuoti";
+
+"ondato_start_step_0" = "Pasirinkite dokumentą";
+"ondato_start_step_1" = "Nufotografuokite dokumentą";
+"ondato_start_step_2" = "Nuskenuokite veidą";
+
+"tutorial_main_mistakes" = "Pagrindinės klaidos:";
+
+"tutorial_id_front_title" = "Nufotografuokite asmens tapatybės kortelės priekinę pusę";
+"tutorial_id_front_description" = "Įdėkite asmens tapatybės kortelės priekinę pusę į pažymėtą rėmelį ir spauskite „Fotografuoti“. Įsitikinkite, kad dokumento informacija aiškiai matoma";
+
+"tutorial_id_back_title" = "Nufotografuokite asmens tapatybės kortelės kitą pusę";
+"tutorial_id_back_description" = "Įdėkite asmens tapatybės kortelės kitą pusę į pažymėtą rėmelį ir spauskite „Fotografuoti“. Įsitikinkite, kad kontrolinė eilutė yra gerai matoma";
+
+"tutorial_passport_title" = "Nufotografuokite paso puslapį, kuriame yra pateikiama kontrolinė eilutė";
+"tutorial_passport_description" = "Įdėkite paso puslapį į pažymėtą rėmelį ir spauskite „Fotografuoti“. Įsitikinkite, kad dokumento informacija aiškiai matoma";
+
+"tutorial_drivers_front_title" = "Prašome nufotografuoti vairuotojo pažymėjimo priekinę pusę";
+"tutorial_drivers_front_description" = "Prašome patalpinti vairuotojo pažymėjimo priekinę pusę į pažymėtą rėmelį ir spausti „Fotografuoti“. Įsitikinkite, kad dokumento informacija yra aiškiai matoma ir neišsiliejusi";
+
+"tutorial_drivers_back_title" = "Prašome nufotografuoti vairuotojo pažymėjimo galinę pusę";
+"tutorial_drivers_back_description" = "Prašome patalpinti vairuotojo pažymėjimo galinę pusę į pažymėtą rėmelį ir spausti „Fotografuoti“. Įsitikinkite, kad dokumento informacija yra aiškiai matoma ir neišsiliejusi";
+
+"ondato_capture_selfie_document_title" = "Nusifotografuokite laikydami dokumentą";
+"ondato_capture_selfie_document_description" = "Darydami asmenukę, dokumentą laikykite prie veido";
+
+"tutorial_selfie_title" = "Pateikite savo veido nuotrauką";
+"tutorial_selfie_description" = "Įtaikykite veidą į rėmelį ir įsitikinkite, kad jūsų veidas yra aiškiai matomas ir tolygiai apšviestas";
+
+
+"tutorial_card_mistake_1" = "Neryški";
+"tutorial_card_mistake_2" = "Per maža";
+"tutorial_card_mistake_3" = "Per tamsi";
+
+"tutorial_card_back_mistake_1" = "Neryški";
+"tutorial_card_back_mistake_2" = "Per maža";
+"tutorial_card_back_mistake_3" = "Per tamsi";
+
+"tutorial_passport_mistake_1" = "Neryški";
+"tutorial_passport_mistake_2" = "Per maža";
+"tutorial_passport_mistake_3" = "Per tamsi";
+
+"tutorial_selfie_mistake_1" = "Neryški";
+"tutorial_selfie_mistake_2" = "Blogas apšvietimas";
+"tutorial_selfie_mistake_3" = "Ne neutrali veido išraiška";

@@ -43,8 +43,8 @@
 "FaceTec_retry_your_image_label" = "Sinu selfi";
 "FaceTec_retry_ideal_image_label" = "Ideaalne poos";
 
-"ondato_start_title" = "Identifitseerimise algus";
-"ondato_start_subtitle" = "Klõpsake nuppu \"Alustama\" ja järgige juhiseid";
+"ondato_start_title" = "Tere tulemast isikusamasuse kontrolli protsessi";
+"ondato_start_subtitle" = "Et jätkata selle teenuse kasutamist, peate kinnitama, et vastate nõuetele. Kontrolli protsess koosneb 3 etapist";
 "ondato_start_button" = "Alustama";
 "ondato_try_again" = "Palun proovi uuesti";
 "ondato_close" = "Sulge";
@@ -53,7 +53,7 @@
 "ondato_language_de" = "Saksa keel";
 "ondato_button_take_picture" = "Pilti teha";
 "ondato_button_try_again" = "Proovi uuesti";
-"ondato_button_upload" = "Laadi üles";
+"ondato_button_upload" = "Jätka";
 "ondato_continue_anyway" = "Jätka ikkagi";
 "ondato_loading_title" = "Kontrollimine";
 "ondato_loading_subtitle" = "Palun oota";
@@ -61,57 +61,57 @@
 "ondato_success_subtitle" = "Kui teie registreerimine on töödeldud, teavitatakse teid sellest e-posti teel";
 "ondato_error_something_wrong_title" = "Esines viga";
 "ondato_error_something_wrong_subtitle" = "Ilmnes ootamatu viga. Palun proovi uuesti.";
-"ondato_choose_document_title" = "Valige tuvastamiseks dokument";
+"ondato_choose_document_title" = "Vali dokument ja alusta kinnitamist";
 "ondato_choose_document_passport" = "Pass";
-"ondato_choose_document_id_card" = "Isikutunnistus";
+"ondato_choose_document_id_card" = "ID-kaart";
 "ondato_choose_document_driving_licence" = "Juhiluba";
 "ondato_capture_passport_front_title" = "Jäädvustage oma passi kate";
 "ondato_capture_passport_front_suggestion" = "Kas teil on probleeme dokumendi kaane jäädvustamisega?";
 "ondato_capture_passport_front_info_title" = "Kuidas õigesti passi pildistada?";
 "ondato_capture_passport_front_info_description" = "Asetage passi märgitud raami ja klõpsake nuppu \"Tee foto\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokumendi kaas on selgelt nähtav. Foto peab olema terav, kvaliteetne";
-"ondato_capture_passport_front_upload_title" = "Palun laadige üles dokumentide kaanepilt";
+"ondato_capture_passport_front_description" = "Veenduge, et pildistatud dokumendi foto on selgelt nähtav ja et andmed on loetavad. Kui arvate, et kujutise kvaliteet on vastuvõetav, klõpsake nuppu \"Jätka\"";
 "ondato_capture_paport_front_error_title" = "";
 "ondato_capture_paport_front_error_ubtitle" = "";
 "ondato_capture_passport_back_title" = "Pildistage passi põhileht koos üksikasjadega";
 "ondato_capture_passport_back_suggestion" = "Kas teil on probleeme dokumendi põhilehe tuvastamisega?";
 "ondato_capture_passport_back_info_title" = "Kuidas õigesti jäädvustada passi leht masinskaneerimise alaga?";
 "ondato_capture_passport_back_info_description" = "Esitage passi leht koos masina skannimisalaga märgitud raamile ja klõpsake nuppu \"Tee foto\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokumendi leht on selgelt nähtav. Foto peab olema terav, kvaliteetne";
-"ondato_capture_passport_back_upload_title" = "Laadige üles oma fotot sisaldav dokumendileht";
+"ondato_capture_passport_back_description" = "Veenduge, et pildistatud dokumendi foto on selgelt nähtav ja et andmed on loetavad. Kui arvate, et kujutise kvaliteet on vastuvõetav, klõpsake nuppu \"Jätka\"";
 "ondato_capture_passport_back_error_title" = "Dokumenti ei saanud skannida";
 "ondato_capture_passport_back_error_subtitle" = "Masinaskannimise tsooni tuvastamine nurjus. Veenduge, et ala oleks hästi nähtav, ja klõpsake nuppu \"Proovi uuesti\"";
 "ondato_capture_identity_card_front_title" = "Pildistage oma ID-kaardi esikülg";
 "ondato_capture_identity_card_front_suggestion" = "Kas teil on probleeme ID-kaardi esikülje tuvastamisega?";
 "ondato_capture_identity_card_front_info_title" = "Kuidas dokumendi esikülge õigesti jäädvustada?";
 "ondato_capture_identity_card_front_info_description" = "Asetage ID-kaardi esikülg märgitud raami ja klõpsake nuppu \"Võtke\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokument on selgelt nähtav. Foto peab olema terav, kvaliteetne";
-"ondato_capture_identity_card_front_upload_title" = "Laadige üles oma ID-kaardi esikülje foto";
+"ondato_capture_identity_card_front_description" = "Veenduge, et pildistatud dokumendi foto on selgelt nähtav ja et andmed on loetavad. Kui arvate, et kujutise kvaliteet on vastuvõetav, klõpsake nuppu \"Jätka\"";
 "ondato_capture_identity_card_front_error_title" = "";
 "ondato_capture_identity_card_front_error_ubtitle" = "";
 "ondato_capture_identity_card_back_title" = "Palun pildistage ID-kaardi teine ​​külg";
 "ondato_capture_identity_card_back_suggestion" = "Kas teil on probleeme ID-kaardi hõivamisega?";
 "ondato_capture_identity_card_back_info_title" = "Kuidas masina skannimisalaga dokumendi lõpp õigesti jäädvustada?";
 "ondato_capture_identity_card_back_info_description" = "Asetage dokument elektrooniliselt loetava ribaga kaadrisse ja vajutage nuppu \"Jäädvusta\". Dokument peab olema selgelt nähtav";
-"ondato_capture_identity_card_back_upload_title" = "Palun laadige üles ID-kaardi teine ​​külg";
+"ondato_capture_identity_card_back_description" = "Veenduge, et pildistatud dokumendi foto on selgelt nähtav ja et andmed on loetavad. Kui arvate, et kujutise kvaliteet on vastuvõetav, klõpsake nuppu \"Jätka\"";
 "ondato_capture_identity_card_back_error_title" = "Dokumenti ei saanud skannida";
 "ondato_capture_identity_card_back_error_subtitle" = "Elektrooniliselt loetavat riba ei olnud võimalik kindlaks määrata. Veenduge, et ala oleks selgelt nähtav, ja klõpsake nuppu \"Proovi uuesti\"";
 "ondato_capture_driver_licence_front_title" = "Tehke oma juhiloa esiküljest pilt";
 "ondato_capture_driver_licence_front_suggestion" = "Kas teil on probleeme pilti tehapildistamisega Juhiluba?";
 "ondato_capture_driver_licence_front_info_title" = "Kuidas dokumendi esikülge õigesti jäädvustada?";
 "ondato_capture_driver_licence_front_info_description" = "Asetage juhiloa esikülg märgitud raami ja vajutage \"Take\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokument on selgelt nähtav. Foto peab olema terav, kvaliteetne";
-"ondato_capture_driver_licence_front_upload_title" = "Palun laadige üles foto juhiloa esiküljest";
+"ondato_capture_driver_licence_front_description" = "Veenduge, et pildistatud dokumendi foto on selgelt nähtav ja et andmed on loetavad. Kui arvate, et kujutise kvaliteet on vastuvõetav, klõpsake nuppu \"Jätka\"";
 "ondato_capture_driver_licence_front_error_title" = "";
 "ondato_capture_driver_licence_front_error_ubtitle" = "";
 "ondato_capture_driver_licence_back_title" = "Tehke oma juhiloa tagaküljelt pilt";
 "ondato_capture_driver_licence_back_suggestion" = "Kas teil on probleeme pilti tehapildistamisega Juhiluba?";
 "ondato_capture_driver_licence_back_info_title" = "Kuidas dokumendi tagakülge õigesti jäädvustada?";
 "ondato_capture_driver_licence_back_info_description" = "Asetage juhiloa tagakülg märgitud raami ja klõpsake nuppu \"Võtke\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokument on selgelt nähtav. Foto peab olema terav, kvaliteetne";
-"ondato_capture_driver_licence_back_upload_title" = "Palun pildistage oma juhiloa teine ​​pool";
+"ondato_capture_driver_licence_back_description" = "Veenduge, et pildistatud dokumendi foto on selgelt nähtav ja et andmed on loetavad. Kui arvate, et kujutise kvaliteet on vastuvõetav, klõpsake nuppu \"Jätka\"";
 "ondato_capture_driver_licence_back_error_title" = "Dokumenti ei saanud skannida";
 "ondato_capture_driver_licence_back_error_ubtitle" = "";
 "ondato_capture_selfie_title" = "Palun koos dokumendiga pildistage oma nägu";
 "ondato_capture_selfie_suggestion" = "Kas teil on probleeme dokumendiga näo pildistamisega?";
 "ondato_capture_selfie_info_title" = "Kuidas ennast korralikult passiga pildistada?";
 "ondato_capture_selfie_info_description" = "Hoidke dokumenti näo kõrval, et see seda ei kataks, ja vajutage nuppu \"Pildista\". Foto tuleks teha hästi valgustatud keskkonnas.";
-"ondato_capture_selfie_upload_title" = "Kontrollige jäädvustatud foto kvaliteeti";
+"ondato_capture_selfie_description" = "Veenduge, et foto oleks selge";
 "ondato_capture_elfie_error_title" = "";
 "ondato_capture_elfie_error_ubtitle" = "";
 "ondato_consent_title" = "Nõusolek isikuandmete töötlemiseks";
@@ -153,3 +153,46 @@
 "ZoomRetryReasonBadLightingFailureToAcquire_title" = "Ere valgustus";
 
 "ondato_capture_liveness" = "Pildista";
+
+"ondato_start_step_0" = "Valige dokument";
+"ondato_start_step_1" = "Tehke dokumendist foto";
+"ondato_start_step_2" = "Skannige oma nägu";
+
+"tutorial_main_mistakes" = "Peamised vead:";
+
+"tutorial_id_front_title" = "Laadige üles oma ID-kaardi esikülje foto";
+"tutorial_id_front_description" = "Asetage ID-kaardi esikülg märgitud raami ja klõpsake nuppu \"Tee foto\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokument on selgelt nähtav. Foto peab olema terav, kvaliteetne";
+
+"tutorial_id_back_title" = "Palun pildistage ID-kaardi teist külge";
+"tutorial_id_back_description" = "Asetage dokument koos elektrooniliselt loetava ribaga kaadrisse ja vajutage nuppu \"Tee foto\". Dokument peab olema selgelt nähtav";
+
+"tutorial_passport_title" = "Palun pildistage põhidokumendi lehekülge, mis sisaldab masinloetavat ala";
+"tutorial_passport_description" = "Asetage pass märgitud raami ja klõpsake nuppu \"Tee foto\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokumendi kaas on selgelt nähtav. Foto peab olema terav, kvaliteetne";
+
+"tutorial_drivers_front_title" = "Tehke oma juhiloa esiküljest pilt";
+"tutorial_drivers_front_description" = "Asetage juhiloa esikülg märgitud raami ja vajutage \"Tee foto\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokument on selgelt nähtav. Foto peab olema terav, kvaliteetne";
+
+"tutorial_drivers_back_title" = "Tehke oma juhiloa tagaküljest pilt";
+"tutorial_drivers_back_description" = "Asetage juhiloa tagakülg märgitud raami ja klõpsake nuppu \"Tee foto\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokument on selgelt nähtav. Foto peab olema terav, kvaliteetne";
+
+"ondato_capture_selfie_document_title" = "Jäädvustage ennast, hoides oma dokumenti";
+"ondato_capture_selfie_document_description" = "Hoidke dokumenti näo lähedal, kui endast fotot teete";
+
+"tutorial_selfie_title" = "Jäädvusta pilt oma näost";
+"tutorial_selfie_description" = "Sea oma nägu raami ning veendu, et see on nähtav ja ühtlaselt valgustatud";
+
+"tutorial_card_mistake_1" = "Liiga hägune";
+"tutorial_card_mistake_2" = "Liiga väike";
+"tutorial_card_mistake_3" = "Liiga tume";
+
+"tutorial_card_back_mistake_1" = "Liiga hägune";
+"tutorial_card_back_mistake_2" = "Liiga väike";
+"tutorial_card_back_mistake_3" = "Liiga tume";
+
+"tutorial_passport_mistake_1" = "Liiga hägune";
+"tutorial_passport_mistake_2" = "Liiga väike";
+"tutorial_passport_mistake_3" = "Liiga tume";
+
+"tutorial_selfie_mistake_1" = "Liiga hägune";
+"tutorial_selfie_mistake_2" = "Halb valgustus";
+"tutorial_selfie_mistake_3" = "Näoilme pole neutraalne";

@@ -12,24 +12,27 @@ import Photos
 import ReplayKit
 import Swift
 import UIKit
-@objc(OndatoError) public enum OndatoServiceError : Swift.Int, Swift.Codable, Swift.Error {
-  case cancelled
-  case invalidServerResponse
-  case invalidCredentials
-  case recorderPermissions
-  case unexpectedInternalError
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public static var _nsErrorDomain: Swift.String {
-    get
+@_hasMissingDesignatedInitializers @objc(OndatoServiceError) public class OndatoServiceError : ObjectiveC.NSObject {
+  @objc(OndatoServiceErrorType) public enum OndatoServiceErrorType : Swift.Int {
+    case cancelled
+    case invalidServerResponse
+    case invalidCredentials
+    case recorderPermissions
+    case unexpectedInternalError
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
   }
-  public var rawValue: Swift.Int {
-    get
-  }
+  final public let type: OndatoSDK.OndatoServiceError.OndatoServiceErrorType
+  final public let message: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoService) public class OndatoService : ObjectiveC.NSObject {
-  @objc public static var shared: OndatoSDK.OndatoService
-  @objc weak public var flowDelegate: OndatoSDK.OndatoFlowDelegate?
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Ondato) public class Ondato : ObjectiveC.NSObject {
+  @objc public static var sdk: OndatoSDK.Ondato
+  @objc weak public var delegate: OndatoSDK.OndatoFlowDelegate?
   @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
   @objc public var identificationId: Swift.String {
     @objc get
@@ -92,6 +95,7 @@ import UIKit
   case LT
   case LV
   case RU
+  case SQ
   public typealias RawValue = Swift.String
   public var rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue {
     get
@@ -197,8 +201,13 @@ extension UIDevice {
     get
   }
 }
+@objc(OndatoLocalizationBundle) public class OndatoLocalizationBundle : ObjectiveC.NSObject {
+  public init(bundle: Foundation.Bundle, tableName: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLocalizeHelper) public class OndatoLocalizeHelper : ObjectiveC.NSObject {
   @objc public static var language: OndatoSDK.OndatoSupportedLanguage
-  @objc public static func setLocalizationBundle(_ bundle: Foundation.Bundle, for language: OndatoSDK.OndatoSupportedLanguage)
+  @objc public static func setLocalizationBundle(_ bundle: OndatoSDK.OndatoLocalizationBundle, for language: OndatoSDK.OndatoSupportedLanguage)
   @objc deinit
 }

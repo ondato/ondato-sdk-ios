@@ -41,7 +41,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ### CocoaPods
 
 ```
-pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.7.11'
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.8.0'
 ```
 
 ### 3. Initializing and configuring the SDK 
@@ -152,12 +152,16 @@ Ondato iOS SDK already comes with out-of-the-box translations for the following 
 - Latvian (lv) 🇱🇻
 - Estonian (et) 🇪🇪
 - Russian (ru) 🇷🇺
+- Albanian (sq)
 
 ```swift
-OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .ET, .EN, .LT, .LV, .RU
+OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .ET, .EN, .LT, .LV, .RU, .SQ
 ```
 
-To override any localization strings, please pass a `.bundle` file which contains `Localizable.strings` table to `OndatoLocalizeHelper`
+To override any localization strings, please pass a `Bbundle` and a tableName within that bundle for a `.strings` file that contains the necessary translations. A example translation file with all the keys is provided next to the Framework files
 ```swift
+let bundle = Bundle.main
+/// let bundle = Bundle.main.path(forResource: "lt", ofType: "bundle")
+let localizationBundle = OndatoLocalizationBundle(bundle: budle, tableName: "Localizable")
 OndatoLocalizeHelper.setLocalizationBundle(bundle, for: .LT)
 ```
