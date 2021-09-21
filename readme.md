@@ -50,9 +50,9 @@ pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.
 
 ```swift
 // Use one of the provided initializers
-OndatoService.shared.initialize(username: "username", password: "password")
-OndatoService.shared.initialize(accessToken: "accessToken")
-OndatoService.shared.identificationId = <Identification Id>
+Ondato.sdk.initialize(username: "username", password: "password")
+Ondato.sdk.initialize(accessToken: "accessToken")
+Ondato.sdk.identificationId = <Identification Id>
 ```
 
 You can change the configuration by modifying the configuration property
@@ -115,7 +115,7 @@ class OndatoAppearance {
 An identification ID can be provided to the SDK. If one is not provided, the SDK will retrieve one by itself during the flow
 
 ```swift
-let sdk = OndatoService.shared.instantiateOndatoViewController()
+let sdk = Ondato.sdk.instantiateOndatoViewController()
 sdk.modalPresentationStyle = .fullScreen
 present(sdk, animated: true, completion: nil) 
 ```
