@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name OndatoSDK
 import AVFoundation
 import AVKit
@@ -12,6 +12,7 @@ import Photos
 import ReplayKit
 import Swift
 import UIKit
+import _Concurrency
 @_hasMissingDesignatedInitializers @objc(OndatoServiceError) public class OndatoServiceError : ObjectiveC.NSObject {
   @objc(OndatoServiceErrorType) public enum OndatoServiceErrorType : Swift.Int {
     case cancelled
@@ -26,8 +27,8 @@ import UIKit
     }
   }
   final public let type: OndatoSDK.OndatoServiceError.OndatoServiceErrorType
+  final public let error: Swift.String?
   final public let message: Swift.String?
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Ondato) public class Ondato : ObjectiveC.NSObject {
@@ -71,21 +72,18 @@ import UIKit
   @objc public var borderColor: UIKit.UIColor
   @objc public var cornerRadius: CoreGraphics.CGFloat
   public init(font: UIKit.UIFont = .systemFont(ofSize: 15), backgroundColor: UIKit.UIColor = .clear, tintColor: UIKit.UIColor = .systemBlue, borderWidth: CoreGraphics.CGFloat = 0, borderColor: UIKit.UIColor = .clear, cornerRadius: CoreGraphics.CGFloat = 0)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(OndatoLabelAppearance) public class OndatoLabelAppearance : ObjectiveC.NSObject {
   @objc public var font: UIKit.UIFont
   @objc public var color: UIKit.UIColor
   public init(font: UIKit.UIFont = .systemFont(ofSize: 15, weight: .semibold), color: UIKit.UIColor = .black)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(OndatoTextViewAppearance) public class OndatoTextViewAppearance : ObjectiveC.NSObject {
   @objc public var font: UIKit.UIFont
   @objc public var textColor: UIKit.UIColor
   public init(font: UIKit.UIFont = .systemFont(ofSize: 15), textColor: UIKit.UIColor = .black)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(OndatoSupportedLanguage) public enum OndatoSupportedLanguage : Swift.Int, Swift.RawRepresentable {
@@ -105,17 +103,15 @@ import UIKit
   }
   public init?(rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue)
 }
-extension OndatoSupportedLanguage : Swift.CaseIterable {
+extension OndatoSDK.OndatoSupportedLanguage : Swift.CaseIterable {
   public typealias AllCases = [OndatoSDK.OndatoSupportedLanguage]
   public static var allCases: [OndatoSDK.OndatoSupportedLanguage] {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc public class OndatoMainViewController : UIKit.UINavigationController {
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @available(iOS 5.0, *)
-  @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class OndatoMainViewController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
@@ -135,8 +131,8 @@ extension OndatoSupportedLanguage : Swift.CaseIterable {
     get
   }
 }
-extension UIDevice {
-  public static var modelName: Swift.String
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static var modelName: Swift.String
 }
 @objc(OndatoFlowDelegate) public protocol OndatoFlowDelegate {
   @objc optional func viewControllerForStart(startPressed: @escaping () -> Swift.Void) -> UIKit.UIViewController
@@ -203,7 +199,6 @@ extension UIDevice {
 }
 @objc(OndatoLocalizationBundle) public class OndatoLocalizationBundle : ObjectiveC.NSObject {
   public init(bundle: Foundation.Bundle, tableName: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLocalizeHelper) public class OndatoLocalizeHelper : ObjectiveC.NSObject {

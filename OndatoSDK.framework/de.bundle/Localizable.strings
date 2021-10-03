@@ -82,7 +82,7 @@
 "ondato_capture_passport_front_suggestion" = "Gibt es Probleme beim fotografieren des Reisepass-Covers?";
 "ondato_capture_passport_front_info_title" = "Wie erfasst man das Dokument korrekt?";
 "ondato_capture_passport_front_info_description" = "Wir bitten dich, das Deckblatt deines Passes in den markierten Bereich zu legen und \"Foto machen\" zu drücken. Dein Passcover sollte deutlich sichtbar sein, in einer gut beleuchteten Umgebung aufgenommen werden, nicht verschwommen oder pixelig sein.";
-"ondato_capture_passport_front_description" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
+"ondato_capture_passport_front_upload_title" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
 "ondato_capture_passport_front_error_title" = "";
 "ondato_capture_passport_front_error_subtitle" = "";
 
@@ -90,7 +90,7 @@
 "ondato_capture_passport_back_suggestion" = "Haben Sie Probleme beim Erfassen der Hauptdokumentseite?";
 "ondato_capture_passport_back_info_title" = "Wie erfasst man Dokumentseiten mit MRZ-Zone korrekt?";
 "ondato_capture_passport_back_info_description" = "Wir bitten dich, die Seite deines Reisepasses mit der MRZ-Zone (wie auf dem Bild gezeigt) in den markierten Bereich zu legen und \"Foto machen\" zu drücken. Diese Passseite sollte deutlich sichtbar sein, in einer gut beleuchteten Umgebung aufgenommen werden, nicht verschwommen oder pixelig sein.";
-"ondato_capture_passport_back_description" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
+"ondato_capture_passport_back_upload_title" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
 "ondato_capture_passport_back_error_title" = "Das Dokument konnte nicht erfasst werden";
 "ondato_capture_passport_back_error_subtitle" = "Die Erkennung der maschinenlesbaren Zone ist fehlgeschlagen. Bitte stellen ein Foto der Rückseite deines usweises zur Verfügung. Das Dokument sollte deutlich sichtbar sein, in einer gut beleuchteten Umgebung aufgenommen werden und nicht verschwommen oder pixelig sein. Bitte vergewissere dich, dass die MRZ-Zone deines Dokuments deutlich lesbar ist und drücke auf \"Erneut versuchen\".";
 
@@ -98,7 +98,7 @@
 "ondato_capture_identity_card_front_suggestion" = "Hast du Probleme bei der Erfassung des Personalausweises?";
 "ondato_capture_identity_card_front_info_title" = "Wie erfasst man die Vorderseite des Ausweises richtig?";
 "ondato_capture_identity_card_front_info_description" = "Wir bitten dich die Vorderseite deines Ausweises in den markierten Bereich zu legen und \"Foto machen\" zu drücken. Dein Dokument sollte deutlich sichtbar sein, in einer gut beleuchteten Umgebung aufgenommen werden, nicht verschwommen oder pixelig sein.";
-"ondato_capture_identity_card_front_description" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
+"ondato_capture_identity_card_front_upload_title" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
 "ondato_capture_identity_card_front_error_title" = "";
 "ondato_capture_identity_card_front_error_subtitle" = "";
 
@@ -106,7 +106,7 @@
 "ondato_capture_identity_card_back_suggestion" = "Hast du Probleme bei der Erfassung des Personalausweises?";
 "ondato_capture_identity_card_back_info_title" = "Wie wird die Rückseite des Ausweises korrekt erfasst?";
 "ondato_capture_identity_card_back_info_description" = "Wir bitten dich die Rückseite des Ausweises mit der MRZ-Zone (wie auf dem Bild gezeigt) in den markierten Bereich zu legen und \"Foto machen\" zu drücken. Dein Dokument sollte deutlich sichtbar sein, in einer gut beleuchteten Umgebung aufgenommen werden, nicht verschwommen oder pixelig sein.";
-"ondato_capture_identity_card_back_description" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
+"ondato_capture_identity_card_back_upload_title" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
 "ondato_capture_identity_card_back_error_title" = "Das Dokument konnte nicht erfasst werden";
 "ondato_capture_identity_card_back_error_subtitle" = "Die Erkennung der maschinenlesbaren Zone ist fehlgeschlagen. Bitte stellen ein Foto der Rückseite deines usweises zur Verfügung. Das Dokument sollte deutlich sichtbar sein, in einer gut beleuchteten Umgebung aufgenommen werden und nicht verschwommen oder pixelig sein. Bitte vergewissere dich, dass die MRZ-Zone deines Dokuments deutlich lesbar ist und drücke auf \"Erneut versuchen\".";
 
@@ -114,7 +114,7 @@
 "ondato_capture_driver_licence_front_suggestion" = "Hast du Probleme beim erfassen des Führerscheins?";
 "ondato_capture_driver_licence_front_info_title" = "Wie erfasst man die Vorderseite des Führerscheins richtig?";
 "ondato_capture_driver_licence_front_info_description" = "Wir bitten dich, die Vorderseite des Führerscheins in den markierten Bereich zu legen und \"Foto machen\" zu drücken. Das Foto des Führerscheins sollte deutlich sichtbar sein, nicht verschwommen oder verpixelt.";
-"ondato_capture_driver_licence_front_description" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
+"ondato_capture_driver_licence_front_upload_title" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
 "ondato_capture_driver_licence_front_error_title" = "";
 "ondato_capture_driver_licence_front_error_subtitle" = "";
 
@@ -122,7 +122,7 @@
 "ondato_capture_driver_licence_back_suggestion" = "Hast du Probleme beim erfassen des Führerscheins?";
 "ondato_capture_driver_licence_back_info_title" = "Wie erfasst man die Rückseite des Führerscheins richtig?";
 "ondato_capture_driver_licence_back_info_description" = "Wir bitten dich die Rückseite des Führerscheins in den markierten Bereich zu legen und \"Foto machen\" zu drücken. Der Führerschein sollte deutlich sichtbar sein. Nicht verschwommen oder verpixelt.";
-"ondato_capture_driver_licence_back_description" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
+"ondato_capture_driver_licence_back_upload_title" = "Vergewissern Sie sich, dass das Foto auf dem erfassten Dokument deutlich sichtbar ist und die Daten lesbar sind. Wenn Sie der Meinung sind, dass die Bildqualität akzeptabel ist, klicken Sie bitte auf die Schaltfläche \"Weiter\"";
 "ondato_capture_driver_licence_back_error_title" = "Das Dokument konnte nicht erfasst werden";
 "ondato_capture_driver_licence_back_error_subtitle" = "";
 
@@ -130,7 +130,7 @@
 "ondato_capture_selfie_suggestion" = "Haben Sie Probleme beim Fotografieren eines Gesichts mit einem Dokument?";
 "ondato_capture_selfie_info_title" = "Wie fotografiere ich mich richtig mit einem Reisepass?";
 "ondato_capture_selfie_info_description" = "Halten Sie das Dokument so neben Ihr Gesicht, dass es es nicht bedeckt, und klicken Sie auf die Schaltfläche \"Foto aufnehmen\". Das Foto sollte in einer gut beleuchteten Umgebung aufgenommen werden.";
-"ondato_capture_selfie_description" = "Bitte überprüfen Sie das erfasste Bild";
+"ondato_capture_selfie_upload_title" = "Bitte überprüfen Sie das erfasste Bild";
 "ondato_capture_selfie_error_title" = "";
 "ondato_capture_selfie_error_subtitle" = "";
 
@@ -199,8 +199,8 @@
 "tutorial_drivers_back_title" = "Bitte erfassen Sie die Rückseite des Führerscheins";
 "tutorial_drivers_back_description" = "Bitte zeigen Sie die Rückseite des Führerscheins in den markierten Bereich und drücken Sie die Taste \"Aufnehmen\". Der Führerschein sollte deutlich sichtbar sein, nicht verschwommen oder verpixelt";
 
-"ondato_capture_selfie_document_title" = "Machen Sie ein Bild von sich selbst mit Ihrem Ausweis in der Hand";
-"ondato_capture_selfie_document_description" = "Halten Sie den Ausweis in der Nähe Ihres Gesichts, während Sie ein Selfie machen";
+"tutorial_selfie_document_title" = "Machen Sie ein Bild von sich selbst mit Ihrem Ausweis in der Hand";
+"tutorial_selfie_document_description" = "Halten Sie den Ausweis in der Nähe Ihres Gesichts, während Sie ein Selfie machen";
 
 "tutorial_selfie_title" = "Bitte Gesicht erfassen";
 "tutorial_selfie_description" = "Zentrieren Sie Ihr Gesicht im Rahmen und stellen Sie sicher, dass Ihr Gesicht sichtbar und gleichmäßig beleuchtet ist";
