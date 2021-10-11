@@ -307,6 +307,7 @@ SWIFT_PROTOCOL_NAMED("OndatoFlowDelegate")
 @optional
 - (UIViewController * _Nonnull)viewControllerForStartWithStartPressed:(void (^ _Nonnull)(void))startPressed SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)viewForLoadingWithProgress:(float)progress SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)viewForFinalLoadingWithProgress:(float)progress SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nonnull)viewForSuccessWithContinue:(void (^ _Nonnull)(void))continue_ SWIFT_WARN_UNUSED_RESULT;
 @required
 - (void)flowDidSucceedWithIdentificationId:(NSString * _Nullable)identificationId;

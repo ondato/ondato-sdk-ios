@@ -137,6 +137,7 @@ extension UIKit.UIDevice {
 @objc(OndatoFlowDelegate) public protocol OndatoFlowDelegate {
   @objc optional func viewControllerForStart(startPressed: @escaping () -> Swift.Void) -> UIKit.UIViewController
   @objc optional func viewForLoading(progress: Swift.Float) -> UIKit.UIView?
+  @objc optional func viewForFinalLoading(progress: Swift.Float) -> UIKit.UIView?
   @objc optional func viewForSuccess(continue: @escaping () -> Swift.Void) -> UIKit.UIView
   @objc func flowDidSucceed(identificationId: Swift.String?)
   @objc func flowDidFail(identificationId: Swift.String?, error: OndatoSDK.OndatoServiceError)
