@@ -57,7 +57,7 @@ Ondato.sdk.identificationId = <Identification Id>
 
 You can change the configuration by modifying the configuration property
 ```swift
-var configuration: OndatoServiceConfiguration = OndatoService.shared.configuration
+var configuration: OndatoServiceConfiguration = Ondato.sdk.configuration
 ```
 
 The configuration option has 3 properties
@@ -125,12 +125,12 @@ present(sdk, animated: true, completion: nil)
 To handle result your view controller should implement `OndatoFlowDelegate` methods `onSuccess` and `onFailure` which contains `OndatoError` {`CANCELED`, `BAD_SERVER_RESPONSE`}:
 
 ```swift
-OndatoService.shared.flowDelegate = T: OndatoFlowDelegate
+Ondato.sdk.flowDelegate = T: OndatoFlowDelegate
 
-func onSuccess(identificationId: String?) { // provided identificationId
+func flowDidSucceed(identificationId: String?) { // provided identificationId
     
 }
-func onFailure(identificationId: String?, error: OndatoError) { // provided identificationId
+func flowDidFail(identificationId: String?, error: OndatoServiceError) { // provided identificationId
     
 }
 ```
