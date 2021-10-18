@@ -41,7 +41,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ### CocoaPods
 
 ```
-pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.8.5'
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.8.6'
 ```
 
 ### 3. Initializing and configuring the SDK 
@@ -163,5 +163,6 @@ To override any localization strings, please pass a `Bbundle` and a tableName wi
 let bundle = Bundle.main
 /// let bundle = Bundle.main.path(forResource: "lt", ofType: "bundle")
 let localizationBundle = OndatoLocalizationBundle(bundle: budle, tableName: "Localizable")
+/// let localizationBundle = OndatoLocalizationBundle.bundle(with: bundle, tableName: "Localizable")
 OndatoLocalizeHelper.setLocalizationBundle(bundle, for: .LT)
 ```

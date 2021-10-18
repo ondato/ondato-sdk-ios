@@ -332,6 +332,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoLivenessMode, "OndatoLivenessMode", op
 
 SWIFT_CLASS_NAMED("OndatoLocalizationBundle")
 @interface OndatoLocalizationBundle : NSObject
++ (OndatoLocalizationBundle * _Nonnull)bundleWith:(NSBundle * _Nonnull)bundle tableName:(NSString * _Nonnull)tableName SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithBundle:(NSBundle * _Nonnull)bundle tableName:(NSString * _Nonnull)tableName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

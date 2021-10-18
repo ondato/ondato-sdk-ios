@@ -32,6 +32,7 @@ import _Concurrency
   @objc deinit
 }
 @objc(OndatoLocalizationBundle) public class OndatoLocalizationBundle : ObjectiveC.NSObject {
+  @objc public static func bundle(with bundle: Foundation.Bundle, tableName: Swift.String) -> OndatoSDK.OndatoLocalizationBundle
   @objc public init(bundle: Foundation.Bundle, tableName: Swift.String)
   @objc deinit
 }
