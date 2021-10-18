@@ -144,6 +144,9 @@
 "ZoomRetryReasonBadLightingFailureToAcquire_title" = "Bright lighting surrounding";
 "ZoomRetryReasonBadLightingFailureToAcquire_subtitle" = "Please be informed that during your identification harsh lighting surrounding was detected around your face. We kindly ask to make sure that your surrounding is not too bright";
 
+"tutorial_selfie_title" = "Capture yourself while holding your document";
+"tutorial_selfie_description" = "Hold the document near your face while taking a selfie.";
+
 "ondato_capture_liveness" = "Capture";
 
 "ondato_start_step_0" = "Choose a document";

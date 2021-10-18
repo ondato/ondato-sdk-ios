@@ -31,6 +31,10 @@ import _Concurrency
   final public let message: Swift.String?
   @objc deinit
 }
+@objc(OndatoLocalizationBundle) public class OndatoLocalizationBundle : ObjectiveC.NSObject {
+  @objc public init(bundle: Foundation.Bundle, tableName: Swift.String)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Ondato) public class Ondato : ObjectiveC.NSObject {
   @objc public static var sdk: OndatoSDK.Ondato
   @objc weak public var delegate: OndatoSDK.OndatoFlowDelegate?
@@ -197,10 +201,6 @@ extension UIKit.UIDevice {
   public var rawValue: Swift.Int {
     get
   }
-}
-@objc(OndatoLocalizationBundle) public class OndatoLocalizationBundle : ObjectiveC.NSObject {
-  public init(bundle: Foundation.Bundle, tableName: Swift.String)
-  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLocalizeHelper) public class OndatoLocalizeHelper : ObjectiveC.NSObject {
   @objc public static var language: OndatoSDK.OndatoSupportedLanguage

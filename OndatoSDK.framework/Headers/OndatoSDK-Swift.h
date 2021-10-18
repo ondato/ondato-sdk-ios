@@ -328,9 +328,11 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoLivenessMode, "OndatoLivenessMode", op
   OndatoLivenessModePassive = 1,
 };
 
+@class NSBundle;
 
 SWIFT_CLASS_NAMED("OndatoLocalizationBundle")
 @interface OndatoLocalizationBundle : NSObject
+- (nonnull instancetype)initWithBundle:(NSBundle * _Nonnull)bundle tableName:(NSString * _Nonnull)tableName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -354,7 +356,6 @@ SWIFT_CLASS("_TtC9OndatoSDK9OndatoLog")
 @end
 
 @class NSCoder;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC9OndatoSDK24OndatoMainViewController")
 @interface OndatoMainViewController : UINavigationController
