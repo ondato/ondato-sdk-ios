@@ -288,7 +288,7 @@ SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 @property (nonatomic) BOOL showSplashScreen;
 @property (nonatomic) BOOL showStartScreen;
 @property (nonatomic) BOOL showConsentScreen;
-@property (nonatomic) BOOL showSelfieAndDocumentScreen;
+@property (nonatomic) BOOL showSelfieWithDocumentScreen;
 @property (nonatomic) BOOL showSuccessWindow;
 @property (nonatomic) enum OndatoLivenessMode livenessCheck;
 @property (nonatomic) BOOL driversLicenceBacksideRequired;
@@ -428,6 +428,7 @@ SWIFT_CLASS_NAMED("OndatoTextViewAppearance")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 

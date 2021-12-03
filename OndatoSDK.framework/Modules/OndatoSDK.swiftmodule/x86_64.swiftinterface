@@ -168,7 +168,7 @@ extension UIKit.UIDevice {
   @objc public var showSplashScreen: Swift.Bool
   @objc public var showStartScreen: Swift.Bool
   @objc public var showConsentScreen: Swift.Bool
-  @objc public var showSelfieAndDocumentScreen: Swift.Bool
+  @objc public var showSelfieWithDocumentScreen: Swift.Bool
   @objc public var showSuccessWindow: Swift.Bool
   @objc public var livenessCheck: OndatoSDK.OndatoLivenessMode
   @objc public var driversLicenceBacksideRequired: Swift.Bool

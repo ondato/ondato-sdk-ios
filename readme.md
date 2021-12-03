@@ -41,7 +41,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ### CocoaPods
 
 ```
-pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.8.9'
+pod 'OndatoSDKiOS', :git => "git@github.com:ondato/ondato-sdk-ios.git", tag: '1.8.10'
 ```
 
 ### 3. Initializing and configuring the SDK 
