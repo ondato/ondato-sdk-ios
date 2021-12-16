@@ -83,7 +83,7 @@ class OndatoFlowConfiguration {
     var showSplashScreen: Bool // Should the splash screen be shown
     var showStartScreen: Bool // Should the start screen be shown
     var showConsentScreen: Bool // Should the consent screen be shown
-    var showSelfieAndDocumentScreen // Should a selfie with document be requested when taking document pictures
+    var showSelfieWithDocumentScreen // Should a selfie with document be requested when taking document pictures
     var showSuccessWindow: Bool // Should the success window be shown
     var recordProcess: Bool // Should the verification process be recorded
     var livenessCheck: OndatoLivenessMode // [.active, .passive] Should active or passive liveness check mode be used
