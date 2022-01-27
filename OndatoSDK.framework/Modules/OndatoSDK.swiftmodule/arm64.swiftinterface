@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name OndatoSDK
 import AVFoundation
 import AVKit
 import CoreGraphics
 import FaceTecSDK
 import Foundation
+import ImageIO
 import MobileCoreServices
 @_exported import OndatoSDK
 import Photos
@@ -20,6 +21,7 @@ import _Concurrency
     case invalidCredentials
     case recorderPermissions
     case unexpectedInternalError
+    case verificationFailed
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
@@ -139,10 +141,14 @@ extension OndatoSDK.OndatoSupportedLanguage : Swift.CaseIterable {
 extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) public static var modelName: Swift.String
 }
+extension UIKit.UIImage {
+  public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?
+  public class func gifImageWithURL(_ gifUrl: Swift.String) -> UIKit.UIImage?
+  public class func gifImageWithName(_ name: Swift.String) -> UIKit.UIImage?
+}
 @objc(OndatoFlowDelegate) public protocol OndatoFlowDelegate {
   @objc optional func viewControllerForStart(startPressed: @escaping () -> Swift.Void) -> UIKit.UIViewController
   @objc optional func viewForLoading(progress: Swift.Float) -> UIKit.UIView?
-  @objc optional func viewForFinalLoading(progress: Swift.Float) -> UIKit.UIView?
   @objc optional func viewForSuccess(continue: @escaping () -> Swift.Void) -> UIKit.UIView
   @objc func flowDidSucceed(identificationId: Swift.String?)
   @objc func flowDidFail(identificationId: Swift.String?, error: OndatoSDK.OndatoServiceError)
@@ -173,17 +179,8 @@ extension UIKit.UIDevice {
   @objc public var livenessCheck: OndatoSDK.OndatoLivenessMode
   @objc public var driversLicenceBacksideRequired: Swift.Bool
   @objc public var removeSelfieFrame: Swift.Bool
-  @available(*, deprecated, message: "Currently disabled")
-  @objc public var ignoreLivenessErrors: Swift.Bool {
-    @objc get
-    @objc set(newValue)
-  }
-  @available(*, deprecated, message: "Currently disabled")
-  @objc public var ignoreVerificationErrors: Swift.Bool {
-    @objc get
-    @objc set(newValue)
-  }
   @objc public var recordProcess: Swift.Bool
+  @objc public var waitForResult: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
