@@ -1,15 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name OndatoSDK
 import AVFoundation
 import AVKit
 import CoreGraphics
+import CoreNFC
 import FaceTecSDK
 import Foundation
 import ImageIO
+import Lottie
 import MobileCoreServices
+import NFCPassportReader
 @_exported import OndatoSDK
 import Photos
+import QKMRZScanner
 import ReplayKit
 import Swift
 import UIKit
@@ -17,6 +21,7 @@ import _Concurrency
 @_hasMissingDesignatedInitializers @objc(OndatoServiceError) public class OndatoServiceError : ObjectiveC.NSObject {
   @objc(OndatoServiceErrorType) public enum OndatoServiceErrorType : Swift.Int {
     case cancelled
+    case consentDenied
     case invalidServerResponse
     case invalidCredentials
     case recorderPermissions
@@ -42,13 +47,10 @@ import _Concurrency
   @objc public static var sdk: OndatoSDK.Ondato
   @objc weak public var delegate: OndatoSDK.OndatoFlowDelegate?
   @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
-  @objc public var identificationId: Swift.String {
-    @objc get
-    @objc set(value)
-  }
-  @objc public func initialize(username: Swift.String, password: Swift.String)
-  @objc public func initialize(accessToken: Swift.String)
-  @objc public func instantiateOndatoViewController() -> OndatoSDK.OndatoMainViewController
+  @objc public var identificationId: Swift.String
+  @objc public func setCredentials(username: Swift.String, password: Swift.String)
+  @objc public func setCredentials(accessToken: Swift.String)
+  @objc public func instantiateOndatoViewController() -> OndatoSDK.OndatoViewController
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OndatoAppearance) public class OndatoAppearance : ObjectiveC.NSObject {
@@ -116,17 +118,17 @@ extension OndatoSDK.OndatoSupportedLanguage : Swift.CaseIterable {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class OndatoMainViewController : UIKit.UINavigationController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
   public static var shared: OndatoSDK.OndatoLog
   public var logs: [Swift.String] {
     get
   }
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class OndatoViewController : UIKit.UIPageViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(transitionStyle style: UIKit.UIPageViewController.TransitionStyle, navigationOrientation: UIKit.UIPageViewController.NavigationOrientation, options: [UIKit.UIPageViewController.OptionsKey : Any]? = nil)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc(OndatoServerMode) public enum OndatoEnvironment : Swift.Int {
@@ -162,6 +164,16 @@ extension UIKit.UIImage {
     get
   }
 }
+@objc(OndatoNFCFlowMode) public enum OndatoNFCFlowMode : Swift.Int {
+  case notRequired
+  case required
+  case optional
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc(OndatoServiceConfiguration) public class OndatoServiceConfiguration : ObjectiveC.NSObject {
   @objc public var appearance: OndatoSDK.OndatoAppearance
   @objc public var flowConfiguration: OndatoSDK.OndatoFlowConfiguration
@@ -177,6 +189,7 @@ extension UIKit.UIImage {
   @objc public var showSelfieWithDocumentScreen: Swift.Bool
   @objc public var showSuccessWindow: Swift.Bool
   @objc public var livenessCheck: OndatoSDK.OndatoLivenessMode
+  @objc public var nfcFlow: OndatoSDK.OndatoNFCFlowMode
   @objc public var driversLicenceBacksideRequired: Swift.Bool
   @objc public var removeSelfieFrame: Swift.Bool
   @objc public var recordProcess: Swift.Bool
