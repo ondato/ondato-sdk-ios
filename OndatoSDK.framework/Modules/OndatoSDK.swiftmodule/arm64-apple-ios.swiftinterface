@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name OndatoSDK
 import AVFoundation
 import AVKit
@@ -27,6 +27,7 @@ import _Concurrency
     case recorderPermissions
     case unexpectedInternalError
     case verificationFailed
+    case nfcNotSupported
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
@@ -44,7 +45,7 @@ import _Concurrency
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Ondato) public class Ondato : ObjectiveC.NSObject {
-  @objc public static var sdk: OndatoSDK.Ondato
+  @objc public static let sdk: OndatoSDK.Ondato
   @objc weak public var delegate: OndatoSDK.OndatoFlowDelegate?
   @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
   @objc public var identificationId: Swift.String
@@ -119,7 +120,7 @@ extension OndatoSDK.OndatoSupportedLanguage : Swift.CaseIterable {
   }
 }
 @objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
-  public static var shared: OndatoSDK.OndatoLog
+  public static let shared: OndatoSDK.OndatoLog
   public var logs: [Swift.String] {
     get
   }
@@ -141,7 +142,7 @@ extension OndatoSDK.OndatoSupportedLanguage : Swift.CaseIterable {
   }
 }
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static var modelName: Swift.String
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }
 extension UIKit.UIImage {
   public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?
@@ -218,3 +219,20 @@ extension UIKit.UIImage {
   @objc public static func setLocalizationBundle(_ bundle: OndatoSDK.OndatoLocalizationBundle, for language: OndatoSDK.OndatoSupportedLanguage)
   @objc deinit
 }
+extension OndatoSDK.OndatoServiceError.OndatoServiceErrorType : Swift.Equatable {}
+extension OndatoSDK.OndatoServiceError.OndatoServiceErrorType : Swift.Hashable {}
+extension OndatoSDK.OndatoServiceError.OndatoServiceErrorType : Swift.RawRepresentable {}
+extension OndatoSDK.OndatoSupportedLanguage : Swift.Equatable {}
+extension OndatoSDK.OndatoSupportedLanguage : Swift.Hashable {}
+extension OndatoSDK.OndatoEnvironment : Swift.Equatable {}
+extension OndatoSDK.OndatoEnvironment : Swift.Hashable {}
+extension OndatoSDK.OndatoEnvironment : Swift.RawRepresentable {}
+extension OndatoSDK.OndatoLivenessMode : Swift.Equatable {}
+extension OndatoSDK.OndatoLivenessMode : Swift.Hashable {}
+extension OndatoSDK.OndatoLivenessMode : Swift.RawRepresentable {}
+extension OndatoSDK.OndatoNFCFlowMode : Swift.Equatable {}
+extension OndatoSDK.OndatoNFCFlowMode : Swift.Hashable {}
+extension OndatoSDK.OndatoNFCFlowMode : Swift.RawRepresentable {}
+extension OndatoSDK.OndatoDocumentType : Swift.Equatable {}
+extension OndatoSDK.OndatoDocumentType : Swift.Hashable {}
+extension OndatoSDK.OndatoDocumentType : Swift.RawRepresentable {}
