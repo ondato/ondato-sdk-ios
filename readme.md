@@ -50,8 +50,8 @@ pod 'OndatoSDK'
 
 ```swift
 // Use one of the provided initializers
-Ondato.sdk.initialize(username: "username", password: "password")
-Ondato.sdk.initialize(accessToken: "accessToken")
+Ondato.sdk.setCredentials(username: "username", password: "password")
+Ondato.sdk.setCredentials(accessToken: "accessToken")
 Ondato.sdk.identificationId = <Identification Id>
 ```
 
