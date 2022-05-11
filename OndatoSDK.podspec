@@ -8,6 +8,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://github.com/ondato/ondato-sdk-ios'
   spec.authors      = { 'Ondato' => 'info@ondato.com' }
   spec.source       = { :git => 'git@github.com:ondato/ondato-sdk-ios.git', :tag => spec.version }
+  spec.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   spec.ios.vendored_frameworks  = 'OndatoSDK.framework', 'FaceTecSDK.framework'
   spec.dependency "QKMRZScanner"
   spec.dependency "lottie-ios"
