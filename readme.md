@@ -25,9 +25,7 @@ We recommend you to lock your app to a portrait orientation.
 
 ## Getting started
 
-- SDK supports iOS 11.0
-- SDK supports Swift 5
-- SDK Xcode Version 12.1
+- SDK supports iOS 12.0
 
 ### 1. App permissions
 
@@ -43,6 +41,10 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 ```
 pod 'OndatoSDK'
 ```
+
+Please manually set the BUILD_LIBRARY_FOR_DISTRIBUTION flag on your root Pods project to YES.
+
+![pod_configuration](https://user-images.githubusercontent.com/74909145/167927133-ed36fa16-3577-44ae-ad20-72cf75af1211.png)
 
 ### 3. Initializing and configuring the SDK 
 
