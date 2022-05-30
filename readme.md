@@ -42,9 +42,19 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 pod 'OndatoSDK'
 ```
 
-Please manually set the BUILD_LIBRARY_FOR_DISTRIBUTION flag on your root Pods project to YES.
+Please add this post install step to your podfile
 
-![pod_configuration](https://user-images.githubusercontent.com/74909145/167927133-ed36fa16-3577-44ae-ad20-72cf75af1211.png)
+```
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if ["SwiftyTesseract"].include? target.name
+        config.build_settings["BUILD_LIBRARY_FOR_DISTRIBUTION"] = 'YES'
+      end
+    end
+  end
+end
+```
 
 ### 3. Initializing and configuring the SDK 
 

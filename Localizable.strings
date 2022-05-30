@@ -261,3 +261,19 @@
 "ondato_success_button_title" = "Continue";
 "ondato_success_title_nfc_not_supported" = "Looks like you can’t continue without NFC.";
 "ondato_success_subtitle_nfc_not_supported" = "To continue you need to make sure that the document has NFC and it’s been enabled in your device or try another method.";
+
+"ondato_error_title_identification" = "Your identification is rejected.";
+"ondato_error_subtitle_identification" = "We kindly ask you to contact service provider for more information.";
+"ondato_error_button_title" = "Close";
+
+// NFC scanner
+"ondato_nfc_scan_prompt_request_present" = "Please hold the document to the back of your phone.";
+"ondato_nfc_scan_prompt_authenticating" = "Authenticating with document.....";
+"ondato_nfc_scan_prompt_reading_data" = "Reading";
+"ondato_nfc_scan_prompt_successful_read" = "Information capturing was successful.";
+"ondato_nfc_scan_prompt_error_tag_not_valid" = "Tag not valid.";
+"ondato_nfc_scan_prompt_error_more_than_one_tag_found" = "Looks like the process was interrupted.";
+"ondato_nfc_scan_prompt_error_connection" = "Looks like the process was interrupted.";
+"ondato_nfc_scan_prompt_error_invalid_mrz_key" = "MRZ Key not valid for this document.";
+"ondato_nfc_scan_prompt_error_response" = "Looks like the process was interrupted.";
+"ondato_nfc_scan_prompt_error_generic" = "Looks like the process was interrupted.";
