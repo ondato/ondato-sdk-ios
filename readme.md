@@ -25,7 +25,7 @@ We recommend you to lock your app to a portrait orientation.
 
 ## Getting started
 
-- SDK supports iOS 12.0
+- SDK supports iOS 12.0 and up
 
 ### 1. App permissions
 
@@ -40,20 +40,6 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 
 ```
 pod 'OndatoSDK'
-```
-
-Please add this post install step to your podfile
-
-```
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      if ["SwiftyTesseract"].include? target.name
-        config.build_settings["BUILD_LIBRARY_FOR_DISTRIBUTION"] = 'YES'
-      end
-    end
-  end
-end
 ```
 
 ### 3. Initializing and configuring the SDK 
@@ -167,9 +153,10 @@ Ondato iOS SDK already comes with out-of-the-box translations for the following 
 - Estonian (et) 🇪🇪
 - Russian (ru) 🇷🇺
 - Albanian (sq)
+- Bulgarian (bg)
 
 ```swift
-OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .ET, .EN, .LT, .LV, .RU, .SQ
+OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .ET, .EN, .LT, .LV, .RU, .SQ, .BG
 ```
 
 To override any localization strings, please pass a `Bbundle` and a tableName within that bundle for a `.strings` file that contains the necessary translations. A example translation file with all the keys is provided next to the Framework files
