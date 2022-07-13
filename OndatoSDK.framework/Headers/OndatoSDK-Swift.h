@@ -559,14 +559,20 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoServiceErrorType, "OndatoServiceErrorT
 };
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoSupportedLanguage, "OndatoSupportedLanguage", open) {
-  OndatoSupportedLanguageDE = 0,
-  OndatoSupportedLanguageEN = 1,
-  OndatoSupportedLanguageET = 2,
-  OndatoSupportedLanguageLT = 3,
-  OndatoSupportedLanguageLV = 4,
-  OndatoSupportedLanguageRU = 5,
-  OndatoSupportedLanguageSQ = 6,
-  OndatoSupportedLanguageBG = 7,
+  OndatoSupportedLanguageBG = 0,
+  OndatoSupportedLanguageDE = 1,
+  OndatoSupportedLanguageEN = 2,
+  OndatoSupportedLanguageES = 3,
+  OndatoSupportedLanguageET = 4,
+  OndatoSupportedLanguageFR = 5,
+  OndatoSupportedLanguageEL = 6,
+  OndatoSupportedLanguageIT = 7,
+  OndatoSupportedLanguageLT = 8,
+  OndatoSupportedLanguageLV = 9,
+  OndatoSupportedLanguageNL = 10,
+  OndatoSupportedLanguageRO = 11,
+  OndatoSupportedLanguageRU = 12,
+  OndatoSupportedLanguageSQ = 13,
 };
 
 

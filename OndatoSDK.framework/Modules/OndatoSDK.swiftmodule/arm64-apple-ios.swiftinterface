@@ -900,14 +900,20 @@ public class CardAccess {
   @objc deinit
 }
 @objc(OndatoSupportedLanguage) public enum OndatoSupportedLanguage : Swift.Int, Swift.RawRepresentable {
+  case BG
   case DE
   case EN
+  case ES
   case ET
+  case FR
+  case EL
+  case IT
   case LT
   case LV
+  case NL
+  case RO
   case RU
   case SQ
-  case BG
   public typealias RawValue = Swift.String
   public var rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue {
     get
