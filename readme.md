@@ -146,20 +146,26 @@ optional func viewForLoading(progress: Float) -> UIView
 ### 4. Localization
 
 Ondato iOS SDK already comes with out-of-the-box translations for the following locales:
-- English (en) 🇬🇧
-- Lithuanian (lt) 🇱🇹
+- Bulgarian (bg) 🇧🇬
 - German (de) 🇩🇪
-- Latvian (lv) 🇱🇻
+- Greek (el) 🇬🇷
+- English (en) 🇬🇧
+- Spanish (es) 🇪🇸
 - Estonian (et) 🇪🇪
+- French (fr) 🇫🇷
+- Italian (it) 🇮🇹
+- Lithuanian (lt) 🇱🇹
+- Latvian (lv) 🇱🇻
+- Dutch (nl) 🇳🇱
+- Romanian (ro)
 - Russian (ru) 🇷🇺
-- Albanian (sq)
-- Bulgarian (bg)
+- Albanian (sq) 🇦🇱
 
 ```swift
-OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .ET, .EN, .LT, .LV, .RU, .SQ, .BG
+OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .ET, .EN, .LT, .LV, .RU, .SQ, .BG, .ES, .FR, .EL, .IT, .NL, .RO
 ```
 
-To override any localization strings, please pass a `Bbundle` and a tableName within that bundle for a `.strings` file that contains the necessary translations. A example translation file with all the keys is provided next to the Framework files
+To override any localization strings, please pass a `Bundle` and a tableName within that bundle for a `.strings` file that contains the necessary translations. A example translation file with all the keys is provided next to the Framework files
 ```swift
 let bundle = Bundle.main
 /// let bundle = Bundle.main.path(forResource: "lt", ofType: "bundle")
