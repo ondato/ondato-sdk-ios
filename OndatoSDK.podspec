@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'OndatoSDK'
-  spec.version      = '1.8.20'
+  spec.version      = '1.8.21'
   spec.platform     = :ios
   spec.summary      = 'Ondato iOS SDK'
   spec.ios.deployment_target = '12.0'
