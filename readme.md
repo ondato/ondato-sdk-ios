@@ -173,3 +173,7 @@ let localizationBundle = OndatoLocalizationBundle(bundle: budle, tableName: "Loc
 /// let localizationBundle = OndatoLocalizationBundle.bundle(with: bundle, tableName: "Localizable")
 OndatoLocalizeHelper.setLocalizationBundle(bundle, for: .LT)
 ```
+
+### 5. Logs
+
+The logger can be accessed via the `Ondato.sdk.logger` property. The logger has a `logs` property which contains all the logs for the current identification session as an object of type `[String]`. You can set the desired log level `[.error, .info, .debug]` by setting the `logger.logLevel` property.

@@ -1,0 +1,1760 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OndatoSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import CommonCrypto
+import CoreGraphics
+import CoreImage
+import CoreNFC
+import CoreText
+import CryptoKit
+import CryptoTokenKit
+import FaceTecSDK
+import Foundation
+import ImageIO
+import MobileCoreServices
+@_exported import OndatoSDK
+import OpenSSL
+import Photos
+import QuartzCore
+import ReplayKit
+import Swift
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+public class FilepathImageProvider : OndatoSDK.AnimationImageProvider {
+  public init(filepath: Swift.String)
+  public init(filepath: Foundation.URL)
+  public func imageForAsset(asset: OndatoSDK.ImageAsset) -> CoreGraphics.CGImage?
+  @objc deinit
+}
+@available(iOS 13, macOS 10.15, *)
+public enum DocTypeEnum : Swift.String {
+  case TD1
+  case TD2
+  case OTHER
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup1 : OndatoSDK.DataGroup {
+  public var elements: [Swift.String : Swift.String] {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup2 : OndatoSDK.DataGroup {
+  public var nrImages: Swift.Int {
+    get
+  }
+  public var versionNumber: Swift.Int {
+    get
+  }
+  public var lengthOfRecord: Swift.Int {
+    get
+  }
+  public var numberOfFacialImages: Swift.Int {
+    get
+  }
+  public var facialRecordDataLength: Swift.Int {
+    get
+  }
+  public var nrFeaturePoints: Swift.Int {
+    get
+  }
+  public var gender: Swift.Int {
+    get
+  }
+  public var eyeColor: Swift.Int {
+    get
+  }
+  public var hairColor: Swift.Int {
+    get
+  }
+  public var featureMask: Swift.Int {
+    get
+  }
+  public var expression: Swift.Int {
+    get
+  }
+  public var poseAngle: Swift.Int {
+    get
+  }
+  public var poseAngleUncertainty: Swift.Int {
+    get
+  }
+  public var faceImageType: Swift.Int {
+    get
+  }
+  public var imageDataType: Swift.Int {
+    get
+  }
+  public var imageWidth: Swift.Int {
+    get
+  }
+  public var imageHeight: Swift.Int {
+    get
+  }
+  public var imageColorSpace: Swift.Int {
+    get
+  }
+  public var sourceType: Swift.Int {
+    get
+  }
+  public var deviceType: Swift.Int {
+    get
+  }
+  public var quality: Swift.Int {
+    get
+  }
+  public var imageData: [Swift.UInt8] {
+    get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AnimatedSwitch : OndatoSDK.AnimatedControl {
+  @_Concurrency.MainActor(unsafe) override public init(animation: OndatoSDK.Animation)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  public enum CancelBehavior {
+    case reverse
+    case none
+    public static func == (a: OndatoSDK.AnimatedSwitch.CancelBehavior, b: OndatoSDK.AnimatedSwitch.CancelBehavior) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) public var cancelBehavior: OndatoSDK.AnimatedSwitch.CancelBehavior
+  @_Concurrency.MainActor(unsafe) public var isOn: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func setIsOn(_ isOn: Swift.Bool, animated: Swift.Bool, shouldFireHaptics: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func setProgressForState(fromProgress: OndatoSDK.AnimationProgressTime, toProgress: OndatoSDK.AnimationProgressTime, forOnState: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) override public func animationDidSet()
+  @objc deinit
+}
+public enum LogLevel : Swift.Int, Swift.CaseIterable {
+  case verbose
+  case debug
+  case info
+  case warning
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [OndatoSDK.LogLevel]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [OndatoSDK.LogLevel] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Log {
+  public static var logLevel: OndatoSDK.LogLevel
+  public static var storeLogs: Swift.Bool
+  public static var logData: [Swift.String]
+  public class func verbose(_ msg: @autoclosure () -> Swift.String)
+  public class func debug(_ msg: @autoclosure () -> Swift.String)
+  public class func info(_ msg: @autoclosure () -> Swift.String)
+  public class func warning(_ msg: @autoclosure () -> Swift.String)
+  public class func error(_ msg: @autoclosure () -> Swift.String)
+  public class func clearStoredLogs()
+  @objc deinit
+}
+public enum CoordinateSpace : Swift.Int, Swift.Codable {
+  case type2d
+  case type3d
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+final public class Animation : Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  final public let startFrame: OndatoSDK.AnimationFrameTime
+  final public let endFrame: OndatoSDK.AnimationFrameTime
+  final public let framerate: Swift.Double
+  final public var markerNames: [Swift.String] {
+    get
+  }
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup11 : OndatoSDK.DataGroup {
+  public var fullName: Swift.String? {
+    get
+  }
+  public var personalNumber: Swift.String? {
+    get
+  }
+  public var dateOfBirth: Swift.String? {
+    get
+  }
+  public var placeOfBirth: Swift.String? {
+    get
+  }
+  public var address: Swift.String? {
+    get
+  }
+  public var telephone: Swift.String? {
+    get
+  }
+  public var profession: Swift.String? {
+    get
+  }
+  public var title: Swift.String? {
+    get
+  }
+  public var personalSummary: Swift.String? {
+    get
+  }
+  public var proofOfCitizenship: Swift.String? {
+    get
+  }
+  public var tdNumbers: Swift.String? {
+    get
+  }
+  public var custodyInfo: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup15 : OndatoSDK.DataGroup {
+  public var rsaPublicKey: Swift.OpaquePointer? {
+    get
+  }
+  public var ecdsaPublicKey: Swift.OpaquePointer? {
+    get
+  }
+  @objc deinit
+}
+public enum PassportAuthenticationStatus {
+  case notDone
+  case success
+  case failed
+  public static func == (a: OndatoSDK.PassportAuthenticationStatus, b: OndatoSDK.PassportAuthenticationStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public class NFCPassportModel {
+  public var documentType: Swift.String {
+    get
+  }
+  public var documentSubType: Swift.String {
+    get
+  }
+  public var personalNumber: Swift.String {
+    get
+  }
+  public var documentNumber: Swift.String {
+    get
+  }
+  public var issuingAuthority: Swift.String {
+    get
+  }
+  public var documentExpiryDate: Swift.String {
+    get
+  }
+  public var dateOfBirth: Swift.String {
+    get
+  }
+  public var gender: Swift.String {
+    get
+  }
+  public var nationality: Swift.String {
+    get
+  }
+  public var lastName: Swift.String {
+    get
+  }
+  public var firstName: Swift.String {
+    get
+  }
+  public var passportMRZ: Swift.String {
+    get
+  }
+  public var placeOfBirth: Swift.String? {
+    get
+  }
+  public var residenceAddress: Swift.String? {
+    get
+  }
+  public var phoneNumber: Swift.String? {
+    get
+  }
+  public var documentSigningCertificate: OndatoSDK.X509Wrapper? {
+    get
+  }
+  public var countrySigningCertificate: OndatoSDK.X509Wrapper? {
+    get
+  }
+  public var LDSVersion: Swift.String {
+    get
+  }
+  public var dataGroupsPresent: [Swift.String] {
+    get
+  }
+  public var dataGroupsAvailable: [OndatoSDK.DataGroupId] {
+    get
+  }
+  public var dataGroupsRead: [OndatoSDK.DataGroupId : OndatoSDK.DataGroup] {
+    get
+  }
+  public var dataGroupHashes: [OndatoSDK.DataGroupId : OndatoSDK.DataGroupHash] {
+    get
+  }
+  public var cardAccess: OndatoSDK.CardAccess? {
+    get
+  }
+  public var BACStatus: OndatoSDK.PassportAuthenticationStatus {
+    get
+  }
+  public var PACEStatus: OndatoSDK.PassportAuthenticationStatus {
+    get
+  }
+  public var chipAuthenticationStatus: OndatoSDK.PassportAuthenticationStatus {
+    get
+  }
+  public var passportCorrectlySigned: Swift.Bool {
+    get
+  }
+  public var documentSigningCertificateVerified: Swift.Bool {
+    get
+  }
+  public var passportDataNotTampered: Swift.Bool {
+    get
+  }
+  public var activeAuthenticationPassed: Swift.Bool {
+    get
+  }
+  public var activeAuthenticationChallenge: [Swift.UInt8] {
+    get
+  }
+  public var activeAuthenticationSignature: [Swift.UInt8] {
+    get
+  }
+  public var verificationErrors: [Swift.Error] {
+    get
+  }
+  public var isPACESupported: Swift.Bool {
+    get
+  }
+  public var isChipAuthenticationSupported: Swift.Bool {
+    get
+  }
+  public var passportImage: UIKit.UIImage? {
+    get
+  }
+  public var signatureImage: UIKit.UIImage? {
+    get
+  }
+  public var activeAuthenticationSupported: Swift.Bool {
+    get
+  }
+  public init()
+  public init(from dump: [Swift.String : Swift.String])
+  public func addDataGroup(_ id: OndatoSDK.DataGroupId, dataGroup: OndatoSDK.DataGroup)
+  public func getDataGroup(_ id: OndatoSDK.DataGroupId) -> OndatoSDK.DataGroup?
+  public func dumpPassportData(selectedDataGroups: [OndatoSDK.DataGroupId], includeActiveAuthenticationData: Swift.Bool = false) -> [Swift.String : Swift.String]
+  public func getHashesForDatagroups(hashAlgorythm: Swift.String) -> [OndatoSDK.DataGroupId : [Swift.UInt8]]
+  public func verifyPassport(masterListURL: Foundation.URL?, useCMSVerification: Swift.Bool = false)
+  public func verifyActiveAuthentication(challenge: [Swift.UInt8], signature: [Swift.UInt8])
+  @objc deinit
+}
+public enum PACEMappingType {
+  case GM
+  case IM
+  case CAM
+  public static func == (a: OndatoSDK.PACEMappingType, b: OndatoSDK.PACEMappingType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class PACEInfo : OndatoSDK.SecurityInfo {
+  public static let PARAM_ID_GFP_1024_160: Swift.Int
+  public static let PARAM_ID_GFP_2048_224: Swift.Int
+  public static let PARAM_ID_GFP_2048_256: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P192_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P192_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P224_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P224_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P256_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P256_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P320_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P384_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P384_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P512_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P521_R1: Swift.Int
+  override public func getObjectIdentifier() -> Swift.String
+  override public func getProtocolOIDString() -> Swift.String
+  public func getVersion() -> Swift.Int
+  public func getParameterId() -> Swift.Int?
+  public func getParameterSpec() throws -> Swift.Int32
+  public func getMappingType() throws -> OndatoSDK.PACEMappingType
+  public func getKeyAgreementAlgorithm() throws -> Swift.String
+  public func getCipherAlgorithm() throws -> Swift.String
+  public func getDigestAlgorithm() throws -> Swift.String
+  public func getKeyLength() throws -> Swift.Int
+  public func createMappingKey() throws -> Swift.OpaquePointer
+  public static func getParameterSpec(stdDomainParam: Swift.Int) throws -> Swift.Int32
+  public static func toMappingType(oid: Swift.String) throws -> OndatoSDK.PACEMappingType
+  public static func toKeyAgreementAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toCipherAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toDigestAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toKeyLength(oid: Swift.String) throws -> Swift.Int
+  @objc deinit
+}
+public enum LayerType : Swift.Int, Swift.Codable {
+  case precomp
+  case solid
+  case image
+  case null
+  case shape
+  case text
+  public init(from decoder: Swift.Decoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum MatteType : Swift.Int, Swift.Codable {
+  case none
+  case add
+  case invert
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BlendMode : Swift.Int, Swift.Codable {
+  case normal
+  case multiply
+  case screen
+  case overlay
+  case darken
+  case lighten
+  case colorDodge
+  case colorBurn
+  case hardLight
+  case softLight
+  case difference
+  case exclusion
+  case hue
+  case saturation
+  case color
+  case luminosity
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public struct DataGroupHash {
+  public var id: Swift.String
+  public var sodHash: Swift.String
+  public var computedHash: Swift.String
+  public var match: Swift.Bool
+}
+@_inheritsConvenienceInitializers @objc(OndatoAppearance) public class OndatoAppearance : ObjectiveC.NSObject {
+  @objc public var consentWindow: OndatoSDK.OndatoConsentAppearance
+  @objc public var progressColor: UIKit.UIColor
+  @objc public var errorColor: UIKit.UIColor
+  @objc public var errorTextColor: UIKit.UIColor
+  @objc public var buttonColor: UIKit.UIColor
+  @objc public var buttonTextColor: UIKit.UIColor
+  @objc public var textColor: UIKit.UIColor
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var imageTintColor: UIKit.UIColor
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(OndatoGDRPAppearance) public class OndatoConsentAppearance : ObjectiveC.NSObject {
+  @objc public var header: OndatoSDK.OndatoLabelAppearance
+  @objc public var body: OndatoSDK.OndatoTextViewAppearance
+  @objc public var acceptButton: OndatoSDK.OndatoButtonAppearance
+  @objc public var declineButton: OndatoSDK.OndatoButtonAppearance
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(OndatoButtonAppearance) public class OndatoButtonAppearance : ObjectiveC.NSObject {
+  @objc public var font: UIKit.UIFont
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var tintColor: UIKit.UIColor
+  @objc public var borderWidth: CoreFoundation.CGFloat
+  @objc public var borderColor: UIKit.UIColor
+  @objc public var cornerRadius: CoreFoundation.CGFloat
+  public init(font: UIKit.UIFont = .systemFont(ofSize: 15), backgroundColor: UIKit.UIColor = .clear, tintColor: UIKit.UIColor = .systemBlue, borderWidth: CoreFoundation.CGFloat = 0, borderColor: UIKit.UIColor = .clear, cornerRadius: CoreFoundation.CGFloat = 0)
+  @objc deinit
+}
+@objc(OndatoLabelAppearance) public class OndatoLabelAppearance : ObjectiveC.NSObject {
+  @objc public var font: UIKit.UIFont
+  @objc public var color: UIKit.UIColor
+  public init(font: UIKit.UIFont = .systemFont(ofSize: 15, weight: .semibold), color: UIKit.UIColor = .black)
+  @objc deinit
+}
+@objc(OndatoTextViewAppearance) public class OndatoTextViewAppearance : ObjectiveC.NSObject {
+  @objc public var font: UIKit.UIFont
+  @objc public var textColor: UIKit.UIColor
+  public init(font: UIKit.UIFont = .systemFont(ofSize: 15), textColor: UIKit.UIColor = .black)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class SecurityInfo {
+  public func getObjectIdentifier() -> Swift.String
+  public func getProtocolOIDString() -> Swift.String
+  @objc deinit
+}
+public enum MRZFormat : Swift.CaseIterable {
+  case td1, td2, td3
+  public var lineLength: Swift.Int {
+    get
+  }
+  public var linesCount: Swift.Int {
+    get
+  }
+  public static func == (a: OndatoSDK.MRZFormat, b: OndatoSDK.MRZFormat) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [OndatoSDK.MRZFormat]
+  public static var allCases: [OndatoSDK.MRZFormat] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct MRZResult : Swift.Hashable {
+  public enum DocumentType : Swift.CaseIterable {
+    case visa
+    case passport
+    case id
+    case residencePermit
+    case undefined
+    public static func == (a: OndatoSDK.MRZResult.DocumentType, b: OndatoSDK.MRZResult.DocumentType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [OndatoSDK.MRZResult.DocumentType]
+    public static var allCases: [OndatoSDK.MRZResult.DocumentType] {
+      get
+    }
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Sex : Swift.CaseIterable {
+    case male
+    case female
+    case unspecified
+    public static func == (a: OndatoSDK.MRZResult.Sex, b: OndatoSDK.MRZResult.Sex) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [OndatoSDK.MRZResult.Sex]
+    public static var allCases: [OndatoSDK.MRZResult.Sex] {
+      get
+    }
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let format: OndatoSDK.MRZFormat
+  public let documentType: OndatoSDK.MRZResult.DocumentType
+  public let countryCode: Swift.String
+  public let surnames: Swift.String
+  public let givenNames: Swift.String
+  public let documentNumber: Swift.String?
+  public let nationalityCountryCode: Swift.String
+  public let birthdate: Foundation.Date?
+  public let sex: OndatoSDK.MRZResult.Sex
+  public let expiryDate: Foundation.Date?
+  public let optionalData: Swift.String?
+  public let optionalData2: Swift.String?
+  public var documentImage: UIKit.UIImage?
+  public init(format: OndatoSDK.MRZFormat, documentType: OndatoSDK.MRZResult.DocumentType, countryCode: Swift.String, surnames: Swift.String, givenNames: Swift.String, documentNumber: Swift.String?, nationalityCountryCode: Swift.String, birthdate: Foundation.Date?, sex: OndatoSDK.MRZResult.Sex, expiryDate: Foundation.Date?, optionalData: Swift.String?, optionalData2: Swift.String?)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: OndatoSDK.MRZResult, b: OndatoSDK.MRZResult) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class ImageAsset : OndatoSDK.Asset {
+  final public let name: Swift.String
+  final public let directory: Swift.String
+  final public let width: Swift.Double
+  final public let height: Swift.Double
+  override final public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
+public struct AnimationKeypath {
+  public init(keypath: Swift.String)
+  public init(keys: [Swift.String])
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class COM : OndatoSDK.DataGroup {
+  public var version: Swift.String {
+    get
+  }
+  public var unicodeVersion: Swift.String {
+    get
+  }
+  public var dataGroupsPresent: [Swift.String] {
+    get
+  }
+  @objc deinit
+}
+@available(iOS 13, macOS 10.15, *)
+public func AESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func AESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func AESECBEncrypt(key: [Swift.UInt8], message: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func tripleDESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func tripleDESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func DESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8], options: Swift.UInt32 = 0) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func DESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8], options: Swift.UInt32 = 0) -> [Swift.UInt8]
+public enum ColorFormatDenominator {
+  case One
+  case OneHundred
+  case TwoFiftyFive
+  public static func == (a: OndatoSDK.ColorFormatDenominator, b: OndatoSDK.ColorFormatDenominator) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Color {
+  public var r: Swift.Double
+  public var g: Swift.Double
+  public var b: Swift.Double
+  public var a: Swift.Double
+  public init(r: Swift.Double, g: Swift.Double, b: Swift.Double, a: Swift.Double, denominator: OndatoSDK.ColorFormatDenominator = .One)
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class CardAccess {
+  public var securityInfos: [OndatoSDK.SecurityInfo] {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup12 : OndatoSDK.DataGroup {
+  public var issuingAuthority: Swift.String? {
+    get
+  }
+  public var dateOfIssue: Swift.String? {
+    get
+  }
+  public var otherPersonsDetails: Swift.String? {
+    get
+  }
+  public var endorsementsOrObservations: Swift.String? {
+    get
+  }
+  public var taxOrExitRequirements: Swift.String? {
+    get
+  }
+  public var frontImage: [Swift.UInt8]? {
+    get
+  }
+  public var rearImage: [Swift.UInt8]? {
+    get
+  }
+  public var personalizationTime: Swift.String? {
+    get
+  }
+  public var personalizationDeviceSerialNr: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class NotImplementedDG : OndatoSDK.DataGroup {
+  @objc deinit
+}
+extension OndatoSDK.Animation {
+  public typealias DownloadClosure = (OndatoSDK.Animation?) -> Swift.Void
+  final public var duration: Foundation.TimeInterval {
+    get
+  }
+  final public var bounds: CoreFoundation.CGRect {
+    get
+  }
+  final public var size: CoreFoundation.CGSize {
+    get
+  }
+  public static func named(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main, subdirectory: Swift.String? = nil, animationCache: OndatoSDK.AnimationCacheProvider? = nil) -> OndatoSDK.Animation?
+  public static func filepath(_ filepath: Swift.String, animationCache: OndatoSDK.AnimationCacheProvider? = nil) -> OndatoSDK.Animation?
+  public static func loadedFrom(url: Foundation.URL, closure: @escaping OndatoSDK.Animation.DownloadClosure, animationCache: OndatoSDK.AnimationCacheProvider?)
+  final public func progressTime(forMarker named: Swift.String) -> OndatoSDK.AnimationProgressTime?
+  final public func frameTime(forMarker named: Swift.String) -> OndatoSDK.AnimationFrameTime?
+  final public func progressTime(forFrame frameTime: OndatoSDK.AnimationFrameTime) -> OndatoSDK.AnimationProgressTime
+  final public func frameTime(forProgress progressTime: OndatoSDK.AnimationProgressTime) -> OndatoSDK.AnimationFrameTime
+  final public func time(forFrame frameTime: OndatoSDK.AnimationFrameTime) -> Foundation.TimeInterval
+  final public func frameTime(forTime time: Foundation.TimeInterval) -> OndatoSDK.AnimationFrameTime
+}
+@objc(OndatoFlowDelegate) public protocol OndatoFlowDelegate {
+  @objc optional func viewControllerForStart(startPressed: @escaping () -> Swift.Void) -> UIKit.UIViewController
+  @objc optional func viewForLoading(progress: Swift.Float) -> UIKit.UIView?
+  @objc optional func viewForSuccess(continue: @escaping () -> Swift.Void) -> UIKit.UIView
+  @objc func flowDidSucceed(identificationId: Swift.String?)
+  @objc func flowDidFail(identificationId: Swift.String?, error: OndatoSDK.OndatoServiceError)
+}
+infix operator +| : DefaultPrecedence
+infix operator +- : DefaultPrecedence
+final public class FloatValueProvider : OndatoSDK.AnyValueProvider {
+  public init(block: @escaping OndatoSDK.FloatValueProvider.CGFloatValueBlock)
+  public init(_ float: CoreFoundation.CGFloat)
+  public typealias CGFloatValueBlock = (CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  final public var float: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreFoundation.CGFloat) -> Any
+  @objc deinit
+}
+public typealias ScannedBoundingRects = (valid: [CoreFoundation.CGRect], invalid: [CoreFoundation.CGRect])
+public struct DocumentScanningResult<T> {
+  public let result: T
+  public let boundingRects: OndatoSDK.ScannedBoundingRects
+}
+@_hasMissingDesignatedInitializers final public class LiveMRZScanner {
+  public init(frequency: Swift.Int = 2)
+  final public func scanFrame(scanningImage: OndatoSDK.ScanningImage, orientation: ImageIO.CGImagePropertyOrientation, regionOfInterest: CoreFoundation.CGRect? = nil, minimumTextHeight: Swift.Float? = nil, foundBoundingRectsHandler: (([CoreFoundation.CGRect]) -> Swift.Void)? = nil, completionHandler: @escaping (Swift.Result<OndatoSDK.DocumentScanningResult<OndatoSDK.ParsedResult>, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, *)
+public class TagReader {
+  @objc deinit
+}
+public typealias AnimationFrameTime = CoreFoundation.CGFloat
+public typealias AnimationProgressTime = CoreFoundation.CGFloat
+public class BundleImageProvider : OndatoSDK.AnimationImageProvider {
+  public init(bundle: Foundation.Bundle, searchPath: Swift.String?)
+  public func imageForAsset(asset: OndatoSDK.ImageAsset) -> CoreGraphics.CGImage?
+  @objc deinit
+}
+@objc final public class CompatibleAnimation : ObjectiveC.NSObject {
+  @objc public init(name: Swift.String, bundle: Foundation.Bundle = Bundle.main)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class CompatibleAnimationView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(compatibleAnimation: OndatoSDK.CompatibleAnimation)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) final public var compatibleAnimation: OndatoSDK.CompatibleAnimation? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var loopAnimationCount: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var contentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var shouldRasterizeWhenIdle: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var currentProgress: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var currentTime: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var currentFrame: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var realtimeAnimationFrame: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var realtimeAnimationProgress: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var animationSpeed: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var respectAnimationFrameRate: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var isAnimationPlaying: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public func play()
+  @objc @_Concurrency.MainActor(unsafe) final public func play(completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) final public func play(fromProgress: CoreFoundation.CGFloat, toProgress: CoreFoundation.CGFloat, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) final public func play(fromFrame: CoreFoundation.CGFloat, toFrame: CoreFoundation.CGFloat, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) final public func play(fromMarker: Swift.String, toMarker: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) final public func stop()
+  @objc @_Concurrency.MainActor(unsafe) final public func pause()
+  @objc @_Concurrency.MainActor(unsafe) final public func reloadImages()
+  @objc @_Concurrency.MainActor(unsafe) final public func forceDisplayUpdate()
+  @objc @_Concurrency.MainActor(unsafe) final public func getValue(for keypath: OndatoSDK.CompatibleAnimationKeypath, atFrame: CoreFoundation.CGFloat) -> Any?
+  @objc @_Concurrency.MainActor(unsafe) final public func logHierarchyKeypaths()
+  @objc @_Concurrency.MainActor(unsafe) final public func setColorValue(_ color: UIKit.UIColor, forKeypath keypath: OndatoSDK.CompatibleAnimationKeypath)
+  @objc @_Concurrency.MainActor(unsafe) final public func getColorValue(for keypath: OndatoSDK.CompatibleAnimationKeypath, atFrame: CoreFoundation.CGFloat) -> UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) final public func addSubview(_ subview: OndatoSDK.AnimationSubview, forLayerAt keypath: OndatoSDK.CompatibleAnimationKeypath)
+  @objc @_Concurrency.MainActor(unsafe) final public func convert(rect: CoreFoundation.CGRect, toLayerAt keypath: OndatoSDK.CompatibleAnimationKeypath?) -> CoreFoundation.CGRect
+  @objc @_Concurrency.MainActor(unsafe) final public func convert(point: CoreFoundation.CGPoint, toLayerAt keypath: OndatoSDK.CompatibleAnimationKeypath?) -> CoreFoundation.CGPoint
+  @objc @_Concurrency.MainActor(unsafe) final public func progressTime(forMarker named: Swift.String) -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) final public func frameTime(forMarker named: Swift.String) -> CoreFoundation.CGFloat
+  @objc deinit
+}
+@available(iOS 13, macOS 10.15, *)
+public enum CertificateType {
+  case documentSigningCertificate
+  case issuerSigningCertificate
+  public static func == (a: OndatoSDK.CertificateType, b: OndatoSDK.CertificateType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public enum CertificateItem : Swift.String {
+  case fingerprint
+  case issuerName
+  case subjectName
+  case serialNumber
+  case signatureAlgorithm
+  case publicKeyAlgorithm
+  case notBefore
+  case notAfter
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public class X509Wrapper {
+  final public let cert: Swift.OpaquePointer
+  public init?(with cert: Swift.OpaquePointer?)
+  public func getItemsAsDict() -> [OndatoSDK.CertificateItem : Swift.String]
+  public func certToPEM() -> Swift.String
+  public func getFingerprint() -> Swift.String?
+  public func getNotBeforeDate() -> Swift.String?
+  public func getNotAfterDate() -> Swift.String?
+  public func getSerialNumber() -> Swift.String?
+  public func getSignatureAlgorithm() -> Swift.String?
+  public func getPublicKeyAlgorithm() -> Swift.String?
+  public func getIssuerName() -> Swift.String?
+  public func getSubjectName() -> Swift.String?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class LottieView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var contentMode: UIKit.UIView.ContentMode {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToWindow()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@available(iOS 13, *)
+public class BACHandler {
+  public var ksenc: [Swift.UInt8]
+  public var ksmac: [Swift.UInt8]
+  public var kifd: [Swift.UInt8]
+  public init()
+  public init(tagReader: OndatoSDK.TagReader)
+  public func performBACAndGetSessionKeys(mrzKey: Swift.String, completed: @escaping (_ error: OndatoSDK.NFCPassportReaderError?) -> ())
+  public func sessionKeys(data: [Swift.UInt8]) throws -> ([Swift.UInt8], [Swift.UInt8], [Swift.UInt8])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class AnimationSubview : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol AnimationCacheProvider {
+  func animation(forKey: Swift.String) -> OndatoSDK.Animation?
+  func setAnimation(_ animation: OndatoSDK.Animation, forKey: Swift.String)
+  func clearCache()
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class ChipAuthenticationPublicKeyInfo : OndatoSDK.SecurityInfo {
+  override public func getObjectIdentifier() -> Swift.String
+  override public func getProtocolOIDString() -> Swift.String
+  public func getKeyId() -> Swift.Int
+  @objc deinit
+}
+@available(iOS 13, macOS 10.15, *)
+public enum NFCViewDisplayMessage {
+  case requestPresentPassport
+  case authenticatingWithPassport(Swift.Int)
+  case readingDataGroupProgress(OndatoSDK.DataGroupId, Swift.Int)
+  case error(OndatoSDK.NFCPassportReaderError)
+  case successfulRead
+}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.NFCViewDisplayMessage {
+  public var description: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AnimatedButton : OndatoSDK.AnimatedControl {
+  @_Concurrency.MainActor(unsafe) override public init(animation: OndatoSDK.Animation)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func setPlayRange(fromProgress: OndatoSDK.AnimationProgressTime, toProgress: OndatoSDK.AnimationProgressTime, event: UIKit.UIControl.Event)
+  @_Concurrency.MainActor(unsafe) public func setPlayRange(fromMarker fromName: Swift.String, toMarker toName: Swift.String, event: UIKit.UIControl.Event)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func beginTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  @objc deinit
+}
+@objc final public class CompatibleAnimationKeypath : ObjectiveC.NSObject {
+  @objc public init(keypath: Swift.String)
+  @objc public init(keys: [Swift.String])
+  final public let animationKeypath: OndatoSDK.AnimationKeypath
+  @objc deinit
+}
+final public class SizeValueProvider : OndatoSDK.AnyValueProvider {
+  public init(block: @escaping OndatoSDK.SizeValueProvider.SizeValueBlock)
+  public init(_ size: CoreFoundation.CGSize)
+  public typealias SizeValueBlock = (CoreFoundation.CGFloat) -> CoreFoundation.CGSize
+  final public var size: CoreFoundation.CGSize {
+    get
+    set
+  }
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreFoundation.CGFloat) -> Any
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup7 : OndatoSDK.DataGroup {
+  public var imageData: [Swift.UInt8] {
+    get
+  }
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) open class AnimatedControl : UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) public init(animation: OndatoSDK.Animation)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isSelected: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func beginTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func continueTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func cancelTracking(with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) open func animationDidSet()
+  @_Concurrency.MainActor(unsafe) final public let animationView: OndatoSDK.AnimationView
+  @_Concurrency.MainActor(unsafe) public var animation: OndatoSDK.Animation? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var animationSpeed: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func setLayer(named: Swift.String, forState: UIKit.UIControl.State)
+  @_Concurrency.MainActor(unsafe) public func setValueProvider(_ valueProvider: OndatoSDK.AnyValueProvider, keypath: OndatoSDK.AnimationKeypath)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(OndatoServiceError) public class OndatoServiceError : ObjectiveC.NSObject {
+  @objc(OndatoServiceErrorType) public enum OndatoServiceErrorType : Swift.Int {
+    case cancelled
+    case consentDenied
+    case invalidServerResponse
+    case invalidCredentials
+    case recorderPermissions
+    case unexpectedInternalError
+    case verificationFailed
+    case nfcNotSupported
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  final public let type: OndatoSDK.OndatoServiceError.OndatoServiceErrorType
+  final public let error: Swift.String?
+  final public let message: Swift.String?
+  @objc deinit
+}
+extension QuartzCore.CALayer {
+  public func logLayerTree(withIndent: Swift.Int = 0)
+}
+public protocol AnimationTextProvider : AnyObject {
+  func textFor(keypathName: Swift.String, sourceText: Swift.String) -> Swift.String
+}
+final public class DictionaryTextProvider : OndatoSDK.AnimationTextProvider {
+  public init(_ values: [Swift.String : Swift.String])
+  final public func textFor(keypathName: Swift.String, sourceText: Swift.String) -> Swift.String
+  @objc deinit
+}
+final public class DefaultTextProvider : OndatoSDK.AnimationTextProvider {
+  public init()
+  final public func textFor(keypathName _: Swift.String, sourceText: Swift.String) -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class OpenSSLUtils {
+  public static func getOpenSSLError() -> Swift.String
+  @available(iOS 13, macOS 10.15, *)
+  public static func getPublicKeyData(from key: Swift.OpaquePointer) -> [Swift.UInt8]?
+  @available(iOS 13, macOS 10.15, *)
+  public static func decodePublicKeyFromBytes(pubKeyData: [Swift.UInt8], params: Swift.OpaquePointer) -> Swift.OpaquePointer?
+  public static func computeSharedSecret(privateKeyPair: Swift.OpaquePointer, publicKey: Swift.OpaquePointer) -> [Swift.UInt8]
+  @objc deinit
+}
+@available(iOS 13, macOS 10.15, *)
+public class ASN1Item : Swift.CustomDebugStringConvertible {
+  public init(line: Swift.String)
+  public func getChild(_ child: Swift.Int) -> OndatoSDK.ASN1Item?
+  public func getNumberOfChildren() -> Swift.Int
+  public var debugDescription: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@available(iOS 13, macOS 10.15, *)
+public class SimpleASN1DumpParser {
+  public init()
+  public func parse(data: Foundation.Data) throws -> OndatoSDK.ASN1Item
+  public func test()
+  @objc deinit
+}
+public struct ImageMRZScanner {
+  public init()
+  public func scan(scanningImage: OndatoSDK.ScanningImage, orientation: ImageIO.CGImagePropertyOrientation, regionOfInterest: CoreFoundation.CGRect? = nil, minimumTextHeight: Swift.Float? = nil, recognitionLevel: OndatoSDK.RecognitionLevel = .accurate, foundBoundingRectsHandler: (([CoreFoundation.CGRect]) -> Swift.Void)? = nil, completionHandler: @escaping (Swift.Result<OndatoSDK.DocumentScanningResult<OndatoSDK.ParsedResult>, Swift.Error>) -> Swift.Void)
+}
+final public class PointValueProvider : OndatoSDK.AnyValueProvider {
+  public init(block: @escaping OndatoSDK.PointValueProvider.PointValueBlock)
+  public init(_ point: CoreFoundation.CGPoint)
+  public typealias PointValueBlock = (CoreFoundation.CGFloat) -> CoreFoundation.CGPoint
+  final public var point: CoreFoundation.CGPoint {
+    get
+    set
+  }
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreFoundation.CGFloat) -> Any
+  @objc deinit
+}
+public class LRUAnimationCache : OndatoSDK.AnimationCacheProvider {
+  public init()
+  public static let sharedCache: OndatoSDK.LRUAnimationCache
+  public var cacheSize: Swift.Int
+  public func clearCache()
+  public func animation(forKey: Swift.String) -> OndatoSDK.Animation?
+  public func setAnimation(_ animation: OndatoSDK.Animation, forKey: Swift.String)
+  @objc deinit
+}
+public typealias LottieCompletionBlock = (Swift.Bool) -> Swift.Void
+@available(iOS 13, macOS 10.15, *)
+public enum DataGroupId : Swift.Int, Swift.CaseIterable {
+  case COM
+  case DG1
+  case DG2
+  case DG3
+  case DG4
+  case DG5
+  case DG6
+  case DG7
+  case DG8
+  case DG9
+  case DG10
+  case DG11
+  case DG12
+  case DG13
+  case DG14
+  case DG15
+  case DG16
+  case SOD
+  case Unknown
+  public func getName() -> Swift.String
+  public static func getIDFromName(name: Swift.String) -> OndatoSDK.DataGroupId
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [OndatoSDK.DataGroupId]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [OndatoSDK.DataGroupId] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension OndatoSDK.Color : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum RecognitionLevel {
+  case accurate
+  case fast
+  public static func == (a: OndatoSDK.RecognitionLevel, b: OndatoSDK.RecognitionLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc(OndatoDocumentType) public enum OndatoDocumentType : Swift.Int, Swift.Codable {
+  case passport = 0
+  case idCard = 1
+  case drivingLicence = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class Asset : Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  final public let id: Swift.String
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+final public class ColorValueProvider : OndatoSDK.AnyValueProvider {
+  public init(block: @escaping OndatoSDK.ColorValueProvider.ColorValueBlock)
+  public init(_ color: OndatoSDK.Color)
+  public typealias ColorValueBlock = (CoreFoundation.CGFloat) -> OndatoSDK.Color
+  final public var color: OndatoSDK.Color {
+    get
+    set
+  }
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreFoundation.CGFloat) -> Any
+  @objc deinit
+}
+@objc(OndatoLivenessMode) public enum OndatoLivenessMode : Swift.Int {
+  case active
+  case passive
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(OndatoNFCFlowMode) public enum OndatoNFCFlowMode : Swift.Int {
+  case notRequired
+  case required
+  case optional
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(OndatoServiceConfiguration) public class OndatoServiceConfiguration : ObjectiveC.NSObject {
+  @objc public var appearance: OndatoSDK.OndatoAppearance
+  @objc public var flowConfiguration: OndatoSDK.OndatoFlowConfiguration
+  @objc public var recorderConfiguration: OndatoSDK.OndatoRecorderConfiguration
+  @objc public var mode: OndatoSDK.OndatoEnvironment
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(OndatoFlowConfiguration) public class OndatoFlowConfiguration : ObjectiveC.NSObject {
+  @objc public var showSplashScreen: Swift.Bool
+  @objc public var showStartScreen: Swift.Bool
+  @objc public var showConsentScreen: Swift.Bool
+  @objc public var showSelfieWithDocumentScreen: Swift.Bool
+  @objc public var showSuccessWindow: Swift.Bool
+  @objc public var livenessCheck: OndatoSDK.OndatoLivenessMode
+  @objc public var nfcFlow: OndatoSDK.OndatoNFCFlowMode
+  @objc public var driversLicenceBacksideRequired: Swift.Bool
+  @objc public var removeSelfieFrame: Swift.Bool
+  @objc public var recordProcess: Swift.Bool
+  @objc public var waitForResult: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(OndatoRecorderConfiguration) public class OndatoRecorderConfiguration : ObjectiveC.NSObject {
+  @objc public var bitrate: Swift.Int
+  @objc public var resolutionRatio: Swift.Float
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Ondato) public class Ondato : ObjectiveC.NSObject {
+  @objc public static let sdk: OndatoSDK.Ondato
+  @objc weak public var delegate: OndatoSDK.OndatoFlowDelegate?
+  @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
+  @objc public var identificationId: Swift.String
+  @objc public var logger: OndatoSDK.OndatoLogger {
+    get
+  }
+  @objc public func setCredentials(username: Swift.String, password: Swift.String)
+  @objc public func setCredentials(accessToken: Swift.String)
+  @objc public func instantiateOndatoViewController() -> OndatoSDK.OndatoViewController
+  @objc deinit
+}
+@objc(OndatoLocalizationBundle) public class OndatoLocalizationBundle : ObjectiveC.NSObject {
+  @objc public static func bundle(with bundle: Foundation.Bundle, tableName: Swift.String) -> OndatoSDK.OndatoLocalizationBundle
+  @objc public init(bundle: Foundation.Bundle, tableName: Swift.String)
+  @objc deinit
+}
+public protocol AnyValueProvider {
+  var valueType: Any.Type { get }
+  func hasUpdate(frame: OndatoSDK.AnimationFrameTime) -> Swift.Bool
+  func value(frame: OndatoSDK.AnimationFrameTime) -> Any
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLocalizeHelper) public class OndatoLocalizeHelper : ObjectiveC.NSObject {
+  @objc public static var language: OndatoSDK.OndatoSupportedLanguage
+  @objc public static func setLocalizationBundle(_ bundle: OndatoSDK.OndatoLocalizationBundle, for language: OndatoSDK.OndatoSupportedLanguage)
+  @objc deinit
+}
+public typealias ParsedResult = OndatoSDK.MRZResult
+public struct MRZParser {
+  public init(isOCRCorrectionEnabled: Swift.Bool)
+  public func parse(mrzLines: [Swift.String]) -> OndatoSDK.MRZResult?
+  public func parse(mrzString: Swift.String) -> OndatoSDK.MRZResult?
+}
+@objc @available(iOS 13, *)
+public class PassportReader : ObjectiveC.NSObject {
+  public var passiveAuthenticationUsesOpenSSL: Swift.Bool
+  public init(logLevel: OndatoSDK.LogLevel = .info, masterListURL: Foundation.URL? = nil)
+  public func setMasterListURL(_ masterListURL: Foundation.URL)
+  public func overrideNFCDataAmountToRead(amount: Swift.Int)
+  public func readPassport(mrzKey: Swift.String, tags: [OndatoSDK.DataGroupId] = [], skipSecureElements: Swift.Bool = true, skipCA: Swift.Bool = false, skipPACE: Swift.Bool = false, customDisplayMessage: ((OndatoSDK.NFCViewDisplayMessage) -> Swift.String?)? = nil, completed: @escaping (OndatoSDK.NFCPassportModel?, OndatoSDK.NFCPassportReaderError?) -> ())
+  @objc deinit
+}
+@available(iOS 13, *)
+extension OndatoSDK.PassportReader : CoreNFC.NFCTagReaderSessionDelegate {
+  public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup {
+  public var datagroupType: OndatoSDK.DataGroupId
+  public var body: [Swift.UInt8] {
+    get
+  }
+  public var data: [Swift.UInt8] {
+    get
+  }
+  public func hash(_ hashAlgorythm: Swift.String) -> [Swift.UInt8]
+  @objc deinit
+}
+extension UIKit.UIColor {
+  public var lottieColorValue: OndatoSDK.Color {
+    get
+  }
+}
+public enum SecureMessagingSupportedAlgorithms {
+  case DES
+  case AES
+  public static func == (a: OndatoSDK.SecureMessagingSupportedAlgorithms, b: OndatoSDK.SecureMessagingSupportedAlgorithms) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13, *)
+public class SecureMessaging {
+  public init(encryptionAlgorithm: OndatoSDK.SecureMessagingSupportedAlgorithms = .DES, ksenc: [Swift.UInt8], ksmac: [Swift.UInt8], ssc: [Swift.UInt8])
+  @objc deinit
+}
+@objc(OndatoServerMode) public enum OndatoEnvironment : Swift.Int {
+  case test = 0
+  case live = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13, *)
+public struct ResponseAPDU {
+  public var data: [Swift.UInt8]
+  public var sw1: Swift.UInt8
+  public var sw2: Swift.UInt8
+  public init(data: [Swift.UInt8], sw1: Swift.UInt8, sw2: Swift.UInt8)
+}
+public enum LottieBackgroundBehavior {
+  case stop
+  case pause
+  case pauseAndRestore
+  case forceFinish
+  public static func == (a: OndatoSDK.LottieBackgroundBehavior, b: OndatoSDK.LottieBackgroundBehavior) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum LottieLoopMode {
+  case playOnce
+  case loop
+  case autoReverse
+  case `repeat`(Swift.Float)
+  case repeatBackwards(Swift.Float)
+}
+extension OndatoSDK.LottieLoopMode : Swift.Equatable {
+  public static func == (lhs: OndatoSDK.LottieLoopMode, rhs: OndatoSDK.LottieLoopMode) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) final public class AnimationView : OndatoSDK.LottieView {
+  @_Concurrency.MainActor(unsafe) public init(animation: OndatoSDK.Animation?, imageProvider: OndatoSDK.AnimationImageProvider? = nil, textProvider: OndatoSDK.AnimationTextProvider = DefaultTextProvider(), fontProvider: OndatoSDK.AnimationFontProvider = DefaultFontProvider())
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame _: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) final public var backgroundBehavior: OndatoSDK.LottieBackgroundBehavior
+  @_Concurrency.MainActor(unsafe) final public var animation: OndatoSDK.Animation? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var imageProvider: OndatoSDK.AnimationImageProvider {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var textProvider: OndatoSDK.AnimationTextProvider {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var fontProvider: OndatoSDK.AnimationFontProvider {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var isAnimationPlaying: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var isAnimationQueued: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var loopMode: OndatoSDK.LottieLoopMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var shouldRasterizeWhenIdle: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var currentProgress: OndatoSDK.AnimationProgressTime {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var currentTime: Foundation.TimeInterval {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var currentFrame: OndatoSDK.AnimationFrameTime {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var realtimeAnimationFrame: OndatoSDK.AnimationFrameTime {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var realtimeAnimationProgress: OndatoSDK.AnimationProgressTime {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var animationSpeed: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var respectAnimationFrameRate: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var viewportFrame: CoreFoundation.CGRect? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) final public func play(completion: OndatoSDK.LottieCompletionBlock? = nil)
+  @_Concurrency.MainActor(unsafe) final public func play(fromProgress: OndatoSDK.AnimationProgressTime? = nil, toProgress: OndatoSDK.AnimationProgressTime, loopMode: OndatoSDK.LottieLoopMode? = nil, completion: OndatoSDK.LottieCompletionBlock? = nil)
+  @_Concurrency.MainActor(unsafe) final public func play(fromFrame: OndatoSDK.AnimationFrameTime? = nil, toFrame: OndatoSDK.AnimationFrameTime, loopMode: OndatoSDK.LottieLoopMode? = nil, completion: OndatoSDK.LottieCompletionBlock? = nil)
+  @_Concurrency.MainActor(unsafe) final public func play(fromMarker: Swift.String? = nil, toMarker: Swift.String, loopMode: OndatoSDK.LottieLoopMode? = nil, completion: OndatoSDK.LottieCompletionBlock? = nil)
+  @_Concurrency.MainActor(unsafe) final public func stop()
+  @_Concurrency.MainActor(unsafe) final public func pause()
+  @_Concurrency.MainActor(unsafe) final public func reloadImages()
+  @_Concurrency.MainActor(unsafe) final public func forceDisplayUpdate()
+  @_Concurrency.MainActor(unsafe) final public func setValueProvider(_ valueProvider: OndatoSDK.AnyValueProvider, keypath: OndatoSDK.AnimationKeypath)
+  @_Concurrency.MainActor(unsafe) final public func getValue(for keypath: OndatoSDK.AnimationKeypath, atFrame: OndatoSDK.AnimationFrameTime?) -> Any?
+  @_Concurrency.MainActor(unsafe) final public func logHierarchyKeypaths()
+  @_Concurrency.MainActor(unsafe) final public func addSubview(_ subview: OndatoSDK.AnimationSubview, forLayerAt keypath: OndatoSDK.AnimationKeypath)
+  @_Concurrency.MainActor(unsafe) final public func convert(_ rect: CoreFoundation.CGRect, toLayerAt keypath: OndatoSDK.AnimationKeypath?) -> CoreFoundation.CGRect?
+  @_Concurrency.MainActor(unsafe) final public func convert(_ point: CoreFoundation.CGPoint, toLayerAt keypath: OndatoSDK.AnimationKeypath?) -> CoreFoundation.CGPoint?
+  @_Concurrency.MainActor(unsafe) final public func setNodeIsEnabled(isEnabled: Swift.Bool, keypath: OndatoSDK.AnimationKeypath)
+  @_Concurrency.MainActor(unsafe) final public func progressTime(forMarker named: Swift.String) -> OndatoSDK.AnimationProgressTime?
+  @_Concurrency.MainActor(unsafe) final public func frameTime(forMarker named: Swift.String) -> OndatoSDK.AnimationFrameTime?
+  @objc deinit
+}
+@available(iOS 13, *)
+public class PACEHandler {
+  public init(cardAccess: OndatoSDK.CardAccess, tagReader: OndatoSDK.TagReader) throws
+  public func doPACE(mrzKey: Swift.String, completed: @escaping (Swift.Bool) -> ())
+  @objc deinit
+}
+final public class GradientValueProvider : OndatoSDK.AnyValueProvider {
+  public init(block: @escaping OndatoSDK.GradientValueProvider.ColorsValueBlock, locations: OndatoSDK.GradientValueProvider.ColorLocationsBlock? = nil)
+  public init(_ colors: [OndatoSDK.Color], locations: [Swift.Double] = [])
+  public typealias ColorsValueBlock = (CoreFoundation.CGFloat) -> [OndatoSDK.Color]
+  public typealias ColorLocationsBlock = (CoreFoundation.CGFloat) -> [Swift.Double]
+  final public var colors: [OndatoSDK.Color] {
+    get
+    set
+  }
+  final public var locations: [Swift.Double] {
+    get
+    set
+  }
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreFoundation.CGFloat) -> Any
+  @objc deinit
+}
+public protocol AnimationImageProvider {
+  func imageForAsset(asset: OndatoSDK.ImageAsset) -> CoreGraphics.CGImage?
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class OndatoViewController : UIKit.UIPageViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(transitionStyle style: UIKit.UIPageViewController.TransitionStyle, navigationOrientation: UIKit.UIPageViewController.NavigationOrientation, options: [UIKit.UIPageViewController.OptionsKey : Any]? = nil)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct Vector1D {
+  public init(_ value: Swift.Double)
+  public let value: Swift.Double
+}
+public struct Vector3D {
+  public let x: Swift.Double
+  public let y: Swift.Double
+  public let z: Swift.Double
+  public init(x: Swift.Double, y: Swift.Double, z: Swift.Double)
+}
+extension UIKit.UIImage {
+  public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?
+  public class func gifImageWithURL(_ gifUrl: Swift.String) -> UIKit.UIImage?
+  public class func gifImageWithName(_ name: Swift.String) -> UIKit.UIImage?
+}
+public protocol AnimationFontProvider {
+  func fontFor(family: Swift.String, size: CoreFoundation.CGFloat) -> CoreText.CTFont?
+}
+final public class DefaultFontProvider : OndatoSDK.AnimationFontProvider {
+  public init()
+  final public func fontFor(family: Swift.String, size: CoreFoundation.CGFloat) -> CoreText.CTFont?
+  @objc deinit
+}
+public func binToHexRep(_ val: [Swift.UInt8], asArray: Swift.Bool = false) -> Swift.String
+public func binToHexRep(_ val: Swift.UInt8) -> Swift.String
+public func binToHex(_ val: Swift.UInt8) -> Swift.Int
+public func binToHex(_ val: [Swift.UInt8]) -> Swift.UInt64
+public func binToHex(_ val: Swift.ArraySlice<Swift.UInt8>) -> Swift.UInt64
+public func hexToBin(_ val: Swift.UInt64) -> [Swift.UInt8]
+public func binToInt(_ val: Swift.ArraySlice<Swift.UInt8>) -> Swift.Int
+public func binToInt(_ val: [Swift.UInt8]) -> Swift.Int
+public func intToBin(_ data: Swift.Int, pad: Swift.Int = 2) -> [Swift.UInt8]
+public func hexRepToBin(_ val: Swift.String) -> [Swift.UInt8]
+public func xor(_ kifd: [Swift.UInt8], _ response_kicc: [Swift.UInt8]) -> [Swift.UInt8]
+public func generateRandomUInt8Array(_ size: Swift.Int) -> [Swift.UInt8]
+public func pad(_ toPad: [Swift.UInt8], blockSize: Swift.Int) -> [Swift.UInt8]
+public func unpad(_ tounpad: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func mac(algoName: OndatoSDK.SecureMessagingSupportedAlgorithms, key: [Swift.UInt8], msg: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func desMAC(key: [Swift.UInt8], msg: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func aesMAC(key: [Swift.UInt8], msg: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func wrapDO(b: Swift.UInt8, arr: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func unwrapDO(tag: Swift.UInt8, wrappedData: [Swift.UInt8]) throws -> [Swift.UInt8]
+public func intToBytes(val: Swift.Int, removePadding: Swift.Bool) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func oidToBytes(oid: Swift.String, replaceTag: Swift.Bool) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func asn1Length(_ data: Swift.ArraySlice<Swift.UInt8>) throws -> (Swift.Int, Swift.Int)
+@available(iOS 13, macOS 10.15, *)
+public func asn1Length(_ data: [Swift.UInt8]) throws -> (Swift.Int, Swift.Int)
+@available(iOS 13, macOS 10.15, *)
+public func toAsn1Length(_ data: Swift.Int) throws -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcHash(data: [Swift.UInt8], hashAlgorithm: Swift.String) throws -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA1Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA224Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA256Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA512Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA384Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+@_inheritsConvenienceInitializers @objc public class OndatoLogger : ObjectiveC.NSObject {
+  public var logLevel: OndatoSDK.OndatoLogLevel
+  public var logs: [Swift.String] {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum OndatoLogLevel : Swift.Int {
+  case error = 0
+  case info = 1
+  case debug = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension OndatoSDK.Vector1D : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension OndatoSDK.Vector3D : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension OndatoSDK.Vector3D {
+  public var pointValue: CoreFoundation.CGPoint {
+    get
+  }
+  public var sizeValue: CoreFoundation.CGSize {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public enum NFCPassportReaderError : Swift.Error {
+  case ResponseError(Swift.String, Swift.UInt8, Swift.UInt8)
+  case InvalidResponse
+  case UnexpectedError
+  case NFCNotSupported
+  case NoConnectedTag
+  case D087Malformed
+  case InvalidResponseChecksum
+  case MissingMandatoryFields
+  case CannotDecodeASN1Length
+  case InvalidASN1Value
+  case UnableToProtectAPDU
+  case UnableToUnprotectAPDU
+  case UnsupportedDataGroup
+  case DataGroupNotRead
+  case UnknownTag
+  case UnknownImageFormat
+  case NotImplemented
+  case TagNotValid
+  case ConnectionError
+  case UserCanceled
+  case InvalidMRZKey
+  case MoreThanOneTagFound
+  case InvalidHashAlgorithmSpecified
+  case InvalidDataPassed(Swift.String)
+  case NotYetSupported(Swift.String)
+}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.NFCPassportReaderError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public enum OpenSSLError : Swift.Error {
+  case UnableToGetX509CertificateFromPKCS7(Swift.String)
+  case UnableToVerifyX509CertificateForSOD(Swift.String)
+  case VerifyAndReturnSODEncapsulatedData(Swift.String)
+  case UnableToReadECPublicKey(Swift.String)
+  case UnableToExtractSignedDataFromPKCS7(Swift.String)
+  case VerifySignedAttributes(Swift.String)
+  case UnableToParseASN1(Swift.String)
+  case UnableToDecryptRSASignature(Swift.String)
+}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.OpenSSLError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum PassiveAuthenticationError : Swift.Error {
+  case UnableToParseSODHashes(Swift.String)
+  case InvalidDataGroupHash(Swift.String)
+  case SODMissing(Swift.String)
+}
+extension OndatoSDK.PassiveAuthenticationError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum ScanningImage {
+  case cgImage(CoreGraphics.CGImage)
+  case pixelBuffer(CoreVideo.CVPixelBuffer)
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class ChipAuthenticationInfo : OndatoSDK.SecurityInfo {
+  override public func getObjectIdentifier() -> Swift.String
+  override public func getProtocolOIDString() -> Swift.String
+  public func getKeyId() -> Swift.Int
+  public static func toKeyAgreementAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toCipherAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toKeyLength(oid: Swift.String) throws -> Swift.Int
+  @objc deinit
+}
+@objc(OndatoSupportedLanguage) public enum OndatoSupportedLanguage : Swift.Int, Swift.RawRepresentable {
+  case BG
+  case DE
+  case EN
+  case ES
+  case ET
+  case FR
+  case EL
+  case IT
+  case LT
+  case LV
+  case NL
+  case RO
+  case RU
+  case SQ
+  public typealias RawValue = Swift.String
+  public var rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue {
+    get
+  }
+  public var displayName: Swift.String {
+    get
+  }
+  public init?(rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue)
+}
+extension OndatoSDK.OndatoSupportedLanguage : Swift.CaseIterable {
+  public typealias AllCases = [OndatoSDK.OndatoSupportedLanguage]
+  public static var allCases: [OndatoSDK.OndatoSupportedLanguage] {
+    get
+  }
+}
+extension OndatoSDK.AnimationView {
+  @_Concurrency.MainActor(unsafe) convenience public init(name: Swift.String, bundle: Foundation.Bundle = Bundle.main, imageProvider: OndatoSDK.AnimationImageProvider? = nil, animationCache: OndatoSDK.AnimationCacheProvider? = LRUAnimationCache.sharedCache)
+  @_Concurrency.MainActor(unsafe) convenience public init(filePath: Swift.String, imageProvider: OndatoSDK.AnimationImageProvider? = nil, animationCache: OndatoSDK.AnimationCacheProvider? = LRUAnimationCache.sharedCache)
+  @_Concurrency.MainActor(unsafe) convenience public init(url: Foundation.URL, imageProvider: OndatoSDK.AnimationImageProvider? = nil, closure: @escaping OndatoSDK.AnimationView.DownloadClosure, animationCache: OndatoSDK.AnimationCacheProvider? = LRUAnimationCache.sharedCache)
+  public typealias DownloadClosure = (Swift.Error?) -> Swift.Void
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup14 : OndatoSDK.DataGroup {
+  public var securityInfos: [OndatoSDK.SecurityInfo] {
+    get
+  }
+  @objc deinit
+}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DocTypeEnum : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DocTypeEnum : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DocTypeEnum : Swift.RawRepresentable {}
+extension OndatoSDK.AnimatedSwitch.CancelBehavior : Swift.Equatable {}
+extension OndatoSDK.AnimatedSwitch.CancelBehavior : Swift.Hashable {}
+extension OndatoSDK.LogLevel : Swift.Equatable {}
+extension OndatoSDK.LogLevel : Swift.Hashable {}
+extension OndatoSDK.LogLevel : Swift.RawRepresentable {}
+extension OndatoSDK.CoordinateSpace : Swift.Equatable {}
+extension OndatoSDK.CoordinateSpace : Swift.Hashable {}
+extension OndatoSDK.CoordinateSpace : Swift.RawRepresentable {}
+extension OndatoSDK.PassportAuthenticationStatus : Swift.Equatable {}
+extension OndatoSDK.PassportAuthenticationStatus : Swift.Hashable {}
+extension OndatoSDK.PACEMappingType : Swift.Equatable {}
+extension OndatoSDK.PACEMappingType : Swift.Hashable {}
+extension OndatoSDK.LayerType : Swift.Equatable {}
+extension OndatoSDK.LayerType : Swift.Hashable {}
+extension OndatoSDK.LayerType : Swift.RawRepresentable {}
+extension OndatoSDK.MatteType : Swift.Equatable {}
+extension OndatoSDK.MatteType : Swift.Hashable {}
+extension OndatoSDK.MatteType : Swift.RawRepresentable {}
+extension OndatoSDK.BlendMode : Swift.Equatable {}
+extension OndatoSDK.BlendMode : Swift.Hashable {}
+extension OndatoSDK.BlendMode : Swift.RawRepresentable {}
+extension OndatoSDK.MRZFormat : Swift.Equatable {}
+extension OndatoSDK.MRZFormat : Swift.Hashable {}
+extension OndatoSDK.MRZResult.DocumentType : Swift.Equatable {}
+extension OndatoSDK.MRZResult.DocumentType : Swift.Hashable {}
+extension OndatoSDK.MRZResult.Sex : Swift.Equatable {}
+extension OndatoSDK.MRZResult.Sex : Swift.Hashable {}
+extension OndatoSDK.ColorFormatDenominator : Swift.Equatable {}
+extension OndatoSDK.ColorFormatDenominator : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateType : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateType : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateItem : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateItem : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateItem : Swift.RawRepresentable {}
+extension OndatoSDK.OndatoServiceError.OndatoServiceErrorType : Swift.Equatable {}
+extension OndatoSDK.OndatoServiceError.OndatoServiceErrorType : Swift.Hashable {}
+extension OndatoSDK.OndatoServiceError.OndatoServiceErrorType : Swift.RawRepresentable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DataGroupId : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DataGroupId : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DataGroupId : Swift.RawRepresentable {}
+extension OndatoSDK.RecognitionLevel : Swift.Equatable {}
+extension OndatoSDK.RecognitionLevel : Swift.Hashable {}
+extension OndatoSDK.OndatoDocumentType : Swift.Equatable {}
+extension OndatoSDK.OndatoDocumentType : Swift.Hashable {}
+extension OndatoSDK.OndatoDocumentType : Swift.RawRepresentable {}
+extension OndatoSDK.OndatoLivenessMode : Swift.Equatable {}
+extension OndatoSDK.OndatoLivenessMode : Swift.Hashable {}
+extension OndatoSDK.OndatoLivenessMode : Swift.RawRepresentable {}
+extension OndatoSDK.OndatoNFCFlowMode : Swift.Equatable {}
+extension OndatoSDK.OndatoNFCFlowMode : Swift.Hashable {}
+extension OndatoSDK.OndatoNFCFlowMode : Swift.RawRepresentable {}
+extension OndatoSDK.SecureMessagingSupportedAlgorithms : Swift.Equatable {}
+extension OndatoSDK.SecureMessagingSupportedAlgorithms : Swift.Hashable {}
+extension OndatoSDK.OndatoEnvironment : Swift.Equatable {}
+extension OndatoSDK.OndatoEnvironment : Swift.Hashable {}
+extension OndatoSDK.OndatoEnvironment : Swift.RawRepresentable {}
+extension OndatoSDK.LottieBackgroundBehavior : Swift.Equatable {}
+extension OndatoSDK.LottieBackgroundBehavior : Swift.Hashable {}
+extension OndatoSDK.OndatoLogLevel : Swift.Equatable {}
+extension OndatoSDK.OndatoLogLevel : Swift.Hashable {}
+extension OndatoSDK.OndatoLogLevel : Swift.RawRepresentable {}
+extension OndatoSDK.OndatoSupportedLanguage : Swift.Equatable {}
+extension OndatoSDK.OndatoSupportedLanguage : Swift.Hashable {}
