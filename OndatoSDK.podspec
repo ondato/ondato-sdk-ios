@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'OndatoSDK'
-  spec.version      = '1.8.22'
+  spec.version      = '1.8.23'
   spec.platform     = :ios
   spec.summary      = 'Ondato iOS SDK'
   spec.ios.deployment_target = '12.0'
@@ -10,5 +10,4 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'git@github.com:ondato/ondato-sdk-ios.git', :tag => spec.version }
   spec.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   spec.ios.vendored_frameworks  = 'OndatoSDK.xcframework', 'FaceTecSDK.xcframework', 'OpenSSL.xcframework'
-  spec.weak_frameworks = 'CoreNFC'
 end

@@ -56380,70 +56380,70 @@
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 278,
+      "offset": 310,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 334,
+      "offset": 366,
       "length": 3,
       "value": "0x1"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 363,
+      "offset": 395,
       "length": 3,
       "value": "0x2"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 393,
+      "offset": 425,
       "length": 3,
       "value": "0x3"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 334,
+      "offset": 366,
       "length": 3,
       "value": "0x1"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 363,
+      "offset": 395,
       "length": 3,
       "value": "0x2"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 393,
+      "offset": 425,
       "length": 3,
       "value": "0x3"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 334,
+      "offset": 366,
       "length": 3,
       "value": "0x1"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 363,
+      "offset": 395,
       "length": 3,
       "value": "0x2"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 393,
+      "offset": 425,
       "length": 3,
       "value": "0x3"
     },
@@ -57430,7 +57430,7 @@
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/OpenSSLUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 245,
+      "offset": 281,
       "length": 5,
       "value": "false"
     },
@@ -58669,42 +58669,42 @@
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 305,
+      "offset": 337,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 352,
+      "offset": 384,
       "length": 3,
       "value": "0x1"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 398,
+      "offset": 430,
       "length": 3,
       "value": "0x2"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 445,
+      "offset": 477,
       "length": 3,
       "value": "0x3"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 503,
+      "offset": 535,
       "length": 3,
       "value": "224"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 795,
+      "offset": 827,
       "length": 5,
       "value": "false"
     },
@@ -60587,105 +60587,105 @@
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 833,
+      "offset": 902,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 894,
+      "offset": 963,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 982,
+      "offset": 1051,
       "length": 4,
       "value": "0x03"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1070,
+      "offset": 1139,
       "length": 4,
       "value": "0x04"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 1240,
+      "offset": 1309,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1344,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "Array",
-      "offset": 1338,
+      "offset": 1407,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1379,
+      "offset": 1448,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1416,
+      "offset": 1485,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1459,
+      "offset": 1528,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1549,
+      "offset": 1618,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1589,
+      "offset": 1658,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1629,
+      "offset": 1698,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1666,
+      "offset": 1735,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/PACEHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 4506,
+      "offset": 4575,
       "length": 5,
       "value": "false"
     },
@@ -61441,21 +61441,21 @@
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/Utils.swift",
       "kind": "Array",
-      "offset": 1116,
+      "offset": 1154,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/Utils.swift",
       "kind": "BooleanLiteral",
-      "offset": 1265,
+      "offset": 1303,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Desktop\/OndatoSDK\/OndatoSDK\/Dependencies\/Frameworks\/NFCPassportReader\/Sources\/NFCPassportReader\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2483,
+      "offset": 2521,
       "length": 1,
       "value": "2"
     },
