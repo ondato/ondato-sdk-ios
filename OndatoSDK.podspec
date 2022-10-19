@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.version      = '2.1.0'
   spec.platform     = :ios
   spec.summary      = 'Ondato iOS SDK'
-  spec.ios.deployment_target = '12.0'
+  spec.ios.deployment_target = '13.0'
   spec.license  	   = 'Apache-2.0'
   spec.homepage     = 'https://github.com/ondato/ondato-sdk-ios'
   spec.authors      = { 'Ondato' => 'info@ondato.com' }
