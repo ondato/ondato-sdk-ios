@@ -34,6 +34,7 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 <key>NSCameraUsageDescription</key>
 <string>Required for document and facial capture</string>
 ```
+
 ### 2. Installation 
 
 ### CocoaPods
@@ -47,10 +48,8 @@ pod 'OndatoSDK'
 #### Swift
 
 ```swift
-// Use one of the provided initializers
-Ondato.sdk.setCredentials(username: "username", password: "password")
-Ondato.sdk.setCredentials(accessToken: "accessToken")
-Ondato.sdk.identificationId = <Identification Id>
+// Use provided initializer
+Ondato.sdk.setIdentityVerificationId("<Identification Id>")
 ```
 
 You can change the configuration by modifying the configuration property
@@ -80,18 +79,10 @@ enum OndatoEnvironment {
 class OndatoFlowConfiguration {
     var showSplashScreen: Bool // Should the splash screen be shown
     var showStartScreen: Bool // Should the start screen be shown
-    var showConsentScreen: Bool // Should the consent screen be shown
-    var showSelfieWithDocumentScreen // Should a selfie with document be requested when taking document pictures
     var showSuccessWindow: Bool // Should the success window be shown
-    var recordProcess: Bool // Should the verification process be recorded
-    var livenessCheck: OndatoLivenessMode // [.active, .passive] Should active or passive liveness check mode be used
-    var driversLicenceBacksideRequired: Bool // is backside of drivers license required
     var removeSelfieFrame: Bool // whether to show or to remove the selfie frame in passive liveness check mode
-    var waitForResult: Bool // whether to keep the session alive and wait for the current verifications result
-    var nfcFlow: OndatoNFCFlowMode // [.notRequired, .required, .optional] whether NFC mode is required
 }
 ```
-In case Passive Liveness check is configured, please contact Ondato support team support@ondato.com to check if your account is configured accordingly.
 
 
 `appearance` holds the appearance configuration options
@@ -112,7 +103,7 @@ class OndatoAppearance {
 
 #### Swift
 
-An identification ID can be provided to the SDK. If one is not provided, the SDK will retrieve one by itself during the flow
+To instantiate sdk ViewController you should call `instantiateOndatoViewController` as in example below. Present created ViewController in your application.
 
 ```swift
 let sdk = Ondato.sdk.instantiateOndatoViewController()
@@ -173,7 +164,3 @@ let localizationBundle = OndatoLocalizationBundle(bundle: budle, tableName: "Loc
 /// let localizationBundle = OndatoLocalizationBundle.bundle(with: bundle, tableName: "Localizable")
 OndatoLocalizeHelper.setLocalizationBundle(bundle, for: .LT)
 ```
-
-### 5. Logs
-
-The logger can be accessed via the `Ondato.sdk.logger` property. The logger has a `logs` property which contains all the logs for the current identification session as an object of type `[String]`. You can set the desired log level `[.error, .info, .debug]` by setting the `logger.logLevel` property.

@@ -406,7 +406,6 @@ SWIFT_CLASS("_TtC9OndatoSDK23CompatibleAnimationView")
 
 @protocol OndatoFlowDelegate;
 @class OndatoServiceConfiguration;
-@class OndatoLogger;
 @class OndatoViewController;
 
 SWIFT_CLASS_NAMED("Ondato")
@@ -415,15 +414,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Ondato * _No
 + (Ondato * _Nonnull)sdk SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, weak) id <OndatoFlowDelegate> _Nullable delegate;
 @property (nonatomic, strong) OndatoServiceConfiguration * _Nonnull configuration;
-@property (nonatomic, copy) NSString * _Nonnull identificationId;
-@property (nonatomic, readonly, strong) OndatoLogger * _Nonnull logger;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)setCredentialsWithUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password;
-- (void)setCredentialsWithAccessToken:(NSString * _Nonnull)accessToken;
+- (void)setIdentityVerificationId:(NSString * _Nonnull)id;
 - (OndatoViewController * _Nonnull)instantiateOndatoViewController SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 @class OndatoGDRPAppearance;
 
@@ -478,22 +473,13 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoServerMode, "OndatoEnvironment", open)
   OndatoServerModeLive = 1,
 };
 
-enum OndatoLivenessMode : NSInteger;
-enum OndatoNFCFlowMode : NSInteger;
 
 SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 @interface OndatoFlowConfiguration : NSObject
 @property (nonatomic) BOOL showSplashScreen;
 @property (nonatomic) BOOL showStartScreen;
-@property (nonatomic) BOOL showConsentScreen;
-@property (nonatomic) BOOL showSelfieWithDocumentScreen;
 @property (nonatomic) BOOL showSuccessWindow;
-@property (nonatomic) enum OndatoLivenessMode livenessCheck;
-@property (nonatomic) enum OndatoNFCFlowMode nfcFlow;
-@property (nonatomic) BOOL driversLicenceBacksideRequired;
 @property (nonatomic) BOOL removeSelfieFrame;
-@property (nonatomic) BOOL recordProcess;
-@property (nonatomic) BOOL waitForResult;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -520,11 +506,6 @@ SWIFT_CLASS_NAMED("OndatoLabelAppearance")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM_NAMED(NSInteger, OndatoLivenessMode, "OndatoLivenessMode", open) {
-  OndatoLivenessModeActive = 0,
-  OndatoLivenessModePassive = 1,
-};
-
 
 SWIFT_CLASS_NAMED("OndatoLocalizationBundle")
 @interface OndatoLocalizationBundle : NSObject
@@ -546,29 +527,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum OndatoSupportedLanguage l
 + (void)setLocalizationBundle:(OndatoLocalizationBundle * _Nonnull)bundle for:(enum OndatoSupportedLanguage)language;
 @end
 
-typedef SWIFT_ENUM(NSInteger, OndatoLogLevel, open) {
-  OndatoLogLevelError = 0,
-  OndatoLogLevelInfo = 1,
-  OndatoLogLevelDebug = 2,
-};
 
-
-SWIFT_CLASS("_TtC9OndatoSDK12OndatoLogger")
-@interface OndatoLogger : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-typedef SWIFT_ENUM_NAMED(NSInteger, OndatoNFCFlowMode, "OndatoNFCFlowMode", open) {
-  OndatoNFCFlowModeNotRequired = 0,
-  OndatoNFCFlowModeRequired = 1,
-  OndatoNFCFlowModeOptional = 2,
-};
-
-
-SWIFT_CLASS_NAMED("OndatoRecorderConfiguration")
-@interface OndatoRecorderConfiguration : NSObject
-@property (nonatomic) NSInteger bitrate;
-@property (nonatomic) float resolutionRatio;
+SWIFT_CLASS("_TtC9OndatoSDK9OndatoLog")
+@interface OndatoLog : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -577,7 +538,6 @@ SWIFT_CLASS_NAMED("OndatoServiceConfiguration")
 @interface OndatoServiceConfiguration : NSObject
 @property (nonatomic, strong) OndatoAppearance * _Nonnull appearance;
 @property (nonatomic, strong) OndatoFlowConfiguration * _Nonnull flowConfiguration;
-@property (nonatomic, strong) OndatoRecorderConfiguration * _Nonnull recorderConfiguration;
 @property (nonatomic) enum OndatoServerMode mode;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
