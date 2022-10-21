@@ -49,7 +49,7 @@ pod 'OndatoSDK'
 
 ```swift
 // Use provided initializer
-Ondato.sdk.setIdentityVerificationId("<Identification Id>")
+Ondato.sdk.setIdentityVerificationId("<Verification Id>")
 ```
 
 You can change the configuration by modifying the configuration property
