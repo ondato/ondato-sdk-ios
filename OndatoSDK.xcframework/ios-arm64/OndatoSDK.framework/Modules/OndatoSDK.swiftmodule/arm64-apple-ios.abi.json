@@ -1927,6 +1927,13 @@
       },
       {
         "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "OndatoSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -34883,6 +34890,13 @@
       },
       {
         "kind": "Import",
+        "name": "RxSwift",
+        "printedName": "RxSwift",
+        "declKind": "Import",
+        "moduleName": "OndatoSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -46409,6 +46423,99 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "skipRegistrationIfDriverLicense",
+            "printedName": "skipRegistrationIfDriverLicense",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(py)skipRegistrationIfDriverLicense",
+            "mangledName": "$s9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvp",
+            "moduleName": "OndatoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)skipRegistrationIfDriverLicense",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvg",
+                "moduleName": "OndatoSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)setSkipRegistrationIfDriverLicense:",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvs",
+                "moduleName": "OndatoSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvM",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvM",
+                "moduleName": "OndatoSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -49535,6 +49642,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "CustomReflectable",
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
@@ -49553,13 +49667,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -51198,6 +51305,104 @@
       "offset": 267,
       "length": 35,
       "value": "\"\/v1\/sessions\/%@\/full-access-token\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 49,
+      "length": 45,
+      "value": "\"https:\/\/sandbox-id.ondato.com\/connect\/token\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 129,
+      "length": 72,
+      "value": "\"https:\/\/app-idvapi-snd-ond.azurewebsites.net\/v1\/identity-verifications\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 25,
+      "value": "\"idv.demo.api@ondato.com\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 286,
+      "length": 66,
+      "value": "\"8cbe1edf94ff042dd5cd34f0fd9d28139dbb5934e755abdd19c75204d2f263a0\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 20,
+      "value": "\"client_credentials\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 9,
+      "value": "\"idv_api\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 5,
+      "value": "\"123\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 529,
+      "length": 16,
+      "value": "\"John@email.com\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 599,
+      "length": 6,
+      "value": "\"John\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 660,
+      "length": 6,
+      "value": "\"Adam\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 719,
+      "length": 9,
+      "value": "\"Johnson\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 785,
+      "length": 8,
+      "value": "\"000000\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 849,
+      "length": 11,
+      "value": "37061234567"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/API\/LoginAPI\/LoginConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 916,
+      "length": 12,
+      "value": "\"2022-01-01\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/Controllers\/Guide\/GuidePopupViewController.swift",
@@ -56700,6 +56905,20 @@
       "offset": 827,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/Controllers\/PersonalCodeCapture\/PersonalCodeCaptureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 940,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/Controllers\/PersonalCodeCapture\/PersonalCodeCaptureViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 985,
+      "length": 15,
+      "value": "\"ic_arrow_left\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/OndatoSDK3\/Frameworks\/Lottie\/Sources\/Private\/LayerContainers\/CompLayers\/ImageCompositionLayer.swift",
@@ -63375,7 +63594,7 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/MainCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2754,
+      "offset": 3692,
       "length": 5,
       "value": "false"
     },
@@ -63404,6 +63623,13 @@
       "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 671,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/git\/ondato-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 738,
       "length": 5,
       "value": "false"
     },
