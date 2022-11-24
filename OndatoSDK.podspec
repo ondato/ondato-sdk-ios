@@ -9,6 +9,5 @@ Pod::Spec.new do |spec|
   spec.authors      = { 'Ondato' => 'info@ondato.com' }
   spec.source       = { :git => 'https://github.com/ondato/ondato-sdk-ios.git', :tag => spec.version }
   spec.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
-  spec.ios.vendored_frameworks  = 'OndatoSDK.xcframework', 'FaceTecSDK.xcframework', 'OpenSSL.xcframework'
-  spec.dependency 'RxCocoa'
+  spec.ios.vendored_frameworks  = 'OndatoSDK.xcframework', 'FaceTecSDK.xcframework', 'OpenSSL.xcframework', 'RxSwift.xcframework', 'RxRelay.xcframework', 'RxCocoa.xcframework'
 end
