@@ -404,6 +404,11 @@ SWIFT_CLASS("_TtC9OndatoSDK23CompatibleAnimationView")
 
 
 
+
+
+
+
+
 @protocol OndatoFlowDelegate;
 @class OndatoServiceConfiguration;
 @class OndatoViewController;
@@ -600,6 +605,19 @@ SWIFT_CLASS("_TtC9OndatoSDK14PassportReader") SWIFT_AVAILABILITY(ios,introduced=
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

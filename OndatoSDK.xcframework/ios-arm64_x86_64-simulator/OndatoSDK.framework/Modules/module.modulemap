@@ -1,0 +1,11 @@
+framework module OndatoSDK {
+  umbrella header "OndatoSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module OndatoSDK.Swift {
+  header "OndatoSDK-Swift.h"
+  requires objc
+}
