@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OndatoSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -9,6 +9,7 @@ import CoreGraphics
 import CoreImage
 import CoreLocation
 import CoreNFC
+import CoreServices
 import CoreText
 import CryptoKit
 import CryptoTokenKit
@@ -4033,6 +4034,7 @@ public typealias LottieCompletionBlock = (Swift.Bool) -> Swift.Void
   case passport = 0
   case idCard = 1
   case drivingLicence = 2
+  case proofOfAddress = 3
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
