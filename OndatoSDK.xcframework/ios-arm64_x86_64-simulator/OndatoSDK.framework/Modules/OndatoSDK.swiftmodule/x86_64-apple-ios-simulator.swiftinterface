@@ -1054,6 +1054,9 @@ extension OndatoSDK.ObservableType {
   @objc weak public var delegate: OndatoSDK.OndatoFlowDelegate?
   @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
   @objc public func setIdentityVerificationId(_ id: Swift.String)
+  @objc public func setSetupId(_ setupId: Swift.String)
+  @objc public func setClientId(_ clientId: Swift.String)
+  @objc public func setClientSecret(_ clientSecret: Swift.String)
   @objc public func instantiateOndatoViewController() -> OndatoSDK.OndatoViewController
   @objc deinit
 }

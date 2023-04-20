@@ -422,6 +422,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Ondato * _No
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setIdentityVerificationId:(NSString * _Nonnull)id;
+- (void)setSetupId:(NSString * _Nonnull)setupId;
+- (void)setClientId:(NSString * _Nonnull)clientId;
+- (void)setClientSecret:(NSString * _Nonnull)clientSecret;
 - (OndatoViewController * _Nonnull)instantiateOndatoViewController SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -1065,6 +1068,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Ondato * _No
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setIdentityVerificationId:(NSString * _Nonnull)id;
+- (void)setSetupId:(NSString * _Nonnull)setupId;
+- (void)setClientId:(NSString * _Nonnull)clientId;
+- (void)setClientSecret:(NSString * _Nonnull)clientSecret;
 - (OndatoViewController * _Nonnull)instantiateOndatoViewController SWIFT_WARN_UNUSED_RESULT;
 @end
 
