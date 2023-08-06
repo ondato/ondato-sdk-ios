@@ -244,3 +244,6 @@
 "ondato_poor_photo_quality_primary" = "Votre identification  a été rejetée en raison de la mauvaise qualité de la photo.";
 "ondato_waiting_page_failure_try_again_title" = "Réessayer";
 "ondato_waiting_page_document_obscured" = "Nous vérifions que les données de votre document ne sont pas masquées par des ombres ou des rayons lumineux.";
+
+"ondato_interrupted_title" = "Le processus a été interrompu";
+"ondato_interrupted_description" = "En raison d'interruptions, le processus s'est arrêté. Veuillez rester sur cette application jusqu'à ce que vous ayez terminé toutes les étapes.";

@@ -243,3 +243,6 @@
 "ondato_nfc_scan_prompt_error_invalid_mrz_key" = "MRZ atslēga nav derīga šim dokumentam.";
 "ondato_nfc_scan_prompt_error_response" = "Šķiet, ka process tika pārtraukts.";
 "ondato_capture_nfc_failure_title" = "Šķiet, ka process tika pārtraukts.";
+
+"ondato_interrupted_title" = "Process tika pārtraukts";
+"ondato_interrupted_description" = "Pārtraukumu dēļ process ir apstājies. Lūdzu, palieciet šajā lietotnē, līdz esat pabeidzis visas darbības.";

@@ -241,3 +241,6 @@
 "ondato_nfc_scan_prompt_error_invalid_mrz_key" = "MRZ-võti ei kehti selle dokumendi jaoks.";
 "ondato_nfc_scan_prompt_error_response" = "Näib, et protsess katkestati.";
 "ondato_capture_nfc_failure_title" = "Näib, et protsess katkestati.";
+
+"ondato_interrupted_title" = "Protsess katkestati";
+"ondato_interrupted_description" = "Protsess katkestati Katkestuste tõttu on protsess peatunud. Jätkake seda rakendust, kuni olete kõik sammud lõpetanud.";

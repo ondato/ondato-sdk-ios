@@ -244,3 +244,6 @@
 "ondato_nfc_scan_prompt_error_invalid_mrz_key" = "MRZ-Schlüssel für dieses Dokument nicht gültig.";
 "ondato_nfc_scan_prompt_error_response" = "Anscheinend wurde der Vorgang unterbrochen.";
 "ondato_capture_nfc_failure_title" = "Anscheinend wurde der Vorgang unterbrochen.";
+
+"ondato_interrupted_title" = "Der Prozess wurde unterbrochen";
+"ondato_interrupted_description" = "Aufgrund von Unterbrechungen wurde der Prozess gestoppt. Bitte bleiben Sie in dieser App, bis Sie alle Schritte abgeschlossen haben.";

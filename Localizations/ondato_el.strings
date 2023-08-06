@@ -252,3 +252,6 @@
 "ondato_poor_photo_quality_primary" = "Η ταυτοποίηση σου απορρίπτεται λόγω κακής ποιότητας φωτογραφίας.";
 "ondato_waiting_page_failure_try_again_title" = "Δοκίμασε ξανά";
 "ondato_waiting_page_document_obscured" = "Ελέγχουμε εάν τα δεδομένα στο έγγραφό σου δεν καλύπτονται από σκιές ή ακτίνες φωτός.";
+
+"ondato_interrupted_title" = "Η διαδικασία διεκόπη";
+"ondato_interrupted_description" = "Λόγω διακοπών η διαδικασία σταμάτησε. Παρακαλούμε μείνετε σε αυτήν την εφαρμογή μέχρι να ολοκληρώσετε όλα τα βήματα.";

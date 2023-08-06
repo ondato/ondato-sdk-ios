@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OndatoSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -33,7 +33,7 @@ import _StringProcessing
 extension OndatoSDK.Reactive where Base : UIKit.UIScrollView {
   public typealias EndZoomEvent = (view: UIKit.UIView?, scale: CoreFoundation.CGFloat)
   public typealias WillEndDraggingEvent = (velocity: CoreFoundation.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>)
-  public var delegate: OndatoSDK.DelegateProxy<UIKit.UIScrollView, UIKit.UIScrollViewDelegate> {
+  public var delegate: OndatoSDK.DelegateProxy<UIKit.UIScrollView, any UIKit.UIScrollViewDelegate> {
     get
   }
   public var contentOffset: OndatoSDK.ControlProperty<CoreFoundation.CGPoint> {
@@ -72,7 +72,7 @@ extension OndatoSDK.Reactive where Base : UIKit.UIScrollView {
   public var didEndZooming: OndatoSDK.ControlEvent<OndatoSDK.Reactive<Base>.EndZoomEvent> {
     get
   }
-  public func setDelegate(_ delegate: UIKit.UIScrollViewDelegate) -> OndatoSDK.Disposable
+  public func setDelegate(_ delegate: any UIKit.UIScrollViewDelegate) -> any OndatoSDK.Disposable
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ReplaySubject<Element> : OndatoSDK.Observable<Element>, OndatoSDK.SubjectType, OndatoSDK.ObserverType, OndatoSDK.Disposable {
   public typealias SubjectObserverType = OndatoSDK.ReplaySubject<Element>
@@ -91,23 +91,23 @@ public enum CompletableTrait {
 }
 public typealias Completable = OndatoSDK.PrimitiveSequence<OndatoSDK.CompletableTrait, Swift.Never>
 @frozen public enum CompletableEvent {
-  case error(Swift.Error)
+  case error(any Swift.Error)
   case completed
 }
 extension OndatoSDK.PrimitiveSequenceType where Self.Element == Swift.Never, Self.Trait == OndatoSDK.CompletableTrait {
   public typealias CompletableObserver = (OndatoSDK.CompletableEvent) -> Swift.Void
-  public static func create(subscribe: @escaping (@escaping Self.CompletableObserver) -> OndatoSDK.Disposable) -> OndatoSDK.PrimitiveSequence<Self.Trait, Self.Element>
-  public func subscribe(_ observer: @escaping (OndatoSDK.CompletableEvent) -> Swift.Void) -> OndatoSDK.Disposable
-  public func subscribe<Object>(with object: Object, onCompleted: ((Object) -> Swift.Void)? = nil, onError: ((Object, Swift.Error) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> OndatoSDK.Disposable where Object : AnyObject
-  public func subscribe(onCompleted: (() -> Swift.Void)? = nil, onError: ((Swift.Error) -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> OndatoSDK.Disposable
+  public static func create(subscribe: @escaping (@escaping Self.CompletableObserver) -> any OndatoSDK.Disposable) -> OndatoSDK.PrimitiveSequence<Self.Trait, Self.Element>
+  public func subscribe(_ observer: @escaping (OndatoSDK.CompletableEvent) -> Swift.Void) -> any OndatoSDK.Disposable
+  public func subscribe<Object>(with object: Object, onCompleted: ((Object) -> Swift.Void)? = nil, onError: ((Object, any Swift.Error) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> any OndatoSDK.Disposable where Object : AnyObject
+  public func subscribe(onCompleted: (() -> Swift.Void)? = nil, onError: ((any Swift.Error) -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.PrimitiveSequenceType where Self.Element == Swift.Never, Self.Trait == OndatoSDK.CompletableTrait {
-  public static func error(_ error: Swift.Error) -> OndatoSDK.Completable
+  public static func error(_ error: any Swift.Error) -> OndatoSDK.Completable
   public static func never() -> OndatoSDK.Completable
   public static func empty() -> OndatoSDK.Completable
 }
 extension OndatoSDK.PrimitiveSequenceType where Self.Element == Swift.Never, Self.Trait == OndatoSDK.CompletableTrait {
-  public func `do`(onError: ((Swift.Error) throws -> Swift.Void)? = nil, afterError: ((Swift.Error) throws -> Swift.Void)? = nil, onCompleted: (() throws -> Swift.Void)? = nil, afterCompleted: (() throws -> Swift.Void)? = nil, onSubscribe: (() -> Swift.Void)? = nil, onSubscribed: (() -> Swift.Void)? = nil, onDispose: (() -> Swift.Void)? = nil) -> OndatoSDK.Completable
+  public func `do`(onError: ((any Swift.Error) throws -> Swift.Void)? = nil, afterError: ((any Swift.Error) throws -> Swift.Void)? = nil, onCompleted: (() throws -> Swift.Void)? = nil, afterCompleted: (() throws -> Swift.Void)? = nil, onSubscribe: (() -> Swift.Void)? = nil, onSubscribed: (() -> Swift.Void)? = nil, onDispose: (() -> Swift.Void)? = nil) -> OndatoSDK.Completable
   public func concat(_ second: OndatoSDK.Completable) -> OndatoSDK.Completable
   public static func concat<Sequence>(_ sequence: Sequence) -> OndatoSDK.Completable where Sequence : Swift.Sequence, Sequence.Element == OndatoSDK.PrimitiveSequence<OndatoSDK.CompletableTrait, Swift.Never>
   public static func concat<Collection>(_ collection: Collection) -> OndatoSDK.Completable where Collection : Swift.Collection, Collection.Element == OndatoSDK.PrimitiveSequence<OndatoSDK.CompletableTrait, Swift.Never>
@@ -138,15 +138,15 @@ extension OndatoSDK.PrimitiveSequenceType where Self.Element == Swift.Never, Sel
   @objc deinit
 }
 extension OndatoSDK.Reactive where Base : UIKit.UITableView {
-  public func items<Sequence, Source>(_ source: Source) -> (_ cellFactory: @escaping (UIKit.UITableView, Swift.Int, Sequence.Element) -> UIKit.UITableViewCell) -> OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
-  public func items<Sequence, Cell, Source>(cellIdentifier: Swift.String, cellType: Cell.Type = Cell.self) -> (_ source: Source) -> (_ configureCell: @escaping (Swift.Int, Sequence.Element, Cell) -> Swift.Void) -> OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Cell : UIKit.UITableViewCell, Source : OndatoSDK.ObservableType
-  public func items<DataSource, Source>(dataSource: DataSource) -> (_ source: Source) -> OndatoSDK.Disposable where DataSource : OndatoSDK.RxTableViewDataSourceType, DataSource : UIKit.UITableViewDataSource, Source : OndatoSDK.ObservableType, DataSource.Element == Source.Element
+  public func items<Sequence, Source>(_ source: Source) -> (_ cellFactory: @escaping (UIKit.UITableView, Swift.Int, Sequence.Element) -> UIKit.UITableViewCell) -> any OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
+  public func items<Sequence, Cell, Source>(cellIdentifier: Swift.String, cellType: Cell.Type = Cell.self) -> (_ source: Source) -> (_ configureCell: @escaping (Swift.Int, Sequence.Element, Cell) -> Swift.Void) -> any OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Cell : UIKit.UITableViewCell, Source : OndatoSDK.ObservableType
+  public func items<DataSource, Source>(dataSource: DataSource) -> (_ source: Source) -> any OndatoSDK.Disposable where DataSource : OndatoSDK.RxTableViewDataSourceType, DataSource : UIKit.UITableViewDataSource, Source : OndatoSDK.ObservableType, DataSource.Element == Source.Element
 }
 extension OndatoSDK.Reactive where Base : UIKit.UITableView {
-  public var dataSource: OndatoSDK.DelegateProxy<UIKit.UITableView, UIKit.UITableViewDataSource> {
+  public var dataSource: OndatoSDK.DelegateProxy<UIKit.UITableView, any UIKit.UITableViewDataSource> {
     get
   }
-  public func setDataSource(_ dataSource: UIKit.UITableViewDataSource) -> OndatoSDK.Disposable
+  public func setDataSource(_ dataSource: any UIKit.UITableViewDataSource) -> any OndatoSDK.Disposable
   public var itemSelected: OndatoSDK.ControlEvent<Foundation.IndexPath> {
     get
   }
@@ -184,10 +184,10 @@ extension OndatoSDK.Reactive where Base : UIKit.UITableView {
 }
 @available(iOS 10.0, tvOS 10.0, *)
 extension OndatoSDK.Reactive where Base : UIKit.UITableView {
-  public var prefetchDataSource: OndatoSDK.DelegateProxy<UIKit.UITableView, UIKit.UITableViewDataSourcePrefetching> {
+  public var prefetchDataSource: OndatoSDK.DelegateProxy<UIKit.UITableView, any UIKit.UITableViewDataSourcePrefetching> {
     get
   }
-  public func setPrefetchDataSource(_ prefetchDataSource: UIKit.UITableViewDataSourcePrefetching) -> OndatoSDK.Disposable
+  public func setPrefetchDataSource(_ prefetchDataSource: any UIKit.UITableViewDataSourcePrefetching) -> any OndatoSDK.Disposable
   public var prefetchRows: OndatoSDK.ControlEvent<[Foundation.IndexPath]> {
     get
   }
@@ -202,7 +202,7 @@ public enum RxCocoaError : Swift.Error, Swift.CustomDebugStringConvertible {
   case invalidPropertyName(object: Any, propertyName: Swift.String)
   case invalidObjectOnKeyPath(object: Any, sourceObject: Swift.AnyObject, propertyName: Swift.String)
   case errorDuringSwizzling
-  case castingError(object: Any, targetType: Any.Type)
+  case castingError(object: Any, targetType: any Any.Type)
 }
 extension OndatoSDK.RxCocoaError {
   public var debugDescription: Swift.String {
@@ -210,7 +210,7 @@ extension OndatoSDK.RxCocoaError {
   }
 }
 extension OndatoSDK.ObservableType {
-  public static func generate(initialState: Self.Element, condition: @escaping (Self.Element) throws -> Swift.Bool, scheduler: OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance, iterate: @escaping (Self.Element) throws -> Self.Element) -> OndatoSDK.Observable<Self.Element>
+  public static func generate(initialState: Self.Element, condition: @escaping (Self.Element) throws -> Swift.Bool, scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance, iterate: @escaping (Self.Element) throws -> Self.Element) -> OndatoSDK.Observable<Self.Element>
 }
 @available(iOS 13, macOS 10.15, *)
 public enum CertificateType {
@@ -255,7 +255,7 @@ public class X509Wrapper {
   @objc deinit
 }
 extension OndatoSDK.ObservableType {
-  public func throttle(_ dueTime: OndatoSDK.RxTimeInterval, latest: Swift.Bool = true, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func throttle(_ dueTime: OndatoSDK.RxTimeInterval, latest: Swift.Bool = true, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.SharedSequenceConvertibleType {
   public func map<Result>(_ selector: @escaping (Self.Element) -> Result) -> OndatoSDK.SharedSequence<Self.SharingStrategy, Result>
@@ -381,13 +381,13 @@ extension UIKit.UITableView : OndatoSDK.HasPrefetchDataSource {
   public typealias PrefetchDataSource = UIKit.UITableViewDataSourcePrefetching
 }
 @available(iOS 10.0, tvOS 10.0, *)
-open class RxTableViewDataSourcePrefetchingProxy : OndatoSDK.DelegateProxy<UIKit.UITableView, UIKit.UITableViewDataSourcePrefetching>, OndatoSDK.DelegateProxyType {
+open class RxTableViewDataSourcePrefetchingProxy : OndatoSDK.DelegateProxy<UIKit.UITableView, any UIKit.UITableViewDataSourcePrefetching>, OndatoSDK.DelegateProxyType {
   weak public var tableView: UIKit.UITableView? {
     get
   }
   public init(tableView: OndatoSDK.RxTableViewDataSourcePrefetchingProxy.ParentObject)
   public static func registerKnownImplementations()
-  override open func setForwardToDelegate(_ forwardToDelegate: UIKit.UITableViewDataSourcePrefetching?, retainDelegate: Swift.Bool)
+  override open func setForwardToDelegate(_ forwardToDelegate: (any UIKit.UITableViewDataSourcePrefetching)?, retainDelegate: Swift.Bool)
   @objc deinit
 }
 @available(iOS 10.0, tvOS 10.0, *)
@@ -429,7 +429,7 @@ extension OndatoSDK.ObservableType {
   public func ifEmpty(default: Self.Element) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.ObservableType where Self.Element : Swift.FixedWidthInteger {
-  public static func range(start: Self.Element, count: Self.Element, scheduler: OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element>
+  public static func range(start: Self.Element, count: Self.Element, scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element>
 }
 @_hasMissingDesignatedInitializers final public class MainScheduler : OndatoSDK.SerialDispatchQueueScheduler {
   public init()
@@ -447,9 +447,9 @@ public class ConcurrentDispatchQueueScheduler : OndatoSDK.SchedulerType {
   }
   public init(queue: Dispatch.DispatchQueue, leeway: Dispatch.DispatchTimeInterval = DispatchTimeInterval.nanoseconds(0))
   convenience public init(qos: Dispatch.DispatchQoS, leeway: Dispatch.DispatchTimeInterval = DispatchTimeInterval.nanoseconds(0))
-  final public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  final public func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> OndatoSDK.Disposable
+  final public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  final public func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> any OndatoSDK.Disposable
   @objc deinit
 }
 public protocol Disposable {
@@ -528,7 +528,7 @@ public protocol Disposable {
   @objc deinit
 }
 extension OndatoSDK.ObservableType {
-  public func delaySubscription(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func delaySubscription(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 public protocol AnimationTextProvider : AnyObject {
   func textFor(keypathName: Swift.String, sourceText: Swift.String) -> Swift.String
@@ -554,9 +554,9 @@ extension OndatoSDK.Animation {
   final public var size: CoreFoundation.CGSize {
     get
   }
-  public static func named(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main, subdirectory: Swift.String? = nil, animationCache: OndatoSDK.AnimationCacheProvider? = nil) -> OndatoSDK.Animation?
-  public static func filepath(_ filepath: Swift.String, animationCache: OndatoSDK.AnimationCacheProvider? = nil) -> OndatoSDK.Animation?
-  public static func loadedFrom(url: Foundation.URL, closure: @escaping OndatoSDK.Animation.DownloadClosure, animationCache: OndatoSDK.AnimationCacheProvider?)
+  public static func named(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main, subdirectory: Swift.String? = nil, animationCache: (any OndatoSDK.AnimationCacheProvider)? = nil) -> OndatoSDK.Animation?
+  public static func filepath(_ filepath: Swift.String, animationCache: (any OndatoSDK.AnimationCacheProvider)? = nil) -> OndatoSDK.Animation?
+  public static func loadedFrom(url: Foundation.URL, closure: @escaping OndatoSDK.Animation.DownloadClosure, animationCache: (any OndatoSDK.AnimationCacheProvider)?)
   final public func progressTime(forMarker named: Swift.String) -> OndatoSDK.AnimationProgressTime?
   final public func frameTime(forMarker named: Swift.String) -> OndatoSDK.AnimationFrameTime?
   final public func progressTime(forFrame frameTime: OndatoSDK.AnimationFrameTime) -> OndatoSDK.AnimationProgressTime
@@ -567,7 +567,7 @@ extension OndatoSDK.Animation {
 extension UIKit.NSTextStorage : OndatoSDK.HasDelegate {
   public typealias Delegate = UIKit.NSTextStorageDelegate
 }
-open class RxTextStorageDelegateProxy : OndatoSDK.DelegateProxy<UIKit.NSTextStorage, UIKit.NSTextStorageDelegate>, OndatoSDK.DelegateProxyType {
+open class RxTextStorageDelegateProxy : OndatoSDK.DelegateProxy<UIKit.NSTextStorage, any UIKit.NSTextStorageDelegate>, OndatoSDK.DelegateProxyType {
   weak public var textStorage: UIKit.NSTextStorage? {
     get
   }
@@ -626,11 +626,11 @@ extension OndatoSDK.ObservableType {
     set
   }
   @_Concurrency.MainActor(unsafe) public func setLayer(named: Swift.String, forState: UIKit.UIControl.State)
-  @_Concurrency.MainActor(unsafe) public func setValueProvider(_ valueProvider: OndatoSDK.AnyValueProvider, keypath: OndatoSDK.AnimationKeypath)
+  @_Concurrency.MainActor(unsafe) public func setValueProvider(_ valueProvider: any OndatoSDK.AnyValueProvider, keypath: OndatoSDK.AnimationKeypath)
   @objc deinit
 }
 extension OndatoSDK.ObservableType {
-  public func debounce(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func debounce(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 public enum LayerType : Swift.Int, Swift.Codable {
   case precomp
@@ -639,7 +639,7 @@ public enum LayerType : Swift.Int, Swift.Codable {
   case null
   case shape
   case text
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -698,10 +698,10 @@ open class VirtualTimeScheduler<Converter> : OndatoSDK.SchedulerType where Conve
     get
   }
   public init(initialClock: OndatoSDK.VirtualTimeScheduler<Converter>.VirtualTime, converter: Converter)
-  public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  public func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  public func scheduleRelativeVirtual<StateType>(_ state: StateType, dueTime: OndatoSDK.VirtualTimeScheduler<Converter>.VirtualTimeInterval, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  public func scheduleAbsoluteVirtual<StateType>(_ state: StateType, time: OndatoSDK.VirtualTimeScheduler<Converter>.VirtualTime, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
+  public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  public func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  public func scheduleRelativeVirtual<StateType>(_ state: StateType, dueTime: OndatoSDK.VirtualTimeScheduler<Converter>.VirtualTimeInterval, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  public func scheduleAbsoluteVirtual<StateType>(_ state: StateType, time: OndatoSDK.VirtualTimeScheduler<Converter>.VirtualTime, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
   open func adjustScheduledTime(_ time: OndatoSDK.VirtualTimeScheduler<Converter>.VirtualTime) -> OndatoSDK.VirtualTimeScheduler<Converter>.VirtualTime
   public func start()
   public func advanceTo(_ virtualTime: OndatoSDK.VirtualTimeScheduler<Converter>.VirtualTime)
@@ -721,7 +721,7 @@ extension OndatoSDK.Reactive where Base : ObjectiveC.NSObject {
   public func observeWeakly<Element>(_ type: Element.Type, _ keyPath: Swift.String, options: OndatoSDK.KeyValueObservingOptions = [.new, .initial]) -> OndatoSDK.Observable<Element?> where Element : Swift.RawRepresentable, Element.RawValue : OndatoSDK.KVORepresentable
 }
 extension OndatoSDK.ObservableType {
-  public func delay(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func delay(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 final public class BehaviorRelay<Element> : OndatoSDK.ObservableType {
   final public func accept(_ event: Element)
@@ -729,7 +729,7 @@ final public class BehaviorRelay<Element> : OndatoSDK.ObservableType {
     get
   }
   public init(value: Element)
-  final public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
+  final public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
   final public func asObservable() -> OndatoSDK.Observable<Element>
   @objc deinit
 }
@@ -738,25 +738,25 @@ public enum MaybeTrait {
 public typealias Maybe<Element> = OndatoSDK.PrimitiveSequence<OndatoSDK.MaybeTrait, Element>
 @frozen public enum MaybeEvent<Element> {
   case success(Element)
-  case error(Swift.Error)
+  case error(any Swift.Error)
   case completed
 }
 extension OndatoSDK.PrimitiveSequenceType where Self.Trait == OndatoSDK.MaybeTrait {
   public typealias MaybeObserver = (OndatoSDK.MaybeEvent<Self.Element>) -> Swift.Void
-  public static func create(subscribe: @escaping (@escaping Self.MaybeObserver) -> OndatoSDK.Disposable) -> OndatoSDK.PrimitiveSequence<Self.Trait, Self.Element>
-  public func subscribe(_ observer: @escaping (OndatoSDK.MaybeEvent<Self.Element>) -> Swift.Void) -> OndatoSDK.Disposable
-  public func subscribe<Object>(with object: Object, onSuccess: ((Object, Self.Element) -> Swift.Void)? = nil, onError: ((Object, Swift.Error) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> OndatoSDK.Disposable where Object : AnyObject
-  public func subscribe(onSuccess: ((Self.Element) -> Swift.Void)? = nil, onError: ((Swift.Error) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> OndatoSDK.Disposable
+  public static func create(subscribe: @escaping (@escaping Self.MaybeObserver) -> any OndatoSDK.Disposable) -> OndatoSDK.PrimitiveSequence<Self.Trait, Self.Element>
+  public func subscribe(_ observer: @escaping (OndatoSDK.MaybeEvent<Self.Element>) -> Swift.Void) -> any OndatoSDK.Disposable
+  public func subscribe<Object>(with object: Object, onSuccess: ((Object, Self.Element) -> Swift.Void)? = nil, onError: ((Object, any Swift.Error) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> any OndatoSDK.Disposable where Object : AnyObject
+  public func subscribe(onSuccess: ((Self.Element) -> Swift.Void)? = nil, onError: ((any Swift.Error) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.PrimitiveSequenceType where Self.Trait == OndatoSDK.MaybeTrait {
   public static func just(_ element: Self.Element) -> OndatoSDK.Maybe<Self.Element>
-  public static func just(_ element: Self.Element, scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Maybe<Self.Element>
-  public static func error(_ error: Swift.Error) -> OndatoSDK.Maybe<Self.Element>
+  public static func just(_ element: Self.Element, scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Maybe<Self.Element>
+  public static func error(_ error: any Swift.Error) -> OndatoSDK.Maybe<Self.Element>
   public static func never() -> OndatoSDK.Maybe<Self.Element>
   public static func empty() -> OndatoSDK.Maybe<Self.Element>
 }
 extension OndatoSDK.PrimitiveSequenceType where Self.Trait == OndatoSDK.MaybeTrait {
-  public func `do`(onNext: ((Self.Element) throws -> Swift.Void)? = nil, afterNext: ((Self.Element) throws -> Swift.Void)? = nil, onError: ((Swift.Error) throws -> Swift.Void)? = nil, afterError: ((Swift.Error) throws -> Swift.Void)? = nil, onCompleted: (() throws -> Swift.Void)? = nil, afterCompleted: (() throws -> Swift.Void)? = nil, onSubscribe: (() -> Swift.Void)? = nil, onSubscribed: (() -> Swift.Void)? = nil, onDispose: (() -> Swift.Void)? = nil) -> OndatoSDK.Maybe<Self.Element>
+  public func `do`(onNext: ((Self.Element) throws -> Swift.Void)? = nil, afterNext: ((Self.Element) throws -> Swift.Void)? = nil, onError: ((any Swift.Error) throws -> Swift.Void)? = nil, afterError: ((any Swift.Error) throws -> Swift.Void)? = nil, onCompleted: (() throws -> Swift.Void)? = nil, afterCompleted: (() throws -> Swift.Void)? = nil, onSubscribe: (() -> Swift.Void)? = nil, onSubscribed: (() -> Swift.Void)? = nil, onDispose: (() -> Swift.Void)? = nil) -> OndatoSDK.Maybe<Self.Element>
   public func filter(_ predicate: @escaping (Self.Element) throws -> Swift.Bool) -> OndatoSDK.Maybe<Self.Element>
   public func map<Result>(_ transform: @escaping (Self.Element) throws -> Result) -> OndatoSDK.Maybe<Result>
   public func compactMap<Result>(_ transform: @escaping (Self.Element) throws -> Result?) -> OndatoSDK.Maybe<Result>
@@ -769,12 +769,12 @@ extension OndatoSDK.PrimitiveSequenceType where Self.Trait == OndatoSDK.MaybeTra
   public func catchErrorJustReturn(_ element: Self.Element) -> OndatoSDK.PrimitiveSequence<Self.Trait, Self.Element>
 }
 extension OndatoSDK.Disposables {
-  public static func create() -> OndatoSDK.Disposable
+  public static func create() -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.ObservableType {
-  public func `catch`(_ handler: @escaping (Swift.Error) throws -> OndatoSDK.Observable<Self.Element>) -> OndatoSDK.Observable<Self.Element>
+  public func `catch`(_ handler: @escaping (any Swift.Error) throws -> OndatoSDK.Observable<Self.Element>) -> OndatoSDK.Observable<Self.Element>
   @available(*, deprecated, renamed: "catch(_:)")
-  public func catchError(_ handler: @escaping (Swift.Error) throws -> OndatoSDK.Observable<Self.Element>) -> OndatoSDK.Observable<Self.Element>
+  public func catchError(_ handler: @escaping (any Swift.Error) throws -> OndatoSDK.Observable<Self.Element>) -> OndatoSDK.Observable<Self.Element>
   public func catchAndReturn(_ element: Self.Element) -> OndatoSDK.Observable<Self.Element>
   @available(*, deprecated, renamed: "catchAndReturn(_:)")
   public func catchErrorJustReturn(_ element: Self.Element) -> OndatoSDK.Observable<Self.Element>
@@ -900,7 +900,7 @@ public class NFCPassportModel {
   public var activeAuthenticationSignature: [Swift.UInt8] {
     get
   }
-  public var verificationErrors: [Swift.Error] {
+  public var verificationErrors: [any Swift.Error] {
     get
   }
   public var isPACESupported: Swift.Bool {
@@ -943,13 +943,13 @@ extension CoreFoundation.CGSize : OndatoSDK.KVORepresentable {
 extension UIKit.UICollectionView : OndatoSDK.HasDataSource {
   public typealias DataSource = UIKit.UICollectionViewDataSource
 }
-open class RxCollectionViewDataSourceProxy : OndatoSDK.DelegateProxy<UIKit.UICollectionView, UIKit.UICollectionViewDataSource>, OndatoSDK.DelegateProxyType {
+open class RxCollectionViewDataSourceProxy : OndatoSDK.DelegateProxy<UIKit.UICollectionView, any UIKit.UICollectionViewDataSource>, OndatoSDK.DelegateProxyType {
   weak public var collectionView: UIKit.UICollectionView? {
     get
   }
   public init(collectionView: OndatoSDK.RxCollectionViewDataSourceProxy.ParentObject)
   public static func registerKnownImplementations()
-  override open func setForwardToDelegate(_ forwardToDelegate: UIKit.UICollectionViewDataSource?, retainDelegate: Swift.Bool)
+  override open func setForwardToDelegate(_ forwardToDelegate: (any UIKit.UICollectionViewDataSource)?, retainDelegate: Swift.Bool)
   @objc deinit
 }
 extension OndatoSDK.RxCollectionViewDataSourceProxy : UIKit.UICollectionViewDataSource {
@@ -975,7 +975,7 @@ extension OndatoSDK.Reactive where Base : UIKit.UIActivityIndicatorView {
   final public func accept(_ event: Element)
   public static func create(bufferSize: Swift.Int) -> OndatoSDK.ReplayRelay<Element>
   public static func createUnbound() -> OndatoSDK.ReplayRelay<Element>
-  final public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
+  final public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
   final public func asObservable() -> OndatoSDK.Observable<Element>
   @objc deinit
 }
@@ -1015,7 +1015,7 @@ extension OndatoSDK.Reactive where Base : UIKit.UIGestureRecognizer {
   }
   public init()
   final public func on(_ event: OndatoSDK.Event<Element>)
-  override final public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
+  override final public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
   final public func asObserver() -> OndatoSDK.PublishSubject<Element>
   final public func dispose()
   public typealias Observer = OndatoSDK.PublishSubject<Element>
@@ -1033,7 +1033,7 @@ extension OndatoSDK.SharedSequence {
 }
 extension OndatoSDK.ObservableType {
   public static func from(optional: Self.Element?) -> OndatoSDK.Observable<Self.Element>
-  public static func from(optional: Self.Element?, scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public static func from(optional: Self.Element?, scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.Reactive where Base : UIKit.UIRefreshControl {
   public var isRefreshing: OndatoSDK.Binder<Swift.Bool> {
@@ -1041,17 +1041,17 @@ extension OndatoSDK.Reactive where Base : UIKit.UIRefreshControl {
   }
 }
 public class Asset : Swift.Codable {
-  required public init(from decoder: Swift.Decoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
   final public let id: Swift.String
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension OndatoSDK.ObservableType {
-  public static func repeatElement(_ element: Self.Element, scheduler: OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element>
+  public static func repeatElement(_ element: Self.Element, scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element>
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Ondato) public class Ondato : ObjectiveC.NSObject {
   @objc public static let sdk: OndatoSDK.Ondato
-  @objc weak public var delegate: OndatoSDK.OndatoFlowDelegate?
+  @objc weak public var delegate: (any OndatoSDK.OndatoFlowDelegate)?
   @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
   @objc public func setIdentityVerificationId(_ id: Swift.String)
   @objc public func setSetupId(_ setupId: Swift.String)
@@ -1081,7 +1081,7 @@ public protocol ControlEventType : OndatoSDK.ObservableType {
 public struct ControlEvent<PropertyType> : OndatoSDK.ControlEventType {
   public typealias Element = PropertyType
   public init<Ev>(events: Ev) where PropertyType == Ev.Element, Ev : OndatoSDK.ObservableType
-  public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where PropertyType == Observer.Element, Observer : OndatoSDK.ObserverType
+  public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where PropertyType == Observer.Element, Observer : OndatoSDK.ObserverType
   public func asObservable() -> OndatoSDK.Observable<OndatoSDK.ControlEvent<PropertyType>.Element>
   public func asControlEvent() -> OndatoSDK.ControlEvent<OndatoSDK.ControlEvent<PropertyType>.Element>
 }
@@ -1144,7 +1144,7 @@ public class ChipAuthenticationPublicKeyInfo : OndatoSDK.SecurityInfo {
 }
 @frozen public enum Event<Element> {
   case next(Element)
-  case error(Swift.Error)
+  case error(any Swift.Error)
   case completed
 }
 extension OndatoSDK.Event : Swift.CustomDebugStringConvertible {
@@ -1159,7 +1159,7 @@ extension OndatoSDK.Event {
   public var element: Element? {
     get
   }
-  public var error: Swift.Error? {
+  public var error: (any Swift.Error)? {
     get
   }
   public var isCompleted: Swift.Bool {
@@ -1194,7 +1194,7 @@ extension OndatoSDK.Reactive where Base : ObjectiveC.NSObject {
   public func observeWeakly<Element>(_ type: Element.Type, _ keyPath: Swift.String, options: OndatoSDK.KeyValueObservingOptions = [.new, .initial]) -> OndatoSDK.Observable<Element?> where Element : OndatoSDK.KVORepresentable
 }
 extension OndatoSDK.Reactive where Base : UIKit.UISearchController {
-  public var delegate: OndatoSDK.DelegateProxy<UIKit.UISearchController, UIKit.UISearchControllerDelegate> {
+  public var delegate: OndatoSDK.DelegateProxy<UIKit.UISearchController, any UIKit.UISearchControllerDelegate> {
     get
   }
   public var didDismiss: OndatoSDK.Observable<Swift.Void> {
@@ -1258,9 +1258,9 @@ extension OndatoSDK.BehaviorRelay {
   final public func asDriver() -> OndatoSDK.Driver<Element>
 }
 extension OndatoSDK.ObservableType {
-  public func subscribe(on scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func subscribe(on scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
   @available(*, deprecated, renamed: "subscribe(on:)")
-  public func subscribeOn(_ scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func subscribeOn(_ scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 public protocol AnimationImageProvider {
   func imageForAsset(asset: OndatoSDK.ImageAsset) -> CoreGraphics.CGImage?
@@ -1296,9 +1296,9 @@ public protocol AnimationImageProvider {
     get
   }
   public static let instance: OndatoSDK.ConcurrentMainScheduler
-  final public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  final public func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  final public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> OndatoSDK.Disposable
+  final public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  final public func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  final public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> any OndatoSDK.Disposable
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
@@ -1399,7 +1399,7 @@ final public class PointValueProvider : OndatoSDK.AnyValueProvider {
     get
     set
   }
-  final public var valueType: Any.Type {
+  final public var valueType: any Any.Type {
     get
   }
   final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
@@ -1440,7 +1440,7 @@ extension OndatoSDK.LottieLoopMode : Swift.Equatable {
   public static func == (lhs: OndatoSDK.LottieLoopMode, rhs: OndatoSDK.LottieLoopMode) -> Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) final public class AnimationView : OndatoSDK.LottieView {
-  @_Concurrency.MainActor(unsafe) public init(animation: OndatoSDK.Animation?, imageProvider: OndatoSDK.AnimationImageProvider? = nil, textProvider: OndatoSDK.AnimationTextProvider = DefaultTextProvider(), fontProvider: OndatoSDK.AnimationFontProvider = DefaultFontProvider())
+  @_Concurrency.MainActor(unsafe) public init(animation: OndatoSDK.Animation?, imageProvider: (any OndatoSDK.AnimationImageProvider)? = nil, textProvider: any OndatoSDK.AnimationTextProvider = DefaultTextProvider(), fontProvider: any OndatoSDK.AnimationFontProvider = DefaultFontProvider())
   @_Concurrency.MainActor(unsafe) @objc dynamic public init()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame _: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -1449,15 +1449,15 @@ extension OndatoSDK.LottieLoopMode : Swift.Equatable {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) final public var imageProvider: OndatoSDK.AnimationImageProvider {
+  @_Concurrency.MainActor(unsafe) final public var imageProvider: any OndatoSDK.AnimationImageProvider {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) final public var textProvider: OndatoSDK.AnimationTextProvider {
+  @_Concurrency.MainActor(unsafe) final public var textProvider: any OndatoSDK.AnimationTextProvider {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) final public var fontProvider: OndatoSDK.AnimationFontProvider {
+  @_Concurrency.MainActor(unsafe) final public var fontProvider: any OndatoSDK.AnimationFontProvider {
     get
     set
   }
@@ -1516,7 +1516,7 @@ extension OndatoSDK.LottieLoopMode : Swift.Equatable {
   @_Concurrency.MainActor(unsafe) final public func pause()
   @_Concurrency.MainActor(unsafe) final public func reloadImages()
   @_Concurrency.MainActor(unsafe) final public func forceDisplayUpdate()
-  @_Concurrency.MainActor(unsafe) final public func setValueProvider(_ valueProvider: OndatoSDK.AnyValueProvider, keypath: OndatoSDK.AnimationKeypath)
+  @_Concurrency.MainActor(unsafe) final public func setValueProvider(_ valueProvider: any OndatoSDK.AnyValueProvider, keypath: OndatoSDK.AnimationKeypath)
   @_Concurrency.MainActor(unsafe) final public func getValue(for keypath: OndatoSDK.AnimationKeypath, atFrame: OndatoSDK.AnimationFrameTime?) -> Any?
   @_Concurrency.MainActor(unsafe) final public func logHierarchyKeypaths()
   @_Concurrency.MainActor(unsafe) final public func addSubview(_ subview: OndatoSDK.AnimationSubview, forLayerAt keypath: OndatoSDK.AnimationKeypath)
@@ -1528,7 +1528,7 @@ extension OndatoSDK.LottieLoopMode : Swift.Equatable {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ConnectableObservable<Element> : OndatoSDK.Observable<Element>, OndatoSDK.ConnectableObservableType {
-  public func connect() -> OndatoSDK.Disposable
+  public func connect() -> any OndatoSDK.Disposable
   @objc deinit
 }
 extension OndatoSDK.ObservableType {
@@ -1561,7 +1561,7 @@ final public class GradientValueProvider : OndatoSDK.AnyValueProvider {
     get
     set
   }
-  final public var valueType: Any.Type {
+  final public var valueType: any Any.Type {
     get
   }
   final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
@@ -1569,16 +1569,16 @@ final public class GradientValueProvider : OndatoSDK.AnyValueProvider {
   @objc deinit
 }
 extension OndatoSDK.ObservableType {
-  public func observe(on scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func observe(on scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
   @available(*, deprecated, renamed: "observe(on:)")
-  public func observeOn(_ scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func observeOn(_ scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 public enum SharingScheduler {
-  public static var make: () -> OndatoSDK.SchedulerType {
+  public static var make: () -> any OndatoSDK.SchedulerType {
     get
   }
-  public static func mock(scheduler: OndatoSDK.SchedulerType, action: () throws -> Swift.Void) rethrows
-  public static func mock(makeScheduler: @escaping () -> OndatoSDK.SchedulerType, action: () throws -> Swift.Void) rethrows
+  public static func mock(scheduler: any OndatoSDK.SchedulerType, action: () throws -> Swift.Void) rethrows
+  public static func mock(makeScheduler: @escaping () -> any OndatoSDK.SchedulerType, action: () throws -> Swift.Void) rethrows
 }
 extension OndatoSDK.ObservableType {
   public func sample<Source>(_ sampler: Source, defaultValue: Self.Element? = nil) -> OndatoSDK.Observable<Self.Element> where Source : OndatoSDK.ObservableType
@@ -1649,7 +1649,7 @@ extension OndatoSDK.Reactive where Base : UIKit.UITabBar {
   }
 }
 extension OndatoSDK.Reactive where Base : UIKit.UITabBar {
-  public var delegate: OndatoSDK.DelegateProxy<UIKit.UITabBar, UIKit.UITabBarDelegate> {
+  public var delegate: OndatoSDK.DelegateProxy<UIKit.UITabBar, any UIKit.UITabBarDelegate> {
     get
   }
   public var didSelectItem: OndatoSDK.ControlEvent<UIKit.UITabBarItem> {
@@ -1657,12 +1657,12 @@ extension OndatoSDK.Reactive where Base : UIKit.UITabBar {
   }
 }
 extension OndatoSDK.Vector1D : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension OndatoSDK.Vector3D : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension OndatoSDK.Vector3D {
   public var pointValue: CoreFoundation.CGPoint {
@@ -1678,7 +1678,7 @@ public enum InfallibleEvent<Element> {
 }
 extension OndatoSDK.Infallible {
   public typealias InfallibleObserver = (OndatoSDK.InfallibleEvent<Element>) -> Swift.Void
-  public static func create(subscribe: @escaping (@escaping OndatoSDK.Infallible<Element>.InfallibleObserver) -> OndatoSDK.Disposable) -> OndatoSDK.Infallible<Element>
+  public static func create(subscribe: @escaping (@escaping OndatoSDK.Infallible<Element>.InfallibleObserver) -> any OndatoSDK.Disposable) -> OndatoSDK.Infallible<Element>
 }
 public enum CoordinateSpace : Swift.Int, Swift.Codable {
   case type2d
@@ -1690,7 +1690,7 @@ public enum CoordinateSpace : Swift.Int, Swift.Codable {
   }
 }
 final public class Animation : Swift.Codable {
-  required public init(from decoder: Swift.Decoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
   final public let startFrame: OndatoSDK.AnimationFrameTime
   final public let endFrame: OndatoSDK.AnimationFrameTime
   final public let framerate: Swift.Double
@@ -1698,10 +1698,16 @@ final public class Animation : Swift.Codable {
     get
   }
   @objc deinit
-  final public func encode(to encoder: Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLogManager) public class OndatoLogManager : ObjectiveC.NSObject {
+  @objc public static let manager: OndatoSDK.OndatoLogManager
+  @objc public func showLogButton()
+  @objc public func hideLogButton()
+  @objc deinit
 }
 extension OndatoSDK.ObservableType {
-  public static func error(_ error: Swift.Error) -> OndatoSDK.Observable<Self.Element>
+  public static func error(_ error: any Swift.Error) -> OndatoSDK.Observable<Self.Element>
 }
 final public class SizeValueProvider : OndatoSDK.AnyValueProvider {
   public init(block: @escaping OndatoSDK.SizeValueProvider.SizeValueBlock)
@@ -1711,7 +1717,7 @@ final public class SizeValueProvider : OndatoSDK.AnyValueProvider {
     get
     set
   }
-  final public var valueType: Any.Type {
+  final public var valueType: any Any.Type {
     get
   }
   final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
@@ -1721,13 +1727,13 @@ final public class SizeValueProvider : OndatoSDK.AnyValueProvider {
 final public class PublishRelay<Element> : OndatoSDK.ObservableType {
   final public func accept(_ event: Element)
   public init()
-  final public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
+  final public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
   final public func asObservable() -> OndatoSDK.Observable<Element>
   @objc deinit
 }
 public struct ImageMRZScanner {
   public init()
-  public func scan(scanningImage: OndatoSDK.ScanningImage, orientation: ImageIO.CGImagePropertyOrientation, regionOfInterest: CoreFoundation.CGRect? = nil, minimumTextHeight: Swift.Float? = nil, recognitionLevel: OndatoSDK.RecognitionLevel = .accurate, foundBoundingRectsHandler: (([CoreFoundation.CGRect]) -> Swift.Void)? = nil, completionHandler: @escaping (Swift.Result<OndatoSDK.DocumentScanningResult<OndatoSDK.ParsedResult>, Swift.Error>) -> Swift.Void)
+  public func scan(scanningImage: OndatoSDK.ScanningImage, orientation: ImageIO.CGImagePropertyOrientation, regionOfInterest: CoreFoundation.CGRect? = nil, minimumTextHeight: Swift.Float? = nil, recognitionLevel: OndatoSDK.RecognitionLevel = .accurate, foundBoundingRectsHandler: (([CoreFoundation.CGRect]) -> Swift.Void)? = nil, completionHandler: @escaping (Swift.Result<OndatoSDK.DocumentScanningResult<OndatoSDK.ParsedResult>, any Swift.Error>) -> Swift.Void)
 }
 public enum RxCocoaInterceptionMechanism {
   case unknown
@@ -1761,7 +1767,7 @@ public protocol KVORepresentable {
 extension UIKit.UISearchController : OndatoSDK.HasDelegate {
   public typealias Delegate = UIKit.UISearchControllerDelegate
 }
-open class RxSearchControllerDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UISearchController, UIKit.UISearchControllerDelegate>, OndatoSDK.DelegateProxyType {
+open class RxSearchControllerDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UISearchController, any UIKit.UISearchControllerDelegate>, OndatoSDK.DelegateProxyType {
   weak public var searchController: UIKit.UISearchController? {
     get
   }
@@ -1772,7 +1778,7 @@ open class RxSearchControllerDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UISea
 extension OndatoSDK.RxSearchControllerDelegateProxy : UIKit.UISearchControllerDelegate {
 }
 public protocol ObservableType : OndatoSDK.ObservableConvertibleType {
-  func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
+  func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
 }
 extension OndatoSDK.ObservableType {
   public func asObservable() -> OndatoSDK.Observable<Self.Element>
@@ -1786,7 +1792,7 @@ public class OperationQueueScheduler : OndatoSDK.ImmediateSchedulerType {
   final public let operationQueue: Foundation.OperationQueue
   final public let queuePriority: Foundation.Operation.QueuePriority
   public init(operationQueue: Foundation.OperationQueue, queuePriority: Foundation.Operation.QueuePriority = .normal)
-  public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
+  public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
   @objc deinit
 }
 public protocol DelegateProxyType : AnyObject {
@@ -1808,7 +1814,7 @@ extension OndatoSDK.DelegateProxyType {
   public static func register<Parent>(make: @escaping (Parent) -> Self)
   public static func createProxy(for object: Swift.AnyObject) -> Self
   public static func proxy(for object: Self.ParentObject) -> Self
-  public static func installForwardDelegate(_ forwardDelegate: Self.Delegate, retainDelegate: Swift.Bool, onProxyForObject object: Self.ParentObject) -> OndatoSDK.Disposable
+  public static func installForwardDelegate(_ forwardDelegate: Self.Delegate, retainDelegate: Swift.Bool, onProxyForObject object: Self.ParentObject) -> any OndatoSDK.Disposable
 }
 public protocol HasDelegate : AnyObject {
   associatedtype Delegate
@@ -1844,7 +1850,7 @@ final public class FloatValueProvider : OndatoSDK.AnyValueProvider {
     get
     set
   }
-  final public var valueType: Any.Type {
+  final public var valueType: any Any.Type {
     get
   }
   final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
@@ -1864,13 +1870,13 @@ extension Foundation.PropertyListDecoder : OndatoSDK.DataDecoder {
 extension UIKit.UITableView : OndatoSDK.HasDataSource {
   public typealias DataSource = UIKit.UITableViewDataSource
 }
-open class RxTableViewDataSourceProxy : OndatoSDK.DelegateProxy<UIKit.UITableView, UIKit.UITableViewDataSource>, OndatoSDK.DelegateProxyType {
+open class RxTableViewDataSourceProxy : OndatoSDK.DelegateProxy<UIKit.UITableView, any UIKit.UITableViewDataSource>, OndatoSDK.DelegateProxyType {
   weak public var tableView: UIKit.UITableView? {
     get
   }
   public init(tableView: UIKit.UITableView)
   public static func registerKnownImplementations()
-  override open func setForwardToDelegate(_ forwardToDelegate: UIKit.UITableViewDataSource?, retainDelegate: Swift.Bool)
+  override open func setForwardToDelegate(_ forwardToDelegate: (any UIKit.UITableViewDataSource)?, retainDelegate: Swift.Bool)
   @objc deinit
 }
 extension OndatoSDK.RxTableViewDataSourceProxy : UIKit.UITableViewDataSource {
@@ -1887,12 +1893,12 @@ extension OndatoSDK.RxTableViewDataSourceProxy : UIKit.UITableViewDataSource {
 extension OndatoSDK.RxCollectionViewDelegateProxy : UIKit.UICollectionViewDelegateFlowLayout {
 }
 extension OndatoSDK.ObservableType {
-  public func subscribe(_ on: @escaping (OndatoSDK.Event<Self.Element>) -> Swift.Void) -> OndatoSDK.Disposable
-  public func subscribe<Object>(with object: Object, onNext: ((Object, Self.Element) -> Swift.Void)? = nil, onError: ((Object, Swift.Error) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> OndatoSDK.Disposable where Object : AnyObject
-  public func subscribe(onNext: ((Self.Element) -> Swift.Void)? = nil, onError: ((Swift.Error) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> OndatoSDK.Disposable
+  public func subscribe(_ on: @escaping (OndatoSDK.Event<Self.Element>) -> Swift.Void) -> any OndatoSDK.Disposable
+  public func subscribe<Object>(with object: Object, onNext: ((Object, Self.Element) -> Swift.Void)? = nil, onError: ((Object, any Swift.Error) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> any OndatoSDK.Disposable where Object : AnyObject
+  public func subscribe(onNext: ((Self.Element) -> Swift.Void)? = nil, onError: ((any Swift.Error) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.Hooks {
-  public typealias DefaultErrorHandler = (_ subscriptionCallStack: [Swift.String], _ error: Swift.Error) -> Swift.Void
+  public typealias DefaultErrorHandler = (_ subscriptionCallStack: [Swift.String], _ error: any Swift.Error) -> Swift.Void
   public typealias CustomCaptureSubscriptionCallstack = () -> [Swift.String]
   public static var defaultErrorHandler: OndatoSDK.Hooks.DefaultErrorHandler {
     get
@@ -1906,7 +1912,7 @@ extension OndatoSDK.Hooks {
 extension UIKit.UIPickerView : OndatoSDK.HasDelegate {
   public typealias Delegate = UIKit.UIPickerViewDelegate
 }
-open class RxPickerViewDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UIPickerView, UIKit.UIPickerViewDelegate>, OndatoSDK.DelegateProxyType {
+open class RxPickerViewDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UIPickerView, any UIKit.UIPickerViewDelegate>, OndatoSDK.DelegateProxyType {
   weak public var pickerView: UIKit.UIPickerView? {
     get
   }
@@ -1923,25 +1929,25 @@ extension OndatoSDK.ObservableType {
   public func takeLast(_ count: Swift.Int) -> OndatoSDK.Observable<Self.Element>
 }
 public protocol ConnectableObservableType : OndatoSDK.ObservableType {
-  func connect() -> OndatoSDK.Disposable
+  func connect() -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.SharedSequenceConvertibleType where Self.SharingStrategy == OndatoSDK.DriverSharingStrategy {
-  public func drive<Observer>(_ observers: Observer...) -> OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
-  public func drive<Observer>(_ observers: Observer...) -> OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Observer.Element == Self.Element?
-  public func drive(_ relays: OndatoSDK.BehaviorRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func drive(_ relays: OndatoSDK.BehaviorRelay<Self.Element?>...) -> OndatoSDK.Disposable
-  public func drive(_ relays: OndatoSDK.ReplayRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func drive(_ relays: OndatoSDK.ReplayRelay<Self.Element?>...) -> OndatoSDK.Disposable
+  public func drive<Observer>(_ observers: Observer...) -> any OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
+  public func drive<Observer>(_ observers: Observer...) -> any OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Observer.Element == Self.Element?
+  public func drive(_ relays: OndatoSDK.BehaviorRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func drive(_ relays: OndatoSDK.BehaviorRelay<Self.Element?>...) -> any OndatoSDK.Disposable
+  public func drive(_ relays: OndatoSDK.ReplayRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func drive(_ relays: OndatoSDK.ReplayRelay<Self.Element?>...) -> any OndatoSDK.Disposable
   public func drive<Result>(_ transformation: (OndatoSDK.Observable<Self.Element>) -> Result) -> Result
   public func drive<R1, R2>(_ with: (OndatoSDK.Observable<Self.Element>) -> (R1) -> R2, curriedArgument: R1) -> R2
-  public func drive<Object>(with object: Object, onNext: ((Object, Self.Element) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> OndatoSDK.Disposable where Object : AnyObject
-  public func drive(onNext: ((Self.Element) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> OndatoSDK.Disposable
-  public func drive() -> OndatoSDK.Disposable
+  public func drive<Object>(with object: Object, onNext: ((Object, Self.Element) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> any OndatoSDK.Disposable where Object : AnyObject
+  public func drive(onNext: ((Self.Element) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
+  public func drive() -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.ObservableConvertibleType {
   public func asDriver(onErrorJustReturn: Self.Element) -> OndatoSDK.Driver<Self.Element>
   public func asDriver(onErrorDriveWith: OndatoSDK.Driver<Self.Element>) -> OndatoSDK.Driver<Self.Element>
-  public func asDriver(onErrorRecover: @escaping (_ error: Swift.Error) -> OndatoSDK.Driver<Self.Element>) -> OndatoSDK.Driver<Self.Element>
+  public func asDriver(onErrorRecover: @escaping (_ error: any Swift.Error) -> OndatoSDK.Driver<Self.Element>) -> OndatoSDK.Driver<Self.Element>
 }
 open class DelegateProxy<P, D> : OndatoSDK._RXDelegateProxy where P : AnyObject {
   public typealias ParentObject = P
@@ -1961,18 +1967,18 @@ open class DelegateProxy<P, D> : OndatoSDK._RXDelegateProxy where P : AnyObject 
     get
   }
   public init()
-  final public func setDisposable(_ disposable: OndatoSDK.Disposable)
+  final public func setDisposable(_ disposable: any OndatoSDK.Disposable)
   final public func dispose()
   @objc deinit
 }
 public struct Binder<Value> : OndatoSDK.ObserverType {
   public typealias Element = Value
-  public init<Target>(_ target: Target, scheduler: OndatoSDK.ImmediateSchedulerType = MainScheduler(), binding: @escaping (Target, Value) -> Swift.Void) where Target : AnyObject
+  public init<Target>(_ target: Target, scheduler: any OndatoSDK.ImmediateSchedulerType = MainScheduler(), binding: @escaping (Target, Value) -> Swift.Void) where Target : AnyObject
   public func on(_ event: OndatoSDK.Event<Value>)
   public func asObserver() -> OndatoSDK.AnyObserver<Value>
 }
 extension OndatoSDK.Disposables {
-  public static func create(_ disposable1: OndatoSDK.Disposable, _ disposable2: OndatoSDK.Disposable) -> OndatoSDK.Cancelable
+  public static func create(_ disposable1: any OndatoSDK.Disposable, _ disposable2: any OndatoSDK.Disposable) -> any OndatoSDK.Cancelable
 }
 @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class CardAccess {
@@ -1982,7 +1988,7 @@ public class CardAccess {
   @objc deinit
 }
 public protocol AnyValueProvider {
-  var valueType: Any.Type { get }
+  var valueType: any Any.Type { get }
   func hasUpdate(frame: OndatoSDK.AnimationFrameTime) -> Swift.Bool
   func value(frame: OndatoSDK.AnimationFrameTime) -> Any
 }
@@ -1990,7 +1996,7 @@ public enum RxCocoaURLError : Swift.Error {
   case unknown
   case nonHTTPResponse(response: Foundation.URLResponse)
   case httpRequestFailed(response: Foundation.HTTPURLResponse, data: Foundation.Data?)
-  case deserializationError(error: Swift.Error)
+  case deserializationError(error: any Swift.Error)
 }
 extension OndatoSDK.RxCocoaURLError : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
@@ -2007,14 +2013,14 @@ extension OndatoSDK.Reactive where Base == Foundation.URLSession {
   public static var shouldLogRequest: (Foundation.URLRequest) -> Swift.Bool
 }
 @available(iOS 8.0, macOS 10.10, macOSApplicationExtension 10.10, *)
-open class RxWKNavigationDelegateProxy : OndatoSDK.DelegateProxy<WebKit.WKWebView, WebKit.WKNavigationDelegate>, OndatoSDK.DelegateProxyType {
+open class RxWKNavigationDelegateProxy : OndatoSDK.DelegateProxy<WebKit.WKWebView, any WebKit.WKNavigationDelegate>, OndatoSDK.DelegateProxyType {
   weak public var webView: WebKit.WKWebView? {
     get
   }
   public init(webView: OndatoSDK.RxWKNavigationDelegateProxy.ParentObject)
   public static func registerKnownImplementations()
-  public static func currentDelegate(for object: WebKit.WKWebView) -> WebKit.WKNavigationDelegate?
-  public static func setCurrentDelegate(_ delegate: WebKit.WKNavigationDelegate?, to object: WebKit.WKWebView)
+  public static func currentDelegate(for object: WebKit.WKWebView) -> (any WebKit.WKNavigationDelegate)?
+  public static func setCurrentDelegate(_ delegate: (any WebKit.WKNavigationDelegate)?, to object: WebKit.WKWebView)
   @objc deinit
 }
 @available(iOS 8.0, macOS 10.10, macOSApplicationExtension 10.10, *)
@@ -2024,8 +2030,8 @@ extension OndatoSDK.RxWKNavigationDelegateProxy : WebKit.WKNavigationDelegate {
   final public var isDisposed: Swift.Bool {
     get
   }
-  public init(disposable: OndatoSDK.Disposable)
-  final public func retain() -> OndatoSDK.Disposable
+  public init(disposable: any OndatoSDK.Disposable)
+  final public func retain() -> any OndatoSDK.Disposable
   final public func dispose()
   @objc deinit
 }
@@ -2035,17 +2041,17 @@ extension OndatoSDK.ObservableType {
 }
 extension OndatoSDK.InfallibleType {
   public static func just(_ element: Self.Element) -> OndatoSDK.Infallible<Self.Element>
-  public static func just(_ element: Self.Element, scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Infallible<Self.Element>
+  public static func just(_ element: Self.Element, scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Infallible<Self.Element>
   public static func never() -> OndatoSDK.Infallible<Self.Element>
   public static func empty() -> OndatoSDK.Infallible<Self.Element>
   public static func deferred(_ observableFactory: @escaping () throws -> OndatoSDK.Infallible<Self.Element>) -> OndatoSDK.Infallible<Self.Element>
 }
 extension OndatoSDK.Infallible {
-  public static func of(_ elements: Element..., scheduler: OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Infallible<Element>
+  public static func of(_ elements: Element..., scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Infallible<Element>
 }
 extension OndatoSDK.Infallible {
-  public static func from(_ array: [Element], scheduler: OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Infallible<Element>
-  public static func from<Sequence>(_ sequence: Sequence, scheduler: OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Infallible<Element> where Element == Sequence.Element, Sequence : Swift.Sequence
+  public static func from(_ array: [Element], scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Infallible<Element>
+  public static func from<Sequence>(_ sequence: Sequence, scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Infallible<Element> where Element == Sequence.Element, Sequence : Swift.Sequence
 }
 extension OndatoSDK.InfallibleType {
   public func filter(_ predicate: @escaping (Self.Element) -> Swift.Bool) -> OndatoSDK.Infallible<Self.Element>
@@ -2064,8 +2070,8 @@ extension OndatoSDK.InfallibleType {
   public func distinctUntilChanged<Property>(at keyPath: Swift.KeyPath<Self.Element, Property>) -> OndatoSDK.Infallible<Self.Element> where Property : Swift.Equatable
 }
 extension OndatoSDK.InfallibleType {
-  public func debounce(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Infallible<Self.Element>
-  public func throttle(_ dueTime: OndatoSDK.RxTimeInterval, latest: Swift.Bool = true, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Infallible<Self.Element>
+  public func debounce(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Infallible<Self.Element>
+  public func throttle(_ dueTime: OndatoSDK.RxTimeInterval, latest: Swift.Bool = true, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Infallible<Self.Element>
 }
 extension OndatoSDK.InfallibleType {
   public func flatMap<Source>(_ selector: @escaping (Self.Element) -> Source) -> OndatoSDK.Infallible<Source.Element> where Source : OndatoSDK.ObservableConvertibleType
@@ -2100,7 +2106,7 @@ extension OndatoSDK.InfallibleType {
   public func take(until predicate: @escaping (Self.Element) throws -> Swift.Bool, behavior: OndatoSDK.TakeBehavior = .exclusive) -> OndatoSDK.Infallible<Self.Element>
   public func take(while predicate: @escaping (Self.Element) throws -> Swift.Bool, behavior: OndatoSDK.TakeBehavior = .exclusive) -> OndatoSDK.Infallible<Self.Element>
   public func take(_ count: Swift.Int) -> OndatoSDK.Infallible<Self.Element>
-  public func take(for duration: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Infallible<Self.Element>
+  public func take(for duration: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Infallible<Self.Element>
   public func skip(while predicate: @escaping (Self.Element) throws -> Swift.Bool) -> OndatoSDK.Infallible<Self.Element>
   public func skip<Source>(until other: Source) -> OndatoSDK.Infallible<Self.Element> where Source : OndatoSDK.ObservableType
 }
@@ -2117,7 +2123,7 @@ extension OndatoSDK.InfallibleType {
 }
 public typealias Driver<Element> = OndatoSDK.SharedSequence<OndatoSDK.DriverSharingStrategy, Element>
 public struct DriverSharingStrategy : OndatoSDK.SharingStrategyProtocol {
-  public static var scheduler: OndatoSDK.SchedulerType {
+  public static var scheduler: any OndatoSDK.SchedulerType {
     get
   }
   public static func share<Element>(_ source: OndatoSDK.Observable<Element>) -> OndatoSDK.Observable<Element>
@@ -2214,13 +2220,13 @@ extension UIKit.UICollectionView : OndatoSDK.HasPrefetchDataSource {
   public typealias PrefetchDataSource = UIKit.UICollectionViewDataSourcePrefetching
 }
 @available(iOS 10.0, tvOS 10.0, *)
-open class RxCollectionViewDataSourcePrefetchingProxy : OndatoSDK.DelegateProxy<UIKit.UICollectionView, UIKit.UICollectionViewDataSourcePrefetching>, OndatoSDK.DelegateProxyType {
+open class RxCollectionViewDataSourcePrefetchingProxy : OndatoSDK.DelegateProxy<UIKit.UICollectionView, any UIKit.UICollectionViewDataSourcePrefetching>, OndatoSDK.DelegateProxyType {
   weak public var collectionView: UIKit.UICollectionView? {
     get
   }
   public init(collectionView: OndatoSDK.RxCollectionViewDataSourcePrefetchingProxy.ParentObject)
   public static func registerKnownImplementations()
-  override open func setForwardToDelegate(_ forwardToDelegate: UIKit.UICollectionViewDataSourcePrefetching?, retainDelegate: Swift.Bool)
+  override open func setForwardToDelegate(_ forwardToDelegate: (any UIKit.UICollectionViewDataSourcePrefetching)?, retainDelegate: Swift.Bool)
   @objc deinit
 }
 @available(iOS 10.0, tvOS 10.0, *)
@@ -2236,7 +2242,7 @@ final public class DefaultFontProvider : OndatoSDK.AnimationFontProvider {
   @objc deinit
 }
 extension OndatoSDK.ObservableType {
-  public func window(timeSpan: OndatoSDK.RxTimeInterval, count: Swift.Int, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<OndatoSDK.Observable<Self.Element>>
+  public func window(timeSpan: OndatoSDK.RxTimeInterval, count: Swift.Int, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<OndatoSDK.Observable<Self.Element>>
 }
 public typealias ItemMovedEvent = (sourceIndex: Foundation.IndexPath, destinationIndex: Foundation.IndexPath)
 public typealias WillDisplayCellEvent = (cell: UIKit.UITableViewCell, indexPath: Foundation.IndexPath)
@@ -2245,7 +2251,7 @@ extension OndatoSDK.ControlProperty {
   public func asDriver() -> OndatoSDK.Driver<OndatoSDK.ControlProperty<PropertyType>.Element>
 }
 extension OndatoSDK.ObservableType {
-  public func buffer(timeSpan: OndatoSDK.RxTimeInterval, count: Swift.Int, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<[Self.Element]>
+  public func buffer(timeSpan: OndatoSDK.RxTimeInterval, count: Swift.Int, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<[Self.Element]>
 }
 extension OndatoSDK.ObservableType where Self.Element : OndatoSDK.EventConvertible {
   public func dematerialize() -> OndatoSDK.Observable<Self.Element.Element>
@@ -2393,7 +2399,7 @@ extension OndatoSDK.PassiveAuthenticationError : Foundation.LocalizedError {
 }
 public typealias Signal<Element> = OndatoSDK.SharedSequence<OndatoSDK.SignalSharingStrategy, Element>
 public struct SignalSharingStrategy : OndatoSDK.SharingStrategyProtocol {
-  public static var scheduler: OndatoSDK.SchedulerType {
+  public static var scheduler: any OndatoSDK.SchedulerType {
     get
   }
   public static func share<Element>(_ source: OndatoSDK.Observable<Element>) -> OndatoSDK.Observable<Element>
@@ -2419,10 +2425,10 @@ public protocol ObserverType {
 extension OndatoSDK.ObserverType {
   public func onNext(_ element: Self.Element)
   public func onCompleted()
-  public func onError(_ error: Swift.Error)
+  public func onError(_ error: any Swift.Error)
 }
 extension OndatoSDK.ObservableType {
-  public static func create(_ subscribe: @escaping (OndatoSDK.AnyObserver<Self.Element>) -> OndatoSDK.Disposable) -> OndatoSDK.Observable<Self.Element>
+  public static func create(_ subscribe: @escaping (OndatoSDK.AnyObserver<Self.Element>) -> any OndatoSDK.Disposable) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.Reactive where Base : UIKit.UISegmentedControl {
   public var selectedSegmentIndex: OndatoSDK.ControlProperty<Swift.Int> {
@@ -2436,12 +2442,12 @@ extension OndatoSDK.Reactive where Base : UIKit.UISegmentedControl {
   public func imageForSegment(at index: Swift.Int) -> OndatoSDK.Binder<UIKit.UIImage?>
 }
 extension OndatoSDK.ObservableType {
-  public func bind<Observer>(to observers: Observer...) -> OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
-  public func bind<Observer>(to observers: Observer...) -> OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Observer.Element == Self.Element?
+  public func bind<Observer>(to observers: Observer...) -> any OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
+  public func bind<Observer>(to observers: Observer...) -> any OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Observer.Element == Self.Element?
   public func bind<Result>(to binder: (Self) -> Result) -> Result
   public func bind<R1, R2>(to binder: (Self) -> (R1) -> R2, curriedArgument: R1) -> R2
-  public func bind<Object>(with object: Object, onNext: @escaping (Object, Self.Element) -> Swift.Void) -> OndatoSDK.Disposable where Object : AnyObject
-  public func bind(onNext: @escaping (Self.Element) -> Swift.Void) -> OndatoSDK.Disposable
+  public func bind<Object>(with object: Object, onNext: @escaping (Object, Self.Element) -> Swift.Void) -> any OndatoSDK.Disposable where Object : AnyObject
+  public func bind(onNext: @escaping (Self.Element) -> Swift.Void) -> any OndatoSDK.Disposable
 }
 @objc @available(iOS 13, *)
 public class PassportReader : ObjectiveC.NSObject {
@@ -2455,16 +2461,16 @@ public class PassportReader : ObjectiveC.NSObject {
 @available(iOS 13, *)
 extension OndatoSDK.PassportReader : CoreNFC.NFCTagReaderSessionDelegate {
   public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
-  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
   public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
 }
 extension OndatoSDK.ObservableType {
   public func take(_ count: Swift.Int) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.ObservableType {
-  public func take(for duration: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func take(for duration: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
   @available(*, deprecated, renamed: "take(for:scheduler:)")
-  public func take(_ duration: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func take(_ duration: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class DataGroup2 : OndatoSDK.DataGroup {
@@ -2537,10 +2543,10 @@ public class DataGroup2 : OndatoSDK.DataGroup {
   @objc deinit
 }
 extension OndatoSDK.AnimationView {
-  @_Concurrency.MainActor(unsafe) convenience public init(name: Swift.String, bundle: Foundation.Bundle = Bundle.main, imageProvider: OndatoSDK.AnimationImageProvider? = nil, animationCache: OndatoSDK.AnimationCacheProvider? = LRUAnimationCache.sharedCache)
-  @_Concurrency.MainActor(unsafe) convenience public init(filePath: Swift.String, imageProvider: OndatoSDK.AnimationImageProvider? = nil, animationCache: OndatoSDK.AnimationCacheProvider? = LRUAnimationCache.sharedCache)
-  @_Concurrency.MainActor(unsafe) convenience public init(url: Foundation.URL, imageProvider: OndatoSDK.AnimationImageProvider? = nil, closure: @escaping OndatoSDK.AnimationView.DownloadClosure, animationCache: OndatoSDK.AnimationCacheProvider? = LRUAnimationCache.sharedCache)
-  public typealias DownloadClosure = (Swift.Error?) -> Swift.Void
+  @_Concurrency.MainActor(unsafe) convenience public init(name: Swift.String, bundle: Foundation.Bundle = Bundle.main, imageProvider: (any OndatoSDK.AnimationImageProvider)? = nil, animationCache: (any OndatoSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache)
+  @_Concurrency.MainActor(unsafe) convenience public init(filePath: Swift.String, imageProvider: (any OndatoSDK.AnimationImageProvider)? = nil, animationCache: (any OndatoSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache)
+  @_Concurrency.MainActor(unsafe) convenience public init(url: Foundation.URL, imageProvider: (any OndatoSDK.AnimationImageProvider)? = nil, closure: @escaping OndatoSDK.AnimationView.DownloadClosure, animationCache: (any OndatoSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache)
+  public typealias DownloadClosure = ((any Swift.Error)?) -> Swift.Void
 }
 public enum MRZFormat : Swift.CaseIterable {
   case td1, td2, td3
@@ -2704,7 +2710,7 @@ public protocol RxTableViewDataSourceType {
 extension OndatoSDK.ObservableConvertibleType {
   public func asInfallible(onErrorJustReturn element: Self.Element) -> OndatoSDK.Infallible<Self.Element>
   public func asInfallible(onErrorFallbackTo infallible: OndatoSDK.Infallible<Self.Element>) -> OndatoSDK.Infallible<Self.Element>
-  public func asInfallible(onErrorRecover: @escaping (Swift.Error) -> OndatoSDK.Infallible<Self.Element>) -> OndatoSDK.Infallible<Self.Element>
+  public func asInfallible(onErrorRecover: @escaping (any Swift.Error) -> OndatoSDK.Infallible<Self.Element>) -> OndatoSDK.Infallible<Self.Element>
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class DataGroup14 : OndatoSDK.DataGroup {
@@ -2724,7 +2730,7 @@ extension OndatoSDK.PrimitiveSequenceType where Self.Element == Swift.Never, Sel
   public func andThen<Element>(_ second: OndatoSDK.Observable<Element>) -> OndatoSDK.Observable<Element>
 }
 extension OndatoSDK.Disposables {
-  public static func create(with dispose: @escaping () -> Swift.Void) -> OndatoSDK.Cancelable
+  public static func create(with dispose: @escaping () -> Swift.Void) -> any OndatoSDK.Cancelable
 }
 public enum AnyValue {
   case double(Swift.Double?)
@@ -2732,13 +2738,13 @@ public enum AnyValue {
   case uint64(Swift.UInt64?)
   case string(Swift.String?)
   case bool(Swift.Bool?)
-  case object(Swift.Encodable?)
+  case object((any Swift.Encodable)?)
   case null
   indirect case array([OndatoSDK.AnyValue]?)
   indirect case dictionary([Swift.String : OndatoSDK.AnyValue]?)
 }
 extension OndatoSDK.AnyValue : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension OndatoSDK.AnyValue : Swift.ExpressibleByIntegerLiteral {
   public init(integerLiteral value: Swift.Int)
@@ -2776,7 +2782,7 @@ extension Swift.Dictionary where Key == Swift.String, Value == OndatoSDK.AnyValu
 }
 @available(iOS 8.0, macOS 10.10, macOSApplicationExtension 10.10, *)
 extension OndatoSDK.Reactive where Base : WebKit.WKWebView {
-  public var navigationDelegate: OndatoSDK.DelegateProxy<WebKit.WKWebView, WebKit.WKNavigationDelegate> {
+  public var navigationDelegate: OndatoSDK.DelegateProxy<WebKit.WKWebView, any WebKit.WKNavigationDelegate> {
     get
   }
   public var didCommit: OndatoSDK.Observable<WebKit.WKNavigation> {
@@ -2788,7 +2794,7 @@ extension OndatoSDK.Reactive where Base : WebKit.WKWebView {
   public var didFinishLoad: OndatoSDK.Observable<WebKit.WKNavigation> {
     get
   }
-  public var didFailLoad: OndatoSDK.Observable<(WebKit.WKNavigation, Swift.Error)> {
+  public var didFailLoad: OndatoSDK.Observable<(WebKit.WKNavigation, any Swift.Error)> {
     get
   }
 }
@@ -2821,7 +2827,7 @@ extension OndatoSDK.ObservableType {
   public func element(at index: Swift.Int) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.ObservableType {
-  public func `do`(onNext: ((Self.Element) throws -> Swift.Void)? = nil, afterNext: ((Self.Element) throws -> Swift.Void)? = nil, onError: ((Swift.Error) throws -> Swift.Void)? = nil, afterError: ((Swift.Error) throws -> Swift.Void)? = nil, onCompleted: (() throws -> Swift.Void)? = nil, afterCompleted: (() throws -> Swift.Void)? = nil, onSubscribe: (() -> Swift.Void)? = nil, onSubscribed: (() -> Swift.Void)? = nil, onDispose: (() -> Swift.Void)? = nil) -> OndatoSDK.Observable<Self.Element>
+  public func `do`(onNext: ((Self.Element) throws -> Swift.Void)? = nil, afterNext: ((Self.Element) throws -> Swift.Void)? = nil, onError: ((any Swift.Error) throws -> Swift.Void)? = nil, afterError: ((any Swift.Error) throws -> Swift.Void)? = nil, onCompleted: (() throws -> Swift.Void)? = nil, afterCompleted: (() throws -> Swift.Void)? = nil, onSubscribe: (() -> Swift.Void)? = nil, onSubscribed: (() -> Swift.Void)? = nil, onDispose: (() -> Swift.Void)? = nil) -> OndatoSDK.Observable<Self.Element>
 }
 public protocol InfallibleType : OndatoSDK.ObservableConvertibleType {
 }
@@ -2829,33 +2835,33 @@ public struct Infallible<Element> : OndatoSDK.InfallibleType {
   public func asObservable() -> OndatoSDK.Observable<Element>
 }
 extension OndatoSDK.InfallibleType {
-  public func subscribe<Object>(with object: Object, onNext: ((Object, Self.Element) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> OndatoSDK.Disposable where Object : AnyObject
-  public func subscribe(onNext: ((Self.Element) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> OndatoSDK.Disposable
-  public func subscribe(_ on: @escaping (OndatoSDK.Event<Self.Element>) -> Swift.Void) -> OndatoSDK.Disposable
+  public func subscribe<Object>(with object: Object, onNext: ((Object, Self.Element) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> any OndatoSDK.Disposable where Object : AnyObject
+  public func subscribe(onNext: ((Self.Element) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
+  public func subscribe(_ on: @escaping (OndatoSDK.Event<Self.Element>) -> Swift.Void) -> any OndatoSDK.Disposable
 }
 final public class ScheduledDisposable : OndatoSDK.Cancelable {
-  final public let scheduler: OndatoSDK.ImmediateSchedulerType
+  final public let scheduler: any OndatoSDK.ImmediateSchedulerType
   final public var isDisposed: Swift.Bool {
     get
   }
-  public init(scheduler: OndatoSDK.ImmediateSchedulerType, disposable: OndatoSDK.Disposable)
+  public init(scheduler: any OndatoSDK.ImmediateSchedulerType, disposable: any OndatoSDK.Disposable)
   final public func dispose()
   @objc deinit
 }
 extension OndatoSDK.Color : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension OndatoSDK.ObservableType {
   public func skip(_ count: Swift.Int) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.ObservableType {
-  public func skip(_ duration: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func skip(_ duration: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.ObservableConvertibleType {
   public func asSignal(onErrorJustReturn: Self.Element) -> OndatoSDK.Signal<Self.Element>
   public func asSignal(onErrorSignalWith: OndatoSDK.Signal<Self.Element>) -> OndatoSDK.Signal<Self.Element>
-  public func asSignal(onErrorRecover: @escaping (_ error: Swift.Error) -> OndatoSDK.Signal<Self.Element>) -> OndatoSDK.Signal<Self.Element>
+  public func asSignal(onErrorRecover: @escaping (_ error: any Swift.Error) -> OndatoSDK.Signal<Self.Element>) -> OndatoSDK.Signal<Self.Element>
 }
 public struct PrimitiveSequence<Trait, Element> {
 }
@@ -2874,31 +2880,31 @@ extension OndatoSDK.PrimitiveSequence : OndatoSDK.ObservableConvertibleType {
 }
 extension OndatoSDK.PrimitiveSequence {
   public static func deferred(_ observableFactory: @escaping () throws -> OndatoSDK.PrimitiveSequence<Trait, Element>) -> OndatoSDK.PrimitiveSequence<Trait, Element>
-  public func delay(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
-  public func delaySubscription(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
-  public func observe(on scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func delay(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func delaySubscription(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func observe(on scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
   @available(*, deprecated, renamed: "observe(on:)")
-  public func observeOn(_ scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
-  public func subscribe(on scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func observeOn(_ scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func subscribe(on scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
   @available(*, deprecated, renamed: "subscribe(on:)")
-  public func subscribeOn(_ scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func subscribeOn(_ scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
   @available(*, deprecated, renamed: "catch(_:)")
-  public func catchError(_ handler: @escaping (Swift.Error) throws -> OndatoSDK.PrimitiveSequence<Trait, Element>) -> OndatoSDK.PrimitiveSequence<Trait, Element>
-  public func `catch`(_ handler: @escaping (Swift.Error) throws -> OndatoSDK.PrimitiveSequence<Trait, Element>) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func catchError(_ handler: @escaping (any Swift.Error) throws -> OndatoSDK.PrimitiveSequence<Trait, Element>) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func `catch`(_ handler: @escaping (any Swift.Error) throws -> OndatoSDK.PrimitiveSequence<Trait, Element>) -> OndatoSDK.PrimitiveSequence<Trait, Element>
   public func retry(_ maxAttemptCount: Swift.Int) -> OndatoSDK.PrimitiveSequence<Trait, Element>
   public func retry<TriggerObservable, Error>(when notificationHandler: @escaping (OndatoSDK.Observable<Error>) -> TriggerObservable) -> OndatoSDK.PrimitiveSequence<Trait, Element> where TriggerObservable : OndatoSDK.ObservableType, Error : Swift.Error
   @available(*, deprecated, renamed: "retry(when:)")
   public func retryWhen<TriggerObservable, Error>(_ notificationHandler: @escaping (OndatoSDK.Observable<Error>) -> TriggerObservable) -> OndatoSDK.PrimitiveSequence<Trait, Element> where TriggerObservable : OndatoSDK.ObservableType, Error : Swift.Error
-  public func retry<TriggerObservable>(when notificationHandler: @escaping (OndatoSDK.Observable<Swift.Error>) -> TriggerObservable) -> OndatoSDK.PrimitiveSequence<Trait, Element> where TriggerObservable : OndatoSDK.ObservableType
+  public func retry<TriggerObservable>(when notificationHandler: @escaping (OndatoSDK.Observable<any Swift.Error>) -> TriggerObservable) -> OndatoSDK.PrimitiveSequence<Trait, Element> where TriggerObservable : OndatoSDK.ObservableType
   @available(*, deprecated, renamed: "retry(when:)")
-  public func retryWhen<TriggerObservable>(_ notificationHandler: @escaping (OndatoSDK.Observable<Swift.Error>) -> TriggerObservable) -> OndatoSDK.PrimitiveSequence<Trait, Element> where TriggerObservable : OndatoSDK.ObservableType
+  public func retryWhen<TriggerObservable>(_ notificationHandler: @escaping (OndatoSDK.Observable<any Swift.Error>) -> TriggerObservable) -> OndatoSDK.PrimitiveSequence<Trait, Element> where TriggerObservable : OndatoSDK.ObservableType
   public func debug(_ identifier: Swift.String? = nil, trimOutput: Swift.Bool = false, file: Swift.String = #file, line: Swift.UInt = #line, function: Swift.String = #function) -> OndatoSDK.PrimitiveSequence<Trait, Element>
   public static func using<Resource>(_ resourceFactory: @escaping () throws -> Resource, primitiveSequenceFactory: @escaping (Resource) throws -> OndatoSDK.PrimitiveSequence<Trait, Element>) -> OndatoSDK.PrimitiveSequence<Trait, Element> where Resource : OndatoSDK.Disposable
-  public func timeout(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
-  public func timeout(_ dueTime: OndatoSDK.RxTimeInterval, other: OndatoSDK.PrimitiveSequence<Trait, Element>, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func timeout(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
+  public func timeout(_ dueTime: OndatoSDK.RxTimeInterval, other: OndatoSDK.PrimitiveSequence<Trait, Element>, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Trait, Element>
 }
 extension OndatoSDK.PrimitiveSequenceType where Self.Element : Swift.FixedWidthInteger {
-  public static func timer(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Self.Trait, Self.Element>
+  public static func timer(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.PrimitiveSequence<Self.Trait, Self.Element>
 }
 extension OndatoSDK.ObservableType {
   public func filter(_ predicate: @escaping (Self.Element) throws -> Swift.Bool) -> OndatoSDK.Observable<Self.Element>
@@ -2907,17 +2913,17 @@ extension OndatoSDK.ObservableType {
   public func ignoreElements() -> OndatoSDK.Observable<Swift.Never>
 }
 extension OndatoSDK.SharedSequenceConvertibleType where Self.SharingStrategy == OndatoSDK.SignalSharingStrategy {
-  public func emit<Observer>(to observers: Observer...) -> OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
-  public func emit<Observer>(to observers: Observer...) -> OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Observer.Element == Self.Element?
-  public func emit(to relays: OndatoSDK.BehaviorRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func emit(to relays: OndatoSDK.BehaviorRelay<Self.Element?>...) -> OndatoSDK.Disposable
-  public func emit(to relays: OndatoSDK.PublishRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func emit(to relays: OndatoSDK.PublishRelay<Self.Element?>...) -> OndatoSDK.Disposable
-  public func emit(to relays: OndatoSDK.ReplayRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func emit(to relays: OndatoSDK.ReplayRelay<Self.Element?>...) -> OndatoSDK.Disposable
-  public func emit<Object>(with object: Object, onNext: ((Object, Self.Element) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> OndatoSDK.Disposable where Object : AnyObject
-  public func emit(onNext: ((Self.Element) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> OndatoSDK.Disposable
-  public func emit() -> OndatoSDK.Disposable
+  public func emit<Observer>(to observers: Observer...) -> any OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
+  public func emit<Observer>(to observers: Observer...) -> any OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Observer.Element == Self.Element?
+  public func emit(to relays: OndatoSDK.BehaviorRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func emit(to relays: OndatoSDK.BehaviorRelay<Self.Element?>...) -> any OndatoSDK.Disposable
+  public func emit(to relays: OndatoSDK.PublishRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func emit(to relays: OndatoSDK.PublishRelay<Self.Element?>...) -> any OndatoSDK.Disposable
+  public func emit(to relays: OndatoSDK.ReplayRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func emit(to relays: OndatoSDK.ReplayRelay<Self.Element?>...) -> any OndatoSDK.Disposable
+  public func emit<Object>(with object: Object, onNext: ((Object, Self.Element) -> Swift.Void)? = nil, onCompleted: ((Object) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> any OndatoSDK.Disposable where Object : AnyObject
+  public func emit(onNext: ((Self.Element) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
+  public func emit() -> any OndatoSDK.Disposable
 }
 @available(iOS 13, macOS 10.15, *)
 public class ASN1Item : Swift.CustomDebugStringConvertible {
@@ -2937,7 +2943,7 @@ public class SimpleASN1DumpParser {
   @objc deinit
 }
 extension OndatoSDK.Reactive where Base : UIKit.NSTextStorage {
-  public var delegate: OndatoSDK.DelegateProxy<UIKit.NSTextStorage, UIKit.NSTextStorageDelegate> {
+  public var delegate: OndatoSDK.DelegateProxy<UIKit.NSTextStorage, any UIKit.NSTextStorageDelegate> {
     get
   }
   public var didProcessEditingRangeChangeInLength: OndatoSDK.Observable<(editedMask: UIKit.NSTextStorage.EditActions, editedRange: Foundation.NSRange, delta: Swift.Int)> {
@@ -2946,7 +2952,7 @@ extension OndatoSDK.Reactive where Base : UIKit.NSTextStorage {
 }
 @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 extension OndatoSDK.ObservableConvertibleType {
-  public var values: _Concurrency.AsyncThrowingStream<Self.Element, Swift.Error> {
+  public var values: _Concurrency.AsyncThrowingStream<Self.Element, any Swift.Error> {
     get
   }
 }
@@ -3017,21 +3023,21 @@ extension Swift.Bool : OndatoSDK.KVORepresentable {
   public init?(KVOValue: Swift.Bool.KVOType)
 }
 extension OndatoSDK.Reactive where Base : UIKit.UIPickerView {
-  public var delegate: OndatoSDK.DelegateProxy<UIKit.UIPickerView, UIKit.UIPickerViewDelegate> {
+  public var delegate: OndatoSDK.DelegateProxy<UIKit.UIPickerView, any UIKit.UIPickerViewDelegate> {
     get
   }
-  public func setDelegate(_ delegate: UIKit.UIPickerViewDelegate) -> OndatoSDK.Disposable
-  public var dataSource: OndatoSDK.DelegateProxy<UIKit.UIPickerView, UIKit.UIPickerViewDataSource> {
+  public func setDelegate(_ delegate: any UIKit.UIPickerViewDelegate) -> any OndatoSDK.Disposable
+  public var dataSource: OndatoSDK.DelegateProxy<UIKit.UIPickerView, any UIKit.UIPickerViewDataSource> {
     get
   }
   public var itemSelected: OndatoSDK.ControlEvent<(row: Swift.Int, component: Swift.Int)> {
     get
   }
   public func modelSelected<T>(_ modelType: T.Type) -> OndatoSDK.ControlEvent<[T]>
-  public func itemTitles<Sequence, Source>(_ source: Source) -> (_ titleForRow: @escaping (Swift.Int, Sequence.Element) -> Swift.String?) -> OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
-  public func itemAttributedTitles<Sequence, Source>(_ source: Source) -> (_ attributedTitleForRow: @escaping (Swift.Int, Sequence.Element) -> Foundation.NSAttributedString?) -> OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
-  public func items<Sequence, Source>(_ source: Source) -> (_ viewForRow: @escaping (Swift.Int, Sequence.Element, UIKit.UIView?) -> UIKit.UIView) -> OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
-  public func items<Source, Adapter>(adapter: Adapter) -> (_ source: Source) -> OndatoSDK.Disposable where Source : OndatoSDK.ObservableType, Adapter : OndatoSDK.RxPickerViewDataSourceType, Adapter : UIKit.UIPickerViewDataSource, Adapter : UIKit.UIPickerViewDelegate, Source.Element == Adapter.Element
+  public func itemTitles<Sequence, Source>(_ source: Source) -> (_ titleForRow: @escaping (Swift.Int, Sequence.Element) -> Swift.String?) -> any OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
+  public func itemAttributedTitles<Sequence, Source>(_ source: Source) -> (_ attributedTitleForRow: @escaping (Swift.Int, Sequence.Element) -> Foundation.NSAttributedString?) -> any OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
+  public func items<Sequence, Source>(_ source: Source) -> (_ viewForRow: @escaping (Swift.Int, Sequence.Element, UIKit.UIView?) -> UIKit.UIView) -> any OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
+  public func items<Source, Adapter>(adapter: Adapter) -> (_ source: Source) -> any OndatoSDK.Disposable where Source : OndatoSDK.ObservableType, Adapter : OndatoSDK.RxPickerViewDataSourceType, Adapter : UIKit.UIPickerViewDataSource, Adapter : UIKit.UIPickerViewDelegate, Source.Element == Adapter.Element
   public func model<T>(at indexPath: Foundation.IndexPath) throws -> T
 }
 @_Concurrency.MainActor(unsafe) open class RxTableViewDelegateProxy : OndatoSDK.RxScrollViewDelegateProxy {
@@ -3061,7 +3067,7 @@ extension OndatoSDK.Reactive where Base : UIKit.UIStepper {
 extension UIKit.UISearchBar : OndatoSDK.HasDelegate {
   public typealias Delegate = UIKit.UISearchBarDelegate
 }
-open class RxSearchBarDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UISearchBar, UIKit.UISearchBarDelegate>, OndatoSDK.DelegateProxyType {
+open class RxSearchBarDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UISearchBar, any UIKit.UISearchBarDelegate>, OndatoSDK.DelegateProxyType {
   weak public var searchBar: UIKit.UISearchBar? {
     get
   }
@@ -3079,7 +3085,7 @@ public class SecurityInfo {
 }
 @_hasMissingDesignatedInitializers final public class LiveMRZScanner {
   public init(frequency: Swift.Int = 2)
-  final public func scanFrame(scanningImage: OndatoSDK.ScanningImage, orientation: ImageIO.CGImagePropertyOrientation, regionOfInterest: CoreFoundation.CGRect? = nil, minimumTextHeight: Swift.Float? = nil, foundBoundingRectsHandler: (([CoreFoundation.CGRect]) -> Swift.Void)? = nil, completionHandler: @escaping (Swift.Result<OndatoSDK.DocumentScanningResult<OndatoSDK.ParsedResult>, Swift.Error>) -> Swift.Void)
+  final public func scanFrame(scanningImage: OndatoSDK.ScanningImage, orientation: ImageIO.CGImagePropertyOrientation, regionOfInterest: CoreFoundation.CGRect? = nil, minimumTextHeight: Swift.Float? = nil, foundBoundingRectsHandler: (([CoreFoundation.CGRect]) -> Swift.Void)? = nil, completionHandler: @escaping (Swift.Result<OndatoSDK.DocumentScanningResult<OndatoSDK.ParsedResult>, any Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 extension OndatoSDK.ObservableType {
@@ -3121,7 +3127,7 @@ public func DESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UI
     get
   }
   public init()
-  final public var disposable: OndatoSDK.Disposable {
+  final public var disposable: any OndatoSDK.Disposable {
     get
     set(newDisposable)
   }
@@ -3151,7 +3157,7 @@ public struct SharedSequence<SharingStrategy, Element> : OndatoSDK.SharedSequenc
   public func asSharedSequence() -> OndatoSDK.SharedSequence<SharingStrategy, Element>
 }
 public protocol SharingStrategyProtocol {
-  static var scheduler: OndatoSDK.SchedulerType { get }
+  static var scheduler: any OndatoSDK.SchedulerType { get }
   static func share<Element>(_ source: OndatoSDK.Observable<Element>) -> OndatoSDK.Observable<Element>
 }
 public protocol SharedSequenceConvertibleType : OndatoSDK.ObservableConvertibleType {
@@ -3198,7 +3204,7 @@ public class NotImplementedDG : OndatoSDK.DataGroup {
   final public let directory: Swift.String
   final public let width: Swift.Double
   final public let height: Swift.Double
-  override final public func encode(to encoder: Swift.Encoder) throws
+  override final public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public typealias ScannedBoundingRects = (valid: [CoreFoundation.CGRect], invalid: [CoreFoundation.CGRect])
@@ -3236,30 +3242,30 @@ extension OndatoSDK.Disposable {
 }
 @_inheritsConvenienceInitializers final public class DisposeBag : OndatoSDK.DisposeBase {
   public init()
-  final public func insert(_ disposable: OndatoSDK.Disposable)
+  final public func insert(_ disposable: any OndatoSDK.Disposable)
   @objc deinit
 }
 extension OndatoSDK.DisposeBag {
-  convenience public init(disposing disposables: OndatoSDK.Disposable...)
-  convenience public init(@OndatoSDK.DisposeBag.DisposableBuilder builder: () -> [OndatoSDK.Disposable])
-  convenience public init(disposing disposables: [OndatoSDK.Disposable])
-  final public func insert(_ disposables: OndatoSDK.Disposable...)
-  final public func insert(@OndatoSDK.DisposeBag.DisposableBuilder builder: () -> [OndatoSDK.Disposable])
-  final public func insert(_ disposables: [OndatoSDK.Disposable])
+  convenience public init(disposing disposables: any OndatoSDK.Disposable...)
+  convenience public init(@OndatoSDK.DisposeBag.DisposableBuilder builder: () -> [any OndatoSDK.Disposable])
+  convenience public init(disposing disposables: [any OndatoSDK.Disposable])
+  final public func insert(_ disposables: any OndatoSDK.Disposable...)
+  final public func insert(@OndatoSDK.DisposeBag.DisposableBuilder builder: () -> [any OndatoSDK.Disposable])
+  final public func insert(_ disposables: [any OndatoSDK.Disposable])
   @_functionBuilder public struct DisposableBuilder {
-    public static func buildBlock(_ disposables: OndatoSDK.Disposable...) -> [OndatoSDK.Disposable]
+    public static func buildBlock(_ disposables: any OndatoSDK.Disposable...) -> [any OndatoSDK.Disposable]
   }
 }
 extension OndatoSDK.ObservableType {
   public static func just(_ element: Self.Element) -> OndatoSDK.Observable<Self.Element>
-  public static func just(_ element: Self.Element, scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public static func just(_ element: Self.Element, scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.ObservableType {
-  public static func of(_ elements: Self.Element..., scheduler: OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element>
+  public static func of(_ elements: Self.Element..., scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.ObservableType {
-  public static func from(_ array: [Self.Element], scheduler: OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element>
-  public static func from<Sequence>(_ sequence: Sequence, scheduler: OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element> where Sequence : Swift.Sequence, Self.Element == Sequence.Element
+  public static func from(_ array: [Self.Element], scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element>
+  public static func from<Sequence>(_ sequence: Sequence, scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance) -> OndatoSDK.Observable<Self.Element> where Sequence : Swift.Sequence, Self.Element == Sequence.Element
 }
 extension OndatoSDK.ObservableType {
   public func flatMapLatest<Source>(_ selector: @escaping (Self.Element) throws -> Source) -> OndatoSDK.Observable<Source.Element> where Source : OndatoSDK.ObservableConvertibleType
@@ -3322,13 +3328,13 @@ extension OndatoSDK.ObservableType {
 extension UIKit.UIPickerView : OndatoSDK.HasDataSource {
   public typealias DataSource = UIKit.UIPickerViewDataSource
 }
-public class RxPickerViewDataSourceProxy : OndatoSDK.DelegateProxy<UIKit.UIPickerView, UIKit.UIPickerViewDataSource>, OndatoSDK.DelegateProxyType {
+public class RxPickerViewDataSourceProxy : OndatoSDK.DelegateProxy<UIKit.UIPickerView, any UIKit.UIPickerViewDataSource>, OndatoSDK.DelegateProxyType {
   weak public var pickerView: UIKit.UIPickerView? {
     get
   }
   public init(pickerView: OndatoSDK.RxPickerViewDataSourceProxy.ParentObject)
   public static func registerKnownImplementations()
-  override public func setForwardToDelegate(_ forwardToDelegate: UIKit.UIPickerViewDataSource?, retainDelegate: Swift.Bool)
+  override public func setForwardToDelegate(_ forwardToDelegate: (any UIKit.UIPickerViewDataSource)?, retainDelegate: Swift.Bool)
   @objc deinit
 }
 extension OndatoSDK.RxPickerViewDataSourceProxy : UIKit.UIPickerViewDataSource {
@@ -3343,18 +3349,17 @@ public typealias RxTimeInterval = Dispatch.DispatchTimeInterval
 public typealias RxTime = Foundation.Date
 public protocol SchedulerType : OndatoSDK.ImmediateSchedulerType {
   var now: OndatoSDK.RxTime { get }
-  func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> OndatoSDK.Disposable
+  func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.SchedulerType {
-  public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> OndatoSDK.Disposable
+  public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> any OndatoSDK.Disposable
 }
-@objc @_inheritsConvenienceInitializers public class OndatoLog : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OndatoLog : ObjectiveC.NSObject {
   public static let shared: OndatoSDK.OndatoLog
   public var logs: [Swift.String] {
     get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 public class LRUAnimationCache : OndatoSDK.AnimationCacheProvider {
@@ -3379,9 +3384,9 @@ public enum Hooks {
   convenience public init(queue: Dispatch.DispatchQueue, internalSerialQueueName: Swift.String, leeway: Dispatch.DispatchTimeInterval = DispatchTimeInterval.nanoseconds(0))
   @available(macOS 10.10, *)
   convenience public init(qos: Dispatch.DispatchQoS, internalSerialQueueName: Swift.String = "rx.global_dispatch_queue.serial", leeway: Dispatch.DispatchTimeInterval = DispatchTimeInterval.nanoseconds(0))
-  final public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  final public func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
-  public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> OndatoSDK.Disposable
+  final public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  final public func scheduleRelative<StateType>(_ state: StateType, dueTime: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> any OndatoSDK.Disposable
   @objc deinit
 }
 @available(iOS 13, macOS 10.15, *)
@@ -3460,7 +3465,7 @@ public protocol ControlPropertyType : OndatoSDK.ObservableType, OndatoSDK.Observ
 public struct ControlProperty<PropertyType> : OndatoSDK.ControlPropertyType {
   public typealias Element = PropertyType
   public init<Values, Sink>(values: Values, valueSink: Sink) where PropertyType == Values.Element, Values : OndatoSDK.ObservableType, Sink : OndatoSDK.ObserverType, Values.Element == Sink.Element
-  public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where PropertyType == Observer.Element, Observer : OndatoSDK.ObserverType
+  public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where PropertyType == Observer.Element, Observer : OndatoSDK.ObserverType
   public var changed: OndatoSDK.ControlEvent<PropertyType> {
     get
   }
@@ -3515,10 +3520,10 @@ public class COM : OndatoSDK.DataGroup {
   @objc deinit
 }
 public protocol ImmediateSchedulerType {
-  func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
+  func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.ImmediateSchedulerType {
-  public func scheduleRecursive<State>(_ state: State, action: @escaping (_ state: State, _ recurse: (State) -> Swift.Void) -> Swift.Void) -> OndatoSDK.Disposable
+  public func scheduleRecursive<State>(_ state: State, action: @escaping (_ state: State, _ recurse: (State) -> Swift.Void) -> Swift.Void) -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.ControlEvent {
   public func asSignal() -> OndatoSDK.Signal<OndatoSDK.ControlEvent<PropertyType>.Element>
@@ -3549,7 +3554,7 @@ public class OpenSSLUtils {
   public init(value: Element)
   final public func value() throws -> Element
   final public func on(_ event: OndatoSDK.Event<Element>)
-  override final public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
+  override final public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
   final public func asObserver() -> OndatoSDK.BehaviorSubject<Element>
   final public func dispose()
   public typealias Observer = OndatoSDK.BehaviorSubject<Element>
@@ -3557,7 +3562,7 @@ public class OpenSSLUtils {
 }
 extension OndatoSDK.Reactive where Base : UIKit.UINavigationController {
   public typealias ShowEvent = (viewController: UIKit.UIViewController, animated: Swift.Bool)
-  public var delegate: OndatoSDK.DelegateProxy<UIKit.UINavigationController, UIKit.UINavigationControllerDelegate> {
+  public var delegate: OndatoSDK.DelegateProxy<UIKit.UINavigationController, any UIKit.UINavigationControllerDelegate> {
     get
   }
   public var willShow: OndatoSDK.ControlEvent<OndatoSDK.Reactive<Base>.ShowEvent> {
@@ -3646,7 +3651,7 @@ extension Swift.Encodable {
 extension UIKit.UINavigationController : OndatoSDK.HasDelegate {
   public typealias Delegate = UIKit.UINavigationControllerDelegate
 }
-open class RxNavigationControllerDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UINavigationController, UIKit.UINavigationControllerDelegate>, OndatoSDK.DelegateProxyType {
+open class RxNavigationControllerDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UINavigationController, any UIKit.UINavigationControllerDelegate>, OndatoSDK.DelegateProxyType {
   weak public var navigationController: UIKit.UINavigationController? {
     get
   }
@@ -3659,7 +3664,7 @@ extension OndatoSDK.RxNavigationControllerDelegateProxy : UIKit.UINavigationCont
 public struct GroupedObservable<Key, Element> : OndatoSDK.ObservableType {
   public let key: Key
   public init(key: Key, source: OndatoSDK.Observable<Element>)
-  public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
+  public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
   public func asObservable() -> OndatoSDK.Observable<Element>
 }
 public struct Vector1D {
@@ -3713,7 +3718,7 @@ public enum VirtualTimeComparison {
   public static var isScheduleRequired: Swift.Bool {
     get
   }
-  public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> OndatoSDK.Disposable) -> OndatoSDK.Disposable
+  public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @available(iOS 13, *)
@@ -3727,22 +3732,22 @@ extension OndatoSDK.ObservableType {
   public func retry<TriggerObservable, Error>(when notificationHandler: @escaping (OndatoSDK.Observable<Error>) -> TriggerObservable) -> OndatoSDK.Observable<Self.Element> where TriggerObservable : OndatoSDK.ObservableType, Error : Swift.Error
   @available(*, deprecated, renamed: "retry(when:)")
   public func retryWhen<TriggerObservable, Error>(_ notificationHandler: @escaping (OndatoSDK.Observable<Error>) -> TriggerObservable) -> OndatoSDK.Observable<Self.Element> where TriggerObservable : OndatoSDK.ObservableType, Error : Swift.Error
-  public func retry<TriggerObservable>(when notificationHandler: @escaping (OndatoSDK.Observable<Swift.Error>) -> TriggerObservable) -> OndatoSDK.Observable<Self.Element> where TriggerObservable : OndatoSDK.ObservableType
+  public func retry<TriggerObservable>(when notificationHandler: @escaping (OndatoSDK.Observable<any Swift.Error>) -> TriggerObservable) -> OndatoSDK.Observable<Self.Element> where TriggerObservable : OndatoSDK.ObservableType
   @available(*, deprecated, renamed: "retry(when:)")
-  public func retryWhen<TriggerObservable>(_ notificationHandler: @escaping (OndatoSDK.Observable<Swift.Error>) -> TriggerObservable) -> OndatoSDK.Observable<Self.Element> where TriggerObservable : OndatoSDK.ObservableType
+  public func retryWhen<TriggerObservable>(_ notificationHandler: @escaping (OndatoSDK.Observable<any Swift.Error>) -> TriggerObservable) -> OndatoSDK.Observable<Self.Element> where TriggerObservable : OndatoSDK.ObservableType
 }
 extension OndatoSDK.InfallibleType {
-  public func bind<Observer>(to observers: Observer...) -> OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
-  public func bind<Observer>(to observers: Observer...) -> OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Observer.Element == Self.Element?
+  public func bind<Observer>(to observers: Observer...) -> any OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Self.Element == Observer.Element
+  public func bind<Observer>(to observers: Observer...) -> any OndatoSDK.Disposable where Observer : OndatoSDK.ObserverType, Observer.Element == Self.Element?
   public func bind<Result>(to binder: (Self) -> Result) -> Result
   public func bind<R1, R2>(to binder: (Self) -> (R1) -> R2, curriedArgument: R1) -> R2
-  public func bind(onNext: @escaping (Self.Element) -> Swift.Void) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.BehaviorRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.BehaviorRelay<Self.Element?>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.PublishRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.PublishRelay<Self.Element?>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.ReplayRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.ReplayRelay<Self.Element?>...) -> OndatoSDK.Disposable
+  public func bind(onNext: @escaping (Self.Element) -> Swift.Void) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.BehaviorRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.BehaviorRelay<Self.Element?>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.PublishRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.PublishRelay<Self.Element?>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.ReplayRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.ReplayRelay<Self.Element?>...) -> any OndatoSDK.Disposable
 }
 extension UIKit.UIImage {
   public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?
@@ -3787,7 +3792,7 @@ extension OndatoSDK.InfallibleType {
   }
 }
 public struct OSVersion : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension OndatoSDK.ObservableType {
   public func skip(while predicate: @escaping (Self.Element) throws -> Swift.Bool) -> OndatoSDK.Observable<Self.Element>
@@ -3829,10 +3834,10 @@ public class DataGroup {
   @objc func flowDidFail(identificationId: Swift.String?, error: OndatoSDK.OndatoServiceError)
 }
 extension OndatoSDK.ObservableType where Self.Element : Swift.FixedWidthInteger {
-  public static func interval(_ period: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public static func interval(_ period: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.ObservableType where Self.Element : Swift.FixedWidthInteger {
-  public static func timer(_ dueTime: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval? = nil, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public static func timer(_ dueTime: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval? = nil, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.Reactive where Base : UIKit.UIButton {
   public var tap: OndatoSDK.ControlEvent<Swift.Void> {
@@ -3850,7 +3855,7 @@ extension OndatoSDK.Reactive where Base : UIKit.UIButton {
 extension UIKit.UITabBarController : OndatoSDK.HasDelegate {
   public typealias Delegate = UIKit.UITabBarControllerDelegate
 }
-open class RxTabBarControllerDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UITabBarController, UIKit.UITabBarControllerDelegate>, OndatoSDK.DelegateProxyType {
+open class RxTabBarControllerDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UITabBarController, any UIKit.UITabBarControllerDelegate>, OndatoSDK.DelegateProxyType {
   weak public var tabBar: UIKit.UITabBarController? {
     get
   }
@@ -3872,7 +3877,7 @@ extension OndatoSDK.Reactive where Base : UIKit.UITabBarController {
   }
 }
 extension OndatoSDK.Reactive where Base : UIKit.UITabBarController {
-  public var delegate: OndatoSDK.DelegateProxy<UIKit.UITabBarController, UIKit.UITabBarControllerDelegate> {
+  public var delegate: OndatoSDK.DelegateProxy<UIKit.UITabBarController, any UIKit.UITabBarControllerDelegate> {
     get
   }
   public var didSelect: OndatoSDK.ControlEvent<UIKit.UIViewController> {
@@ -3882,24 +3887,24 @@ extension OndatoSDK.Reactive where Base : UIKit.UITabBarController {
 public enum SingleTrait {
 }
 public typealias Single<Element> = OndatoSDK.PrimitiveSequence<OndatoSDK.SingleTrait, Element>
-public typealias SingleEvent<Element> = Swift.Result<Element, Swift.Error>
+public typealias SingleEvent<Element> = Swift.Result<Element, any Swift.Error>
 extension OndatoSDK.PrimitiveSequenceType where Self.Trait == OndatoSDK.SingleTrait {
   public typealias SingleObserver = (OndatoSDK.SingleEvent<Self.Element>) -> Swift.Void
-  public static func create(subscribe: @escaping (@escaping Self.SingleObserver) -> OndatoSDK.Disposable) -> OndatoSDK.Single<Self.Element>
-  public func subscribe(_ observer: @escaping (OndatoSDK.SingleEvent<Self.Element>) -> Swift.Void) -> OndatoSDK.Disposable
+  public static func create(subscribe: @escaping (@escaping Self.SingleObserver) -> any OndatoSDK.Disposable) -> OndatoSDK.Single<Self.Element>
+  public func subscribe(_ observer: @escaping (OndatoSDK.SingleEvent<Self.Element>) -> Swift.Void) -> any OndatoSDK.Disposable
   @available(*, deprecated, renamed: "subscribe(onSuccess:onFailure:onDisposed:)")
-  public func subscribe(onSuccess: ((Self.Element) -> Swift.Void)? = nil, onError: @escaping ((Swift.Error) -> Swift.Void), onDisposed: (() -> Swift.Void)? = nil) -> OndatoSDK.Disposable
-  public func subscribe<Object>(with object: Object, onSuccess: ((Object, Self.Element) -> Swift.Void)? = nil, onFailure: ((Object, Swift.Error) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> OndatoSDK.Disposable where Object : AnyObject
-  public func subscribe(onSuccess: ((Self.Element) -> Swift.Void)? = nil, onFailure: ((Swift.Error) -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> OndatoSDK.Disposable
+  public func subscribe(onSuccess: ((Self.Element) -> Swift.Void)? = nil, onError: @escaping ((any Swift.Error) -> Swift.Void), onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
+  public func subscribe<Object>(with object: Object, onSuccess: ((Object, Self.Element) -> Swift.Void)? = nil, onFailure: ((Object, any Swift.Error) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> any OndatoSDK.Disposable where Object : AnyObject
+  public func subscribe(onSuccess: ((Self.Element) -> Swift.Void)? = nil, onFailure: ((any Swift.Error) -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.PrimitiveSequenceType where Self.Trait == OndatoSDK.SingleTrait {
   public static func just(_ element: Self.Element) -> OndatoSDK.Single<Self.Element>
-  public static func just(_ element: Self.Element, scheduler: OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Single<Self.Element>
-  public static func error(_ error: Swift.Error) -> OndatoSDK.Single<Self.Element>
+  public static func just(_ element: Self.Element, scheduler: any OndatoSDK.ImmediateSchedulerType) -> OndatoSDK.Single<Self.Element>
+  public static func error(_ error: any Swift.Error) -> OndatoSDK.Single<Self.Element>
   public static func never() -> OndatoSDK.Single<Self.Element>
 }
 extension OndatoSDK.PrimitiveSequenceType where Self.Trait == OndatoSDK.SingleTrait {
-  public func `do`(onSuccess: ((Self.Element) throws -> Swift.Void)? = nil, afterSuccess: ((Self.Element) throws -> Swift.Void)? = nil, onError: ((Swift.Error) throws -> Swift.Void)? = nil, afterError: ((Swift.Error) throws -> Swift.Void)? = nil, onSubscribe: (() -> Swift.Void)? = nil, onSubscribed: (() -> Swift.Void)? = nil, onDispose: (() -> Swift.Void)? = nil) -> OndatoSDK.Single<Self.Element>
+  public func `do`(onSuccess: ((Self.Element) throws -> Swift.Void)? = nil, afterSuccess: ((Self.Element) throws -> Swift.Void)? = nil, onError: ((any Swift.Error) throws -> Swift.Void)? = nil, afterError: ((any Swift.Error) throws -> Swift.Void)? = nil, onSubscribe: (() -> Swift.Void)? = nil, onSubscribed: (() -> Swift.Void)? = nil, onDispose: (() -> Swift.Void)? = nil) -> OndatoSDK.Single<Self.Element>
   public func filter(_ predicate: @escaping (Self.Element) throws -> Swift.Bool) -> OndatoSDK.Maybe<Self.Element>
   public func map<Result>(_ transform: @escaping (Self.Element) throws -> Result) -> OndatoSDK.Single<Result>
   public func compactMap<Result>(_ transform: @escaping (Self.Element) throws -> Result?) -> OndatoSDK.Maybe<Result>
@@ -3922,7 +3927,7 @@ extension OndatoSDK.PrimitiveSequenceType where Self.Trait == OndatoSDK.SingleTr
 extension OndatoSDK.ObservableConvertibleType {
   public func asSharedSequence<S>(sharingStrategy: S.Type = S.self, onErrorJustReturn: Self.Element) -> OndatoSDK.SharedSequence<S, Self.Element> where S : OndatoSDK.SharingStrategyProtocol
   public func asSharedSequence<S>(sharingStrategy: S.Type = S.self, onErrorDriveWith: OndatoSDK.SharedSequence<S, Self.Element>) -> OndatoSDK.SharedSequence<S, Self.Element> where S : OndatoSDK.SharingStrategyProtocol
-  public func asSharedSequence<S>(sharingStrategy: S.Type = S.self, onErrorRecover: @escaping (_ error: Swift.Error) -> OndatoSDK.SharedSequence<S, Self.Element>) -> OndatoSDK.SharedSequence<S, Self.Element> where S : OndatoSDK.SharingStrategyProtocol
+  public func asSharedSequence<S>(sharingStrategy: S.Type = S.self, onErrorRecover: @escaping (_ error: any Swift.Error) -> OndatoSDK.SharedSequence<S, Self.Element>) -> OndatoSDK.SharedSequence<S, Self.Element> where S : OndatoSDK.SharingStrategyProtocol
 }
 @_inheritsConvenienceInitializers @objc(OndatoServiceConfiguration) public class OndatoServiceConfiguration : ObjectiveC.NSObject {
   @objc public var appearance: OndatoSDK.OndatoAppearance
@@ -3947,11 +3952,11 @@ extension OndatoSDK.ObservableConvertibleType {
     get
   }
   public init()
-  public init(_ disposable1: OndatoSDK.Disposable, _ disposable2: OndatoSDK.Disposable)
-  public init(_ disposable1: OndatoSDK.Disposable, _ disposable2: OndatoSDK.Disposable, _ disposable3: OndatoSDK.Disposable)
-  public init(_ disposable1: OndatoSDK.Disposable, _ disposable2: OndatoSDK.Disposable, _ disposable3: OndatoSDK.Disposable, _ disposable4: OndatoSDK.Disposable, _ disposables: OndatoSDK.Disposable...)
-  public init(disposables: [OndatoSDK.Disposable])
-  final public func insert(_ disposable: OndatoSDK.Disposable) -> OndatoSDK.CompositeDisposable.DisposeKey?
+  public init(_ disposable1: any OndatoSDK.Disposable, _ disposable2: any OndatoSDK.Disposable)
+  public init(_ disposable1: any OndatoSDK.Disposable, _ disposable2: any OndatoSDK.Disposable, _ disposable3: any OndatoSDK.Disposable)
+  public init(_ disposable1: any OndatoSDK.Disposable, _ disposable2: any OndatoSDK.Disposable, _ disposable3: any OndatoSDK.Disposable, _ disposable4: any OndatoSDK.Disposable, _ disposables: any OndatoSDK.Disposable...)
+  public init(disposables: [any OndatoSDK.Disposable])
+  final public func insert(_ disposable: any OndatoSDK.Disposable) -> OndatoSDK.CompositeDisposable.DisposeKey?
   final public var count: Swift.Int {
     get
   }
@@ -3960,9 +3965,9 @@ extension OndatoSDK.ObservableConvertibleType {
   @objc deinit
 }
 extension OndatoSDK.Disposables {
-  public static func create(_ disposable1: OndatoSDK.Disposable, _ disposable2: OndatoSDK.Disposable, _ disposable3: OndatoSDK.Disposable) -> OndatoSDK.Cancelable
-  public static func create(_ disposable1: OndatoSDK.Disposable, _ disposable2: OndatoSDK.Disposable, _ disposable3: OndatoSDK.Disposable, _ disposables: OndatoSDK.Disposable...) -> OndatoSDK.Cancelable
-  public static func create(_ disposables: [OndatoSDK.Disposable]) -> OndatoSDK.Cancelable
+  public static func create(_ disposable1: any OndatoSDK.Disposable, _ disposable2: any OndatoSDK.Disposable, _ disposable3: any OndatoSDK.Disposable) -> any OndatoSDK.Cancelable
+  public static func create(_ disposable1: any OndatoSDK.Disposable, _ disposable2: any OndatoSDK.Disposable, _ disposable3: any OndatoSDK.Disposable, _ disposables: any OndatoSDK.Disposable...) -> any OndatoSDK.Cancelable
+  public static func create(_ disposables: [any OndatoSDK.Disposable]) -> any OndatoSDK.Cancelable
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class LottieView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var contentMode: UIKit.UIView.ContentMode {
@@ -4022,7 +4027,7 @@ extension OndatoSDK.ObservableType where Self.Element == Any {
   public static func zip<O1, O2, O3, O4, O5, O6, O7, O8>(_ source1: O1, _ source2: O2, _ source3: O3, _ source4: O4, _ source5: O5, _ source6: O6, _ source7: O7, _ source8: O8) -> OndatoSDK.Observable<(O1.Element, O2.Element, O3.Element, O4.Element, O5.Element, O6.Element, O7.Element, O8.Element)> where O1 : OndatoSDK.ObservableType, O2 : OndatoSDK.ObservableType, O3 : OndatoSDK.ObservableType, O4 : OndatoSDK.ObservableType, O5 : OndatoSDK.ObservableType, O6 : OndatoSDK.ObservableType, O7 : OndatoSDK.ObservableType, O8 : OndatoSDK.ObservableType
 }
 @_hasMissingDesignatedInitializers public class Observable<Element> : OndatoSDK.ObservableType {
-  public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
+  public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
   public func asObservable() -> OndatoSDK.Observable<Element>
   @objc deinit
 }
@@ -4045,7 +4050,7 @@ public typealias LottieCompletionBlock = (Swift.Bool) -> Swift.Void
   }
 }
 extension OndatoSDK.Reactive where Base : UIKit.UISearchBar {
-  public var delegate: OndatoSDK.DelegateProxy<UIKit.UISearchBar, UIKit.UISearchBarDelegate> {
+  public var delegate: OndatoSDK.DelegateProxy<UIKit.UISearchBar, any UIKit.UISearchBarDelegate> {
     get
   }
   public var text: OndatoSDK.ControlProperty<Swift.String?> {
@@ -4075,7 +4080,7 @@ extension OndatoSDK.Reactive where Base : UIKit.UISearchBar {
   public var textDidEndEditing: OndatoSDK.ControlEvent<Swift.Void> {
     get
   }
-  public func setDelegate(_ delegate: UIKit.UISearchBarDelegate) -> OndatoSDK.Disposable
+  public func setDelegate(_ delegate: any UIKit.UISearchBarDelegate) -> any OndatoSDK.Disposable
 }
 public struct AnyObserver<Element> : OndatoSDK.ObserverType {
   public typealias EventHandler = (OndatoSDK.Event<Element>) -> Swift.Void
@@ -4092,12 +4097,12 @@ extension OndatoSDK.ObservableType {
   public func debug(_ identifier: Swift.String? = nil, trimOutput: Swift.Bool = false, file: Swift.String = #file, line: Swift.UInt = #line, function: Swift.String = #function) -> OndatoSDK.Observable<Self.Element>
 }
 extension OndatoSDK.ObservableType {
-  public func bind(to relays: OndatoSDK.PublishRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.PublishRelay<Self.Element?>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.BehaviorRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.BehaviorRelay<Self.Element?>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.ReplayRelay<Self.Element>...) -> OndatoSDK.Disposable
-  public func bind(to relays: OndatoSDK.ReplayRelay<Self.Element?>...) -> OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.PublishRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.PublishRelay<Self.Element?>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.BehaviorRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.BehaviorRelay<Self.Element?>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.ReplayRelay<Self.Element>...) -> any OndatoSDK.Disposable
+  public func bind(to relays: OndatoSDK.ReplayRelay<Self.Element?>...) -> any OndatoSDK.Disposable
 }
 extension OndatoSDK.ObservableType {
   public func ifEmpty(switchTo other: OndatoSDK.Observable<Self.Element>) -> OndatoSDK.Observable<Self.Element>
@@ -4118,13 +4123,13 @@ extension OndatoSDK.ObservableType {
   public func materialize() -> OndatoSDK.Observable<OndatoSDK.Event<Self.Element>>
 }
 extension OndatoSDK.ObservableType {
-  public func timeout(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
-  public func timeout<Source>(_ dueTime: OndatoSDK.RxTimeInterval, other: Source, scheduler: OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element> where Source : OndatoSDK.ObservableConvertibleType, Self.Element == Source.Element
+  public func timeout(_ dueTime: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
+  public func timeout<Source>(_ dueTime: OndatoSDK.RxTimeInterval, other: Source, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element> where Source : OndatoSDK.ObservableConvertibleType, Self.Element == Source.Element
 }
 extension UIKit.UIScrollView : OndatoSDK.HasDelegate {
   public typealias Delegate = UIKit.UIScrollViewDelegate
 }
-open class RxScrollViewDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UIScrollView, UIKit.UIScrollViewDelegate>, OndatoSDK.DelegateProxyType {
+open class RxScrollViewDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UIScrollView, any UIKit.UIScrollViewDelegate>, OndatoSDK.DelegateProxyType {
   weak public var scrollView: UIKit.UIScrollView? {
     get
   }
@@ -4138,14 +4143,14 @@ extension OndatoSDK.RxScrollViewDelegateProxy : UIKit.UIScrollViewDelegate {
 extension UIKit.UITabBar : OndatoSDK.HasDelegate {
   public typealias Delegate = UIKit.UITabBarDelegate
 }
-open class RxTabBarDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UITabBar, UIKit.UITabBarDelegate>, OndatoSDK.DelegateProxyType {
+open class RxTabBarDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UITabBar, any UIKit.UITabBarDelegate>, OndatoSDK.DelegateProxyType {
   weak public var tabBar: UIKit.UITabBar? {
     get
   }
   public init(tabBar: OndatoSDK.RxTabBarDelegateProxy.ParentObject)
   public static func registerKnownImplementations()
-  open class func currentDelegate(for object: OndatoSDK.RxTabBarDelegateProxy.ParentObject) -> UIKit.UITabBarDelegate?
-  open class func setCurrentDelegate(_ delegate: UIKit.UITabBarDelegate?, to object: OndatoSDK.RxTabBarDelegateProxy.ParentObject)
+  open class func currentDelegate(for object: OndatoSDK.RxTabBarDelegateProxy.ParentObject) -> (any UIKit.UITabBarDelegate)?
+  open class func setCurrentDelegate(_ delegate: (any UIKit.UITabBarDelegate)?, to object: OndatoSDK.RxTabBarDelegateProxy.ParentObject)
   @objc deinit
 }
 extension OndatoSDK.RxTabBarDelegateProxy : UIKit.UITabBarDelegate {
@@ -4161,17 +4166,17 @@ extension OndatoSDK.RxTextViewDelegateProxy : UIKit.UITextViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic open func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
 }
 extension OndatoSDK.Reactive where Base : UIKit.UICollectionView {
-  public func items<Sequence, Source>(_ source: Source) -> (_ cellFactory: @escaping (UIKit.UICollectionView, Swift.Int, Sequence.Element) -> UIKit.UICollectionViewCell) -> OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
-  public func items<Sequence, Cell, Source>(cellIdentifier: Swift.String, cellType: Cell.Type = Cell.self) -> (_ source: Source) -> (_ configureCell: @escaping (Swift.Int, Sequence.Element, Cell) -> Swift.Void) -> OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Cell : UIKit.UICollectionViewCell, Source : OndatoSDK.ObservableType
-  public func items<DataSource, Source>(dataSource: DataSource) -> (_ source: Source) -> OndatoSDK.Disposable where DataSource : OndatoSDK.RxCollectionViewDataSourceType, DataSource : UIKit.UICollectionViewDataSource, Source : OndatoSDK.ObservableType, DataSource.Element == Source.Element
+  public func items<Sequence, Source>(_ source: Source) -> (_ cellFactory: @escaping (UIKit.UICollectionView, Swift.Int, Sequence.Element) -> UIKit.UICollectionViewCell) -> any OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Source : OndatoSDK.ObservableType
+  public func items<Sequence, Cell, Source>(cellIdentifier: Swift.String, cellType: Cell.Type = Cell.self) -> (_ source: Source) -> (_ configureCell: @escaping (Swift.Int, Sequence.Element, Cell) -> Swift.Void) -> any OndatoSDK.Disposable where Sequence : Swift.Sequence, Sequence == Source.Element, Cell : UIKit.UICollectionViewCell, Source : OndatoSDK.ObservableType
+  public func items<DataSource, Source>(dataSource: DataSource) -> (_ source: Source) -> any OndatoSDK.Disposable where DataSource : OndatoSDK.RxCollectionViewDataSourceType, DataSource : UIKit.UICollectionViewDataSource, Source : OndatoSDK.ObservableType, DataSource.Element == Source.Element
 }
 extension OndatoSDK.Reactive where Base : UIKit.UICollectionView {
   public typealias DisplayCollectionViewCellEvent = (cell: UIKit.UICollectionViewCell, at: Foundation.IndexPath)
   public typealias DisplayCollectionViewSupplementaryViewEvent = (supplementaryView: UIKit.UICollectionReusableView, elementKind: Swift.String, at: Foundation.IndexPath)
-  public var dataSource: OndatoSDK.DelegateProxy<UIKit.UICollectionView, UIKit.UICollectionViewDataSource> {
+  public var dataSource: OndatoSDK.DelegateProxy<UIKit.UICollectionView, any UIKit.UICollectionViewDataSource> {
     get
   }
-  public func setDataSource(_ dataSource: UIKit.UICollectionViewDataSource) -> OndatoSDK.Disposable
+  public func setDataSource(_ dataSource: any UIKit.UICollectionViewDataSource) -> any OndatoSDK.Disposable
   public var itemSelected: OndatoSDK.ControlEvent<Foundation.IndexPath> {
     get
   }
@@ -4202,10 +4207,10 @@ extension OndatoSDK.Reactive where Base : UIKit.UICollectionView {
 }
 @available(iOS 10.0, tvOS 10.0, *)
 extension OndatoSDK.Reactive where Base : UIKit.UICollectionView {
-  public var prefetchDataSource: OndatoSDK.DelegateProxy<UIKit.UICollectionView, UIKit.UICollectionViewDataSourcePrefetching> {
+  public var prefetchDataSource: OndatoSDK.DelegateProxy<UIKit.UICollectionView, any UIKit.UICollectionViewDataSourcePrefetching> {
     get
   }
-  public func setPrefetchDataSource(_ prefetchDataSource: UIKit.UICollectionViewDataSourcePrefetching) -> OndatoSDK.Disposable
+  public func setPrefetchDataSource(_ prefetchDataSource: any UIKit.UICollectionViewDataSourcePrefetching) -> any OndatoSDK.Disposable
   public var prefetchItems: OndatoSDK.ControlEvent<[Foundation.IndexPath]> {
     get
   }
@@ -4236,7 +4241,7 @@ final public class ColorValueProvider : OndatoSDK.AnyValueProvider {
     get
     set
   }
-  final public var valueType: Any.Type {
+  final public var valueType: any Any.Type {
     get
   }
   final public func hasUpdate(frame _: CoreFoundation.CGFloat) -> Swift.Bool
@@ -4274,7 +4279,7 @@ extension OndatoSDK.PrimitiveSequenceType where Self.Element == Swift.Never, Sel
   }
   public init()
   final public func on(_ event: OndatoSDK.Event<Element>)
-  override final public func subscribe<Observer>(_ observer: Observer) -> OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
+  override final public func subscribe<Observer>(_ observer: Observer) -> any OndatoSDK.Disposable where Element == Observer.Element, Observer : OndatoSDK.ObserverType
   final public func asObserver() -> OndatoSDK.AsyncSubject<Element>
   public typealias Observer = OndatoSDK.AsyncSubject<Element>
   @objc deinit

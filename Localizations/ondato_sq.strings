@@ -255,3 +255,6 @@
 "ondato_nfc_scan_prompt_error_invalid_mrz_key" = "Çelësi MRZ nuk është i vlefshëm për këtë dokument.";
 "ondato_nfc_scan_prompt_error_response" = "Duket se procesi është ndërprerë.";
 "ondato_capture_nfc_failure_title" = "Duket se procesi është ndërprerë.";
+
+"ondato_interrupted_title" = "Procesi u ndërpre";
+"ondato_interrupted_description" = "Për shkak të ndërprerjeve, procesi është ndalur. Ju lutemi qëndroni në këtë aplikacion derisa të keni përfunduar të gjitha hapat.";

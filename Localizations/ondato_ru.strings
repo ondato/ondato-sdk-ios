@@ -242,3 +242,6 @@
 "ondato_nfc_scan_prompt_error_invalid_mrz_key" = "Ключ МRZ недействителен для этого документа.";
 "ondato_nfc_scan_prompt_error_response" = "Похоже, процесс был прерван.";
 "ondato_capture_nfc_failure_title" = "Похоже, процесс был прерван.";
+
+"ondato_interrupted_title" = "Процесс был прерван";
+"ondato_interrupted_description" = "Из-за перерывов процесс остановился. Пожалуйста, оставайтесь в этом приложении, пока не выполните все шаги.";

@@ -252,3 +252,6 @@
 "ondato_poor_photo_quality_primary" = "Uw identificatie wordt afgewezen vanwege een slechte fotokwaliteit.";
 "ondato_waiting_page_failure_try_again_title" = "Probeer het nog eens";
 "ondato_waiting_page_document_obscured" = "We controleren of de gegevens in uw document worden niet verduisterd door schaduwen of lichtstralen.";
+
+"ondato_interrupted_title" = "Het proces werd onderbroken";
+"ondato_interrupted_description" = "Door onderbrekingen is het proces gestopt. Blijf alsjeblieft op deze app totdat je alle stappen hebt voltooid.";

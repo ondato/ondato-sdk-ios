@@ -252,3 +252,6 @@
 "ondato_poor_photo_quality_primary" = "Identificarea a fost respinsă din cauza calității slabe a fotografiei.";
 "ondato_waiting_page_failure_try_again_title" = "Încearcă din nou.";
 "ondato_waiting_page_document_obscured" = "Verificăm dacă informațiile din document nu sunt ascunse de umbră sau raze de lumină.";
+
+"ondato_interrupted_title" = "Procesul a fost întrerupt";
+"ondato_interrupted_description" = "Din cauza întreruperilor, procesul s-a oprit. Vă rugăm să rămâneți pe această aplicație până când ați finalizat toți pașii.";

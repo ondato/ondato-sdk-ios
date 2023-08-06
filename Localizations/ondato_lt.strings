@@ -242,3 +242,6 @@
 "ondato_nfc_scan_prompt_error_invalid_mrz_key" = "MRZ raktas negalioja šiam dokumentui.";
 "ondato_nfc_scan_prompt_error_response" = "Panašu, kad procesas buvo nutrauktas.";
 "ondato_capture_nfc_failure_title" = "Panašu, kad procesas buvo nutrauktas.";
+
+"ondato_interrupted_title" = "Procesas buvo nutrauktas";
+"ondato_interrupted_description" = "Dėl trukdžių procesas sustojo. Likite šioje aplikacijoje iki kol atliksite visus veiksmus.";

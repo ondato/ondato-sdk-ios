@@ -244,3 +244,7 @@
 "ondato_poor_photo_quality_primary" = "Твоята заявка за идентификация е отказана, тъй като снимките на твоя документ не са с достатъчно добро качество.";
 "ondato_waiting_page_failure_try_again_title" = "Опитай отново";
 "ondato_waiting_page_document_obscured" = "Проверяваме дали снимките на твоя документ са ясни и четими.";
+
+
+"ondato_interrupted_title" = "Процесът беше прекъснат";
+"ondato_interrupted_description" = "Поради прекъсвания процесът е спрян. Моля, останете в това приложение, докато не изпълните всички стъпки.";
