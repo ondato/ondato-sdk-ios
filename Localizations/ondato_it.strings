@@ -250,3 +250,7 @@
 
 "ondato_interrupted_title" = "Il processo è stato interrotto";
 "ondato_interrupted_description" = "A causa di interruzioni, il processo si è interrotto. Rimani su questa app fino a quando non avrai completato tutti i passaggi.";
+
+"face_auth_too_many_attempts_title" = "Verifica bloccata a causa di troppi tentativi";
+"face_auth_too_many_attempts_description" = "Contatta il fornitore del servizio per assistenza";
+"face_auth_too_many_attempts_button" = "FERMA IL PROCESSO";

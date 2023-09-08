@@ -246,3 +246,7 @@
 
 "ondato_interrupted_title" = "El proceso fue interrumpido";
 "ondato_interrupted_description" = "Debido a las interrupciones, el proceso se ha detenido. Permanezca en esta aplicación hasta que haya completado todos los pasos.";
+
+"face_auth_too_many_attempts_title" = "Verificación bloqueada debido a demasiados intentos";
+"face_auth_too_many_attempts_description" = "Por favor, póngase en contacto con el proveedor de servicios para obtener ayuda";
+"face_auth_too_many_attempts_button" = "DETENER EL PROCESO";

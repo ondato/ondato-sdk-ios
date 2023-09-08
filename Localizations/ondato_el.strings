@@ -255,3 +255,7 @@
 
 "ondato_interrupted_title" = "Η διαδικασία διεκόπη";
 "ondato_interrupted_description" = "Λόγω διακοπών η διαδικασία σταμάτησε. Παρακαλούμε μείνετε σε αυτήν την εφαρμογή μέχρι να ολοκληρώσετε όλα τα βήματα.";
+
+"face_auth_too_many_attempts_title" = "Η επαλήθευση αποκλείστηκε λόγω πάρα πολλών προσπαθειών";
+"face_auth_too_many_attempts_description" = "Επικοινωνήστε με τον πάροχο υπηρεσιών για βοήθεια";
+"face_auth_too_many_attempts_button" = "ΣΤΑΜΑΤΗΣΤΕ ΤΗ ΔΙΑΔΙΚΑΣΙΑ";

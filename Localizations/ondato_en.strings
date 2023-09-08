@@ -287,3 +287,7 @@
 
 "ondato_interrupted_title" = "The process was interrupted";
 "ondato_interrupted_description" = "Due to interruptions, the process has stopped. Please stay on this app until you have completed all steps.";
+
+"face_auth_too_many_attempts_title" = "Verification blocked due to too many attempts";
+"face_auth_too_many_attempts_description" = "Please contact the service provider for help";
+"face_auth_too_many_attempts_button" = "STOP THE PROCESS";

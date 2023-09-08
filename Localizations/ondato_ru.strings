@@ -245,3 +245,7 @@
 
 "ondato_interrupted_title" = "Процесс был прерван";
 "ondato_interrupted_description" = "Из-за перерывов процесс остановился. Пожалуйста, оставайтесь в этом приложении, пока не выполните все шаги.";
+
+"face_auth_too_many_attempts_title" = "Проверка заблокирована из-за слишком многих попыток";
+"face_auth_too_many_attempts_description" = "Пожалуйста, свяжитесь с поставщиком услуг за помощью";
+"face_auth_too_many_attempts_button" = "ОСТАНОВИТЬ ПРОЦЕСС";

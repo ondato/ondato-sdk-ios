@@ -255,3 +255,7 @@
 
 "ondato_interrupted_title" = "Procesul a fost întrerupt";
 "ondato_interrupted_description" = "Din cauza întreruperilor, procesul s-a oprit. Vă rugăm să rămâneți pe această aplicație până când ați finalizat toți pașii.";
+
+"face_auth_too_many_attempts_title" = "Verificarea blocată din cauza prea multor încercări";
+"face_auth_too_many_attempts_description" = "Vă rugăm să contactați furnizorul de servicii pentru ajutor";
+"face_auth_too_many_attempts_button" = "OPRIȚI PROCESUL";

@@ -3937,7 +3937,6 @@ extension OndatoSDK.ObservableConvertibleType {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OndatoFlowConfiguration) public class OndatoFlowConfiguration : ObjectiveC.NSObject {
-  @objc public var showSplashScreen: Swift.Bool
   @objc public var showStartScreen: Swift.Bool
   @objc public var showSuccessWindow: Swift.Bool
   @objc public var removeSelfieFrame: Swift.Bool

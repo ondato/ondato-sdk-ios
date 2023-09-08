@@ -515,7 +515,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoServerMode, "OndatoEnvironment", open)
 
 SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 @interface OndatoFlowConfiguration : NSObject
-@property (nonatomic) BOOL showSplashScreen;
 @property (nonatomic) BOOL showStartScreen;
 @property (nonatomic) BOOL showSuccessWindow;
 @property (nonatomic) BOOL removeSelfieFrame;
@@ -644,6 +643,7 @@ SWIFT_CLASS("_TtC9OndatoSDK20OndatoViewController")
 - (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<UIPageViewControllerOptionsKey, id> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 SWIFT_CLASS("_TtC9OndatoSDK14PassportReader") SWIFT_AVAILABILITY(ios,introduced=13)

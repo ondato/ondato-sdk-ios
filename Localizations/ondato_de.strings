@@ -247,3 +247,7 @@
 
 "ondato_interrupted_title" = "Der Prozess wurde unterbrochen";
 "ondato_interrupted_description" = "Aufgrund von Unterbrechungen wurde der Prozess gestoppt. Bitte bleiben Sie in dieser App, bis Sie alle Schritte abgeschlossen haben.";
+
+"face_auth_too_many_attempts_title" = "Verifikation aufgrund zu vieler Versuche blockiert";
+"face_auth_too_many_attempts_description" = "Bitte kontaktieren Sie den Diensteanbieter für Hilfe";
+"face_auth_too_many_attempts_button" = "DEN PROZESS STOPPEN";

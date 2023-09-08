@@ -246,3 +246,7 @@
 
 "ondato_interrupted_title" = "Process tika pārtraukts";
 "ondato_interrupted_description" = "Pārtraukumu dēļ process ir apstājies. Lūdzu, palieciet šajā lietotnē, līdz esat pabeidzis visas darbības.";
+
+"face_auth_too_many_attempts_title" = "Verifikācija bloķēta pārāk daudzu mēģinājumu dēļ";
+"face_auth_auth_too_many_attempts_description" = "Lūdzu, sazinieties ar pakalpojuma sniedzēju, lai saņemtu palīdzību";
+"face_auth_too_many_attempts_button" = "APTURĒT PROCESU";

@@ -244,3 +244,7 @@
 
 "ondato_interrupted_title" = "Protsess katkestati";
 "ondato_interrupted_description" = "Protsess katkestati Katkestuste tõttu on protsess peatunud. Jätkake seda rakendust, kuni olete kõik sammud lõpetanud.";
+
+"face_auth_too_many_attempts_title" = "Kinnitamine blokeeritud liiga paljude katsete tõttu";
+"face_auth_too_many_attempts_description" = "Palun võtke ühendust teenusepakkujaga abi saamiseks";
+"face_auth_too_many_attempts_button" = "PEATA PROTSESS";

@@ -245,3 +245,7 @@
 
 "ondato_interrupted_title" = "Procesas buvo nutrauktas";
 "ondato_interrupted_description" = "Dėl trukdžių procesas sustojo. Likite šioje aplikacijoje iki kol atliksite visus veiksmus.";
+
+"face_auth_too_many_attempts_title" = "Patikrinimas užblokuotas dėl per daug bandymų";
+"face_auth_too_many_attempts_description" = "Dėl pagalbos kreipkitės į paslaugų teikėją";
+"face_auth_too_many_attempts_button" = "SUSTABDYTI PROCESĄ";
