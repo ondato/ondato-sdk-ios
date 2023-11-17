@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/OndatoSDK-Swift.h</key>
 		<data>
-		X/zDwQQs9U6Sa6Cj72KpSnrtvpo=
+		yJMEChL+V/YUhsKpJwGXqC3LaJU=
 		</data>
 		<key>Headers/OndatoSDK.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		t8V4Lt198Z9NvZ9g18R3ifIHbV8=
+		NEoHaYDlVYf4FVDdrPnFk1buk54=
 		</data>
 		<key>InfoViewController.nib</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		lEjLG1J20RTq5jsr+zvfLkJWfq8=
+		JRB++ni73MWvTfGQqQaMjk5vv50=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LOQhPb1BOPGu+Yqw6EECUXCqODY=
+		ZHnrAEvO7jpjviwsWtwl2CNS02U=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -106,19 +106,19 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LOQhPb1BOPGu+Yqw6EECUXCqODY=
+		ZHnrAEvO7jpjviwsWtwl2CNS02U=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7V0Vb3d/i3sGH5dgJtguP7tzpOw=
+		Ak5RdiabJ95YWXoOMvR7LkLDfhs=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lEjLG1J20RTq5jsr+zvfLkJWfq8=
+		JRB++ni73MWvTfGQqQaMjk5vv50=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		6g14e7hjAszEPRVz+LYH15YomNA=
+		uJ9MMMwQ3gALq7S9x1MDtBxbCJA=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -126,11 +126,11 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6g14e7hjAszEPRVz+LYH15YomNA=
+		uJ9MMMwQ3gALq7S9x1MDtBxbCJA=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BA7HnTKhD9yt+U9Hay/WWZXhqRo=
+		T7Exsk6DVDvKU+vE6ptVt6DcKcI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -313,7 +313,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sXHRhch5SSI+cJ1t8sFNtBRsSH+HljG5TZQrYrIpBmU=
+			+Xzu+PW83+/FRjAh+5AexMNideATO/mDSTiNrzJ7Po0=
 			</data>
 		</dict>
 		<key>Headers/OndatoSDK.h</key>
@@ -418,14 +418,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CYxgjSUuxxY5ShmMkdobtK6VpoM1N0oScTcXP+eVUZ8=
+			nu/lGZ8oFWdWcRcDy/VgRRyhUZEbrV0TiB7ph+D1WN8=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yFwb5NzEyxwggG7z/o0ZszDR38g4pKNFF91klkOFx2A=
+			C3+hO6R7x0J3N0aq5sjfO1Dl7mcoq3rvviAa+aV4Xt4=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -439,28 +439,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yFwb5NzEyxwggG7z/o0ZszDR38g4pKNFF91klkOFx2A=
+			C3+hO6R7x0J3N0aq5sjfO1Dl7mcoq3rvviAa+aV4Xt4=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zj3EtgujeQdKW7TiLHtNsqZA8jw/StC6W7ra+oaZ55A=
+			ClleKB4fpHsfzjA2HNi9PUC3QcHH00QIZcErDPAuLaE=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CYxgjSUuxxY5ShmMkdobtK6VpoM1N0oScTcXP+eVUZ8=
+			nu/lGZ8oFWdWcRcDy/VgRRyhUZEbrV0TiB7ph+D1WN8=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ov3CgbRduFINDZVaTq3+DbMCVXdtOYl59b/H1TmCP1E=
+			+O6U9OkqLOYI0cNRKQzHxuivCTX7gwUqYp0yxfx1Jac=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -474,14 +474,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ov3CgbRduFINDZVaTq3+DbMCVXdtOYl59b/H1TmCP1E=
+			+O6U9OkqLOYI0cNRKQzHxuivCTX7gwUqYp0yxfx1Jac=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VB2xPBUmjLHs0rYYl1yUqYdk64u4aFgd1eewLDT1D78=
+			ZuxRlF2nsTiDkbNT26f19sGHXxwqIAqNv9JoOJDh/oo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

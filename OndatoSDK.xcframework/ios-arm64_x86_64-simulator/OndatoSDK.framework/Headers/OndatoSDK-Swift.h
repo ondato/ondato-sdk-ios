@@ -515,6 +515,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoServerMode, "OndatoEnvironment", open)
 
 SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 @interface OndatoFlowConfiguration : NSObject
+@property (nonatomic) BOOL showSplashScreen;
 @property (nonatomic) BOOL showStartScreen;
 @property (nonatomic) BOOL showSuccessWindow;
 @property (nonatomic) BOOL removeSelfieFrame;
@@ -1204,6 +1205,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoServerMode, "OndatoEnvironment", open)
 
 SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
 @interface OndatoFlowConfiguration : NSObject
+@property (nonatomic) BOOL showSplashScreen;
 @property (nonatomic) BOOL showStartScreen;
 @property (nonatomic) BOOL showSuccessWindow;
 @property (nonatomic) BOOL removeSelfieFrame;
