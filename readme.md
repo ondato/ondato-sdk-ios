@@ -77,7 +77,6 @@ enum OndatoEnvironment {
 `flowConfiguration` holds several flow configuration options
 ```swift
 class OndatoFlowConfiguration {
-    var showSplashScreen: Bool // Should the splash screen be shown
     var showStartScreen: Bool // Should the start screen be shown
     var showSuccessWindow: Bool // Should the success window be shown
     var removeSelfieFrame: Bool // whether to show or to remove the selfie frame in passive liveness check mode
