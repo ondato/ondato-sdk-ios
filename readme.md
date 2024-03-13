@@ -115,7 +115,7 @@ present(sdk, animated: true, completion: nil)
 To handle result your view controller should implement `OndatoFlowDelegate` methods `onSuccess` and `onFailure` which contains `OndatoError` {`CANCELED`, `BAD_SERVER_RESPONSE`}:
 
 ```swift
-Ondato.sdk.flowDelegate = T: OndatoFlowDelegate
+Ondato.sdk.delegate = T: OndatoFlowDelegate
 
 func flowDidSucceed(identificationId: String?) { // provided identificationId
     
