@@ -1,7 +1,7 @@
 framework module OndatoSDK {
   umbrella header "OndatoSDK.h"
-
   export *
+
   module * { export * }
 }
 
