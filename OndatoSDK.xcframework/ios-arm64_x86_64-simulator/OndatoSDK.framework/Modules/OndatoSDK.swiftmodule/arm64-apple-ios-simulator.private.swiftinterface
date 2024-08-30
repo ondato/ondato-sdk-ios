@@ -123,12 +123,30 @@ extension OndatoSDK.PrimitiveSequenceType where Self.Element == Swift.Never, Sel
   @objc(OndatoServiceErrorType) public enum OndatoServiceErrorType : Swift.Int {
     case cancelled
     case consentDenied
+    case faceDataNotPresent
     case invalidServerResponse
     case invalidCredentials
     case recorderPermissions
-    case unexpectedInternalError
+    case recorderStartError
+    case recorderEndError
     case verificationFailed
     case nfcNotSupported
+    case accessToken
+    case idvConfig
+    case idvSetup
+    case facetecSdk
+    case faceSetup
+    case facetecLicense
+    case kycCompleted
+    case kycConfig
+    case kycId
+    case kycSetup
+    case mrzScanner
+    case personalCodeUpload
+    case recordingUpload
+    case restartFailed
+    case verificationFailedNoStatus
+    case verificationStatusFailed
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
