@@ -11,14 +11,12 @@ let package = Package(
     products: [
         .library(
             name: "OndatoSDK",
-            targets: ["OndatoSDK", "FaceTecSDK", "OpenSSL"]),
+            targets: ["OndatoSDK", "FaceTecSDK"]),
     ],
     targets: [
         .binaryTarget(name: "OndatoSDK",
                       path: "./OndatoSDK.xcframework"),
         .binaryTarget(name: "FaceTecSDK",
-                      path: "./FaceTecSDK.xcframework"),
-        .binaryTarget(name: "OpenSSL",
-                      path: "./OpenSSL.xcframework")
+                      path: "./FaceTecSDK.xcframework")
     ]
 )
