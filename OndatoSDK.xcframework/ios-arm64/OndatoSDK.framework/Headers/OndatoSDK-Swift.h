@@ -455,6 +455,7 @@ SWIFT_CLASS("_TtC9OndatoSDK23CompatibleAnimationView")
 
 
 
+
 @protocol OndatoFlowDelegate;
 @class OndatoServiceConfiguration;
 @class OndatoViewController;
@@ -643,7 +644,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoServiceErrorType, "OndatoServiceErrorT
   OndatoServiceErrorTypeRestartFailed = 23,
   OndatoServiceErrorTypeVerificationFailedNoStatus = 24,
   OndatoServiceErrorTypeVerificationStatusFailed = 25,
-  OndatoServiceErrorTypeWrongBuild = 26,
 };
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoSupportedLanguage, "OndatoSupportedLanguage", open) {
@@ -678,6 +678,15 @@ SWIFT_CLASS("_TtC9OndatoSDK20OndatoViewController")
 - (nonnull instancetype)initWithTransitionStyle:(UIPageViewControllerTransitionStyle)style navigationOrientation:(UIPageViewControllerNavigationOrientation)navigationOrientation options:(NSDictionary<UIPageViewControllerOptionsKey, id> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+SWIFT_CLASS("_TtC9OndatoSDK14PassportReader") SWIFT_AVAILABILITY(ios,introduced=13)
+@interface PassportReader : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 

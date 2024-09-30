@@ -3,11 +3,15 @@
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OndatoSDK
 import AVFoundation
 import AVKit
+import CommonCrypto
 import CoreGraphics
+import CoreImage
 import CoreLocation
 import CoreNFC
 import CoreServices
 import CoreText
+import CryptoKit
+import CryptoTokenKit
 import Darwin
 import DeveloperToolsSupport
 import Dispatch
@@ -16,11 +20,14 @@ import Foundation
 import ImageIO
 import MobileCoreServices
 @_exported import OndatoSDK
+import OpenSSL
 import Photos
 import QuartzCore
+import ReplayKit
 import Swift
 import SwiftUI
 import UIKit
+import Vision
 import WebKit
 import _Concurrency
 import _CoreNFC_UIKit
@@ -140,7 +147,6 @@ extension OndatoSDK.PrimitiveSequenceType where Self.Element == Swift.Never, Sel
     case restartFailed
     case verificationFailedNoStatus
     case verificationStatusFailed
-    case wrongBuild
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
@@ -226,6 +232,48 @@ extension OndatoSDK.RxCocoaError {
 }
 extension OndatoSDK.ObservableType {
   public static func generate(initialState: Self.Element, condition: @escaping (Self.Element) throws -> Swift.Bool, scheduler: any OndatoSDK.ImmediateSchedulerType = CurrentThreadScheduler.instance, iterate: @escaping (Self.Element) throws -> Self.Element) -> OndatoSDK.Observable<Self.Element>
+}
+@available(iOS 13, macOS 10.15, *)
+public enum CertificateType {
+  case documentSigningCertificate
+  case issuerSigningCertificate
+  public static func == (a: OndatoSDK.CertificateType, b: OndatoSDK.CertificateType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public enum CertificateItem : Swift.String {
+  case fingerprint
+  case issuerName
+  case subjectName
+  case serialNumber
+  case signatureAlgorithm
+  case publicKeyAlgorithm
+  case notBefore
+  case notAfter
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public class X509Wrapper {
+  final public let cert: Swift.OpaquePointer
+  public init?(with cert: Swift.OpaquePointer?)
+  public func getItemsAsDict() -> [OndatoSDK.CertificateItem : Swift.String]
+  public func certToPEM() -> Swift.String
+  public func getFingerprint() -> Swift.String?
+  public func getNotBeforeDate() -> Swift.String?
+  public func getNotAfterDate() -> Swift.String?
+  public func getSerialNumber() -> Swift.String?
+  public func getSignatureAlgorithm() -> Swift.String?
+  public func getPublicKeyAlgorithm() -> Swift.String?
+  public func getIssuerName() -> Swift.String?
+  public func getSubjectName() -> Swift.String?
+  @objc deinit
 }
 extension OndatoSDK.ObservableType {
   public func throttle(_ dueTime: OndatoSDK.RxTimeInterval, latest: Swift.Bool = true, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
@@ -316,6 +364,39 @@ extension OndatoSDK.SharedSequenceConvertibleType {
 extension OndatoSDK.SharedSequenceConvertibleType {
   public func delay(_ dueTime: OndatoSDK.RxTimeInterval) -> OndatoSDK.SharedSequence<Self.SharingStrategy, Self.Element>
 }
+@available(iOS 13, macOS 10.15, *)
+public enum DataGroupId : Swift.Int, Swift.CaseIterable {
+  case COM
+  case DG1
+  case DG2
+  case DG3
+  case DG4
+  case DG5
+  case DG6
+  case DG7
+  case DG8
+  case DG9
+  case DG10
+  case DG11
+  case DG12
+  case DG13
+  case DG14
+  case DG15
+  case DG16
+  case SOD
+  case Unknown
+  public func getName() -> Swift.String
+  public static func getIDFromName(name: Swift.String) -> OndatoSDK.DataGroupId
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [OndatoSDK.DataGroupId]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [OndatoSDK.DataGroupId] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @available(iOS 10.0, tvOS 10.0, *)
 extension UIKit.UITableView : OndatoSDK.HasPrefetchDataSource {
   public typealias PrefetchDataSource = UIKit.UITableViewDataSourcePrefetching
@@ -350,6 +431,20 @@ final public class BooleanDisposable : OndatoSDK.Cancelable {
 }
 extension OndatoSDK.ObservableType {
   public func toArray() -> OndatoSDK.Single<[Self.Element]>
+}
+@available(iOS 13, macOS 10.15, *)
+public enum NFCViewDisplayMessage {
+  case requestPresentPassport
+  case authenticatingWithPassport(Swift.Int)
+  case readingDataGroupProgress(OndatoSDK.DataGroupId, Swift.Int)
+  case error(OndatoSDK.NFCPassportReaderError)
+  case successfulRead
+}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.NFCViewDisplayMessage {
+  public var description: Swift.String {
+    get
+  }
 }
 extension OndatoSDK.ObservableType {
   public func ifEmpty(default: Self.Element) -> OndatoSDK.Observable<Self.Element>
@@ -718,6 +813,142 @@ public protocol ObservableConvertibleType {
   associatedtype Element
   func asObservable() -> OndatoSDK.Observable<Self.Element>
 }
+public enum PassportAuthenticationStatus {
+  case notDone
+  case success
+  case failed
+  public static func == (a: OndatoSDK.PassportAuthenticationStatus, b: OndatoSDK.PassportAuthenticationStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public class NFCPassportModel {
+  public var documentType: Swift.String {
+    get
+  }
+  public var documentSubType: Swift.String {
+    get
+  }
+  public var personalNumber: Swift.String {
+    get
+  }
+  public var documentNumber: Swift.String {
+    get
+  }
+  public var issuingAuthority: Swift.String {
+    get
+  }
+  public var documentExpiryDate: Swift.String {
+    get
+  }
+  public var dateOfBirth: Swift.String {
+    get
+  }
+  public var gender: Swift.String {
+    get
+  }
+  public var nationality: Swift.String {
+    get
+  }
+  public var lastName: Swift.String {
+    get
+  }
+  public var firstName: Swift.String {
+    get
+  }
+  public var passportMRZ: Swift.String {
+    get
+  }
+  public var placeOfBirth: Swift.String? {
+    get
+  }
+  public var residenceAddress: Swift.String? {
+    get
+  }
+  public var phoneNumber: Swift.String? {
+    get
+  }
+  public var documentSigningCertificate: OndatoSDK.X509Wrapper? {
+    get
+  }
+  public var countrySigningCertificate: OndatoSDK.X509Wrapper? {
+    get
+  }
+  public var LDSVersion: Swift.String {
+    get
+  }
+  public var dataGroupsPresent: [Swift.String] {
+    get
+  }
+  public var dataGroupsAvailable: [OndatoSDK.DataGroupId] {
+    get
+  }
+  public var dataGroupsRead: [OndatoSDK.DataGroupId : OndatoSDK.DataGroup] {
+    get
+  }
+  public var dataGroupHashes: [OndatoSDK.DataGroupId : OndatoSDK.DataGroupHash] {
+    get
+  }
+  public var cardAccess: OndatoSDK.CardAccess? {
+    get
+  }
+  public var BACStatus: OndatoSDK.PassportAuthenticationStatus {
+    get
+  }
+  public var PACEStatus: OndatoSDK.PassportAuthenticationStatus {
+    get
+  }
+  public var chipAuthenticationStatus: OndatoSDK.PassportAuthenticationStatus {
+    get
+  }
+  public var passportCorrectlySigned: Swift.Bool {
+    get
+  }
+  public var documentSigningCertificateVerified: Swift.Bool {
+    get
+  }
+  public var passportDataNotTampered: Swift.Bool {
+    get
+  }
+  public var activeAuthenticationPassed: Swift.Bool {
+    get
+  }
+  public var activeAuthenticationChallenge: [Swift.UInt8] {
+    get
+  }
+  public var activeAuthenticationSignature: [Swift.UInt8] {
+    get
+  }
+  public var verificationErrors: [any Swift.Error] {
+    get
+  }
+  public var isPACESupported: Swift.Bool {
+    get
+  }
+  public var isChipAuthenticationSupported: Swift.Bool {
+    get
+  }
+  public var passportImage: UIKit.UIImage? {
+    get
+  }
+  public var signatureImage: UIKit.UIImage? {
+    get
+  }
+  public var activeAuthenticationSupported: Swift.Bool {
+    get
+  }
+  public init()
+  public init(from dump: [Swift.String : Swift.String])
+  public func addDataGroup(_ id: OndatoSDK.DataGroupId, dataGroup: OndatoSDK.DataGroup)
+  public func getDataGroup(_ id: OndatoSDK.DataGroupId) -> OndatoSDK.DataGroup?
+  public func dumpPassportData(selectedDataGroups: [OndatoSDK.DataGroupId], includeActiveAuthenticationData: Swift.Bool = false) -> [Swift.String : Swift.String]
+  public func getHashesForDatagroups(hashAlgorythm: Swift.String) -> [OndatoSDK.DataGroupId : [Swift.UInt8]]
+  public func verifyPassport(masterListURL: Foundation.URL?, useCMSVerification: Swift.Bool = false)
+  public func verifyActiveAuthentication(challenge: [Swift.UInt8], signature: [Swift.UInt8])
+  @objc deinit
+}
 extension CoreFoundation.CGRect : OndatoSDK.KVORepresentable {
   public typealias KVOType = Foundation.NSValue
   public init?(KVOValue: CoreFoundation.CGRect.KVOType)
@@ -745,6 +976,16 @@ open class RxCollectionViewDataSourceProxy : OndatoSDK.DelegateProxy<UIKit.UICol
 extension OndatoSDK.RxCollectionViewDataSourceProxy : UIKit.UICollectionViewDataSource {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
   @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup15 : OndatoSDK.DataGroup {
+  public var rsaPublicKey: Swift.OpaquePointer? {
+    get
+  }
+  public var ecdsaPublicKey: Swift.OpaquePointer? {
+    get
+  }
+  @objc deinit
 }
 extension OndatoSDK.Reactive where Base : UIKit.UIActivityIndicatorView {
   public var isAnimating: OndatoSDK.Binder<Swift.Bool> {
@@ -848,6 +1089,13 @@ extension OndatoSDK.Reactive where Base : UIKit.UISwitch {
     get
   }
 }
+@available(iOS 13, macOS 10.15, *)
+public struct DataGroupHash {
+  public var id: Swift.String
+  public var sodHash: Swift.String
+  public var computedHash: Swift.String
+  public var match: Swift.Bool
+}
 public protocol ControlEventType : OndatoSDK.ObservableType {
   func asControlEvent() -> OndatoSDK.ControlEvent<Self.Element>
 }
@@ -907,6 +1155,13 @@ extension OndatoSDK.ObservableType {
 }
 extension OndatoSDK.ObservableType where Self.Element == Any {
   public static func combineLatest<O1, O2, O3, O4, O5, O6, O7, O8>(_ source1: O1, _ source2: O2, _ source3: O3, _ source4: O4, _ source5: O5, _ source6: O6, _ source7: O7, _ source8: O8) -> OndatoSDK.Observable<(O1.Element, O2.Element, O3.Element, O4.Element, O5.Element, O6.Element, O7.Element, O8.Element)> where O1 : OndatoSDK.ObservableType, O2 : OndatoSDK.ObservableType, O3 : OndatoSDK.ObservableType, O4 : OndatoSDK.ObservableType, O5 : OndatoSDK.ObservableType, O6 : OndatoSDK.ObservableType, O7 : OndatoSDK.ObservableType, O8 : OndatoSDK.ObservableType
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class ChipAuthenticationPublicKeyInfo : OndatoSDK.SecurityInfo {
+  override public func getObjectIdentifier() -> Swift.String
+  override public func getProtocolOIDString() -> Swift.String
+  public func getKeyId() -> Swift.Int
+  @objc deinit
 }
 @frozen public enum Event<Element> {
   case next(Element)
@@ -1067,6 +1322,46 @@ public protocol AnimationImageProvider {
   final public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> any OndatoSDK.Disposable
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup11 : OndatoSDK.DataGroup {
+  public var fullName: Swift.String? {
+    get
+  }
+  public var personalNumber: Swift.String? {
+    get
+  }
+  public var dateOfBirth: Swift.String? {
+    get
+  }
+  public var placeOfBirth: Swift.String? {
+    get
+  }
+  public var address: Swift.String? {
+    get
+  }
+  public var telephone: Swift.String? {
+    get
+  }
+  public var profession: Swift.String? {
+    get
+  }
+  public var title: Swift.String? {
+    get
+  }
+  public var personalSummary: Swift.String? {
+    get
+  }
+  public var proofOfCitizenship: Swift.String? {
+    get
+  }
+  public var tdNumbers: Swift.String? {
+    get
+  }
+  public var custodyInfo: Swift.String? {
+    get
+  }
+  @objc deinit
+}
 public protocol AnimationCacheProvider {
   func animation(forKey: Swift.String) -> OndatoSDK.Animation?
   func setAnimation(_ animation: OndatoSDK.Animation, forKey: Swift.String)
@@ -1110,6 +1405,12 @@ extension OndatoSDK.ObservableType {
   public static func concat(_ sources: OndatoSDK.Observable<Self.Element>...) -> OndatoSDK.Observable<Self.Element>
 }
 public struct Disposables {
+}
+public typealias ParsedResult = OndatoSDK.MRZResult
+public struct MRZParser {
+  public init(isOCRCorrectionEnabled: Swift.Bool)
+  public func parse(mrzLines: [Swift.String]) -> OndatoSDK.MRZResult?
+  public func parse(mrzString: Swift.String) -> OndatoSDK.MRZResult?
 }
 final public class PointValueProvider : OndatoSDK.AnyValueProvider {
   public init(block: @escaping OndatoSDK.PointValueProvider.PointValueBlock)
@@ -1451,6 +1752,10 @@ final public class PublishRelay<Element> : OndatoSDK.ObservableType {
   final public func asObservable() -> OndatoSDK.Observable<Element>
   @objc deinit
 }
+public struct ImageMRZScanner {
+  public init()
+  public func scan(scanningImage: OndatoSDK.ScanningImage, orientation: ImageIO.CGImagePropertyOrientation, regionOfInterest: CoreFoundation.CGRect? = nil, minimumTextHeight: Swift.Float? = nil, recognitionLevel: OndatoSDK.RecognitionLevel = .accurate, foundBoundingRectsHandler: (([CoreFoundation.CGRect]) -> Swift.Void)? = nil, completionHandler: @escaping (Swift.Result<OndatoSDK.DocumentScanningResult<OndatoSDK.ParsedResult>, any Swift.Error>) -> Swift.Void)
+}
 public enum RxCocoaInterceptionMechanism {
   case unknown
   case kvo
@@ -1695,6 +2000,13 @@ public struct Binder<Value> : OndatoSDK.ObserverType {
 }
 extension OndatoSDK.Disposables {
   public static func create(_ disposable1: any OndatoSDK.Disposable, _ disposable2: any OndatoSDK.Disposable) -> any OndatoSDK.Cancelable
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class CardAccess {
+  public var securityInfos: [OndatoSDK.SecurityInfo] {
+    get
+  }
+  @objc deinit
 }
 public protocol AnyValueProvider {
   var valueType: any Any.Type { get }
@@ -2045,6 +2357,67 @@ public struct Color {
   public var a: Swift.Double
   public init(r: Swift.Double, g: Swift.Double, b: Swift.Double, a: Swift.Double, denominator: OndatoSDK.ColorFormatDenominator = .One)
 }
+@available(iOS 13, macOS 10.15, *)
+public enum NFCPassportReaderError : Swift.Error {
+  case ResponseError(Swift.String, Swift.UInt8, Swift.UInt8)
+  case InvalidResponse
+  case UnexpectedError
+  case NFCNotSupported
+  case NoConnectedTag
+  case D087Malformed
+  case InvalidResponseChecksum
+  case MissingMandatoryFields
+  case CannotDecodeASN1Length
+  case InvalidASN1Value
+  case UnableToProtectAPDU
+  case UnableToUnprotectAPDU
+  case UnsupportedDataGroup
+  case DataGroupNotRead
+  case UnknownTag
+  case UnknownImageFormat
+  case NotImplemented
+  case TagNotValid
+  case ConnectionError
+  case UserCanceled
+  case InvalidMRZKey
+  case MoreThanOneTagFound
+  case InvalidHashAlgorithmSpecified
+  case InvalidDataPassed(Swift.String)
+  case NotYetSupported(Swift.String)
+}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.NFCPassportReaderError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@available(iOS 13, macOS 10.15, *)
+public enum OpenSSLError : Swift.Error {
+  case UnableToGetX509CertificateFromPKCS7(Swift.String)
+  case UnableToVerifyX509CertificateForSOD(Swift.String)
+  case VerifyAndReturnSODEncapsulatedData(Swift.String)
+  case UnableToReadECPublicKey(Swift.String)
+  case UnableToExtractSignedDataFromPKCS7(Swift.String)
+  case VerifySignedAttributes(Swift.String)
+  case UnableToParseASN1(Swift.String)
+  case UnableToDecryptRSASignature(Swift.String)
+}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.OpenSSLError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum PassiveAuthenticationError : Swift.Error {
+  case UnableToParseSODHashes(Swift.String)
+  case InvalidDataGroupHash(Swift.String)
+  case SODMissing(Swift.String)
+}
+extension OndatoSDK.PassiveAuthenticationError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 public typealias Signal<Element> = OndatoSDK.SharedSequence<OndatoSDK.SignalSharingStrategy, Element>
 public struct SignalSharingStrategy : OndatoSDK.SharingStrategyProtocol {
   public static var scheduler: any OndatoSDK.SchedulerType {
@@ -2097,6 +2470,21 @@ extension OndatoSDK.ObservableType {
   public func bind<Object>(with object: Object, onNext: @escaping (Object, Self.Element) -> Swift.Void) -> any OndatoSDK.Disposable where Object : AnyObject
   public func bind(onNext: @escaping (Self.Element) -> Swift.Void) -> any OndatoSDK.Disposable
 }
+@objc @available(iOS 13, *)
+public class PassportReader : ObjectiveC.NSObject {
+  public var passiveAuthenticationUsesOpenSSL: Swift.Bool
+  public init(logLevel: OndatoSDK.LogLevel = .info, masterListURL: Foundation.URL? = nil)
+  public func setMasterListURL(_ masterListURL: Foundation.URL)
+  public func overrideNFCDataAmountToRead(amount: Swift.Int)
+  public func readPassport(mrzKey: Swift.String, tags: [OndatoSDK.DataGroupId] = [], skipSecureElements: Swift.Bool = true, skipCA: Swift.Bool = false, skipPACE: Swift.Bool = false, customDisplayMessage: ((OndatoSDK.NFCViewDisplayMessage) -> Swift.String?)? = nil, completed: @escaping (OndatoSDK.NFCPassportModel?, OndatoSDK.NFCPassportReaderError?) -> ())
+  @objc deinit
+}
+@available(iOS 13, *)
+extension OndatoSDK.PassportReader : CoreNFC.NFCTagReaderSessionDelegate {
+  public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
+}
 extension OndatoSDK.ObservableType {
   public func take(_ count: Swift.Int) -> OndatoSDK.Observable<Self.Element>
 }
@@ -2105,11 +2493,150 @@ extension OndatoSDK.ObservableType {
   @available(*, deprecated, renamed: "take(for:scheduler:)")
   public func take(_ duration: OndatoSDK.RxTimeInterval, scheduler: any OndatoSDK.SchedulerType) -> OndatoSDK.Observable<Self.Element>
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup2 : OndatoSDK.DataGroup {
+  public var nrImages: Swift.Int {
+    get
+  }
+  public var versionNumber: Swift.Int {
+    get
+  }
+  public var lengthOfRecord: Swift.Int {
+    get
+  }
+  public var numberOfFacialImages: Swift.Int {
+    get
+  }
+  public var facialRecordDataLength: Swift.Int {
+    get
+  }
+  public var nrFeaturePoints: Swift.Int {
+    get
+  }
+  public var gender: Swift.Int {
+    get
+  }
+  public var eyeColor: Swift.Int {
+    get
+  }
+  public var hairColor: Swift.Int {
+    get
+  }
+  public var featureMask: Swift.Int {
+    get
+  }
+  public var expression: Swift.Int {
+    get
+  }
+  public var poseAngle: Swift.Int {
+    get
+  }
+  public var poseAngleUncertainty: Swift.Int {
+    get
+  }
+  public var faceImageType: Swift.Int {
+    get
+  }
+  public var imageDataType: Swift.Int {
+    get
+  }
+  public var imageWidth: Swift.Int {
+    get
+  }
+  public var imageHeight: Swift.Int {
+    get
+  }
+  public var imageColorSpace: Swift.Int {
+    get
+  }
+  public var sourceType: Swift.Int {
+    get
+  }
+  public var deviceType: Swift.Int {
+    get
+  }
+  public var quality: Swift.Int {
+    get
+  }
+  public var imageData: [Swift.UInt8] {
+    get
+  }
+  @objc deinit
+}
 extension OndatoSDK.AnimationView {
   @_Concurrency.MainActor(unsafe) convenience public init(name: Swift.String, bundle: Foundation.Bundle = Bundle.main, imageProvider: (any OndatoSDK.AnimationImageProvider)? = nil, animationCache: (any OndatoSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache)
   @_Concurrency.MainActor(unsafe) convenience public init(filePath: Swift.String, imageProvider: (any OndatoSDK.AnimationImageProvider)? = nil, animationCache: (any OndatoSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache)
   @_Concurrency.MainActor(unsafe) convenience public init(url: Foundation.URL, imageProvider: (any OndatoSDK.AnimationImageProvider)? = nil, closure: @escaping OndatoSDK.AnimationView.DownloadClosure, animationCache: (any OndatoSDK.AnimationCacheProvider)? = LRUAnimationCache.sharedCache)
   public typealias DownloadClosure = ((any Swift.Error)?) -> Swift.Void
+}
+public enum MRZFormat : Swift.CaseIterable {
+  case td1, td2, td3
+  public var lineLength: Swift.Int {
+    get
+  }
+  public var linesCount: Swift.Int {
+    get
+  }
+  public static func == (a: OndatoSDK.MRZFormat, b: OndatoSDK.MRZFormat) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [OndatoSDK.MRZFormat]
+  public static var allCases: [OndatoSDK.MRZFormat] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct MRZResult : Swift.Hashable {
+  public enum DocumentType : Swift.CaseIterable {
+    case visa
+    case passport
+    case id
+    case residencePermit
+    case undefined
+    public static func == (a: OndatoSDK.MRZResult.DocumentType, b: OndatoSDK.MRZResult.DocumentType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [OndatoSDK.MRZResult.DocumentType]
+    public static var allCases: [OndatoSDK.MRZResult.DocumentType] {
+      get
+    }
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Sex : Swift.CaseIterable {
+    case male
+    case female
+    case unspecified
+    public static func == (a: OndatoSDK.MRZResult.Sex, b: OndatoSDK.MRZResult.Sex) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [OndatoSDK.MRZResult.Sex]
+    public static var allCases: [OndatoSDK.MRZResult.Sex] {
+      get
+    }
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public let format: OndatoSDK.MRZFormat
+  public let documentType: OndatoSDK.MRZResult.DocumentType
+  public let countryCode: Swift.String
+  public let surnames: Swift.String
+  public let givenNames: Swift.String
+  public let documentNumber: Swift.String?
+  public let nationalityCountryCode: Swift.String
+  public let birthdate: Foundation.Date?
+  public let sex: OndatoSDK.MRZResult.Sex
+  public let expiryDate: Foundation.Date?
+  public let optionalData: Swift.String?
+  public let optionalData2: Swift.String?
+  public var documentImage: UIKit.UIImage?
+  public init(format: OndatoSDK.MRZFormat, documentType: OndatoSDK.MRZResult.DocumentType, countryCode: Swift.String, surnames: Swift.String, givenNames: Swift.String, documentNumber: Swift.String?, nationalityCountryCode: Swift.String, birthdate: Foundation.Date?, sex: OndatoSDK.MRZResult.Sex, expiryDate: Foundation.Date?, optionalData: Swift.String?, optionalData2: Swift.String?)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: OndatoSDK.MRZResult, b: OndatoSDK.MRZResult) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 extension OndatoSDK.SharedSequence {
   public static func zip<O1, O2>(_ source1: O1, _ source2: O2, resultSelector: @escaping (O1.Element, O2.Element) throws -> Element) -> OndatoSDK.SharedSequence<O1.SharingStrategy, Element> where SharingStrategy == O1.SharingStrategy, O1 : OndatoSDK.SharedSequenceConvertibleType, O2 : OndatoSDK.SharedSequenceConvertibleType, O1.SharingStrategy == O2.SharingStrategy
@@ -2205,6 +2732,13 @@ extension OndatoSDK.ObservableConvertibleType {
   public func asInfallible(onErrorJustReturn element: Self.Element) -> OndatoSDK.Infallible<Self.Element>
   public func asInfallible(onErrorFallbackTo infallible: OndatoSDK.Infallible<Self.Element>) -> OndatoSDK.Infallible<Self.Element>
   public func asInfallible(onErrorRecover: @escaping (any Swift.Error) -> OndatoSDK.Infallible<Self.Element>) -> OndatoSDK.Infallible<Self.Element>
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup14 : OndatoSDK.DataGroup {
+  public var securityInfos: [OndatoSDK.SecurityInfo] {
+    get
+  }
+  @objc deinit
 }
 public class HistoricalScheduler : OndatoSDK.VirtualTimeScheduler<OndatoSDK.HistoricalSchedulerTimeConverter> {
   public init(initialClock: OndatoSDK.RxTime = Date(timeIntervalSince1970: 0))
@@ -2412,6 +2946,23 @@ extension OndatoSDK.SharedSequenceConvertibleType where Self.SharingStrategy == 
   public func emit(onNext: ((Self.Element) -> Swift.Void)? = nil, onCompleted: (() -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
   public func emit() -> any OndatoSDK.Disposable
 }
+@available(iOS 13, macOS 10.15, *)
+public class ASN1Item : Swift.CustomDebugStringConvertible {
+  public init(line: Swift.String)
+  public func getChild(_ child: Swift.Int) -> OndatoSDK.ASN1Item?
+  public func getNumberOfChildren() -> Swift.Int
+  public var debugDescription: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@available(iOS 13, macOS 10.15, *)
+public class SimpleASN1DumpParser {
+  public init()
+  public func parse(data: Foundation.Data) throws -> OndatoSDK.ASN1Item
+  public func test()
+  @objc deinit
+}
 extension OndatoSDK.Reactive where Base : UIKit.NSTextStorage {
   public var delegate: OndatoSDK.DelegateProxy<UIKit.NSTextStorage, any UIKit.NSTextStorageDelegate> {
     get
@@ -2435,6 +2986,34 @@ extension _Concurrency.AsyncSequence {
 extension OndatoSDK.ObservableType {
   public func scan<A>(into seed: A, accumulator: @escaping (inout A, Self.Element) throws -> Swift.Void) -> OndatoSDK.Observable<A>
   public func scan<A>(_ seed: A, accumulator: @escaping (A, Self.Element) throws -> A) -> OndatoSDK.Observable<A>
+}
+public enum LogLevel : Swift.Int, Swift.CaseIterable {
+  case verbose
+  case debug
+  case info
+  case warning
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [OndatoSDK.LogLevel]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [OndatoSDK.LogLevel] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Log {
+  public static var logLevel: OndatoSDK.LogLevel
+  public static var storeLogs: Swift.Bool
+  public static var logData: [Swift.String]
+  public class func verbose(_ msg: @autoclosure () -> Swift.String)
+  public class func debug(_ msg: @autoclosure () -> Swift.String)
+  public class func info(_ msg: @autoclosure () -> Swift.String)
+  public class func warning(_ msg: @autoclosure () -> Swift.String)
+  public class func error(_ msg: @autoclosure () -> Swift.String)
+  public class func clearStoredLogs()
+  @objc deinit
 }
 extension Swift.Int : OndatoSDK.KVORepresentable {
   public typealias KVOType = Foundation.NSNumber
@@ -2519,6 +3098,17 @@ open class RxSearchBarDelegateProxy : OndatoSDK.DelegateProxy<UIKit.UISearchBar,
 }
 extension OndatoSDK.RxSearchBarDelegateProxy : UIKit.UISearchBarDelegate {
 }
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class SecurityInfo {
+  public func getObjectIdentifier() -> Swift.String
+  public func getProtocolOIDString() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class LiveMRZScanner {
+  public init(frequency: Swift.Int = 2)
+  final public func scanFrame(scanningImage: OndatoSDK.ScanningImage, orientation: ImageIO.CGImagePropertyOrientation, regionOfInterest: CoreFoundation.CGRect? = nil, minimumTextHeight: Swift.Float? = nil, foundBoundingRectsHandler: (([CoreFoundation.CGRect]) -> Swift.Void)? = nil, completionHandler: @escaping (Swift.Result<OndatoSDK.DocumentScanningResult<OndatoSDK.ParsedResult>, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
 extension OndatoSDK.ObservableType {
   public func take<Source>(until other: Source) -> OndatoSDK.Observable<Self.Element> where Source : OndatoSDK.ObservableType
   public func take(until predicate: @escaping (Self.Element) throws -> Swift.Bool, behavior: OndatoSDK.TakeBehavior = .exclusive) -> OndatoSDK.Observable<Self.Element>
@@ -2539,6 +3129,20 @@ public enum TakeBehavior {
     get
   }
 }
+@available(iOS 13, macOS 10.15, *)
+public func AESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func AESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func AESECBEncrypt(key: [Swift.UInt8], message: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func tripleDESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func tripleDESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func DESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8], options: Swift.UInt32 = 0) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func DESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8], options: Swift.UInt32 = 0) -> [Swift.UInt8]
 @_inheritsConvenienceInitializers final public class SerialDisposable : OndatoSDK.DisposeBase, OndatoSDK.Cancelable {
   final public var isDisposed: Swift.Bool {
     get
@@ -2550,6 +3154,24 @@ public enum TakeBehavior {
   }
   final public func dispose()
   @objc deinit
+}
+@available(iOS 13, *)
+public class BACHandler {
+  public var ksenc: [Swift.UInt8]
+  public var ksmac: [Swift.UInt8]
+  public var kifd: [Swift.UInt8]
+  public init()
+  public init(tagReader: OndatoSDK.TagReader)
+  public func performBACAndGetSessionKeys(mrzKey: Swift.String, completed: @escaping (_ error: OndatoSDK.NFCPassportReaderError?) -> ())
+  public func sessionKeys(data: [Swift.UInt8]) throws -> ([Swift.UInt8], [Swift.UInt8], [Swift.UInt8])
+  @objc deinit
+}
+@available(iOS 13, *)
+public struct ResponseAPDU {
+  public var data: [Swift.UInt8]
+  public var sw1: Swift.UInt8
+  public var sw2: Swift.UInt8
+  public init(data: [Swift.UInt8], sw1: Swift.UInt8, sw2: Swift.UInt8)
 }
 public struct SharedSequence<SharingStrategy, Element> : OndatoSDK.SharedSequenceConvertibleType, OndatoSDK.ObservableConvertibleType where SharingStrategy : OndatoSDK.SharingStrategyProtocol {
   public func asObservable() -> OndatoSDK.Observable<Element>
@@ -2588,6 +3210,16 @@ extension OndatoSDK.ObservableType {
   public func single() -> OndatoSDK.Observable<Self.Element>
   public func single(_ predicate: @escaping (Self.Element) throws -> Swift.Bool) -> OndatoSDK.Observable<Self.Element>
 }
+@available(iOS 13, *)
+public class PACEHandler {
+  public init(cardAccess: OndatoSDK.CardAccess, tagReader: OndatoSDK.TagReader) throws
+  public func doPACE(mrzKey: Swift.String, completed: @escaping (Swift.Bool) -> ())
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class NotImplementedDG : OndatoSDK.DataGroup {
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class ImageAsset : OndatoSDK.Asset {
   final public let name: Swift.String
   final public let directory: Swift.String
@@ -2595,6 +3227,11 @@ extension OndatoSDK.ObservableType {
   final public let height: Swift.Double
   override final public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
+}
+public typealias ScannedBoundingRects = (valid: [CoreFoundation.CGRect], invalid: [CoreFoundation.CGRect])
+public struct DocumentScanningResult<T> {
+  public let result: T
+  public let boundingRects: OndatoSDK.ScannedBoundingRects
 }
 @dynamicMemberLookup public struct Reactive<Base> {
   public let base: Base
@@ -2658,6 +3295,51 @@ extension OndatoSDK.ObservableType {
 extension OndatoSDK.ObservableType where Self.Element : OndatoSDK.ObservableConvertibleType {
   public func switchLatest() -> OndatoSDK.Observable<Self.Element.Element>
 }
+public func binToHexRep(_ val: [Swift.UInt8], asArray: Swift.Bool = false) -> Swift.String
+public func binToHexRep(_ val: Swift.UInt8) -> Swift.String
+public func binToHex(_ val: Swift.UInt8) -> Swift.Int
+public func binToHex(_ val: [Swift.UInt8]) -> Swift.UInt64
+public func binToHex(_ val: Swift.ArraySlice<Swift.UInt8>) -> Swift.UInt64
+public func hexToBin(_ val: Swift.UInt64) -> [Swift.UInt8]
+public func binToInt(_ val: Swift.ArraySlice<Swift.UInt8>) -> Swift.Int
+public func binToInt(_ val: [Swift.UInt8]) -> Swift.Int
+public func intToBin(_ data: Swift.Int, pad: Swift.Int = 2) -> [Swift.UInt8]
+public func hexRepToBin(_ val: Swift.String) -> [Swift.UInt8]
+public func xor(_ kifd: [Swift.UInt8], _ response_kicc: [Swift.UInt8]) -> [Swift.UInt8]
+public func generateRandomUInt8Array(_ size: Swift.Int) -> [Swift.UInt8]
+public func pad(_ toPad: [Swift.UInt8], blockSize: Swift.Int) -> [Swift.UInt8]
+public func unpad(_ tounpad: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func mac(algoName: OndatoSDK.SecureMessagingSupportedAlgorithms, key: [Swift.UInt8], msg: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func desMAC(key: [Swift.UInt8], msg: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func aesMAC(key: [Swift.UInt8], msg: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func wrapDO(b: Swift.UInt8, arr: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func unwrapDO(tag: Swift.UInt8, wrappedData: [Swift.UInt8]) throws -> [Swift.UInt8]
+public func intToBytes(val: Swift.Int, removePadding: Swift.Bool) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func oidToBytes(oid: Swift.String, replaceTag: Swift.Bool) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func asn1Length(_ data: Swift.ArraySlice<Swift.UInt8>) throws -> (Swift.Int, Swift.Int)
+@available(iOS 13, macOS 10.15, *)
+public func asn1Length(_ data: [Swift.UInt8]) throws -> (Swift.Int, Swift.Int)
+@available(iOS 13, macOS 10.15, *)
+public func toAsn1Length(_ data: Swift.Int) throws -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcHash(data: [Swift.UInt8], hashAlgorithm: Swift.String) throws -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA1Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA224Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA256Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA512Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+@available(iOS 13, macOS 10.15, *)
+public func calcSHA384Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
 extension OndatoSDK.ObservableType {
   public static func amb<Sequence>(_ sequence: Sequence) -> OndatoSDK.Observable<Self.Element> where Sequence : Swift.Sequence, Sequence.Element == OndatoSDK.Observable<Self.Element>
 }
@@ -2728,6 +3410,24 @@ public enum Hooks {
   public func schedulePeriodic<StateType>(_ state: StateType, startAfter: OndatoSDK.RxTimeInterval, period: OndatoSDK.RxTimeInterval, action: @escaping (StateType) -> StateType) -> any OndatoSDK.Disposable
   @objc deinit
 }
+@available(iOS 13, macOS 10.15, *)
+public enum DocTypeEnum : Swift.String {
+  case TD1
+  case TD2
+  case OTHER
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup1 : OndatoSDK.DataGroup {
+  public var elements: [Swift.String : Swift.String] {
+    get
+  }
+  @objc deinit
+}
 extension OndatoSDK.Infallible {
   public static func combineLatest<I1, I2>(_ source1: I1, _ source2: I2, resultSelector: @escaping (I1.Element, I2.Element) throws -> Element) -> OndatoSDK.Infallible<Element> where I1 : OndatoSDK.InfallibleType, I2 : OndatoSDK.InfallibleType
 }
@@ -2748,6 +3448,37 @@ extension OndatoSDK.Infallible {
 }
 extension OndatoSDK.Infallible {
   public static func combineLatest<I1, I2, I3, I4, I5, I6, I7, I8>(_ source1: I1, _ source2: I2, _ source3: I3, _ source4: I4, _ source5: I5, _ source6: I6, _ source7: I7, _ source8: I8, resultSelector: @escaping (I1.Element, I2.Element, I3.Element, I4.Element, I5.Element, I6.Element, I7.Element, I8.Element) throws -> Element) -> OndatoSDK.Infallible<Element> where I1 : OndatoSDK.InfallibleType, I2 : OndatoSDK.InfallibleType, I3 : OndatoSDK.InfallibleType, I4 : OndatoSDK.InfallibleType, I5 : OndatoSDK.InfallibleType, I6 : OndatoSDK.InfallibleType, I7 : OndatoSDK.InfallibleType, I8 : OndatoSDK.InfallibleType
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup12 : OndatoSDK.DataGroup {
+  public var issuingAuthority: Swift.String? {
+    get
+  }
+  public var dateOfIssue: Swift.String? {
+    get
+  }
+  public var otherPersonsDetails: Swift.String? {
+    get
+  }
+  public var endorsementsOrObservations: Swift.String? {
+    get
+  }
+  public var taxOrExitRequirements: Swift.String? {
+    get
+  }
+  public var frontImage: [Swift.UInt8]? {
+    get
+  }
+  public var rearImage: [Swift.UInt8]? {
+    get
+  }
+  public var personalizationTime: Swift.String? {
+    get
+  }
+  public var personalizationDeviceSerialNr: Swift.String? {
+    get
+  }
+  @objc deinit
 }
 public protocol ControlPropertyType : OndatoSDK.ObservableType, OndatoSDK.ObserverType {
   func asControlProperty() -> OndatoSDK.ControlProperty<Self.Element>
@@ -2772,6 +3503,43 @@ extension OndatoSDK.Reactive where Base : UIKit.UIControl {
   public func controlEvent(_ controlEvents: UIKit.UIControl.Event) -> OndatoSDK.ControlEvent<()>
   public func controlProperty<T>(editingEvents: UIKit.UIControl.Event, getter: @escaping (Base) -> T, setter: @escaping (Base, T) -> Swift.Void) -> OndatoSDK.ControlProperty<T>
 }
+public enum SecureMessagingSupportedAlgorithms {
+  case DES
+  case AES
+  public static func == (a: OndatoSDK.SecureMessagingSupportedAlgorithms, b: OndatoSDK.SecureMessagingSupportedAlgorithms) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13, *)
+public class SecureMessaging {
+  public init(encryptionAlgorithm: OndatoSDK.SecureMessagingSupportedAlgorithms = .DES, ksenc: [Swift.UInt8], ksmac: [Swift.UInt8], ssc: [Swift.UInt8])
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class ChipAuthenticationInfo : OndatoSDK.SecurityInfo {
+  override public func getObjectIdentifier() -> Swift.String
+  override public func getProtocolOIDString() -> Swift.String
+  public func getKeyId() -> Swift.Int
+  public static func toKeyAgreementAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toCipherAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toKeyLength(oid: Swift.String) throws -> Swift.Int
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class COM : OndatoSDK.DataGroup {
+  public var version: Swift.String {
+    get
+  }
+  public var unicodeVersion: Swift.String {
+    get
+  }
+  public var dataGroupsPresent: [Swift.String] {
+    get
+  }
+  @objc deinit
+}
 public protocol ImmediateSchedulerType {
   func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
 }
@@ -2780,6 +3548,16 @@ extension OndatoSDK.ImmediateSchedulerType {
 }
 extension OndatoSDK.ControlEvent {
   public func asSignal() -> OndatoSDK.Signal<OndatoSDK.ControlEvent<PropertyType>.Element>
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class OpenSSLUtils {
+  public static func getOpenSSLError() -> Swift.String
+  @available(iOS 13, macOS 10.15, *)
+  public static func getPublicKeyData(from key: Swift.OpaquePointer) -> [Swift.UInt8]?
+  @available(iOS 13, macOS 10.15, *)
+  public static func decodePublicKeyFromBytes(pubKeyData: [Swift.UInt8], params: Swift.OpaquePointer) -> Swift.OpaquePointer?
+  public static func computeSharedSecret(privateKeyPair: Swift.OpaquePointer, publicKey: Swift.OpaquePointer) -> [Swift.UInt8]
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class OndatoViewController : UIKit.UIPageViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(transitionStyle style: UIKit.UIPageViewController.TransitionStyle, navigationOrientation: UIKit.UIPageViewController.NavigationOrientation, options: [UIKit.UIPageViewController.OptionsKey : Any]? = nil)
@@ -2828,6 +3606,51 @@ extension OndatoSDK.ObservableType {
   public func withLatestFrom<Source, ResultType>(_ second: Source, resultSelector: @escaping (Self.Element, Source.Element) throws -> ResultType) -> OndatoSDK.Observable<ResultType> where Source : OndatoSDK.ObservableConvertibleType
   public func withLatestFrom<Source>(_ second: Source) -> OndatoSDK.Observable<Source.Element> where Source : OndatoSDK.ObservableConvertibleType
 }
+public enum PACEMappingType {
+  case GM
+  case IM
+  case CAM
+  public static func == (a: OndatoSDK.PACEMappingType, b: OndatoSDK.PACEMappingType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class PACEInfo : OndatoSDK.SecurityInfo {
+  public static let PARAM_ID_GFP_1024_160: Swift.Int
+  public static let PARAM_ID_GFP_2048_224: Swift.Int
+  public static let PARAM_ID_GFP_2048_256: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P192_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P192_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P224_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P224_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P256_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P256_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P320_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P384_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P384_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P512_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P521_R1: Swift.Int
+  override public func getObjectIdentifier() -> Swift.String
+  override public func getProtocolOIDString() -> Swift.String
+  public func getVersion() -> Swift.Int
+  public func getParameterId() -> Swift.Int?
+  public func getParameterSpec() throws -> Swift.Int32
+  public func getMappingType() throws -> OndatoSDK.PACEMappingType
+  public func getKeyAgreementAlgorithm() throws -> Swift.String
+  public func getCipherAlgorithm() throws -> Swift.String
+  public func getDigestAlgorithm() throws -> Swift.String
+  public func getKeyLength() throws -> Swift.Int
+  public func createMappingKey() throws -> Swift.OpaquePointer
+  public static func getParameterSpec(stdDomainParam: Swift.Int) throws -> Swift.Int32
+  public static func toMappingType(oid: Swift.String) throws -> OndatoSDK.PACEMappingType
+  public static func toKeyAgreementAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toCipherAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toDigestAlgorithm(oid: Swift.String) throws -> Swift.String
+  public static func toKeyLength(oid: Swift.String) throws -> Swift.Int
+  @objc deinit
+}
 extension OndatoSDK.ObservableType {
   public static func never() -> OndatoSDK.Observable<Self.Element>
 }
@@ -2875,6 +3698,13 @@ public struct Vector3D {
   public let z: Swift.Double
   public init(x: Swift.Double, y: Swift.Double, z: Swift.Double)
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup7 : OndatoSDK.DataGroup {
+  public var imageData: [Swift.UInt8] {
+    get
+  }
+  @objc deinit
+}
 @objc final public class CompatibleAnimationKeypath : ObjectiveC.NSObject {
   @objc public init(keypath: Swift.String)
   @objc public init(keys: [Swift.String])
@@ -2910,6 +3740,10 @@ public enum VirtualTimeComparison {
     get
   }
   public func schedule<StateType>(_ state: StateType, action: @escaping (StateType) -> any OndatoSDK.Disposable) -> any OndatoSDK.Disposable
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, *)
+public class TagReader {
   @objc deinit
 }
 extension OndatoSDK.Reactive where Base : Foundation.NotificationCenter {
@@ -2962,6 +3796,15 @@ extension OndatoSDK.ObservableType {
 extension OndatoSDK.ObservableType {
   public func concatMap<Source>(_ selector: @escaping (Self.Element) throws -> Source) -> OndatoSDK.Observable<Source.Element> where Source : OndatoSDK.ObservableConvertibleType
 }
+public enum RecognitionLevel {
+  case accurate
+  case fast
+  public static func == (a: OndatoSDK.RecognitionLevel, b: OndatoSDK.RecognitionLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public typealias RxAbstractInteger = Swift.FixedWidthInteger
 @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 extension OndatoSDK.InfallibleType {
@@ -2991,6 +3834,18 @@ extension OndatoSDK.Reactive where Base : UIKit.UITextView {
   public var textInput: OndatoSDK.TextInput<Base> {
     get
   }
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
+public class DataGroup {
+  public var datagroupType: OndatoSDK.DataGroupId
+  public var body: [Swift.UInt8] {
+    get
+  }
+  public var data: [Swift.UInt8] {
+    get
+  }
+  public func hash(_ hashAlgorythm: Swift.String) -> [Swift.UInt8]
+  @objc deinit
 }
 @objc(OndatoFlowDelegate) public protocol OndatoFlowDelegate {
   @objc optional func viewControllerForStart(startPressed: @escaping () -> Swift.Void) -> UIKit.UIViewController
@@ -3463,10 +4318,30 @@ extension OndatoSDK.Reactive where Base : UIKit.UITextField {
 extension OndatoSDK.ObservableType {
   public func startWith(_ elements: Self.Element...) -> OndatoSDK.Observable<Self.Element>
 }
+public enum ScanningImage {
+  case cgImage(CoreGraphics.CGImage)
+  case pixelBuffer(CoreVideo.CVPixelBuffer)
+}
 extension OndatoSDK.CompletableEvent : Swift.Sendable {}
 extension OndatoSDK.OndatoServiceError.OndatoServiceErrorType : Swift.Equatable {}
 extension OndatoSDK.OndatoServiceError.OndatoServiceErrorType : Swift.Hashable {}
 extension OndatoSDK.OndatoServiceError.OndatoServiceErrorType : Swift.RawRepresentable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateType : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateType : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateItem : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateItem : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.CertificateItem : Swift.RawRepresentable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DataGroupId : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DataGroupId : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DataGroupId : Swift.RawRepresentable {}
 extension OndatoSDK.LayerType : Swift.Equatable {}
 extension OndatoSDK.LayerType : Swift.Hashable {}
 extension OndatoSDK.LayerType : Swift.RawRepresentable {}
@@ -3476,6 +4351,8 @@ extension OndatoSDK.MatteType : Swift.RawRepresentable {}
 extension OndatoSDK.BlendMode : Swift.Equatable {}
 extension OndatoSDK.BlendMode : Swift.Hashable {}
 extension OndatoSDK.BlendMode : Swift.RawRepresentable {}
+extension OndatoSDK.PassportAuthenticationStatus : Swift.Equatable {}
+extension OndatoSDK.PassportAuthenticationStatus : Swift.Hashable {}
 extension OndatoSDK.AnimatedSwitch.CancelBehavior : Swift.Equatable {}
 extension OndatoSDK.AnimatedSwitch.CancelBehavior : Swift.Hashable {}
 extension OndatoSDK.SubjectLifetimeScope : Swift.Equatable {}
@@ -3491,13 +4368,34 @@ extension OndatoSDK.OndatoSupportedLanguage : Swift.Equatable {}
 extension OndatoSDK.OndatoSupportedLanguage : Swift.Hashable {}
 extension OndatoSDK.ColorFormatDenominator : Swift.Equatable {}
 extension OndatoSDK.ColorFormatDenominator : Swift.Hashable {}
+extension OndatoSDK.MRZFormat : Swift.Equatable {}
+extension OndatoSDK.MRZFormat : Swift.Hashable {}
+extension OndatoSDK.MRZResult.DocumentType : Swift.Equatable {}
+extension OndatoSDK.MRZResult.DocumentType : Swift.Hashable {}
+extension OndatoSDK.MRZResult.Sex : Swift.Equatable {}
+extension OndatoSDK.MRZResult.Sex : Swift.Hashable {}
+extension OndatoSDK.LogLevel : Swift.Equatable {}
+extension OndatoSDK.LogLevel : Swift.Hashable {}
+extension OndatoSDK.LogLevel : Swift.RawRepresentable {}
 extension OndatoSDK.TakeBehavior : Swift.Equatable {}
 extension OndatoSDK.TakeBehavior : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DocTypeEnum : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DocTypeEnum : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension OndatoSDK.DocTypeEnum : Swift.RawRepresentable {}
+extension OndatoSDK.SecureMessagingSupportedAlgorithms : Swift.Equatable {}
+extension OndatoSDK.SecureMessagingSupportedAlgorithms : Swift.Hashable {}
 extension OndatoSDK.OndatoEnvironment : Swift.Equatable {}
 extension OndatoSDK.OndatoEnvironment : Swift.Hashable {}
 extension OndatoSDK.OndatoEnvironment : Swift.RawRepresentable {}
+extension OndatoSDK.PACEMappingType : Swift.Equatable {}
+extension OndatoSDK.PACEMappingType : Swift.Hashable {}
 extension OndatoSDK.VirtualTimeComparison : Swift.Equatable {}
 extension OndatoSDK.VirtualTimeComparison : Swift.Hashable {}
+extension OndatoSDK.RecognitionLevel : Swift.Equatable {}
+extension OndatoSDK.RecognitionLevel : Swift.Hashable {}
 extension OndatoSDK.OndatoDocumentType : Swift.Equatable {}
 extension OndatoSDK.OndatoDocumentType : Swift.Hashable {}
 extension OndatoSDK.OndatoDocumentType : Swift.RawRepresentable {}
