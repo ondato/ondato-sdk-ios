@@ -6,11 +6,7 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		ZqU49ygpuLO5JUjVTxlUlECoMA8=
-		</data>
-		<key>ios-arm64_armv7/.DS_Store</key>
-		<data>
-		XrS+b6NxA4A4X2U/I/M14tB8T+A=
+		rkFCenyBiXCXUzt4Y5QXp9g1wzY=
 		</data>
 		<key>ios-arm64_armv7/OpenSSL.framework/Headers/OpenSSL.h</key>
 		<data>
@@ -442,7 +438,7 @@
 		</data>
 		<key>ios-arm64_armv7/OpenSSL.framework/OpenSSL</key>
 		<data>
-		8pFrGn4Ww4HmPgWeO33cJWvav+c=
+		MY9Py37EJ7LUyNFEYl2o3UzmOx4=
 		</data>
 		<key>ios-arm64_armv7/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -451,10 +447,6 @@
 		<key>ios-arm64_armv7/OpenSSL.framework/_CodeSignature/CodeResources</key>
 		<data>
 		3TGM/Iu/3VMQ2A4+YJj6998btjk=
-		</data>
-		<key>ios-arm64_i386_x86_64-simulator/.DS_Store</key>
-		<data>
-		XrS+b6NxA4A4X2U/I/M14tB8T+A=
 		</data>
 		<key>ios-arm64_i386_x86_64-simulator/OpenSSL.framework/Headers/OpenSSL.h</key>
 		<data>
@@ -886,7 +878,7 @@
 		</data>
 		<key>ios-arm64_i386_x86_64-simulator/OpenSSL.framework/OpenSSL</key>
 		<data>
-		b7AGFL+nax1zDEvGE7/PA3NXnh0=
+		mL1Z2SIWZgbB1a4IeE8J0szSa8s=
 		</data>
 		<key>ios-arm64_i386_x86_64-simulator/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -896,13 +888,9 @@
 		<data>
 		X0xjmX/QlAHxz+ok4V4YYw+vvEE=
 		</data>
-		<key>ios-arm64_x86_64-maccatalyst/.DS_Store</key>
+		<key>ios-arm64_x86_64-maccatalyst/OpenSSL.framework/Versions/.DS_Store</key>
 		<data>
-		XrS+b6NxA4A4X2U/I/M14tB8T+A=
-		</data>
-		<key>ios-arm64_x86_64-maccatalyst/OpenSSL.framework/.DS_Store</key>
-		<data>
-		3y++sUAKzaCQmjLBz2v0kvESHgc=
+		BEG88YmCoqYwc2U+t2BkYIhO5UY=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/OpenSSL.framework/Versions/A/Headers/OpenSSL.h</key>
 		<data>
@@ -1339,6 +1327,10 @@
 		<key>ios-arm64_x86_64-maccatalyst/OpenSSL.framework/Versions/A/_CodeSignature/CodeResources</key>
 		<data>
 		t3fyCGWVMWJ2R1oQsHJVzKUOeuo=
+		</data>
+		<key>macos-arm64_x86_64/OpenSSL.framework/Versions/.DS_Store</key>
+		<data>
+		BEG88YmCoqYwc2U+t2BkYIhO5UY=
 		</data>
 		<key>macos-arm64_x86_64/OpenSSL.framework/Versions/A/Headers/OpenSSL.h</key>
 		<data>
@@ -2960,11 +2952,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8pFrGn4Ww4HmPgWeO33cJWvav+c=
+			MY9Py37EJ7LUyNFEYl2o3UzmOx4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6Hk7MUQ2W2E3N+EjP74ij6DVq8x1mPwt5F54WwobZ4U=
+			k5XfNlLSOUVw61I6eKPPDMCGqT8yKXJ0obnJTzFJ1Zs=
 			</data>
 		</dict>
 		<key>ios-arm64_armv7/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
@@ -4170,11 +4162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b7AGFL+nax1zDEvGE7/PA3NXnh0=
+			mL1Z2SIWZgbB1a4IeE8J0szSa8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			A6KuN+deAQWO8ZUEy6EyBOwQksO1vEqtG6EDxY45h70=
+			BG94hCO1myznPJLvT+WRZEwsf/7tiycm7QAMCya4RB0=
 			</data>
 		</dict>
 		<key>ios-arm64_i386_x86_64-simulator/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
