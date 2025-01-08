@@ -1,0 +1,57 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OndatoScreenRecorder
+import Foundation
+@_exported import OndatoScreenRecorder
+import Photos
+import ReplayKit
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum OndatoScreenRecorderError : Swift.Error {
+  case permissionDenied
+  case microphonePermissionDenied
+  case unknown
+  case other(any Swift.Error)
+  case recordingCorrupted
+}
+extension OndatoScreenRecorder.Recorder {
+  public enum Status {
+    case idle
+    case recordingStarted
+    case failed(OndatoScreenRecorder.Recorder.Status.Error)
+    case recordingStopped
+    case assetWritingCompleted(fileURL: Swift.String)
+  }
+}
+extension OndatoScreenRecorder.Recorder.Status {
+  public enum Error : Swift.Error {
+    case microphoneNotEnabled, restoppingRecording, flowInterrupted
+    case recorderStopped((any Swift.Error)?)
+    case recordingCorrupted
+    case recorderError((any Swift.Error)?)
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Recorder : ObjectiveC.NSObject {
+  public typealias RecordingID = Swift.String
+  public static let shared: OndatoScreenRecorder.Recorder
+  public var isRecording: Swift.Bool {
+    get
+  }
+  public func setStatusObserver(_ observer: @escaping (OndatoScreenRecorder.Recorder.Status) -> Swift.Void)
+  public func startRecording(id: OndatoScreenRecorder.Recorder.RecordingID, completion: @escaping (Swift.Result<Swift.Void, OndatoScreenRecorder.OndatoScreenRecorderError>) -> Swift.Void)
+  public func stopRecording(completion: @escaping (Swift.Result<OndatoScreenRecorder.OndatoScreenRecording?, OndatoScreenRecorder.OndatoScreenRecorderError>) -> Swift.Void)
+  @objc deinit
+}
+extension OndatoScreenRecorder.Recorder : ReplayKit.RPScreenRecorderDelegate {
+  @objc dynamic public func screenRecorder(_ screenRecorder: ReplayKit.RPScreenRecorder, didStopRecordingWith previewViewController: ReplayKit.RPPreviewViewController?, error: (any Swift.Error)?)
+}
+@_hasMissingDesignatedInitializers public class OndatoScreenRecording {
+  public var url: Foundation.URL?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class OndatoVideoHelper {
+  public class func data(from url: Foundation.URL?) -> Foundation.Data?
+  @objc deinit
+}

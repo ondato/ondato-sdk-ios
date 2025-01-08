@@ -9,16 +9,29 @@ let package = Package(
         .iOS(.v13),
     ],
     products: [
-        .library(
-            name: "OndatoSDK",
-            targets: ["OndatoSDK", "FaceTecSDK", "OpenSSL"]),
+        .library(name: "OndatoSDK",
+                 targets: [
+                    "OndatoSDK", "FaceTecSDK"
+                 ]),
+        .library(name: "OndatoNFC",
+                 targets: [
+                    "OndatoNFC", "OpenSSL"
+                 ]),
+        .library(name: "OndatoScreenRecorder",
+                 targets: [
+                    "OndatoScreenRecorder"
+                 ])
     ],
     targets: [
         .binaryTarget(name: "OndatoSDK",
-                      path: "./OndatoSDK.xcframework"),
+                      path: "Binaries/OndatoSDK.xcframework"),
         .binaryTarget(name: "FaceTecSDK",
-                      path: "./FaceTecSDK.xcframework"),
+                      path: "Binaries/FaceTecSDK.xcframework"),
+        .binaryTarget(name: "OndatoNFC",
+                      path: "Binaries/OndatoNFC.xcframework"),
         .binaryTarget(name: "OpenSSL",
-                      path: "./OpenSSL.xcframework")
+                      path: "Binaries/OpenSSL.xcframework"),
+        .binaryTarget(name: "OndatoScreenRecorder",
+                      path: "Binaries/OndatoScreenRecorder.xcframework")
     ]
 )
