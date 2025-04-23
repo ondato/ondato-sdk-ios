@@ -37,11 +37,30 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 
 ### 2. Installation 
 
+### SPM
+
+Add `OndatoSDK` package product to your target.
+
+`Note`: since v2.6.0 `OndatoNFC` and `OndatoScreenRecorder` need to be added separately. Add each package product as per need to your target.
+
 ### CocoaPods
 
 ```
 pod 'OndatoSDK'
 ```
+
+`Note`: As off v2.6.0 `OndatoNFC` and `OndatoScreenRecorder` need to be added separately:
+* If you use NFC functionality provided by `Ondato` add
+```
+pod 'OndatoNFC'
+```
+to your podfile
+
+* If you use Screen Recorder functionality provided by `Ondato` add
+```
+pod `OndatoScreenRecorder`
+```
+to your podfile
 
 ### 3. Initializing and configuring the SDK 
 
