@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "OndatoScreenRecorder"
-  spec.version      = "2.6.0"
+  spec.version      = "2.6.5"
   spec.platform     = :ios
   spec.summary      = "Ondato iOS ScreenRecorder"
   spec.ios.deployment_target = "13.0"
