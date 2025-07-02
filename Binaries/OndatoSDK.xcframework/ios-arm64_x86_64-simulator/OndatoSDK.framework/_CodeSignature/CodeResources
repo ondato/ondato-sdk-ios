@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		d5+aEGhL44e2etbvymgYQxjutd0=
+		jAfLnQo8lp4DG5D7lrC8WT8rUbI=
 		</data>
 		<key>CombineLatest+arity.tt</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/OndatoSDK-Swift.h</key>
 		<data>
-		eRy28qCdlsPwQTuyCktcFN/f0uQ=
+		Bxrdkdxu0+yrNXuqAHx8nkXdFMc=
 		</data>
 		<key>Headers/OndatoSDK.h</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		SAGk3qVpaE9uhENDEaLVpiJOm+8=
+		kKhJmxoPmqPS/5rB2/wRksrJSnI=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gEgBhVslcCvMIXgDafW40i5qqug=
+		c/dCkwGZOXRc6WdQrjIWe08gbPo=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -106,19 +106,19 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gEgBhVslcCvMIXgDafW40i5qqug=
+		c/dCkwGZOXRc6WdQrjIWe08gbPo=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		x6Rcvi+wz1JXLanA8A4fusBZR5w=
+		A7hcOZRmIu06JGmGqxVN+yTfiNI=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		SAGk3qVpaE9uhENDEaLVpiJOm+8=
+		kKhJmxoPmqPS/5rB2/wRksrJSnI=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		m+eM+EnvbjcRV78I+27Lw59OTuA=
+		d35gE7BeQj6pg36hG8ph5T8r7PY=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -126,11 +126,11 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		m+eM+EnvbjcRV78I+27Lw59OTuA=
+		d35gE7BeQj6pg36hG8ph5T8r7PY=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		i37EkXH2piLkAwhRbNI4oF0/c70=
+		lJwh7XRY1VyY4E6W5fOYX5DcS/8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>ondato_de.strings</key>
 		<data>
-		WQa4frCOruHCO3yOTpLiezeB+L0=
+		9r+IvH15PlUCx2eCCiK3ri91AdI=
 		</data>
 		<key>ondato_el.strings</key>
 		<data>
@@ -198,7 +198,7 @@
 		</data>
 		<key>ondato_en.strings</key>
 		<data>
-		7vQU+0made30t6qYyRW8zhwp2qQ=
+		9LvwaPqJ8PLmaFg8NnSrf+NNZYw=
 		</data>
 		<key>ondato_es.strings</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>ondato_et.strings</key>
 		<data>
-		Hv5vwOJYhpP8oG6YPwHUuSdP+EQ=
+		CJ7peoo1Zuc2GhO6KbMww0sH3Cs=
 		</data>
 		<key>ondato_fr.strings</key>
 		<data>
@@ -218,11 +218,11 @@
 		</data>
 		<key>ondato_lt.strings</key>
 		<data>
-		cMHzo0Kly6gI3fkQZnGt+03N1wc=
+		ghCXGxwbMRVjjboCK7D3z6GEQNk=
 		</data>
 		<key>ondato_lv.strings</key>
 		<data>
-		b3xOg+fK6fFyUWOsex3Suf9s/Yw=
+		nPCRZJ+o/BoBYwy+cvWhwZzU03Y=
 		</data>
 		<key>ondato_nl.strings</key>
 		<data>
@@ -234,11 +234,11 @@
 		</data>
 		<key>ondato_ru.strings</key>
 		<data>
-		JJdG8/uX6sIAyGiUIUNVdI7LXbc=
+		Je6sUvgP7bfQsg2UxjOWqsLrgk0=
 		</data>
 		<key>ondato_sq.strings</key>
 		<data>
-		xCGhZJMIc2iwJRRNwf3wNvBG3Cc=
+		Odz2KiUWUnDLCK1A5p09+ihMhkE=
 		</data>
 		<key>ondato_waiting_animation.mp4</key>
 		<data>
@@ -271,7 +271,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0fnI44lNaZrJqq861wvffWP57RiWBOi+bLI83gXoMRE=
+			CgTmyk5p4MUxEC6GXUK5vmaebcevsImEUM6OHL8oz5A=
 			</data>
 		</dict>
 		<key>CombineLatest+arity.tt</key>
@@ -313,7 +313,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uZlsfrkc7GJ79nyRUpC3GBeDYNPF03n0Py23eKCm3Bc=
+			OSDT7C1m/EcysD57m9fhI1dC1bUAbIRQWDzRF/bahOs=
 			</data>
 		</dict>
 		<key>Headers/OndatoSDK.h</key>
@@ -418,14 +418,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mqoeqY/sAwCcytMnDzAWsFTQ5LBxI/sM4tJMhKMI4zc=
+			AnooHEXDByJIq0RDZYQ0G0B9v7CiuYSuFN1P7Qb4ITg=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E6Jnf/OYc9uWnQxaCjfIIV2SN6e80Ya4t3UTaMwP1/s=
+			b5LYFMS1BXMpxmQRiIttNbc5CRGN68JPC4bFx+mEIE4=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -439,28 +439,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E6Jnf/OYc9uWnQxaCjfIIV2SN6e80Ya4t3UTaMwP1/s=
+			b5LYFMS1BXMpxmQRiIttNbc5CRGN68JPC4bFx+mEIE4=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ukKSX7YbMJPCoEf1rILpAf0f+3Lh4qVvepd75ZmzSmE=
+			0z5BvoQFvx5l0/8NLsMKM5nwQVUzO29JWGIxfVi49ZM=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mqoeqY/sAwCcytMnDzAWsFTQ5LBxI/sM4tJMhKMI4zc=
+			AnooHEXDByJIq0RDZYQ0G0B9v7CiuYSuFN1P7Qb4ITg=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r/94dPSgoxdsnWrHIb1AHwZyt6E2xRJEOMS174Wx3Us=
+			DtgjV6sF+hhb5M4zUNdWmpylXTzAvzWerg3t1Y9SjyM=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -474,14 +474,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r/94dPSgoxdsnWrHIb1AHwZyt6E2xRJEOMS174Wx3Us=
+			DtgjV6sF+hhb5M4zUNdWmpylXTzAvzWerg3t1Y9SjyM=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WGDZo2X8yrRFjcqppJU4tI6G8rw79gn4K1XF/b051C8=
+			iSHjiHDCHZIRoskK+ntUn2GRLipITFdxW+v8UVkBqrE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -586,7 +586,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wyb1oHu76y5LfqKs0LWuXP9W3zNg0oLrrvIyLc4fJ24=
+			U0t4EmdOoCQyndZO/Q6M1d0P/SDc0C/P9dLvTTFvSNc=
 			</data>
 		</dict>
 		<key>ondato_el.strings</key>
@@ -600,7 +600,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W6I6sd955GkEATm9MCP8ejkkyB4nh8b8mfi6/AkZ0V4=
+			zLA0nV5dpKuYBxU+ZNhTkm9Y8ZmYeUZLCZc2MplvZTI=
 			</data>
 		</dict>
 		<key>ondato_es.strings</key>
@@ -614,7 +614,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Eizw8Mt0EJOBDqhoQJuhciQ20+ho02RRfSRKrobH4l4=
+			Lr7yUixTpIVV+OAnd3Z0i0O5fg6IZ9dqUvRk4Jc4/n0=
 			</data>
 		</dict>
 		<key>ondato_fr.strings</key>
@@ -635,14 +635,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7zlca4MIsWAbJpHok6kTaiav5CPVahpMmgHCHDWgyBs=
+			6IjAefltPRnDcEZbK8d/+4kczBKmNPx7/qVRSWmVUok=
 			</data>
 		</dict>
 		<key>ondato_lv.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QgEfmJoI0SREHNVEGHtCBTXRIjzwBGXaEebJoE+/bWY=
+			3FEikmALGR3zPpItL7g5s86NB1l2IefqAT1yyyT9ezs=
 			</data>
 		</dict>
 		<key>ondato_nl.strings</key>
@@ -663,14 +663,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l5jxKvxwhvEV1t19/cfMDWTYRRuE0hvZR3jplf+hU7c=
+			Q+DIK2H6NwufhVMQ337vFQDCjStlmgx6Or4Ct0Obrn4=
 			</data>
 		</dict>
 		<key>ondato_sq.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y3uFEmz6XwLMo0/vDRxi/GOXtnN5DshaVCUMzusxoaE=
+			uRlbXAauHnW904TjVQ8fdszjMD4WsoowBqk6qbaBp/8=
 			</data>
 		</dict>
 		<key>ondato_waiting_animation.mp4</key>

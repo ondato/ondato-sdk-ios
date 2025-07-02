@@ -87,7 +87,7 @@
 "FaceTec_presession_hold_steady_3" = "Stillhalten für: 3";
 "FaceTec_presession_hold_steady_2" = "Stillhalten für: 2";
 "FaceTec_presession_hold_steady_1" = "Stillhalten für: 1";
-"FaceTec_presession_frame_your_face" = "@string/FaceTec_instructions_message_ready_1";
+"FaceTec_presession_frame_your_face" = "Rahmen Sie Ihr Gesicht mit dem Oval ein";
 "FaceTec_presession_eyes_straight_ahead" = "Geradeaus blicken";
 "FaceTec_presession_remove_dark_glasses" = "Dunkle Brille abnehmen";
 "FaceTec_presession_neutral_expression" = "Neutraler Gesichtsausdruck, kein Lächeln";

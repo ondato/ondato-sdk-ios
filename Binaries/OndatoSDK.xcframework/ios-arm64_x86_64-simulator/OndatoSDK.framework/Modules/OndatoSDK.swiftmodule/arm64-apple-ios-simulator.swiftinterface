@@ -3539,8 +3539,9 @@ public typealias LottieCompletionBlock = (Swift.Bool) -> Swift.Void
   }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLocalizeHelper) public class OndatoLocalizeHelper : ObjectiveC.NSObject {
-  @objc public static var language: OndatoSDK.OndatoSupportedLanguage
-  @objc public static func setLocalizationBundle(_ bundle: OndatoSDK.OndatoLocalizationBundle, for language: OndatoSDK.OndatoSupportedLanguage)
+  @objc public static let shared: OndatoSDK.OndatoLocalizeHelper
+  @objc public var language: OndatoSDK.OndatoSupportedLanguage
+  @objc public func setLocalizationBundle(_ bundle: OndatoSDK.OndatoLocalizationBundle, for language: OndatoSDK.OndatoSupportedLanguage)
   @objc deinit
 }
 public struct AnimationKeypath {
