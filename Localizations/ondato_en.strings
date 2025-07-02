@@ -103,7 +103,7 @@
 "FaceTec_presession_brighten_your_environment" = "Brighten Your Environment";
 "FaceTec_presession_conditions_too_bright" = "Conditions Too Bright";
 "FaceTec_presession_eyes_straight_ahead" = "Look Straight Ahead";
-"FaceTec_presession_frame_your_face" = "@string/FaceTec_instructions_message_ready_1";
+"FaceTec_presession_frame_your_face" = "Frame Your Face in the Oval";
 "FaceTec_retry_header" = "Let\'s try that again...";
 "FaceTec_retry_ideal_image_label" = "Ideal Pose";
 "FaceTec_retry_instruction_message_1" = "Neutral Expression, No Smiling";

@@ -171,7 +171,7 @@ Ondato iOS SDK already comes with out-of-the-box translations for the following 
 - Albanian (sq) 🇦🇱
 
 ```swift
-OndatoLocalizeHelper.language = OndatoLanguage.EN // .DE, .ET, .EN, .LT, .LV, .RU, .SQ, .BG, .ES, .FR, .EL, .IT, .NL, .RO
+OndatoLocalizeHelper.shared.language = OndatoLanguage.EN // .DE, .ET, .EN, .LT, .LV, .RU, .SQ, .BG, .ES, .FR, .EL, .IT, .NL, .RO
 ```
 
 To override any localization strings, please pass a `Bundle` and a tableName within that bundle for a `.strings` file that contains the necessary translations. A example translation file with all the keys is provided next to the Framework files
@@ -180,5 +180,5 @@ let bundle = Bundle.main
 /// let bundle = Bundle.main.path(forResource: "lt", ofType: "bundle")
 let localizationBundle = OndatoLocalizationBundle(bundle: budle, tableName: "Localizable")
 /// let localizationBundle = OndatoLocalizationBundle.bundle(with: bundle, tableName: "Localizable")
-OndatoLocalizeHelper.setLocalizationBundle(bundle, for: .LT)
+OndatoLocalizeHelper.shared.setLocalizationBundle(bundle, for: .LT)
 ```

@@ -71,7 +71,7 @@
 "FaceTec_instructions_header_ready_1" = "Gatavojieties";
 "FaceTec_instructions_header_ready_2" = "nofotografēt seju!";
 "FaceTec_instructions_message_ready" = "Ielieciet seju paredzētajā rāmī";
-"FaceTec_presession_frame_your_face" = "@string/FaceTec_instructions_message_ready_1";
+"FaceTec_presession_frame_your_face" = "Ievietojiet seju ovālā";
 "FaceTec_result_facescan_upload_message" = "Lūdzu, uzgaidiet iekraušanu";
 "FaceTec_result_success_message" = "Seja tiek veiksmīgi atpazīta";
 "FaceTecRetryReasonGeneric_title" = "Neizdevās atpazīt seju";

@@ -93,7 +93,7 @@
 "FaceTec_presession_conditions_too_bright" = "Liiga hele keskkond";
 "FaceTec_presession_brighten_your_environment" = "Muuda keskkonda heledamaks";
 "FaceTec_retry_header" = "Proovime uuesti...";
-"FaceTec_presession_frame_your_face" = "@string/FaceTec_instructions_message_ready_1";
+"FaceTec_presession_frame_your_face" = "Sea oma nägu ovaaliga kohakuti";
 "FaceTec_retry_subheader_message" = "Meil on tarvis selgemat videoselfit.";
 "FaceTec_retry_instruction_message_1" = "Neutraalne ilme, naeratuseta";
 "FaceTec_retry_instruction_message_2" = "Väldi pimestavat või liiga tugevat valgust";

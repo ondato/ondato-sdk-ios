@@ -94,7 +94,7 @@
 "FaceTec_presession_conditions_too_bright" = "Слишком яркое освещение";
 "FaceTec_presession_brighten_your_environment" = "Недостаточно света";
 "FaceTec_retry_header" = "Давайте попробуем еще раз...";
-"FaceTec_presession_frame_your_face" = "@string/FaceTec_instructions_message_ready_1";
+"FaceTec_presession_frame_your_face" = "Поместите лицо в овальную область";
 "FaceTec_retry_subheader_message" = "Нам нужно более четкое видеоселфи.";
 "FaceTec_retry_instruction_message_1" = "Нейтральное выражение лица. Не улыбайтесь";
 "FaceTec_retry_instruction_message_2" = "Избегайте бликов или слишком яркого освещения";

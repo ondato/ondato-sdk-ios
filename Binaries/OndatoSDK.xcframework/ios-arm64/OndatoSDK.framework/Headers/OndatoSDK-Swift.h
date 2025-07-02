@@ -581,12 +581,12 @@ enum OndatoSupportedLanguage : NSInteger;
 
 SWIFT_CLASS_NAMED("OndatoLocalizeHelper")
 @interface OndatoLocalizeHelper : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum OndatoSupportedLanguage language;)
-+ (enum OndatoSupportedLanguage)language SWIFT_WARN_UNUSED_RESULT;
-+ (void)setLanguage:(enum OndatoSupportedLanguage)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OndatoLocalizeHelper * _Nonnull shared;)
++ (OndatoLocalizeHelper * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) enum OndatoSupportedLanguage language;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-+ (void)setLocalizationBundle:(OndatoLocalizationBundle * _Nonnull)bundle for:(enum OndatoSupportedLanguage)language;
+- (void)setLocalizationBundle:(OndatoLocalizationBundle * _Nonnull)bundle for:(enum OndatoSupportedLanguage)language;
 @end
 
 

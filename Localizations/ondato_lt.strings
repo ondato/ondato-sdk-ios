@@ -100,7 +100,7 @@
 "FaceTec_retry_your_image_label" = "Jūsų asmenukė";
 "FaceTec_retry_ideal_image_label" = "Ideali poza";
 "FaceTec_action_try_again" = "Bandyti dar kartą";
-"FaceTec_presession_frame_your_face" = "@string/FaceTec_instructions_message_ready_1";
+"FaceTec_presession_frame_your_face" = "Įstatykite veidą į rėmėlį";
 "ondato_button_capture" = "Fotografuoti";
 "ondato_choose_document_title" = "Pasirinkite dokumentą ir pradėkite verifikaciją";
 "ondato_capture_id_card_front_instructions_title" = "Nufotografuokite asmens tapatybės kortelės priekinę pusę";

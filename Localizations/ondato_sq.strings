@@ -139,7 +139,7 @@
 "FaceTec_presession_hold_steady_1" = "Qëndro pa lëvizur për: 1";
 "FaceTec_presession_hold_steady_2" = "Qëndro pa lëvizur për: 2";
 "FaceTec_presession_hold_steady_3" = "Qëndro pa lëvizur për: 3";
-"FaceTec_presession_frame_your_face" = "@string/FaceTec_instructions_message_ready_1";
+"FaceTec_presession_frame_your_face" = "Vendose fytyrën në formën vezake";
 "FaceTec_presession_neutral_expression" = "Pozicion neutral, mos buzëqesh";
 "FaceTec_presession_position_face_straight_in_oval" = "Shiko drejt para";
 "FaceTec_presession_remove_dark_glasses" = "Hiq syzet e errëta";
