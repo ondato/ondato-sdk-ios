@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OndatoScreenRecorder
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OndatoScreenRecorder
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import Foundation
 @_exported import OndatoScreenRecorder
 import Photos
@@ -9,6 +10,10 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class OndatoVideoHelper {
+  public class func data(from url: Foundation.URL?) -> Foundation.Data?
+  @objc deinit
+}
 public enum OndatoScreenRecorderError : Swift.Error {
   case permissionDenied
   case microphonePermissionDenied
@@ -49,9 +54,5 @@ extension OndatoScreenRecorder.Recorder : ReplayKit.RPScreenRecorderDelegate {
 }
 @_hasMissingDesignatedInitializers public class OndatoScreenRecording {
   public var url: Foundation.URL?
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class OndatoVideoHelper {
-  public class func data(from url: Foundation.URL?) -> Foundation.Data?
   @objc deinit
 }

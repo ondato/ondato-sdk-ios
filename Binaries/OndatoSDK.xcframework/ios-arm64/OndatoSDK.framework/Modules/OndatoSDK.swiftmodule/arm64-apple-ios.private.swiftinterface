@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OndatoSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OndatoSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AVFoundation
 import AVKit
 import CoreGraphics
@@ -704,7 +704,7 @@ extension OndatoSDK.PrimitiveSequenceType where Self.Trait == OndatoSDK.SingleTr
   public static func create(subscribe: @escaping (@escaping Self.SingleObserver) -> any OndatoSDK.Disposable) -> OndatoSDK.Single<Self.Element>
   public func subscribe(_ observer: @escaping (OndatoSDK.SingleEvent<Self.Element>) -> Swift.Void) -> any OndatoSDK.Disposable
   @available(*, deprecated, renamed: "subscribe(onSuccess:onFailure:onDisposed:)")
-  public func subscribe(onSuccess: ((Self.Element) -> Swift.Void)? = nil, onError: @escaping ((any Swift.Error) -> Swift.Void), onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
+  public func subscribe(onSuccess: ((Self.Element) -> Swift.Void)? = nil, onError: @escaping (any Swift.Error) -> Swift.Void, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
   public func subscribe<Object>(with object: Object, onSuccess: ((Object, Self.Element) -> Swift.Void)? = nil, onFailure: ((Object, any Swift.Error) -> Swift.Void)? = nil, onDisposed: ((Object) -> Swift.Void)? = nil) -> any OndatoSDK.Disposable where Object : AnyObject
   public func subscribe(onSuccess: ((Self.Element) -> Swift.Void)? = nil, onFailure: ((any Swift.Error) -> Swift.Void)? = nil, onDisposed: (() -> Swift.Void)? = nil) -> any OndatoSDK.Disposable
 }
@@ -3268,11 +3268,11 @@ public enum MRZFormat : Swift.CaseIterable {
     get
   }
   public static func == (a: OndatoSDK.MRZFormat, b: OndatoSDK.MRZFormat) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [OndatoSDK.MRZFormat]
   nonisolated public static var allCases: [OndatoSDK.MRZFormat] {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -3285,11 +3285,11 @@ public struct MRZResult : Swift.Hashable {
     case residencePermit
     case undefined
     public static func == (a: OndatoSDK.MRZResult.DocumentType, b: OndatoSDK.MRZResult.DocumentType) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
     public typealias AllCases = [OndatoSDK.MRZResult.DocumentType]
     nonisolated public static var allCases: [OndatoSDK.MRZResult.DocumentType] {
       get
     }
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -3299,11 +3299,11 @@ public struct MRZResult : Swift.Hashable {
     case female
     case unspecified
     public static func == (a: OndatoSDK.MRZResult.Sex, b: OndatoSDK.MRZResult.Sex) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
     public typealias AllCases = [OndatoSDK.MRZResult.Sex]
     nonisolated public static var allCases: [OndatoSDK.MRZResult.Sex] {
       get
     }
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -3322,8 +3322,8 @@ public struct MRZResult : Swift.Hashable {
   public let optionalData2: Swift.String?
   public var documentImage: UIKit.UIImage?
   public init(format: OndatoSDK.MRZFormat, documentType: OndatoSDK.MRZResult.DocumentType, countryCode: Swift.String, surnames: Swift.String, givenNames: Swift.String, documentNumber: Swift.String?, nationalityCountryCode: Swift.String, birthdate: Foundation.Date?, sex: OndatoSDK.MRZResult.Sex, expiryDate: Foundation.Date?, optionalData: Swift.String?, optionalData2: Swift.String?)
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: OndatoSDK.MRZResult, b: OndatoSDK.MRZResult) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
