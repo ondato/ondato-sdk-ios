@@ -1,252 +1,858 @@
-"ondato_continue_anyway" = "Turpināt tik un tā";
-"ondato_loading_title" = "Informācijas augšupielāde";
-"ondato_loading_subtitle" = "Lūdzu uzgaidiet";
-"ondato_choose_document_passport" = "Pase";
-"ondato_choose_document_id_card" = "Identifikācijas karte";
-"ondato_choose_document_driving_licence" = "Vadītāja apliecība";
-"ondato_success_title" = "reģistrācija ir veiksmīga";
-"ondato_success_subtitle" = "Kad jūsu reģistrācija tiks apstrādāta, jums tiks paziņots pa e-pastu";
-"ondato_close" = "Aizvērt";
-"ondato_capture_passport_front_title" = "Lūdzu, nofotografējiet galvenās dokumentu lapas attēlu, kurā ir elektroniski nolasāma josla";
-"ondato_capture_id_card_front_title" = "Lūdzu, uzņemiet ID kartes priekšpusi";
-"ondato_capture_driver_licence_front_title" = "Lūdzu, nofotografējiet vadītāja apliecības priekšpusi";
-"ondato_error_unauthorized_message" = "UNAUTHORIZED";
-"ondato_error_bad_request_message" = "BAD_REQUEST";
-"ondato_error_internal_server_error_message" = "INTERNAL SERVER ERROR";
-"ondato_error_connection_failed" = "CONNECTION ERROR";
-"ondato_error_server_is_down_message" = "SERVER IS DOWN";
-"ondato_error_default_title" = "Oops...";
-"ondato_error_timeout_message" = "Sesija beigusies";
-"ondato_start_button" = "Sākt";
-"ondato_error_something_wrong_title" = "Radās kļūda";
-"ondato_consent_title" = "Piekrišana personas datu apstrādei";
-"ondato_consent_terms" = "Lai saņemtu pakalpojumu no Pakalpojumu sniedzēja, ar šo piekrišanu es izsaku piekrišanu, ka UAB \"Ondato\" saņems un pārvaldīs manus personas datus, ieskaitot manus biometriskos datus, kas iegūti, attālināti identificējot manu personisko identitāti, uzņemot manas sejas, manu personu identificējoša dokumenta fotogrāfiju un/vai filmējot to, un tajā esošos attēlus un personas datus un/vai pārbaudot informāciju iedzīvotāju reģistrā: manas sejas attēls, vārds, uzvārds, tautība, dzimums, personas kods, dzimšanas datums, izmantotā dokumenta numuri, izdošanas datums un derīguma termiņš, mans paraksts un šādu datu nodošana pakalpojumu sniedzējam. Es arī atzīmēju, ka esmu informēts, ka šajā piekrišanā norādīto manu personas datu, ieskaitot manus biometriskos datus, pārzinis ir pakalpojumu sniedzējs, un UAB \"Ondato\" apstrādās manus personas datus tikai līdz brīdim, kad būs beigusies attālinātās identifikācijas procedūra un rezultāti tiks pārsūtīti pakalpojumu sniedzējam. Es arī paziņoju, ka esmu informēts un piekrītu, ka manus personas datus, kas iegūti attālinātai identifikācijai un tās mērķiem, UAB \"Ondato\" var glabāt ilgāku laika periodu, nekā nepieciešams identifikācijas pabeigšanai vai rezultātu pārsūtīšanai pakalpojumu sniedzējam, bet tikai pēc pakalpojumu sniedzēja pieprasījuma vai UAB \"Ondato\" līgumsaistībām pret pakalpojumu sniedzēju, bet ne ilgāk, kā tas noteikts līgumā, kas tika parakstīts starp UAB \"Ondato\" un pakalpojumu sniedzēju vai ko pieprasīja pakalpojumu sniedzējs. Esmu informēts, ka varu sazināties ar Pakalpojumu sniedzēju par saviem personas datiem, lai saņemtu sīkāku informāciju. Ar šo es paziņoju un apstiprinu, ka visi personas dati, kurus es sniegšu savas personīgās identitātes attālinātai identifikācijai, ir pareizi un precīzi, un dokuments, kuru es šim mērķim izmantošu, nav nepatiess un ir derīgs.";
-"ondato_consent_agree" = "ES piekrītu";
-"ondato_consent_disagree" = "Nepiekrītu";
-"FailedRule_PersonPhotoContainsFace_title" = "Neizdevās atpazīt sejas fotoattēlu";
-"FailedRule_DocContainsFace_title" = "Neizdevās atpazīt sejas fotoattēlu dokumentā";
-"FailedRule_DocContainsMrz_title" = "Neizdevās nofotografēt dokumentu";
-"FailedRule_PersonAndDocPhotoMatch_title" = "Nevarēja atpazīt sejas fotoattēlu ar dokumenta fotoattēlu";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_title" = "Neizdevās atpazīt sejas fotoattēlu dokumentā";
-"FailedRule_DocExpireDateInFuture_title" = "Dokumenta derīguma termiņš beidzies";
-"FailedRule_PersonAndDocumentPersonCodeMatch_title" = "Neizdevās saskaņot personas kodu jūsu dokumentā un reģistrācijas veidlapā";
-"FailedRule_PersonFaceOrDocIsMonochrome_title" = "Iesniegta melnbaltā dokumenta kopija";
-"FailedRule_DocumentContainsBothSides_title" = "Savienotas abas dokumenta lapas";
-"FailedRule_ContainsMultipleFaces_title" = "Redzamas vairākas sejas";
-"FailedRule_PersonFoundInComplyAdvantage_title" = "Persona ar šādu vārdu ir atrasta sankciju sarakstā";
-"FailedRule_ContainsCelebrity_title" = "Iespējams Krāpšanas Mēģinājums";
-"FailedRule_LostAndStolen_title" = "Jūsu dokuments ir atpazīts nozaudēto un nozagto datubāzē";
-"FailedRule_PersonPhotoContainsFace_subtitle" = "Jūsu sejai ir jābūt skaidri redzamai, fotografētai labi apgaismotā vidē un attēls nedrīkst būt miglains";
-"FailedRule_DocContainsFace_subtitle" = "Lūdzu, iesniedziet dokumenta lapas fotoattēlu, kurā ir jūsu fotoattēls. Jūsu dokumentam jābūt skaidri redzamam, fotografētam labi apgaismotā vidē, tas nedrīkst būt miglains";
-"FailedRule_DocContainsMrz_subtitle" = "Elektroniski nolasāmā joslas izmantošana neizdevās. Lūdzu, iesniedziet dokumenta lapas fotoattēlu, kurā ir elektroniski nolasāma josla. Jūsu dokumentam jābūt skaidri redzamam, fotografētam labi apgaismotā vidē, tas nedrīkst būt miglains";
-"FailedRule_PersonAndDocPhotoMatch_subtitle" = "Lūdzu, pārliecinieties, lai sejas fotoattēls ir iespējami identisks dokumentam fotoattēlā. Noņemiet brilles un citus aksesuārus no sejas";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_subtitle" = "Lūdzu, iesniedziet dokumenta lapas fotoattēlu, kurā ir jūsu fotoattēls. Jūsu dokumentam jābūt skaidri redzamam, fotografētam labi apgaismotā vidē, tas nedrīkst būt miglains";
-"FailedRule_DocExpireDateInFuture_subtitle" = "Dokumentam ir beidzies derīguma termiņš vai derīguma termiņš nav atrasts";
-"FailedRule_PersonAndDocumentPersonCodeMatch_subtitle" = "Lūdzam jūs iesniegt dokumentu, kura informācija tika sniegta reģistrācijas formā";
-"FailedRule_PersonFaceOrDocIsMonochrome_subtitle" = "Informējam, ka jums ir jāfotografē jūsu faktiskais dokuments. Jūsu dokumentam jābūt skaidri redzamam, fotografētam labi apgaismotā vidē, tas nedrīkst būt miglains";
-"FailedRule_DocumentContainsBothSides_subtitle" = "Jūs esat iesniedzis divu dažādu dokumentu fotoattēlus. Informējam, ka jāiesniedz viena un tā paša dokumenta fotoattēli no abām pusēm";
-"FailedRule_ContainsMultipleFaces_subtitle" = "Informējam, ka identifikācija jāveic tikai dokumenta turētājam";
-"FailedRule_PersonFoundInComplyAdvantage_subtitle" = "Mēs jūsu lietu izskatīsim manuāli un informēsim uzņēmumu par rezultātu. Tas var aizņemt nedaudz laika";
-"FailedRule_ContainsCelebrity_subtitle" = "Vienā no jūsu augšupielādētajiem attēliem ir atpazīta slavenība. Informējam, ka jums ir jāaugšupielādē sevis un personīgā dokumenta attēls";
-"FailedRule_LostAndStolen_subtitle" = "Lūdzu, nospiediet \"Mēģiniet vēlreiz\" un iesniedziet citu dokumentu";
-"FaceTec_feedback_center_face" = "Centrējiet savu seju";
-"FaceTec_action_continue" = "Turpināt";
-"FaceTec_action_im_ready" = "Esmu gatavs";
+"Action.Close" = "Aizvērt";
+
+"LanguageSelection.Header" = "Izvēlieties valodu";
+
+"Modals.Abort.Action.ContinueProcess" = "Turpināt procesu";
+
+"Modals.Abort.Action.StopProcess" = "Apturēt procesu";
+
+"Modals.Abort.Heading" = "Vai tiešām vēlaties pārtraukt šo procesu?";
+
+"Modals.Error.Description" = "Kaut kas nogājis greizi, aizveriet šo paziņojumu un mēģiniet vēlreiz";
+
+"Modals.Error.Heading" = "Konstatēta kļūda";
+
+"Modals.Success.Description" = "Pārejiet uz nākamo soli";
+
+"Modals.Success.Heading" = "Viss izdevās";
+
+"Action.Agree" = "Piekrītu";
+
+"Action.Disagree" = "Nepiekrītu";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Turpināt procesu";
+
+"Disagree.Confirmation.Action.StopProcess" = "Pārtrauciet procesu";
+
+"Disagree.Confirmation.Header" = "Noraidot saturu, jūs apturēsiet procesu. Vai esat pārliecināts?";
+
+"Capture.Action.Capture" = "Attēls";
+
+"Capture.DriverLicense.Back.Description" = "Iekadrējiet dokumentu rāmī.";
+
+"Capture.DriverLicense.Back.Header" = "Uzņemiet aizmugures attēlu";
+
+"Capture.DriverLicense.Front.Description" = "Iekadrējiet dokumentu rāmī.";
+
+"Capture.DriverLicense.Front.Header" = "Uzņemiet priekšpuses attēlu";
+
+"Capture.IdCard.Back.Description" = "Iekadrējiet dokumentu rāmī.";
+
+"Capture.IdCard.Back.Header" = "Uzņemiet aizmugures attēlu";
+
+"Capture.IdCard.Front.Description" = "Iekadrējiet dokumentu rāmī.";
+
+"Capture.IdCard.Front.Header" = "Uzņemiet priekšpuses attēlu";
+
+"Capture.InternalPassport.DataPage.Header" = "Uzņemiet galveno lapu";
+
+"Capture.InternalPassport.FrontCover.Header" = "Uzņemiet vāka attēlu";
+
+"Capture.Passport.DataPage.Description" = "Iekadrējiet dokumentu rāmī.";
+
+"Capture.Passport.DataPage.Header" = "Uzņemiet galveno lapu";
+
+"Capture.Passport.FrontCover.Header" = "Uzņemiet vāka attēlu";
+
+"Capture.ResidencePermit.Back.Description" = "Iekadrējiet dokumentu rāmī.";
+
+"Capture.ResidencePermit.Back.Header" = "Uzņemiet aizmugures attēlu";
+
+"Capture.ResidencePermit.Front.Description" = "Iekadrējiet dokumentu rāmī.";
+
+"Capture.ResidencePermit.Front.Header" = "Uzņemiet priekšpuses attēlu";
+
+"Capture.SocialId.Back.Description" = "Iekadrējiet dokumentu rāmī.";
+
+"Capture.SocialId.Back.Header" = "Uzņemiet aizmugures attēlu";
+
+"Capture.SocialId.Front.Description" = "Iekadrējiet dokumentu rāmī.";
+
+"Capture.SocialId.Front.Header" = "Uzņemiet priekšpuses attēlu";
+
+"Preview.Action.Continue" = "Turpināt";
+
+"Preview.Action.Retake" = "Uzņemiet vēlreiz";
+
+"Preview.Header" = "Vai attēls ir skaidrs, fokusēts un bez atspīdumiem?";
+
+"FaceCapture.Instructions.Action.Start" = "Sākt";
+
+"FaceCapture.Instructions.Description" = "Pozicionējiet seju rāmja vidū.";
+
+"FaceCapture.Instructions.Header" = "Autentificējieties, izmantojot sejas atpazīšanu";
+
+"FaceCapture.Instructions.Subheader" = "Pārliecinieties, ka:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "Jūsu sejas izteiksme ir neitrāla";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "Apgaismojums ir pietiekams";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "Attēls ir skaidrs";
+
+"App.Button.Close" = "Aizvērt";
+
+"App.Button.Continue" = "Turpināt";
+
+"App.Errors.Default" = "Radusies negaidīta problēma. Mēģiniet vēlreiz vēlāk.";
+
+"EndPage.Action.Continue" = "Turpināt";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Paldies. Tagad varat pabeigt procesu.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Viss ir pabeigts!";
+
+"Action.Close" = "Aizvērt";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Lūdzu, augšupielādējiet adreses apliecinājumu";
+
+"Document.Instructions.Action.Start" = "Sākt";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Nofotografējiet autovadītāja apliecības aizmuguri";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Nofotografējiet autovadītāja apliecības priekšpusi";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Attēls nav pārāk izplūdis.";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Pārliecinieties, ka:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Apgaismojums ir pietiekams.";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Dokumenta teksts ir salasāms.";
+
+"Document.Instructions.IdCard.Back.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.IdCard.Back.Heading" = "Nofotografējiet personas apliecības aizmuguri";
+
+"Document.Instructions.IdCard.Front.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.IdCard.Front.Heading" = "Nofotografējiet personas apliecības priekšpusi";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Atzīmētajā rāmī ietveriet dokumenta galveno lapu, kurā ir mašīnlasāmie elementi.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Nofotografējiet iekšzemes pases galveno lapu";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Nofotografējiet iekšzemes pases vāku";
+
+"Document.Instructions.Passport.DataPage.Description" = "Atzīmētajā rāmī ietveriet mašīnlasāmos elementus.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Nofotografējiet pases galveno lapu";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Nofotografējiet pases vāku";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Nofotografējiet uzturēšanās atļaujas aizmuguri";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Nofotografējiet uzturēšanās atļaujas priekšpusi";
+
+"Document.Instructions.SocialId.Back.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.SocialId.Back.Heading" = "Nofotografējiet sociālās personas apliecības aizmuguri";
+
+"Document.Instructions.SocialId.Front.Description" = "Ietveriet dokumentu rāmī";
+
+"Document.Instructions.SocialId.Front.Heading" = "Nofotografējiet sociālās personas apliecības priekšpusi";
+
+"Document.Select.Document.DriverLicense" = "Autovadītāja apliecība";
+
+"Document.Select.Document.IdCard" = "Personas apliecība";
+
+"Document.Select.Document.InternalPassport" = "Iekšzemes pase";
+
+"Document.Select.Document.Passport" = "Pase";
+
+"Document.Select.Document.ResidencePermit" = "Uzturēšanās atļauja";
+
+"Document.Select.Document.SocialId" = "Sociālā personas apliecība";
+
+"Document.Select.Header" = "Izvēlieties dokumentu";
+
+"FaceCapture.Instructions.Description" = "Pozicionējiet seju rāmja vidū.";
+
+"FaceCapture.Instructions.Header" = "Uzņemiet pašfoto";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Attēls ir skaidrs.";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Jūsu sejas izteiksme ir neitrāla.";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Apgaismojums ir pietiekams.";
+
+"FaceCapture.Instructions.Subheader" = "Pārliecinieties, ka:";
+
+"Result.Failure.Action.TryAgain" = "Mēģināt vēlreiz";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Lūdzu, mēģiniet vēlreiz un pārliecinieties, ka dokuments ir vienmērīgi apgaismots ar baltu gaismas avotu.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Iesniegtajā fotoattēlā ir slikts apgaismojums";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Lūdzu, mēģiniet vēlreiz un iesniedziet nesabojātu dokumentu. ";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Daļa no iesniegtā dokumenta ir bojāta";
+
+"Result.Failure.DocumentFromScreen.Description" = "Lai pabeigtu identifikācijas procesu, iesniedziet derīgu fiziskā dokumenta fotoattēlu";
+
+"Result.Failure.DocumentFromScreen.Header" = "Iesniegtais dokumenta fotoattēls nav derīgs";
+
+"Result.Failure.DocumentIsExpired.Description" = "Lai pabeigtu identifikācijas procesu, iesniedziet derīgu dokumentu";
+
+"Result.Failure.DocumentIsExpired.Header" = "Iesniegtā dokumenta derīguma termiņš ir beidzies";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Lai pabeigtu identifikācijas procesu, izmantojiet norādītajā sarakstā iekļautu dokumentu";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Iesniegtā dokumenta veids neatbilst prasībām";
+
+"Result.Failure.DocumentPrinted.Description" = "Lai pabeigtu identifikācijas procesu, iesniedziet derīgu fiziskā dokumenta fotoattēlu";
+
+"Result.Failure.DocumentPrinted.Header" = "Iesniegtais dokumenta fotoattēls nav derīgs";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Lūdzu, iesniedziet dokumentu, kurā ietvertais teksts ir rakstīts ar latīņu alfabēta burtiem";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Iesniegtā dokumenta veids neatbilst prasībām";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Lūdzam uzņemt oriģinālā dokumenta fotoattēlu";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Identifikācija tika noraidīta";
+
+"Result.Failure.FacesNotMatch.Description" = "Lūdzu, mēģiniet vēlreiz vai sazinieties ar klientu atbalsta dienestu";
+
+"Result.Failure.FacesNotMatch.Header" = "Dokumentā ietvertais fotoattēls neatbilst iesniegtajam pašfoto";
+
+"Result.Failure.Generic.Description" = "Sazinieties ar klientu atbalsta dienestu";
+
+"Result.Failure.Generic.Header" = "Radās problēma saistībā ar jūsu identifikāciju";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Lūdzu, mēģiniet vēlreiz un pārliecinieties, ka adreses apliecinājuma dokuments ir derīgs";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Iesniegtais adreses apliecinājuma fotoattēls nav derīgs";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Lūdzu, mēģiniet vēlreiz un iesniedziet visus nepieciešamos dokumenta fotoattēlus";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Trūkst dokumenta fotoattēla";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Lūdzu, mēģiniet vēlreiz vai sazinieties ar klientu atbalsta dienestu";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Trūkst sejas fotoattēla";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Identifikācijas process ir jāveic bez citu personu līdzdalības";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Tika konstatēta citas personas klātbūtne procesa laikā";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Lūdzu, mēģiniet vēlreiz un pārliecinieties, ka teksts ir skaidri salasāms un dokumentā ietvertā informācija nav aizklāta";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Daļa no iesniegtā dokumenta ir aizklāta";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Lūdzu, mēģiniet vēlreiz, ievērojot sniegtos norādījumus. Seja nedrīkst būt aizklāta";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Seja ir daļēji aizklāta";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Lūdzu, mēģiniet vēlreiz un pārliecinieties, ka dokuments ir vienmērīgi izgaismots";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Iesniegtais fotoattēls nav pietiekami izgaismots";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Lūdzu, mēģiniet vēlreiz un pārliecinieties, ka dokumentā ietvertā informācija ir skaidri salasāma. Ja kameras kvalitāte ir zema, mēģiniet veikt procesu citā ierīcē.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Iesniegtā fotoattēla kvalitāte ir zema";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Lūdzu, mēģiniet vēlreiz vai sazinieties ar klientu atbalsta dienestu";
+
+"Result.Failure.SelfieHasNoFace.Header" = "Iesniegtajā fotoattēlā nav ietverta seja";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Lūdzu, mēģiniet vēlreiz vai sazinieties ar klientu atbalsta dienestu";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Iesniegtais fotoattēls nav atbilstošs";
+
+"Result.Success.Header" = "Izdevās!";
+
+"ResultsWaiting.Delay.Description" = "Šķiet, ka vietni izmanto vairāk cilvēku nekā parasti. Drīzumā tiksiet novirzīts.";
+
+"ResultsWaiting.Delay.Header" = "Process diemžēl aizņem vairāk laika, nekā paredzēts";
+
+"ResultsWaiting.Details.Description" = "Gaidīšanas laiks ir vidēji 2 minūtes.";
+
+"ResultsWaiting.Details.Header" = "Lūdzu, uzgaidiet…";
+
+"ResultsWaiting.Details.Message.Message1" = "Notiek dokumenta datu šifrēšana.";
+
+"ResultsWaiting.Details.Message.Message2" = "Notiek dokumenta pārbaude attiecībā uz ārējiem bojājumiem.";
+
+"ResultsWaiting.Details.Message.Message3" = "Notiek iesniegto dokumenta fotoattēlu pārbaude.";
+
+"ResultsWaiting.Details.Message.Message4" = "Pārbaudām, vai esat īsta persona";
+
+"ResultsWaiting.Details.Message.Message5" = "Notiek datu autentiskuma un derīguma pārbaude.";
+
+"ResultsWaiting.Details.Message.Message6" = "Notiek dokumentu statusa un datu pārbaude reģistros.";
+
+/*  */
+"Action.Cancel" = "Atcelt";
+
+/*  */
+"Action.Loading.Header" = "Ielādē...";
+
+/*  */
+"Action.Submit" = "Iesniegt";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Dokuments veiksmīgi skenēts";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Iekadrējiet dokumentu rāmī.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Dokumenta uzņemšana";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Uzņemiet adreses pierādījumu";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Tas var būt bankas izraksts vai komunālo pakalpojumu rēķins";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Atbalstītie faili: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Faila izmērs nedrīkst pārsniegt 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Augšupielādētā faila formāts netiek atbalstīts";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Lūdzu, iesniedziet adreses apliecinājumu";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Maksimālais faila izmērs: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Prasības:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Jānorāda jūsu pilns vārds un adrese";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Dokuments nav vecāks par 3 mēnešiem";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Izvēlēties failu";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Atlasīt no galerijas";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Augšupielādēt dokumentu";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Augšupielādē...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Mums ir nepieciešams jūsu TRN, lai verificētu jūsu kontu. Lūdzu, ievadiet savu TRN, kā tas parādās oficiālajā dokumentā, un divreiz pārbaudiet, vai tas ir pareizs, pirms iesniegšanas, lai izvairītos no kavēšanās.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Lūdzu, norādiet savu nodokļu maksātāja reģistrācijas numuru (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "TRN numurs sastāv no 9 cipariem";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "TRN kods:";
+
+/*  */
+"Consent.Static.Description" = "Lai saņemtu pakalpojumu no Pakalpojumu sniedzēja, ar šo piekrišanu es izsaku savu piekrišanu, ka UAB \"Ondato\" saņems un pārvaldīs manus personas datus, tostarp manus biometriskos datus, kas iegūti, attālināti identificējot manu personīgo identitāti, uzņemot un/vai filmējot manu sejas attēlu, manu personas identitāti vai dokumentu, kas tiek izmantots tās identificēšanai, un/vai to attēlu un tajos ietvertos personas datus un/vai pārbaudot iedzīvotāju reģistrā: mana sejas attēlu, vārdu, uzvārdu, tautību, dzimumu, personas kodu, dzimšanas datumu, dokumenta numurus, kas tiek izmantoti, izdošanas un derīguma datumu, manu parakstu un šādu datu nodošanu Pakalpojumu sniedzējam. Es arī norādu, ka esmu informēts, ka manu personas datu, tostarp manu biometrisko datu, pārzinis, kas norādīts šajā piekrišanā, ir Pakalpojumu sniedzējs, un UAB \"Ondato\" apstrādās manus personas datus tikai līdz attālinātās identifikācijas procedūras beigām, un rezultāti tiks nodoti Pakalpojumu sniedzējam. Es arī deklarēju, ka esmu informēts un piekrītu, ka mani personas dati, kas iegūti attālinātai identifikācijai un tās mērķiem, var tikt glabāti UAB \"Ondato\" ilgāku laiku nekā nepieciešams identifikācijas pabeigšanai vai tās rezultātu nodošanai Pakalpojumu sniedzējam, bet tikai pēc Pakalpojumu sniedzēja pieprasījuma vai UAB Ondato līgumsaistību ar Pakalpojumu sniedzēju, bet ne ilgāk, kā tas ir noteikts Līgumā, kas noslēgts starp UAB \"Ondato\" un Pakalpojumu sniedzēju vai pēc Pakalpojumu sniedzēja pieprasījuma. Es esmu informēts, ka varu iesniegt pieprasījumu par saviem personas datiem, lai iegūtu sīkāku informāciju, uz info@ondato.com. Ar šo es deklarēju un apstiprinu, ka visi personas dati, kurus es sniegšu attālinātai manas personīgās identitātes identifikācijai, ir pareizi un precīzi, un dokuments, kuru es izmantošu šim nolūkam, nav viltots un ir derīgs.";
+
+/*  */
+"Consent.Static.Heading" = "Piekrišana personas datu apstrādei";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Novietojiet dokumentu rāmja iekšpusē";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Uzņemiet MRZ zonas savas identifikācijas kartes";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Novietojiet dokumentu un MRZ līniju rāmja iekšpusē";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Uzņemiet savas identifikācijas kartes priekšpusi ar MRZ līniju";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Lūdzu, parādiet galveno dokumenta lapu, kas satur MRZ zonu atzīmētajā apgabalā.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Uzņemiet pases lapu ar MRZ zonu";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Adreses apliecinājums";
+
+/*  */
+"Error.Interrupt.Description" = "Pārtraukumu dēļ process ir apstājies. Lūdzu, palieciet šajā lietotnē, līdz esat pabeidzis visus soļus.";
+
+/*  */
+"Error.Interrupt.Heading" = "Process tika pārtraukts";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Lai turpinātu, lūdzu, pievienojieties vēlreiz";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Jūsu interneta savienojums ir pazudis";
+
+/*  */
+"FaceCapture.Validation.Description" = "Lūdzu, uzgaidiet...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Jūsu fotoattēla pārbaude";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Atvērt iestatījumus";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Turot dokumentu pie sejas, uzņemiet selfiju";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Uzņemiet sevi, turot dokumentu";
+
+/*  */
+"Instructions.Identification.Description" = "Lai turpinātu izmantot šo pakalpojumu, jums ir jāpārbauda, vai atbilstat vietnes prasībām.";
+
+/*  */
+"Instructions.Identification.Header" = "Laipni lūdzam identitātes \n verifikācijas procesā";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Tikai mirklīti";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Pēdējās detaļas tiek pabeigtas";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Notiek fotoattēla uzņemšana";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Novietojiet seju rāmī un pieskarieties, lai uzņemtu";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Uzņemiet savu seju";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Vai jūsu seja ir skaidri redzama?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Pārliecinieties, ka fotoattēls ir skaidrs un salasāms";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Lūdzam sazināties ar klientu atbalstu, lai iegūtu vairāk informācijas.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Jūsu identifikācija ir noraidīta.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Lūdzam sazināties ar klientu atbalstu, lai iegūtu vairāk informācijas vai mēģinātu vēlreiz ar citu dokumentu.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Jūsu identifikācija ir noraidīta aizliegtās valsts vai štata dēļ.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Lūdzam mēģināt vēlreiz vai sazināties ar klientu atbalstu.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Jūsu identifikācija ir noraidīta.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Lūdzu, sazinieties ar klientu atbalstu, lai iegūtu vairāk informācijas";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Jūsu identifikācija ir noraidīta.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Lūdzam sazināties ar klientu atbalstu, lai iegūtu vairāk informācijas.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Jūsu identifikācija ir noraidīta vecuma ierobežojumu dēļ.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Paldies par jūsu pacietību";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Informācijas uztveršana bija veiksmīga";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Šķiet, ka mums ir lielāka satiksme nekā parasti. Jūs drīz tiksiet novirzīts.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Atvainojiet, tas aizņem vairāk laika nekā gaidīts";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Lai turpinātu, pārliecinieties, ka dokumentam ir NFC un tas ir aktivizēts jūsu ierīcē.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Izskatās, ka nevarat turpināt bez NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Novietojiet dokumentu aiz ierīces";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Skenēšana... Lūdzu, turiet";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Savienojums zudis skenēšanas laikā. Lūdzu, mēģiniet vēlreiz.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Mēģiniet vēlreiz skenēt dokumentu.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Izskatās, ka process tika pārtraukts.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Nevarējām nolasīt dokumentu. Lūdzu, pārbaudiet informāciju un mēģiniet vēlreiz.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Negaidīta atbilde no mikroshēmas. Lūdzu, skenējiet dokumentu vēlreiz.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Skenētais dokuments nav derīgs. Lūdzu, mēģiniet vēlreiz ar atbalstīto dokumentu.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Tika konstatēti vairāki čipi. Lūdzu, skenējiet tikai vienu dokumentu vienlaikus.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Jūsu ierīce neatbalsta NFC vai tas pašlaik ir izslēgts. Lūdzu, pārslēdzieties uz saderīgu ierīci vai iespējojiet NFC iestatījumos.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC netiek atbalstīts";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Vai ir grūtības?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Pievienojiet savu ID karti telefona aizmugurē";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Novietojiet savu ID karti uz telefona aizmugures NFC skenēšanai";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Skenējiet savu ID karti ar NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Novietojiet savu pasi uz telefona aizmugures NFC skenēšanai";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Skenējiet savu pasi ar NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Atcelt";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Lūdzu, ieslēdziet NFC, lai turpinātu procesu";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC ir izslēgts";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Iestatījumi";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Pievienojiet sava pases pirmo lapu telefona aizmugurē";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Ja jums radās grūtības piekļūt NFC, izmēģiniet šīs metodes:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Mēģiniet nolasīt dokumenta pēdējo lapu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Mēģiniet nolasīt dokumenta foto lapu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Ja uz dokumenta ir kāds vāks, noņemiet to.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Lūdzu, turiet dokumentu pie telefona aizmugures.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Skenēt dokumentu";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Padomi, ko izmēģināt";
+
+"Action.Cancel" = "Atcelt";
+
+"CaptureResultReason.TimeOut.Description" = "Lūdzu, mēģiniet vēlreiz.";
+
+"CaptureResultReason.TimeOut.Header" = "Pārtraukums";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Atcelt";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Seja ir pagriezta pārāk tālu pa kreisi";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Seja ir pagriezta pārāk tālu pa labi";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Seja nav redzama kamerā";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Seja ir pieliekta pārāk daudz uz kreiso pusi";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Seja ir pieliekta pārāk daudz uz labo pusi";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Seja ir pārāk tālu pa kreisi";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Seja ir pārāk tālu pa labi";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Seja ir par augstu";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Seja ir par zemu";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Ierīce ir jātur acu līmenī";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Pārvietojiet kameru acu līmenī";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Kamera ir pārāk tuvu";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Kamera ir pārāk tālu";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Kamera ir pārāk tuvu";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Kamera ir pārāk tālu";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Nospiediet taustiņu Enter vai atstarpes taustiņu, lai iegūtu norādījumus par sejas novietojumu";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Divreiz pieskaries ekrānam, lai iegūtu norādījumus par sejas novietojumu";
+
+"FaceTec_camera_feed_issue_action" = "TOMĒR MĒĢINIET VĒLREIZ";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Problēma ar kameras plūsmas nodrošināšanu";
+
+"FaceTec_camera_feed_issue_header" = "Problēma ar<br/>kameras plūsmas nodrošināšanu";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Šo sistēmu nevar pārbaudīt šādu iemeslu dēļ:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Šī lietotne bloķē aizdomīgas tīmekļa kameru konfigurācijas.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Uzziniet vairāk šeit</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Šī lietotne bloķē aizdomīgas tīmekļa kameru konfigurācijas. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Uzziniet vairāk šeit</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Iespējama problēma";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Novērsiet";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Kamera jau tiek izmantota citā lietotnē.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Firefox atmiņā nesaglabājas atļaujas izmantot kameru.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Aizveriet otru lietotni.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Pārbaudiet saglabātās atļaujas.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Videoklips tiek rediģēts trešās puses lietotnē.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Aizveriet/atinstalējiet otru lietotni.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Aparatūrai nav iespējams nodrošināt drošību.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Izmantojiet citu ierīci.";
+
 "FaceTec_camera_permission_header" = "Iespējot kameru";
-"FaceTec_camera_permission_message_enroll" = "Lūdzu, iespējojiet savu selfiju kameru.";
-"FaceTec_camera_permission_message_auth" = "FaceTec ir konstatējis, ka jūsu kameras atļaujas ir atspējotas. Pieskarieties zemāk esošajai pogai, lai rediģētu OS iestatījumus.";
-"FaceTec_camera_permission_enable_camera" = "Iespējot kameru";
-"FaceTec_camera_permission_launch_settings" = "Uzsākt iestatījumus";
+
+"FaceTec_camera_permission_message" = "Atļaujas izmantot kameru ir atspējotas.<br/>Pārbaudiet operētājsistēmas un pārlūkprogrammas iestatījumus.";
+
+"FaceTec_enter_fullscreen_action" = "ATVĒRT PILNEKRĀNA REŽĪMĀ";
+
+"FaceTec_enter_fullscreen_header" = "Pilnekrāna pašfoto režīms";
+
+"FaceTec_enter_fullscreen_message" = "Vispirms noklikšķiniet uz tālāk norādītās pogas, lai atvērtu pilnekrāna režīmu.";
+
+"FaceTec_feedback_center_face" = "Centrējiet savu seju";
+
 "FaceTec_feedback_face_not_found" = "Kadrējiet seju";
-"FaceTec_feedback_face_not_looking_straight_ahead" = "Paskaties tieši uz priekšu";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Paskatieties taisni uz priekšu";
+
 "FaceTec_feedback_face_not_upright" = "Turiet galvu taisni";
-"FaceTec_feedback_hold_steady" = "Turiet vienmērīgi";
-"FaceTec_feedback_move_phone_away" = "Pavelciet tālruni prom no sevis";
-"FaceTec_feedback_move_phone_closer" = "Pārvietojieties tuvāk";
-"FaceTec_feedback_move_phone_even_closer" = "Vēl tuvāk";
-"FaceTec_feedback_move_phone_to_eye_level" = "Paceliet tālruni līdz acu līmenim";
-"FaceTec_feedback_use_even_lighting" = "Uzturiet vienmērīgu sejas apgaismojumu";
-"FaceTec_instructions_header_lighting" = "Uzturiet vienmērīgu sejas apgaismojumu";
-"FaceTec_instructions_header_face_angle" = "Turiet kameru acu līmenī";
-"FaceTec_instructions_header_ready_1" = "Gatavojieties";
-"FaceTec_instructions_header_ready_2" = "nofotografēt seju!";
-"FaceTec_instructions_message_ready" = "Ielieciet seju paredzētajā rāmī";
+
+"FaceTec_feedback_face_not_upright" = "Turiet galvu taisni";
+
+"FaceTec_feedback_hold_steady" = "Turiet stabili";
+
+"FaceTec_feedback_move_phone_away" = "Pārvietot prom";
+
+"FaceTec_feedback_move_phone_away" = "Pārvietot prom";
+
+"FaceTec_feedback_move_phone_closer" = "Pārvietot tuvāk";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Paceliet kameru līdz acu līmenim";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Izskatieties tieši kamerā";
+
+"FaceTec_feedback_move_web_closer" = "Pārvietot tuvāk";
+
+"FaceTec_feedback_move_web_even_closer" = "Pat tuvāk";
+
+"FaceTec_feedback_use_even_lighting" = "Gaiša seja vienmērīgāk";
+
+"FaceTec_idscan_additional_review_message" = "Nepieciešama papildu<br/>pārskatīšana";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Rādīt personu apliecinošā dokumenta aizmuguri";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Rādīt personu apliecinošā dokumenta priekšpusi";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Pārskatīt un apstiprināt";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Ritināt lejup";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Pārliecinieties, ka fotoattēls ir skaidrs un salasāms";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Pārliecinieties, ka fotoattēls ir skaidrs un salasāms";
+
+"FaceTec_idscan_type_selection_header" = "Sagatavojieties<br/>personu apliecinošā dokumenta skenēšanai";
+
+"FaceTec_initializing_camera" = "Kameras plūsmas nodrošināšana";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Sagatavojieties";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "Videoklips, kurā esat redzams jūs";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Sagatavojieties uzņemt videoklipu, kurā esat redzams jūs";
+
+"FaceTec_instructions_message_ready_1" = "Novietojiet seju ovālajā rāmī";
+
+"FaceTec_instructions_message_ready_2" = "Nospiediet \"Esmu gatavs\" un pavirzieties tuvāk";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Novietojiet seju ovālajā rāmī, nospiediet \"Esmu gatavs\" un pavirzieties tuvāk";
+
+"FaceTec_presession_brighten_your_environment" = "Palieliniet apgaismojumu";
+
+"FaceTec_presession_conditions_too_bright" = "Pārāk gaišs";
+
+"FaceTec_presession_eyes_straight_ahead" = " Skatieties taisni uz priekšu ";
+
 "FaceTec_presession_frame_your_face" = "Ievietojiet seju ovālā";
-"FaceTec_result_facescan_upload_message" = "Lūdzu, uzgaidiet iekraušanu";
-"FaceTec_result_success_message" = "Seja tiek veiksmīgi atpazīta";
-"FaceTecRetryReasonGeneric_title" = "Neizdevās atpazīt seju";
-"FaceTecRetryReasonGeneric_subtitle" = "Lūdzam pārliecināties, ka jūsu sejai netraucē aksesuāri un identifikācijas laikā jūs neveidojiet neparastas sejas izteiksmes";
-"FaceTecRetryReasonBadLighting_title" = "Slikts fotoattēla apgaismojums";
-"FaceTecRetryReasonBadLighting_subtitle" = "Informējam, ka jūsu identifikācija bija neveiksmīga sliktā apgaismojuma dēļ. Lūdzam pārliecināties, ka jūsu seja ir vienmērīgi apgaismota";
-"FaceTecRetryReasonFaceAngle_title" = "Nederīgs sejas iesniegšanas formāts";
-"FaceTecRetryReasonFaceAngle_subtitle" = "Lūdzam pārliecināties, ka jūsu seja pareizi iederas marķētajā zonā. Jums jāskatās tieši kamerā";
-"FaceTecRetryReasonBadLightingFailureToAcquire_title" = "Spilgts apgaismojums apkārtnē";
-"FaceTecRetryReasonBadLightingFailureToAcquire_subtitle" = "Informējam, ka identifikācijas laikā ap jūsu seju tika atklāts spilgts apgaismojums. Lūdzam pārliecināties, ka jūsu apkārtne nav pārāk gaiša";
-"FaceTec_instructions_message_ready_1" = "Ievietojiet seju ovālā";
-"FaceTec_instructions_message_ready_2" = "";
-"FaceTec_presession_position_face_straight_in_oval" = "Skatieties taisni uz priekšu";
+
+"FaceTec_presession_hold_steady_1" = " Nekustieties: 1";
+
+"FaceTec_presession_hold_steady_2" = " Nekustieties: 2";
+
 "FaceTec_presession_hold_steady_3" = "Nekustieties: 3";
-"FaceTec_presession_hold_steady_2" = "Nekustieties: 2";
-"FaceTec_presession_hold_steady_1" = "Nekustieties: 1";
-"FaceTec_presession_eyes_straight_ahead" = "Skatieties taisni uz priekšu";
-"FaceTec_presession_remove_dark_glasses" = "Novelciet saulesbrilles";
-"FaceTec_presession_neutral_expression" = "Neitrāla sejas izteiksme, nesmaidīt";
-"FaceTec_presession_conditions_too_bright" = "Pārāk spilgta vide";
-"FaceTec_presession_brighten_your_environment" = "Paspilgtiniet savu vidi";
-"FaceTec_retry_header" = "Pamēģināsim vēlreiz...";
-"FaceTec_retry_subheader_message" = "Mums ir nepieciešama skaidrāka video pašbilde.";
-"FaceTec_retry_instruction_message_1" = "Neitrāla sejas izteiksme, nesmaidīt";
-"FaceTec_retry_instruction_message_2" = "Bez atspulgiem vai pārmērīga apgaismojuma";
-"FaceTec_retry_instruction_message_3" = "Pārāk izplūdis attēls, tīriet kameru";
-"FaceTec_retry_your_image_label" = "Jūsu pašbilde";
+
+"FaceTec_presession_look_straight_ahead" = "Skatieties taisni uz priekšu";
+
+"FaceTec_presession_neutral_expression" = "Neitrāla sejas izteiksme, nesmaidiet";
+
+"FaceTec_presession_remove_dark_glasses" = "Noņemiet tumšās brilles";
+
+"FaceTec_result_facescan_upload_message" = "Notiek<br/>šifrēta<br/>sejas attēla 3D skenējuma augšupielāde";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Svītrkodu neizdevās noskenēt<br/>Mēģiniet vēlreiz";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Sejas atbilstība nebija<br/>pietiekama";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Personu apliecinošais dokuments<br/>nav pilnībā redzams";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Personu apliecinošā dokumenta veids netiek atbalstīts<br/>Izmantojiet citu personu apliecinošo dokumentu";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Personu apliecinošā dokumenta teksts nav salasāms";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Personu apliecinošā dokumenta fotoattēla uzņemšana<br/>pabeigta";
+
+"FaceTec_result_idscan_success_back_side_message" = "Personu apliecinošā dokumenta skenēšana pabeigta";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Personu apliecinošā dokumenta priekšpuse<br/>noskenēta";
+
+"FaceTec_result_idscan_success_front_side_message" = "Personu apliecinošā dokumenta skenēšana pabeigta";
+
+"FaceTec_result_idscan_success_passport_message" = "Pases skenēšana pabeigta";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Personu apliecinošā dokumenta fotoattēla skenēšana<br/>pabeigta";
+
+"FaceTec_result_idscan_unsuccess_message" = "Personu apliecinošā dokumenta fotoattēls<br/>neatbilda<br/>lietotāja sejai";
+
+"FaceTec_result_idscan_upload_message" = "Notiek<br/>šifrēta<br/>personu apliecinošā dokumenta augšupielāde";
+
+"FaceTec_result_success_message" = "Izdevās!";
+
+"FaceTec_retry_header" = "Pamēģināsim vēlreiz";
+
 "FaceTec_retry_ideal_image_label" = "Ideāla poza";
-"FaceTec_action_try_again" = "Mēģiniet vēlreiz";
-"ondato_button_capture" = "Fotografēt";
-"ondato_choose_document_title" = "Izvēlieties dokumentu un sāciet verifikāciju";
-"ondato_capture_id_card_front_instructions_title" = "Lūdzu, uzņemiet ID kartes priekšpusi";
-"ondato_capture_id_card_front_instructions_description" = "Ievietojiet dokumentu ar elektroniski nolasāmu joslu rāmī un nospiediet “Fotografēt”. Dokumentam jābūt skaidri redzamam";
-"ondato_capture_instructions_mistakes" = "Galvenās kļūdas:";
-"ondato_capture_instructions_too_blurry" = "Pārāk neskaidrs/izplūdis";
-"ondato_capture_instructions_too_small" = "Pārāk mazs";
-"ondato_capture_instructions_too_dark" = "Pārāk tumšs";
-"ondato_capture_instructions_bad_lighting" = "Slikts apgaismojums";
-"ondato_capture_instructions_not_neutral" = "Nav neitrāla seja";
-"ondato_capture_passport_front_instructions_title" = "Lūdzu, nofotografējiet galvenās dokumentu lapas attēlu, kurā ir elektroniski nolasāma josla";
-"ondato_capture_driver_license_front_instructions_title" = "Lūdzu, nofotografējiet vadītāja apliecības priekšpusi";
-"ondato_capture_driver_license_front_instructions_description" = "Lūdzu, parādiet vadītāja apliecības priekšpusi norādītajā zonā, un nospiediet pogu “Fotografēt”. Vadītāja apliecības fotoattēlam jābūt skaidri redzamam, tas nedrīkst būt miglains";
-"ondato_capture_check_taken_photo" = "Pārbaudiet dokumenta kvalitāti";
-"ondato_capture_check_taken_photo_description" = "Pārliecināties, ka bilde skaidri attēlo visu nepieciešamo informāciju un ir viegli salasāma. Ja bilde ir atbilstoša, tad lūdzu spiežat uz “turpināt”";
-"ondato_capture_id_card_back_instructions_description" = "Ievietojiet dokumentu ar elektroniski nolasāmu joslu rāmī un nospiediet “Fotografēt”. Dokumentam jābūt skaidri redzamam";
-"ondato_capture_mrz_instructions_title" = "Sagatavojiet dokumentu, lai uzņemtu MRZ zonu";
-"ondato_capture_mrz_id_instructions_description" = "Lūdzu, uzrādiet ID kartes aizmuguri, kurā ir MRZ zona. Dokumentam jābūt skaidri saskatāmam, nevis izplūdušam vai pikseļotam.";
-"ondato_capture_mrz_instructions_title" = "Sagatavojiet dokumentu, lai uzņemtu MRZ zonu";
-"ondato_capture_passport_front_instructions_description" = "Lūdzu, iezīmētajā zonā parādiet galveno dokumenta lapu, kurā ir MRZ zona. Dokumentam jābūt skaidri saskatāmam, nevis izplūdušam vai pikseļotam.";
-"ondato_capture_driver_license_back_instructions_title" = "Lūdzu, nofotografējiet vadītāja apliecības otru pusi";
-"ondato_capture_driver_license_back_title" = "Lūdzu, nofotografējiet vadītāja apliecības otru pusi";
-"ondato_capture_driver_license_back_instructions_description" = "Lūdzu, parādiet vadītāja apliecības aizmuguri norādītajā zonā, un nospiediet pogu “Fotografēt”. Vadītāja apliecībai jābūt skaidri redzamai, tā nedrīkst būt izplūdusi";
-"ondato_capture_face_instructions_title" = "Lūdzu, ievietojiet seju objektīvā";
-"ondato_capture_face_instructions_description" = "Ievietojiet seju rāmi un pārliecinieties par to, ka tā ir redzama un vienmērīgi izgaismota.";
-"ondato_start_identification_title" = "Laipni lūdzam identitātes verifikācijas procesā";
-"ondato_start_identification_description" = "Lai turpinātu izmantot šo pakalpojumu, jums jāapstiprina, ka atbilstat prasībām. Verifikācijas process sastāv no 3 soļiem";
-"ondato_start_identification_step_1" = "1. Izvēlieties dokumentu";
-"ondato_start_identification_step_2" = "2. Nofotografējiet dokumentu";
-"ondato_start_identification_step_3" = "3. Noskenējiet savu seju";
-"ondato_start_identification_nfc_step_1" = "1. Izvēlieties dokumentu";
-"ondato_start_identification_nfc_step_2" = "2. Skenējiet NFC";
-"ondato_start_identification_nfc_step_3" = "3. Noskenējiet savu seju";
-"ondato_capture_selfie_with_document_instructions_title" = "Nofotografējiet sevi, turot dokumentu";
-"ondato_capture_selfie_with_document_instructions_description" = "Fotografējot pašbildi, turiet dokumentu pie sejas";
-"ondato_capture_yourself_with_document_title" = "Nofotografējiet sevi, turot dokumentu";
-"ondato_capture_check_taken_photo_with_document" = "Lūdzu, pārbaudiet uzņemto fotoattēlu";
-"ondato_capture_check_taken_photo_with_document_description" = "Pārliecinieties, vai fotoattēls ir skaidrs";
-"ondato_capture_id_card_back_instructions_title" = "Lūdzu, nofotografējiet ID kartes otru pusi";
-"ondato_capture_id_card_back_title" = "Lūdzu, nofotografējiet ID kartes otru pusi";
 
-// Waiting page
+"FaceTec_retry_instruction_message_1" = "Neitrāla izteiksme, bez smaidīšanas";
 
-"ondato_unrelatedPhotoSubmit_primary" = "Jūsu identifikācija ir noraidīta, jo ir iesniegts nesaistīts fotoattēls.";
-"ondato_dataNotMatch_second" = "Laipni lūdzam pārbaudīt klienta veidlapā iesniegto informāciju. Informācijai klienta veidlapā jāatbilst informācijai jūsu dokumentā.";
-"ondato_incorrect_information_provided_second" = "Laipni lūdzam atkārtoti veikt procesu vai sazināties ar klientu atbalsta dienestu.";
-"ondato_waiting_page_success_title" = "Jūsu identifikācija – veiksmīga.";
-"ondato_waiting_page_verify_your_identity" = "Jūsu dati tiks izmantoti tikai jūsu identitātes apstiprināšanai.";
-"ondato_waiting_page_facial_photo_obscured" = "Pārbaudām, vai jūsu sejas fotogrāfijas neaizsedz ēnas un gaismas stari.";
-"ondato_prohibitedCountryOrState_second" = "Laipni lūdzam sazināties ar pakalpojumu sniedzēju, lai gūtu vairāk informācijas, vai mēģināt vēlreiz, izmantojot citu dokumentu.";
-"ondato_underagePerson_second" = "Lūdzam sazināties ar pakalpojumu sniedzēju, lai iegūtu vairāk informācijas.";
-"ondato_waiting_page_encrypt_data_for_final_approval" = "Šifrējam datus un nododam galīgai apstiprināšanai.";
-"ondato_partOfDocumentIsCovered_second" = "Lūdzu, atkārtojiet identifikācijas procesu un pārliecinieties, ka dokuments ir skaidri salasāms un dati nav nosegti ";
-"ondato_waiting_page_check_if_all_photos_uploaded" = "Pārbaudām, vai ir iesniegtas visas nepieciešamās fotogrāfijas.";
-"ondato_blurred_photo_second" = "Lūdzu, atkārtojiet identifikācijas procesu un pārliecinieties, ka dokumenta dati ir skaidri salasāmi.";
-"ondato_sanctioned_primary" = "Jūsu identifikācija tiek noraidīta.";
-"ondato_missingDocumentPhoto_second" = "Lūdzam jūs atkārtoti veikt identifikācijas procesu un nofotografēt visus nepieciešamos dokumentus.";
-"ondato_documentNotAccepted_primary" = "Jūsu identifikācija ir noraidīta, jo dokuments nav pieņemams.";
-"ondato_poorPhotoLighting_second" = "Lūdzu, atkārtojiet identifikācijas procesu un pārliecinieties, ka dokuments ir vienmērīgi izgaismots.";
-"ondato_waiting_page_biometric_data" = "No jūsu sejas biometriskajiem datiem veidojam 3D modeli.";
-"ondato_bad_media_format_second" = "Lūdzam jūs nofotografēt oriģinālo dokumentu.";
-"ondato_dataNotMatch_primary" = "Jūsu identifikācija ir noraidīta, jo informācija dokumentā un klienta veidlapā neatbilst.";
-"ondato_waiting_page_success_body" = "Paldies par pacietību.";
-"ondato_underagePerson_primary" = "Jūsu identifikācija ir noraidīta vecuma ierobežojumu dēļ.";
-"ondato_expiration_date_mismatch_primary" = "Radās problēma ar jūsu identifikāciju.";
-"ondato_documentIsExpired_second" = "Lai pabeigtu identifikācijas procesu, jums jānofotografē derīgs dokuments.";
-"ondato_documentWithNonLatinCharacters_primary" = "Jūsu identifikācija ir noraidīta, jo dokuments veids nav pieņemams.";
-"ondato_incorrect_information_provided_primary" = "Radās problēma ar jūsu identifikāciju.";
-"ondato_facesNotMatch_primary" = "Jūsu identifikācija tiek noraidīta, jo jūsu pašportrets neatbilst fotoattēlam dokumentā.";
-"ondato_waiting_page_document_facial_image" = "Pārbaudām, vai jūsu dokumentā sejas fotogrāfija ir skaidri redzama.";
-"ondato_more_than_one_person_second" = "Identifikācijas process jāveic bez citu personu piedalīšanās šajā procesā.";
-"ondato_doc_and_bio_age_doesnt_match_second" = "Laipni lūdzam atkārtoti veikt procesu vai sazināties ar klientu atbalsta dienestu.";
-"ondato_partOfFaceIsCovered_primary" = "Jūsu identifikācija ir noraidīta, jo ir iesniegts aptverts pašportrets.";
-"ondato_waiting_page_authenticity" = "Pārbaudām datu autentiskumu un likumību.";
-"name" = "lv";
-"ondato_name_mismatch_primary" = "Radās problēma ar jūsu identifikāciju.";
-"ondato_duplicatedInfo_primary" = "Jūsu identifikācija tiek noraidīta.";
-"ondato_miscellaneous_second" = "Lūdzam sazināties ar pakalpojumu sniedzēju, lai iegūtu vairāk informācijas.";
-"ondato_possibleFraudAttempt_second" = "Lūdzam sazināties ar pakalpojumu sniedzēju, lai iegūtu vairāk informācijas.";
-"ondato_waiting_page_failure_close_title" = "Aizvērt";
-"ondato_something_went_wrong_second" = "Mēģiniet vēlreiz.";
-"ondato_doc_and_bio_age_doesnt_match_primary" = "Radās problēma ar jūsu identifikāciju.";
-"ondato_missingPersonPhoto_second" = "Lūdzam jūs atkārtoti izmēģināt identifikācijas procesu saskaņā ar sniegtajiem norādījumiem.";
-"ondato_waiting_page_success_continue_title" = "Turpināt";
-"ondato_waiting_page_taking_longer_than_expected" = "Jūsu pārbaude ilgst ilgāk, nekā gaidīts. Lūdzam neaizvērt logu, atlikuši daži mirkļi.";
-"ondato_bad_media_format_primary" = "Jūsu identifikācija tiek noraidīta.";
-"ondato_unrelatedPhotoSubmit_second" = "Lūdzam sazināties ar pakalpojumu sniedzēju, lai iegūtu vairāk informācijas.";
-"ondato_waiting_page_ai_check" = "Mākslīgais intelekts salīdzina sejas un dokumenta atbilstību.";
-"ondato_expiration_date_mismatch_second" = "Laipni lūdzam atkārtoti veikt procesu vai sazināties ar klientu atbalsta dienestu.";
-"ondato_waiting_page_external_damage" = "Pārbaudām, vai jūsu dokumentā nav ārēju bojājumu un vai ir redzamas visas nepieciešamās zīmes.";
-"ondato_missingPersonPhoto_primary" = "Jūsu identifikācija tiek noraidīta nepareizas pašportreta iesniegšanas dēļ.";
-"ondato_facesNotMatch_second" = "Laipni lūdzam atkārtoti veikt identifikācijas procesu vai sazināties ar klientu atbalsta dienestu.";
-"ondato_miscellaneous_primary" = "Jūsu identifikācija tiek noraidīta.";
-"ondato_partOfFaceIsCovered_second" = "Laipni lūdzam atkārtoti veikt identifikācijas procesu saskaņā ar sniegtajiem norādījumiem. Lūdzu, neaizklājiet savu seju.";
-"ondato_partOfDocumentIsCovered_primary" = "Jūsu identifikācija ir noraidīta, jo dokumenta fotoattēlā ir aizklāta informācija.";
-"ondato_prohibitedCountryOrState_primary" = "Jūsu identifikācija ir noraidīta aizliegtas valsts vai štata dēļ.";
-"ondato_possibleFraudAttempt_primary" = "Jūsu identifikācija tiek noraidīta.";
-"ondato_waiting_page_scan_document" = "Nolasām dokumenta tekstu un speciālās zīmes.";
-"ondato_poorPhotoQuality_second" = "Lūdzu atkārtoti veikt identifikācijas procesu un pārliecināties, vai dokumenta dati ir skaidri salasāmi vai arī sliktas fotokameras kvalitātes gadījumā, lūdzu, centieties veikt procesu ar citu ierīci.";
-"ondato_something_went_wrong_primary" = "Kaut kas nogāja greizi.";
-"ondato_waiting_page_encrypt_data" = "Šifrējam jūsu datus un nosūtām pārbaudei.";
-"ondato_documentIsExpired_primary" = "Jūsu identifikācija ir noraidīta, jo beidzies dokumenta derīguma termiņš.";
-"ondato_prohibitedNationality_primary" = "Jūsu identifikācija tiek noraidīta.";
-"ondato_more_than_one_person_primary" = "Jūsu identifikācija ir noraidīta, jo procesā piedalās citi cilvēki.";
-"ondato_name_mismatch_second" = "Laipni lūdzam atkārtoti veikt procesu vai sazināties ar klientu atbalsta dienestu.";
-"ondato_waiting_page_no_other_person" = "Pārbaudām, vai jūsu fotogrāfijās nav nepiederošu personu.";
-"ondato_waiting_page_documents_clearly_legible" = "Pārbaudām, vai jūsu dokuments ir skaidri salasāms.";
-"ondato_documentNotAccepted_second" = "Iesniegtais dokuments nav derīgs. Lūdzam jūs iesniegt derīgu pasi vai identifikācijas karti, lai pabeigtu identifikācijas procesu.";
-"ondato_documentWithNonLatinCharacters_second" = "Lūdzam jūs nofotografēt derīgu, visā pasaulē atzītu dokumentu ar elektroniski nolasāmu joslu.";
-"ondato_sanctioned_second" = "Lūdzam sazināties ar pakalpojumu sniedzēju, lai iegūtu vairāk informācijas.";
-"ondato_missingDocumentPhoto_primary" = "Jūsu identifikācija ir noraidīta, jo nav dokumenta fotoattēla.";
-"ondato_blurred_photo_primary" = "Jūsu identifikācija ir noraidīta, jo fotoattēls ir izplūdis.";
-"ondato_prohibitedNationality_second" = "Lūdzam sazināties ar pakalpojumu sniedzēju, lai iegūtu vairāk informācijas.";
-"ondato_poorPhotoLighting_primary" = "Jūsu identifikācija tiek noraidīta slikta fotoattēla apgaismojuma dēļ.";
-"ondato_waiting_page_data_in_registers" = "Pārbaudām jūsu dokumenta statusu un datus reģistros.";
-"ondato_poorPhotoQuality_primary" = "Jūsu identifikācija tiek noraidīta sliktas fotoattēla kvalitātes dēļ.";
-"ondato_waiting_page_failure_try_again_title" = "Mēģiniet vēlreiz";
-"ondato_waiting_page_document_obscured" = "Pārbaudām, vai jūsu dokumentā esošos datus neaizsedz ēnas un gaismas stari.";
-"ondato_capture_nfc_instructions_title" = "Sagatavojiet dokumentu NFC skenēšanai";
-"ondato_capture_nfc_instructions_description" = "Iegūstiet dokumentu un sagatavojiet NFC savā ierīcē.";
-"ondato_capture_nfc_description_scanning" = "Uzgaidiet, lūdzu. Process var ilgt vēl dažas sekundes.";
-"ondato_capture_nfc_failure_title" = "Šķiet, ka process tika pārtraukts.";
-"ondato_try_again" = "Mēģiniet vēlreiz";
-"ondato_try_alternative" = "Izmēģiniet alternatīvu";
-"ondato_passport_scan_help_title" = "Ja jums ir radušās grūtības piekļūt NFC, izmēģiniet šīs metodes:";
-"ondato_passport_scan_help_step1" = "Mēģiniet izlasīt dokumenta pēdējo lappusi.";
-"ondato_passport_scan_help_step2" = "Mēģiniet izlasīt dokumenta fotoattēlu lapu.";
-"ondato_passport_scan_help_step3" = "Ja dokumentam ir vāks, noņemiet to.";
-"ondato_capture_mrz_success_title" = "Informācijas iegūšana bija veiksmīga";
-"ondato_capture_mrz_success_description" = "Paldies par pacietību.";
-"ondato_continue_button" = "Turpināt";
-"ondato_capture_nfc_settings_instructions_title" = "Šķiet, ka nevarat turpināt bez NFC.";
-"ondato_capture_nfc_settings_instructions_description" = "Lai turpinātu, pārliecinieties, vai dokumentam ir NFC un tas ir iespējots jūsu ierīcē.";
-"ondato_nfc_scan_prompt_request_present" = "Lūdzu, turiet dokumentu tālruņa aizmugurē.";
-"ondato_nfc_scan_prompt_authenticating" = "Autentifikācija ar dokumentu......";
-"ondato_nfc_scan_prompt_reading_data" = "Skenēšana";
-"ondato_nfc_scan_prompt_error_tag_not_valid" = "Atzīme nav derīga.";
-"ondato_nfc_scan_prompt_error_more_than_one_tag_found" = "Šķiet, ka process tika pārtraukts.";
-"ondato_nfc_scan_prompt_error_connection" = "Šķiet, ka process tika pārtraukts.";
-"ondato_nfc_scan_prompt_error_invalid_mrz_key" = "MRZ atslēga nav derīga šim dokumentam.";
-"ondato_nfc_scan_prompt_error_response" = "Šķiet, ka process tika pārtraukts.";
-"ondato_capture_nfc_failure_title" = "Šķiet, ka process tika pārtraukts.";
+"FaceTec_retry_instruction_message_2" = "Nav atspulgu vai ārkārtas apgaismojuma";
 
-"ondato_interrupted_title" = "Process tika pārtraukts";
-"ondato_interrupted_description" = "Pārtraukumu dēļ process ir apstājies. Lūdzu, palieciet šajā lietotnē, līdz esat pabeidzis visas darbības.";
+"FaceTec_retry_instruction_message_3" = "Attēls ir pārāk izplūdis, notīriet kameru";
 
-"face_auth_too_many_attempts_title" = "Verifikācija bloķēta pārāk daudzu mēģinājumu dēļ";
-"face_auth_auth_too_many_attempts_description" = "Lūdzu, sazinieties ar pakalpojuma sniedzēju, lai saņemtu palīdzību";
-"face_auth_too_many_attempts_button" = "APTURĒT PROCESU";
+"FaceTec_retry_subheader_message" = "Mums ir nepieciešams skaidrāks videoklips, kurā esat redzams jūs";
+
+"FaceTec_retry_your_image_label" = "Tavs pašbilde";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Apturēt procesu";
+
+"FailureScreen.TooManyAttempts.Description" = "Lai saņemtu palīdzību, sazinieties ar pakalpojumu sniedzēju";
+
+"FailureScreen.TooManyAttempts.Header" = "Verifikācija ir bloķēta pārāk daudzu mēģinājumu dēļ";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Ierīce ir bloķēta.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Pārāk daudz mēģinājumu";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Ierīce netiek atbalstīta.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Neizdevās";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Lūdzu, mēģiniet vēlreiz vēlāk.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Licences kļūda";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Atslēgai bija beidzies derīguma termiņš, tajā bija nederīgs teksts vai jūs mēģināt inicializēt domēnu, kas nav norādīts jūsu atslēgā.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Atslēgas derīguma termiņš ir beidzies vai tā nav derīga";
+
+"LoadResultReason.NetworkIssues.Description" = "Nevarēja turpināt, jo ierīcē radās savienojuma problēmas";
+
+"LoadResultReason.NetworkIssues.Header" = "Tīkla problēmas";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Nevarēja ielādēt resursus.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Neizdevās";
+
+"LoadResultReason.StillLoadingResources.Description" = "Joprojām tiek ielādēti resursi.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Neizdevās";
+
+"FaceTec_action_im_ready" = "Esmu gatavs(-a)";
+
+"ReadyScreen.Header" = "Sagatavojieties video pašbildei";
+
+"RetryScreen.Action.PassiveLiveness" = "Izmēģiniet alternatīvu metodi";
+
+"FaceTec_action_try_again" = "Mēģināt vēlreiz";
+
+"RetryScreen.Description" = "Mums ir nepieciešama skaidrāka bilde.";
+
+"RetryScreen.Header" = "Pamēģināsim vēlreiz.";
+
+/*  */
+"RetryScreen.Message.Generic" = "Lūdzu, izmantojiet vienmērīgu apgaismojumu un kopējiet ideālo pozu";
+
+"UploadScreen.Description" = "Atstājiet šo logu atvērtu";
+
+"UploadScreen.Header" = "Sejas fotoattēla apstiprināšana";
+

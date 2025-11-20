@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target x86_64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OndatoScreenRecorder
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target x86_64-apple-ios15-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OndatoScreenRecorder
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AVFoundation
 import Foundation
 @_exported import OndatoScreenRecorder
 import Photos
@@ -45,7 +46,7 @@ extension OndatoScreenRecorder.Recorder.Status {
   public func startRecording(id: OndatoScreenRecorder.Recorder.RecordingID, completion: @escaping (Swift.Result<Swift.Void, OndatoScreenRecorder.OndatoScreenRecorderError>) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func stopRecording(completion: @escaping (Swift.Result<OndatoScreenRecorder.OndatoScreenRecording?, OndatoScreenRecorder.OndatoScreenRecorderError>) -> Swift.Void)
+  public func stopRecording(completion: @escaping (Swift.Result<OndatoScreenRecorder.OndatoScreenRecording.Base64Encoded?, OndatoScreenRecorder.OndatoScreenRecorderError>) -> Swift.Void)
   #endif
   @objc deinit
 }
@@ -55,6 +56,7 @@ extension OndatoScreenRecorder.Recorder : ReplayKit.RPScreenRecorderDelegate {
   #endif
 }
 @_hasMissingDesignatedInitializers public class OndatoScreenRecording {
+  public typealias Base64Encoded = Swift.String
   public var url: Foundation.URL?
   @objc deinit
 }

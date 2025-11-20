@@ -1,0 +1,858 @@
+"Action.Close" = "Zamknij";
+
+"LanguageSelection.Header" = "Wybierz język";
+
+"Modals.Abort.Action.ContinueProcess" = "Kontynuuj proces";
+
+"Modals.Abort.Action.StopProcess" = "Zatrzymaj procedurę";
+
+"Modals.Abort.Heading" = "Czy na pewno chcesz przerwać ten proces?";
+
+"Modals.Error.Description" = "Coś poszło nie tak, zamknij ten komunikat i spróbuj ponownie";
+
+"Modals.Error.Heading" = "Ups, wystąpił błąd";
+
+"Modals.Success.Description" = "Przejdź do kolejnego etapu";
+
+"Modals.Success.Heading" = "Sukces!";
+
+"Action.Agree" = "Akceptuję";
+
+"Action.Disagree" = "Nie akceptuję";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Kontynuuj proces";
+
+"Disagree.Confirmation.Action.StopProcess" = "Zatrzymaj proces";
+
+"Disagree.Confirmation.Header" = "Odrzucając treść, zatrzymujesz proces. Jesteś pewna?";
+
+"Capture.Action.Capture" = "Zrób zdjęcie";
+
+"Capture.DriverLicense.Back.Description" = "Umieść dokument w ramce.";
+
+"Capture.DriverLicense.Back.Header" = "Zrób zdjęcie z tyłu";
+
+"Capture.DriverLicense.Front.Description" = "Umieść dokument w ramce.";
+
+"Capture.DriverLicense.Front.Header" = "Zrób zdjęcie z przodu";
+
+"Capture.IdCard.Back.Description" = "Umieść dokument w ramce.";
+
+"Capture.IdCard.Back.Header" = "Zrób zdjęcie z tyłu";
+
+"Capture.IdCard.Front.Description" = "Umieść dokument w ramce.";
+
+"Capture.IdCard.Front.Header" = "Zrób zdjęcie z przodu";
+
+"Capture.InternalPassport.DataPage.Header" = "Zrób zdjęcie strony głównej";
+
+"Capture.InternalPassport.FrontCover.Header" = "Zrób zdjęcie okładki";
+
+"Capture.Passport.DataPage.Description" = "Umieść dokument w ramce.";
+
+"Capture.Passport.DataPage.Header" = "Zrób zdjęcie strony głównej";
+
+"Capture.Passport.FrontCover.Header" = "Zrób zdjęcie okładki";
+
+"Capture.ResidencePermit.Back.Description" = "Umieść dokument w ramce.";
+
+"Capture.ResidencePermit.Back.Header" = "Zrób zdjęcie z tyłu";
+
+"Capture.ResidencePermit.Front.Description" = "Umieść dokument w ramce.";
+
+"Capture.ResidencePermit.Front.Header" = "Zrób zdjęcie z przodu";
+
+"Capture.SocialId.Back.Description" = "Umieść dokument w ramce.";
+
+"Capture.SocialId.Back.Header" = "Zrób zdjęcie z tyłu";
+
+"Capture.SocialId.Front.Description" = "Umieść dokument w ramce.";
+
+"Capture.SocialId.Front.Header" = "Zrób zdjęcie z przodu";
+
+"Preview.Action.Continue" = "Dalej";
+
+"Preview.Action.Retake" = "Powtórz";
+
+"Preview.Header" = "Czy zdjęcie jest wyraźne, ostre i bez odblasku?";
+
+"FaceCapture.Instructions.Action.Start" = "Rozpocznij";
+
+"FaceCapture.Instructions.Description" = "Po rozpoczęciu procedury umieść twarz w środku kadru.";
+
+"FaceCapture.Instructions.Header" = "Uwierzytelnij się za pomocą twarzy";
+
+"FaceCapture.Instructions.Subheader" = "Upewnij się, że:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "Wyraz twarzy jest neutralny";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "Oświetlenie jest dobre";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "Obraz jest wyraźny";
+
+"App.Button.Close" = "Zamknij";
+
+"App.Button.Continue" = "Kontynuuj";
+
+"App.Errors.Default" = "Napotkano niespodziewany problem. Spróbuj ponownie później.";
+
+"EndPage.Action.Continue" = "Kontynuuj";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Dziękujemy. Teraz możesz zakończyć proces.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Wszystko gotowe!";
+
+"Action.Close" = "Zamknij";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Prześlij dokument potwierdzający adres";
+
+"Document.Instructions.Action.Start" = "Rozpocznij";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Zrób zdjęcie tylnej strony prawa jazdy";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Zrób zdjęcie przedniej strony prawa jazdy";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Obraz nie jest zbyt rozmyty";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Upewnij się, że:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Oświetlenie jest dobre";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Dokument jest czytelny";
+
+"Document.Instructions.IdCard.Back.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.IdCard.Back.Heading" = "Zrób zdjęcie tylnej strony dokumentu tożsamości";
+
+"Document.Instructions.IdCard.Front.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.IdCard.Front.Heading" = "Zrób zdjęcie przedniej strony dokumentu tożsamości";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Pokaż w zaznaczonym obszarze główną stronę dokumentu, która zawiera strefę MRZ.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Zrób zdjęcie głównej strony paszportu wewnętrznego";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Zrób zdjęcie okładki paszportu wewnętrznego";
+
+"Document.Instructions.Passport.DataPage.Description" = "Umieść strefę MRZ w zaznaczonym obszarze.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Zrób zdjęcie głównej strony paszportu";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Zrób zdjęcie okładki paszportu";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Zrób zdjęcie tylnej strony dokumentu pobytowego";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Zrób zdjęcie przedniej strony dokumentu pobytowego";
+
+"Document.Instructions.SocialId.Back.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.SocialId.Back.Heading" = "Zrób zdjęcie tylnej strony karty ubezpieczenia społecznego";
+
+"Document.Instructions.SocialId.Front.Description" = "Umieść dokument wewnątrz ramki";
+
+"Document.Instructions.SocialId.Front.Heading" = "Zrób zdjęcie przedniej strony karty ubezpieczenia społecznego";
+
+"Document.Select.Document.DriverLicense" = "Prawo jazdy";
+
+"Document.Select.Document.IdCard" = "Dowód tożsamości";
+
+"Document.Select.Document.InternalPassport" = "Paszport wewnętrzny";
+
+"Document.Select.Document.Passport" = "Paszport";
+
+"Document.Select.Document.ResidencePermit" = "Zezwolenie na pobyt";
+
+"Document.Select.Document.SocialId" = "Karta ubezpieczenia społecznego";
+
+"Document.Select.Header" = "Wybierz dokument";
+
+"FaceCapture.Instructions.Description" = "Umieść twarz w środku kadru.";
+
+"FaceCapture.Instructions.Header" = "Zrób zdjęcie swojej twarzy";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Obraz jest wyraźny";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Wyraz twarzy jest neutralny";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Oświetlenie jest dobre";
+
+"FaceCapture.Instructions.Subheader" = "Upewnij się, że:";
+
+"Result.Failure.Action.TryAgain" = "Spróbuj ponownie";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Spróbuj ponownie i upewnij się, że dokument jest równomiernie oświetlony źródłem białego światła.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Przesłane zdjęcie jest słabo oświetlone";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Spróbuj ponownie i weź zdrowy dokument.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Część dostarczonego dokumentu jest uszkodzona";
+
+"Result.Failure.DocumentFromScreen.Description" = "Aby ukończyć proces identyfikacji, prześlij prawidłowe zdjęcie rzeczywistego dokumentu";
+
+"Result.Failure.DocumentFromScreen.Header" = "Przesłane zdjęcie dokumentu nie spełnia wymagań";
+
+"Result.Failure.DocumentIsExpired.Description" = "Aby ukończyć proces identyfikacji, prześlij ważny dokument";
+
+"Result.Failure.DocumentIsExpired.Header" = "Przesłany dokument stracił ważność.";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Aby ukończyć proces identyfikacji, prześlij jeden z dokumentów z listy";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Rodzaj przesłanego dokumentu nie spełnia wymagań";
+
+"Result.Failure.DocumentPrinted.Description" = "Aby ukończyć proces identyfikacji, prześlij prawidłowe zdjęcie rzeczywistego dokumentu";
+
+"Result.Failure.DocumentPrinted.Header" = "Przesłane zdjęcie dokumentu nie spełnia wymagań";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Prześlij dokument zawierający znaki alfabetu łacińskiego";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Rodzaj przesłanego dokumentu nie spełnia wymagań";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Prosimy o zrobienie zdjęcia oryginalnego dokumentu";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Twój dokument tożsamości został odrzucony";
+
+"Result.Failure.FacesNotMatch.Description" = "Spróbuj ponownie lub skontaktuj się z zespołem obsługi klienta";
+
+"Result.Failure.FacesNotMatch.Header" = "Zdjęcie w dokumencie i przesłane zdjęcie twarzy nie przedstawiają tej samej osoby";
+
+"Result.Failure.Generic.Description" = "Skontaktuj się z zespołem obsługi klienta";
+
+"Result.Failure.Generic.Header" = "Wystąpił problem z potwierdzeniem Twojej tożsamości";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Spróbuj ponownie, upewniając się, że dokument potwierdzający adres jest prawidłowy";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Przesłane zdjęcie dokumentu potwierdzającego adres nie spełnia wymagań";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Spróbuj ponownie, załączając wymagane zdjęcia dokumentu";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Brakuje zdjęcia dokumentu";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Spróbuj ponownie lub skontaktuj się z zespołem obsługi klienta";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Brakuje zdjęcia twarzy";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Proces identyfikacji musi zostać przeprowadzony bez udziału innych osób";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Użytkownik nie jest sam podczas procesu";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Spróbuj ponownie, upewniając się, że dokument jest czytelny i żadne dane nie są zasłonięte";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Część przesłanego dokumentu jest zasłonięta";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Spróbuj ponownie, postępując zgodnie z instrukcjami. Twarz nie powinna być zasłonięta";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Twarz jest częściowo zasłonięta";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Spróbuj ponownie, upewniając się, że dokument jest równomiernie oświetlony";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Przesłane zdjęcie jest słabo oświetlone";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Spróbuj ponownie i upewnij się, że dane na dokumencie są czytelne. Jeśli aparat nie pozwala wykonać zdjęcia lepszej jakości, rozpocznij proces na innym urządzeniu.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Przesłane zdjęcie jest niskiej jakości";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Spróbuj ponownie lub skontaktuj się z zespołem obsługi klienta";
+
+"Result.Failure.SelfieHasNoFace.Header" = "Twarz nie jest widoczna na przesłanym zdjęciu";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Spróbuj ponownie lub skontaktuj się z zespołem obsługi klienta";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Przesłane zdjęcie nie ma związku z procesem";
+
+"Result.Success.Header" = "Operacja zakończona pomyślnie!";
+
+"ResultsWaiting.Delay.Description" = "Wygląda na to, że ruch jest większy niż zwykle. Wkrótce nastąpi przekierowanie.";
+
+"ResultsWaiting.Delay.Header" = "Proces trwa dłużej, niż oczekiwano";
+
+"ResultsWaiting.Details.Description" = "Oczekiwanie zajmuje średnio 2 minuty.";
+
+"ResultsWaiting.Details.Header" = "Czekaj...";
+
+"ResultsWaiting.Details.Message.Message1" = "Trwa szyfrowanie danych dokumentu.";
+
+"ResultsWaiting.Details.Message.Message2" = "Trwa sprawdzanie dokumentu pod kątem zewnętrznych uszkodzeń.";
+
+"ResultsWaiting.Details.Message.Message3" = "Trwa sprawdzanie przesłanych zdjęć dokumentu.";
+
+"ResultsWaiting.Details.Message.Message4" = "Sprawdzanie, czy jesteś prawdziwą osobą";
+
+"ResultsWaiting.Details.Message.Message5" = "Trwa sprawdzenie autentyczności i poprawności danych.";
+
+"ResultsWaiting.Details.Message.Message6" = "Trwa sprawdzanie statusu dokumentu i danych w rejestrach.";
+
+/*  */
+"Action.Cancel" = "Anuluj";
+
+/*  */
+"Action.Loading.Header" = "Ładowanie...";
+
+/*  */
+"Action.Submit" = "Prześlij";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Dokument zeskanowano pomyślnie";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Umieść dokument w ramce.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Przechwyć dokument";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Przechwytywanie dowodu adresu";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Może to być wyciąg z konta bankowego lub rachunek za media";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Obsługiwane pliki: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Rozmiar pliku nie może przekraczać 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Format przesłanego pliku nie jest obsługiwany";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Proszę dostarczyć dowód adresu";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Maksymalny rozmiar pliku: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Wymagania:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Musi zawierać pełne imię i nazwisko oraz adres";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Dokument nie jest starszy niż 3 miesiące";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Wybierz plik";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Wybierz z galerii";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Prześlij dokument";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Przesyłanie...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Potrzebujemy Twojego numeru TRN, aby zweryfikować Twoje konto. Wprowadź numer TRN tak, jak jest on podany na oficjalnym dokumencie i sprawdź dwukrotnie, czy jest poprawny przed wysłaniem, aby uniknąć opóźnień.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Proszę podać swój Numer Identyfikacji Podatkowej (NIP)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "Numer TRN składa się z 9 cyfr";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "Kod TRN:";
+
+/*  */
+"Consent.Static.Description" = "Aby uzyskać usługę od Dostawcy Usług, wyrażam zgodę, że UAB \"Ondato\" otrzyma i będzie zarządzać moimi danymi osobowymi, w tym danymi biometrycznymi, uzyskanymi z zdalnej identyfikacji mojej tożsamości osobistej poprzez wykonanie i/lub nagranie obrazu na żywo mojej twarzy, tożsamości mojej osoby lub dokumentu używanego do jej identyfikacji i/lub ich obrazu oraz danych osobowych w nich zawartych i/lub sprawdzenie w rejestrze ludności: obrazu mojej twarzy, imienia, nazwiska, narodowości, płci, kodu osobistego, daty urodzenia, numerów dokumentu używanego, daty wydania i ważności, mojego podpisu oraz przekazanie takich danych Dostawcy Usług. Zaznaczam również, że jestem poinformowany, że administratorem moich danych osobowych, w tym danych biometrycznych, określonych w tej zgodzie jest Dostawca Usług, a UAB \"Ondato\" będzie przetwarzać moje dane osobowe tylko do momentu zakończenia procedury zdalnej identyfikacji, a wyniki zostaną przekazane Dostawcy Usług. Oświadczam również, że jestem poinformowany i zgadzam się, że moje dane osobowe uzyskane do zdalnej identyfikacji i jej celów mogą być przechowywane przez UAB \"Ondato\" przez dłuższy okres czasu niż trwa identyfikacja lub przekazanie jej wyników Dostawcy Usług, ale tylko na żądanie Dostawcy Usług lub zobowiązanie umowne UAB Ondato wobec Dostawcy Usług, ale nie dłużej niż jest to określone w Umowie zawartej między UAB \"Ondato\" a Dostawcą Usług lub na żądanie Dostawcy Usług. Jestem poinformowany, że mogę złożyć wniosek dotyczący moich danych osobowych o bardziej szczegółowe informacje na info@ondato.com. Niniejszym oświadczam i potwierdzam, że wszystkie dane osobowe, które dostarczę do celu zdalnej identyfikacji mojej tożsamości osobistej, są poprawne i dokładne, a dokument, który użyję do tego celu, nie jest fałszywy i jest ważny.";
+
+/*  */
+"Consent.Static.Heading" = "Zgoda na przetwarzanie danych osobowych";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Umieść dokument wewnątrz ramki";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Zrób zdjęcie strefy MRZ swojego dowodu osobistego";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Umieść dokument i linię MRZ wewnątrz ramki";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Zrób zdjęcie przodu dowodu osobistego z linią MRZ";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Proszę, pokaż stronę główną dokumentu, która zawiera strefę MRZ w oznaczonym obszarze.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Zrób zdjęcie strony paszportu z strefą MRZ";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Dowód adresu";
+
+/*  */
+"Error.Interrupt.Description" = "Z powodu przerw proces został zatrzymany. Proszę pozostać w tej aplikacji, aż ukończysz wszystkie kroki.";
+
+/*  */
+"Error.Interrupt.Heading" = "Proces został przerwany";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Połącz się ponownie, aby kontynuować";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Połączenie internetowe nie działa";
+
+/*  */
+"FaceCapture.Validation.Description" = "Proszę czekać...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Weryfikacja twojego zdjęcia";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Uruchom ustawienia";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Trzymaj dokument blisko twarzy podczas robienia selfie";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Zrób zdjęcie, trzymając swój dokument";
+
+/*  */
+"Instructions.Identification.Description" = "Aby kontynuować korzystanie z tej usługi, musisz potwierdzić, że spełniasz wymagania strony internetowej.";
+
+/*  */
+"Instructions.Identification.Header" = "Witamy w procesie \n weryfikacji tożsamości";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Chwileczkę";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Kończenie ostatnich szczegółów";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Przechwytywanie zdjęcia";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Wyrównaj twarz w ramce i dotknij, aby przechwycić";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Zrób zdjęcie twarzy";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Czy Twoja twarz jest wyraźnie widoczna?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Upewnij się, że zdjęcie jest wyraźne i czytelne";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Prosimy o kontakt z obsługą klienta w celu uzyskania dodatkowych informacji.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Twoja identyfikacja została odrzucona.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Prosimy o kontakt z obsługą klienta w celu uzyskania dodatkowych informacji lub spróbuj ponownie z innym dokumentem.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Twoja identyfikacja została odrzucona z powodu zakazanego kraju lub stanu.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Prosimy o ponowienie procesu lub kontakt z obsługą klienta.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Twoja identyfikacja została odrzucona.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Proszę skontaktować się z obsługą klienta, aby uzyskać więcej informacji";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Twoja identyfikacja została odrzucona.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Prosimy o kontakt z obsługą klienta w celu uzyskania dodatkowych informacji.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Twoja identyfikacja została odrzucona z powodu ograniczeń wiekowych.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Dziękujemy za cierpliwość";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Pomyślnie przechwycono informacje";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Wygląda na to, że mamy więcej ruchu niż zwykle. Zostaniesz wkrótce przekierowany.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Przepraszamy, to zajmuje więcej czasu niż oczekiwano";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Aby kontynuować, upewnij się, że dokument ma NFC i jest ono włączone na Twoim urządzeniu.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Wygląda na to, że nie możesz kontynuować bez NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Umieść dokument za urządzeniem";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Skanowanie... Proszę czekać";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Utracono połączenie podczas skanowania. Proszę spróbować ponownie.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Spróbuj ponownie zeskanować dokument.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Wygląda na to, że proces został przerwany.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Nie udało się odczytać dokumentu. Proszę sprawdzić szczegóły i spróbować ponownie.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Nieoczekiwana odpowiedź z układu. Proszę ponownie zeskanować dokument.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Zeskanowany dokument jest nieważny. Spróbuj ponownie z obsługiwanym dokumentem.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Wykryto wiele czipów. Proszę skanować tylko jeden dokument naraz.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Urządzenie nie obsługuje NFC lub jest obecnie wyłączone. Proszę przełączyć się na zgodne urządzenie lub włączyć NFC w ustawieniach.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC nieobsługiwane";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Masz trudności?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Przyłóż dowód osobisty do tylnej części telefonu";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Umieść dowód osobisty z tyłu telefonu, aby zeskanować go za pomocą NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Zeskanuj swoją kartę identyfikacyjną za pomocą NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Umieść paszport z tyłu telefonu, aby zeskanować go za pomocą NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Zeskanuj swój paszport za pomocą NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Anuluj";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Proszę włączyć NFC, aby kontynuować proces";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC jest wyłączone";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Ustawienia";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Przyłóż pierwszą stronę paszportu do tylnej części telefonu";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Jeśli napotkałeś trudności z dostępem do NFC, spróbuj tych metod:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Spróbuj odczytać ostatnią stronę dokumentu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Spróbuj odczytać stronę ze zdjęciem dokumentu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Jeśli na dokumencie znajduje się jakakolwiek osłona, usuń ją.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Proszę przytrzymać dokument z tyłu telefonu.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Skanuj dokument";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Wskazówki do wypróbowania";
+
+"Action.Cancel" = "Anuluj";
+
+"CaptureResultReason.TimeOut.Description" = "Spróbuj ponownie";
+
+"CaptureResultReason.TimeOut.Header" = "Upłynął limit czasu";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Anuluj";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Twarz jest skierowana za bardzo w lewo";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Twarz jest skierowana za bardzo w prawo";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Twarz jest poza kadrem";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Twarz jest obrócona za bardzo w lewo";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Twarz jest obrócona za bardzo w prawo";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Twarz jest za bardzo w lewo";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Twarz jest za bardzo w prawo";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Twarz jest zbyt wysoko";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Twarz jest zbyt nisko";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Trzymaj urządzenie na poziomie oczu";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Ustaw aparat na poziomie oczu";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Aparat jest zbyt blisko";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Aparat jest zbyt daleko";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Aparat jest zbyt blisko";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Aparat jest zbyt daleko";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Aby uzyskać wskazówki dotyczące pozycji twarzy, naciśnij klawisz Enter lub spację";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Aby uzyskać wskazówki dotyczące pozycji twarzy, dotknij dwukrotnie ekranu";
+
+"FaceTec_camera_feed_issue_action" = "SPRÓBUJ PONOWNIE MIMO TO";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Problem z zabezpieczeniem obrazu z kamery";
+
+"FaceTec_camera_feed_issue_header" = "Problem z zabezpieczeniem<br/>obrazu z kamery";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Ten system nie może zostać zweryfikowany z poniższych przyczyn:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Ta aplikacja blokuje podejrzane konfiguracje kamer internetowych.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Dowiedz się więcej tutaj</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Ta aplikacja blokuje podejrzane konfiguracje kamer internetowych. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Dowiedz się więcej tutaj</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Możliwy problem";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Napraw";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Kamera jest już używana przez inną aplikację.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Uprawnienia dostępu do kamery nie zostały zapisane w przeglądarce Firefox.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Zamknij tę inną aplikację.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Zaznacz opcję „Zapamiętaj uprawnienia”.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Aplikacja innej firmy modyfikuje wideo.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Zamknij/odinstaluj tę inną aplikację.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Nie można zapewnić bezpieczeństwa urządzenia.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Użyj innego urządzenia.";
+
+"FaceTec_camera_permission_header" = "Włącz kamerę";
+
+"FaceTec_camera_permission_message" = "Uprawnienia dostępu do kamery są wyłączone.<br/>Sprawdź ustawienia systemu operacyjnego i przeglądarki.";
+
+"FaceTec_enter_fullscreen_action" = "OTWÓRZ W TRYBIE PEŁNOEKRANOWYM";
+
+"FaceTec_enter_fullscreen_header" = "Tryb selfie w trybie pełnoekranowym";
+
+"FaceTec_enter_fullscreen_message" = "Zanim zaczniemy, kliknij poniższy przycisk, aby otworzyć tryb pełnoekranowy.";
+
+"FaceTec_feedback_center_face" = "Wyśrodkuj swoją twarz";
+
+"FaceTec_feedback_face_not_found" = "Wykadruj twarz";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Patrz przed siebie";
+
+"FaceTec_feedback_face_not_upright" = "Trzymaj głowę prosto";
+
+"FaceTec_feedback_face_not_upright" = "Trzymaj głowę prosto";
+
+"FaceTec_feedback_hold_steady" = "Nie ruszaj się";
+
+"FaceTec_feedback_move_phone_away" = "Oddal";
+
+"FaceTec_feedback_move_phone_away" = "Oddal";
+
+"FaceTec_feedback_move_phone_closer" = "Zbliż się";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Podnieś kamerę do poziomu oczu";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Spójrz prosto w kamerę";
+
+"FaceTec_feedback_move_web_closer" = "Zbliż się";
+
+"FaceTec_feedback_move_web_even_closer" = "Jeszcze bliżej";
+
+"FaceTec_feedback_use_even_lighting" = "Oświetl twarz";
+
+"FaceTec_idscan_additional_review_message" = "Wymagana<br/>dodatkowa weryfikacja";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Pokaż tył dokumentu tożsamości";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Pokaż przód dokumentu tożsamości";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Sprawdź i potwierdź";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Przewiń w dół";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Potwierdź, że zdjęcie jest wyraźne i czytelne";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Potwierdź, że zdjęcie jest wyraźne i czytelne";
+
+"FaceTec_idscan_type_selection_header" = "Przygotuj się<br/>do zeskanowania dokumentu tożsamości";
+
+"FaceTec_initializing_camera" = "Zabezpieczanie obrazu z kamery";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Przygotuj się do";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "rejestracji wideo własnej twarzy";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Przygotuj się do rejestracji wideo własnej twarzy";
+
+"FaceTec_instructions_message_ready_1" = "Wykadruj twarz w owalu,";
+
+"FaceTec_instructions_message_ready_2" = "potwierdź gotowość przyciskiem, i przybliż się";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Wykadruj twarz w owalu, potwierdź gotowość przyciskiem, i przybliż się";
+
+"FaceTec_presession_brighten_your_environment" = "Otoczenie musi być jaśniejsze";
+
+"FaceTec_presession_conditions_too_bright" = "Zbyt jasno";
+
+"FaceTec_presession_eyes_straight_ahead" = "Patrz przed siebie";
+
+"FaceTec_presession_frame_your_face" = "Opraw twarz w owal";
+
+"FaceTec_presession_hold_steady_1" = "Nie ruszaj się: 1";
+
+"FaceTec_presession_hold_steady_2" = "Nie ruszaj się: 2";
+
+"FaceTec_presession_hold_steady_3" = "Nie ruszaj się: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Patrz przed siebie";
+
+"FaceTec_presession_neutral_expression" = "Neutralny wyraz twarzy, nie uśmiechaj się";
+
+"FaceTec_presession_remove_dark_glasses" = "Zdejmij okulary przeciwsłoneczne";
+
+"FaceTec_result_facescan_upload_message" = "Przesyłanie<br/>zaszyfrowanego<br/>skanu twarzy 3D";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Nie udało się zeskanować kodu kreskowego<br/>Spróbuj ponownie";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Brak dostatecznego<br/>dopasowania twarzy";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Dokument tożsamości<br/>nie jest w pełni widoczny";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Typ dokumentu tożsamości nie jest obsługiwany<br/>Użyj innego dokumentu tożsamości";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Tekst na dokumencie tożsamości jest nieczytelny";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Zakończono<br/>przechwytywanie zdjęcia dokumentu tożsamości";
+
+"FaceTec_result_idscan_success_back_side_message" = "Skanowanie dokumentu tożsamości zakończone";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Przód dokumentu tożsamości<br/>zeskanowany";
+
+"FaceTec_result_idscan_success_front_side_message" = "Skanowanie dokumentu tożsamości zakończone";
+
+"FaceTec_result_idscan_success_passport_message" = "Skanowanie paszportu zakończone";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Skanowanie dokumentu tożsamości ze zdjęciem<br/>zakończone";
+
+"FaceTec_result_idscan_unsuccess_message" = "Zdjęcie z dokumentu tożsamości<br/>nie pasuje do<br/>twarzy użytkownika";
+
+"FaceTec_result_idscan_upload_message" = "Przesyłanie<br/>zaszyfrowanego<br/>dokumentu tożsamości";
+
+"FaceTec_result_success_message" = "Zakończono pomyślnie!";
+
+"FaceTec_retry_header" = "Spróbujmy jeszcze raz";
+
+"FaceTec_retry_ideal_image_label" = "Idealna pozycja";
+
+"FaceTec_retry_instruction_message_1" = "Neutralny wyraz twarzy, bez uśmiechu";
+
+"FaceTec_retry_instruction_message_2" = "Brak olśnienia lub ekstremalnego oświetlenia";
+
+"FaceTec_retry_instruction_message_3" = "Zbyt rozmazane. Wyczyść aparat";
+
+"FaceTec_retry_subheader_message" = "Potrzebujemy wyraźniejszego wideo twarzy";
+
+"FaceTec_retry_your_image_label" = "Twoje selfie";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Zatrzymaj procedurę";
+
+"FailureScreen.TooManyAttempts.Description" = "Aby uzyskać pomoc, skontaktuj się z usługodawcą";
+
+"FailureScreen.TooManyAttempts.Header" = "Weryfikacja została zablokowana – podjęto zbyt wiele prób";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Urządzenie jest zablokowane.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Zbyt wiele prób";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Urządzenie nie jest obsługiwane.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "błąd";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Spróbuj ponownie później.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Błąd licencji";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Klucz stracił ważność, zawiera nieprawidłowy tekst lub próbujesz go zainicjować w domenie, która nie została określona w kluczu.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Klucz stracił ważność lub jest nieprawidłowy";
+
+"LoadResultReason.NetworkIssues.Description" = "Nie można kontynuować z powodu problemów z połączeniem na Twoim urządzeniu";
+
+"LoadResultReason.NetworkIssues.Header" = "Problemy z siecią";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Nie można załadować zasobów.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Błąd";
+
+"LoadResultReason.StillLoadingResources.Description" = "Trwa ładowanie zasobów.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Błąd";
+
+"FaceTec_action_im_ready" = "Wszystko gotowe";
+
+"ReadyScreen.Header" = "Przygotuj się do zrobienia selfie wideo";
+
+"RetryScreen.Action.PassiveLiveness" = "Wypróbuj alternatywną metodę";
+
+"FaceTec_action_try_again" = "Spróbuj ponownie";
+
+"RetryScreen.Description" = "Potrzebujemy wyraźniejszego zdjęcia.";
+
+"RetryScreen.Header" = "Spróbujmy jeszcze raz";
+
+/*  */
+"RetryScreen.Message.Generic" = "Używaj spójnego oświetlenia i kopiuj idealną pozę";
+
+"UploadScreen.Description" = "Trzymaj to okno otwarte";
+
+"UploadScreen.Header" = "Weryfikacja zdjęcia twarzy";
+

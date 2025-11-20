@@ -1,251 +1,857 @@
-"ondato_continue_anyway" = "Все равно продолжить";
-"ondato_loading_title" = "Проверяем..";
-"ondato_loading_subtitle" = "Пожалуйста, подождите...";
-"ondato_choose_document_passport" = "Паспорт";
-"ondato_choose_document_id_card" = "ID карта";
-"ondato_choose_document_driving_licence" = "Водительское удостоверение";
-"ondato_success_title" = "Идентификация завершена";
-"ondato_success_subtitle" = "О подтверждении идентификации мы проинформируем вас по электронной почте";
-"ondato_close" = "Закрыть";
-"ondato_try_again" = "Попробовать еще раз";
-"ondato_capture_passport_front_title" = "Пожалуйста запечатлите главную страницу документа которая содержит MRZ зону";
-"ondato_capture_id_card_front_title" = "Пожалуйста, запечатлите переднюю сторону идентификационной карты";
-"ondato_capture_driver_licence_front_title" = "Пожалуйста, запечатлите переднюю часть водительских прав";
-"ondato_error_unauthorized_message" = "UNAUTHORIZED";
-"ondato_error_bad_request_message" = "BAD_REQUEST";
-"ondato_error_internal_server_error_message" = "INTERNAL SERVER ERROR";
-"ondato_error_connection_failed" = "CONNECTION ERROR";
-"ondato_error_server_is_down_message" = "SERVER IS DOWN";
-"ondato_error_default_title" = "Oops...";
-"ondato_error_timeout_message" = "Сессия завершена";
-"ondato_start_button" = "Начать";
-"ondato_error_something_wrong_title" = "Произошла ошибка";
-"ondato_consent_title" = "Соглашение на обработку личных данных";
-"ondato_consent_terms" = "С целью получения услуг от Поставщика Услуг, этим подтверждением я выражаю свое согласие с тем, что UAB \"Ondato\" будет получать и управлять моими личными данными, включая мои биометрические данные, полученные в результате удаленной идентификации моей личности путем сбора и / или съемки живого изображения моего лица, моей личности или документа, использованного для идентификации, и / или изображения и личные данные, находящиеся у них, и / или полученные в результате проверки в реестре населения: изображение моего лица, имя, фамилию, национальность, пол, личный код, дату рождения, номера используемого документа, дату выдачи и срок действия, мою подпись, и передачей этих данных Поставщику Услуг. Я также отмечаю, что меня проинформировали о том, что контролером моих личных данных, включая мои биометрические данные, указанные в этом согласии, является Поставщик Услуг, и UAB \"Ondato\" будет обрабатывать мои личные данные только до завершения процедуры удаленной идентификации, а результаты будут переданы Поставщику Услуг. Я также заявляю, что я проинформирован(-а) и согласен(-на) с тем, что мои личные данные, полученные для удаленной идентификации и ее цели могут храниться UAB \"Ondato\" в течение более длительного периода времени, чем потребуется для завершения идентификации или передачи ее результатов Поставщику Услуг, но только по запросу Поставщика Услуг или договорных обязательств UAB \"Ondato\" перед Поставщиком Услуг, однако не дольше, чем это определено в Контракте, который был подписан между UAB \"Ondato\" и Поставщиком Услуг или по запросу Поставщика Услуг. Я проинформирован о том, что могу связаться с поставщиком услуг по поводу моих персональных данных для получения более подробной информации. Настоящим я заявляю и подтверждаю, что все личные данные, которые я предоставляю для удаленной идентификации с целью моей личной идентификации, верны и точны, а документ, который я буду использовать в этих целях, является оригинальным и действительным.";
-"ondato_consent_agree" = "Согласен(-на)";
-"ondato_consent_disagree" = "Не согласен(-на)";
-"FailedRule_PersonPhotoContainsFace_title" = "Не получилось распознать фотографию лица";
-"FailedRule_DocContainsFace_title" = "Не получилось идентифицировать лицо на фотографии документа";
-"FailedRule_DocContainsMrz_title" = "Не получилось считать MRZ зону";
-"FailedRule_PersonAndDocPhotoMatch_title" = "Не получилось идентифицировать фотографию лица с документом";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_title" = "Не получилось распознать лицо на документе";
-"FailedRule_DocExpireDateInFuture_title" = "Закончился срок действия документа";
-"FailedRule_PersonAndDocumentPersonCodeMatch_title" = "Личный код не совпадает с личным кодом указанным в анкете";
-"FailedRule_PersonFaceOrDocIsMonochrome_title" = "Загружена черно-белая версия документа";
-"FailedRule_DocumentContainsBothSides_title" = "Не совпадают типы документов";
-"FailedRule_ContainsMultipleFaces_title" = "Во время идентификации были распознаны несколько человек";
-"FailedRule_PersonFoundInComplyAdvantage_title" = "Человек с вашим именем был найден в санкционном списке";
-"FailedRule_ContainsCelebrity_title" = "Идентифицирован известный человек";
-"FailedRule_LostAndStolen_title" = "Ваш документ был идентифицирован как недействительный в документной базе данных";
-"FailedRule_PersonPhotoContainsFace_subtitle" = "Сделайте, пожалуйста, фотографию лица в реальном времени. Ваше лицо должно быть отчетливо видно, помещение хорошо освещено, а изображение не должно быть размытым.";
-"FailedRule_DocContainsFace_subtitle" = "На фотографии документа не получилось распознать ваше лицо. Загрузите страницу документа, где есть ваше фото. Ваш документ должен быть отчетливо виден, помещение хорошо освещено, а изображение не должно быть размытым";
-"FailedRule_DocContainsMrz_subtitle" = "Не получилось распознать MRZ зону. Загрузите страницу документа, где находится MRZ зона. Ваш документ должен быть отчетливо виден, помещение хорошо освещено, а изображение не должно быть размытым";
-"FailedRule_PersonAndDocPhotoMatch_subtitle" = "Не получилось сопоставить ваше лицо из фотографии с фотографией из документа. Пожалуйста, проверьте, чтобы во время фотографирования формат подачи лица был такой же, как на фотографии в документе. Снимите с лица очки и другие аксессуары";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_subtitle" = "На фотографии документа не получилось распознать ваше лицо. Загрузите страницу документа, где есть ваше фото. Ваш документ должен быть отчетливо виден, помещение хорошо освещено, а изображение не должно быть размытым";
-"FailedRule_DocExpireDateInFuture_subtitle" = "Срок действия вашего документа закончился. Пожалуйста, загрузите действительный документ";
-"FailedRule_PersonAndDocumentPersonCodeMatch_subtitle" = "Ваш личный код из документа не совпадает с личным кодом, который был указан в анкете регистрации. Пожалуйста, загрузите личный документ, данные которого вы указали в анкете";
-"FailedRule_PersonFaceOrDocIsMonochrome_subtitle" = "Вы загрузили черно-белую копию документа. Напоминаем, что нужно сфотографировать реальный документ. Ваш документ должен быть отчетливо виден, помещение хорошо освещено, а изображение не должно быть размытым";
-"FailedRule_DocumentContainsBothSides_subtitle" = "Вы загрузили фотографии разных документов. Напоминаем, что загрузить нужно фотографии того же самого документа с обеих сторон. Документ должен быть отчетливо виден, помещение хорошо освещено, а изображение не должно быть размытым";
-"FailedRule_ContainsMultipleFaces_subtitle" = "Во время идентификации система распознала несколько персон. Пожалуйста, проследите, чтобы во время идентификации был виден только тот человек, чьи документы вы прилагаете";
-"FailedRule_PersonFoundInComplyAdvantage_subtitle" = "Человек с вашим именем был обнаружен в санкционном списке. Мы рассмотрим вашу попытку идентификации вручную и проинформируем вас о результате. Нажмите \"Продолжить\"";
-"FailedRule_ContainsCelebrity_subtitle" = "Мы распознали известного человека на одной из ваших фотографий. Напоминаем, что нужно загрузить фотографии своего собственного лица и документов";
-"FailedRule_LostAndStolen_subtitle" = "Ваш документ был распознан как недействительный в документной базе данных. Пожалуйста, загрузите другой документ";
-"FaceTecRetryReasonGeneric_title" = "Не получилось распознать лицо";
-"FaceTecRetryReasonGeneric_subtitle" = "Просим убедиться, что ваше лицо не заслоняют посторонние объекты, и во время идентификации вы не воспроизводите необычных выражений лица";
-"FaceTecRetryReasonBadLighting_title" = "Плохое освещение";
-"FaceTecRetryReasonBadLighting_subtitle" = "Не получилось завершить идентификацию по причине плохого освещения лица. Пожалуйста, убедитесь, что ваше лицо хорошо и равномерно освещено";
-"FaceTecRetryReasonFaceAngle_title" = "Неподходящий угол подачи лица";
-"FaceTecRetryReasonFaceAngle_subtitle" = "Пожалуйста, убедитесь в том, что ваше лицо попадает в указанную зону, и вы смотрите прямо в камеру";
-"FaceTecRetryReasonBadLightingFailureToAcquire_title" = "Слишком яркое освещение";
-"FaceTecRetryReasonBadLightingFailureToAcquire_subtitle" = "Не получилось завершить идентификацию по причине слишком яркого освещения. Пожалуйста, убедитесь в том, что ваше лицо хорошо и равномерно освещено.";
-"FaceTec_feedback_center_face" = "Ваше лицо должно быть в центре";
-"FaceTec_action_continue" = "Продолжить";
-"FaceTec_action_im_ready" = "Готов(-а)";
-"FaceTec_camera_permission_header" = "Активировать камеру";
-"FaceTec_camera_permission_message_enroll" = "Активируйте фронтальную камеру";
-"FaceTec_camera_permission_message_auth" = "Доступ к камере запрещен. Нажмите, чтобы изменить настройки OS.";
-"FaceTec_camera_permission_enable_camera" = "Активировать камеру";
-"FaceTec_camera_permission_launch_settings" = "Активировать настройки";
-"FaceTec_feedback_face_not_found" = "Поместите лицо в рамку";
-"FaceTec_feedback_face_not_looking_straight_ahead" = "Смотрите прямо";
+"Action.Close" = "Закрыть";
+
+"LanguageSelection.Header" = "Выберите язык";
+
+"Modals.Abort.Action.ContinueProcess" = "Продолжить процесс";
+
+"Modals.Abort.Action.StopProcess" = "Остановить процесс";
+
+"Modals.Abort.Heading" = "Вы уверены, что хотите прервать этот процесс?";
+
+"Modals.Error.Description" = "Что-то пошло не так, закройте это сообщение и попробуйте снова";
+
+"Modals.Error.Heading" = "Извините, возникла ошибка";
+
+"Modals.Success.Description" = "Пожалуйста, перейдите к следующему шагу";
+
+"Modals.Success.Heading" = "Успех";
+
+"Action.Agree" = "Я согласен";
+
+"Action.Disagree" = "Не согласен";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Продолжить процесс";
+
+"Disagree.Confirmation.Action.StopProcess" = "Остановить процесс";
+
+"Disagree.Confirmation.Header" = "Отклонив контент, вы остановите процесс. Вы уверены?";
+
+"Capture.Action.Capture" = "Захват";
+
+"Capture.DriverLicense.Back.Description" = "Поместите документ в кадр.";
+
+"Capture.DriverLicense.Back.Header" = "Захват оборотной стороны";
+
+"Capture.DriverLicense.Front.Description" = "Поместите документ в кадр.";
+
+"Capture.DriverLicense.Front.Header" = "Захват лицевой стороны";
+
+"Capture.IdCard.Back.Description" = "Поместите документ в кадр.";
+
+"Capture.IdCard.Back.Header" = "Захват оборотной стороны";
+
+"Capture.IdCard.Front.Description" = "Поместите документ в кадр.";
+
+"Capture.IdCard.Front.Header" = "Захват лицевой стороны";
+
+"Capture.InternalPassport.DataPage.Header" = "Захват главной страницы";
+
+"Capture.InternalPassport.FrontCover.Header" = "Захват обложки";
+
+"Capture.Passport.DataPage.Description" = "Поместите документ в кадр.";
+
+"Capture.Passport.DataPage.Header" = "Захват главной страницы";
+
+"Capture.Passport.FrontCover.Header" = "Захват обложки";
+
+"Capture.ResidencePermit.Back.Description" = "Поместите документ в кадр.";
+
+"Capture.ResidencePermit.Back.Header" = "Захват оборотной стороны";
+
+"Capture.ResidencePermit.Front.Description" = "Поместите документ в кадр.";
+
+"Capture.ResidencePermit.Front.Header" = "Захват лицевой стороны";
+
+"Capture.SocialId.Back.Description" = "Поместите документ в кадр.";
+
+"Capture.SocialId.Back.Header" = "Захват оборотной стороны";
+
+"Capture.SocialId.Front.Description" = "Поместите документ в кадр.";
+
+"Capture.SocialId.Front.Header" = "Захват лицевой стороны";
+
+"Preview.Action.Continue" = "Продолжить";
+
+"Preview.Action.Retake" = "Сделать новый снимок";
+
+"Preview.Header" = "Изображение четкое, в фокусе и без бликов?";
+
+"FaceCapture.Instructions.Action.Start" = "Начать";
+
+"FaceCapture.Instructions.Description" = "Во время съемки лицо должно быть в центре кадра.";
+
+"FaceCapture.Instructions.Header" = "Пройдите аутентификацию с помощью лица";
+
+"FaceCapture.Instructions.Subheader" = "Убедитесь в том, что:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "ваше лицо имеет нейтральное выражение";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "освещение достаточно хорошее";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "изображение получается четким";
+
+"App.Button.Close" = "Закрыть";
+
+"App.Button.Continue" = "Продолжить";
+
+"App.Errors.Default" = "Возникла неожиданная проблема. Пожалуйста, попробуйте еще раз позже";
+
+"EndPage.Action.Continue" = "Продолжить";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Спасибо. Теперь вы можете завершить процесс.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Вы все сделали!";
+
+"Action.Close" = "Закрыть";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Загрузите документ, подтверждающий адрес";
+
+"Document.Instructions.Action.Start" = "Начать";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Сфотографируйте оборотную сторону водительского удостоверения";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Сфотографируйте лицевую сторону водительского удостоверения";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Изображение не слишком размыто";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Убедитесь в том, что:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Освещение достаточно хорошее";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Данные на документе хорошо видны";
+
+"Document.Instructions.IdCard.Back.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.IdCard.Back.Heading" = "Сфотографируйте оборотную сторону удостоверения личности";
+
+"Document.Instructions.IdCard.Front.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.IdCard.Front.Heading" = "Сфотографируйте лицевую сторону удостоверения личности";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Покажите главную страницу документа, содержащую зону MRZ в отмеченной области.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Сфотографируйте главную страницу внутреннего паспорта";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Сфотографируйте обложку внутреннего паспорта";
+
+"Document.Instructions.Passport.DataPage.Description" = "Включите зону MRZ в отмеченную область.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Сфотографируйте главную страницу паспорта";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Сфотографируйте обложку паспорта";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Сфотографируйте оборотную сторону вида на жительство";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Сфотографируйте лицевую сторону вида на жительство";
+
+"Document.Instructions.SocialId.Back.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.SocialId.Back.Heading" = "Сфотографируйте оборотную сторону социального удостоверения личности";
+
+"Document.Instructions.SocialId.Front.Description" = "Поместите документ внутрь рамки";
+
+"Document.Instructions.SocialId.Front.Heading" = "Сфотографируйте лицевую сторону социального удостоверения личности";
+
+"Document.Select.Document.DriverLicense" = "Водительское удостоверение";
+
+"Document.Select.Document.IdCard" = "Удостоверение личности";
+
+"Document.Select.Document.InternalPassport" = "Внутренний паспорт";
+
+"Document.Select.Document.Passport" = "Паспорт";
+
+"Document.Select.Document.ResidencePermit" = "Вид на жительство";
+
+"Document.Select.Document.SocialId" = "Социальное удостоверение личности";
+
+"Document.Select.Header" = "Выберите документ";
+
+"FaceCapture.Instructions.Description" = "Расположите лицо в центре кадра.";
+
+"FaceCapture.Instructions.Header" = "Сделайте селфи";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Изображение получается четким";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Ваше лицо имеет нейтральное выражение";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Освещение достаточно хорошее";
+
+"FaceCapture.Instructions.Subheader" = "Убедитесь в том, что:";
+
+"Result.Failure.Action.TryAgain" = "Попробовать ещё раз";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Пожалуйста, попробуйте снова и убедитесь, что документ равномерно освещен источником белого света.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "На предоставленном фото плохое освещение";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Пожалуйста, попробуйте снова и предоставьте неповрежденный документ.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Часть предоставленного документа повреждена";
+
+"Result.Failure.DocumentFromScreen.Description" = "Для завершения процесса идентификации необходимо предоставить действительную фотографию физического документа";
+
+"Result.Failure.DocumentFromScreen.Header" = "Предоставленная фотография документа недействительна";
+
+"Result.Failure.DocumentIsExpired.Description" = "Для завершения процесса идентификации необходимо предоставить действительный документ";
+
+"Result.Failure.DocumentIsExpired.Header" = "Срок действия предоставленного документа истек";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Для завершения процесса идентификации используйте документ из предоставленного списка";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Тип предоставленного документа не соответствует требованиям";
+
+"Result.Failure.DocumentPrinted.Description" = "Для завершения процесса идентификации необходимо предоставить действительную фотографию физического документа";
+
+"Result.Failure.DocumentPrinted.Header" = "Предоставленная фотография документа недействительна";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Предоставьте документ с латинскими символами";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Тип предоставленного документа не соответствует требованиям";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Просим сфотографировать оригинал документа";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Не удалось осуществить идентификацию";
+
+"Result.Failure.FacesNotMatch.Description" = "Повторите попытку или обратитесь в службу поддержки клиентов";
+
+"Result.Failure.FacesNotMatch.Header" = "Фотография в документе и предоставленное селфи не совпадают";
+
+"Result.Failure.Generic.Description" = "Обратитесь в службу поддержки клиентов";
+
+"Result.Failure.Generic.Header" = "В процессе идентификации возникла проблема";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Повторите попытку, убедившись, что документ, подтверждающий адрес, действителен";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Предоставленная для подтверждения адреса фотография недействительна";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Повторите попытку, предоставив необходимые фотографии документа";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Фотография документа отсутствует";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Повторите попытку или обратитесь в службу поддержки клиентов";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Фотография лица отсутствует";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Процесс идентификации должен осуществляться без участия других лиц";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Во время процесса идентификации присутствуют посторонние";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Повторите попытку, убедившись, что данные на документе четко видны и не закрыты";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Часть предоставленного документа не видна";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Повторите попытку, следуя предоставленным инструкциям. Лицо не должно быть закрыто";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Лицо частично закрыто";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Повторите попытку, убедившись, что документ освещен равномерно";
+
+"Result.Failure.PoorPhotoLighting.Header" = "На предоставленной фотографии плохое освещение";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Повторите попытку, убедившись, что данные документа хорошо видны. Если у камеры плохое качество, воспользуйтесь другим устройством.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Предоставленная фотография низкого качества";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Повторите попытку или обратитесь в службу поддержки клиентов";
+
+"Result.Failure.SelfieHasNoFace.Header" = "На предоставленной фотографии отсутствует лицо";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Повторите попытку или обратитесь в службу поддержки клиентов";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Предоставленная фотография не подходит для идентификации";
+
+"Result.Success.Header" = "Готово!";
+
+"ResultsWaiting.Delay.Description" = "Похоже, у нас больше трафика, чем обычно. Вы будете перенаправлены в ближайшее время.";
+
+"ResultsWaiting.Delay.Header" = "К сожалению, это занимает больше времени, чем ожидалось";
+
+"ResultsWaiting.Details.Description" = "В среднем ожидание занимает 2 минуты.";
+
+"ResultsWaiting.Details.Header" = "Подождите…";
+
+"ResultsWaiting.Details.Message.Message1" = "Шифрование данных документа.";
+
+"ResultsWaiting.Details.Message.Message2" = "Проверка документа на предмет внешних повреждений.";
+
+"ResultsWaiting.Details.Message.Message3" = "Проверка фотографий предоставленного документа.";
+
+"ResultsWaiting.Details.Message.Message4" = "Проверка, являетесь ли вы реальным человеком";
+
+"ResultsWaiting.Details.Message.Message5" = "Проверка подлинности и достоверности данных.";
+
+"ResultsWaiting.Details.Message.Message6" = "Проверка статуса документа и данных в реестрах.";
+
+/*  */
+"Action.Cancel" = "Отмена";
+
+/*  */
+"Action.Loading.Header" = "Загрузка...";
+
+/*  */
+"Action.Submit" = "Отправить";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Документ успешно отсканирован";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Поместите документ в кадр.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Захватить документ";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Захватить подтверждение адреса";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Это может быть банковская выписка или счет за коммунальные услуги";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Поддерживаемые файлы: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Размер файла не может превышать 5 Мб";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Формат загруженного файла не поддерживается";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Пожалуйста, предоставьте подтверждение адреса";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Максимальный размер файла: 5 Мб";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Требования:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Должен содержать ваше полное имя и адрес.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Документ не старше 3 месяцев";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Выбрать файл";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Выбрать из галереи";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Загрузить документ";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Загрузка...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Нам нужен ваш TRN, чтобы подтвердить вашу учетную запись. Пожалуйста, введите ваш TRN так, как он указан в официальном документе, и дважды проверьте его правильность перед отправкой, чтобы избежать задержек.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Пожалуйста, укажите ваш номер налогоплательщика (ИНН)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "Номер TRN состоит из 9 цифр";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "Код ИНН:";
+
+/*  */
+"Consent.Static.Description" = "Для получения услуги от Поставщика услуг, настоящим согласием я выражаю свое согласие на то, что UAB \"Ondato\" будет получать и обрабатывать мои персональные данные, включая мои биометрические данные, полученные в результате удаленной идентификации моей личности путем съемки и/или записи живого изображения моего лица, моей личности или документа, используемого для идентификации, и/или их изображения и персональных данных, содержащихся в них, и/или проверки в реестре населения: изображение моего лица, имя, фамилия, национальность, пол, личный код, дата рождения, номера документа, который используется, дата выдачи и срок действия, моя подпись и передача таких данных Поставщику услуг. Я также отмечаю, что мне известно, что контролером моих персональных данных, включая мои биометрические данные, указанные в этом согласии, является Поставщик услуг, и UAB \"Ondato\" будет обрабатывать мои персональные данные только до завершения процедуры удаленной идентификации, и результаты будут переданы Поставщику услуг. Я также заявляю, что мне известно и я согласен с тем, что мои персональные данные, полученные для удаленной идентификации и ее целей, могут храниться UAB \"Ondato\" дольше, чем требуется для завершения идентификации или передачи ее результатов Поставщику услуг, но только по запросу Поставщика услуг или договорному обязательству UAB Ondato перед Поставщиком услуг, но не дольше, чем это определено в Договоре, подписанном между UAB \"Ondato\" и Поставщиком услуг, или запрошено Поставщиком услуг. Мне известно, что я могу подать запрос относительно моих персональных данных для получения более подробной информации по адресу info@ondato.com. Настоящим я заявляю и подтверждаю, что все персональные данные, которые я предоставлю для цели удаленной идентификации моей личности, являются правильными и точными, а документ, который я буду использовать для этой цели, не является поддельным и действителен.";
+
+/*  */
+"Consent.Static.Heading" = "Согласие на обработку персональных данных";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Поместите документ внутрь рамки";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Сфотографируйте MRZ зону вашего удостоверения личности";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Поместите документ и строку MRZ внутрь рамки";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Сфотографируйте лицевую сторону вашего удостоверения личности с MRZ линией";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Пожалуйста, покажите основную страницу документа, содержащую зону MRZ в отмеченной области.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Захватите страницу паспорта с зоной MRZ";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Подтверждение адреса";
+
+/*  */
+"Error.Interrupt.Description" = "Из-за прерываний процесс был остановлен. Пожалуйста, оставайтесь в этом приложении, пока не завершите все шаги.";
+
+/*  */
+"Error.Interrupt.Heading" = "Процесс был прерван";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Пожалуйста, переподключитесь, чтобы продолжить";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Ваше интернет-соединение пропало";
+
+/*  */
+"FaceCapture.Validation.Description" = "Пожалуйста, подождите...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Проверка вашей фотографии";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Открыть настройки";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Держите документ рядом с лицом, делая селфи";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Сфотографируйте себя, держа документ";
+
+/*  */
+"Instructions.Identification.Description" = "Чтобы продолжить использование этого сервиса, вам необходимо подтвердить, что вы соответствуете требованиям сайта.";
+
+/*  */
+"Instructions.Identification.Header" = "Добро пожаловать в процесс \n проверки личности";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Минуточку";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Завершаем последние детали";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Захват фотографии";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Расположите лицо в рамке и нажмите «Снять»";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Захватите ваше лицо";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Ваше лицо хорошо видно?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Убедитесь, что фотография четкая и читаемая";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Пожалуйста, свяжитесь со службой поддержки для получения дополнительной информации.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Ваше удостоверение личности отклонено.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Пожалуйста, свяжитесь со службой поддержки для получения дополнительной информации или попробуйте снова с другим документом.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Ваше удостоверение личности отклонено из-за запрещенной страны или штата.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Пожалуйста, повторите процесс или свяжитесь со службой поддержки.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Ваше удостоверение личности отклонено.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Пожалуйста, свяжитесь со службой поддержки клиентов для получения дополнительной информации";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Ваше удостоверение личности отклонено.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Пожалуйста, свяжитесь со службой поддержки для получения дополнительной информации.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Ваше удостоверение личности отклонено из-за возрастных ограничений.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Спасибо за ваше терпение";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Сбор информации прошел успешно";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Похоже, что у нас больше трафика, чем обычно. Вы будете перенаправлены в ближайшее время.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Извините, это занимает больше времени, чем ожидалось";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Чтобы продолжить, убедитесь, что документ поддерживает NFC и что эта функция включена на вашем устройстве.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Похоже, вы не можете продолжить без NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Поместите документ за устройство";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Сканирование... Пожалуйста, подождите";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Соединение потеряно во время сканирования.Пожалуйста, попробуйте снова.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Попробуйте снова отсканировать документ.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Похоже, процесс был прерван.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Мы не смогли прочитать документ. Пожалуйста, проверьте данные и попробуйте снова.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Неожиданный ответ от чипа. Пожалуйста, повторно отсканируйте документ.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Отсканированный документ не действителен. Попробуйте снова с поддерживаемым документом.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Обнаружено несколько чипов. Пожалуйста, отсканируйте один документ за раз.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Ваше устройство не поддерживает NFC или в данный момент он отключен. Пожалуйста, переключитесь на совместимое устройство или включите NFC в настройках.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC не поддерживается";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Возникли трудности?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Приложите удостоверение личности к задней стороне телефона";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Поместите удостоверение личности на заднюю сторону телефона для сканирования NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Сканируйте вашу ID-карту с помощью NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Поместите паспорт на заднюю сторону телефона для сканирования NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Сканируйте ваш паспорт с помощью NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Отмена";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Пожалуйста, включите NFC, чтобы продолжить процесс";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC выключен";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Настройки";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Приложите первую страницу паспорта к задней стороне телефона";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Если у вас возникли трудности с доступом к NFC, попробуйте следующие методы:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Попробуйте прочитать последнюю страницу документа.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Попробуйте прочитать страницу с фотографией документа.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Если на документе есть обложка, снимите её.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Пожалуйста, поднесите документ к задней части вашего телефона.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Сканировать документ";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Советы, которые стоит попробовать";
+
+"Action.Cancel" = "Отменить";
+
+"CaptureResultReason.TimeOut.Description" = "Повторите попытку";
+
+"CaptureResultReason.TimeOut.Header" = "Время ожидания истекло";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Отмена";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Лицо смотрит намного левее";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Лицо смотрит намного правее";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Лицо не в камере";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Лицо повернуто намного левее";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Лицо повернуто намного правее";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Лицо намного левее";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Лицо намного правее";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Лицо слишком высоко";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Лицо слишком низко";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Держите устройство на уровне глаз";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Переместите камеру на уровень глаз";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Камера слишком близко";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Камера слишком далеко";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Лицо слишком близко";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Лицо слишком далеко";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Нажмите Enter или пробел, чтобы получить инструкции по кадрированию лица";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Дважды коснитесь экрана, чтобы получить инструкции по кадрированию лица";
+
+"FaceTec_camera_feed_issue_action" = "ПОПРОБОВАТЬ ЕЩЁ РАЗ";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Проблема с защитой данных с камеры";
+
+"FaceTec_camera_feed_issue_header" = "Проблема с защитой<br/>данных с камеры";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Проверка системы невозможна по следующей причине:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Это приложение блокирует подозрительные конфигурации веб-камеры.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Подробнее</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Это приложение блокирует подозрительные конфигурации веб-камеры. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Подробнее</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Возможная проблема";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Исправить";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Камера уже используется другим приложением.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Данные о разрешениях на доступ к камере не сохраняются в Firefox.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Его необходимо закрыть.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Установите флажок «Сохранять разрешения».";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Видео редактируется сторонним приложением.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Его необходимо закрыть или удалить.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Невозможно обеспечить защиту аппаратного обеспечения.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Используйте другое устройство.";
+
+"FaceTec_camera_permission_header" = "Включить камеру";
+
+"FaceTec_camera_permission_message" = "Нет разрешений на доступ к камере.<br/>Проверьте настройки операционной системы и браузера.";
+
+"FaceTec_enter_fullscreen_action" = "ПЕРЕЙТИ В ПОЛНОЭКРАННЫЙ РЕЖИМ";
+
+"FaceTec_enter_fullscreen_header" = "Полноэкранный режим селфи";
+
+"FaceTec_enter_fullscreen_message" = "Прежде чем начать, нажмите кнопку ниже, чтобы открыть полноэкранный режим.";
+
+"FaceTec_feedback_center_face" = "Поместите свое лицо в центр";
+
+"FaceTec_feedback_face_not_found" = "Поместите свое лицо в рамку";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Смотрите прямо перед собой";
+
 "FaceTec_feedback_face_not_upright" = "Держите голову прямо";
+
+"FaceTec_feedback_face_not_upright" = "Держите голову прямо";
+
 "FaceTec_feedback_hold_steady" = "Не двигайтесь";
-"FaceTec_feedback_move_phone_away" = "Отдалите телефон от себя";
-"FaceTec_feedback_move_phone_closer" = "Приблизьте телефон";
-"FaceTec_feedback_move_phone_even_closer" = "Приблизьте еще немного";
-"FaceTec_feedback_move_phone_to_eye_level" = "Поднимите телефон до уровня глаз";
-"FaceTec_feedback_use_even_lighting" = "Следите за равномерным освещением лица";
-"FaceTec_instructions_header_lighting" = "Следите за равномерным освещением лица";
-"FaceTec_instructions_header_face_angle" = "Держите камеру телефона на уровне глаз";
-"FaceTec_instructions_header_ready_1" = "Приготовьтесь и";
-"FaceTec_instructions_header_ready_2" = "сфотографируйте свое лицо";
-"FaceTec_instructions_message_ready" = "Поместите лицо в указанную рамку";
-"FaceTec_result_facescan_upload_message" = "Пожалуйста, подождите. Идет загрузка...";
-"FaceTec_result_success_message" = "Лицо идентифицировано";
-"FaceTec_instructions_message_ready_1" = "Поместите лицо в овальную область";
-"FaceTec_instructions_message_ready_2" = "";
-"FaceTec_presession_position_face_straight_in_oval" = "Смотрите прямо в камеру";
-"FaceTec_presession_hold_steady_3" = "Не двигайтесь: 3";
-"FaceTec_presession_hold_steady_2" = "Не двигайтесь: 2";
+
+"FaceTec_feedback_move_phone_away" = "Отодвиньтесь дальше";
+
+"FaceTec_feedback_move_phone_away" = "Отодвиньтесь дальше";
+
+"FaceTec_feedback_move_phone_closer" = "Придвиньтесь ближе";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Держите камеру на уровне глаз";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Смотрите Прямо В Камеру";
+
+"FaceTec_feedback_move_web_closer" = "Приблизьте лицо и заполните овал";
+
+"FaceTec_feedback_move_web_even_closer" = "Еще Ближе";
+
+"FaceTec_feedback_use_even_lighting" = "Осветите лицо более равномерно";
+
+"FaceTec_idscan_additional_review_message" = "Требуется дополнительная<br/>проверка";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Покажите обратную сторону удостоверения личности";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Покажите лицевую сторону удостоверения личности";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Проверить и подтвердить";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Прокрутка вниз";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Убедитесь, что снимок четкий и текст на нём разборчивый";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Убедитесь, что снимок четкий и текст на нём разборчивый";
+
+"FaceTec_idscan_type_selection_header" = "Подготовьтесь к сканированию<br/>удостоверения личности";
+
+"FaceTec_initializing_camera" = "Защита данных с камеры";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Приготовьтесь";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "Ваше видеоселфи";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Приготовьтесь снять видеоселфи";
+
+"FaceTec_instructions_message_ready_1" = "Лицо должно находиться в овальной рамке,";
+
+"FaceTec_instructions_message_ready_2" = "Нажмите «I'm Ready» и приблизьте устройство к лицу";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Лицо должно оказаться в овальной рамке. Нажмите «I'm Ready» и приблизьте устройство к лицу";
+
+"FaceTec_presession_brighten_your_environment" = "Сделайте свою обстановку ярче";
+
+"FaceTec_presession_conditions_too_bright" = "Слишком яркая обстановка";
+
+"FaceTec_presession_eyes_straight_ahead" = "Смотрите прямо перед собой";
+
+"FaceTec_presession_frame_your_face" = "Поместите свое лицо в овал";
+
 "FaceTec_presession_hold_steady_1" = "Не двигайтесь: 1";
-"FaceTec_presession_eyes_straight_ahead" = "Смотрите прямо в камеру";
-"FaceTec_presession_remove_dark_glasses" = "Снимите солнечные очки";
-"FaceTec_presession_neutral_expression" = "Нейтральное выражение лица. Не улыбайтесь";
-"FaceTec_presession_conditions_too_bright" = "Слишком яркое освещение";
-"FaceTec_presession_brighten_your_environment" = "Недостаточно света";
-"FaceTec_retry_header" = "Давайте попробуем еще раз...";
-"FaceTec_presession_frame_your_face" = "Поместите лицо в овальную область";
-"FaceTec_retry_subheader_message" = "Нам нужно более четкое видеоселфи.";
-"FaceTec_retry_instruction_message_1" = "Нейтральное выражение лица. Не улыбайтесь";
-"FaceTec_retry_instruction_message_2" = "Избегайте бликов или слишком яркого освещения";
-"FaceTec_retry_instruction_message_3" = "Изображение размыто, протрите камеру";
-"FaceTec_retry_your_image_label" = "Ваше селфи";
+
+"FaceTec_presession_hold_steady_2" = "Не двигайтесь: 2";
+
+"FaceTec_presession_hold_steady_3" = "Не двигайтесь: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Смотрите прямо перед собой";
+
+"FaceTec_presession_neutral_expression" = "Нейтральное выражение лица, без улыбки";
+
+"FaceTec_presession_remove_dark_glasses" = "Снимите темные очки";
+
+"FaceTec_result_facescan_upload_message" = "Загрузка<br/>зашифрованного<br/>3D-снимка лица";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Не удалось отсканировать штрих-код.<br/>Повторите попытку";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Лицо недостаточно<br/>соответствует фотографии";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Удостоверение личности<br/>видно не полностью";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Тип удостоверения личности не поддерживается.<br/>Используйте другой документ";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Неразборчивый текст на удостоверении личности";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Съемка удостоверения личности<br/>завершена";
+
+"FaceTec_result_idscan_success_back_side_message" = "Сканирование удостоверения личности завершено";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Лицевая сторона<br/>отсканированного удостоверения личности";
+
+"FaceTec_result_idscan_success_front_side_message" = "Сканирование удостоверения личности завершено";
+
+"FaceTec_result_idscan_success_passport_message" = "Сканирование паспорта завершено";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Сканирование удостоверения личности с фотографией<br/>завершено";
+
+"FaceTec_result_idscan_unsuccess_message" = "Лицо пользователя<br/>не соответствует<br/>фотографии в удостоверении личности";
+
+"FaceTec_result_idscan_upload_message" = "Загрузка<br/>зашифрованного<br/>удостоверения личности";
+
+"FaceTec_result_success_message" = "Готово!";
+
+"FaceTec_retry_header" = "Попробуем ещё раз";
+
 "FaceTec_retry_ideal_image_label" = "Идеальная поза";
-"FaceTec_action_try_again" = "Попробовать еще раз";
-"ondato_button_capture" = "Запечатлеть";
-"ondato_choose_document_title" = "Выберите документ и начните процесс верификации";
-"ondato_capture_id_card_front_instructions_title" = "Пожалуйста, запечатлите переднюю сторону идентификационной карты";
-"ondato_capture_id_card_front_instructions_description" = "Пожалуйста, покажите лицевую сторону вашего удостоверения личности в отмеченную область и нажмите кнопку \"Запечатлеть\". Документ должен быть четко видимым, не размытым и без пикселей";
-"ondato_capture_instructions_mistakes" = "Основные ошибки:";
-"ondato_capture_instructions_too_blurry" = "Слишком размыто";
-"ondato_capture_instructions_too_small" = "Слишком маленький размер";
-"ondato_capture_instructions_too_dark" = "Слишком темно";
-"ondato_capture_instructions_bad_lighting" = "Плохое освещение";
-"ondato_capture_instructions_not_neutral" = "Выражение лица не нейтральное";
-"ondato_capture_passport_front_instructions_title" = "Пожалуйста запечатлите главную страницу документа которая содержит MRZ зону";
-"ondato_capture_driver_license_front_instructions_title" = "Пожалуйста, запечатлите переднюю часть водительских прав";
-"ondato_capture_driver_license_front_instructions_description" = "Пожалуйста, покажите лицевую сторону водительских прав в отмеченной области и нажмите кнопку \"Запечатлить\". Фотография водительских прав должна быть четко видна, не размыта и без пикселей";
-"ondato_capture_check_taken_photo" = "Проверьте качество фото";
-"ondato_capture_check_taken_photo_description" = "Убедитесь, что фотография четко показывает всю необходимую информацию и данные легко читаются. Если качество фотографии хорошее, нажмите \"Продолжить\"";
-"ondato_capture_id_card_back_instructions_description" = "Пожалуйста, покажите обратную сторону идентификационной карты в отмеченной области и нажмите кнопку \"Запечатлеть\". Убедитесь, что зона MRZ хорошо видна, а документ не размыт и без пикселей";
-"ondato_capture_mrz_instructions_title" = "Подготовьте документ к запечатлению зоны MRZ";
-"ondato_capture_mrz_id_instructions_description" = "Покажите обратную сторону вашего удостоверения личности, на которой указана зона MRZ. Документ должен быть хорошо виден, не размыт и не пикселизирован.";
-"ondato_capture_mrz_instructions_title" = "Подготовьте документ к запечатлению зоны MRZ";
-"ondato_capture_passport_front_instructions_description" = "Покажите главную страницу документа, содержащую MRZ-зону в отмеченной области. Документ должен быть хорошо виден, не размыт и не пикселизирован.";
-"ondato_capture_driver_license_back_instructions_title" = "Пожалуйста, запечатлите оборотную сторону водительских прав";
-"ondato_capture_driver_license_back_title" = "Пожалуйста, запечатлите оборотную сторону водительских прав";
-"ondato_capture_driver_license_back_instructions_description" = "Пожалуйста, покажите обратную сторону водительских прав в отмеченную область и нажмите кнопку \"Запечатлеть\". Водительские права должны быть четко видны, не размыты и без пикселей";
-"ondato_capture_face_instructions_title" = "Предоставьте фотографию своего лица";
-"ondato_capture_face_instructions_description" = "Поместите лицо в рамку и убедитесь в том, что ваше лицо хорошо видно и равномерно освещено.";
-"ondato_start_identification_title" = "Добро пожаловать! Вы должны пройти процесс подтверждения личности";
-"ondato_start_identification_description" = "Чтобы продолжить пользоваться этой услугой, вам необходимо подтвердить, что вы соответствуете требованиям. Процесс проверки состоит из 3 шагов";
-"ondato_start_identification_step_1" = "1. Выберите документ";
-"ondato_start_identification_step_2" = "2. Сделайте фото документа";
-"ondato_start_identification_step_3" = "3. Отсканируйте лицо";
-"ondato_start_identification_nfc_step_1" = "1. Выберите документ";
-"ondato_start_identification_nfc_step_2" = "2. Отсканируйте NFC";
-"ondato_start_identification_nfc_step_3" = "3. Отсканируйте лицо";
-"ondato_capture_selfie_with_document_instructions_title" = "Сделайте снимок, держа документ в руках";
-"ondato_capture_selfie_with_document_instructions_description" = "Держите документ рядом со своим лицом, делая свое фото (селфи)";
-"ondato_capture_yourself_with_document_title" = "Сделайте снимок, держа документ в руках";
-"ondato_capture_check_taken_photo_with_document" = "Пожалуйста, проверьте сделанное фото";
-"ondato_capture_check_taken_photo_with_document_description" = "Убедитесь, что фото четкое";
-"ondato_capture_id_card_back_instructions_title" = "Пожалуйста, запечатлите обратную сторону вашей идентификационной карты";
-"ondato_capture_id_card_back_title" = "Пожалуйста, запечатлите обратную сторону вашей идентификационной карты";
 
-// Waiting page
-"ondato_unrelatedPhotoSubmit_primary" = "Идентификация вашей личности не выполнена, так как представлена несоответствующая фотография";
-"ondato_dataNotMatch_second" = "Пожалуйста, проверьте информацию, указанную в форме клиента. Информация в форме клиента должна совпадать с информацией в вашем документе.";
-"ondato_incorrect_information_provided_second" = "Пожалуйста, снова выполните действия или обратитесь за помощью клиентам.";
-"ondato_waiting_page_success_title" = "Ваша идентификация прошла успешно.";
-"ondato_waiting_page_verify_your_identity" = "Ваши данные будут использованы только для проверки тождества вашей личности.";
-"ondato_waiting_page_facial_photo_obscured" = "Проверяем, не закрывают ли фотографию вашего лица тени и отраженный свет.";
-"ondato_prohibitedCountryOrState_second" = "Пожалуйста, свяжитесь с поставщиком услуг для получения подробной информации или попробуйте еще раз с другим документом.";
-"ondato_underagePerson_second" = "Убедительно просим вас связаться с поставщиком услуг для получения дополнительной информации.";
-"ondato_waiting_page_encrypt_data_for_final_approval" = "Шифруем данные и передаем для окончательного подтверждения.";
-"ondato_partOfDocumentIsCovered_second" = "Мы просим вас повторить процесс идентификации, убедившись, что документ хорошо читается и данные на нём не прикрыты";
-"ondato_waiting_page_check_if_all_photos_uploaded" = "Проверяем, все ли необходимые фотографии вы представили.";
-"ondato_blurred_photo_second" = "Мы просим вас повторить процесс идентификации и убедиться, что данные документа четко читаются";
-"ondato_sanctioned_primary" = "Ваша идентификация отклонена.";
-"ondato_missingDocumentPhoto_second" = "Мы просим вас повторить процесс идентификации и сделать все необходимые снимки вашего документа";
-"ondato_documentNotAccepted_primary" = "Идентификация вашей личности не выполнена, так как документ не подходит";
-"ondato_poorPhotoLighting_second" = "Мы просим вас повторить процесс идентификации и обеспечить равномерное освещение документа";
-"ondato_waiting_page_biometric_data" = "Из биометрических данных вашего лица создаем 3D-модель.";
-"ondato_bad_media_format_second" = "Мы просим вас сфотографировать ваш оригинальный документ";
-"ondato_dataNotMatch_primary" = "Идентификация вашей личности не выполнена, так как не совпадает информация в документе и в форме клиента";
-"ondato_waiting_page_success_body" = "Спасибо за терпение.";
-"ondato_underagePerson_primary" = "Идентификация вашей личности не выполнена из-за возрастных ограничений";
-"ondato_expiration_date_mismatch_primary" = "Возникла проблема с вашей идентификацией.";
-"ondato_documentIsExpired_second" = "Вы должны запечатлить действительный документ, чтобы завершить процесс идентификации";
-"ondato_documentWithNonLatinCharacters_primary" = "Идентификация вашей личности не выполнена, так как тип документа не подходит";
-"ondato_incorrect_information_provided_primary" = "Возникла проблема с вашей идентификацией.";
-"ondato_facesNotMatch_primary" = "Ваша идентификация отклонена из-за несоответствия вашей фотографии себя и фотографии документа.";
-"ondato_waiting_page_document_facial_image" = "Проверяем, хорошо ли на вашем документе видна фотография лица .";
-"ondato_more_than_one_person_second" = "Процесс идентификации должен выполняться без участия других людей";
-"ondato_doc_and_bio_age_doesnt_match_second" = "Пожалуйста, снова выполните действия или обратитесь за помощью клиентам.";
-"ondato_partOfFaceIsCovered_primary" = "Ваша идентификация отклонена из-за того, что лицо закрыто.";
-"ondato_waiting_page_authenticity" = "Проверяем аутентичность и законность данных.";
-"name" = "ru";
-"ondato_name_mismatch_primary" = "Возникла проблема с вашей идентификацией.";
-"ondato_duplicatedInfo_primary" = "Ваша идентификация отклонена.";
-"ondato_miscellaneous_second" = "Мы просим вас связаться с поставщиком услуг для получения дополнительной информации";
-"ondato_possibleFraudAttempt_second" = "Мы просим вас связаться с поставщиком услуг для получения дополнительной информации";
-"ondato_waiting_page_failure_close_title" = "Закрыть";
-"ondato_something_went_wrong_second" = "Попробуйте еще раз.";
-"ondato_doc_and_bio_age_doesnt_match_primary" = "Возникла проблема с вашей идентификацией.";
-"ondato_missingPersonPhoto_second" = "Мы просим вас повторить процесс идентификации в соответствии с предоставленными инструкциями";
-"ondato_waiting_page_success_continue_title" = "Продолжить";
-"ondato_waiting_page_taking_longer_than_expected" = "Ваша проверка занимает больше времени, чем планировалось. Пожалуйста, не закрывайте окно, осталось несколько мгновений .";
-"ondato_bad_media_format_primary" = "Ваша идентификация отклонена.";
-"ondato_unrelatedPhotoSubmit_second" = "Вы должны сфотофрагировать действительный документ, чтобы завершить процесс идентификации";
-"ondato_waiting_page_ai_check" = "Искусственный интеллект сравнивает соответствие лица и документа.";
-"ondato_expiration_date_mismatch_second" = "Пожалуйста, снова выполните действия или обратитесь за помощью клиентам.";
-"ondato_waiting_page_external_damage" = "Проверяем, нет ли внешних повреждений вашего документа и все ли необходимые знаки видны.";
-"ondato_missingPersonPhoto_primary" = "Ваша идентификация отклонена из-за неправильной фотографии себя.";
-"ondato_facesNotMatch_second" = "Пожалуйста, снова выполните действия по идентификации личности или обратитесь за помощью клиентам.";
-"ondato_miscellaneous_primary" = "Ваша идентификация отклонена.";
-"ondato_partOfFaceIsCovered_second" = "Пожалуйста, снова выполните действия по идентификации личности в соответствии с представленными указаниями. Не закрывайте лицо.";
-"ondato_partOfDocumentIsCovered_primary" = "Идентификация вашей личности не выполнена, так как на фотографии документа закрыта информация";
-"ondato_prohibitedCountryOrState_primary" = "Идентификация вашей личности не выполнена из-за запрещенной страны или государства";
-"ondato_possibleFraudAttempt_primary" = "Ваша идентификация отклонена.";
-"ondato_waiting_page_scan_document" = "Считываем текст в документе и специальные знаки.";
-"ondato_poorPhotoQuality_second" = "Мы просим вас повторить процесс идентификации и убедиться, что данные документа четко читаются или в случае низкого качества камеры попробуйте запустить процесс на другом устройстве";
-"ondato_something_went_wrong_primary" = "Что-то пошло не так.";
-"ondato_waiting_page_encrypt_data" = "Шифруем ваши данные и отправляем на проверку.";
-"ondato_documentIsExpired_primary" = "Идентификация вашей личности не выполнена, так как истек срок действия документа";
-"ondato_prohibitedNationality_primary" = "Ваша идентификация отклонена.";
-"ondato_more_than_one_person_primary" = "Идентификация вашей личности не выполнена, так как в процессе участвуют другие лица";
-"ondato_name_mismatch_second" = "Пожалуйста, снова выполните действия или обратитесь за помощью клиентам.";
-"ondato_waiting_page_no_other_person" = "Проверяем, нет ли на ваших фотографиях посторонних лиц.";
-"ondato_waiting_page_documents_clearly_legible" = "Проверяем, все ли ваши документы хорошо читаются.";
-"ondato_documentNotAccepted_second" = "Документ, который был предоставлен, является неприемлемым. Просим вас предоставить действительный паспорт или удостоверение личности для завершения процесса идентификации";
-"ondato_documentWithNonLatinCharacters_second" = "Мы просим вас запечатлить действительный документ, признанный во всем мире, на котором есть MRZ зона";
-"ondato_sanctioned_second" = "Мы просим вас связаться с поставщиком услуг для получения дополнительной информации";
-"ondato_missingDocumentPhoto_primary" = "Идентификация вашей личности не выполнена, так как отсутствует фотография на документе";
-"ondato_blurred_photo_primary" = "Идентификация вашей личности не выполнена, так как фотография неотчетливая";
-"ondato_prohibitedNationality_second" = "Мы просим вас связаться с поставщиком услуг для получения дополнительной информации";
-"ondato_poorPhotoLighting_primary" = "Ваша идентификация отклонена из-за плохого освещения фото.";
-"ondato_waiting_page_data_in_registers" = "Проверяем статус вашего документа и данные в реестрах.";
-"ondato_poorPhotoQuality_primary" = "Ваша идентификация отклонена из-за плохого качества фотографий.";
-"ondato_waiting_page_failure_try_again_title" = "Повторить";
-"ondato_waiting_page_document_obscured" = "Проверяем, чтобы тени или отраженный свет не закрывали данные, содержащиеся в вашем документе.";
-"ondato_capture_nfc_instructions_title" = "Подготовьте документ для сканирования NFC";
-"ondato_capture_nfc_instructions_description" = "Подготовьте документ и включите NFC на своем устройстве.";
-"ondato_capture_nfc_description_scanning" = "Пожалуйста подождите. Процесс может занять ещё несколько секунд.";
-"ondato_capture_nfc_failure_title" = "Похоже, процесс был прерван.";
-"ondato_try_alternative" = "Попробуйте альтернативу";
-"ondato_passport_scan_help_title" = "Если вы столкнулись с трудностями при доступе к NFC, попробуйте следующие способы:";
-"ondato_passport_scan_help_step1" = "Попробуйте сканировать последнюю страницу документа.";
-"ondato_passport_scan_help_step2" = "Попробуйте сканировать фото страницы документа.";
-"ondato_passport_scan_help_step3" = "Если на документе есть обложка, снимите ее.";
-"ondato_capture_mrz_success_title" = "Сбор информации прошел успешно";
-"ondato_capture_mrz_success_description" = "Спасибо за терпение.";
-"ondato_continue_button" = "Продолжить";
-"ondato_capture_nfc_settings_instructions_title" = "Похоже, процесс был прерван.";
-"ondato_capture_nfc_settings_instructions_description" = "Чтобы продолжить убедитесь, что в документе есть NFC и он включен на вашем устройстве.";
-"ondato_nfc_scan_prompt_request_present" = "Поднесите документ к задней панели телефона.";
-"ondato_nfc_scan_prompt_authenticating" = "Аутентификация с документом.....";
-"ondato_nfc_scan_prompt_reading_data" = "Считывание";
-"ondato_nfc_scan_prompt_error_tag_not_valid" = "Тег недействителен.";
-"ondato_nfc_scan_prompt_error_more_than_one_tag_found" = "Похоже, процесс был прерван.";
-"ondato_nfc_scan_prompt_error_connection" = "Похоже, процесс был прерван.";
-"ondato_nfc_scan_prompt_error_invalid_mrz_key" = "Ключ МRZ недействителен для этого документа.";
-"ondato_nfc_scan_prompt_error_response" = "Похоже, процесс был прерван.";
-"ondato_capture_nfc_failure_title" = "Похоже, процесс был прерван.";
+"FaceTec_retry_instruction_message_1" = "Отсутствие бликов или сильного освещения";
 
-"ondato_interrupted_title" = "Процесс был прерван";
-"ondato_interrupted_description" = "Из-за перерывов процесс остановился. Пожалуйста, оставайтесь в этом приложении, пока не выполните все шаги.";
+"FaceTec_retry_instruction_message_2" = "Нейтральное выражение лица, без улыбки";
 
-"face_auth_too_many_attempts_title" = "Проверка заблокирована из-за слишком многих попыток";
-"face_auth_too_many_attempts_description" = "Пожалуйста, свяжитесь с поставщиком услуг за помощью";
-"face_auth_too_many_attempts_button" = "ОСТАНОВИТЬ ПРОЦЕСС";
+"FaceTec_retry_instruction_message_3" = "Слишком размыто, почистите камеру";
+
+"FaceTec_retry_subheader_message" = "Требуется более четкое видеоселфи";
+
+"FaceTec_retry_your_image_label" = "Ваше селфи";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Остановить процесс";
+
+"FailureScreen.TooManyAttempts.Description" = "Обратитесь за помощью к поставщику услуг";
+
+"FailureScreen.TooManyAttempts.Header" = "Верификация заблокирована из-за слишком большого количества предпринятых попыток";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Устройство заблокировано.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Слишком много попыток";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Устройство не поддерживается.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Не выполнено";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Повторите попытку позже.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Ошибка лицензии";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Срок действия ключа истек, он содержит недопустимый текст, или вы пытаетесь выполнить инициализацию в домене, который не связанном с ключом.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Срок действия ключа истек, или он недействителен";
+
+"LoadResultReason.NetworkIssues.Description" = "Не удалось продолжить из-за возникновения проблем с подключением на вашем устройстве";
+
+"LoadResultReason.NetworkIssues.Header" = "Проблемы с сетью";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Не удалось загрузить ресурсы.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Не выполнено";
+
+"LoadResultReason.StillLoadingResources.Description" = "Ресурсы все еще загружаются.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Не выполнено";
+
+"FaceTec_action_im_ready" = "Я готов(-а)";
+
+"ReadyScreen.Header" = "Приготовьтесь снять видеоселфи";
+
+"RetryScreen.Action.PassiveLiveness" = "Попробуйте альтернативный метод";
+
+"FaceTec_action_try_again" = "Попробовать ещё раз";
+
+"RetryScreen.Description" = "Требуется более четкое фото.";
+
+"RetryScreen.Header" = "Давайте попробуем еще раз";
+
+/*  */
+"RetryScreen.Message.Generic" = "Пожалуйста, используйте постоянное освещение и скопируйте идеальную позу";
+
+"UploadScreen.Description" = "Оставьте это окно открытым";
+
+"UploadScreen.Header" = "Проверка фотографии лица";

@@ -1,0 +1,858 @@
+"Action.Close" = "Bezárás";
+
+"LanguageSelection.Header" = "Nyelv választása";
+
+"Modals.Abort.Action.ContinueProcess" = "Folyamat folytatása";
+
+"Modals.Abort.Action.StopProcess" = "Folyamat leállítása";
+
+"Modals.Abort.Heading" = "Biztos megszakítja ezt a folyamatot?";
+
+"Modals.Error.Description" = "Hiba történt, zárja be ezt az üzenetet, és próbálja újra";
+
+"Modals.Error.Heading" = "Hoppá, hiba történt";
+
+"Modals.Success.Description" = "Lépjen tovább a következő lépésre";
+
+"Modals.Success.Heading" = "Sikerült!";
+
+"Action.Agree" = "Egyetértek";
+
+"Action.Disagree" = "Nem értek egyet";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Folyamat folytatása";
+
+"Disagree.Confirmation.Action.StopProcess" = "Folyamat leállítása";
+
+"Disagree.Confirmation.Header" = "A hozzájárulás elutasításával leállítja a folyamatot. Biztos benne?";
+
+"Capture.Action.Capture" = "Képkészítés";
+
+"Capture.DriverLicense.Back.Description" = "Helyezze a dokumentumot a keretbe.";
+
+"Capture.DriverLicense.Back.Header" = "Képkészítés a hátoldalról";
+
+"Capture.DriverLicense.Front.Description" = "Helyezze a dokumentumot a keretbe.";
+
+"Capture.DriverLicense.Front.Header" = "Képkészítés az előlapról";
+
+"Capture.IdCard.Back.Description" = "Helyezze a dokumentumot a keretbe.";
+
+"Capture.IdCard.Back.Header" = "Képkészítés a hátoldalról";
+
+"Capture.IdCard.Front.Description" = "Helyezze a dokumentumot a keretbe.";
+
+"Capture.IdCard.Front.Header" = "Képkészítés az előlapról";
+
+"Capture.InternalPassport.DataPage.Header" = "Képkészítés a főoldalról";
+
+"Capture.InternalPassport.FrontCover.Header" = "Képkészítés a borítóról";
+
+"Capture.Passport.DataPage.Description" = "Helyezze a dokumentumot a keretbe.";
+
+"Capture.Passport.DataPage.Header" = "Képkészítés a főoldalról";
+
+"Capture.Passport.FrontCover.Header" = "Képkészítés a borítóról";
+
+"Capture.ResidencePermit.Back.Description" = "Helyezze a dokumentumot a keretbe.";
+
+"Capture.ResidencePermit.Back.Header" = "Képkészítés a hátoldalról";
+
+"Capture.ResidencePermit.Front.Description" = "Helyezze a dokumentumot a keretbe.";
+
+"Capture.ResidencePermit.Front.Header" = "Képkészítés az előlapról";
+
+"Capture.SocialId.Back.Description" = "Helyezze a dokumentumot a keretbe.";
+
+"Capture.SocialId.Back.Header" = "Képkészítés a hátoldalról";
+
+"Capture.SocialId.Front.Description" = "Helyezze a dokumentumot a keretbe.";
+
+"Capture.SocialId.Front.Header" = "Képkészítés az előlapról";
+
+"Preview.Action.Continue" = "Folytatás";
+
+"Preview.Action.Retake" = "Új kép";
+
+"Preview.Header" = "A fénykép tiszta, éles és tükröződésmentes?";
+
+"FaceCapture.Instructions.Action.Start" = "Kezdés";
+
+"FaceCapture.Instructions.Description" = "A folyamat során helyezze az arcát a keret közepére.";
+
+"FaceCapture.Instructions.Header" = "Hitelesítés arccal";
+
+"FaceCapture.Instructions.Subheader" = "Ügyeljen a következőkre:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "Arckifejezése semleges";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "A világítás megfelelő";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "A kép éles";
+
+"App.Button.Close" = "Bezárás";
+
+"App.Button.Continue" = "Folytatás";
+
+"App.Errors.Default" = "Váratlan hiba történt. Próbálkozzon újra később";
+
+"EndPage.Action.Continue" = "Folytatás";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Köszönjük. Most befejezheti a folyamatot.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Minden kész!";
+
+"Action.Close" = "Bezárás";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Töltse fel lakcímigazolványát";
+
+"Document.Instructions.Action.Start" = "Kezdés";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Készítsen képet jogosítványa hátoldaláról";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Készítsen képet jogosítványa előlapjáról";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "A kép nem túl homályos";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Ügyeljen a következőkre:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "A világítás megfelelő";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "A dokumentum olvasható";
+
+"Document.Instructions.IdCard.Back.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.IdCard.Back.Heading" = "Készítsen képet személyazonosító igazolványa hátoldaláról";
+
+"Document.Instructions.IdCard.Front.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.IdCard.Front.Heading" = "Készítsen képet személyazonosító igazolványa előlapjáról";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Kérjük, mutassa meg a fő dokumentumoldalt, amely tartalmazza az MRZ-zónát a megjelölt területen.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Készítsen képet belföldi útlevele főoldaláról";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Készítsen képet a belföldi útlevél fedőlapjáról";
+
+"Document.Instructions.Passport.DataPage.Description" = "Kérjük, szerepeljen a képen az MRZ-zóna a megjelölt területen.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Készítsen képet az útlevél főoldaláról";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Készítsen képet az útlevél fedőlapjáról";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Készítsen képet a tartózkodási engedélye hátoldaláról";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Készítsen képet a tartózkodási engedélye előlapjáról";
+
+"Document.Instructions.SocialId.Back.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.SocialId.Back.Heading" = "Készítsen képet társadalombiztosítási kártyája hátoldaláról";
+
+"Document.Instructions.SocialId.Front.Description" = "Helyezze a dokumentumot a keretbe";
+
+"Document.Instructions.SocialId.Front.Heading" = "Készítsen képet társadalombiztosítási kártyája előlapjáról";
+
+"Document.Select.Document.DriverLicense" = "Vezetői engedély";
+
+"Document.Select.Document.IdCard" = "Személyazonosító igazolvány";
+
+"Document.Select.Document.InternalPassport" = "Belföldi útlevél";
+
+"Document.Select.Document.Passport" = "Útlevél";
+
+"Document.Select.Document.ResidencePermit" = "Tartózkodási engedély";
+
+"Document.Select.Document.SocialId" = "Társadalombiztosítási kártya";
+
+"Document.Select.Header" = "Válassza ki a dokumentumot";
+
+"FaceCapture.Instructions.Description" = "Igazítsa az arcát a keret közepére.";
+
+"FaceCapture.Instructions.Header" = "Készítsen magáról egy képet";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "A kép éles";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Arckifejezése semleges";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "A világítás megfelelő";
+
+"FaceCapture.Instructions.Subheader" = "Ügyeljen a következőkre:";
+
+"Result.Failure.Action.TryAgain" = "Próbálja újra";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Próbálja újra, és győződjön meg róla, hogy a dokumentum egyenletesen, fehér fényforrással van megvilágítva.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "A megadott fényképen gyenge a megvilágítás";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Próbálja újra egy másik dokumentummal.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "A mellékelt dokumentum egy része sérült";
+
+"Result.Failure.DocumentFromScreen.Description" = "Próbálja újra egy fizikai dokumentum megfelelő fényképével.";
+
+"Result.Failure.DocumentFromScreen.Header" = "A megadott dokumentumfotó érvénytelen";
+
+"Result.Failure.DocumentIsExpired.Description" = "Próbálja újra egy érvényes dokumentummal.";
+
+"Result.Failure.DocumentIsExpired.Header" = "A megadott dokumentum lejárt";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Próbálja újra egy dokumentummal a megadott listából.";
+
+"Result.Failure.DocumentNotAccepted.Header" = "A megadott dokumentumtípus nem felel meg a követelményeknek";
+
+"Result.Failure.DocumentPrinted.Description" = "Próbálja újra egy fizikai dokumentum megfelelő fényképével.";
+
+"Result.Failure.DocumentPrinted.Header" = "A megadott dokumentumfotó érvénytelen";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Próbálja újra egy latin karaktereket tartalmazó dokumentummal.";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "A megadott dokumentumtípus nem felel meg a követelményeknek";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Kérjük, az eredeti dokumentumról készítsen képet";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "A személyazonosság igazolása sikertelen";
+
+"Result.Failure.FacesNotMatch.Description" = "Próbálja újra, vagy forduljon az ügyfélszolgálathoz.";
+
+"Result.Failure.FacesNotMatch.Header" = "A megadott dokumentum és a szelfik nem egyeznek";
+
+"Result.Failure.Generic.Description" = "További információkért forduljon ügyfélszolgálatunkhoz.";
+
+"Result.Failure.Generic.Header" = "Sikertelen a személyazonosság ellenőrzése";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Próbálja újra, és győződjön meg róla, hogy érvényes a lakcímet igazoló dokumentum.";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "A megadott lakcímet igazoló fénykép érvénytelen";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Próbálja újra, és az összes szükséges fényképet töltse fel a dokumentumról.";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "A dokumentum fényképe hiányzik";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Próbálja újra, vagy forduljon az ügyfélszolgálathoz.";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Az arckép hiányzik";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Próbálja újra úgy, hogy mások ne szerepeljenek a képen.";
+
+"Result.Failure.MoreThanOnePerson.Header" = "A felhasználó nincs egyedül a folyamat során";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Próbálja újra, és győződjön meg róla, hogy a dokumentum jól olvasható, és nincs kitakarva egyetlen adat sem.";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "A mellékelt dokumentum részben ki van takarva";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Próbálja újra, és kövesse a megadott utasításokat. Ne takarja el az arcát.";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Az arca részben el van takarva";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Próbálja újra, és győződjön meg róla, hogy a dokumentum egyenletesen van megvilágítva.";
+
+"Result.Failure.PoorPhotoLighting.Header" = "A megadott fényképen gyenge a megvilágítás";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Próbálja újra, és győződjön meg róla, hogy a dokumentum adatai jól olvashatók, vagy rossz kameraminőség esetén próbálja meg egy másik eszközön elindítani a folyamatot.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "A megadott fénykép rossz minőségű.";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Próbálja újra, vagy vegye fel a kapcsolatot az ügyfélszolgálattal";
+
+"Result.Failure.SelfieHasNoFace.Header" = "A megadott fényképen nem látható arc";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Próbálja újra egy megfelelő fényképpel.";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "A mellékelt fénykép nem használható";
+
+"Result.Success.Header" = "Sikerült!";
+
+"ResultsWaiting.Delay.Description" = "Úgy tűnik, a szokásosnál nagyobb a forgalmunk. Hamarosan átirányítjuk.";
+
+"ResultsWaiting.Delay.Header" = "A folyamat sajnos a vártnál tovább tart";
+
+"ResultsWaiting.Details.Description" = "Az átlagos várakozási idő 2 perc.";
+
+"ResultsWaiting.Details.Header" = "Kérjük, várjon...";
+
+"ResultsWaiting.Details.Message.Message1" = "Dokumentumadatai titkosítása folyamatban van.";
+
+"ResultsWaiting.Details.Message.Message2" = "A dokumentum külső sérüléseinek ellenőrzése folyamatban van.";
+
+"ResultsWaiting.Details.Message.Message3" = "A megadott dokumentumfényképek ellenőrzése folyamatban van.";
+
+"ResultsWaiting.Details.Message.Message4" = "Folyamatban van annak hitelesítése, hogy Ön valós személy-e";
+
+"ResultsWaiting.Details.Message.Message5" = "Az adatok hitelességének és érvényességének ellenőrzése folyamatban van.";
+
+"ResultsWaiting.Details.Message.Message6" = "Folyamatban van a dokumentum állapotának és adatainak ellenőrzése a nyilvántartásokban.";
+
+/*  */
+"Action.Cancel" = "Mégse";
+
+/*  */
+"Action.Loading.Header" = "Betöltés...";
+
+/*  */
+"Action.Submit" = "Beküldés";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Dokumentum sikeresen beolvasva";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Helyezze a dokumentumot a keretbe.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Dokumentum rögzítése";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Rögzítse a cím igazolását";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Ez lehet egy bankszámlakivonat vagy közüzemi számla.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Támogatott fájlok: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "A fájl mérete nem lehet több, mint 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "A feltöltött fájlformátum nem támogatott";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Kérjük, adja meg a cím igazolását";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Maximális fájlméret: 5MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Követelmények:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Tartalmaznia kell a teljes nevét és címét";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "A dokumentum nem régebbi 3 hónapnál";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Fájl kiválasztása";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Válasszon a galériából";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Dokumentum feltöltése";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Feltöltés...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Szükségünk van az adószámára a fiókja ellenőrzéséhez. Kérjük, adja meg az adószámát úgy, ahogy az a hivatalos dokumentumon szerepel, és ellenőrizze kétszer is, hogy helyes-e, mielőtt elküldi, hogy elkerülje a késedelmeket.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Kérjük, adja meg az adóazonosító számát (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "A TRN szám 9 számjegyből áll";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "TRN kód:";
+
+/*  */
+"Consent.Static.Description" = "Annak érdekében, hogy a Szolgáltatótól szolgáltatást vehessek igénybe, ezzel a hozzájárulással kifejezem egyetértésemet, hogy az UAB \"Ondato\" megkapja és kezelje személyes adataimat, beleértve a biometrikus adataimat is, amelyeket a személyazonosságom távoli azonosítása során az arcom élőképének készítésével és/vagy filmezésével, a személyazonosságom vagy az azt azonosító dokumentum és/vagy azok képe, valamint az azokban található személyes adatok és/vagy a népesség-nyilvántartásban történő ellenőrzés során szereztek: az arcom képe, név, vezetéknév, állampolgárság, nem, személyi kód, születési dátum, az azonosításra használt dokumentum számai, kiállítási és érvényességi dátum, aláírásom és az ilyen adatok Szolgáltatónak történő továbbítása. Tudomásul veszem, hogy tájékoztatást kaptam arról, hogy a személyes adataim, beleértve a biometrikus adataimat is, ezen hozzájárulásban meghatározott adatkezelője a Szolgáltató, és az UAB \"Ondato\" csak a távoli azonosítási eljárás befejezéséig kezeli személyes adataimat, és az eredményeket továbbítja a Szolgáltatónak. Továbbá kijelentem, hogy tájékoztatást kaptam és egyetértek azzal, hogy a távoli azonosítás céljából megszerzett személyes adataimat az UAB \"Ondato\" hosszabb ideig tárolhatja, mint amennyi az azonosítás befejezéséhez vagy az eredmények Szolgáltatónak történő továbbításához szükséges, de csak a Szolgáltató kérésére vagy az UAB Ondato szerződéses kötelezettsége alapján a Szolgáltató felé, de nem hosszabb ideig, mint ahogyan azt az UAB \"Ondato\" és a Szolgáltató között aláírt szerződés meghatározza vagy a Szolgáltató kéri. Tájékoztatást kaptam arról, hogy kérvényt nyújthatok be személyes adataimmal kapcsolatos részletesebb információkért az info@ondato.com címen. Ezúton kijelentem és megerősítem, hogy minden személyes adat, amelyet a személyazonosságom távoli azonosításának céljából megadok, helyes és pontos, és az erre a célra használt dokumentum nem hamis és érvényes.";
+
+/*  */
+"Consent.Static.Heading" = "Hozzájárulás a személyes adatok feldolgozásához";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Helyezze a dokumentumot a keretbe";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Rögzítse a személyi igazolvány MRZ zónáját";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Helyezze a dokumentumot és az MRZ sort a keretbe";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Rögzítse a személyi igazolványának elejét MRZ vonallal";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Kérem, mutassa be a fő dokumentumoldalt, amely tartalmazza az MRZ zónát a kijelölt területen.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Készítse el az útlevél MRZ zónájának képét";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Cím igazolása";
+
+/*  */
+"Error.Interrupt.Description" = "Megszakítások miatt a folyamat leállt. Kérjük, maradjon ezen az alkalmazáson, amíg be nem fejezi az összes lépést.";
+
+/*  */
+"Error.Interrupt.Heading" = "A folyamat megszakadt";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Kérjük, csatlakozzon újra a folytatáshoz";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Az internetkapcsolata megszűnt";
+
+/*  */
+"FaceCapture.Validation.Description" = "Kérjük, várjon...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Fényképének érvényesítése";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Beállítások indítása";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Tartsa a dokumentumot az arca közelében, miközben szelfit készít";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Készítsen képet magáról, miközben a dokumentumot tartja";
+
+/*  */
+"Instructions.Identification.Description" = "A szolgáltatás további használatához igazolnia kell, hogy megfelel a weboldal követelményeinek.";
+
+/*  */
+"Instructions.Identification.Header" = "Üdvözöljük az azonosítási \n ellenőrzési folyamatban";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Egy pillanat";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Utolsó részletek véglegesítése";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "A fénykép rögzítése";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Igazítsa az arcát a keretbe, és érintse meg a rögzítést";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Rögzítse az arcát";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Jól látható az arca?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Győződjön meg róla, hogy a fénykép tiszta és olvasható";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Kérjük, vegye fel a kapcsolatot az ügyfélszolgálattal további információért.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Az azonosítását elutasítottuk.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Kérjük, vegye fel a kapcsolatot az ügyfélszolgálattal további információért, vagy próbálkozzon egy másik dokumentummal.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Az azonosítását elutasítottuk tiltott ország vagy állam miatt.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Kérjük, próbálja újra a folyamatot, vagy lépjen kapcsolatba az ügyfélszolgálattal.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Az azonosítását elutasítottuk.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Kérjük, vegye fel a kapcsolatot az ügyfélszolgálattal további információért";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Az azonosítását elutasítottuk.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Kérjük, vegye fel a kapcsolatot az ügyfélszolgálattal további információért.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Az azonosítását életkori korlátozások miatt elutasítottuk.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Köszönjük a türelmét";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Az információ rögzítése sikeres volt";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Úgy tűnik, hogy a szokásosnál nagyobb forgalmat tapasztalunk. Hamarosan átirányítjuk.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Sajnáljuk, tovább tart, mint vártuk";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "A folytatáshoz győződjön meg arról, hogy a dokumentum rendelkezik NFC-vel, és az engedélyezve van az eszközén.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Úgy tűnik, nem tudsz továbbmenni NFC nélkül.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Helyezze a dokumentumot a készülék mögé";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Beolvasás... Kérjük, tartsa";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Kapcsolat elveszett szkennelés közben. Kérjük, próbálja újra.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Próbálja meg újra beolvasni a dokumentumot.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Úgy tűnik, a folyamat megszakadt.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Nem tudtuk beolvasni a dokumentumot. Kérjük, ellenőrizze a részleteket, majd próbálja újra.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Váratlan válasz a chipből. Kérjük, szkennelje be újra a dokumentumot.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "A beolvasott dokumentum érvénytelen. Próbálja újra egy támogatott dokumentummal.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Több chip észlelve. Kérjük, egyszerre csak egy dokumentumot olvasson be.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Az eszköze nem támogatja az NFC-t, vagy jelenleg ki van kapcsolva. Kérjük, váltson egy kompatibilis eszközre, vagy engedélyezze az NFC-t a beállításokban.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC nem támogatott";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Nehézségei vannak?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Helyezze a személyi igazolványát a telefon hátuljára";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Helyezze a személyi igazolványát a telefon hátuljára az NFC beolvasáshoz";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Olvassa be személyi igazolványát NFC-vel";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Helyezze útlevelét a telefon hátuljára az NFC beolvasáshoz";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Olvassa be útlevelét NFC-vel";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Mégse";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Kérjük, kapcsolja be az NFC-t a folyamat folytatásához";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "Az NFC ki van kapcsolva";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Beállítások";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Helyezze az útlevél első oldalát a telefon hátuljára";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Ha nehézségekbe ütközött az NFC elérésében, próbálja ki ezeket a módszereket:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Próbálja meg beolvasni a dokumentum utolsó oldalát.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Próbálja meg beolvasni a dokumentum fényképes oldalát.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Ha van bármilyen borító a dokumentumon, távolítsa el.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Kérjük, tartsa a dokumentumot a telefonja hátuljához.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Dokumentum beolvasása";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Tippek kipróbálásra";
+
+"Action.Cancel" = "Vissza";
+
+"CaptureResultReason.TimeOut.Description" = "Próbálja újra";
+
+"CaptureResultReason.TimeOut.Header" = "Időtúllépés";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Mégse";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Túlságosan balra néző arc";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Túlságosan jobbra néző arc";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Az arca nem látszik a képen";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Túlságosan balra fordított arc";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Túlságosan jobbra fordított arc";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Túlságosan balra elhelyezkedő arc";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Túlságosan jobbra elhelyezkedő arc";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Túl magasan lévő arc";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Túl alacsonyan lévő arc";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Tartsa az eszközt szemmagasságban";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Mozgassa a kamerát szemmagasságba";
+
+"FaceTec_accessibility_feedback_move_away_web" = "A kamera túl közel van";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "A kamera túl messze van";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "A kamera túl közel van";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "A kamera túl messze van";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Arcigazítási útmutatásért nyomja meg az Enter vagy a szóköz billentyűt";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Arcigazítási útmutatásért koppintson duplán a képernyőn";
+
+"FaceTec_camera_feed_issue_action" = "PRÓBÁLJA ÚJRA";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "A kamera adatai nem érhetők el";
+
+"FaceTec_camera_feed_issue_header" = "A kamera adatai<br/>nem érhetők el";
+
+"FaceTec_camera_feed_issue_subheader_message" = "A rendszer nem hitelesíthető a következők miatt:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Ez az alkalmazás blokkolja a gyanús webkamera-konfigurációkat.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>További információt itt talál</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Ez az alkalmazás blokkolja a gyanús webkamera-konfigurációkat. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>További információt itt talál</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Lehetséges probléma";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Megoldás";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "A kamerát már használja egy másik alkalmazás.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "A Firefox nem emlékszik a kamera engedélyeire.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Zárja be a másik alkalmazást.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Ellenőrizze az Engedélyek megjegyzése lehetőséget.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Egy külső alkalmazás módosítja a videót.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Zárja be/távolítsa el a másik alkalmazást.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "A hardver nem alkalmas az adattovábbításra.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Használjon egy másik eszközt.";
+
+"FaceTec_camera_permission_header" = "Kamera engedélyezése";
+
+"FaceTec_camera_permission_message" = "A kamera engedélyei le vannak tiltva.<br/>Ellenőrizze az operációs rendszer és a böngésző beállításait.";
+
+"FaceTec_enter_fullscreen_action" = "TELJES KÉPERNYŐS MÓD";
+
+"FaceTec_enter_fullscreen_header" = "Teljes képernyős szelfi mód";
+
+"FaceTec_enter_fullscreen_message" = "Mielőtt elkezdenénk, a teljes képernyős mód megnyitásához kattintson az alábbi gombra.";
+
+"FaceTec_feedback_center_face" = "Helyezze középre az arcát";
+
+"FaceTec_feedback_face_not_found" = "Helyezze a keretbe az arcát";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Nézzen egyenesen előre";
+
+"FaceTec_feedback_face_not_upright" = "Tartsa egyenesen a fejét";
+
+"FaceTec_feedback_face_not_upright" = "Tartsa egyenesen a fejét";
+
+"FaceTec_feedback_hold_steady" = "Ne mozogjon";
+
+"FaceTec_feedback_move_phone_away" = "Menjen messzebb";
+
+"FaceTec_feedback_move_phone_away" = "Vigye távolabb a telefonját";
+
+"FaceTec_feedback_move_phone_closer" = "Menjen közelebb";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Mozgassa a telefont szemmagasságba";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Nézzen egyenesen a kamerába";
+
+"FaceTec_feedback_move_web_closer" = "Tartsa közelebb az arcához, és töltse ki az ovális keretet";
+
+"FaceTec_feedback_move_web_even_closer" = "Még közelebb";
+
+"FaceTec_feedback_use_even_lighting" = "Világítsa meg az arcát egyenletesebben";
+
+"FaceTec_idscan_additional_review_message" = "További ellenőrzés<br/>szükséges";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Okmány hátoldalának megjelenítése";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Okmány előlapjának megjelenítése";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Áttekintés és megerősítés";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Görgessen lefelé";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Erősítse meg, hogy a fénykép éles és jól látható";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Erősítse meg, hogy a fénykép éles és jól látható";
+
+"FaceTec_idscan_type_selection_header" = "Készüljön fel<br/>okmánya beolvasására";
+
+"FaceTec_initializing_camera" = "Kamera elérése";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Készüljön fel:";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "Az Ön videószelfije";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Készüljön fel videószelfi készítésére";
+
+"FaceTec_instructions_message_ready_1" = "Helyezze az arcát az ovális keretbe,";
+
+"FaceTec_instructions_message_ready_2" = "nyomja meg az I 'm Ready (Készen állok) gombot, és lépjen közelebb az eszközhöz";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Helyezze az arcát az ovális keretbe, nyomja meg az I 'm Ready (Készen állok) gombot, és lépjen közelebb az eszközhöz";
+
+"FaceTec_presession_brighten_your_environment" = "Világítsa meg a környezetét";
+
+"FaceTec_presession_conditions_too_bright" = "A környezet túl világos";
+
+"FaceTec_presession_eyes_straight_ahead" = "Nézzen egyenesen előre";
+
+"FaceTec_presession_frame_your_face" = "Helyezze az arcát az ovális keretbe";
+
+"FaceTec_presession_hold_steady_1" = "Maradjon mozdulatlan: 1";
+
+"FaceTec_presession_hold_steady_2" = "Maradjon mozdulatlan: 2";
+
+"FaceTec_presession_hold_steady_3" = "Maradjon mozdulatlan: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Nézzen egyenesen előre";
+
+"FaceTec_presession_neutral_expression" = "Semleges arckifejezés, ne mosolyogjon";
+
+"FaceTec_presession_remove_dark_glasses" = "Vegye le a sötét szemüveget";
+
+"FaceTec_result_facescan_upload_message" = "Betöltés folyamatban,<br/>kérjük, várjon";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "A vonalkódot nem sikerült beolvasni,<br/>próbálkozzon újra";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Az arc nem<br/>egyezett eléggé";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Okmány<br/>nem teljesen látható";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Az okmány típusa nem támogatott<br/>Kérjük, használjon egy másik okmányt";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Az okmány szövege nem olvasható";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Az okmány fényképének rögzítése<br/>kész";
+
+"FaceTec_result_idscan_success_back_side_message" = "Az okmány beolvasása kész";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Az okmány előlapja<br/>beolvasva";
+
+"FaceTec_result_idscan_success_front_side_message" = "Az okmány beolvasása kész";
+
+"FaceTec_result_idscan_success_passport_message" = "Az útlevél beolvasása kész";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "A fényképes okmány beolvasása<br/>kész";
+
+"FaceTec_result_idscan_unsuccess_message" = "Az okmányon szereplő kép<br/>nem egyezett<br/>a felhasználó arcával";
+
+"FaceTec_result_idscan_upload_message" = "<br/>Titkosított<br/>okmány feltöltése";
+
+"FaceTec_result_success_message" = "Sikerült!";
+
+"FaceTec_retry_header" = "Próbálja újra";
+
+"FaceTec_retry_ideal_image_label" = "Ideális testtartás";
+
+"FaceTec_retry_instruction_message_1" = "Kérjük, vegyen fel ideális testtartást, és használjon megfelelő megvilágítást";
+
+"FaceTec_retry_instruction_message_2" = "Semleges arckifejezés, ne mosolyogjon";
+
+"FaceTec_retry_instruction_message_3" = "Túl homályos, tisztítsa meg a kamerát";
+
+"FaceTec_retry_subheader_message" = "Élesebb videószelfi szükséges";
+
+"FaceTec_retry_your_image_label" = "Az Ön szelfije";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Folyamat leállítása";
+
+"FailureScreen.TooManyAttempts.Description" = "Kérjük, kérjen segítséget a szolgáltatótól";
+
+"FailureScreen.TooManyAttempts.Header" = "A hitelesítés zárolva van a túl sok kísérlet miatt";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Az eszköz zárolva van.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Túl sok kísérlet";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Ez az eszköz nem támogatott.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Sikertelen";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Próbálja újra később!";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Licenchiba";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "A kulcs lejárt, érvénytelen szöveget tartalmazott, vagy olyan domainen próbál inicializálni, amely nincs megadva a kulcsban.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "A kulcs lejárt vagy érvénytelen";
+
+"LoadResultReason.NetworkIssues.Description" = "Nem lehet folytatni az eszköz kapcsolódási problémái miatt";
+
+"LoadResultReason.NetworkIssues.Header" = "Hálózati problémák";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Nem lehet betölteni az erőforrásokat.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Sikertelen";
+
+"LoadResultReason.StillLoadingResources.Description" = "Az erőforrások betöltése még folyamatban van.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Sikertelen";
+
+"FaceTec_action_im_ready" = "Készen állok";
+
+"ReadyScreen.Header" = "Készüljön fel videószelfi készítésére";
+
+"RetryScreen.Action.PassiveLiveness" = "Próbálkozzon másik módszerrel";
+
+"FaceTec_action_try_again" = "Próbálja újra";
+
+"RetryScreen.Description" = "Élesebb fényképre van szükségünk";
+
+"RetryScreen.Header" = "Próbálja újra";
+
+/*  */
+"RetryScreen.Message.Generic" = "Kérjük, használjon egyenletes megvilágítást, és vegye fel az ideális testtartást";
+
+"UploadScreen.Description" = "Tartsa nyitva ezt az ablakot";
+
+"UploadScreen.Header" = "Arckép hitelesítése";
+

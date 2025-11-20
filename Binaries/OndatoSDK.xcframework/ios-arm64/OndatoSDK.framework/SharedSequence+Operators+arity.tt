@@ -19,7 +19,7 @@ extension SharedSequence {
     - parameter resultSelector: Function to invoke for each series of elements at corresponding indexes in the sources.
     - returns: An observable sequence containing the result of combining elements of the sources using the specified result selector function.
     */
-    public static func zip<<%= (Array(1...i).map { "O\($0): SharedSequenceConvertibleType" }).joined(separator: ", ") %>>
+    static func zip<<%= (Array(1...i).map { "O\($0): SharedSequenceConvertibleType" }).joined(separator: ", ") %>>
         (<%= (Array(1...i).map { "_ source\($0): O\($0)" }).joined(separator: ", ") %>, resultSelector: @escaping (<%= (Array(1...i).map { "O\($0).Element" }).joined(separator: ", ") %>) throws -> Element)
         -> SharedSequence<O1.SharingStrategy, Element> where <%= (Array(1...i).map { "SharingStrategy == O\($0).SharingStrategy" }).joined(separator: ",\n            ") %> {
         let source = Observable.zip(
@@ -37,7 +37,7 @@ extension SharedSequenceConvertibleType where Element == Any {
 
     - returns: An observable sequence containing the result of combining elements of the sources.
     */
-    public static func zip<<%= (Array(1...i).map { "O\($0): SharedSequenceConvertibleType" }).joined(separator: ", ") %>>
+    static func zip<<%= (Array(1...i).map { "O\($0): SharedSequenceConvertibleType" }).joined(separator: ", ") %>>
         (<%= (Array(1...i).map { "_ source\($0): O\($0)" }).joined(separator: ", ") %>)
         -> SharedSequence<O1.SharingStrategy, (<%= (Array(1...i).map { "O\($0).Element" }).joined(separator: ", ") %>)> where <%= (Array(1...i).map { "SharingStrategy == O\($0).SharingStrategy" }).joined(separator: ",\n            ") %> {
         let source = Observable.zip(
@@ -55,7 +55,7 @@ extension SharedSequence {
     - parameter resultSelector: Function to invoke whenever any of the sources produces an element.
     - returns: An observable sequence containing the result of combining elements of the sources using the specified result selector function.
     */
-    public static func combineLatest<<%= (Array(1...i).map { "O\($0): SharedSequenceConvertibleType" }).joined(separator: ", ") %>>
+    static func combineLatest<<%= (Array(1...i).map { "O\($0): SharedSequenceConvertibleType" }).joined(separator: ", ") %>>
         (<%= (Array(1...i).map { "_ source\($0): O\($0)" }).joined(separator: ", ") %>, resultSelector: @escaping (<%= (Array(1...i).map { "O\($0).Element" }).joined(separator: ", ") %>) throws -> Element)
         -> SharedSequence<SharingStrategy, Element> where <%= (Array(1...i).map { "SharingStrategy == O\($0).SharingStrategy" }).joined(separator: ",\n            ") %> {
         let source = Observable.combineLatest(
@@ -73,7 +73,7 @@ extension SharedSequenceConvertibleType where Element == Any {
 
     - returns: An observable sequence containing the result of combining elements of the sources.
     */
-    public static func combineLatest<<%= (Array(1...i).map { "O\($0): SharedSequenceConvertibleType" }).joined(separator: ", ") %>>
+    static func combineLatest<<%= (Array(1...i).map { "O\($0): SharedSequenceConvertibleType" }).joined(separator: ", ") %>>
         (<%= (Array(1...i).map { "_ source\($0): O\($0)" }).joined(separator: ", ") %>)
         -> SharedSequence<SharingStrategy, (<%= (Array(1...i).map { "O\($0).Element" }).joined(separator: ", ") %>)> where <%= (Array(1...i).map { "SharingStrategy == O\($0).SharingStrategy" }).joined(separator: ",\n            ") %> {
         let source = Observable.combineLatest(

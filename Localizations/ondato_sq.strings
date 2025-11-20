@@ -1,264 +1,858 @@
-"ondato_start_identification_title" = "Mirë se vini në procesin e verifikimit të identitetit";
-"ondato_start_identification_description" = "Për të vazhduar përdorimin e këtij shërbimi, duhet të vërtetoni se i plotësoni kërkesat. Procesi i verifikimit përbëhet nga 4 hapa";
-"ondato_start_identification_step_1" = "1. Zgjidhni një dokument";
-"ondato_start_identification_step_2" = "2. Bëjini një foto dokumentit";
-"ondato_start_identification_step_3" = "3. Fotografoni fytyrën tuaj";
-"ondato_start_identification_nfc_step_1" = "1. Zgjidhni një dokument";
-"ondato_start_identification_nfc_step_2" = "2. Skanoni NFC";
-"ondato_start_identification_nfc_step_3" = "3. Fotografoni fytyrën tuaj";
-"ondato_continue_anyway" = "Vazhdojme";
-"ondato_loading_title" = "Duke u perpunuar";
-"ondato_loading_subtitle" = "Ju lutem prisni";
-"ondato_choose_document_title" = "Zgjidhni një dokument dhe filloni të bëni verifikimin";
-"ondato_choose_document_passport" = "Pashaporte";
-"ondato_choose_document_id_card" = "Karte Identiteti";
-"ondato_choose_document_driving_licence" = "Patente";
-"ondato_success_title" = "Registration successful";
-"ondato_success_subtitle" = "Once your registration will be processed you will be notified by email.";
-"ondato_close" = "Mbyll";
-"ondato_button_capture" = "Capture";
-"ondato_capture_passport_front_title" = "Ju lutem fotografoni faqen kryesore te dokumentit i cili permban edhe shiritin e sigurise MRZ";
-"ondato_capture_id_card_front_title" = "Ju lutem te fotografoni anen e perparme te kartes se identitetit";
-"ondato_capture_driver_licence_front_title" = "Please capture the front side of driving license";
-"ondato_language_en" = "English";
-"ondato_language_english_short" = "EN";
-"ondato_language_lt" = "Lietuvių kalba";
-"ondato_language_lithuanian_short" = "LT";
-"ondato_language_de" = "Deutsch";
-"ondato_language_german_short" = "DE";
-"ondato_language_lv" = "Latvietis valoda";
-"ondato_language_lv_short" = "LV";
-"ondato_language_ee" = "Eestlane keel";
-"ondato_language_ee_short" = "ET";
-"ondato_language_ru" = "Pусский";
-"ondato_language_ru_short" = "RU";
-"ondato_error_unauthorized_message" = "UNAUTHORIZED";
-"ondato_error_bad_request_message" = "BAD_REQUEST";
-"ondato_error_internal_server_error_message" = "INTERNAL SERVER ERROR";
-"ondato_error_connection_failed" = "CONNECTION ERROR";
-"ondato_error_server_is_down_message" = "SERVER IS DOWN";
-"ondato_error_default_title" = "Oops...";
-"ondato_error_timeout_message" = "Sesioni perfundoi";
-"ondato_start_button" = "Fillojme";
-"ondato_error_something_wrong_title" = "Ka ndodhur Error";
-"ondato_consent_title" = "Pelqimi per procesimin e te dhenave personale";
-"ondato_consent_terms" = "Ne menyre qe te perfitoj sherbimin nga Kredo.al, me kete pelqim une shpreh dakortesine time qe UAB “Ondato“ do te marre dhe menaxhoje te dhenat e mia personale, duke perfshire edhe te dhenat e mia biometrike, te marra gjate identifikimit ne distance te identitetit tim duke marre dhe/ose filmuar imazhe live te fytyres sime, identitetin e personit tim ose dokumentin e perdorur per te identifikuar ate dhe/ose imazhet e tyre dhe te dhenat personale qe kane ato dhe/ose kontrolli ne rregjistrin e popullsise: imazhi i fytyres sime, emer, mbiemer, kombesia, gjinia, kodi personal, dita e lindjes, numrat e identifikimit qe po perdoret, data e levrimit dhe vlefshmeria, firma ime, dhe transferimi i ketyre te dhenave te Kredo.al. Une gjithashtu ve ne dukje se jam i informuar se kontrolluesi i te dhenave te mia personale, perfshire ketu edhe te dhenat e mia biometrike, te specifikuara ne kete pelqim, eshte Kredo.al dhe UAB “Ondato“ do te procesoje te dhenat e mia personale derisa te perfundoje procedura e identifikimit ne distance dhe te dhenat do te tranferohen tek Kredo.al. Une gjithashtu deklaroj se jam i informuar dhe dakortesoj qe te dhenat e mia personale te perfituara per identifikimin ne distance dhe per qellimet e tij, mund te ruhen nga UAB “Ondato“ per nje periudhe me te gjate kohore sesa duhet per te perfunduar identifikimi ose transmetimi i rezultateve te tij tek Kredo.al, por vetem me kerkese te Kredo.al ose  UAB Ondato\'s contractual obligation to the Service Provider, por jo me gjate sesa eshte percaktuar ne kontraten e nenshkruar ndermjet UAB “Ondato“ dhe Kredo.al ose te kerkuar nga Kredo.al. Jam informuar se mund të kontaktoj Ofruesin e Shërbimit në lidhje me të dhënat e mia personale për informacion më të detajuar. Me ane te kesaj, deklaroj dhe konfirmoj, qe te gjitha te dhenat personale qe une do te siguroj per identifikimin ne distance te identitetit tim, jane te sakta, dhe dokumenti te cilin do te perdor per kete qellim nuk eshte fallso por i vlefshem.";
-"ondato_consent_agree" = "Jam Dakord";
-"ondato_consent_disagree" = "Nuk jam dakord";
-"ondato_capture_id_card_front_instructions_description" = "Ju lutem te tregoni anen e perparme te kartes suaj te identitetit ne zonen e percaktuar dhe shtypni butonin \"Capture\". Dokumenti duhet te jete i qarte, jo i turbullt ose i pikselizuar";
-"ondato_capture_id_card_front_instructions_title" = "Ju lutem te fotografoni anen e perparme te kartes se identitetit";
-"ondato_capture_id_card_back_instructions_title" = "Ju lutem te fotografoni anen e pasme te kartes suaj te identitetit";
-"ondato_capture_id_card_back_title" = "Ju lutem te fotografoni anen e pasme te kartes suaj te identitetit";
-"ondato_capture_id_card_back_instructions_description" = "Ju lutem te vendosni anen e pasme te kartes suaj te ID ne zonen e percaktuar dhe shtyp butonin \"Capture\". Sigurohu qe shiriti i sigurise eshte i qarte dhe dokumenti nuk eshte i turbullt ose i pikselizuar";
-"ondato_capture_mrz_instructions_title" = "Përgatitni dokumentin tuaj për të kapur zonën MRZ";
-"ondato_capture_mrz_id_instructions_description" = "Ju lutemi tregoni anën e pasme të kartës suaj të identitetit që përmban zonën MRZ. Dokumenti duhet të jetë qartësisht i dukshëm, jo ​​i turbullt ose i pikseluar.";
-"ondato_capture_mrz_instructions_title" = "Përgatitni dokumentin tuaj për të kapur zonën MRZ";
-"ondato_capture_selfie_with_document_instructions_title" = "Fotografoni veten duke mbajtur dokumentin ";
-"ondato_capture_selfie_with_document_instructions_description" = "Mbani dokumentin afër fytyrës ndërsa bëni fotografinë  ";
-"ondato_capture_driver_license_front_instructions_title" = "Ju lutem te fotografoni anen e pasme te kartes suaj te identitetit";
-"ondato_capture_driver_license_front_instructions_description" = "Please show the front side of driving license in the marked area and press the button \"Capture\". Photo of driving license should be clearly visible, not blurry or pixelated";
-"ondato_capture_driver_license_back_instructions_title" = "Please capture the back side of driving license";
-"ondato_capture_driver_license_back_title" = "Please capture the back side of driving license";
-"ondato_capture_driver_license_back_instructions_description" = "Please show the back side of driving license in the marked area and press the button \"Capture\". Driving license should be clearly visible, not blurry or pixelated";
-"ondato_capture_passport_front_instructions_title" = "Ju lutem fotografoni faqen kryesore te dokumentit i cili permban edhe shiritin e sigurise MRZ";
-"ondato_capture_passport_front_instructions_description" = "Ju lutem tregoni anen e dokumentit i cili ka shiritin e sigurise MRZ dhe shtyp butonin \"Capture\". Dokumenti duhet te jete i qarte, jo i turbullt ose i pikselizuar.";
-"ondato_capture_instructions_mistakes" = "Gabimet kryesore:";
-"ondato_capture_instructions_too_blurry" = "Shumë e turbullt";
-"ondato_capture_instructions_too_small" = "Shumë e vogël";
-"ondato_capture_instructions_bad_lighting" = "Ndriçim i keq";
-"ondato_capture_instructions_not_neutral" = "Nuk është fytyrë neutrale";
-"ondato_capture_instructions_too_dark" = "Shumë e errët";
-"ondato_capture_check_taken_photo" = "Ju lutem, shikoni foton e skanuar";
-"ondato_capture_check_taken_photo_description" = "Sigurohuni që fotoja në dokumentin e skanuar është qartësisht e dukshme dhe të dhënat janë të lexueshme. Nëse mendoni se cilësia e imazhit është e pranueshme, ju lutem kliko butonin \"Vazhdo\"";
-"ondato_capture_yourself_with_document_title" = "Fotografoni veten duke mbajtur dokumentin ";
-"ondato_capture_check_taken_photo_with_document" = "Ju lutem, kontrolloni foton e bërë";
-"ondato_capture_check_taken_photo_with_document_description" = "Sigurohuni që fotoja të jetë e pastër";
-"ondato_capture_face_instructions_title" = "Ju lutemi fotografoni fytyrën";
-"ondato_capture_face_instructions_description" = "Vendoseni fytyrën tuaj brenda kornizës dhe sigurohuni që fytyra të jetë e dukshme dhe e ndriçuar në mënyrë të njëtrajtshme.";
-"FailedRule_PersonPhotoContainsFace_title" = "Procesi i njohjes se fotografise deshtoi";
-"FailedRule_DocContainsFace_title" = "Procesi i njohjes se fytyres ne dokument deshtoi";
-"FailedRule_DocContainsMrz_title" = "Procesi i fotografimit te dokumentit deshtoi";
-"FailedRule_PersonAndDocPhotoMatch_title" = "Procesi i krahasimit te fotos se dokumentit me foton e fytyres deshtoi";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_title" = "Procesi i njohjes se fotografise se fytyres ne dokument deshtoi";
-"FailedRule_DocExpireDateInFuture_title" = "Dokument i skaduar";
-"FailedRule_PersonAndDocumentPersonCodeMatch_title" = "Procesi i krahasimit te numrit personal ne dokumentin tuaj dhe ne rregjistrim deshtoi";
-"FailedRule_PersonFaceOrDocIsMonochrome_title" = "Ju informojme se ju duhet te fotografoni dokumentin tuaj aktual. Dokumenti juaj duhet te shihet qarte, ne nje ambient te ndricuar, jo i turbullt ose i pikselizuar";
-"FailedRule_DocumentContainsBothSides_title" = "Anet e dokumentave te perziera";
-"FailedRule_ContainsMultipleFaces_title" = "Ju informojme se identifikimi duhet te kryhet vetem nga mbajtesi i dokumentit";
-"FailedRule_PersonFoundInComplyAdvantage_title" = "Nje person tjeter me te njejtin emer gjendet ne listen e sanksioneve";
-"FailedRule_ContainsCelebrity_title" = "Ne njeren nga fotografite e bashkangjitura eshte vene re nje person tjeter. Ju informojme se ju duhet te fotografoni veten dhe dokumentin tuaj personal";
-"FailedRule_LostAndStolen_title" = "Dokumenti juaj gjendet ne listen e dokumentave te humbur ose te vjedhur";
-"FailedRule_PersonPhotoContainsFace_subtitle" = "Fytyra juaj duhet te shihet qarte, ne nje ambient te ndricuar dhe jo te paqarte";
-"FailedRule_DocContainsFace_subtitle" = "Ju lutem te tregoni anen e dokumentit ne te cilin ndodhet foto juaj. Dokumenti juaj duhet te shihet qarte, ne nje ambient te ndriccuar dhe jo i turbullt ose i pikselizuar.";
-"FailedRule_DocContainsMrz_subtitle" = "Nxjerrja e zones MRZ deshtoi. Ju lutem siguroni nje foto te faqes se dokumentit i cili ka shiritin MRZ. Dokumenti juaj duhet te shihet qarte, ne nje ambient te ndricuar, jo i turbullt ose i pikselizuar";
-"FailedRule_PersonAndDocPhotoMatch_subtitle" = "Ju lutem te siguroheni se foto e fytyres suaj eshte e njejte me foton ne dokumentin tuaj. Hiqni syzet ose aksesore te tjere nga fytyra";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_subtitle" = "Ju lutem siguroni nje foto te faqes se dokumentit i cili ka foton tuaj. Dokumenti juaj duhet te shihet qarte, ne nje ambient te ndricuar, jo i turbullt ose i pikselizuar.";
-"FailedRule_DocExpireDateInFuture_subtitle" = "Dokumenti i bashkangjitur eshte i skaduar ose data e perfundimit te afatit nuk eshte gjendur";
-"FailedRule_PersonAndDocumentPersonCodeMatch_subtitle" = "Ju lutem te bashkangjisni dokumentin me te cilin keni rregjistruar te dhenat gjate rregjistrimit.";
-"FailedRule_PersonFaceOrDocIsMonochrome_subtitle" = "Ju informojme se ju duhet te fotografoni dokumentin tuaj aktual. Dokumenti juaj duhet te shihet qarte, ne nje ambient te ndricuar, jo i turbullt ose i pikselizuar";
-"FailedRule_DocumentContainsBothSides_subtitle" = "Ju keni bashkangjitur foto te dy dokumenteve te ndryshem. Ju informojme se ju duhet te bashkangjisni foto te se njejtit dokument nga te dyja anet.";
-"FailedRule_ContainsMultipleFaces_subtitle" = "Ju informojme se identifikimi duhet te kryhet vetem nga mbajtesi i dokumentit.";
-"FailedRule_PersonFoundInComplyAdvantage_subtitle" = "Ne do te shqyrtojme rastin tuaj manualisht dhe do te informojme kompanine per rezultatet. Ky proces do te zgjase disa minuta";
-"FailedRule_ContainsCelebrity_subtitle" = "Ne njeren nga fotografite e bashkangjitura eshte vene re nje person tjeter. Ju informojme se ju duhet te fotografoni veten dhe dokumentin tuaj personal";
-"FailedRule_LostAndStolen_subtitle" = "Ju lutem shtypni \"Provoni perseri\" dhe siguroni nje dokument tjeter";
-"FaceTec_feedback_center_face" = "Vendosni fytyren tuaj ne qender";
-"FaceTec_action_continue" = "VAZHDO";
-"FaceTec_action_im_ready" = "UNE JAM GATI";
-"FaceTec_action_try_again" = "PROVO PËRSËRI";
+"Action.Close" = "Mbyll";
+
+"LanguageSelection.Header" = "Zgjidhni gjuhën";
+
+"Modals.Abort.Action.ContinueProcess" = "Vazhdoni procesin";
+
+"Modals.Abort.Action.StopProcess" = "Ndalo procesin";
+
+"Modals.Abort.Heading" = "Jeni i sigurt që dëshironi ta ndërprisni këtë proces?";
+
+"Modals.Error.Description" = "Diçka nuk shkoi mirë; mbylle këtë mesazh dhe provo sërish";
+
+"Modals.Error.Heading" = "Mos, ndodhi një gabim";
+
+"Modals.Success.Description" = "Vazhdo me hapin tjetër";
+
+"Modals.Success.Heading" = "Me sukses!";
+
+"Action.Agree" = "Pranoj";
+
+"Action.Disagree" = "Nuk pranoj";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Vazhdoni procesin";
+
+"Disagree.Confirmation.Action.StopProcess" = "Ndaloni procesin";
+
+"Disagree.Confirmation.Header" = "Duke refuzuar përmbajtjen, ju do të ndaloni procesin. A je i sigurt?";
+
+"Capture.Action.Capture" = "Fotografim";
+
+"Capture.DriverLicense.Back.Description" = "Vendose dokumentin brenda kornizës.";
+
+"Capture.DriverLicense.Back.Header" = "Fotografo pjesën e pasme";
+
+"Capture.DriverLicense.Front.Description" = "Vendose dokumentin brenda kornizës.";
+
+"Capture.DriverLicense.Front.Header" = "Fotografo pjesën e përparme";
+
+"Capture.IdCard.Back.Description" = "Vendose dokumentin brenda kornizës.";
+
+"Capture.IdCard.Back.Header" = "Fotografo pjesën e pasme";
+
+"Capture.IdCard.Front.Description" = "Vendose dokumentin brenda kornizës.";
+
+"Capture.IdCard.Front.Header" = "Fotografo pjesën e përparme";
+
+"Capture.InternalPassport.DataPage.Header" = "Fotografo faqen kryesore";
+
+"Capture.InternalPassport.FrontCover.Header" = "Fotografo kopertinën";
+
+"Capture.Passport.DataPage.Description" = "Vendose dokumentin brenda kornizës.";
+
+"Capture.Passport.DataPage.Header" = "Fotografo faqen kryesore";
+
+"Capture.Passport.FrontCover.Header" = "Fotografo kopertinën";
+
+"Capture.ResidencePermit.Back.Description" = "Vendose dokumentin brenda kornizës.";
+
+"Capture.ResidencePermit.Back.Header" = "Fotografo pjesën e pasme";
+
+"Capture.ResidencePermit.Front.Description" = "Vendose dokumentin brenda kornizës.";
+
+"Capture.ResidencePermit.Front.Header" = "Fotografo pjesën e përparme";
+
+"Capture.SocialId.Back.Description" = "Vendose dokumentin brenda kornizës.";
+
+"Capture.SocialId.Back.Header" = "Fotografo pjesën e pasme";
+
+"Capture.SocialId.Front.Description" = "Vendose dokumentin brenda kornizës.";
+
+"Capture.SocialId.Front.Header" = "Fotografo pjesën e përparme";
+
+"Preview.Action.Continue" = "Vazhdo";
+
+"Preview.Action.Retake" = "Bëje sërish";
+
+"Preview.Header" = "Fotografia është e qartë, me fokus dhe pa reflektim?";
+
+"FaceCapture.Instructions.Action.Start" = "Fillo";
+
+"FaceCapture.Instructions.Description" = "Gjatë procesit, poziciono fytyrën tuaj në mes të kornizës.";
+
+"FaceCapture.Instructions.Header" = "Verifiko përmes fytyrës";
+
+"FaceCapture.Instructions.Subheader" = "Sigurohu që:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "Fytyra të jetë neutrale";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "Ndriçimi të jetë i mirë";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "Imazhi të jetë i qartë";
+
+"App.Button.Close" = "Mbyll";
+
+"App.Button.Continue" = "Vazhdo";
+
+"App.Errors.Default" = "Ndodhi një problem i papritur Provo sërish më vonë.";
+
+"EndPage.Action.Continue" = "Vazhdo";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Faleminderit. Tani mund ta përfundoni procesin.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Ju keni përfunduar!";
+
+"Action.Close" = "Mbyll";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Ngarko provën e adresës";
+
+"Document.Instructions.Action.Start" = "Fillo";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Fotografoje pjesën e pasme të lejes së drejtimit";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Fotografoje pjesën e përparme të lejes së drejtimit";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Imazhi nuk është shumë i turbullt";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Sigurohu që:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Drita të jetë e mirë";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Dokumenti të jetë i lexueshëm";
+
+"Document.Instructions.IdCard.Back.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.IdCard.Back.Heading" = "Fotografoje pjesën e pasme të kartës së identitetit";
+
+"Document.Instructions.IdCard.Front.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.IdCard.Front.Heading" = "Fotografoje pjesën e përparme të kartës së identitetit";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Shfaq faqen e dokumentit kryesor që përmban zonën MRZ në zonën e shënuar.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Fotografoje faqen kryesore të brendshme të pasaportës";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Fotografoje kopertinën e brendshme të pasaportës";
+
+"Document.Instructions.Passport.DataPage.Description" = "Përfshi zonën MRZ në zonën e shënuar.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Fotografoje faqen kryesore të pasaportës";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Fotografoje kopertinën e pasaportës";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Fotografoje pjesën e pasme të lejes së qëndrimit";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Fotografoje pjesën e përparme të lejes së qëndrimit";
+
+"Document.Instructions.SocialId.Back.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.SocialId.Back.Heading" = "Fotografoje pjesën e pasme të kartës së identitetit social";
+
+"Document.Instructions.SocialId.Front.Description" = "Vendose dokumentin brenda kornizës";
+
+"Document.Instructions.SocialId.Front.Heading" = "Fotografoje pjesën e përparme të kartës së identitetit social";
+
+"Document.Select.Document.DriverLicense" = "Leja e drejtimit";
+
+"Document.Select.Document.IdCard" = "Karta e identitetit";
+
+"Document.Select.Document.InternalPassport" = "Pasaporta e brendshme";
+
+"Document.Select.Document.Passport" = "Pasaporta";
+
+"Document.Select.Document.ResidencePermit" = "Leja e qëndrimit";
+
+"Document.Select.Document.SocialId" = "Karta e identitetit social";
+
+"Document.Select.Header" = "Zgjidh dokumentin tënd";
+
+"FaceCapture.Instructions.Description" = "Vendose fytyrën në mesin e kornizës";
+
+"FaceCapture.Instructions.Header" = "Bëj një autoportret";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Imazhi të jetë i qartë";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Fytyra të jetë neutrale";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Drita të jetë e mirë";
+
+"FaceCapture.Instructions.Subheader" = "Sigurohu që:";
+
+"Result.Failure.Action.TryAgain" = "Provo përsëri";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Ju lutemi provoni përsëri dhe sigurohuni që dokumenti të jetë ndriçuar në mënyrë të njëtrajtshme me një burim drite të bardhë.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Fotoja e dhënë ka ndriçim të dobët";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Ju lutemi provoni përsëri dhe dorëzoni një dokument të padëmtuar.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Një pjesë e dokumentit të dhënë është dëmtuar";
+
+"Result.Failure.DocumentFromScreen.Description" = "Dërgo një fotografi të vlefshme të dokumentit fizik për të përfunduar procesin e identifikimit";
+
+"Result.Failure.DocumentFromScreen.Header" = "Fotografia e dërguar për dokumentin është e pavlefshme";
+
+"Result.Failure.DocumentIsExpired.Description" = "Dërgo një dokument të vlefshëm për të përfunduar procesin e identifikimit";
+
+"Result.Failure.DocumentIsExpired.Header" = "Dokumenti i dërguar ka skaduar";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Përdor një dokument nga lista e dhënë për të përfunduar procesin e identifikimit";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Lloji i dërguar i dokumentit nuk i plotëson kriteret";
+
+"Result.Failure.DocumentPrinted.Description" = "Dërgo një fotografi të vlefshme të dokumentit fizik për të përfunduar procesin e identifikimit";
+
+"Result.Failure.DocumentPrinted.Header" = "Fotografia e dërguar për dokumentin është e pavlefshme";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Dërgo një dokument me karaktere latine";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Lloji i dërguar i dokumentit nuk i plotëson kriteret";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Të lutemi të fotografosh dokumentin origjinal";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Identifikimi yt u refuzua";
+
+"Result.Failure.FacesNotMatch.Description" = "Provo përsëri ose kontakto asistencën e klientit";
+
+"Result.Failure.FacesNotMatch.Header" = "Fotografia e dokumentit dhe autoportreti i dërguar nuk përputhen";
+
+"Result.Failure.Generic.Description" = "Kontakto asistencën e klientit";
+
+"Result.Failure.Generic.Header" = "Pati një problem me identifikimin tënd";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Provo përsëri dhe sigurohu që dokumenti i provës së adresës të jetë i vlefshëm";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Fotografia e dërguar për vërtetimin e adresës është e pavlefshme";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Provo përsëri dhe dërgo të gjitha fotografitë e nevojshme të dokumentit tënd";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Fotografia e dokumentit mungon";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Provo përsëri ose kontakto asistencën e klientit";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Fotografia e fytyrës mungon";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Procesi i identifikimit duhet të kryhet pa pjesëmarrjen e njerëzve të tjerë";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Përdoruesi nuk është vetëm gjatë procesit";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Provo përsëri dhe sigurohu që dokumenti të lexohet qartë dhe të mos ketë të dhëna të mbuluara";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Një pjesë e dokumentit të dërguar është e mbuluar";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Provo përsëri duke ndjekur udhëzimet e dhëna. Fytyra nuk duhet të jetë e mbuluar";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Fytyra është pjesërisht e mbuluar";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Provo përsëri dhe sigurohu që dokumenti të jetë i ndriçuar njëtrajtësisht";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Fotografia e dërguar ka ndriçim të dobët";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Provo përsëri dhe sigurohu që të dhënat e dokumentit të jenë qartësisht të lexueshme ose në rast të cilësisë së dobët të kamerës, provo ta fillosh procesin në një pajisje tjetër.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Fotografia e dërguar ka cilësi të dobët";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Provo përsëri ose kontakto asistencën e klientit";
+
+"Result.Failure.SelfieHasNoFace.Header" = "Fotografia e dërguar nuk e përfshin fytyrën";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Provo përsëri ose kontakto asistencën e klientit";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Fotografia e dërguar nuk është me rëndësi për këtë gjë";
+
+"Result.Success.Header" = "Me sukses!";
+
+"ResultsWaiting.Delay.Description" = "Me sa duket kemi më shumë trafik sesa zakonisht. Do të ridrejtohesh së shpejti.";
+
+"ResultsWaiting.Delay.Header" = "Na vjen keq, kjo po zgjat më shumë sesa pritej";
+
+"ResultsWaiting.Details.Description" = "Pritja zgjat mesatarisht 2 minuta.";
+
+"ResultsWaiting.Details.Header" = "Të lutëm, prit...";
+
+"ResultsWaiting.Details.Message.Message1" = "Të dhënat e dokumentit po enkriptohen.";
+
+"ResultsWaiting.Details.Message.Message2" = "Po kontrollojmë dokumentin për dëme të jashtme.";
+
+"ResultsWaiting.Details.Message.Message3" = "Po kontrollojmë fotografitë e dërguara të dokumentit.";
+
+"ResultsWaiting.Details.Message.Message4" = "Vërtetimi nëse jeni person real";
+
+"ResultsWaiting.Details.Message.Message5" = "Po kontrollojmë vërtetësinë dhe vlefshmërinë e të dhënave.";
+
+"ResultsWaiting.Details.Message.Message6" = "Statusi i dokumentit të verifikimit dhe të dhënat në regjistra.";
+
+/*  */
+"Action.Cancel" = "Anulo";
+
+/*  */
+"Action.Loading.Header" = "Duke u ngarkuar...";
+
+/*  */
+"Action.Submit" = "Dërgo";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Dokumenti u skanua me sukses";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Vendose dokumentin brenda kornizës.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Kapni dokumentin";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Kapni dëshminë e adresës";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Kjo mund të jetë një deklaratë bankare ose faturë e shërbimeve utilitare";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Skedarët e mundësuar: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Madhësia e skedarit nuk mund të jetë më e madhe se 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Formati i skedarit të ngarkuar nuk mundësohet";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Ju lutemi paraqisni dëshminë e adresës suaj";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Madhësia maksimale e skedarit: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Kërkesat:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Duhet të përmbajë emrin dhe adresën tuaj të plotë";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Dokumenti nuk është më i vjetër se 3 muaj";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Zgjidh skedarin";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Zgjidh nga galeria";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Ngarko dokumentin";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Duke u ngarkuar...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Na duhet TRN-ja juaj për të verifikuar llogarinë tuaj. Ju lutemi, shkruani TRN-në tuaj ashtu siç shfaqet në dokumentin zyrtar dhe kontrolloni dy herë që është e saktë para se ta dorëzoni për të shmangur vonesat.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Ju lutemi jepni Numrin tuaj të Regjistrimit të Tatimpaguesit (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "Numri TRN përbëhet nga 9 shifra";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "Kodi TRN:";
+
+/*  */
+"Consent.Static.Description" = "Për të marrë shërbimin nga Ofruesi i Shërbimit, me këtë pëlqim shpreh dakordësinë time që UAB \"Ondato\" do të marrë dhe menaxhojë të dhënat e mia personale, duke përfshirë të dhënat e mia biometrike, të marra nga identifikimi i largët i identitetit tim personal duke marrë dhe/ose filmuar imazhin e drejtpërdrejtë të fytyrës sime, identitetin e personit tim ose dokumentin e përdorur për ta identifikuar atë dhe/ose imazhin e tyre dhe të dhënat personale të përfshira në to dhe/ose kontrollin në regjistrin e popullsisë: imazhin e fytyrës sime, emrin, mbiemrin, kombësinë, gjininë, kodin personal, datën e lindjes, numrat e dokumentit që po përdoret, datën e lëshimit dhe vlefshmërinë, nënshkrimin tim dhe transferimin e këtyre të dhënave te Ofruesi i Shërbimit. Gjithashtu vë në dukje se jam i informuar që kontrolluesi i të dhënave të mia personale, duke përfshirë të dhënat e mia biometrike, të specifikuara në këtë pëlqim është Ofruesi i Shërbimit dhe UAB \"Ondato\" do të përpunojë të dhënat e mia personale vetëm deri sa procedura e identifikimit të largët të përfundojë dhe rezultatet do të transferohen te Ofruesi i Shërbimit. Gjithashtu deklaroj se jam i informuar dhe dakord që të dhënat e mia personale të marra për identifikimin e largët dhe qëllimet e tij mund të ruhen nga UAB \"Ondato\" për një periudhë më të gjatë se sa kërkohet për përfundimin e identifikimit ose transmetimin e rezultateve të tij te Ofruesi i Shërbimit, por vetëm me kërkesë të Ofruesit të Shërbimit ose detyrimit kontraktual të UAB Ondato ndaj Ofruesit të Shërbimit, por jo më gjatë se sa është përcaktuar në Kontratën që është nënshkruar midis UAB \"Ondato\" dhe Ofruesit të Shërbimit ose kërkuar nga Ofruesi i Shërbimit. Jam i informuar, se mund të paraqes kërkesë në lidhje me të dhënat e mia personale për informacion më të detajuar në info@ondato.com. Me këtë deklaroj dhe konfirmoj, se të gjitha të dhënat personale që do të ofroj për qëllimin e identifikimit të largët të identitetit tim personal, janë të sakta dhe të vërteta, dhe dokumenti, të cilin do të përdor për këtë qëllim nuk është i rremë dhe është i vlefshëm.";
+
+/*  */
+"Consent.Static.Heading" = "Pëlqimi për përpunimin e të dhënave personale";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Vendosni dokumentin brenda kornizës";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Kapni zonën MRZ të kartës tuaj të identitetit";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Vendosni dokumentin dhe vijën MRZ brenda kornizës";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Kapni pjesën e përparme të kartës tuaj të identitetit me linjën MRZ";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Ju lutemi tregoni faqen kryesore të dokumentit që përmban zonën MRZ në zonën e shënuar.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Fotografoni faqen e pasaportës me zonën MRZ";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Dëshmi e adresës";
+
+/*  */
+"Error.Interrupt.Description" = "Për shkak të ndërprerjeve, procesi është ndalur. Ju lutemi qëndroni në këtë aplikacion derisa të keni përfunduar të gjitha hapat.";
+
+/*  */
+"Error.Interrupt.Heading" = "Procesi u ndërpre";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Ju lutemi lidheni përsëri për të vazhduar";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Lidhja juaj e internetit është zhdukur";
+
+/*  */
+"FaceCapture.Validation.Description" = "Ju lutem prisni...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Duke verifikuar foton tuaj";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Hap cilësimet";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Mbajeni dokumentin pranë fytyrës tuaj ndërsa bëni një selfie";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Fotografohuni duke mbajtur dokumentin tuaj";
+
+/*  */
+"Instructions.Identification.Description" = "Për të vazhduar përdorimin e këtij shërbimi, duhet të verifikoni që i përmbushni kërkesat e faqes së internetit.";
+
+/*  */
+"Instructions.Identification.Header" = "Mirë se vini në procesin e \n verifikimit të identitetit";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Vetëm një moment";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Përfundimi i detajeve të fundit";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Duke kapur foton";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Rreshtoni fytyrën tuaj në kornizë dhe prekni kapjen";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Kapni fytyrën tuaj";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "A është fytyra juaj e dukshme qartë?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Sigurohuni që fotografia të jetë e qartë dhe e lexueshme";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Ju lutemi kontaktoni mbështetjen e klientit për më shumë informacion";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Identifikimi juaj është refuzuar.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Ju lutemi kontaktoni mbështetjen e klientit për më shumë informacion ose provoni përsëri me një dokument tjetër";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Identifikimi juaj është refuzuar për shkak të vendit ose shtetit të ndaluar.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Ju lutemi provoni përsëri procesin ose kontaktoni mbështetjen e klientit.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Identifikimi juaj është refuzuar.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Ju lutemi kontaktoni mbështetjen e klientit për më shumë informacion";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Identifikimi juaj është refuzuar.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Ju lutemi kontaktoni mbështetjen e klientit për më shumë informacion";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Identifikimi juaj është refuzuar për shkak të kufizimeve të moshës.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Faleminderit për durimin tuaj";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Kapja e informacionit ishte e suksesshme";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Duket se po përjetojmë më shumë trafik se zakonisht. Do të ridrejtoheni së shpejti.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Na vjen keq, po zgjat më shumë se sa pritej";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Për të vazhduar, duhet të siguroheni që dokumenti ka NFC dhe është aktivizuar në pajisjen tuaj.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Duket se nuk mund të vazhdoni pa NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Vendosni dokumentin tuaj pas pajisjes";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Po skanohet... Ju lutem mbani";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Humbje e lidhjes gjatë skanimit. Ju lutemi provoni përsëri.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Provo përsëri të skanosh dokumentin.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Duket se procesi u ndërpre.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Nuk mund ta lexonim dokumentin. Ju lutemi kontrolloni detajet dhe provoni përsëri.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Përgjigje e papritur nga çipi. Ju lutem riskenoni dokumentin.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Dokumenti i skanuar nuk është i vlefshëm. Ju lutem provoni përsëri me një të mbështetur.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Disa çipa të zbuluar. Ju lutemi skanoni vetëm një dokument në një kohë.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Pajisja juaj nuk e mbështet NFC-në ose është çaktivizuar aktualisht. Ju lutemi kaloni te një pajisje e përputhshme ose aktivizoni NFC-në në cilësimet.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC Nuk Mbështetet";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Po hasni vështirësi?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Vendosni kartën tuaj të identitetit në pjesën e pasme të telefonit tuaj";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Vendosni kartën tuaj të identitetit në pjesën e pasme të telefonit për skanimin NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Skanoni kartën tuaj të identitetit me NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Vendosni pasaportën tuaj në pjesën e pasme të telefonit për skanimin NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Skanoni pasaportën tuaj me NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Anulo";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Ju lutemi, ndizni NFC për të vazhduar më tej në proces";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC është fikur";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Cilësimet";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Vendosni faqen e parë të pasaportës në pjesën e pasme të telefonit tuaj";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Nëse hasni vështirësi për të aksesuar NFC, provoni këto metoda:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Provoni të lexoni faqen e fundit të dokumentit.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Provoni të lexoni faqen e fotos së dokumentit.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Nëse ka ndonjë mbulesë në dokument, hiqeni atë.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Ju lutemi mbani dokumentin në pjesën e pasme të telefonit tuaj.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Skanoni dokumentin";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Këshilla për të provuar";
+
+"Action.Cancel" = "Anulo";
+
+"CaptureResultReason.TimeOut.Description" = "Të lutemi, provo përsëri";
+
+"CaptureResultReason.TimeOut.Header" = "Koha mbaroi";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Anulo";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Fytyra e drejtuar shumë majtas";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Fytyra e drejtuar shumë djathtas";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Fytyra nuk është në kamera";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Fytyra e rrotulluar shumë majtas";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Fytyra e rrotulluar shumë djathtas";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Fytyra është shumë majtas";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Fytyra është shumë djathtas";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Fytyra është shumë lart";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Fytyra është shumë poshtë";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Mbaje pajisjen drejt me nivelin e syve";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Lëvize kamerën drejt me nivelin e syve";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Kamera është shumë afër";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Kamera është shumë larg";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Kamera është shumë afër";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Kamera është shumë larg";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Shtyp \"Enter\" ose \"Spacebar\" për udhëzime në lidhje me pozicionimin e fytyrës";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Shtyp dy herë në ekran për udhëzime në lidhje me pozicionimin e fytyrës";
+
+"FaceTec_camera_feed_issue_action" = "PROVO PËRSËRI GJITHSESI";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Problem me sigurimin e transmetimit të kamerës";
+
+"FaceTec_camera_feed_issue_header" = "Problem me sigurimin e<br/>transmetimit të kamerës";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Ky sistem nuk mund të verifikohet për arsyen e mëposhtme:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Ky aplikacion bllokon konfigurimet e dyshimta të kamerës ueb.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Mëso më shumë këtu</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Ky aplikacion bllokon konfigurimet e dyshimta të kamerës ueb. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Mëso më shumë këtu</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Problem i mundshëm";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Rregulloje";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Kamera është tashmë në përdorim nga një aplikacion tjetër.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Lejet e kamerës nuk u kujtuan në Firefox.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Mbyll aplikacionin tjetër.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Kontrollo lejet e kujtesës.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Një aplikacion i palës së tretë po modifikon videon.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Mbyll/çinstalo aplikacionin tjetër.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Pajisje harduerike që nuk mund të sigurohet.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Përdor një pajisje tjetër.";
+
 "FaceTec_camera_permission_header" = "Aktivizo kamerën";
-"FaceTec_camera_permission_message_enroll" = "Lejet e kamerës jo aktive.<br/> Kontrollo cilësimet e sistemit tënd operativ dhe shfletuesit.";
-"FaceTec_camera_permission_message_auth" = "Your camera permissions are disabled. Tap below to edit your settings.";
-"FaceTec_camera_permission_enable_camera" = "ENABLE CAMERA";
-"FaceTec_camera_permission_launch_settings" = "LAUNCH SETTINGS";
+
+"FaceTec_camera_permission_message" = "Lejet e kamerës u çaktivizuan.<br/>Kontrollo cilësimet e sistemit operativ dhe të shfletuesit.";
+
+"FaceTec_enter_fullscreen_action" = "HAP EKRANIN E PLOTË";
+
+"FaceTec_enter_fullscreen_header" = "Modaliteti i autoportretit në ekran të plotë";
+
+"FaceTec_enter_fullscreen_message" = "Para se të fillojmë, kliko butonin e mëposhtëm për të hapur modalitetin me ekran të plotë.";
+
+"FaceTec_feedback_center_face" = "Vendosni fytyren tuaj ne qender";
+
 "FaceTec_feedback_face_not_found" = "Vendosni fytyren tuaj brenda kornizes";
+
 "FaceTec_feedback_face_not_looking_straight_ahead" = "Shikoni drejt perpara";
+
 "FaceTec_feedback_face_not_upright" = "Mbani koken drejt";
+
+"FaceTec_feedback_face_not_upright" = "Mbani koken drejt";
+
 "FaceTec_feedback_hold_steady" = "Qendroni pa levizur";
+
 "FaceTec_feedback_move_phone_away" = "Largohuni pak";
+
+"FaceTec_feedback_move_phone_away" = "Largohuni pak";
+
 "FaceTec_feedback_move_phone_closer" = "Afrohuni me prane";
-"FaceTec_feedback_move_phone_even_closer" = "Afrohuni me prane";
+
 "FaceTec_feedback_move_phone_to_eye_level" = "Vendosni telefonin ne nivelin e syve";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Shikoni drejt tek kamera";
+
+"FaceTec_feedback_move_web_closer" = "Afrohuni ";
+
+"FaceTec_feedback_move_web_even_closer" = "Afrohuni me prane";
+
 "FaceTec_feedback_use_even_lighting" = "Vendosni burimin e drites perballe jush";
-"FaceTec_instructions_header_lighting" = "Vendosni burimin e drites perballe jush";
-"FaceTec_instructions_header_face_angle" = "Please Hold Camera\nAt Eye Level";
-"FaceTec_instructions_header_ready_1" = "Behuni gati";
-"FaceTec_instructions_header_ready_2" = "per videon selfie";
-"FaceTec_instructions_message_ready" = "Ju lutem vendoseni fytyren\ntuaj ne kornizen ovale te vogel, me pas ne kornizen ovale te madhe";
-"FaceTec_result_facescan_upload_message" = "<strong>Ju lutemi mbani këtë dritare aktive.<br/>Mos ndërroni skedat ose mbyllni dritaren</strong><br/>Duke bashkangjitur <br/>Encrypted<br/>3D FaceMap";
-"FaceTec_result_success_message" = "Suksese!";
-"FaceTecRetryReasonGeneric_title" = "Ta provojme serisht";
-"FaceTecRetryReasonGeneric_subtitle" = "We kindly ask to make sure that your face is not obstructed by any items and you are not making any unusual facial expresions during identification";
-"FaceTecRetryReasonBadLighting_title" = "Poor photo lighting";
-"FaceTecRetryReasonBadLighting_subtitle" = "Por me pare, Ju lutem te shikoni foton tuaj dhe rregulloni mjedisnin perreth";
-"FaceTecRetryReasonFaceAngle_title" = "Invalid face submission format";
-"FaceTecRetryReasonFaceAngle_subtitle" = "We kindly ask to make sure that your face fits in the marked zone properly. You must look straight into the camera";
-"FaceTecRetryReasonBadLightingFailureToAcquire_title" = "Bright lighting surrounding";
-"FaceTecRetryReasonBadLightingFailureToAcquire_subtitle" = "Please be informed that during your identification harsh lighting surrounding was detected around your face. We kindly ask to make sure that your surrounding is not too bright";
-"FaceTec_instructions_message_ready_1" = "Vendose fytyrën në formën vezake";
-"FaceTec_instructions_message_ready_2" = "";
-"FaceTec_presession_hold_steady_1" = "Qëndro pa lëvizur për: 1";
-"FaceTec_presession_hold_steady_2" = "Qëndro pa lëvizur për: 2";
-"FaceTec_presession_hold_steady_3" = "Qëndro pa lëvizur për: 3";
-"FaceTec_presession_frame_your_face" = "Vendose fytyrën në formën vezake";
-"FaceTec_presession_neutral_expression" = "Pozicion neutral, mos buzëqesh";
-"FaceTec_presession_position_face_straight_in_oval" = "Shiko drejt para";
-"FaceTec_presession_remove_dark_glasses" = "Hiq syzet e errëta";
+
+"FaceTec_idscan_additional_review_message" = "<br/>Kërkohet shqyrtim shtesë";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Shfaq pjesën e pasme të dokumentit të identifikimit";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Shfaq anën e përparme të dokumentit të identifikimit";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Shqyrto dhe konfirmo";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Lëviz poshtë";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Konfirmo që fotografia është e qartë dhe e lexueshme";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Konfirmo që fotografia është e qartë dhe e lexueshme";
+
+"FaceTec_idscan_type_selection_header" = "Përgatitu për të skanuar <br/>dokumentin tënd të identifikimit";
+
+"FaceTec_initializing_camera" = "Sigurimi i transmetimit të kamerës";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Bëhu gati për";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "autoportretin tënd me video";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Bëhu gati për autoportretin tënd me video";
+
+"FaceTec_instructions_message_ready_1" = "Vendose fytyrën brenda kornizës ovale,";
+
+"FaceTec_instructions_message_ready_2" = "shtyp \"I'm Ready\" dhe afrohu";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Vendose fytyrën brenda kornizës ovale, shtyp \"I'm Ready\" dhe afrohu";
+
 "FaceTec_presession_brighten_your_environment" = "Ndriço mjedisin";
+
 "FaceTec_presession_conditions_too_bright" = "Mjedisi shumë i ndritshëm";
+
 "FaceTec_presession_eyes_straight_ahead" = "Shiko drejt para";
-"FaceTec_retry_header" = "Ta provojme serisht";
+
+"FaceTec_presession_frame_your_face" = "Vendose fytyrën në formën vezake";
+
+"FaceTec_presession_hold_steady_1" = "Qëndro pa lëvizur për: 1";
+
+"FaceTec_presession_hold_steady_2" = "Qëndro pa lëvizur për: 2";
+
+"FaceTec_presession_hold_steady_3" = "Qëndro pa lëvizur për: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Shiko drejt para";
+
+"FaceTec_presession_neutral_expression" = "Pozicion neutral, mos buzëqesh";
+
+"FaceTec_presession_remove_dark_glasses" = "Hiq syzet e errëta";
+
+"FaceTec_result_facescan_upload_message" = "Po ngarkojmë imazhin <br/>e enkriptuar<br/>3D FaceScan";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Barkodi nuk u skanua dot,<br/>provo përsëri";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Fytyra nuk përputhej<br/>mjaftueshëm";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Dokumenti i identifikimit<br/>nuk është plotësisht i dukshëm";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Lloji i dokumentit të identifikimit nuk mbështetet<br/>Përdor një dokument tjetër identifikimi";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Teksti i dokumentit të identifikimit nuk është i lexueshëm";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Fotografimi i dokumentit të identifikimit<br/>përfundoi";
+
+"FaceTec_result_idscan_success_back_side_message" = "Skanimi i dokumentit të identifikimit përfundoi";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Ana e përparme e dokumentit të identifikimit<br/>të skanuar";
+
+"FaceTec_result_idscan_success_front_side_message" = "Skanimi i dokumentit të identifikimit përfundoi";
+
+"FaceTec_result_idscan_success_passport_message" = "Skanimi i pasaportës përfundoi";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Skanimi i dokumentit të identifikimit me fotografi<br/>përfundoi";
+
+"FaceTec_result_idscan_unsuccess_message" = "Fotografia e dokumentit të identifikimit<br/>nuk përputhej<br/>me fytyrën e përdoruesit";
+
+"FaceTec_result_idscan_upload_message" = "Po ngarkojmë dokumentin e <br/>kriptuar<br/> të identifikimit";
+
+"FaceTec_result_success_message" = "Me sukses!";
+
+"FaceTec_retry_header" = "Le të provojmë sërish";
+
 "FaceTec_retry_ideal_image_label" = "Qendrimi ideal";
+
 "FaceTec_retry_instruction_message_1" = "Mos qeshni, qendroni neutral";
+
 "FaceTec_retry_instruction_message_2" = "Asnje zhurme ose ndricim te tepruar";
-"FaceTec_retry_instruction_message_3" = "Shumë e paqartë, pastro aparatin";
-"FaceTec_retry_subheader_message" = "Por me pare, Ju lutem te shikoni foton tuaj dhe rregulloni mjedisnin perreth";
+
+"FaceTec_retry_instruction_message_3" = "Shumë e paqartë, pastro kamerën";
+
+"FaceTec_retry_subheader_message" = "Na duhet një video autoportret më e qartë";
+
 "FaceTec_retry_your_image_label" = "Selfie Juaj";
 
-// Waiting page
-"ondato_unrelatedPhotoSubmit_primary" = "Identifikimi juaj refuzohet për shkak të fotografisë që nuk ka lidhje me identifikimin";
-"ondato_dataNotMatch_second" = "Ju lutemi të kontrolloni informacionin e dhënë në formularin e klientit. Informacioni në formularin e klientit duhet të përputhet me informacionin në dokumentin tuaj.";
-"ondato_incorrect_information_provided_second" = "Ju lutemi, provoni përsëri procesin ose kontaktoni kujdesin e klientit.";
-"ondato_waiting_page_success_title" = "Identifikimi juaj u krye me sukses.";
-"ondato_waiting_page_verify_your_identity" = "Të dhënat tuaja do të përdoren vetëm për të verifikuar identitetin tuaj.";
-"ondato_waiting_page_facial_photo_obscured" = "Ne kontrollojmë foton e fytyrës suaj më poshtë.";
-"ondato_prohibitedCountryOrState_second" = "Ju lutemi, për më shumë informacion kontaktoni ofruesin e shërbimit ose provoni sërish me një dokument tjetër.";
-"ondato_underagePerson_second" = "Ne me mirësi si ju të kontaktoni ofruesin e shërbimit për më shumë informacion.";
-"ondato_waiting_page_encrypt_data_for_final_approval" = "Ne i enkriptojmë të dhënat dhe i transferojmë ato për miratim përfundimtar.";
-"ondato_partOfDocumentIsCovered_second" = "Ju lutem te provoni perseri procesin e identifikimit duke u siguruar qe dokumenti eshte lehtesisht i lexueshem dhe nuk ka te dhena te mbuluara.";
-"ondato_waiting_page_check_if_all_photos_uploaded" = "Ne kontrollojmë që keni siguruar të gjitha fotot e kërkuara.";
-"ondato_blurred_photo_second" = "Ju lutem te provoni perseri procesin e identifikimit dhe sigurohuni qe te dhenat e dokumentit te identifikimit jane lehtesisht te lexueshme.";
-"ondato_sanctioned_primary" = "Identifikimi Juaj eshte refuzuar.";
-"ondato_missingDocumentPhoto_second" = "Ju lutemi te riprovoni procesin e identifikimit dhe te gjithe fotografite e nevojshme te dokumentit tuaj.";
-"ondato_documentNotAccepted_primary" = "Identifikimi juaj refuzohet për shkak të dokumentit i cili është i papranueshëm";
-"ondato_poorPhotoLighting_second" = "Ju lutem te provoni perseri procesin e identifikimit dhe te siguroheni qe dokumenti ndricohet ne menyre te barabarte.";
-"ondato_waiting_page_biometric_data" = "Ne krijojmë një model 3D të fytyrës suaj nga të dhënat tuaja biometrike.";
-"ondato_bad_media_format_second" = "Ju lutem te fotografoni dokumentin tuaj origjinal.";
-"ondato_dataNotMatch_primary" = "Identifikimi juaj refuzohet për shkak të mospërputhjes së informacionit në dokument dhe formularit të klientit.";
-"ondato_waiting_page_success_body" = "Faleminderit për durimin tuaj.";
-"ondato_underagePerson_primary" = "Identifikimi juaj refuzohet për shkak të kufizimizit të moshës";
-"ondato_expiration_date_mismatch_primary" = "Ka nje problem me identifikimin tuaj.";
-"ondato_documentIsExpired_second" = "Ju duhet te fotografoni nje dokument te vlefshem per te perfunduar procesin e identifikimit.";
-"ondato_documentWithNonLatinCharacters_primary" = "Identifikimi juaj refuzohet për shkak të llojit të dokumentit që nuk është i pranueshëm";
-"ondato_incorrect_information_provided_primary" = "Ka nje problem me identifikimin tuaj.";
-"ondato_facesNotMatch_primary" = "Identifikimi Juaj eshte refuzuar per shkak te mosperputhjes ndermjet selfie dhe fotos se dokumentit.";
-"ondato_waiting_page_document_facial_image" = "Ne kontrollojmë nëse fotografia e fytyrës në dokumentin tuaj është qartësisht e dukshme.";
-"ondato_more_than_one_person_second" = "Procesi i identifikimit duhet te kryhet pa marre pjese persona te tjere ne proces.";
-"ondato_doc_and_bio_age_doesnt_match_second" = "Ju lutemi, provoni përsëri procesin ose kontaktoni kujdesin e klientit.";
-"ondato_partOfFaceIsCovered_primary" = "Identifikimi juaj refuzohet për shkak të fytyrës që mbulohet.";
-"ondato_waiting_page_authenticity" = "Ne kontrollojmë vërtetësinë dhe vlefshmërinë e të dhënave.";
-"name" = "sq";
-"ondato_name_mismatch_primary" = "Ka nje problem me identifikimin tuaj.";
-"ondato_duplicatedInfo_primary" = "Identifikimi Juaj eshte refuzuar.";
-"ondato_miscellaneous_second" = "Ju lutem te kontaktoni me Kredo.al per me shume informacion.";
-"ondato_possibleFraudAttempt_second" = "Ju lutem te kontaktoni me Kredo.al per me shume informacion.";
-"ondato_waiting_page_failure_close_title" = "Mbyll";
-"ondato_something_went_wrong_second" = "Provoni sërish.";
-"ondato_doc_and_bio_age_doesnt_match_primary" = "Ka nje problem me identifikimin tuaj.";
-"ondato_missingPersonPhoto_second" = "Ju lutem te riprovoni procesin e identifikimit sipas udhezimeve te dhena.";
-"ondato_waiting_page_success_continue_title" = "VAZHDO";
-"ondato_waiting_page_taking_longer_than_expected" = "Verifikimi juaj po zgjat më shumë sesa pritej. Mos e mbyllni dritaren, kanë mbetur vetëm disa momente.";
-"ondato_bad_media_format_primary" = "Identifikimi Juaj eshte refuzuar.";
-"ondato_unrelatedPhotoSubmit_second" = "Ju duhet te fotografoni nje dokument te vlefshem per te perfunduar procesin e identifikimit.";
-"ondato_waiting_page_ai_check" = "Inteligjenca Artificiale (IA) krahason përputhjen midis fytyrës suaj dhe dokumentit.";
-"ondato_expiration_date_mismatch_second" = "Ju lutemi, provoni përsëri procesin ose kontaktoni kujdesin e klientit.";
-"ondato_waiting_page_external_damage" = "Ne kontrollojmë që dokumenti juaj të mos jetë i dëmtuar nga jashtë dhe nëse të gjitha shenjat e kërkuara janë të dukshme.";
-"ondato_missingPersonPhoto_primary" = "Identifikimi Juaj eshte refuzuar per arsye se selfie juaj nuk eshte e sakte.";
-"ondato_facesNotMatch_second" = "Ju lutemi, provoni sërish procesin e identifikimit ose kontaktoni kujdesin për klientin.";
-"ondato_miscellaneous_primary" = "Identifikimi Juaj eshte refuzuar.";
-"ondato_partOfFaceIsCovered_second" = "Ju lutemi provoni sërish procesin e identifikimit sipas udhëzimeve të dhëna. Ju lutemi mos e mbuloni fytyrën.";
-"ondato_partOfDocumentIsCovered_primary" = "Identifikimi juaj refuzohet për shkak të informacionit të mbuluar në foton e dokumentit";
-"ondato_prohibitedCountryOrState_primary" = "Identifikimi juaj refuzohet për shkak të një vendi ose shteti të ndaluar";
-"ondato_possibleFraudAttempt_primary" = "Identifikimi Juaj eshte refuzuar.";
-"ondato_waiting_page_scan_document" = "Ne skanojmë tekstin dhe shenjat e veçanta në dokument.";
-"ondato_poorPhotoQuality_second" = "Ju lutem te provoni perseri procesin e identifikimit dhe te siguroheni qe te dhenat e dokumentit jane te lexueshme qarte, ose ne rast te cilesise se dobet te kameres, Ju lutem te provoni procesin ne nje paisje tjeter.";
-"ondato_something_went_wrong_primary" = "Dicka shkoi keq.";
-"ondato_waiting_page_encrypt_data" = "Ne i enkriptojmë të dhënat tuaja dhe i dërgojmë ato për verifikim.";
-"ondato_documentIsExpired_primary" = "Identifikimi juaj refuzohet për shkak të skadimit të dokumentit";
-"ondato_prohibitedNationality_primary" = "Identifikimi Juaj eshte refuzuar.";
-"ondato_more_than_one_person_primary" = "Identifikimi juaj refuzohet për shkak të njerëzve të tjerë që marrin pjesë në proces";
-"ondato_name_mismatch_second" = "Ju lutemi, provoni përsëri procesin ose kontaktoni kujdesin e klientit.";
-"ondato_waiting_page_no_other_person" = "Ne kontrollojmë foton e fytyrës suaj të fotografuar nga një distancë më e largët.";
-"ondato_waiting_page_documents_clearly_legible" = "Ne kontrollojmë nëse dokumenti juaj është qartësisht i lexueshëm.";
-"ondato_documentNotAccepted_second" = "Dokumenti i dorezuar eshte i papranueshem. Ju lutem te paraqisni nje pashaporte ose karte identiteti te vlefshme per te perfunduar procesin e identifikimit.";
-"ondato_documentWithNonLatinCharacters_second" = "Ju lutem te fotografoni nje dokument te vlefshem dhe te njohur me MRZ (machine readable zone).";
-"ondato_sanctioned_second" = "Ju lutem te kontaktoni Kredo.al per me shume informacion.";
-"ondato_missingDocumentPhoto_primary" = "Identifikimi juaj refuzohet për shkak të mungesës së fotografisë së dokumentit";
-"ondato_blurred_photo_primary" = "Identifikimi juaj refuzohet për shkak të fotografisë së mjegulluar";
-"ondato_prohibitedNationality_second" = "Ju lutem te kontaktoni Kredo.al per me shume informacion.";
-"ondato_poorPhotoLighting_primary" = "Identifikimi Juaj eshte refuzuar per shkak te ndricimit te pamjaftueshem ne foto.";
-"ondato_waiting_page_data_in_registers" = "Ne shikojmë statusin e dokumentit dhe të dhënave tuaja në regjistrat.";
-"ondato_poorPhotoQuality_primary" = "Identifikimi Juaj eshte refuzuar per shkak te cilesise se dobet te fotos.";
-"ondato_waiting_page_failure_try_again_title" = "Provoje perseri";
-"ondato_waiting_page_document_obscured" = "Ne kontrollojmë nëse të dhënat në dokumentin tuaj nuk mbulohen nga hijet ose rrezet e dritës.";
-"ondato_capture_nfc_instructions_title" = "Përgatitni dokumentin tuaj për skanimin NFC";
-"ondato_capture_nfc_instructions_description" = "Merrni dokumentin tuaj dhe përgatitni NFC në pajisjen tuaj.";
-"ondato_capture_nfc_description_scanning" = "Prisni ju lutem. Procesi mund të zgjasë edhe disa sekonda.";
-"ondato_capture_nfc_failure_title" = "Duket se procesi është ndërprerë.";
-"ondato_try_again" = "Provoje perseri";
-"ondato_try_alternative" = "Provoni alternativën";
-"ondato_passport_scan_help_title" = "Nëse keni hasur vështirësi për të hyrë në NFC, provoni këto metoda:";
-"ondato_passport_scan_help_step1" = "Provoni të lexoni faqen e fundit të dokumentit.";
-"ondato_passport_scan_help_step2" = "Provoni të lexoni faqen e fotografisë së dokumentit.";
-"ondato_passport_scan_help_step3" = "Nëse ka ndonjë mbulesë në dokument, hiqeni atë.";
-"ondato_capture_mrz_success_title" = "Kapja e informacionit ishte e suksesshme";
-"ondato_capture_mrz_success_description" = "Faleminderit për durimin tuaj.";
-"ondato_waiting_page_success_body" = "Faleminderit për durimin tuaj.";
-"ondato_continue_button" = "Vazhdojme";
-"ondato_capture_nfc_settings_instructions_title" = "Me sa duket nuk mund të vazhdosh pa NFC.";
-"ondato_capture_nfc_settings_instructions_description" = "Për të vazhduar, duhet të siguroheni që dokumenti ka NFC dhe është aktivizuar në pajisjen tuaj.";
-"ondato_nfc_scan_prompt_request_present" = "Ju lutemi mbajeni dokumentin në pjesën e pasme të telefonit tuaj.";
-"ondato_nfc_scan_prompt_authenticating" = "Autentifikimi me dokument.....";
-"ondato_nfc_scan_prompt_reading_data" = "Skanimi";
-"ondato_nfc_scan_prompt_error_tag_not_valid" = "Etiketa nuk është e vlefshme.";
-"ondato_nfc_scan_prompt_error_more_than_one_tag_found" = "Duket se procesi është ndërprerë.";
-"ondato_nfc_scan_prompt_error_connection" = "Duket se procesi është ndërprerë.";
-"ondato_nfc_scan_prompt_error_invalid_mrz_key" = "Çelësi MRZ nuk është i vlefshëm për këtë dokument.";
-"ondato_nfc_scan_prompt_error_response" = "Duket se procesi është ndërprerë.";
-"ondato_capture_nfc_failure_title" = "Duket se procesi është ndërprerë.";
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Ndalo procesin";
 
-"ondato_interrupted_title" = "Procesi u ndërpre";
-"ondato_interrupted_description" = "Për shkak të ndërprerjeve, procesi është ndalur. Ju lutemi qëndroni në këtë aplikacion derisa të keni përfunduar të gjitha hapat.";
+"FailureScreen.TooManyAttempts.Description" = "Kontakto ofruesin e shërbimit për ndihmë";
 
-"face_auth_too_many_attempts_title" = "Verifikimi i bllokuar për shkak të shumë tentativave";
-"face_auth_too_many_attempts_description" = "Ju lutemi, kontaktoni ofruesin e shërbimeve për ndihmë";
-"face_auth_too_many_attempts_button" = "NDAL PROCESIN";
+"FailureScreen.TooManyAttempts.Header" = "Verifikimi u bllokua për shkak të shumë përpjekjeve";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Pajisja është e kyçur.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Ka shumë tentativa";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Pajisja nuk mbështetet.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Dështoi";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Të lutemi, provo përsëri më vonë.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Gabim në licencë";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Kyçi ka skaduar, përmbante tekst të pavlefshëm ose po përpiqesh të nisësh veprime në një domen që nuk është specifikuar në Kyçin tënd.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Kyçi ka skaduar ose është i pavlefshëm";
+
+"LoadResultReason.NetworkIssues.Description" = "Nuk mund të vazhdojë për shkak të problemeve me lidhjen në pajisjen tënde";
+
+"LoadResultReason.NetworkIssues.Header" = "Probleme me rrjetin";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Nuk mund të ngarkojë materialet burimore.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Dështoi";
+
+"LoadResultReason.StillLoadingResources.Description" = "Materialet burimore janë ende duke u ngarkuar.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Dështoi";
+
+"FaceTec_action_im_ready" = "Jam gati";
+
+"ReadyScreen.Header" = "Bëhu gati për autoportretin tënd me video";
+
+"RetryScreen.Action.PassiveLiveness" = "Provoni metodën alternative";
+
+"FaceTec_action_try_again" = "Provo përsëri";
+
+"RetryScreen.Description" = "Na duhet një fotografi më e qartë.";
+
+"RetryScreen.Header" = "Le ta provojmë përsëri";
+
+/*  */
+"RetryScreen.Message.Generic" = "Ju lutemi përdorni ndriçim të qëndrueshëm dhe kopjoni pozën ideale";
+
+"UploadScreen.Description" = "Mbajeni këtë dritare të hapur";
+
+"UploadScreen.Header" = "Po verifikon fotografinë e fytyrës";
+

@@ -1,261 +1,858 @@
-"ondato_continue_anyway" = "Continuă oricum";
-"ondato_loading_title" = "Informațiile se încarcă";
-"ondato_loading_subtitle" = "Te rugăm să aștepți...";
-"ondato_success_title" = "Înregistrare reușită";
-"ondato_success_subtitle" = "Odată ce înregistrarea ta este procesată, te vom notifica prin email.";
-"ondato_close" = "Închide";
-"ondato_button_capture" = "Fotografiază";
-"ondato_try_again" = "Încearcă din nou";
+"Action.Close" = "Închide";
 
-"ondato_error_unauthorized_message" = "NEAUTORIZAT";
-"ondato_error_bad_request_message" = "SOLICITARE_NEVALIDĂ";
-"ondato_error_internal_server_error_message" = "EROARE SERVER";
-"ondato_error_connection_failed" = "EROARE DE CONECTARE";
-"ondato_error_server_is_down_message" = "SERVER-UL NU FUNCȚIONEAZĂ";
-"ondato_error_default_title" = "Oh, ceva nu merge cum trebuie";
-"ondato_error_timeout_message" = "Sesiunea s-a încheiat";
-"ondato_start_button" = "Începe";
+"LanguageSelection.Header" = "Selectați limba";
 
-"ondato_error_something_wrong_title" = "A intervenit o eroare";
-"ondato_consent_title" = "Consimțământ pentru prelucrarea datelor personale";
-"ondato_consent_terms" = "Pentru a obține serviciul de la Furnizorul de Servicii, cu acest consimțământ îmi exprim acordul ca UAB „Ondato” să primească și să gestioneze datele mele personale, inclusiv datele mele biometrice, obținute din identificarea de la distanță a identității mele personale prin preluare și/sau filmare a imaginii feței mele, a identității persoanei mele sau a documentului utilizat pentru identificarea acesteia și/sau a imaginii acestuia și datele personale conținute în acesta și/sau verificarea în registrul populației: imaginea feței mele, nume, prenume, naționalitate , sex, cod personal, data nașterii, numărul documentului utilizat, data emiterii și valabilitatea, semnătura mea și transferul acestor date către Furnizorul de servicii. De asemenea, consider că sunt informat că operatorul datelor mele cu caracter personal, inclusiv al datelor mele biometrice, specificat în acest consimțământ este Furnizorul de Servicii, iar UAB „Ondato” va prelucra datele mele personale numai până la încheierea procedurii de identificare la distanță și rezultatele vor fi transferate Furnizorului de servicii. De asemenea, declar că sunt informat și sunt de acord că datele mele personale obținute pentru identificarea de la distanță și scopurile acestora pot fi stocate de UAB „Ondato” pentru o perioadă mai lungă de timp decât este nevoie pentru ca identificarea să fie finalizată sau transmiterea rezultatelor acesteia către Furnizorul de Servicii, dar numai la cererea Furnizorului de Servicii sau pe baza obligației contractuale a UAB Ondato față de Furnizorul de servicii, dar nu mai mult decât este definit în Contractul care a fost semnat între UAB „Ondato” și Furnizorul de servicii sau în solicitarea Furnizorului de Serviciu. Sunt informat că pot contacta furnizorul de servicii cu privire la datele mele personale pentru informații mai detaliate. Prin prezenta declar și confirm că toate datele personale pe care le voi furniza pentru identificarea de la distanță a identității mele personale sunt corecte și exacte, iar documentul pe care îl voi folosi în acest scop nu este fals și este valabil.";
-"ondato_consent_agree" = "De Acord";
-"ondato_consent_disagree" = "Nu Sunt de Acord";
+"Modals.Abort.Action.ContinueProcess" = "Continuați procesul";
 
-"ondato_start_identification_title" = "Bine ai venit la procesul\nde verificare a identității ";
-"ondato_start_identification_description" = "Pentru a utiliza acest serviciu, va trebui să parcurgi un proces de validare al cerințelor site-ului. Procesul are 3 pași.";
-"ondato_start_identification_step_1" = "1. Alege un act de identitate ";
-"ondato_start_identification_step_2" = "2. Fotografiază actul de identitate";
-"ondato_start_identification_step_3" = "3. Fă un selfie";
-"ondato_choose_document_title" = "Alege actul de identitate și începe verificarea";
-"ondato_choose_document_passport" = "Pașaport";
-"ondato_choose_document_id_card" = "Card de identitate";
-"ondato_choose_document_driving_licence" = "Permis auto";
+"Modals.Abort.Action.StopProcess" = "Opriți procesul";
 
-"ondato_capture_passport_front_title" = "Te rugăm să fotografiezi pagina principală a documentului, incluzând secțiunea MRZ";
-"ondato_capture_id_card_front_title" = "Te rugăm să fotografiezi fața cardului de identitate ";
-"ondato_capture_id_card_back_title" = "Te rugăm să fotografiezi verso-ul cardului de identitate ";
-"ondato_capture_driver_licence_front_title" = "Te rugăm să fotografiezi fața permisului de conducere";
-"ondato_capture_driver_license_back_title" = "Te rugăm să fotografiezi verso-ul permisului de conducere";
-"ondato_capture_check_taken_photo" = "Verifică imaginea ";
-"ondato_capture_check_taken_photo_description" = "Asigură-te că fotografia actului de identitate este clară și vizibilă și că informațiile sunt lizibile. Dacă fotografia este de o calitate acceptabilă, te rugăm să apeși pe butonul \"Continuă\"";
+"Modals.Abort.Heading" = "Sunteți sigur că doriți să întrerupeți acest proces?";
 
-"ondato_capture_id_card_front_instructions_description" = "Te rugăm să plasezi fața actului de identitate în zona marcată și să apeși pe \"Fotografiază\". Actul de identitate trebuie să fie vizibil, să nu fie neclar sau pixelat.";
-"ondato_capture_id_card_front_instructions_title" = "Te rugăm să fotografiezi fața actului de identitate";
-"ondato_capture_id_card_back_instructions_title" = "Te rugăm să fotografiezi verso-ul actului de identitate";
-"ondato_capture_id_card_back_instructions_description" = "Te rugăm să plasezi verso-ul actului de identitate în zona marcată și să apeși pe \"Fotografiază\". Asigură-te că zona MRZ este vizibilă, iar imaginea actului de identitate nu este neclară sau pixelată.";
-"ondato_capture_selfie_with_document_instructions_title" = "Fă un selfie cu tine și actul de identitate";
-"ondato_capture_selfie_with_document_instructions_description" = "Plasează actul de identitate lângă fața ta atunci când faci selfie ";
-"ondato_capture_driver_license_front_instructions_title" = "Te rugăm să fotografiezi fața permisului auto";
-"ondato_capture_driver_license_front_instructions_description" = "Te rugăm să plasezi fața permisului auto în zona marcată și să apeși pe \"Fotografiază\". Fotografia permisului auto trebuie să fie vizibilă, să nu fie neclară sau pixelată.";
-"ondato_capture_driver_license_back_instructions_title" = "Te rugăm să fotografiezi verso-ul permisului auto";
-"ondato_capture_driver_license_back_instructions_description" = "Te rugăm să plasezi verso-ul permisului auto în zona marcată și să apeși pe \"Fotografiază\". Fotografia permisului auto trebuie să fie clar vizibilă, nu neclară sau pixelată.";
-"ondato_capture_passport_front_instructions_title" = "Te rugăm să fotografiezi pagina principală a pașaportului ";
-"ondato_capture_instructions_mistakes" = "Greșeli principale:";
-"ondato_capture_instructions_too_blurry" = "Prea neclar";
-"ondato_capture_instructions_too_small" = "Prea mic";
-"ondato_capture_instructions_bad_lighting" = "Lumină slabă";
-"ondato_capture_instructions_not_neutral" = "Expresia facială nu este neutră";
-"ondato_capture_instructions_too_dark" = "Prea întuneric";
-"ondato_capture_yourself_with_document_title" = "Fă un selfie cu tine și actul de identitate";
-"ondato_capture_check_taken_photo_with_document" = "Te rugăm să verifici fotografia ";
-"ondato_capture_check_taken_photo_with_document_description" = "Te rugăm să te asiguri că fotografia este clară";
-"ondato_capture_face_instructions_title" = "Fă un selfie";
-"ondato_capture_face_instructions_description" = "Poziționează-ți fața în mijlocul cadrului și urmează instrucțiunile. Fotografia nu trebuie să fie neclară si trebuie să fie iluminată uniform.";
-"ondato_capture_passport_front_instructions_description" = "Te rugăm să poziționezi actul de identitate cu zona MRZ vizibilă în zona marcată și să apeși pe \"Fotografiază\". Actul de identitate trebuie să fie clar vizibil, nu neclar sau pixelat.";
+"Modals.Error.Description" = "Ceva a mers prost, închideți acest mesaj și încercați din nou";
 
-"FailedRule_PersonPhotoContainsFace_title" = "Nu s-a putut recunoaște fotografia feței";
-"FailedRule_DocContainsFace_title" = "Nu s-a putut recunoaște fotografia feței din actul de identitate";
-"FailedRule_DocContainsMrz_title" = "Nu s-a putut fotografia actul de identitate ";
-"FailedRule_PersonAndDocPhotoMatch_title" = "Fotografia feței nu corespunde cu fotografia din actul de identitate ";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_title" = "Nu s-a putut recunoaște fotografia feței din actul de identitate";
-"FailedRule_DocExpireDateInFuture_title" = "Act de identitate expirat";
-"FailedRule_PersonAndDocumentPersonCodeMatch_title" = "CNP-ul din actul de identitate nu corespunde cu cel utilizat la înregistrare ";
-"FailedRule_PersonFaceOrDocIsMonochrome_title" = "Copie alb/negru trimisă";
-"FailedRule_DocumentContainsBothSides_title" = "Paginile actului de identitate sunt amestecate ";
-"FailedRule_ContainsMultipleFaces_title" = "Sunt detectate mai multe fețe";
-"FailedRule_PersonFoundInComplyAdvantage_title" = "Persoana cu un astfel de nume a fost găsită pe lista de sancțiuni";
-"FailedRule_ContainsCelebrity_title" = "S-a recunoscut o celebritate ";
-"FailedRule_LostAndStolen_title" = "Actul tău de identitate apare ca declarat furat sau pierdut";
-"FailedRule_PersonPhotoContainsFace_subtitle" = "Te rugăm să faci un selfie în timp real. Fața ta ar trebui să fie vizibilă clar, fotografiată într-un mediu bine luminat și să nu fie neclară. Te rugăm să te asiguri că fața este clar vizibilă";
-"FailedRule_DocContainsFace_subtitle" = "Nu s-a putut recunoaște fotografia feței în actul de identitate. Te rugăm să capturezi pagina documentului care conține fotografia feței tale. Actul de identitate trebuie să să fie clar vizibil, fotografiat într-un mediu bine luminat, nu neclar sau pixelat. Te rugăm să te asiguri că fotografia feței din actul de identitate este clar vizibilă.";
-"FailedRule_DocContainsMrz_subtitle" = "Nu s-a putut extrage zona MRZ. Te rugăm să fotografiezi actul de identitate cu zona MRZ inclusă. Actul de identitate trebuie să să fie clar vizibil, fotografiat într-un mediu bine luminat, nu neclar sau pixelat. Te rugăm să te asiguri că fotografia feței din actul de identitate este clar vizibilă. Asigură-te că zona MRZ este lizibilă.";
-"FailedRule_PersonAndDocPhotoMatch_subtitle" = "Persoana din selfie nu corespunde cu persoana de pe actul de identitate. Te rugăm să scoți ochelarii sau alte accesorii de pe față.";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_subtitle" = "Nu s-a putut recunoaște fața în actul de identitate. Te rugăm să fotografiezi pagina care conține poza feței tale. Fotografia actului de identitate trebuie să fie clar vizibilă, fotografiată într-un mediu bine iluminat, nu neclară sau pixelată. Asigură-te că poza feței tale de pe actul de identitate este clar vizibilă.";
-"FailedRule_DocExpireDateInFuture_subtitle" = "ondato_încearcă_din nou";
-"FailedRule_PersonAndDocumentPersonCodeMatch_subtitle" = "CNP-ul din actul de identitate nu corespunde cu cel utilizat la înregistrare. Te rugăm să ne trimiți actul de identitate pe care l-ai utilizat la înregistrare. ";
-"FailedRule_PersonFaceOrDocIsMonochrome_subtitle" = "Ai trimis o copie alb/negru a actului de identitate. Te rugăm să reții că trebuie să faci o fotografie a actului de identitate. Fotografia trebuie să fie clar vizibilă, fotografiată într-un mediu bine iluminat și sa nu fie neclară sau pixelată.";
-"FailedRule_DocumentContainsBothSides_subtitle" = "Ai trimis copii a două acte de identitate diferite. Trebuie să faci fotografii ale aceluiași act de identitate. Fotografia actului de identitate trebuie să fie vizibilă clar, fotografiată într-un mediu bine iluminat și să nu fie neclară sau pixelată. Asigură-te că toate informațiile de pe actul de identitate sunt clar vizibile. ";
-"FailedRule_ContainsMultipleFaces_subtitle" = "Am detectat mai multe fețe în timpul identificării. Te rugăm să te asiguri că procesul de identificare este parcurs doar de către deținătorul actului de identitate.";
-"FailedRule_PersonFoundInComplyAdvantage_subtitle" = "O persoană cu numele tău a fost găsită pe lista sancțiunilor. Vom verifica identificarea ta și vom informa Furnizorul despre rezultat. Acest proces va dura câteva momente.";
-"FailedRule_ContainsCelebrity_subtitle" = "O celebritate a fost recunoscută în una din pozele trimise. Te rugăm să reții că trebuie să faci o fotografie cu tine și cu actul tău de identitate.";
-"FailedRule_LostAndStolen_subtitle" = "Actul tău de identitate a fost declarat drept furat sau pierdut. Te rugăm să apeși pe “Încearcă din nou“ pentru a încărca un alt document.";
+"Modals.Error.Heading" = "Hopa, a apărut o eroare";
 
+"Modals.Success.Description" = "Vă rugăm să treceți la pasul următor";
 
-"FaceTec_feedback_center_face" = "Poziționează fața în centru";
-"FaceTec_action_continue" = "CONTINUĂ";
-"FaceTec_action_im_ready" = "SUNT GATA";
-"FaceTec_action_try_again" = "ÎNCEARCĂ DIN NOU";
-"FaceTec_camera_permission_header" = "Pornește camera";
-"FaceTec_camera_permission_message_enroll" = "Te rugăm să pornești camera pentru selfie";
-"FaceTec_camera_permission_message_auth" = "Permisiunile camerei sunt inactive. Apasă mai jos pentru a accesa setările.";
-"FaceTec_camera_permission_enable_camera" = "PORNEȘTE CAMERA";
-"FaceTec_camera_permission_launch_settings" = "DESCHIDE SETĂRILE";
-"FaceTec_feedback_face_not_found" = "Încadrează-ți fața ";
-"FaceTec_feedback_face_not_looking_straight_ahead" = "Uită-te drept în față";
-"FaceTec_feedback_face_not_upright" = "Ține capul drept";
-"FaceTec_feedback_hold_steady" = "Nu te mișca";
-"FaceTec_feedback_move_phone_away" = "Mișcă-te mai în spate ";
-"FaceTec_feedback_move_phone_closer" = "Mișcă-te mai aproape";
-"FaceTec_feedback_move_phone_even_closer" = "Și mai aproape";
-"FaceTec_feedback_move_phone_to_eye_level" = "Poziționează camera la nivelul ochilor";
-"FaceTec_feedback_use_even_lighting" = "Luminează fața mai uniform";
-"FaceTec_instructions_header_lighting" = "Luminează fața uniform";
-"FaceTec_instructions_header_face_angle" = "Te rugăm să poziționezi\ncamera la nivelul ochilor. ";
-"FaceTec_instructions_header_ready_1" = "Pregătește-te ";
-"FaceTec_instructions_header_ready_2" = "Selfie video";
-"FaceTec_instructions_message_ready" = "Poziționează fața în ovalul mic,\napoi în ovalul mare";
-"FaceTec_result_facescan_upload_message" = "Se încarcă,\nte rugăm să aștepți";
-"FaceTec_result_success_message" = "Fața a fost recunoscută";
-"FaceTecRetryReasonGeneric_title" = "Nu s-a recunoscut fața ";
-"FaceTecRetryReasonGeneric_subtitle" = "Te rugăm să te asiguri că fața nu este acoperită de niciun obiect. Te rugăm să nu faci expresii faciale neobișnuite în timpul identificării.";
-"FaceTecRetryReasonBadLighting_title" = "Lumina este prea slabă";
-"FaceTecRetryReasonBadLighting_subtitle" = "Identificarea a eșuat din cauza luminii prea slabe. Te rugăm să te asiguri că fața este luminată uniform.";
-"FaceTecRetryReasonFaceAngle_title" = "Format nevalid";
-"FaceTecRetryReasonFaceAngle_subtitle" = "Te rugăm să te asiguri că fața este încadrată în zona marcată. Trebuie să te uiți direct la cameră";
-"FaceTecRetryReasonBadLightingFailureToAcquire_title" = "Lumina este prea puternică ";
-"FaceTecRetryReasonBadLightingFailureToAcquire_subtitle" = "Lumina din jurul feței a fost prea puternică. Te rugăm să te asiguri că mediul în care te afli nu este prea luminos.";
-"FaceTec_instructions_message_ready_1" = "Poziționează fața în oval";
-"FaceTec_instructions_message_ready_2" = "";
-"FaceTec_presession_hold_steady_1" = "Nu te mișca pentru: 1";
-"FaceTec_presession_hold_steady_2" = "Nu te mișca pentru: 2";
-"FaceTec_presession_hold_steady_3" = "Nu te mișca pentru: 3";
-"FaceTec_presession_neutral_expression" = "Expresie neutră, fără a zâmbi";
-"FaceTec_presession_position_face_straight_in_oval" = "Uită-te direct în față ";
-"FaceTec_presession_remove_dark_glasses" = "Scoate ochelarii de soare";
-"FaceTec_presession_brighten_your_environment" = "Este nevoie de mai multă lumină";
-"FaceTec_presession_conditions_too_bright" = "Mediul în care te afli este prea luminos";
-"FaceTec_presession_eyes_straight_ahead" = "Uită-te drept în față ";
-"FaceTec_presession_frame_your_face" = "Poziționează fața în oval";
-"FaceTec_retry_header" = "Să încercăm din nou...";
-"FaceTec_retry_ideal_image_label" = "Poziția ideală";
-"FaceTec_retry_instruction_message_1" = "Expresie neutră, fără a zâmbi";
+"Modals.Success.Heading" = "Succes";
+
+"Action.Agree" = "Sunt de acord";
+
+"Action.Disagree" = "Dezacord";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Continuați procesul";
+
+"Disagree.Confirmation.Action.StopProcess" = "Opriți procesul";
+
+"Disagree.Confirmation.Header" = "Prin refuzarea conținutului, veți opri procesul. Esti sigur?";
+
+"Capture.Action.Capture" = "Captură";
+
+"Capture.DriverLicense.Back.Description" = "Poziționează documentul în interiorul cadrului.";
+
+"Capture.DriverLicense.Back.Header" = "Captură înapoi";
+
+"Capture.DriverLicense.Front.Description" = "Poziționează documentul în interiorul cadrului.";
+
+"Capture.DriverLicense.Front.Header" = "Captură față";
+
+"Capture.IdCard.Back.Description" = "Poziționează documentul în interiorul cadrului.";
+
+"Capture.IdCard.Back.Header" = "Captură înapoi";
+
+"Capture.IdCard.Front.Description" = "Poziționează documentul în interiorul cadrului.";
+
+"Capture.IdCard.Front.Header" = "Captură față";
+
+"Capture.InternalPassport.DataPage.Header" = "Captură pagină principală";
+
+"Capture.InternalPassport.FrontCover.Header" = "Captură copertă";
+
+"Capture.Passport.DataPage.Description" = "Poziționează documentul în interiorul cadrului.";
+
+"Capture.Passport.DataPage.Header" = "Captură pagină principală";
+
+"Capture.Passport.FrontCover.Header" = "Captură copertă";
+
+"Capture.ResidencePermit.Back.Description" = "Poziționează documentul în interiorul cadrului.";
+
+"Capture.ResidencePermit.Back.Header" = "Captură înapoi";
+
+"Capture.ResidencePermit.Front.Description" = "Poziționează documentul în interiorul cadrului.";
+
+"Capture.ResidencePermit.Front.Header" = "Captură față";
+
+"Capture.SocialId.Back.Description" = "Poziționează documentul în interiorul cadrului.";
+
+"Capture.SocialId.Back.Header" = "Captură înapoi";
+
+"Capture.SocialId.Front.Description" = "Poziționează documentul în interiorul cadrului.";
+
+"Capture.SocialId.Front.Header" = "Captură față";
+
+"Preview.Action.Continue" = "Continuare";
+
+"Preview.Action.Retake" = "Reluare";
+
+"Preview.Header" = "Fotografia este clară, focalizată și fără reflecție?";
+
+"FaceCapture.Instructions.Action.Start" = "Începeți";
+
+"FaceCapture.Instructions.Description" = "În timpul procesului, poziționați-vă fața în mijlocul cadrului.";
+
+"FaceCapture.Instructions.Header" = "Autentificați-vă cu fața";
+
+"FaceCapture.Instructions.Subheader" = "Asigurați-vă că:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "Fața dvs. este neutră";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "Lumina este bună";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "Imaginea este clară";
+
+"App.Button.Close" = "Închide";
+
+"App.Button.Continue" = "Continuați";
+
+"App.Errors.Default" = "Am întâmpinat o situație neprevăzută. Vă rugăm să încercați mai târziu.";
+
+"EndPage.Action.Continue" = "Continuați";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Mulțumim. Acum puteți finaliza procesul.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Ai terminat!";
+
+"Action.Close" = "Închide";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Vă rugăm să încărcați dovada adresei";
+
+"Document.Instructions.Action.Start" = "Start";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Capturați verso-ul permisului de conducere";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Capturați fața permisului de conducere";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Imaginea nu este prea neclară";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Asigurați-vă că:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Iluminarea este bună";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Documentul poate fi citit";
+
+"Document.Instructions.IdCard.Back.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.IdCard.Back.Heading" = "Capturați verso-ul cărții de identitate";
+
+"Document.Instructions.IdCard.Front.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.IdCard.Front.Heading" = "Capturați fața cărții de identitate";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Vă rugăm să afișați pagina principală a documentului care conține zona MRZ în zona marcată.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Capturați pagina principală a pașaportului intern";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Capturați coperta pașaportului intern";
+
+"Document.Instructions.Passport.DataPage.Description" = "Vă rugăm să includeți zona MRZ în zona marcată.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Capturați pagina principală a pașaportului";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Capturați coperta pașaportului";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Capturați verso-ul permisului de ședere";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Capturați fața permisului de ședere";
+
+"Document.Instructions.SocialId.Back.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.SocialId.Back.Heading" = "Capturați verso-ul cărții de identitate sociale";
+
+"Document.Instructions.SocialId.Front.Description" = "Plasați documentul în interiorul cadrului";
+
+"Document.Instructions.SocialId.Front.Heading" = "Capturați fața cărții de identitate sociale";
+
+"Document.Select.Document.DriverLicense" = "Permis de conducere";
+
+"Document.Select.Document.IdCard" = "Carte de identitate";
+
+"Document.Select.Document.InternalPassport" = "Pașaport intern";
+
+"Document.Select.Document.Passport" = "Pașaport";
+
+"Document.Select.Document.ResidencePermit" = "Permis de ședere";
+
+"Document.Select.Document.SocialId" = "Carte de identitate socială";
+
+"Document.Select.Header" = "Selectați documentul";
+
+"FaceCapture.Instructions.Description" = "Poziționați-vă fața în mijlocul cadrului.";
+
+"FaceCapture.Instructions.Header" = "Faceți un selfie";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Imaginea este clară";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Fața dvs. este neutră";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Iluminarea este bună";
+
+"FaceCapture.Instructions.Subheader" = "Asigurați-vă că:";
+
+"Result.Failure.Action.TryAgain" = "Încercați din nou";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Vă rugăm să încercați din nou și să vă asigurați că documentul este uniform iluminat cu o sursă de lumină albă.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Fotografia furnizată are iluminare slabă";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Vă rugăm să încercați din nou și să furnizați un document nedeteriorat.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "O parte din documentul furnizat este deteriorată";
+
+"Result.Failure.DocumentFromScreen.Description" = "Vă rugăm să trimiteți o fotografie validă a documentului fizic pentru a finaliza procesul de identificare";
+
+"Result.Failure.DocumentFromScreen.Header" = "Fotografia documentului furnizat nu este validă";
+
+"Result.Failure.DocumentIsExpired.Description" = "Vă rugăm să furnizați un document valabil pentru a finaliza procesul de identificare";
+
+"Result.Failure.DocumentIsExpired.Header" = "Documentul furnizat a expirat";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Vă rugăm să utilizați un document din lista furnizată pentru a finaliza procesul de identificare";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Tipul de document furnizat nu îndeplinește cerințele";
+
+"Result.Failure.DocumentPrinted.Description" = "Vă rugăm să trimiteți o fotografie validă a documentului fizic pentru a finaliza procesul de identificare";
+
+"Result.Failure.DocumentPrinted.Header" = "Fotografia documentului furnizat nu este validă";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Vă rugăm să furnizați un document cu caractere latine";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Tipul de document furnizat nu îndeplinește cerințele";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Vă rugăm să capturați documentul original";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Identificarea dvs. este respinsă";
+
+"Result.Failure.FacesNotMatch.Description" = "Vă rugăm să încercați din nou sau să contactați serviciul de asistență pentru clienți";
+
+"Result.Failure.FacesNotMatch.Header" = "Fotografia documentului și selfie-ul furnizat nu corespund";
+
+"Result.Failure.Generic.Description" = "Vă rugăm să contactați asistența pentru clienți";
+
+"Result.Failure.Generic.Header" = "A apărut o problemă cu identificarea dvs.";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Vă rugăm să încercați din nou și să vă asigurați că documentul cu dovada adresei este valabil";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Fotografia furnizată cu dovada adresei nu este validă";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Vă rugăm să încercați din nou și să furnizați toate fotografiile necesare ale documentului";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Fotografia cu documentul lipsește";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Vă rugăm să încercați din nou sau să contactați serviciul de asistență pentru clienți";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Fotografia cu fața dvs. lipsește";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Procesul de identificare trebuie efectuat fără participarea altor persoane";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Utilizatorul nu este singur în timpul procesului";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Vă rugăm să încercați din nou și să vă asigurați că documentul este clar lizibil și că nu există date acoperite";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "O parte din documentul furnizat este acoperită";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Vă rugăm să încercați din nou urmând instrucțiunile furnizate. Fața dvs. nu trebuie să fie acoperită";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Fața este parțial acoperită";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Vă rugăm să încercați din nou și să vă asigurați că documentul este iluminat uniform";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Fotografia furnizată are o iluminare slabă";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Vă rugăm să încercați din nou și să vă asigurați că datele documentului sunt clar lizibile sau, în cazul unei calități slabe a camerei, vă rugăm să încercați să începeți procesul pe un alt dispozitiv.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Fotografia furnizată este de calitate slabă";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Vă rugăm să încercați din nou sau să contactați serviciul de asistență pentru clienți";
+
+"Result.Failure.SelfieHasNoFace.Header" = "Fotografia furnizată nu include fața";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Vă rugăm să încercați din nou sau să contactați serviciul de asistență pentru clienți";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Fotografia furnizată nu este relevantă";
+
+"Result.Success.Header" = "Succes! ";
+
+"ResultsWaiting.Delay.Description" = "Se pare că avem mai mult trafic decât de obicei. Veți fi redirecționat în scurt timp.";
+
+"ResultsWaiting.Delay.Header" = "Ne pare rău, durează mai mult decât ne așteptam";
+
+"ResultsWaiting.Details.Description" = "Așteptarea durează în medie 2 minute.";
+
+"ResultsWaiting.Details.Header" = "Vă rugăm, așteptați...";
+
+"ResultsWaiting.Details.Message.Message1" = "Se criptează datele documentului.";
+
+"ResultsWaiting.Details.Message.Message2" = "Se inspectează documentul pentru depistarea eventualelor deteriorări externe.";
+
+"ResultsWaiting.Details.Message.Message3" = "Se verifică fotografiile documentelor furnizate.";
+
+"ResultsWaiting.Details.Message.Message4" = "Validarea dacă sunteți o persoană reală";
+
+"ResultsWaiting.Details.Message.Message5" = "Se verifică autenticitatea și validitatea datelor.";
+
+"ResultsWaiting.Details.Message.Message6" = "Se verifică starea documentului și a datelor din regiștri.";
+
+/*  */
+"Action.Cancel" = "Anulează";
+
+/*  */
+"Action.Loading.Header" = "Se încarcă...";
+
+/*  */
+"Action.Submit" = "Trimite";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Document scannat cu succes";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Poziționează documentul în interiorul cadrului.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Capturați document";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Obțineți o dovadă a adresei";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Acesta ar putea fi un extras de cont sau o factură de utilități";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Fișiere acceptate: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Dimensiunea fișierului nu poate fi mai mare de 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Formatul de fișier încărcat nu este acceptat";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Vă rugăm să furnizați dovada adresei";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Dimensiune maximă fișier: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Cerințe:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Trebuie să conțină numele complet și adresa";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Documentul nu este mai vechi de 3 luni";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Selectați fișiere";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Selectați din galerie";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Încarcă document";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Se încarcă...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Avem nevoie de TRN-ul dumneavoastră pentru a vă verifica contul. Vă rugăm să introduceți TRN-ul așa cum apare pe documentul oficial și să verificați de două ori că este corect înainte de a-l trimite pentru a evita întârzierile.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Vă rugăm să furnizați Numărul dumneavoastră de Înregistrare a Contribuabilului (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "Numărul TRN constă din 9 cifre";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "Cod TRN:";
+
+/*  */
+"Consent.Static.Description" = "Pentru a obține serviciul de la Furnizorul de Servicii, prin acest consimțământ îmi exprim acordul ca UAB \"Ondato\" să primească și să gestioneze datele mele personale, inclusiv datele mele biometrice, obținute din identificarea la distanță a identității mele personale prin captarea și/sau filmarea imaginii live a feței mele, a identității persoanei mele sau a documentului folosit pentru a o identifica și/sau imaginea acestora și datele personale conținute în ele și/sau verificarea în registrul populației: imaginea feței mele, numele, prenumele, naționalitatea, genul, codul personal, data nașterii, numerele documentului care este folosit, data emiterii și valabilitatea, semnătura mea și transferul acestor date către Furnizorul de Servicii. De asemenea, menționez că sunt informat că operatorul datelor mele personale, inclusiv datele mele biometrice, specificate în acest consimțământ, este Furnizorul de Servicii și UAB \"Ondato\" va procesa datele mele personale doar până la finalizarea procedurii de identificare la distanță și rezultatele vor fi transferate către Furnizorul de Servicii. De asemenea, declar că sunt informat și de acord că datele mele personale obținute pentru identificarea la distanță și scopurile acesteia pot fi stocate de UAB \"Ondato\" pentru o perioadă mai lungă decât este necesar pentru finalizarea identificării sau transmiterea rezultatelor acesteia către Furnizorul de Servicii, dar numai la cererea Furnizorului de Servicii sau obligația contractuală a UAB Ondato față de Furnizorul de Servicii, dar nu mai mult decât este definit în Contractul semnat între UAB \"Ondato\" și Furnizorul de Servicii sau solicitat de Furnizorul de Servicii. Sunt informat că pot trimite o cerere privind datele mele personale pentru informații mai detaliate la info@ondato.com. Prin prezenta declar și confirm că toate datele personale pe care le voi furniza pentru scopul identificării la distanță a identității mele personale sunt corecte și exacte, iar documentul pe care îl voi folosi în acest scop nu este fals și este valabil.";
+
+/*  */
+"Consent.Static.Heading" = "Consimțământ pentru prelucrarea datelor personale";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Așezați documentul în interiorul cadrului";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Capturați zona MRZ a cărții de identitate";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Așezați documentul și linia MRZ în interiorul cadrului";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Fotografiați partea din față a cărții de identitate cu linia MRZ";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Vă rugăm să arătați pagina principală a documentului care conține zona MRZ în zona marcată.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Capturați pagina pașaportului cu zona MRZ";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Dovada adresei";
+
+/*  */
+"Error.Interrupt.Description" = "Din cauza întreruperilor, procesul s-a oprit. Vă rugăm să rămâneți în această aplicație până când ați finalizat toți pașii.";
+
+/*  */
+"Error.Interrupt.Heading" = "Procesul a fost întrerupt";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Vă rugăm să vă reconectați pentru a continua";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Conexiunea dvs. la internet a dispărut";
+
+/*  */
+"FaceCapture.Validation.Description" = "Vă rugăm să așteptați...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Validarea fotografiei tale";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Lansează setările";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Ține documentul aproape de fața ta în timp ce faci un selfie";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Fotografiază-te în timp ce ții documentul";
+
+/*  */
+"Instructions.Identification.Description" = "Pentru a continua să utilizați acest serviciu, trebuie să validați că îndepliniți cerințele site-ului web.";
+
+/*  */
+"Instructions.Identification.Header" = "Bine ați venit la procesul de \n verificare a identității";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Un moment";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Finalizarea ultimelor detalii";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Capturarea fotografiei";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Aliniați-vă fața în cadru și atingeți capturați";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Capturează-ți fața";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Este fața ta clar vizibilă?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Asigurați-vă că fotografia este clară și lizibilă";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Vă rugăm să contactați suportul pentru clienți pentru mai multe informații.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Identificarea dumneavoastră este respinsă.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Vă rugăm să contactați suportul pentru clienți pentru mai multe informații sau încercați din nou cu un alt document.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Identificarea dvs. a fost respinsă din cauza unei țări sau unui stat interzis.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Vă rugăm să reîncercați procesul sau să contactați suportul pentru clienți.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Identificarea dumneavoastră este respinsă.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Vă rugăm să contactați suportul pentru clienți pentru mai multe informații";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Identificarea dumneavoastră este respinsă.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Vă rugăm să contactați suportul pentru clienți pentru mai multe informații.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Identificarea dumneavoastră este respinsă din cauza restricțiilor de vârstă.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Vă mulțumim pentru răbdare";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Capturarea informațiilor a fost reușită";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Se pare că avem mai mult trafic decât de obicei. Veți fi redirecționat în curând.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Ne pare rău, durează mai mult decât ne-am așteptat";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Pentru a continua, trebuie să vă asigurați că documentul are NFC și că acesta a fost activat pe dispozitivul dumneavoastră.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Se pare că nu poți continua fără NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Așezați documentul în spatele dispozitivului";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Scanare... Vă rugăm să țineți";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Conexiunea s-a pierdut în timpul scanării. Vă rugăm să încercați din nou.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Încercați din nou să scanați documentul.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Se pare că procesul a fost întrerupt.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Nu am putut citi documentul. Vă rugăm să verificați detaliile și încercați din nou.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Răspuns neașteptat de la cip. Vă rugăm să rescanați documentul.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Documentul scanat nu este valid. Vă rugăm să încercați din nou cu unul compatibil.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Mai multe cipuri detectate. Vă rugăm să scanați un singur document la un moment dat.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Dispozitivul tău nu suportă NFC sau este dezactivat în prezent. Te rugăm să comuți la un dispozitiv compatibil sau să activezi NFC în setări.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC nu este suportat";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Întâmpinați dificultăți?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Adăugați cartea de identitate pe spatele telefonului";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Așezați cartea de identitate pe spatele telefonului pentru scanarea NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Scanați cartea de identitate cu NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Așezați pașaportul pe spatele telefonului pentru scanarea NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Scanați pașaportul cu NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Anulează";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Vă rugăm să activați NFC pentru a continua procesul";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC este dezactivat";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Setări";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Adăugați prima pagină a pașaportului pe spatele telefonului";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Dacă ați întâmpinat dificultăți în accesarea NFC, încercați aceste metode:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Încercați să citiți ultima pagină a documentului.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Încercați să citiți pagina cu fotografia a documentului.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Dacă există vreo copertă pe document, îndepărteaz-o.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Vă rugăm să țineți documentul în spatele telefonului.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Scanează documentul";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Sfaturi de încercat";
+
+"Action.Cancel" = "Anulare";
+
+"CaptureResultReason.TimeOut.Description" = "Vă rugăm să reîncercați";
+
+"CaptureResultReason.TimeOut.Header" = "Timp de răspuns excesiv";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Anulare";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Fața este îndreptată prea mult spre stânga";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Fața este îndreptată prea mult spre dreapta";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Fața nu este încadrată în cameră";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Fața este rotită prea mult spre stânga";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Fața este rotită prea mult spre dreapta";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Fața este prea departe spre stânga";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Fața este prea departe spre dreapta";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Fața este prea sus";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Fața este prea jos";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Țineți dispozitivul la nivelul ochilor";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Mutați camera la nivelul ochilor";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Camera este prea aproape";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Camera este prea departe";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Camera este prea aproape";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Camera este prea departe";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Apăsați Enter sau bara de spațiu pentru ghidarea alinierii feței";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Apăsați de două ori pe ecran pentru ghidarea alinierii feței";
+
+"FaceTec_camera_feed_issue_action" = "ÎNCERCAȚI DIN NOU ORICUM";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Problemă la securizarea alimentării camerei";
+
+"FaceTec_camera_feed_issue_header" = "Problemă la securizarea<br/>alimentării camerei";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Acest sistem nu poate fi verificat din cauza următoarelor:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Această aplicație blochează configurațiile suspecte ale camerei web.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Aflați mai multe aici</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Această aplicație blochează configurațiile suspecte ale camerei web. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Aflați mai multe aici</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Problemă posibilă";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Remediere";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Cameră deja utilizată de o altă aplicație.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Permisiunile pentru cameră nu sunt memorate în Firefox.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Închideți cealaltă aplicație.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Verificați permisiunile de reamintire.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "O aplicație terță parte modifică videoclipul.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Închideți/dezinstalați cealaltă aplicație.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Hardware-ul nu poate fi securizat.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Utilizați un alt dispozitiv.";
+
+"FaceTec_camera_permission_header" = "Activare cameră";
+
+"FaceTec_camera_permission_message" = "Permisiunile pentru cameră sunt dezactivate.<br/>Verificați setările sistemului de operare și ale browserului.";
+
+"FaceTec_enter_fullscreen_action" = "DESCHIDERE ECRAN COMPLET";
+
+"FaceTec_enter_fullscreen_header" = "Mod selfie pe ecran complet";
+
+"FaceTec_enter_fullscreen_message" = "Înainte de a începe, faceți clic pe butonul de mai jos pentru a deschide modul ecran complet.";
+
+"FaceTec_feedback_center_face" = "Centrați-vă fața";
+
+"FaceTec_feedback_face_not_found" = "Încadrați-vă fața";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Priviți înainte";
+
+"FaceTec_feedback_face_not_upright" = "Țineți capul drept";
+
+"FaceTec_feedback_face_not_upright" = "Țineți capul drept";
+
+"FaceTec_feedback_hold_steady" = "Rămâneți pe loc";
+
+"FaceTec_feedback_move_phone_away" = "Îndepărtați-vă";
+
+"FaceTec_feedback_move_phone_away" = "Îndepărtați-vă";
+
+"FaceTec_feedback_move_phone_closer" = "Apropiați-vă";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Aduceți telefonul la nivelul ochilor";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Priviți direct în cameră";
+
+"FaceTec_feedback_move_web_closer" = "Apropiați-vă";
+
+"FaceTec_feedback_move_web_even_closer" = "Și mai aproape";
+
+"FaceTec_feedback_use_even_lighting" = "Iluminați uniform fața";
+
+"FaceTec_idscan_additional_review_message" = "Examinare suplimentară<br/>necesară";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Afișați versoul actului de identitate";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Afișați fața actului de identitate";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Verificați și confirmați";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Defilare în jos";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Confirmați că fotografia este clară și lizibilă";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Confirmați că fotografia este clară și lizibilă";
+
+"FaceTec_idscan_type_selection_header" = "Pregătiți-vă să scanați<br/>actul de identitate";
+
+"FaceTec_initializing_camera" = "Securizarea alimentării camerei";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Pregătiți-vă pentru";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "selfie-ul dvs. video";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Pregătiți-vă pentru selfie-ul dvs. video";
+
+"FaceTec_instructions_message_ready_1" = "Încadrați-vă fața în oval,";
+
+"FaceTec_instructions_message_ready_2" = "apăsați pe Sunt gata și apropiați";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Încadrați-vă fața în oval, apăsați pe Sunt gata și apropiați";
+
+"FaceTec_presession_brighten_your_environment" = "Iluminați-vă mediul";
+
+"FaceTec_presession_conditions_too_bright" = "Condițiile sunt prea luminoase";
+
+"FaceTec_presession_eyes_straight_ahead" = "Priviți drept înainte";
+
+"FaceTec_presession_frame_your_face" = "Încadrați-vă fața în oval";
+
+"FaceTec_presession_hold_steady_1" = "Nu vă mișcați timp de: 1";
+
+"FaceTec_presession_hold_steady_2" = "Nu vă mișcați timp de: 2";
+
+"FaceTec_presession_hold_steady_3" = "Nu vă mișcați timp de: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Priviți drept înainte";
+
+"FaceTec_presession_neutral_expression" = "Expresie neutră, fără zâmbet";
+
+"FaceTec_presession_remove_dark_glasses" = "Îndepărtați ochelarii întunecați";
+
+"FaceTec_result_facescan_upload_message" = "Încărcare FaceScan 3D<br/>criptat<br/>";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Scanarea codului de bare a eșuat.<br/>Încercați din nou";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Fața nu se potrivește<br/>suficient de bine";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Actul de identitate<br/>nu este complet vizibil";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Tipul de act de identitate nu este acceptat.<br/>Utilizați alt act de identitate";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Textul actului de identitate nu este lizibil";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Captură fotografie act de identitate<br/>finalizată";
+
+"FaceTec_result_idscan_success_back_side_message" = "Scanare act de identitate finalizată";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Fața actului de identitate<br/>scanat";
+
+"FaceTec_result_idscan_success_front_side_message" = "Scanare act de identitate finalizată";
+
+"FaceTec_result_idscan_success_passport_message" = "Scanare pașaport finalizată";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Scanare act de identitate cu fotografie<br/>finalizată";
+
+"FaceTec_result_idscan_unsuccess_message" = "Fotografia de pe actul de identitate<br/>nu se potrivește<br/>cu fața utilizatorului";
+
+"FaceTec_result_idscan_upload_message" = "Încărcare act de identitate<br/>criptat<br/>";
+
+"FaceTec_result_success_message" = "Succes!";
+
+"FaceTec_retry_header" = "Să mai încercăm o dată";
+
+"FaceTec_retry_ideal_image_label" = "Postura ideală";
+
+"FaceTec_retry_instruction_message_1" = "Expresie neutră, fără zâmbet";
+
 "FaceTec_retry_instruction_message_2" = "Fără strălucire sau iluminare extremă";
-"FaceTec_retry_instruction_message_3" = "Prea neclar, te rugăm să cureți camera";
-"FaceTec_retry_subheader_message" = "Avem nevoie de un video selfie mai clar";
-"FaceTec_retry_your_image_label" = "Selfie-ul tău";
-"ondato_unrelated_photo_primary" = "Identificarea a fost respinsă din cauza unei fotografii irelevante.";
-"ondato_data_does_not_match_second" = "Te rugăm să verifici informațiile furnizate în formularul de client. Informațiile din formularul de client trebuie să se potrivească cu informațiile din documentul tău.";
-"ondato_incorrect_information_provided_second" = "Te rugăm să încerci din nou sau să contactezi asistența pentru clienți.";
-"ondato_capture_mrz_id_instructions_description" = "Te rugăm să prezinți partea din spate a cărții de identitate care conține zona MRZ. Documentul trebuie să fie clar vizibil, să nu fie neclar sau pixelat.";
-"ondato_waiting_page_success_title" = "Identificarea a avut loc cu succes.";
-"ondato_waiting_page_verify_your_identity" = "Aceste informații vor fi utilizate doar pentru a-ți verifica identitatea.";
-"ondato_capture_mrz_instructions_title" = "Pregătește actul de identitate pentru a fotografia zona MRZ.";
-"ondato_waiting_page_facial_photo_obscured" = "Verificăm dacă fotografia facială nu este obstrucționată de umbre și raze de lumină.";
-"ondato_prohibited_country_or_state_second" = "Te rugăm să contactezi furnizorul de servicii pentru mai multe informații sau să încerci din nou cu un alt document.";
-"ondato_underage_person_second" = "Te rugăm să contactezi furnizorul de servicii pentru mai multe informații.";
-"ondato_waiting_page_encrypt_data_for_final_approval" = "Criptăm datele și le transferăm pentru aprobarea finală.";
-"ondato_part_of_document_is_covered_second" = "Te rugăm să reîncerci procesul de identificare, asigurându-te că documentul este lizibil și nu sunt acoperite date.";
-"ondato_waiting_page_check_if_all_photos_uploaded" = "Verificăm dacă ai furnizat toate fotografiile necesare.";
-"ondato_blurred_photo_second" = "Te rugăm să reîncerci procesul de identificare și să te asiguri că datele documentului sunt clar lizibile.";
-"ondato_sanctioned_primary" = "Identificarea a fost respinsă.";
-"ondato_document_not_accepted_primary" = "Identificarea a fost respinsă din cauza tipului de document neacceptat.";
-"ondato_missing_document_photo_second" = "Te rugăm să reîncerci procesul de identificare și să faci toate fotografiile necesare ale documentului tău.";
-"ondato_poor_photo_lighting_second" = "Te rugăm să reîncerci procesul de identificare și să te asiguri că documentul este iluminat uniform.";
-"ondato_waiting_page_biometric_data" = "Creăm un model 3D din datele faciale biometrice.";
-"ondato_bad_media_format_second" = "Te rugăm să fotografiezi documentul original. ";
-"ondato_data_does_not_match_primary" = "Identificarea ta este respinsă din cauza nepotrivirii informațiilor dintre document și formularul de client.";
-"ondato_waiting_page_success_body" = "Îți mulțumim pentru răbdare.";
-"ondato_capture_nfc_passport_title_initial" = "Apropie prima pagină a pașaportului de spatele telefonului.";
-"ondato_capture_nfc_failure_title" = "Se pare că procesul a fost întrerupt.";
-"ondato_underage_person_primary" = "Identificarea ta este respinsă din cauza restricțiilor de vârstă.";
-"ondato_expiration_date_mismatch_primary" = "Am întâmpinat o problemă.";
-"ondato_document_is_expired_second" = "Trebuie să fotografiezi un act de identitate valabil pentru a finaliza procesul de identificare.";
-"app_name" = "smartscanner-mrz-parser";
-"ondato_document_with_non_latin_characters_primary" = "Identificarea a fost respinsă din cauza tipului de document neacceptat.";
-"ondato_nfc_off_dialog_cancel_button" = "Anulează";
-"ondato_incorrect_information_provided_primary" = "Am întâmpinat o problemă.";
-"ondato_faces_does_not_match_primary" = "Identificarea este respinsă din cauza nepotrivirii dintre selfie și fotografia de pe document. ";
-"ondato_waiting_page_document_facial_image" = "Verificăm dacă imaginea facială este clar vizibilă pe document.";
-"ondato_start_again_button" = "Începe din nou";
-"ondato_capture_mrz_success_title" = "Capturarea informației a avut succes";
-"ondato_more_than_one_person_second" = "Procesul de identificare trebuie parcurs fără participarea altor persoane.";
-"ondato_capture_mrz_success_description" = "Îți mulțumim pentru răbdare.";
-"ondato_capture_mrz_failure_title" = "Se pare că procesul a fost întrerupt.";
-"ondato_doc_and_bio_age_doesnt_match_second" = "Te rugăm să reîncerci sau să contactezi serviciul de asistență clienți.";
-"ondato_part_of_face_is_covered_primary" = "Identificarea a fost respinsă din cauză că fața ți-a fost acoperită.";
-"ondato_waiting_page_authenticity" = "Verificăm autenticitatea și validitatea datelor.";
-"ondato_passport_scan_help_step3" = "Dacă există o husă pe document, te rugăm să o dai la o parte.";
-"ondato_passport_scan_help_step1" = "Încearcă să citești ultima pagină a documentului.";
-"ondato_passport_scan_help_step2" = "Încearcă să citești pagina cu fotografie a documentului.";
-"name" = "en";
-"ondato_name_mismatch_primary" = "Am întâmpinat o problemă.";
-"ondato_duplicated_info_primary" = "Identificarea a fost respinsă.";
-"ondato_miscellaneous_second" = "Te rugăm să contactezi furnizorul de servicii pentru mai multe informații.";
-"ondato_possible_fraud_attempt_second" = "Te rugăm să contactezi furnizorul de servicii pentru mai multe informații.";
-"ondato_nfc_off_dialog_description" = "Te rugăm să pornești funcția NFC pentru a merge mai departe";
-"ondato_waiting_page_failure_close_title" = "Închide";
-"ondato_something_went_wrong_second" = "Te rugăm să încerci din nou.";
-"ondato_doc_and_bio_age_doesnt_match_primary" = "Am întâmpinat o problemă.";
-"ondato_missing_selfie_photo_second" = "Te rugăm să reîncerci procesul de identificare conform instrucțiunilor.";
-"ondato_waiting_page_success_continue_title" = "Continuă";
-"ondato_nfc_scan_success_title" = "Identificarea a avut loc cu succes.";
-"ondato_waiting_page_taking_longer_than_expected" = "Verificarea durează mai mult decât prognozat. Te rugăm să nu închizi fereastra, au mai rămas doar câteva momente.";
-"ondato_capture_nfc_instructions_description" = "Pregătește documentul și funcția NFC a telefonului.";
-"ondato_capture_nfc_instructions_title" = "Pregătește documentul pentru scanarea NFC ";
-"ondato_duplicated_info_second" = "Acest utilizator există deja.";
-"ondato_passport_scan_help_title" = "Dacă întâmpini dificultăți în accesarea NFC, încearcă metodele de mai jos:";
-"ondato_capture_nfc_settings_instructions_title" = "Se pare că nu poți continua fără NFC.";
-"ondato_bad_media_format_primary" = "Identificarea a fost respinsă.";
-"ondato_unrelated_photo_second" = "Trebuie să fotografiezi un act de identitate valabil pentru a finaliza procesul de identificare.";
-"ondato_waiting_page_ai_check" = "Sistemul de inteligență artificială compară imaginea facială cu cea din document.";
-"ondato_expiration_date_mismatch_second" = "Te rugăm să reîncerci sau să contactezi serviciul de asistență clienți.";
-"ondato_capture_nfc_failure_description" = "Scanarea NFC a eșuat.";
-"ondato_waiting_page_external_damage" = "Verificăm dacă documentul tău nu prezintă daune și dacă toate marcajele necesare sunt vizibile.";
-"ondato_nfc_off_dialog_title" = "NFC este oprit ";
-"ondato_missing_selfie_photo_primary" = "Identificarea este respinsă din cauza trimiterii incorecte a selfie-urilor.";
-"ondato_capture_nfc_settings_instructions_description" = "Pentru a continua, trebuie să te asiguri că documentul are NFC și că această funcție a fost activată pe dispozitiv.";
-"ondato_capture_nfc_description_initial" = "Poți încerca să plasezi cardul în câteva locuri diferite.";
-"ondato_faces_does_not_match_second" = "Te rugăm să reîncerci sau să contactezi serviciul de asistență clienți.";
-"ondato_miscellaneous_primary" = "Identificarea a fost respinsă.";
-"ondato_part_of_face_is_covered_second" = "Te rugăm să reîncerci procesul de identificare conform instrucțiunilor și să nu îți acoperi fața.";
-"ondato_part_of_document_is_covered_primary" = "Identificarea este respinsă din cauza informațiilor acoperite din fotografia documentului.";
-"ondato_continue_button" = "Continuă";
-"ondato_prohibited_country_or_state_primary" = "Identificarea este respinsă din cauza statului sau țării interzise. ";
-"ondato_possible_fraud_attempt_primary" = "Identificarea a fost respinsă.";
-"ondato_waiting_page_scan_document" = "Scanăm textul și simbolurile de pe document.";
-"ondato_poor_photo_quality_second" = "Te rugăm să reîncerci procesul de identificare și să te asiguri că datele documentului sunt clar lizibile sau, în cazul unei calități slabe a camerei, încearcă procesul pe un alt dispozitiv.";
-"ondato_something_went_wrong_primary" = "Ceva nu a mers cum trebuie. ";
-"ondato_waiting_page_encrypt_data" = "Criptăm datele și le transferăm pentru verificare.";
-"ondato_capture_nfc_id_title_initial" = "Plasează cardul de identitate pe spatele telefonului. ";
-"ondato_document_is_expired_primary" = "Identificarea a fost respinsă din cauza documentului expirat.";
-"ondato_nfc_scan_prompt_request_present" = "Plasează documentul pe spatele telefonului. ";
-"ondato_capture_nfc_description_scanning" = "Ai răbdare. Va dura câteva momente.";
-"ondato_prohibited_nationality_primary" = "Identificarea a fost respinsă.";
-"ondato_try_alternative" = "Încearcă o alternativă.";
-"ondato_more_than_one_person_primary" = "Identificarea a fost respinsă din cauza participării la proces a unor terțe persoane. ";
-"ondato_nfc_scan_success_body" = "Identificarea a avut loc cu succes.";
-"ondato_name_mismatch_second" = "Te rugăm să reîncerci sau să contactezi serviciul de asistență clienți.";
-"ondato_nfc_off_dialog_settings_button" = "Setări ";
-"ondato_start_identification_nfc_step_2" = "2. Verifică funcția NFC";
-"ondato_waiting_page_no_other_person" = "Verificăm dacă nu se află alte persoane în fotografii.";
-"ondato_document_not_accepted_second" = "Documentul furnizat este inacceptabil. Te rugăm să furnizezi un pașaport sau un act de identitate valabil pentru a finaliza procesul de identificare";
-"ondato_waiting_page_documents_clearly_legible" = "Verificăm dacă documentul este lizibil.";
-"ondato_document_with_non_latin_characters_second" = "Te rugăm să fotografiezi un document valid recunoscut la nivel global cu MRZ (zonă de citire automată).";
-"ondato_sanctioned_second" = "Te rugăm să contactezi furnizorul de servicii pentru mai multe informații.";
-"ondato_capture_mrz_failure_description" = "Te rugăm să te asiguri că documentul este vizibil, nu foarte mic și că nu este prea întuneric.";
-"ondato_missing_document_photo_primary" = "Identificarea a fost respinsă din cauza lipsei fotografiei de pe document.";
-"ondato_blurred_photo_primary" = "Identificarea a fost respinsă din cauza fotografiei neclare.";
-"ondato_prohibited_nationality_second" = "Te rugăm să reîncerci sau să contactezi serviciul de asistență clienți.";
-"ondato_poor_photo_lighting_primary" = "Identificarea a fost respinsă din cauza luminii prea slabe.";
-"ondato_waiting_page_data_in_registers" = "Verificăm starea documentului și datele tale în registre.";
-"ondato_poor_photo_quality_primary" = "Identificarea a fost respinsă din cauza calității slabe a fotografiei.";
-"ondato_waiting_page_failure_try_again_title" = "Încearcă din nou.";
-"ondato_waiting_page_document_obscured" = "Verificăm dacă informațiile din document nu sunt ascunse de umbră sau raze de lumină.";
 
-"ondato_interrupted_title" = "Procesul a fost întrerupt";
-"ondato_interrupted_description" = "Din cauza întreruperilor, procesul s-a oprit. Vă rugăm să rămâneți pe această aplicație până când ați finalizat toți pașii.";
+"FaceTec_retry_instruction_message_3" = "Imaginea este prea neclară, curățați camera";
 
-"face_auth_too_many_attempts_title" = "Verificarea blocată din cauza prea multor încercări";
-"face_auth_too_many_attempts_description" = "Vă rugăm să contactați furnizorul de servicii pentru ajutor";
-"face_auth_too_many_attempts_button" = "OPRIȚI PROCESUL";
+"FaceTec_retry_subheader_message" = "Avem nevoie de un selfie video mai clar";
+
+"FaceTec_retry_your_image_label" = "Selfie-ul dvs.";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Opriți procesul";
+
+"FailureScreen.TooManyAttempts.Description" = "Vă rugăm să contactați furnizorul de servicii pentru ajutor";
+
+"FailureScreen.TooManyAttempts.Header" = "Verificarea a fost blocată din cauza prea multor încercări";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Dispozitivul este blocat.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Prea multe încercări";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Dispozitivul nu este acceptat.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Eșuare";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Vă rugăm să încercați din nou mai târziu.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Eroare de licență";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Cheia a expirat, conține text nevalid sau ați încercat să inițializați pe un domeniu care nu este specificat în cheia dvs.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Cheia a expirat sau nu este validă";
+
+"LoadResultReason.NetworkIssues.Description" = "Nu s-a putut continua din cauza problemelor de conectivitate de pe dispozitivul dvs.";
+
+"LoadResultReason.NetworkIssues.Header" = "Probleme de rețea";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Nu s-au putut încărca resursele.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Eșuare";
+
+"LoadResultReason.StillLoadingResources.Description" = "Încă se încarcă resursele.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Eșuare";
+
+"FaceTec_action_im_ready" = "Sunt gata";
+
+"ReadyScreen.Header" = "Pregătiți-vă pentru selfie-ul dvs. video";
+
+"RetryScreen.Action.PassiveLiveness" = "Încercați metoda alternativă";
+
+"FaceTec_action_try_again" = "Încercați din nou";
+
+"RetryScreen.Description" = "Avem nevoie de o fotografie mai clară.";
+
+"RetryScreen.Header" = "Să mai încercăm o dată";
+
+/*  */
+"RetryScreen.Message.Generic" = "Vă rugăm să utilizați o iluminare constantă și să copiați poziția ideală";
+
+"UploadScreen.Description" = "Păstrați această fereastră deschisă";
+
+"UploadScreen.Header" = "Validarea fotografiei feței";
+

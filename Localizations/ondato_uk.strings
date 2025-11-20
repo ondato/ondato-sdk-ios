@@ -1,0 +1,858 @@
+"Action.Close" = "Закрити";
+
+"LanguageSelection.Header" = "Виберіть мову";
+
+"Modals.Abort.Action.ContinueProcess" = "Продовжуйте процес";
+
+"Modals.Abort.Action.StopProcess" = "Зупинити процедуру";
+
+"Modals.Abort.Heading" = "Ви впевнені, що хочете перервати цей процес?";
+
+"Modals.Error.Description" = "Щось пішло не так, закрийте це повідомлення і спробуйте ще раз";
+
+"Modals.Error.Heading" = "Вибачте, виникла помилка";
+
+"Modals.Success.Description" = "Будь ласка, перейдіть до наступного кроку";
+
+"Modals.Success.Heading" = "Успіх";
+
+"Action.Agree" = "Я згоден";
+
+"Action.Disagree" = "Не згоден";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Продовжити процес";
+
+"Disagree.Confirmation.Action.StopProcess" = "Зупинити процес";
+
+"Disagree.Confirmation.Header" = "Відхиливши зміст, ви зупините процес. Ви впевнені?";
+
+"Capture.Action.Capture" = "Зробити знімок";
+
+"Capture.DriverLicense.Back.Description" = "Розташуйте документ усередині рамки.";
+
+"Capture.DriverLicense.Back.Header" = "Зробіть знімок зворотної сторони";
+
+"Capture.DriverLicense.Front.Description" = "Розташуйте документ усередині рамки.";
+
+"Capture.DriverLicense.Front.Header" = "Зробіть знімок лицьової сторони";
+
+"Capture.IdCard.Back.Description" = "Розташуйте документ усередині рамки.";
+
+"Capture.IdCard.Back.Header" = "Зробіть знімок зворотної сторони";
+
+"Capture.IdCard.Front.Description" = "Розташуйте документ усередині рамки.";
+
+"Capture.IdCard.Front.Header" = "Зробіть знімок лицьової сторони";
+
+"Capture.InternalPassport.DataPage.Header" = "Зробіть знімок головної сторінки";
+
+"Capture.InternalPassport.FrontCover.Header" = "Зробіть знімок обкладинки";
+
+"Capture.Passport.DataPage.Description" = "Розташуйте документ усередині рамки.";
+
+"Capture.Passport.DataPage.Header" = "Зробіть знімок головної сторінки";
+
+"Capture.Passport.FrontCover.Header" = "Зробіть знімок обкладинки";
+
+"Capture.ResidencePermit.Back.Description" = "Розташуйте документ усередині рамки.";
+
+"Capture.ResidencePermit.Back.Header" = "Зробіть знімок зворотної сторони";
+
+"Capture.ResidencePermit.Front.Description" = "Розташуйте документ усередині рамки.";
+
+"Capture.ResidencePermit.Front.Header" = "Зробіть знімок лицьової сторони";
+
+"Capture.SocialId.Back.Description" = "Розташуйте документ усередині рамки.";
+
+"Capture.SocialId.Back.Header" = "Зробіть знімок зворотної сторони";
+
+"Capture.SocialId.Front.Description" = "Розташуйте документ усередині рамки.";
+
+"Capture.SocialId.Front.Header" = "Зробіть знімок лицьової сторони";
+
+"Preview.Action.Continue" = "Продовжити";
+
+"Preview.Action.Retake" = "Повторити";
+
+"Preview.Header" = "Чи є фотографія чіткою, сфокусованою та без відблисків?";
+
+"FaceCapture.Instructions.Action.Start" = "Почати";
+
+"FaceCapture.Instructions.Description" = "Розташуйте обличчя посередині кадру.";
+
+"FaceCapture.Instructions.Header" = "Автентифікація шляхом розпізнавання обличчя";
+
+"FaceCapture.Instructions.Subheader" = "Обов’язкові умови:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "нейтральний вираз обличчя";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "належне освітлення";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "чітке зображення";
+
+"App.Button.Close" = "Закрити";
+
+"App.Button.Continue" = "Продовжити";
+
+"App.Errors.Default" = "Виникла несподівана проблема. Будь ласка, спробуйте ще раз пізніше";
+
+"EndPage.Action.Continue" = "Продовжити";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Дякуємо. Тепер ви можете завершити процес.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Ви все зробили!";
+
+"Action.Close" = "Закрити";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Завантажте підтвердження адреси";
+
+"Document.Instructions.Action.Start" = "Почати";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Зробіть знімок зворотного боку водійського посвідчення";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Зробіть знімок лицьового боку водійського посвідчення";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Відсутність розмитості зображення";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Обов’язкові вимоги:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Належне освітлення";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Документ легко читається";
+
+"Document.Instructions.IdCard.Back.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.IdCard.Back.Heading" = "Зробіть знімок зворотного боку посвідчення особи";
+
+"Document.Instructions.IdCard.Front.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.IdCard.Front.Heading" = "Зробіть знімок лицьового боку посвідчення особи";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Продемонструйте головну сторінку документа, яка містить зону MRZ у позначеній області.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Зробіть знімок головної сторінки внутрішнього паспорта";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Зробіть знімок обкладинки внутрішнього паспорта";
+
+"Document.Instructions.Passport.DataPage.Description" = "Охопіть зону MRZ у позначеній області.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Зробіть знімок головної сторінки паспорта";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Зробіть знімок обкладинки паспорта";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Зробіть знімок зворотного боку дозволу на проживання";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Зробіть знімок лицьового боку дозволу на проживання";
+
+"Document.Instructions.SocialId.Back.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.SocialId.Back.Heading" = "Зробіть знімок зворотного боку соціального посвідчення особи";
+
+"Document.Instructions.SocialId.Front.Description" = "Розташуйте документ всередині рамки";
+
+"Document.Instructions.SocialId.Front.Heading" = "Зробіть знімок лицьового боку соціального посвідчення особи";
+
+"Document.Select.Document.DriverLicense" = "Водійське посвідчення";
+
+"Document.Select.Document.IdCard" = "Посвідчення особи";
+
+"Document.Select.Document.InternalPassport" = "Внутрішній паспорт";
+
+"Document.Select.Document.Passport" = "Паспорт";
+
+"Document.Select.Document.ResidencePermit" = "Дозвіл на проживання";
+
+"Document.Select.Document.SocialId" = "Соціальне посвідчення особи";
+
+"Document.Select.Header" = "Виберіть документ";
+
+"FaceCapture.Instructions.Description" = "Розташуйте обличчя посередині кадру.";
+
+"FaceCapture.Instructions.Header" = "Зробіть селфі";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Зображення чітке";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Вираз обличчя нейтральний";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Належне освітлення";
+
+"FaceCapture.Instructions.Subheader" = "Обов’язкові вимоги:";
+
+"Result.Failure.Action.TryAgain" = "Повторити спробу";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Будь ласка, спробуйте ще раз і переконайтеся, що документ рівномірно освітлений білим джерелом світла.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Надане фото має погане освітлення";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Будь ласка, спробуйте ще раз і надайте непошкоджений документ.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Частина наданого документа пошкоджена";
+
+"Result.Failure.DocumentFromScreen.Description" = "Надішліть фото фізичного документа відповідно до визначених вимог, щоб завершити процедуру ідентифікації";
+
+"Result.Failure.DocumentFromScreen.Header" = "Надане фото документа не відповідає вимогам";
+
+"Result.Failure.DocumentIsExpired.Description" = "Надайте дійсний документ, щоб завершити процедуру ідентифікації";
+
+"Result.Failure.DocumentIsExpired.Header" = "Термін дії наданого документа закінчився";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Використовуйте документ із наданого списку, щоб завершити процедуру ідентифікації";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Наданий тип документа не відповідає вимогам";
+
+"Result.Failure.DocumentPrinted.Description" = "Надішліть фото фізичного документа відповідно до визначених вимог, щоб завершити процедуру ідентифікації";
+
+"Result.Failure.DocumentPrinted.Header" = "Надане фото документа не відповідає вимогам";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Надайте документ із латинськими символами";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Наданий тип документа не відповідає вимогам";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Необхідно зробити знімок оригіналу документа";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Ви не пройшли процедуру ідентифікації";
+
+"Result.Failure.FacesNotMatch.Description" = "Повторіть спробу або зв’‎яжіться з нашою службою підтримки";
+
+"Result.Failure.FacesNotMatch.Header" = "Фотографія документа й надане селфі не збігаються";
+
+"Result.Failure.Generic.Description" = "Зверніться до служби підтримки клієнтів";
+
+"Result.Failure.Generic.Header" = "Під час процедури ідентифікації виникла проблема";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Зробіть знімок ще раз і упевніться, що документ із підтвердженням адреси відповідає вимогам";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Фото документа з підтвердженням адреси не відповідає вимогам";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Спробуйте ще раз і надайте всі необхідні фотографії документа";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Фотографія документа відсутня";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Спробуйте ще раз або зв’яжіться зі службою підтримки клієнтів";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Фотографія обличчя відсутня";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Процедура ідентифікації має виконуватися без участі інших людей";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Користувач виконує процедуру ідентифікації не самостійно";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Зробіть знімок ще раз і упевніться, що документ чітко видно, а дані в ньому не прикриті";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Частина наданого документа прикрита";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Зробіть знімок ще раз, дотримуючись наданих інструкцій. Обличчя не має бути прикрите";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Обличчя частково прикрите";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Зробіть знімок ще раз, забезпечивши рівномірне освітлення документа";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Надана фотографія зроблена за тьмяного освітлення";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Зробіть знімок ще раз і упевніться, що дані документа чітко видно; якщо камера працює неналежним чином, скористайтеся іншим пристроєм.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Неналежна якість фотографії";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Спробуйте ще раз або зв’яжіться зі службою підтримки клієнтів";
+
+"Result.Failure.SelfieHasNoFace.Header" = "На фотографії відсутнє зображення обличчя";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Спробуйте ще раз або зв’яжіться зі службою підтримки клієнтів";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Надано невідповідну фотографію";
+
+"Result.Success.Header" = "Успішно!";
+
+"ResultsWaiting.Delay.Description" = "Схоже, зараз надходить надмірна кількість запитів. Незабаром вас буде переадресовано.";
+
+"ResultsWaiting.Delay.Header" = "На жаль, це вимагатиме більше часу, ніж очікувалося";
+
+"ResultsWaiting.Details.Description" = "Очікування триває в середньому 2 хвилини.";
+
+"ResultsWaiting.Details.Header" = "Зачекайте...";
+
+"ResultsWaiting.Details.Message.Message1" = "Шифрування даних документа.";
+
+"ResultsWaiting.Details.Message.Message2" = "Перевірка документа на наявність зовнішніх пошкоджень.";
+
+"ResultsWaiting.Details.Message.Message3" = "Перевірка наданих фотографій документа.";
+
+"ResultsWaiting.Details.Message.Message4" = "Перевірка, чи є ви реальною людиною";
+
+"ResultsWaiting.Details.Message.Message5" = "Перевірка дійсності та достовірності даних.";
+
+"ResultsWaiting.Details.Message.Message6" = "Перевірка статусу документа і даних у реєстрах.";
+
+/*  */
+"Action.Cancel" = "Скасувати";
+
+/*  */
+"Action.Loading.Header" = "Завантаження...";
+
+/*  */
+"Action.Submit" = "Надіслати";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Документ успішно скановано";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Розташуйте документ усередині рамки.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Захоплення документа";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Захопіть підтвердження адреси";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Це може бути банківська виписка або рахунок за комунальні послуги";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Підтримувані файли: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Розмір файлу не може перевищувати 5 МБ";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Формат завантажуваного файлу не підтримується";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Будь ласка, надайте підтвердження вашої адреси";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Максимальний розмір файлу: 5 МБ";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Вимоги:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Має містити ваше повне ім'я та адресу";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Документ не старше 3 місяців";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Вибрати файл";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Вибрати з галереї";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Завантажити документ";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Завантаження...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Нам потрібен ваш TRN, щоб перевірити ваш обліковий запис. Будь ласка, введіть ваш TRN так, як він зазначений в офіційному документі, і ретельно перевірте його правильність перед відправкою, щоб уникнути затримок.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Будь ласка, вкажіть ваш Реєстраційний номер платника податків (РНПП)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "Номер РНОКПП складається з 9 цифр";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "Код РНОКПП:";
+
+/*  */
+"Consent.Static.Description" = "Для отримання послуги від Постачальника послуг, я цим погоджуюсь, що UAB \"Ondato\" отримає та оброблятиме мої персональні дані, включаючи мої біометричні дані, отримані від дистанційної ідентифікації моєї особи шляхом зйомки та/або запису живого зображення мого обличчя, моєї особи або документа, що використовується для ідентифікації, та/або їх зображення і персональні дані, що містяться в них, та/або перевірки в реєстрі населення: зображення мого обличчя, ім'я, прізвище, національність, стать, персональний код, дата народження, номери документа, що використовується, дата видачі та термін дії, мій підпис та передача таких даних Постачальнику послуг. Я також зазначаю, що мене поінформовано, що контролером моїх персональних даних, включаючи мої біометричні дані, зазначені в цій згоді, є Постачальник послуг, а UAB \"Ondato\" оброблятиме мої персональні дані лише до завершення процедури дистанційної ідентифікації, а результати будуть передані Постачальнику послуг. Я також заявляю, що мене поінформовано та я погоджуюсь, що мої персональні дані, отримані для дистанційної ідентифікації та її цілей, можуть зберігатися UAB \"Ondato\" протягом більш тривалого періоду часу, ніж потрібно для завершення ідентифікації або передачі її результатів Постачальнику послуг, але лише за запитом Постачальника послуг або договірного зобов'язання UAB Ondato перед Постачальником послуг, але не довше, ніж це визначено в Договорі, підписаному між UAB \"Ondato\" та Постачальником послуг або запитано Постачальником послуг. Я поінформований, що можу подати запит щодо моїх персональних даних для отримання більш детальної інформації на info@ondato.com. Цим я заявляю та підтверджую, що всі персональні дані, які я надам для цілей дистанційної ідентифікації моєї особи, є правильними та точними, а документ, який я використаю для цієї мети, не є фальшивим та дійсним.";
+
+/*  */
+"Consent.Static.Heading" = "Згода на обробку персональних даних";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Розмістіть документ усередині рамки";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Зробіть знімок зони MRZ вашої посвідки особи";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Розмістіть документ і лінію MRZ всередині рамки";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Зробіть знімок передньої сторони вашої посвідки особи з лінією MRZ";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Будь ласка, покажіть головну сторінку документа, що містить зону MRZ у зазначеній області.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Зробіть знімок сторінки паспорта з зоною MRZ";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Підтвердження адреси";
+
+/*  */
+"Error.Interrupt.Description" = "Через переривання процес зупинено. Будь ласка, залишайтеся в цьому додатку, доки не завершите всі кроки.";
+
+/*  */
+"Error.Interrupt.Heading" = "Процес був перерваний";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Будь ласка, під'єднайтеся, щоб продовжити";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "З'єднання з Інтернетом зникло";
+
+/*  */
+"FaceCapture.Validation.Description" = "Будь ласка, зачекайте...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Перевірка вашого фото";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Запустити налаштування";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Тримайте документ біля обличчя під час зйомки селфі";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Зробіть фото, тримаючи документ";
+
+/*  */
+"Instructions.Identification.Description" = "Щоб продовжити користуватися цією послугою, вам потрібно підтвердити, що ви відповідаєте вимогам вебсайту.";
+
+/*  */
+"Instructions.Identification.Header" = "Ласкаво просимо до процесу \n перевірки особи";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Зачекайте хвилинку";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Завершення останніх деталей";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Захоплення фото";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Вирівняйте обличчя у рамці та натисніть «Зняти»";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Зробіть знімок вашого обличчя";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Чи чітко видно ваше обличчя?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Переконайтеся, що фото чітке та читабельне";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "За додатковою інформацією просимо звертатися до постачальника послуг.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Вашу ідентифікацію відхилено.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "За додатковою інформацією просимо звертатися до постачальника послуг або спробуйте ще раз з іншим документом.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Вашу ідентифікацію відхилено через заборонену країну або штат.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Просимо повторити процес або звернутися до постачальника послуг.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Вашу ідентифікацію відхилено.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "За додатковою інформацією просимо звертатися до постачальника послуг";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Вашу ідентифікацію відхилено.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "За додатковою інформацією просимо звертатися до постачальника послуг.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Вашу ідентифікацію відхилено через вікові обмеження.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Дякуємо за ваше терпіння";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Захоплення інформації пройшло успішно";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Схоже, що ми відчуваємо більше трафіку, ніж зазвичай. Вас буде перенаправлено найближчим часом.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Вибачте, це займає більше часу, ніж очікувалося";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Щоб продовжити, переконайтеся, що документ має NFC і його увімкнено на вашому пристрої.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Схоже, що ви не можете продовжити без NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Розмістіть свій документ за пристроєм";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Сканування... Будь ласка, зачекайте";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "З'єднання втрачено під час сканування. Спробуйте ще раз.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Спробуйте ще раз відсканувати документ.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Схоже, процес був перерваний.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Ми не змогли прочитати документ. Будь ласка, перевірте деталі та спробуйте ще раз.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Непередбачувана відповідь від чипа. Будь ласка, повторно відскануйте документ.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Сканований документ недійсний. Будь ласка, спробуйте знову з підтримуваним документом.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Виявлено кілька чіпів. Будь ласка, скануйте лише один документ за раз.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Ваш пристрій не підтримує NFC або він наразі вимкнений. Будь ласка, перейдіть на сумісний пристрій або увімкніть NFC у налаштуваннях.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC не підтримується";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Виникли труднощі?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Додайте свою ID-картку на задню панель телефону";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Розмістіть свою ID-картку на задній частині телефону для сканування NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Скануйте свою ID-картку за допомогою NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Розмістіть свій паспорт на задній частині телефону для сканування NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Скануйте свій паспорт за допомогою NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Скасувати";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Будь ласка, увімкніть NFC, щоб продовжити процес";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC вимкнено";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Налаштування";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Додайте першу сторінку паспорта на задню панель телефону";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Якщо у вас виникли труднощі з доступом до NFC, спробуйте ці методи:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Спробуйте прочитати останню сторінку документа.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Спробуйте прочитати сторінку з фотографією документа.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Якщо на документі є обкладинка, зніміть її.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Будь ласка, прикладіть документ до задньої частини вашого телефону.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Сканувати документ";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Поради для спроби";
+
+"Action.Cancel" = "Скасувати";
+
+"CaptureResultReason.TimeOut.Description" = "Спробуйте ще раз";
+
+"CaptureResultReason.TimeOut.Header" = "Час очікування минув";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Скасувати";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Обличчя занадто спрямоване вліво";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Обличчя занадто спрямоване вправо";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Обличчя не в об’єктиві";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Обличчя занадто повернуте вліво";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Обличчя занадто повернуте вправо";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Обличчя занадто далеко вліво";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Обличчя занадто далеко вправо";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Обличчя занадто високо";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Обличчя занадто низько";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Тримайте пристрій на рівні очей";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Перемістіть камеру на рівень очей";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Камера занадто близько";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Камера занадто далеко";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Камера занадто близько";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Камера занадто далеко";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Натисніть клавішу Enter або пробіл, щоб відобразити вказівки щодо вирівнювання обличчя";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Двічі торкніться екрана, щоб відобразити вказівки щодо вирівнювання обличчя";
+
+"FaceTec_camera_feed_issue_action" = "ВСЕ ОДНО ПОВТОРИТИ СПРОБУ";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Помилка надходження даних із камери";
+
+"FaceTec_camera_feed_issue_header" = "Помилка надходження даних<br/>із камери";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Систему неможливо перевірити з таких причин:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Ця програма блокує підозрілі конфігурації вебкамери.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Докладніше</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Ця програма блокує підозрілі конфігурації вебкамери. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Докладніше</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Можлива проблема";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Виправити";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Камера вже використовується іншою програмою.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Дозволи камери не запам’ятовуються у Firefox.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Закрийте іншу програму.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Перевірте дозволи запам’ятовування.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Стороння програма модифікує відео.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Закрийте/видаліть іншу програму.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Апаратне забезпечення не підлягає захисту.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Скористайтеся іншим пристроєм.";
+
+"FaceTec_camera_permission_header" = "Увімкнути камеру";
+
+"FaceTec_camera_permission_message" = "Дозволи камери вимкнено.<br/>Перевірте налаштування операційної системи та браузера.";
+
+"FaceTec_enter_fullscreen_action" = "ВІДКРИТИ НА ВЕСЬ ЕКРАН";
+
+"FaceTec_enter_fullscreen_header" = "Режим повноекранного селфі";
+
+"FaceTec_enter_fullscreen_message" = "Перш ніж ми почнемо, натисніть кнопку нижче, щоб відкрити повноекранний режим.";
+
+"FaceTec_feedback_center_face" = "Центруйте своє обличчя";
+
+"FaceTec_feedback_face_not_found" = "Скомпонуйте обличчя";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Дивіться прямо вперед";
+
+"FaceTec_feedback_face_not_upright" = "Тримайте голову прямо";
+
+"FaceTec_feedback_face_not_upright" = "Тримайте голову прямо";
+
+"FaceTec_feedback_hold_steady" = "Тримайте стійко";
+
+"FaceTec_feedback_move_phone_away" = "Відійди";
+
+"FaceTec_feedback_move_phone_away" = "Відсуньте телефон від себе";
+
+"FaceTec_feedback_move_phone_closer" = "Перемістіться ближче";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Перемістіть телефон на рівень очей";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Подивіться прямо в камеру";
+
+"FaceTec_feedback_move_web_closer" = "Перемістіться ближче";
+
+"FaceTec_feedback_move_web_even_closer" = "Ще ближче";
+
+"FaceTec_feedback_use_even_lighting" = "Світле обличчя більш рівномірно";
+
+"FaceTec_idscan_additional_review_message" = "Потрібна додаткова<br/>перевірка";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Показати зворотний бік посвідчення особи";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Показати лицьовий бік посвідчення особи";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Переглянути та підтвердити";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Прокрутити вниз";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Підтвердьте, що фотографія чітка та розбірлива";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Підтвердьте, що фотографія чітка та розбірлива";
+
+"FaceTec_idscan_type_selection_header" = "Підготуйтеся до сканування документа,<br/>що посвідчує особу";
+
+"FaceTec_initializing_camera" = "Забезпечення надходження даних із камери";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Підготуйтеся до";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "Ваше відеоселфі";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Підготуйтеся до відеоселфі";
+
+"FaceTec_instructions_message_ready_1" = "Розташуйте обличчя в овалі,";
+
+"FaceTec_instructions_message_ready_2" = "Натисніть \"Готово\" й наблизьтеся до об’єктива";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Розташуйте обличчя в овалі, натисніть \"Готово\" й наблизьтеся до об’єктива";
+
+"FaceTec_presession_brighten_your_environment" = "Потрібно покращити освітлення";
+
+"FaceTec_presession_conditions_too_bright" = "Освітлення занадто яскраве";
+
+"FaceTec_presession_eyes_straight_ahead" = "Дивіться прямо";
+
+"FaceTec_presession_frame_your_face" = "Розмістіть ваше обличчя в межах овалу";
+
+"FaceTec_presession_hold_steady_1" = "Стійте спокійно: 1";
+
+"FaceTec_presession_hold_steady_2" = "Стійте спокійно: 2";
+
+"FaceTec_presession_hold_steady_3" = "Стійте спокійно: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Дивіться прямо";
+
+"FaceTec_presession_neutral_expression" = "Зберігайте нейтральний вираз обличчя, не посміхайтеся";
+
+"FaceTec_presession_remove_dark_glasses" = "Зніміть темні окуляри";
+
+"FaceTec_result_facescan_upload_message" = "Завантаження<br/>зашифрованого<br/>3D-сканування обличчя";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Не вдалося відсканувати штрих-код<br/>Спробуйте ще раз";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Недостатня відповідність<br/>обличчя";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Документ, що посвідчує особу,<br/>видно не повністю";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Цей тип посвідчення особи не підтримується<br/>Скористайтеся іншим посвідченням особи";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Текст посвідчення нерозбірливий";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Знімок посвідчення особи<br/>зроблено";
+
+"FaceTec_result_idscan_success_back_side_message" = "Сканування посвідчення особи завершено";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Лицьовий бік посвідчення особи<br/>відскановано";
+
+"FaceTec_result_idscan_success_front_side_message" = "Сканування посвідчення особи завершено";
+
+"FaceTec_result_idscan_success_passport_message" = "Сканування паспорта завершено";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Сканування посвідчення особи з фотографією<br/>завершено";
+
+"FaceTec_result_idscan_unsuccess_message" = "Фото посвідчення особи<br/>не збігається<br/>з обличчям користувача";
+
+"FaceTec_result_idscan_upload_message" = "Завантаження<br/>зашифрованого<br/>документа, що посвідчує особу";
+
+"FaceTec_result_success_message" = "Успішно!";
+
+"FaceTec_retry_header" = "Спробуймо ще раз";
+
+"FaceTec_retry_ideal_image_label" = "Ідеальна поза";
+
+"FaceTec_retry_instruction_message_1" = "Нейтральний вираз, без посмішки";
+
+"FaceTec_retry_instruction_message_2" = "Немає відблисків або екстремального освітлення";
+
+"FaceTec_retry_instruction_message_3" = "Зображення розмите, почистьте об’єктив";
+
+"FaceTec_retry_subheader_message" = "Нам потрібне більш чітке відеоселфі";
+
+"FaceTec_retry_your_image_label" = "Ваше селфі";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Зупинити процедуру";
+
+"FailureScreen.TooManyAttempts.Description" = "Зверніться по допомогу до постачальника послуг";
+
+"FailureScreen.TooManyAttempts.Header" = "Верифікацію заблоковано через надмірну кількість спроб";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Пристрій заблоковано.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Забагато спроб";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Пристрій не підтримується.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Сталася помилка";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Повторіть спробу згодом.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Помилка ліцензії";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Термін дії ключа закінчився, він містив недійсний текст, або ви намагаєтеся ініціалізувати домен, який не вказано у вашому ключі.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Термін дії ключа закінчився або він недійсний";
+
+"LoadResultReason.NetworkIssues.Description" = "Не вдалося продовжити через проблеми зі з’єднанням на пристрої";
+
+"LoadResultReason.NetworkIssues.Header" = "Проблеми з мережею";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Не вдалося завантажити ресурси.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Сталася помилка";
+
+"LoadResultReason.StillLoadingResources.Description" = "Ресурси все ще завантажуються.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Сталася помилка";
+
+"FaceTec_action_im_ready" = "Можна починати!";
+
+"ReadyScreen.Header" = "Підготуйтеся до відеоселфі";
+
+"RetryScreen.Action.PassiveLiveness" = "Спробуйте альтернативний метод";
+
+"FaceTec_action_try_again" = "Повторити спробу";
+
+"RetryScreen.Description" = "Потрібна чіткіша фотографія.";
+
+"RetryScreen.Header" = "Спробуймо ще раз";
+
+/*  */
+"RetryScreen.Message.Generic" = "Використовуйте рівномірне освітлення та копіюйте ідеальну позу";
+
+"UploadScreen.Description" = "Тримайте це вікно відкритим";
+
+"UploadScreen.Header" = "Перевірка фотографії обличчя";
+

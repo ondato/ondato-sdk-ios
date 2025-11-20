@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7fRPyJZxQkigP3lKzf1FzoItln0=
+		zLf2taKHRNdBTkzpKKQaYSJeIj4=
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		KSOOedRz5d0X1fhkS7sxsRTdDSg=
+		I/WKc0i5rOCekBNvnbeAt6sq818=
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		BpHBewR+z13h7mSfBEjZHIAX5FU=
+		VwpLIBnAICByvdR/u4Zj1PvMHzk=
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		m8CppqB+qJOV+YqlhGR89gjcXGo=
+		L6+x7ZbQD7guKhYv2eTNJz7HETY=
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		BpHBewR+z13h7mSfBEjZHIAX5FU=
+		VwpLIBnAICByvdR/u4Zj1PvMHzk=
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Wh9bg7E/LM78KLmnDtWiXy0PFm8=
+		zTYid+BDUibNcG9jlUTaNjLl8eU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,35 +50,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NtLzloQxL0J8mOZW0jCRHW9v0/+d5s7+WWvTa+Q2Fws=
+			sU06/eO0544Oa8fEDcRq7J/0bdJsxc8LHSZJuxXYY9Q=
 			</data>
 		</dict>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ArAkNi7wAHao1StlEMRnSVs/5pOoGhLR6T6ZaEq1YUQ=
+			TzWSNFPY7KCn7KLViJ8gIYT2Dz+zYg274Q7E1gK1HpM=
 			</data>
 		</dict>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S3YAQykFWA7Bc2Cz0+GHhidzpY6rC+mi2Zcd9/HFqCk=
+			5j0ivR0mAvQwgS2PnBZHUvk5lE3CF7uuPti7OW7Wjjc=
 			</data>
 		</dict>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ArAkNi7wAHao1StlEMRnSVs/5pOoGhLR6T6ZaEq1YUQ=
+			TzWSNFPY7KCn7KLViJ8gIYT2Dz+zYg274Q7E1gK1HpM=
 			</data>
 		</dict>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wjgWZaqgcz7r296JZSRP9R/nsI23zcZC7awEPptZ35o=
+			Y8djgNwwZD4v3AxoMx6NEuoypI+zFZStB015UC985gU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

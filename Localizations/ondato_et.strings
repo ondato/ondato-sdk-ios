@@ -1,250 +1,858 @@
-"ondato_continue_anyway" = "Jätka ikkagi";
-"ondato_loading_title" = "Kontrollimine";
-"ondato_loading_subtitle" = "Palun oota";
-"ondato_choose_document_passport" = "Pass";
-"ondato_choose_document_id_card" = "Isikutunnistus";
-"ondato_choose_document_driving_licence" = "Juhiluba";
-"ondato_success_title" = "Identifitseerimine on lõppenud";
-"ondato_success_subtitle" = "Kui teie registreerimine on töödeldud, teavitatakse teid sellest e-posti teel";
-"ondato_close" = "Sulge";
-"ondato_capture_passport_front_title" = "Palun pildistage põhidokumendi lehekülge, mis sisaldab masinloetavat ala";
-"ondato_capture_id_card_front_title" = "Laadige üles oma ID-kaardi esikülje foto";
-"ondato_capture_driver_licence_front_title" = "Tehke oma juhiloa esiküljest pilt";
-"ondato_error_unauthorized_message" = "UNAUTHORIZED";
-"ondato_error_bad_request_message" = "BAD_REQUEST";
-"ondato_error_internal_server_error_message" = "INTERNAL SERVER ERROR";
-"ondato_error_connection_failed" = "CONNECTION ERROR";
-"ondato_error_server_is_down_message" = "SERVER IS DOWN";
-"ondato_error_default_title" = "Oops...";
-"ondato_error_timeout_message" = "Seanss lõppes";
-"ondato_start_button" = "Alustama";
-"ondato_error_something_wrong_title" = "Esines viga";
-"ondato_consent_title" = "Nõusolek isikuandmete töötlemiseks";
-"ondato_consent_terms" = "Teenusepakkujalt teenuse saamiseks väljendan selle nõusolekuga nõusolekut, et UAB Ondato saab ja haldab minu isikuandmeid, sealhulgas mu biomeetrilisi andmeid, mis on saadud minu isikliku identiteedi kaugtuvastamise teel otsepildi tegemise ja / või filmimisega minu nägu, minu isiku identiteet või selle tuvastamiseks kasutatud dokument ja / või tema kujutis ja neis sisalduvad isikuandmed ja / või rahvastikuregistris kontrollimine: minu näokujutis, nimi, perekonnanimi, kodakondsus, sugu , isikukood, sünniaeg, kasutatava dokumendi numbrid, väljaandmise kuupäev ja kehtivusaeg, minu allkiri ja selliste andmete edastamine teenusepakkujale. Märgin ka, et olen informeeritud, et käesolevas nõusolekus on minu isikuandmete, sealhulgas mu biomeetriliste andmete vastutav töötleja teenusepakkuja ja UAB Ondato töötleb minu isikuandmeid ainult seni, kuni kaugtuvastusprotseduur on lõppenud ja tulemused edastatakse teenuse pakkujale. Samuti kinnitan, et olen informeeritud ja nõustun sellega, et UAB Ondato võib minu kaugtuvastamiseks saadud isikuandmeid ja nende eesmärke säilitada kauem kui on vaja identifitseerimise lõpuleviimiseks või selle tulemuste edastamiseks Teenusepakkujale, kuid ainult Teenuseosutaja või UAB Ondato lepingulise kohustuse korral Teenuseosutaja ees, kuid mitte kauem kui see on määratletud UAB Ondato ja Teenusepakkuja vahel sõlmitud või Teenuseosutaja nõudmisel sõlmitud Lepingus. Mind on teavitatud, et ma võin oma isikuandmete kohta üksikasjalikuma teabe saamiseks teenuseosutajaga ühendust võtta. Käesolevaga kinnitan ja kinnitan, et kõik isikuandmed, mille edastan oma isikliku identifitseerimise eesmärgi kaugtuvastamiseks, on õiged ja täpsed ning dokument, mida sel eesmärgil kasutan, ei ole vale ja kehtiv.";
-"ondato_consent_agree" = "Ma nõustun";
-"ondato_consent_disagree" = "Pole nõus";
-"FailedRule_PersonPhotoContainsFace_title" = "Näofotot ei õnnestunud ära tunda";
-"FailedRule_DocContainsFace_title" = "Näofoto tuvastamine dokumendis ebaõnnestus";
-"FailedRule_DocContainsMrz_title" = "Masinaskannimise tsooni tuvastamine nurjus";
-"FailedRule_PersonAndDocPhotoMatch_title" = "Näofotot ei õnnestunud dokumendifotoga ära tunda";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_title" = "Näofoto tuvastamine dokumendis ebaõnnestus";
-"FailedRule_DocExpireDateInFuture_title" = "Dokument on aegunud";
-"FailedRule_PersonAndDocumentPersonCodeMatch_title" = "Isikukood ei vastanud esitatud isikukoodile";
-"FailedRule_PersonFaceOrDocIsMonochrome_title" = "Esitatakse dokumendi mustvalge koopia";
-"FailedRule_DocumentContainsBothSides_title" = "vale dokumendi tüüp";
-"FailedRule_ContainsMultipleFaces_title" = "Identifitseerimise käigus tuvastati mitu isikut";
-"FailedRule_PersonFoundInComplyAdvantage_title" = "inimene on sanktsioonide nimekirjas";
-"FailedRule_ContainsCelebrity_title" = "Tunnustatud kuulus mees";
-"FailedRule_LostAndStolen_title" = "Teie dokument on kehtetute dokumentide andmebaasis tuvastatud";
-"FailedRule_PersonPhotoContainsFace_subtitle" = "Palun pildistage oma nägu reaalajas. Teie nägu peaks olema hästi nähtav, hästi valgustatud keskkonnas ja seda ei tohiks hägustada";
-"FailedRule_DocContainsFace_subtitle" = "Teie nägu ei õnnestunud dokumendifotol tuvastada. Esitage dokumendilehe foto, mis sisaldab näopilti. Teie dokument peaks olema hästi nähtav, hästi valgustatud keskkonnas ega tohiks olla hägune ega hägune.";
-"FailedRule_DocContainsMrz_subtitle" = "Elektrooniliselt loetava riba kasutamine nurjus. Esitage dokumentide lehe foto koos elektrooniliselt loetava ribaga. Teie dokument peaks olema selgelt nähtav, pildistatud hästi valgustatud keskkonnas ega tohiks olla udune";
-"FailedRule_PersonAndDocPhotoMatch_subtitle" = "Selfifoto nägu ei saanud dokumendis oleva fotoga sobitada. Palun veenduge, et selfie esitamise ajal oleks näo esitluse formaat sama, mis dokumendi fotol. Eemaldage näolt prillid ja muud tarvikud";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_subtitle" = "Teie nägu ei õnnestunud dokumendifotol tuvastada. Esitage foto dokumendilehelt, mis sisaldab näofotot. Teie dokument peaks olema hästi nähtav, hästi valgustatud keskkonnas ega tohiks olla hägune ega hägune.";
-"FailedRule_DocExpireDateInFuture_subtitle" = "Teie dokument on aegunud. Esitage kehtiv dokument";
-"FailedRule_PersonAndDocumentPersonCodeMatch_subtitle" = "Teie isiklik number dokumendis ei ühti registreerimisvormi isikliku numbriga. Palume teil esitada dokument, mille teave esitati registreerimisvormis";
-"FailedRule_PersonFaceOrDocIsMonochrome_subtitle" = "Esitasite dokumendi mustvalge koopia. Pange tähele, et peate pildistama tegeliku dokumendi. Teie dokument peaks olema hästi nähtav, hästi valgustatud keskkonnas ega tohiks olla halva kvaliteediga";
-"FailedRule_DocumentContainsBothSides_subtitle" = "Olete esitanud fotosid erinevatest dokumentidest. Pange tähele, et peate esitama sama dokumendi fotod mõlemalt poolt. Fotod peavad olema hästi valgustatud keskkonnas selgelt nähtavad ning ei tohi olla halvasti valgustatud ega halva kvaliteediga";
-"FailedRule_ContainsMultipleFaces_subtitle" = "Pange tähele, et süsteem on tuvastamisprotsessi käigus tuvastanud mitu isikut. Palun veenduge, et tuvastamise ajal on fotol nähtav ainult isik, kelle dokument esitatakse";
-"FailedRule_PersonFoundInComplyAdvantage_subtitle" = "Teie nimega isik on kantud sanktsioonide nimekirja. Vaatame teie identifitseerimise käsitsi üle ja teavitame tulemust ettevõttest. Palun klõpsake nuppu \"Jätka\"";
-"FailedRule_ContainsCelebrity_subtitle" = "Kuulus inimene tuvastati ühel teie esitatud fotol. Pange tähele, et peate esitama oma näo ja isikutunnistuse fotod";
-"FailedRule_LostAndStolen_subtitle" = "Teie dokument tuvastati kehtetute dokumentide andmebaasis. Esitage veel üks dokument";
-"FaceTec_feedback_center_face" = "hoia oma nägu keskel";
-"FaceTec_action_continue" = "Jätka";
-"FaceTec_action_im_ready" = "Ma olen valmis";
-"FaceTec_camera_permission_header" = "lülitage kaamera sisse";
-"FaceTec_camera_permission_message_enroll" = "Aktiveerige esikaamera";
-"FaceTec_camera_permission_message_auth" = "FaceTec tuvastas, et teie kaamera load on keelatud. OS seadete muutmiseks puudutage allolevat nuppu.";
-"FaceTec_camera_permission_enable_camera" = "Aktiveerige kaamera";
-"FaceTec_camera_permission_launch_settings" = "Aktiveerige seaded";
-"FaceTec_feedback_face_not_found" = "Pange oma nägu raami";
-"FaceTec_feedback_face_not_looking_straight_ahead" = "Vaata otse edasi";
-"FaceTec_feedback_face_not_upright" = "Hoidke pea sirge";
-"FaceTec_feedback_hold_steady" = "Ära liiguta";
-"FaceTec_feedback_move_phone_away" = "Tõmmake telefon endast eemale";
-"FaceTec_feedback_move_phone_closer" = "Liigu lähemale";
-"FaceTec_feedback_move_phone_even_closer" = "Veel lähemale";
-"FaceTec_feedback_move_phone_to_eye_level" = "Tõstke telefon silmade kõrgusele";
-"FaceTec_feedback_use_even_lighting" = "Säilitage ühtlane näovalgus";
-"FaceTec_instructions_header_lighting" = "Säilitage ühtlane näovalgus";
-"FaceTec_instructions_header_face_angle" = "Hoidke kaamerat silmade kõrgusel";
-"FaceTec_instructions_header_ready_1" = "Ole valmis oma";
-"FaceTec_instructions_header_ready_2" = "nägu pildistama!";
-"FaceTec_instructions_message_ready" = "Pange oma nägu selleks ettenähtud raami";
-"FaceTec_result_facescan_upload_message" = "Oodake laadimist";
-"FaceTec_result_success_message" = "Nägu tuvastati edukalt";
-"FaceTecRetryReasonGeneric_title" = "Nägu ei õnnestunud ära tunda";
-"FaceTecRetryReasonGeneric_subtitle" = "Palun veenduge, et teie nägu ei takistaks võõrkehad ja te ei teeks tuvastamise ajal ebatavalisi näoilmeid.";
-"FaceTecRetryReasonBadLighting_title" = "Kehv valgustus";
-"FaceTecRetryReasonBadLighting_subtitle" = "Pange tähele, et teie tuvastamine ebaõnnestus tuvastamise ajal halva valgustuse tõttu. Palun veenduge, et teie nägu oleks ühtlaselt valgustatud.";
-"FaceTecRetryReasonFaceAngle_title" = "Näo esitamise vorming on vale";
-"FaceTecRetryReasonFaceAngle_subtitle" = "Palume veenduda, et teie nägu sobib märgitud tsooni korralikult. Peate otse kaamerasse vaatama";
-"FaceTecRetryReasonBadLightingFailureToAcquire_title" = "Ere valgustus";
-"FaceTecRetryReasonBadLightingFailureToAcquire_subtitle" = "Pange tähele, et tuvastamise ajal tuvastati teie näo ümber eredat valgust. Veenduge, et teie ümbrus ei oleks liiga hele";
-"FaceTec_instructions_message_ready_1" = "Sea oma nägu ovaaliga kohakuti";
-"FaceTec_instructions_message_ready_2" = "";
-"FaceTec_presession_position_face_straight_in_oval" = "Vaata otse";
-"FaceTec_presession_hold_steady_3" = "Püsi paigal: 3";
-"FaceTec_presession_hold_steady_2" = "Püsi paigal: 2";
-"FaceTec_presession_hold_steady_1" = "Püsi paigal: 1";
-"FaceTec_presession_eyes_straight_ahead" = "Vaata otse";
-"FaceTec_presession_remove_dark_glasses" = "Eemalda tumedad prillid";
-"FaceTec_presession_neutral_expression" = "Neutraalne ilme, naeratuseta";
-"FaceTec_presession_conditions_too_bright" = "Liiga hele keskkond";
-"FaceTec_presession_brighten_your_environment" = "Muuda keskkonda heledamaks";
-"FaceTec_retry_header" = "Proovime uuesti...";
-"FaceTec_presession_frame_your_face" = "Sea oma nägu ovaaliga kohakuti";
-"FaceTec_retry_subheader_message" = "Meil on tarvis selgemat videoselfit.";
-"FaceTec_retry_instruction_message_1" = "Neutraalne ilme, naeratuseta";
-"FaceTec_retry_instruction_message_2" = "Väldi pimestavat või liiga tugevat valgust";
-"FaceTec_retry_instruction_message_3" = "Liiga hägune, puhasta kaamerat";
-"FaceTec_retry_your_image_label" = "Sinu selfi";
+"Action.Close" = "Sulge";
+
+"LanguageSelection.Header" = "Valige keel";
+
+"Modals.Abort.Action.ContinueProcess" = "Jätka protsessi";
+
+"Modals.Abort.Action.StopProcess" = "Peata toiming";
+
+"Modals.Abort.Heading" = "Kas olete kindel, et soovite selle protsessi katkestada?";
+
+"Modals.Error.Description" = "Midagi läks valesti, sulgege see teade ja proovige uuesti";
+
+"Modals.Error.Heading" = "Tekkis viga";
+
+"Modals.Success.Description" = "Liikuge edasi järgmise sammu juurde";
+
+"Modals.Success.Heading" = "Õnnestus";
+
+"Action.Agree" = "Nõustun";
+
+"Action.Disagree" = "Ei nõustu";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Jätka protsessi";
+
+"Disagree.Confirmation.Action.StopProcess" = "Peata protsess";
+
+"Disagree.Confirmation.Header" = "Sisu keeldudes peatate protsessi. Oled sa kindel?";
+
+"Capture.Action.Capture" = "Jäädvusta";
+
+"Capture.DriverLicense.Back.Description" = "Paiguta dokument raami sisse.";
+
+"Capture.DriverLicense.Back.Header" = "Jäädvusta tagakülg";
+
+"Capture.DriverLicense.Front.Description" = "Paiguta dokument raami sisse.";
+
+"Capture.DriverLicense.Front.Header" = "Jäädvusta esikülg";
+
+"Capture.IdCard.Back.Description" = "Paiguta dokument raami sisse.";
+
+"Capture.IdCard.Back.Header" = "Jäädvusta tagakülg";
+
+"Capture.IdCard.Front.Description" = "Paiguta dokument raami sisse.";
+
+"Capture.IdCard.Front.Header" = "Jäädvusta esikülg";
+
+"Capture.InternalPassport.DataPage.Header" = "Jäädvusta põhileht";
+
+"Capture.InternalPassport.FrontCover.Header" = "Jäädvusta kaas";
+
+"Capture.Passport.DataPage.Description" = "Paiguta dokument raami sisse.";
+
+"Capture.Passport.DataPage.Header" = "Jäädvusta põhileht";
+
+"Capture.Passport.FrontCover.Header" = "Jäädvusta kaas";
+
+"Capture.ResidencePermit.Back.Description" = "Paiguta dokument raami sisse.";
+
+"Capture.ResidencePermit.Back.Header" = "Jäädvusta tagakülg";
+
+"Capture.ResidencePermit.Front.Description" = "Paiguta dokument raami sisse.";
+
+"Capture.ResidencePermit.Front.Header" = "Jäädvusta esikülg";
+
+"Capture.SocialId.Back.Description" = "Paiguta dokument raami sisse.";
+
+"Capture.SocialId.Back.Header" = "Jäädvusta tagakülg";
+
+"Capture.SocialId.Front.Description" = "Paiguta dokument raami sisse.";
+
+"Capture.SocialId.Front.Header" = "Jäädvusta esikülg";
+
+"Preview.Action.Continue" = "Jätka";
+
+"Preview.Action.Retake" = "Proovi uuesti";
+
+"Preview.Header" = "Kas foto on selge, fookuses ja peegelduseta?";
+
+"FaceCapture.Instructions.Action.Start" = "Alusta";
+
+"FaceCapture.Instructions.Description" = "Paiguta protsessi käigus oma nägu sõõri keskele.";
+
+"FaceCapture.Instructions.Header" = "Tuvasta isikusamasus oma näoga";
+
+"FaceCapture.Instructions.Subheader" = "Veendu, et:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "su näoilme on neutraalne";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "valgustus on hea";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "kujutis on selge";
+
+"App.Button.Close" = "Sulge";
+
+"App.Button.Continue" = "Jätka";
+
+"App.Errors.Default" = "Tekkis ootamatu probleem. Palun proovige hiljem uuesti";
+
+"EndPage.Action.Continue" = "Jätka";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Aitäh. Nüüd saate protsessi lõpetada.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Oled valmis!";
+
+"Action.Close" = "Sulge";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Lae üles oma aadressi tõendav dokument";
+
+"Document.Instructions.Action.Start" = "Alusta";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Jäädvusta oma juhiloa tagakülg";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Jäädvusta oma juhiloa esikülg";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "pilt ei ole liiga udune";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Veendu, et:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "valgustus on hea";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "dokument on loetav";
+
+"Document.Instructions.IdCard.Back.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.IdCard.Back.Heading" = "Jäädvusta oma ID-kaardi tagakülg";
+
+"Document.Instructions.IdCard.Front.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.IdCard.Front.Heading" = "Jäädvusta oma ID-kaardi esikülg";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Näita põhilist dokumendilehte, mis sisaldab märgitud alal MRZ-tsooni.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Jäädvusta oma siseriikliku passi põhileht";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Jäädvusta siseriikliku passi kaas";
+
+"Document.Instructions.Passport.DataPage.Description" = "Veendu, et märgitud alal oleks samuti kaasatud MRZ-tsoon.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Jäädvusta passi põhileht";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Jäädvusta passi kaas";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Jäädvusta oma elamisloa tagakülg";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Jäädvusta oma elamisloa esikülg";
+
+"Document.Instructions.SocialId.Back.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.SocialId.Back.Heading" = "Jäädvusta oma isikutunnistuse tagakülg";
+
+"Document.Instructions.SocialId.Front.Description" = "Paiguta dokument raami sisse";
+
+"Document.Instructions.SocialId.Front.Heading" = "Jäädvusta oma isikutunnistuse esikülg";
+
+"Document.Select.Document.DriverLicense" = "Juhiluba";
+
+"Document.Select.Document.IdCard" = "ID-kaart";
+
+"Document.Select.Document.InternalPassport" = "Siseriiklik pass";
+
+"Document.Select.Document.Passport" = "Pass";
+
+"Document.Select.Document.ResidencePermit" = "Elamisluba";
+
+"Document.Select.Document.SocialId" = "Isikutunnistus";
+
+"Document.Select.Header" = "Vali oma dokument";
+
+"FaceCapture.Instructions.Description" = "Aseta oma nägu raami keskele.";
+
+"FaceCapture.Instructions.Header" = "Jäädvusta näopilt";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "pilt on selge";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "sinu näoilme on neutraalne";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "valgustus on hea";
+
+"FaceCapture.Instructions.Subheader" = "Veendu, et:";
+
+"Result.Failure.Action.TryAgain" = "Proovi uuesti";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Palun proovige uuesti ja veenduge, et dokument on ühtlaselt valgustatud valge valgusallikaga.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Esitatud fotol on halb valgustus";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Palun proovige uuesti ja esitage terve dokument.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Osa esitatud dokumendist on kahjustatud";
+
+"Result.Failure.DocumentFromScreen.Description" = "Tuvastamisprotsessi lõpuleviimiseks esita kehtiv foto füüsilisest dokumendist";
+
+"Result.Failure.DocumentFromScreen.Header" = "Esitatud dokumendi foto on kehtetu";
+
+"Result.Failure.DocumentIsExpired.Description" = "Tuvastamisprotsessi lõpuleviimiseks esita kehtiv dokument";
+
+"Result.Failure.DocumentIsExpired.Header" = "Esitatud dokument on aegunud";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Tuvastamisprotsessi lõpuleviimiseks kasuta esitatud loendis olevat dokumenti";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Esitatud dokumendi tüüp ei vasta nõuetele";
+
+"Result.Failure.DocumentPrinted.Description" = "Tuvastamisprotsessi lõpuleviimiseks esita kehtiv foto füüsilisest dokumendist";
+
+"Result.Failure.DocumentPrinted.Header" = "Esitatud dokumendi foto on kehtetu";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Esita ladina tähtedega dokument";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Esitatud dokumendi tüüp ei vasta nõuetele";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Palume sul jäädvustada oma originaaldokument";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Sinu tuvastamine on tagasi lükatud";
+
+"Result.Failure.FacesNotMatch.Description" = "Proovi uuesti või võta ühendust klienditoega";
+
+"Result.Failure.FacesNotMatch.Header" = "Dokumendi foto ja esitatud näopilt ei ühti";
+
+"Result.Failure.Generic.Description" = "Võta ühendust klienditoega";
+
+"Result.Failure.Generic.Header" = "Sinu isiku tuvastamisel ilmnes probleem";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Proovi uuesti ja veendu, et aadressi tõendav dokument oleks kehtiv";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Foto aadressi tõendamiseks esitatud dokumendist on kehtetu";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Proovi uuesti ja esita kõik vajalikud fotod oma dokumendist";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Puudub dokumendi foto";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Proovi uuesti või võta ühendust klienditoega";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Puudub näopilt";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Tuvastamisprotsess peab toimuma ilma teiste inimeste osaluseta";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Kasutaja ei ole protsessi ajal üksi";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Proovi uuesti ja veendu, et dokument oleks selgelt loetav ja et andmed poleks kaetud";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Osa esitatud dokumendist on kaetud";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Proovi uuesti, järgides esitatud juhiseid. Sinu nägu ei tohiks olla kaetud";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Nägu on osaliselt kaetud";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Proovi uuesti ja veendu, et dokument oleks ühtlaselt valgustatud";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Esitatud foto on halva valgusega";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Proovi uuesti ja veendu, et dokumendi andmed on selgelt loetavad või kui kaamera kvaliteet on halb, proovi alustada protsessi teise seadmega.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Esitatud foto on halva kvaliteediga";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Proovi uuesti või võta ühendust klienditoega";
+
+"Result.Failure.SelfieHasNoFace.Header" = "Esitatud fotol puudub nägu";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Proovi uuesti või võta ühendust klienditoega";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Esitatud foto ei ole asjakohane";
+
+"Result.Success.Header" = "Edukalt kinnitatud!";
+
+"ResultsWaiting.Delay.Description" = "Paistab, et meie lehel on tavalisest rohkem inimesi. Sind suunatakse varsti ümber.";
+
+"ResultsWaiting.Delay.Header" = "Kahjuks võtab see oodatust kauem aega";
+
+"ResultsWaiting.Details.Description" = "Ooteaeg on keskmiselt 2 minutit.";
+
+"ResultsWaiting.Details.Header" = "Palun oota...";
+
+"ResultsWaiting.Details.Message.Message1" = "Sinu dokumendi andmete krüptimine.";
+
+"ResultsWaiting.Details.Message.Message2" = "Dokumendi kontrollimine väliste kahjustuste suhtes.";
+
+"ResultsWaiting.Details.Message.Message3" = "Esitatud dokumendi fotode kontrollimine.";
+
+"ResultsWaiting.Details.Message.Message4" = "Kontrollime, kas olete päris inimene";
+
+"ResultsWaiting.Details.Message.Message5" = "Andmete autentsuse ja kehtivuse kontrollimine.";
+
+"ResultsWaiting.Details.Message.Message6" = "Dokumendi oleku ja andmete kontrollimine registrites.";
+
+/*  */
+"Action.Cancel" = "Tühista";
+
+/*  */
+"Action.Loading.Header" = "Laadimine...";
+
+/*  */
+"Action.Submit" = "Esita";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Dokument skannitud edukalt";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Paiguta dokument raami sisse.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Dokumendi jäädvustamine";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Jäädvustage aadressitõend";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "See võib olla pangaväljavõte või kommunaalarve";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Toetatud failid: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Faili suurus ei tohi ületada 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Üleslaetud failivormingut ei toetata";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Palun esitage oma aadressi tõend";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Maksimaalne faili suurus: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Nõuded:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Peab sisaldama teie täisnime ja aadressi";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Dokument ei ole vanem kui 3 kuud";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Vali fail";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Vali galeriist";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Laadi dokument üles";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Üleslaadimine...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Meil on vaja teie TRN-i, et teie kontot kontrollida. Palun sisestage oma TRN nii, nagu see on ametlikul dokumendil, ja kontrollige enne esitamist, et see oleks õige, et vältida viivitusi.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Palun esitage oma maksumaksja registreerimisnumber (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "TRN number koosneb 9 numbrist";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "TRN kood:";
+
+/*  */
+"Consent.Static.Description" = "Teenuse saamiseks Teenusepakkujalt avaldan selle nõusolekuga oma nõusoleku, et UAB \"Ondato\" saab ja haldab minu isikuandmeid, sealhulgas minu biomeetrilisi andmeid, mis on saadud minu isiku kaugidentifitseerimise teel, tehes ja/või filmides minu näo, minu isiku identiteedi või selleks kasutatava dokumendi ja/või nende pildi ning neis sisalduvate isikuandmete ja/või rahvastikuregistris kontrollimise teel: minu näo pilt, nimi, perekonnanimi, rahvus, sugu, isikukood, sünniaeg, kasutatava dokumendi numbrid, väljaandmise ja kehtivuse kuupäev, minu allkiri ja selliste andmete edastamine Teenusepakkujale. Samuti märgin, et olen informeeritud, et minu isikuandmete, sealhulgas minu biomeetriliste andmete, millele on viidatud selles nõusolekus, vastutav töötleja on Teenusepakkuja ja UAB \"Ondato\" töötleb minu isikuandmeid ainult kuni kaugidentifitseerimise protseduuri lõpuni ja tulemused edastatakse Teenusepakkujale. Samuti kinnitan, et olen informeeritud ja nõustun, et minu kaugidentifitseerimiseks saadud isikuandmeid ja nende eesmärke võib UAB \"Ondato\" säilitada kauem kui identifitseerimise lõpuleviimiseks või selle tulemuste edastamiseks Teenusepakkujale, kuid ainult Teenusepakkuja nõudmisel või UAB Ondato lepingulise kohustuse tõttu Teenusepakkuja ees, kuid mitte kauem kui on määratletud UAB \"Ondato\" ja Teenusepakkuja vahel sõlmitud lepingus või Teenusepakkuja nõudmisel. Olen informeeritud, et võin esitada taotluse oma isikuandmete kohta täpsema teabe saamiseks aadressil info@ondato.com. Käesolevaga kinnitan ja kinnitan, et kõik isikuandmed, mida ma esitan oma isiku kaugidentifitseerimise eesmärgil, on õiged ja täpsed ning dokument, mida ma selleks kasutan, ei ole vale ja on kehtiv.";
+
+/*  */
+"Consent.Static.Heading" = "Nõusolek isikuandmete töötlemiseks";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Asetage dokument raami sisse";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Pildista MRZ-ala oma isikutunnistusel";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Asetage dokument ja MRZ-rida raami sisse";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Pildista oma isikutunnistuse esikülg koos MRZ-koodiga";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Palun näita põhidokumendi lehte, mis sisaldab MRZ tsooni, märgitud alal.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Pildista passilehte MRZ-tsooniga";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Aadressi tõend";
+
+/*  */
+"Error.Interrupt.Description" = "Katkestuste tõttu on protsess peatunud. Palun jääge sellesse rakendusse, kuni olete kõik sammud lõpetanud.";
+
+/*  */
+"Error.Interrupt.Heading" = "Protsess katkestati";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Jätkamiseks ühendage uuesti";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Teie internetiühendus on kadunud";
+
+/*  */
+"FaceCapture.Validation.Description" = "Palun oodake...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Teie foto valideerimine";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Ava seaded";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Hoia dokumenti enda näo lähedal, kui teed selfit";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Pildista ennast, hoides oma dokumenti";
+
+/*  */
+"Instructions.Identification.Description" = "Selle teenuse kasutamise jätkamiseks peate kinnitama, et vastate veebisaidi nõuetele.";
+
+/*  */
+"Instructions.Identification.Header" = "Tere tulemast isikutuvastuse \n protsessi";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Hetk";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Viimistlen viimaseid üksikasju";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Foto jäädvustamine";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Joonda oma nägu raami sisse ja puuduta pildistamiseks";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Pildista oma nägu";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Kas teie nägu on selgelt nähtav?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Veenduge, et foto oleks selge ja loetav";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Palume teil lisateabe saamiseks pöörduda klienditoe poole.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Teie identifitseerimine on tagasi lükatud.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Palume teil lisateabe saamiseks pöörduda klienditoe poole või proovida uuesti teise dokumendiga.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Teie identifitseerimine on keelatud riigi või osariigi tõttu tagasi lükatud.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Palume teil protsessi uuesti proovida või pöörduda klienditoe poole.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Teie identifitseerimine on tagasi lükatud.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Lisateabe saamiseks võtke ühendust klienditoega";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Teie identifitseerimine on tagasi lükatud.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Palume teil lisateabe saamiseks pöörduda klienditoe poole.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Teie identifitseerimine on vanusepiirangute tõttu tagasi lükatud.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Täname teid kannatlikkuse eest";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Teabe jäädvustamine õnnestus";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Tundub, et meil on tavapärasest rohkem liiklust. Teid suunatakse peagi edasi.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Vabandust, see võtab kauem aega kui oodatud";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Jätkamiseks peate veenduma, et dokumendil on NFC ja see on teie seadmes lubatud.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Tundub, et te ei saa ilma NFC-ta jätkata.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Asetage dokument seadme taha";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Skannimine... Palun hoidke";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Ühendus skannimise ajal katkes. Proovige uuesti.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Proovige dokumenti uuesti skannida.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Tundub, et protsess katkestati.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Dokumenti ei õnnestunud lugeda. Kontrollige kontoandmeid ja proovige uuesti.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Ootamatu vastus kiibilt. Palun skaneeri dokument uuesti.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Skannitud dokument ei ole kehtiv. Palun proovige uuesti toetatud dokumendiga.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Mitmeid kiipe tuvastatud. Palun skaneeri korraga ainult üks dokument.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Teie seadmel ei ole NFC tuge või on NFC praegu välja lülitatud. Palun vahetage ühilduva seadme vastu või lülitage NFC seadetes sisse.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC pole toetatud";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Kas teil on raskusi?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Lisa oma ID-kaart telefoni tagaküljele";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Asetage oma ID-kaart telefoni tagaküljele NFC-skannimiseks";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Skaneeri oma ID-kaarti NFC-ga";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Asetage oma pass telefoni tagaküljele NFC-skannimiseks";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Skaneeri oma passi NFC-ga";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Tühista";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Palun lülitage NFC sisse, et protsessiga edasi minna";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC on välja lülitatud";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Seaded";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Lisa oma passi esileht telefoni tagaküljele";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Kui teil tekkisid raskused NFC-le juurdepääsuga, proovige neid meetodeid:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Proovige lugeda dokumendi viimast lehte.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Proovige lugeda dokumendi fotolehte.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Kui dokumendil on kate, eemaldage see.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Palun hoidke dokumenti oma telefoni tagaosas.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Skaneeri dokument";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Näpunäiteid proovimiseks";
+
+"Action.Cancel" = "Tühista";
+
+"CaptureResultReason.TimeOut.Description" = "Palun proovige uuesti";
+
+"CaptureResultReason.TimeOut.Header" = "Aeg maha";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Tühista";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Nägu on pööratud liiga vasakule";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Nägu on pööratud liiga paremale";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Nägu ei ole kaamera vaateväljas";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Nägu on kallutatud liiga vasakule";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Nägu on kallutatud liiga paremale";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Nägu on liiga vasakul";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Nägu on liiga paremal";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Nägu on liiga kõrgel";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Nägu on liiga madalal";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Hoidke seadet silmade kõrgusel";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Liigutage kaamera silmade kõrgusele";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Kaamera on liiga lähedal";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Kaamera on liiga kaugel";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Kaamera on liiga lähedal";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Kaamera on liiga kaugel";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Näo joondamise juhiste saamiseks vajutage sisestusklahvi või tühikut";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Näo joondamise juhiste saamiseks puudutage ekraani kaks korda";
+
+"FaceTec_camera_feed_issue_action" = "PROOVIGE IKKAGI UUESTI";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Probleem kaamera voo turvamisel";
+
+"FaceTec_camera_feed_issue_header" = "Probleem kaamera<br/>voo turvamisel";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Seda süsteemi ei saa verifitseerida järgmistel põhjustel:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "See rakendus blokeerib veebikaamera kahtlased konfiguratsioonid.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Lisateavet leiate siit</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "See rakendus blokeerib veebikaamera kahtlased konfiguratsioonid. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Lisateavet leiate siit</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Võimalik probleem";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Paranda";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Kaamera on teises rakenduses juba kasutusel.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Kaamera õigusi Firefox meeles ei pea.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Sulgege teine rakendus.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Kontrollige Remember Permissions (Jäta õigused meelde) valikut.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Kolmanda osapoole rakendus muudab videot.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Sulgege/desinstallige teine rakendus.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Riistvara ei saa turvata.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Kasutage teist seadet.";
+
+"FaceTec_camera_permission_header" = "Lubage kaamera";
+
+"FaceTec_camera_permission_message" = "Kaamera õigused on keelatud.<br/>Kontrollige oma operatsioonisüsteemi ja brauseri seadeid.";
+
+"FaceTec_enter_fullscreen_action" = "AVA TÄISEKRAANIL";
+
+"FaceTec_enter_fullscreen_header" = "Täisekraani selfirežiim";
+
+"FaceTec_enter_fullscreen_message" = "Enne alustamist klõpsake täisekraanirežiimi avamiseks allolevat nuppu.";
+
+"FaceTec_feedback_center_face" = "Hoidke oma nägu keskel";
+
+"FaceTec_feedback_face_not_found" = "Sättige oma nägu raami";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Vaadake otse kaamerasse";
+
+"FaceTec_feedback_face_not_upright" = "Hoidke pea otse";
+
+"FaceTec_feedback_face_not_upright" = "Hoidke pea otse";
+
+"FaceTec_feedback_hold_steady" = "Ärge liigutage";
+
+"FaceTec_feedback_move_phone_away" = "Liikuge kaugemale";
+
+"FaceTec_feedback_move_phone_away" = "Hoidke kaamerat endast kaugemal";
+
+"FaceTec_feedback_move_phone_closer" = "Hoidke kaamerat lähemal";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Tõstke kaamera silmade kõrgusele";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Vaadake otse kaamerasse";
+
+"FaceTec_feedback_move_web_closer" = "Liikuge lähemale";
+
+"FaceTec_feedback_move_web_even_closer" = "Veel lähemale";
+
+"FaceTec_feedback_use_even_lighting" = "Valgustage nägu ühtlaselt";
+
+"FaceTec_idscan_additional_review_message" = "Vajalik on täiendav<br/>ülevaatus";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Näidake isikutunnistuse tagakülge";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Näidake isikutunnistuse esikülge";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Vaadake üle ja kinnitage";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Kerige alla";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Kinnitage, et foto on selge ja loetav";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Kinnitage, et foto on selge ja loetav";
+
+"FaceTec_idscan_type_selection_header" = "Valmistuge oma<br/>isikutunnistuse skannimiseks";
+
+"FaceTec_initializing_camera" = "Kaamera voo turvamine";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Olge valmis";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "Teie videoselfi";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Olge videoselfiks valmis";
+
+"FaceTec_instructions_message_ready_1" = "Sättige nägu ovaali sisse,";
+
+"FaceTec_instructions_message_ready_2" = "Vajutage nuppu Olen valmis ja liikuge lähemale";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Sättige nägu ovaali sisse, vajutage nuppu Olen valmis ja liikuge lähemale";
+
+"FaceTec_presession_brighten_your_environment" = "Valgus on liiga hämar";
+
+"FaceTec_presession_conditions_too_bright" = "Valgus on liiga ere";
+
+"FaceTec_presession_eyes_straight_ahead" = "Vaadake otse ette";
+
+"FaceTec_presession_frame_your_face" = "Sättige oma nägu raami sisse";
+
+"FaceTec_presession_hold_steady_1" = "Olge paigal: 1";
+
+"FaceTec_presession_hold_steady_2" = "Olge paigal: 2";
+
+"FaceTec_presession_hold_steady_3" = "Olge paigal: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Vaadake otse ette";
+
+"FaceTec_presession_neutral_expression" = "Neutraalne näoilme, ärge naeratage";
+
+"FaceTec_presession_remove_dark_glasses" = "Võtke ära tumedad prillid";
+
+"FaceTec_result_facescan_upload_message" = "<br/>Krüptitud<br/>3D näoskaneeringu üleslaadimine";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Vöötkoodi skannimine nurjus<br/>Proovige uuesti";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Nägu ei ühti<br/>piisavalt hästi";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Isikutunnistus<br/>pole täielikult nähtav";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Isikutunnistuse tüüpi ei toetata<br/>Kasutage teist isikutunnistust";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Isikutunnistuse tekst pole loetav";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Isikutunnistuse foto jäädvustamine on<br/>lõpetatud";
+
+"FaceTec_result_idscan_success_back_side_message" = "Isikutunnistuse skannimine lõpetatud";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Isikutunnistuse esikülg<br/>skannitud";
+
+"FaceTec_result_idscan_success_front_side_message" = "Isikutunnistuse skannimine lõpetatud";
+
+"FaceTec_result_idscan_success_passport_message" = "Passi skannimine lõpetatud";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Isikutunnistuse foto skannimine<br/>lõpetatud";
+
+"FaceTec_result_idscan_unsuccess_message" = "Isikutunnistuse foto<br/>ei ühti<br/>kasutaja näoga";
+
+"FaceTec_result_idscan_upload_message" = "<br/>Krüptitud<br/>isikutunnistuse üleslaadimine";
+
+"FaceTec_result_success_message" = "Õnnestus!";
+
+"FaceTec_retry_header" = "Proovime uuesti";
+
 "FaceTec_retry_ideal_image_label" = "Ideaalne poos";
-"FaceTec_action_try_again" = "Palun proovi uuesti";
-"ondato_button_capture" = "Pildista";
-"ondato_choose_document_title" = "Vali dokument ja alusta kinnitamist";
-"ondato_capture_id_card_front_instructions_description" = "Asetage ID-kaardi esikülg märgitud raami ja klõpsake nuppu \"Tee foto\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokument on selgelt nähtav. Foto peab olema terav, kvaliteetne";
-"ondato_capture_id_card_front_instructions_title" = "Laadige üles oma ID-kaardi esikülje foto";
-"ondato_capture_instructions_mistakes" = "Peamised vead:";
-"ondato_capture_instructions_too_blurry" = "Liiga hägune";
-"ondato_capture_instructions_too_small" = "Liiga väike";
-"ondato_capture_instructions_bad_lighting" = "Halb valgustus";
-"ondato_capture_instructions_not_neutral" = "Näoilme pole neutraalne";
-"ondato_capture_instructions_too_dark" = "Liiga tume";
-"ondato_capture_passport_front_instructions_title" = "Palun pildistage põhidokumendi lehekülge, mis sisaldab masinloetavat ala";
-"ondato_capture_driver_license_front_instructions_title" = "Tehke oma juhiloa esiküljest pilt";
-"ondato_capture_driver_license_front_instructions_description" = "Asetage juhiloa esikülg märgitud raami ja vajutage \"Tee foto\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokument on selgelt nähtav. Foto peab olema terav, kvaliteetne";
-"ondato_capture_check_taken_photo" = "Kontrollige pildistatud kujutise kvaliteeti";
-"ondato_capture_check_taken_photo_description" = "Veenduge, et pildistatud dokumendi foto on selgelt nähtav ja et andmed on loetavad. Kui arvate, et kujutise kvaliteet on vastuvõetav, klõpsake nuppu \"Jätka\"";
-"ondato_capture_id_card_back_instructions_description" = "Asetage dokument koos elektrooniliselt loetava ribaga kaadrisse ja vajutage nuppu \"Tee foto\". Dokument peab olema selgelt nähtav";
-"ondato_capture_mrz_instructions_title" = "Valmistage dokument ette MRZ-tsooni jäädvustamiseks";
-"ondato_capture_mrz_id_instructions_description" = "Palun näidake oma ID-kaardi tagumist poolt, millel on MRZ tsoon. Dokument peab olema selgelt nähtav, mitte udune ega piksliline.";
-"ondato_capture_mrz_instructions_title" = "Valmistage dokument ette MRZ-tsooni jäädvustamiseks";
-"ondato_capture_passport_front_instructions_description" = "Palun kuvage märgitud alal dokumendi põhileht, mis sisaldab MRZ-tsooni. Dokument peab olema selgelt nähtav, mitte udune ega piksliline.";
-"ondato_capture_driver_license_back_instructions_title" = "Tehke oma juhiloa tagaküljest pilt";
-"ondato_capture_driver_license_back_title" = "Tehke oma juhiloa tagaküljest pilt";
-"ondato_capture_driver_license_back_instructions_description" = "Asetage juhiloa tagakülg märgitud raami ja klõpsake nuppu \"Tee foto\". Foto tuleks teha hästi valgustatud keskkonnas, kus dokument on selgelt nähtav. Foto peab olema terav, kvaliteetne";
-"ondato_capture_face_instructions_title" = "Jäädvusta pilt oma näost";
-"ondato_capture_face_instructions_description" = "Sea oma nägu raami ning veendu, et see on nähtav ja ühtlaselt valgustatud.";
-"ondato_start_identification_title" = "Tere tulemast isikusamasuse kontrolli protsessi";
-"ondato_start_identification_description" = "Et jätkata selle teenuse kasutamist, peate kinnitama, et vastate nõuetele. Kontrolli protsess koosneb 3 etapist";
-"ondato_start_identification_step_1" = "1. Valige dokument";
-"ondato_start_identification_step_2" = "2. Tehke dokumendist foto";
-"ondato_start_identification_step_3" = "3. Skannige oma nägu";
-"ondato_start_identification_nfc_step_1" = "1. Valige dokument";
-"ondato_start_identification_nfc_step_2" = "2. NFC skannimine";
-"ondato_start_identification_nfc_step_3" = "3. Skannige oma nägu";
-"ondato_capture_selfie_with_document_instructions_title" = "Jäädvustage ennast, hoides oma dokumenti";
-"ondato_capture_selfie_with_document_instructions_description" = "Hoidke dokumenti näo lähedal, kui endast fotot teete";
-"ondato_capture_yourself_with_document_title" = "Jäädvustage ennast, hoides oma dokumenti";
-"ondato_capture_check_taken_photo_with_document" = "Palun kontrollige jäädvustatud fotot";
-"ondato_capture_check_taken_photo_with_document_description" = "Veenduge, et foto oleks selge";
-"ondato_capture_id_card_back_instructions_title" = "Palun pildistage ID-kaardi teist külge";
-"ondato_capture_id_card_back_title" = "Palun pildistage ID-kaardi teist külge";
 
-// Waiting page
-"ondato_dataNotMatch_second" = "Teie identifitseerimine lükati tagasi, kuna dokumendi teave ei vasta kliendivormis esitatule.";
-"ondato_incorrect_information_provided_second" = "Palume teil protsess uuesti läbi teha või klienditoega ühendust võtta.";
-"ondato_waiting_page_success_title" = "Teie identifitseerimine oli edukas.";
-"ondato_waiting_page_verify_your_identity" = "Teie andmeid kasutatakse vaid Teie isikusamasuse kinnitamiseks.";
-"ondato_waiting_page_facial_photo_obscured" = "Kontrollime teie eemalt esitatud näo fotot.";
-"ondato_prohibitedCountryOrState_second" = "Palume teil küsida teenusepakkujalt lisateavet või proovida uuesti mõne muu dokumendiga.";
-"ondato_underagePerson_second" = "Palun pöörduge lisateabe saamiseks teenusepakkuja poole.";
-"ondato_waiting_page_encrypt_data_for_final_approval" = "Kodeerime andmed ja edastame lõplikuks kinnitamiseks.";
-"ondato_partOfDocumentIsCovered_second" = "Palun veenduge, et teie nägu ei takista võõrkehad ja te ei tee tuvastamise ajal ebatavalisi näoilmeid.";
-"ondato_waiting_page_check_if_all_photos_uploaded" = "Kontrollime, kas esitasite kõik vajalikud fotod.";
-"ondato_blurred_photo_second" = "Palume teil proovida identifitseerimisprotsessi uuesti ja tagada, et dokumendi andmed oleksid selgelt loetavad.";
-"ondato_sanctioned_primary" = "Teie nimega isik on kantud sanktsioonide nimekirja.";
-"ondato_missingDocumentPhoto_second" = "Palun korrake tuvastamise protsessi ja pildistage dokumendi mõlemat külge.";
-"ondato_documentNotAccepted_primary" = "Teie identifitseerimine lükati tagasi, kuna dokument on vastuvõetamatu.";
-"ondato_poorPhotoLighting_second" = "Palun veenduge, et teie nägu on ühtlaselt valgustatud.";
-"ondato_waiting_page_biometric_data" = "Teie näo biomeetrilistest andmetest loome 3D mudeli.";
-"ondato_bad_media_format_second" = "Palun pildistage dokumendi originaali.";
-"ondato_dataNotMatch_primary" = "Palume teil kontrollida kliendivormis esitatud teavet. Kliendivormis esitatud teave peab vastama teie dokumendil olevale teabele.";
-"ondato_waiting_page_success_body" = "Täname kannatuse eest.";
-"ondato_underagePerson_primary" = "Teie identifitseerimine lükati tagasi vanusepiirangu tõttu.";
-"ondato_expiration_date_mismatch_primary" = "Teie tuvastamisega tekkis probleem.";
-"ondato_documentIsExpired_second" = "Esitage kehtiv dokument";
-"ondato_documentWithNonLatinCharacters_primary" = "Teie identifitseerimine lükati tagasi, kuna dokumenditüüp ei ole vastuvõetav.";
-"ondato_incorrect_information_provided_primary" = "Teie tuvastamisega tekkis probleem.";
-"ondato_facesNotMatch_primary" = "Näofotot ei õnnestunud vastavalt dokumendifotole ära tunda";
-"ondato_waiting_page_document_facial_image" = "Kontrollime, kas näokujutis Teie dokumendil on selgesti nähtav.";
-"ondato_more_than_one_person_second" = "Palun veenduge, et tuvastamise ajal on fotol nähtav ainult isik, kelle dokument esitatakse.";
-"ondato_doc_and_bio_age_doesnt_match_second" = "Palume teil protsess uuesti läbi teha või klienditoega ühendust võtta.";
-"ondato_partOfFaceIsCovered_primary" = "Teie tuvastamine lükati tagasi, sest teie nägu on osaliselt kaetud.";
-"ondato_waiting_page_authenticity" = "Kontrollime dokumendi autentsust ja seaduslikkust.";
-"name" = "et";
-"ondato_name_mismatch_primary" = "Teie tuvastamisega tekkis probleem.";
-"ondato_duplicatedInfo_primary" = "Teie nimega isik on kantud sanktsioonide nimekirja.";
-"ondato_miscellaneous_second" = "Palun pöörduge lisateabe saamiseks teenusepakkuja poole.";
-"ondato_possibleFraudAttempt_second" = "Palun pöörduge lisateabe saamiseks teenusepakkuja poole.";
-"ondato_waiting_page_failure_close_title" = "Sulge";
-"ondato_something_went_wrong_second" = "Proovige veelkord.";
-"ondato_doc_and_bio_age_doesnt_match_primary" = "Teie tuvastamisega tekkis probleem.";
-"ondato_missingPersonPhoto_second" = "Teie nägu peaks olema hästi nähtav, hästi valgustatud keskkonnas ja seda ei tohiks hägustada.";
-"ondato_waiting_page_success_continue_title" = "Jätka";
-"ondato_waiting_page_taking_longer_than_expected" = "Teie kontrollimine kestab oodatust kauem. Palume akent mitte sulgeda, jäänud on vaid mõned hetked.";
-"ondato_bad_media_format_primary" = "Teie tuvastamine lükati tagasi.";
-"ondato_unrelatedPhotoSubmit_second" = "Tuvastamise protsessi lõpule viimiseks pildistage kehtivat dokumenti.";
-"ondato_waiting_page_ai_check" = "Tehisintellekt võrdleb näo ja dokumendi vastavust.";
-"ondato_expiration_date_mismatch_second" = "Palume teil protsess uuesti läbi teha või klienditoega ühendust võtta.";
-"ondato_waiting_page_external_damage" = "Kontrollime, kas teie dokumendil puuduvad välised vigastused, kas kõik vajalikud märgid on nähtavad.";
-"ondato_missingPersonPhoto_primary" = "Palun pildistage oma nägu reaalajas.";
-"ondato_facesNotMatch_second" = "Palume teil identifitseerimise protsess uuesti läbi teha või klienditoega ühendust võtta.";
-"ondato_miscellaneous_primary" = "Teie tuvastamine lükati tagasi.";
-"ondato_partOfFaceIsCovered_second" = "Palume teil identifitseerimise protsess uuesti läbi teha, vastavalt ettenähtud juhistele. Palun ärge katke oma nägu.";
-"ondato_partOfDocumentIsCovered_primary" = "Teie identifitseerimine lükati tagasi, kuna dokumendifotol on kaetud teave.";
-"ondato_prohibitedCountryOrState_primary" = "Teie identifitseerimine lükati tagasi keelatud riigi või osariigi tõttu.";
-"ondato_possibleFraudAttempt_primary" = "Teie tuvastamine lükati tagasi.";
-"ondato_waiting_page_scan_document" = "Skaneerime dokumendi teksti ja erimärgistuse.";
-"ondato_poorPhotoQuality_second" = "Palun korrake tuvastamise protsessi mobiilseadmes ja veenduge, et dokumendi andmed on selgelt loetavad.";
-"ondato_something_went_wrong_primary" = "Midagi läks valesti.";
-"ondato_waiting_page_encrypt_data" = "Kodeerime Teie andmed ja saadame kontrollimiseks.";
-"ondato_documentIsExpired_primary" = "Teie identifitseerimine lükati tagasi, kuna dokument on aegunud.";
-"ondato_prohibitedNationality_primary" = "Teie nimega isik on kantud sanktsioonide nimekirja.";
-"ondato_more_than_one_person_primary" = "Teie identifitseerimine lükati tagasi, kuna protsessis osalevad teised isikud.";
-"ondato_name_mismatch_second" = "Palume teil protsess uuesti läbi teha või klienditoega ühendust võtta.";
-"ondato_waiting_page_no_other_person" = "Kontrollime teie lähedalt esitatud näo fotot.";
-"ondato_waiting_page_documents_clearly_legible" = "Kontrollime, kas teie dokument on selgesti loetav.";
-"ondato_documentNotAccepted_second" = "Esitatud dokument ei ole sobiv. Palun esitage tuvastamise protsessi lõpule viimiseks kehtiv rahvusvaheline pass või ID-kaart.";
-"ondato_documentWithNonLatinCharacters_second" = "Esitage dokumendilehe foto koos elektrooniliselt loetava ribaga. Teie dokument peaks olema selgelt nähtav, pildistatud hästi valgustatud keskkonnas ega tohiks olla udune";
-"ondato_sanctioned_second" = "Vaatame teie tuvastamise käsitsi üle ja teavitame tulemusest ettevõtet. Palun klõpsake nuppu \"Jätka\"";
-"ondato_missingDocumentPhoto_primary" = "Teie tuvastamine lükati tagasi.";
-"ondato_blurred_photo_primary" = "Teie identifitseerimine lükati tagasi, kuna foto on ähmane.";
-"ondato_prohibitedNationality_second" = "Palume teil protsess uuesti läbi teha või klienditoega ühendust võtta.";
-"ondato_poorPhotoLighting_primary" = "Pange tähele, et teie tuvastamine ebaõnnestus tuvastamise ajal halva valgustuse tõttu.";
-"ondato_waiting_page_data_in_registers" = "Kontrollime Teie dokumendi staatust ning andmeid registrites.";
-"ondato_poorPhotoQuality_primary" = "Teie tuvastamine lükati tagasi foto halva kvaliteedi tõttu.";
-"ondato_waiting_page_failure_try_again_title" = "Proovi uuesti";
-"ondato_waiting_page_document_obscured" = "Kontrollime, kas teie dokumendis olevaid andmeid ei kata varjud või valgusrefleksid.";
-"ondato_capture_nfc_instructions_title" = "Valmistage dokument ette NFC-skannimiseks";
-"ondato_capture_nfc_instructions_description" = "Hankige dokument ja valmistage oma seadmes ette NFC.";
-"ondato_capture_nfc_description_scanning" = "Palun oota. Protsess võib kesta veel mõne sekundi.";
-"ondato_capture_nfc_failure_title" = "Näib, et protsess katkestati.";
-"ondato_try_again" = "Proovi uuesti";
-"ondato_try_alternative" = "Proovi alternatiivi";
-"ondato_passport_scan_help_title" = "Kui teil tekkis NFC-le juurdepääsuga raskusi, proovige neid meetodeid.";
-"ondato_passport_scan_help_step1" = "Proovige lugeda dokumendi viimast lehekülge.";
-"ondato_passport_scan_help_step2" = "Proovige lugeda dokumendi fotolehte.";
-"ondato_passport_scan_help_step3" = "Kui dokumendil on kate, eemaldage see.";
-"ondato_capture_mrz_success_title" = "Teabe kogumine õnnestus";
-"ondato_capture_mrz_success_description" = "Täname kannatuse eest.";
-"ondato_continue_button" = "Jätka";
-"ondato_capture_nfc_settings_instructions_title" = "Näib, et ilma NFCta ei saa te jätkata.";
-"ondato_capture_nfc_settings_instructions_description" = "Jätkamiseks peate veenduma, et dokumendil on NFC ja see on teie seadmes lubatud.";
-"ondato_nfc_scan_prompt_request_present" = "Hoidke dokumenti telefoni tagaküljel.";
-"ondato_nfc_scan_prompt_authenticating" = "Autentimine dokumendiga.....";
-"ondato_nfc_scan_prompt_reading_data" = "Skaneerimine";
-"ondato_nfc_scan_prompt_error_tag_not_valid" = "Silt ei kehti.";
-"ondato_nfc_scan_prompt_error_more_than_one_tag_found" = "Näib, et protsess katkestati.";
-"ondato_nfc_scan_prompt_error_connection" = "Näib, et protsess katkestati.";
-"ondato_nfc_scan_prompt_error_invalid_mrz_key" = "MRZ-võti ei kehti selle dokumendi jaoks.";
-"ondato_nfc_scan_prompt_error_response" = "Näib, et protsess katkestati.";
-"ondato_capture_nfc_failure_title" = "Näib, et protsess katkestati.";
+"FaceTec_retry_instruction_message_1" = "Neutraalne näoilme, ärge naeratage";
 
-"ondato_interrupted_title" = "Protsess katkestati";
-"ondato_interrupted_description" = "Protsess katkestati Katkestuste tõttu on protsess peatunud. Jätkake seda rakendust, kuni olete kõik sammud lõpetanud.";
+"FaceTec_retry_instruction_message_2" = "Ühtlane valgus";
 
-"face_auth_too_many_attempts_title" = "Kinnitamine blokeeritud liiga paljude katsete tõttu";
-"face_auth_too_many_attempts_description" = "Palun võtke ühendust teenusepakkujaga abi saamiseks";
-"face_auth_too_many_attempts_button" = "PEATA PROTSESS";
+"FaceTec_retry_instruction_message_3" = "Pilt liiga udune, puhastage kaamerat";
+
+"FaceTec_retry_subheader_message" = "Vajame selgemat videoselfit";
+
+"FaceTec_retry_your_image_label" = "Teie foto";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Peata toiming";
+
+"FailureScreen.TooManyAttempts.Description" = "Abi saamiseks võta ühendust teenusepakkujaga";
+
+"FailureScreen.TooManyAttempts.Header" = "Isiku tuvastamine blokeeriti liiga mitme katse tõttu";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Seade on lukustatud.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Liiga palju katseid";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Seadet ei toetata.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Nurjus";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Palun proovige hiljem uuesti.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Litsentsi viga";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Võti oli aegunud, sisaldas kehtetut teksti või üritate initsialiseerida domeenil, mida pole teie võtmes määratud.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Võti on aegunud või kehtetu";
+
+"LoadResultReason.NetworkIssues.Description" = "Ei saanud jätkata teie seadme ühenduvusprobleemide tõttu";
+
+"LoadResultReason.NetworkIssues.Header" = "Viga võrguühenduses";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Ressursse ei saanud laadida.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Nurjus";
+
+"LoadResultReason.StillLoadingResources.Description" = "Ressursse alles laaditakse.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Nurjus";
+
+"FaceTec_action_im_ready" = "Olen valmis";
+
+"ReadyScreen.Header" = "Valmistu oma video selfiks";
+
+"RetryScreen.Action.PassiveLiveness" = "Proovige alternatiivset meetodit";
+
+"FaceTec_action_try_again" = "Proovi uuesti";
+
+"RetryScreen.Description" = "Vajame selgemat fotot.";
+
+"RetryScreen.Header" = "Proovime uuesti";
+
+/*  */
+"RetryScreen.Message.Generic" = "Kasutage ühtlast valgustust ja kopeerige ideaalne poos";
+
+"UploadScreen.Description" = "Hoidke see aken lahti";
+
+"UploadScreen.Header" = "Teie näofoto valideerimine";
+

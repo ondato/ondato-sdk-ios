@@ -1,0 +1,858 @@
+"Action.Close" = "Stäng";
+
+"LanguageSelection.Header" = "Välj språk";
+
+"Modals.Abort.Action.ContinueProcess" = "Fortsätt processen";
+
+"Modals.Abort.Action.StopProcess" = "Stoppa processen";
+
+"Modals.Abort.Heading" = "Är du säker på att du vill avbryta denna process?";
+
+"Modals.Error.Description" = "Något gick fel. Stäng det här meddelandet och försök igen.";
+
+"Modals.Error.Heading" = "Hoppsan! Ett fel har uppstått.";
+
+"Modals.Success.Description" = "Gå vidare till nästa steg";
+
+"Modals.Success.Heading" = "Lyckades";
+
+"Action.Agree" = "Jag godkänner";
+
+"Action.Disagree" = "Jag godkänner inte";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Fortsätt processen";
+
+"Disagree.Confirmation.Action.StopProcess" = "Stoppa processen";
+
+"Disagree.Confirmation.Header" = "Genom att avböja innehållet kommer processen att stoppas. Är du säker?";
+
+"Capture.Action.Capture" = "Ta foto";
+
+"Capture.DriverLicense.Back.Description" = "Placera dokumentet inuti ramen.";
+
+"Capture.DriverLicense.Back.Header" = "Ta foto av baksidan";
+
+"Capture.DriverLicense.Front.Description" = "Placera dokumentet inuti ramen.";
+
+"Capture.DriverLicense.Front.Header" = "Ta foto av framsidan";
+
+"Capture.IdCard.Back.Description" = "Placera dokumentet inuti ramen.";
+
+"Capture.IdCard.Back.Header" = "Ta foto av baksidan";
+
+"Capture.IdCard.Front.Description" = "Placera dokumentet inuti ramen.";
+
+"Capture.IdCard.Front.Header" = "Ta foto av framsidan";
+
+"Capture.InternalPassport.DataPage.Header" = "Ta foto av huvudsidan";
+
+"Capture.InternalPassport.FrontCover.Header" = "Ta foto av omslaget";
+
+"Capture.Passport.DataPage.Description" = "Placera dokumentet inuti ramen.";
+
+"Capture.Passport.DataPage.Header" = "Ta foto av huvudsidan";
+
+"Capture.Passport.FrontCover.Header" = "Ta foto av omslaget";
+
+"Capture.ResidencePermit.Back.Description" = "Placera dokumentet inuti ramen.";
+
+"Capture.ResidencePermit.Back.Header" = "Ta foto av baksidan";
+
+"Capture.ResidencePermit.Front.Description" = "Placera dokumentet inuti ramen.";
+
+"Capture.ResidencePermit.Front.Header" = "Ta foto av framsidan";
+
+"Capture.SocialId.Back.Description" = "Placera dokumentet inuti ramen.";
+
+"Capture.SocialId.Back.Header" = "Ta foto av baksidan";
+
+"Capture.SocialId.Front.Description" = "Placera dokumentet inuti ramen.";
+
+"Capture.SocialId.Front.Header" = "Ta foto av framsidan";
+
+"Preview.Action.Continue" = "Fortsätt";
+
+"Preview.Action.Retake" = "Ta om";
+
+"Preview.Header" = "Är fotot tydligt, i fokus och utan reflektioner?";
+
+"FaceCapture.Instructions.Action.Start" = "Starta";
+
+"FaceCapture.Instructions.Description" = "Under processen placerar du ditt ansikte mitt i ramen.";
+
+"FaceCapture.Instructions.Header" = "Autentisera med ditt ansikte";
+
+"FaceCapture.Instructions.Subheader" = "Se till:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "Att ditt ansikte är neutralt";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "Att belysningen är bra";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "Att bilden är tydlig";
+
+"App.Button.Close" = "Stäng";
+
+"App.Button.Continue" = "Fortsätt";
+
+"App.Errors.Default" = "Stötte på ett oväntat problem. Försök igen senare.";
+
+"EndPage.Action.Continue" = "Fortsätt";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Tack. Nu kan du slutföra processen.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Du är klar!";
+
+"Action.Close" = "Stäng";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Ladda upp ditt adressbevis";
+
+"Document.Instructions.Action.Start" = "Starta";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Ta ett foto av körkortets baksida";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Ta ett foto av körkortets framsida";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Bilden är inte för suddig";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Se till att:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Belysningen är bra";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Dokumentet är läsbart";
+
+"Document.Instructions.IdCard.Back.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.IdCard.Back.Heading" = "Ta ett foto av ID-kortets baksida";
+
+"Document.Instructions.IdCard.Front.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.IdCard.Front.Heading" = "Ta ett foto av ID-kortets framsida";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Visa dokumentets huvudsida, som innehåller MRZ-zonen, i det markerade området.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Ta ett foto av inrikespassets huvudsida";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Ta ett foto på inrikespassets omslag";
+
+"Document.Instructions.Passport.DataPage.Description" = "Vänligen inkludera MRZ-zonen i det markerade området.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Ta ett foto av passets huvudsida";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Ta ett foto på passets omslag";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Ta ett foto baksidan av ditt uppehållstillstånd";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Ta ett foto av framsidan av ditt uppehållstillstånd";
+
+"Document.Instructions.SocialId.Back.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.SocialId.Back.Heading" = "Ta ett foto av baksidan av ditt sociala ID-kort";
+
+"Document.Instructions.SocialId.Front.Description" = "Placera dokumentet inuti ramen";
+
+"Document.Instructions.SocialId.Front.Heading" = "Ta ett foto av framsidan av ditt sociala ID-kort";
+
+"Document.Select.Document.DriverLicense" = "Körkort";
+
+"Document.Select.Document.IdCard" = "ID-kort";
+
+"Document.Select.Document.InternalPassport" = "Inrikespass";
+
+"Document.Select.Document.Passport" = "Pass";
+
+"Document.Select.Document.ResidencePermit" = "Uppehållstillstånd";
+
+"Document.Select.Document.SocialId" = "Socialt ID-kort";
+
+"Document.Select.Header" = "Välj ditt dokument";
+
+"FaceCapture.Instructions.Description" = "Placera ditt ansikte i mitten av bilden.";
+
+"FaceCapture.Instructions.Header" = "Ta en selfie";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Att bilden är tydlig";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Att ditt ansikte är neutralt";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Belysningen är bra";
+
+"FaceCapture.Instructions.Subheader" = "Se till att:";
+
+"Result.Failure.Action.TryAgain" = "Försök igen";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Försök igen och se till att dokumentet är jämnt belyst med en vit ljuskälla.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Det medföljande fotot har dålig belysning";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Försök igen och skicka in ett oskadat dokument.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "En del av det medföljande dokumentet är skadat";
+
+"Result.Failure.DocumentFromScreen.Description" = "Skicka in ett giltigt foto av det fysiska dokumentet för att slutföra identifieringsprocessen";
+
+"Result.Failure.DocumentFromScreen.Header" = "Det tillhandahållna fotot är ogiltigt";
+
+"Result.Failure.DocumentIsExpired.Description" = "Tillhandahåll ett giltigt dokument för att slutföra identifieringsprocessen";
+
+"Result.Failure.DocumentIsExpired.Header" = "Det tillhandahållna dokumentet har upphört att gälla";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Använd ett dokument från den tillhandahållna listan för att slutföra identifieringsprocessen";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Den tillhandahållna dokumenttypen uppfyller inte kraven";
+
+"Result.Failure.DocumentPrinted.Description" = "Skicka in ett giltigt foto av det fysiska dokumentet för att slutföra identifieringsprocessen";
+
+"Result.Failure.DocumentPrinted.Header" = "Det tillhandahållna fotot är ogiltigt";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Tillhandahåll ett dokument med latinska bokstäver";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Den tillhandahållna dokumenttypen uppfyller inte kraven";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Vi ber dig att ta ett foto av ditt originaldokument";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Din identifikation har avvisats";
+
+"Result.Failure.FacesNotMatch.Description" = "Försök igen eller kontakta kundtjänst";
+
+"Result.Failure.FacesNotMatch.Header" = "Dokumentfotot och det tillhandahållna självporträttet stämmer inte överens";
+
+"Result.Failure.Generic.Description" = "Kontakta kundtjänst";
+
+"Result.Failure.Generic.Header" = "Det uppstod ett problem med din identifikation";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Försök igen och se till att adressbeviset är giltigt";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Det tillhandahållna adressbeviset på bilden är ogiltigt";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Försök igen och tillhandahåll alla nödvändiga foton av ditt dokument";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Dokumentfotot saknas";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Försök igen eller kontakta kundtjänst";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Ansiktsfotot saknas";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Identifieringsprocessen måste utföras utan att andra personer deltar";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Användaren är inte ensam under processen";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Försök igen och se till att dokumentet är tydligt läsbart och att inga uppgifter täcks över";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "En del av det tillhandahållna dokumentet är övertäckt";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Försök igen genom att följa de angivna instruktionerna. Ditt ansikte ska inte vara övertäckt";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Ansiktet är delvis övertäckt";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Försök igen och se till att dokumentet är jämnt upplyst";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Det tillhandahållna fotot har dålig belysning";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Försök igen och se till att alla uppgifter i dokumentet är tydligt läsbara. Om kamerakvaliteten är dålig kan du försöka att starta processen på en annan enhet.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Det tillhandahållna fotot är av dålig kvalitet";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Försök igen eller kontakta kundtjänst";
+
+"Result.Failure.SelfieHasNoFace.Header" = "Det finns inget ansikte på det tillhandahållna fotot";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Försök igen eller kontakta kundtjänst";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Det tillhandahållna fotot är inte relevant";
+
+"Result.Success.Header" = "Det lyckades!";
+
+"ResultsWaiting.Delay.Description" = "Det verkar som att vi upplever mer trafik än vanligt. Du kommer att skickas vidare inom kort.";
+
+"ResultsWaiting.Delay.Header" = "Tyvärr tar det längre tid än väntat";
+
+"ResultsWaiting.Details.Description" = "Du behöver vänta i ungefär två minuter.";
+
+"ResultsWaiting.Details.Header" = "Vänta…";
+
+"ResultsWaiting.Details.Message.Message1" = "Krypterar dina dokumentdata.";
+
+"ResultsWaiting.Details.Message.Message2" = "Inspekterar dokument för yttre skador.";
+
+"ResultsWaiting.Details.Message.Message3" = "Kontrollerar tillhandahållna dokumentfoton.";
+
+"ResultsWaiting.Details.Message.Message4" = "Validerar om du är en riktig person";
+
+"ResultsWaiting.Details.Message.Message5" = "Kontrollerar uppgifternas äkthet och giltighet.";
+
+"ResultsWaiting.Details.Message.Message6" = "Kontrollerar dokumentstatus och data i registren.";
+
+/*  */
+"Action.Cancel" = "Avbryt";
+
+/*  */
+"Action.Loading.Header" = "Laddar...";
+
+/*  */
+"Action.Submit" = "Skicka in";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Dokument skannades framgångsrikt";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Placera dokumentet inuti ramen.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Fånga dokument";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Fånga adressbevis";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Detta kan vara ett kontoutdrag eller en el- eller vattenräkning";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Filformat som stöds: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Filstorleken får inte vara större än 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Det uppladdade filformatet stöds inte";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Vänligen ge ditt adressbevis";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Maximal filstorlek: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Krav:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Måste innehålla ditt fullständiga namn och adress";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Dokumentet är inte äldre än 3 månader";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Välj fil";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Välj från galleriet";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Ladda upp dokument";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Uppladdning...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Vi behöver ditt TRN för att verifiera ditt konto. Vänligen ange ditt TRN som det står på det officiella dokumentet och dubbelkolla att det är korrekt innan du skickar in det för att undvika förseningar.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Ange ditt skatteregistreringsnummer (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "TRN-nummer består av 9 siffror";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "TRN-kod:";
+
+/*  */
+"Consent.Static.Description" = "För att erhålla tjänsten från Tjänsteleverantören, ger jag med detta samtycke mitt medgivande till att UAB \"Ondato\" kommer att ta emot och hantera mina personuppgifter, inklusive mina biometriska data, som erhållits från fjärridentifiering av min personliga identitet genom att ta och/eller filma en livebild av mitt ansikte, min persons identitet eller dokumentet som används för att identifiera det och/eller deras bild och de personuppgifter som finns i dem och/eller kontrollera i befolkningsregistret: bild av mitt ansikte, namn, efternamn, nationalitet, kön, personnummer, födelsedatum, numren på dokumentet som används, utfärdandedatum och giltighet, min signatur och överföringen av sådana data till Tjänsteleverantören. Jag noterar också att jag är informerad om att personuppgiftsansvarig för mina personuppgifter, inklusive mina biometriska data, specificerade i detta samtycke är Tjänsteleverantören och UAB \"Ondato\" kommer att behandla mina personuppgifter endast tills fjärridentifieringsproceduren är över och resultaten kommer att överföras till Tjänsteleverantören. Jag förklarar också att jag är informerad och samtycker till att mina personuppgifter som erhållits för fjärridentifiering och dess syften kan lagras av UAB \"Ondato\" under en längre tid än det tar för identifieringen att slutföras eller överföringen av dess resultat till Tjänsteleverantören, men endast på begäran av Tjänsteleverantören eller UAB Ondatos avtalsenliga skyldighet gentemot Tjänsteleverantören, men inte längre än vad som definieras i det avtal som undertecknats mellan UAB \"Ondato\" och Tjänsteleverantören eller begärts av Tjänsteleverantören. Jag är informerad om att jag kan lämna in en begäran angående mina personuppgifter för mer detaljerad information på info@ondato.com. Härmed förklarar och bekräftar jag att alla personuppgifter jag kommer att tillhandahålla för fjärridentifiering av min personliga identitet är korrekta och exakta, och dokumentet som jag kommer att använda för detta ändamål är inte falskt och giltigt.";
+
+/*  */
+"Consent.Static.Heading" = "Samtycke för behandling av personuppgifter";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Placera dokumentet inom ramen";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Fånga MRZ-området på ditt ID-kort";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Placera dokumentet och MRZ-linjen inom ramen";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Fånga framsidan av ditt ID-kort med MRZ-linje";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Visa huvudsidan av dokumentet som innehåller MRZ-zonen i det markerade området.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Fånga sidan med passet och MRZ-zonen";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Adressbevis";
+
+/*  */
+"Error.Interrupt.Description" = "På grund av avbrott har processen stoppats. Vänligen stanna kvar i denna app tills du har slutfört alla steg.";
+
+/*  */
+"Error.Interrupt.Heading" = "Processen avbröts";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Vänligen återanslut för att fortsätta";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Din internetanslutning är borta";
+
+/*  */
+"FaceCapture.Validation.Description" = "Vänligen vänta...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Validerar ditt foto";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Starta inställningar";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Håll dokumentet nära ditt ansikte medan du tar en selfie";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Fotografera dig själv medan du håller ditt dokument";
+
+/*  */
+"Instructions.Identification.Description" = "För att fortsätta använda denna tjänst måste du verifiera att du uppfyller webbplatsens krav.";
+
+/*  */
+"Instructions.Identification.Header" = "Välkommen till identitets\nverifieringsprocessen";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Ett ögonblick";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Avslutar de sista detaljerna";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Tar bilden";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Justera ditt ansikte i ramen och tryck på fånga";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Fånga ditt ansikte";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Är ditt ansikte tydligt synligt?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Se till att fotot är tydligt och läsbart";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Vi ber dig vänligen kontakta kundsupport för mer information.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Din identifiering har avvisats.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Vi ber dig vänligen kontakta kundsupport för mer information eller försök igen med ett annat dokument.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Din identifikation har avvisats på grund av förbjudet land eller stat.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Vi ber dig vänligen försöka igen eller kontakta kundsupport.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Din identifiering har avvisats.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Kontakta kundsupport för mer information";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Din identifiering har avvisats.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Vi ber dig vänligen kontakta kundsupport för mer information.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Din identifiering har avvisats på grund av åldersbegränsningar.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Tack för ditt tålamod";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Informationsinsamling lyckades";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Det verkar som om vi upplever mer trafik än vanligt. Du kommer att omdirigeras snart.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Tyvärr, det tar längre tid än väntat";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "För att fortsätta måste du se till att dokumentet har NFC och att det har aktiverats på din enhet.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Det verkar som att du inte kan fortsätta utan NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Placera ditt dokument bakom enheten";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Skannar... Vänligen håll";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Anslutning förlorad under skanning. Vänligen försök igen.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Försök att skanna dokumentet igen.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Det verkar som att processen avbröts.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Vi kunde inte läsa dokumentet. Kontrollera uppgifterna och försök igen.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Ovntat svar från chipet. Vänligen skanna dokumentet igen.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Det skannade dokumentet är inte giltigt. Vänligen försök igen med ett stöddokument.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Flera chips upptäckta. Skanna bara ett dokument i taget.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Din enhet stöder inte NFC eller så är den för närvarande avstängd. Byt till en kompatibel enhet eller aktivera NFC i inställningarna.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "\"NFC stöds inte\"";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Har du problem?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Lägg ditt ID-kort på baksidan av din telefon";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Placera ditt ID-kort på baksidan av din telefon för NFC-skanning";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Skanna ditt ID-kort med NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Placera ditt pass på baksidan av din telefon för NFC-skanning";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Skanna ditt pass med NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Avbryt";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Slå på NFC för att fortsätta i processen";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC är avstängt";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Inställningar";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Lägg ditt pass första sida på baksidan av din telefon";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Om du stötte på svårigheter att komma åt NFC, prova dessa metoder:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Försök läsa den sista sidan i dokumentet.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Försök läsa fotosidan i dokumentet.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Om det finns något omslag på dokumentet, ta bort det.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Håll dokumentet mot baksidan av din telefon.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Skanna dokument";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Tips att prova";
+
+"Action.Cancel" = "Avbryt";
+
+"CaptureResultReason.TimeOut.Description" = "Vänligen försök igen";
+
+"CaptureResultReason.TimeOut.Header" = "Timeout";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Avbryt";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Ansiktet är riktat för långt åt vänster";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Ansiktet är riktat för långt åt höger";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Ansiktet syns inte i kameran";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Ansiktet är vridet för långt åt vänster";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Ansiktet är vridet för långt åt höger";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Ansiktet är för långt åt vänster";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Ansiktet är för långt åt höger";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Ansiktet är för långt upp";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Ansiktet är för långt ner";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Håll enheten i ögonhöjd";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Flytta kameran till ögonhöjd";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Kameran är för nära";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Kameran är för långt borta";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Kameran är för nära";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Kameran är för långt borta";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Tryck på Enter eller mellanslagstangenten för vägledning om ansiktsjustering";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Dubbeltryck på skärmen för vägledning om ansiktsjustering";
+
+"FaceTec_camera_feed_issue_action" = "FÖRSÖK IGEN ÄNDÅ";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Problem med att säkra kameraflöde";
+
+"FaceTec_camera_feed_issue_header" = "Problem med att säkra<br/>kameramatning";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Detta system kan inte verifieras på grund av följande:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Denna app blockerar misstänkta webbkamerakonfigurationer.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Läs mer här</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Denna app blockerar misstänkta webbkamerakonfigurationer. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Läs mer här</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Möjligt problem";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Fixa";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Kameran används redan av en annan app.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Firefox kommer inte ihåg kamerabehörigheter.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Stäng den andra appen.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Kontrollera Kom ihåg behörigheter.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "En tredjepartsapp ändrar videon.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Stäng/avinstallera den andra appen.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Hårdvara kan inte säkras.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Använd en annan enhet.";
+
+"FaceTec_camera_permission_header" = "Aktivera kamera";
+
+"FaceTec_camera_permission_message" = "Kamerabehörighet inaktiverad.<br/>Kontrollera inställningarna för ditt operativsystem och din webbläsare.";
+
+"FaceTec_enter_fullscreen_action" = "ÖPPNA HELSKÄRMSLÄGE";
+
+"FaceTec_enter_fullscreen_header" = "Selfie i helskärmsläge";
+
+"FaceTec_enter_fullscreen_message" = "Innan vi börjar klickar du på knappen nedan för att öppna helskärmsläge.";
+
+"FaceTec_feedback_center_face" = "Centrera ditt ansikte";
+
+"FaceTec_feedback_face_not_found" = "Placera ditt ansikte i ramen";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Titta rakt fram";
+
+"FaceTec_feedback_face_not_upright" = "Håll ditt huvud rakt";
+
+"FaceTec_feedback_face_not_upright" = "Håll huvudet rakt";
+
+"FaceTec_feedback_hold_steady" = "Håll stilla";
+
+"FaceTec_feedback_move_phone_away" = "Flytta bort";
+
+"FaceTec_feedback_move_phone_away" = "Flytta bort";
+
+"FaceTec_feedback_move_phone_closer" = "Flytta närmare";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Flytta telefonen till ögonhöjd";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Titta rakt in i kameran";
+
+"FaceTec_feedback_move_web_closer" = "Flytta ansiktet närmare och fyll ovalen";
+
+"FaceTec_feedback_move_web_even_closer" = "Ännu närmare";
+
+"FaceTec_feedback_use_even_lighting" = "Belys ansiktet jämnare";
+
+"FaceTec_idscan_additional_review_message" = "Ytterligare granskning<br/>krävs";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Visa baksidan av ID-dokument";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Visa framsidan av ID-dokument";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Granska och bekräfta";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Skrolla nedåt";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Bekräfta att fotot är tydligt och läsbart";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Bekräfta att fotot är tydligt och läsbart";
+
+"FaceTec_idscan_type_selection_header" = "Förbered dig för att skanna<br/>ditt ID-dokument";
+
+"FaceTec_initializing_camera" = "Säkring av kameraflöde";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Gör dig redo för";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "Din videoselfie";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Gör dig redo för din videoselfie";
+
+"FaceTec_instructions_message_ready_1" = "Placera ditt ansikte i ovalen,";
+
+"FaceTec_instructions_message_ready_2" = "Tryck på Jag är redo och flytta dig närmare";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Placera ditt ansikte i ovalen, tryck på Jag är redo och flytta dig närmare";
+
+"FaceTec_presession_brighten_your_environment" = "Lys upp din bakgrund";
+
+"FaceTec_presession_conditions_too_bright" = "Det är för ljust omkring dig";
+
+"FaceTec_presession_eyes_straight_ahead" = "Titta rakt fram";
+
+"FaceTec_presession_frame_your_face" = "Placera ditt ansikte i ovalen";
+
+"FaceTec_presession_hold_steady_1" = "Håll stilla i: 1";
+
+"FaceTec_presession_hold_steady_2" = "Håll stilla i: 2";
+
+"FaceTec_presession_hold_steady_3" = "Håll stilla i: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Titta rakt fram";
+
+"FaceTec_presession_neutral_expression" = "Neutralt ansiktsuttryck, inget leende";
+
+"FaceTec_presession_remove_dark_glasses" = "Ta bort mörka glasögon";
+
+"FaceTec_result_facescan_upload_message" = "Laddar upp<br/>krypterad<br/>3D-ansiktsskanning";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Det gick inte att skanna streckkoden,<br/>försök igen";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Ansiktet matchade inte tillräckligt<br/>bra";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "ID-dokumentet är<br/>inte fullt synligt";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "ID-typ stöds inte<br/>Vänligen använd ett annat ID-dokument";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "ID-texten är inte läsbar";
+
+"FaceTec_result_idscan_success_additional_review_message" = "ID-fotografering<br/>slutförd";
+
+"FaceTec_result_idscan_success_back_side_message" = "ID-skanning slutförd";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Framsidan av ID-dokument<br/>skannat";
+
+"FaceTec_result_idscan_success_front_side_message" = "ID-skanning slutförd";
+
+"FaceTec_result_idscan_success_passport_message" = "Passkanning slutförd";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Foto-ID-skanning<br/>slutförd";
+
+"FaceTec_result_idscan_unsuccess_message" = "ID-foto<br/>matchade inte<br/>användarens ansikte";
+
+"FaceTec_result_idscan_upload_message" = "Laddar upp<br/>krypterat<br/>ID-dokument";
+
+"FaceTec_result_success_message" = "Det lyckades!";
+
+"FaceTec_retry_header" = "Vi försöker igen";
+
+"FaceTec_retry_ideal_image_label" = "Idealisk positionering";
+
+"FaceTec_retry_instruction_message_1" = "Ingen bländning eller extrem belysning";
+
+"FaceTec_retry_instruction_message_2" = "Neutralt ansiktsuttryck, inget leende";
+
+"FaceTec_retry_instruction_message_3" = "För suddig, rengör kameran";
+
+"FaceTec_retry_subheader_message" = "Vi behöver en tydligare selfie";
+
+"FaceTec_retry_your_image_label" = "Ditt självporträtt";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Stoppa processen";
+
+"FailureScreen.TooManyAttempts.Description" = "Kontakta tjänsteleverantören för att få hjälp";
+
+"FailureScreen.TooManyAttempts.Header" = "Verifiering blockerad på grund av för många försök";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Enheten är låst.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "För många försök";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Enhet stöds inte.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Misslyckades";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Försök igen senare.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Licensfel";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Nyckeln har löpt ut, innehåller ogiltig text eller så försöker du initiera en domän som inte anges i din nyckel.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Nyckeln har upphört att gälla eller är ogiltig";
+
+"LoadResultReason.NetworkIssues.Description" = "Det gick inte att fortsätta på grund av anslutningsproblem på din enhet";
+
+"LoadResultReason.NetworkIssues.Header" = "Nätverksproblem";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Det gick inte att läsa in resurser.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Misslyckades";
+
+"LoadResultReason.StillLoadingResources.Description" = "Laddar fortfarande resurser.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Misslyckades";
+
+"FaceTec_action_im_ready" = "Jag är klar";
+
+"ReadyScreen.Header" = "Gör dig redo för din videoselfie";
+
+"RetryScreen.Action.PassiveLiveness" = "Prova en alternativ metod";
+
+"FaceTec_action_try_again" = "Försök igen";
+
+"RetryScreen.Description" = "Vi behöver ett tydligare foto.";
+
+"RetryScreen.Header" = "Vi försöker igen";
+
+/*  */
+"RetryScreen.Message.Generic" = "Använd konsekvent belysning och kopiera den perfekta posen";
+
+"UploadScreen.Description" = "Håll det här fönstret öppet";
+
+"UploadScreen.Header" = "Validerar ditt ansiktsfoto";
+

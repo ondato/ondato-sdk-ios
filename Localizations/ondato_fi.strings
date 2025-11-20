@@ -1,0 +1,858 @@
+"Action.Close" = "Sulje";
+
+"LanguageSelection.Header" = "Valitse kieli";
+
+"Modals.Abort.Action.ContinueProcess" = "Jatka prosessia";
+
+"Modals.Abort.Action.StopProcess" = "Pysäytä prosessi";
+
+"Modals.Abort.Heading" = "Haluatko varmasti keskeyttää tämän prosessin?";
+
+"Modals.Error.Description" = "Jotain meni vikaan, sulje tämä viesti ja yritä uudelleen";
+
+"Modals.Error.Heading" = "Hups, on tapahtunut virhe";
+
+"Modals.Success.Description" = "Siirry seuraavaan vaiheeseen";
+
+"Modals.Success.Heading" = "Onnistui";
+
+"Action.Agree" = "Hyväksyn";
+
+"Action.Disagree" = "En hyväksy";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Jatka prosessia";
+
+"Disagree.Confirmation.Action.StopProcess" = "Pysäytä prosessi";
+
+"Disagree.Confirmation.Header" = "Hylkäämällä sisällön pysäytät prosessin. Oletko varma?";
+
+"Capture.Action.Capture" = "Ota kuva";
+
+"Capture.DriverLicense.Back.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+"Capture.DriverLicense.Back.Header" = "Ota kuva kääntöpuolelta";
+
+"Capture.DriverLicense.Front.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+"Capture.DriverLicense.Front.Header" = "Ota kuva etupuolelta";
+
+"Capture.IdCard.Back.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+"Capture.IdCard.Back.Header" = "Ota kuva kääntöpuolelta";
+
+"Capture.IdCard.Front.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+"Capture.IdCard.Front.Header" = "Ota kuva etupuolelta";
+
+"Capture.InternalPassport.DataPage.Header" = "Ota kuva pääsivusta";
+
+"Capture.InternalPassport.FrontCover.Header" = "Ota kuva kannesta";
+
+"Capture.Passport.DataPage.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+"Capture.Passport.DataPage.Header" = "Ota kuva pääsivusta";
+
+"Capture.Passport.FrontCover.Header" = "Ota kuva kannesta";
+
+"Capture.ResidencePermit.Back.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+"Capture.ResidencePermit.Back.Header" = "Ota kuva kääntöpuolelta";
+
+"Capture.ResidencePermit.Front.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+"Capture.ResidencePermit.Front.Header" = "Ota kuva etupuolelta";
+
+"Capture.SocialId.Back.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+"Capture.SocialId.Back.Header" = "Ota kuva kääntöpuolelta";
+
+"Capture.SocialId.Front.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+"Capture.SocialId.Front.Header" = "Ota kuva etupuolelta";
+
+"Preview.Action.Continue" = "Jatka";
+
+"Preview.Action.Retake" = "Ota uudelleen";
+
+"Preview.Header" = "Onko kuva selkeä, tarkka ja ilman heijastuksia?";
+
+"FaceCapture.Instructions.Action.Start" = "Aloita";
+
+"FaceCapture.Instructions.Description" = "Aseta kasvosi prosessin aikana kehyksen keskelle.";
+
+"FaceCapture.Instructions.Header" = "Todennus kasvojen avulla";
+
+"FaceCapture.Instructions.Subheader" = "Tarkista, että:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "Kasvosi ovat neutraalit";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "Valaistus on hyvä";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "Kuva on selkeä";
+
+"App.Button.Close" = "Sulje";
+
+"App.Button.Continue" = "Jatka";
+
+"App.Errors.Default" = "Kohdattiin odottamaton ongelma. Yritä myöhemmin uudelleen";
+
+"EndPage.Action.Continue" = "Jatka";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Kiitos. Nyt voit viimeistellä prosessin.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Kaikki on valmista!";
+
+"Action.Close" = "Sulje";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Lähetä osoitetodistuksesi";
+
+"Document.Instructions.Action.Start" = "Aloita";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Ota kuva ajokorttisi kääntöpuolesta";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Ota kuva ajokorttisi etupuolesta";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Kuva ei ole liian epäselvä";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Tarkista seuraavat:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Valaistus on hyvä.";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Asiakirja on luettavissa.";
+
+"Document.Instructions.IdCard.Back.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.IdCard.Back.Heading" = "Ota kuva henkilökorttisi kääntöpuolesta";
+
+"Document.Instructions.IdCard.Front.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.IdCard.Front.Heading" = "Ota kuva henkilökorttisi etupuolesta";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Näytä asiakirjan pääsivu, joka sisältää koneluettavan alueen merkityllä alueella.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Ota kuva sisämaanpassisi pääsivusta";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Ota kuva sisämaanpassin kannesta";
+
+"Document.Instructions.Passport.DataPage.Description" = "Sisällytä koneluettava alue merkitylle alueelle.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Ota kuva passin pääsivusta";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Ota kuva passin kannesta";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Ota kuva oleskelulupasi kääntöpuolesta";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Ota kuva oleskelulupasi etupuolesta";
+
+"Document.Instructions.SocialId.Back.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.SocialId.Back.Heading" = "Ota kuva sosiaaliturvakorttisi kääntöpuolesta";
+
+"Document.Instructions.SocialId.Front.Description" = "Aseta asiakirja kehyksen sisälle";
+
+"Document.Instructions.SocialId.Front.Heading" = "Ota kuva ssosiaaliturvakorttisi etupuolesta";
+
+"Document.Select.Document.DriverLicense" = "Ajokortti";
+
+"Document.Select.Document.IdCard" = "Henkilökortti";
+
+"Document.Select.Document.InternalPassport" = "Sisämaanpassi";
+
+"Document.Select.Document.Passport" = "Passi";
+
+"Document.Select.Document.ResidencePermit" = "Oleskelulupa";
+
+"Document.Select.Document.SocialId" = "Sosiaaliturvakortti";
+
+"Document.Select.Header" = "Valitse asiakirjasi";
+
+"FaceCapture.Instructions.Description" = "Aseta kasvosi kehyksen keskelle.";
+
+"FaceCapture.Instructions.Header" = "Ota selfie";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Kuva on selkeä.";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Ilmeesi on neutraali.";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Valaistus on hyvä.";
+
+"FaceCapture.Instructions.Subheader" = "Tarkista seuraavat:";
+
+"Result.Failure.Action.TryAgain" = "Yritä uudelleen";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Yritä uudelleen ja varmista, että asiakirja on tasaisesti valaistu valkoisella valonlähteellä.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Toimitetussa kuvassa on huono valaistus";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Yritä uudelleen ja toimita terve asiakirja.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Osa toimitetusta asiakirjasta on vaurioitunut";
+
+"Result.Failure.DocumentFromScreen.Description" = "Lähetä asianmukainen kuva fyysisestä asiakirjasta, jotta tunnistautumisprosessi voidaan päättää.";
+
+"Result.Failure.DocumentFromScreen.Header" = "Toimitettu asiakirjan kuva on virheellinen.";
+
+"Result.Failure.DocumentIsExpired.Description" = "Toimita asianmukainen asiakirja, jotta tunnistautumisprosessi voidaan päättää.";
+
+"Result.Failure.DocumentIsExpired.Header" = "Toimitettu asiakirja on vanhentunut.";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Käytä toimitetusta luettelosta löytyvää asiakirjaa, jotta tunnistautumisprosessi voidaan päättää.";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Toimitetun asiakirjan tyyppi ei täytä vaatimuksia.";
+
+"Result.Failure.DocumentPrinted.Description" = "Lähetä asianmukainen kuva fyysisestä asiakirjasta, jotta tunnistautumisprosessi voidaan päättää.";
+
+"Result.Failure.DocumentPrinted.Header" = "Toimitettu asiakirjan kuva on virheellinen.";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Toimita asiakirja, jossa on latinalaisia kirjaimia.";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Toimitetun asiakirjan tyyppi ei täytä vaatimuksia.";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Ota kuva alkuperäisestä asiakirjastasi.";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Tunnistautumisesi hylätään.";
+
+"Result.Failure.FacesNotMatch.Description" = "Yritä uudelleen tai ota yhteyttä asiakastukeen.";
+
+"Result.Failure.FacesNotMatch.Header" = "Asiakirjan kuva ja toimitettu selfie eivät vastaa toisiaan.";
+
+"Result.Failure.Generic.Description" = "Ota yhteyttä asiakastukeen.";
+
+"Result.Failure.Generic.Header" = "Tunnistautumisesi kanssa oli ongelma.";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Yritä uudelleen ja varmista, että osoitetodistusasiakirja on kelvollinen.";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Toimitettu osoitetodistuksen kuva on virheellinen.";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Yritä uudelleen ja toimita kaikki tarvittavat kuvat asiakirjastasi.";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Asiakirjan kuva puuttuu.";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Yritä uudelleen tai ota yhteyttä asiakastukeen.";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Kasvokuva puuttuu.";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Tunnistautumisprosessi on suoritettava ilman, että muut henkilöt osallistuvat siihen.";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Käyttäjä ei ole yksin prosessin aikana.";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Yritä uudelleen ja varmista, että asiakirja on selkeästi luettavissa ja ettei tietoja ole peitetty.";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Osa toimitetusta asiakirjasta on peitetty.";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Yritä uudelleen noudattaen annettuja ohjeita. Kasvoja ei saa peittää.";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Kasvot on osittain peitetty.";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Yritä uudelleen ja varmista, että asiakirja on tasaisesti valaistu.";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Toimitetussa kuvassa on huono valaistus.";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Yritä uudelleen ja varmista, että asiakirjan tiedot ovat selvästi luettavissa, tai jos kameran laatu on huono, kokeile aloittaa prosessi toisella laitteella.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Toimitettu kuva on huonolaatuinen.";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Yritä uudelleen tai ota yhteyttä asiakastukeen.";
+
+"Result.Failure.SelfieHasNoFace.Header" = "Toimitetussa kuvassa ei ole kasvoja.";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Yritä uudelleen tai ota yhteyttä asiakastukeen.";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Toimitettu kuva ei liity asiaan.";
+
+"Result.Success.Header" = "Onnistui!";
+
+"ResultsWaiting.Delay.Description" = "Näyttää siltä, että meillä on enemmän liikennettä kuin tavallisesti. Sinut ohjataan pian uudelleen.";
+
+"ResultsWaiting.Delay.Header" = "Pahoittelut, tässä kestää odotettua kauemmin.";
+
+"ResultsWaiting.Details.Description" = "Odotus on keskimäärin kaksi minuuttia.";
+
+"ResultsWaiting.Details.Header" = "Odota...";
+
+"ResultsWaiting.Details.Message.Message1" = "Asiakirjasi tietoja salataan.";
+
+"ResultsWaiting.Details.Message.Message2" = "Tarkistetaan asiakirjaa ulkoisten vaurioiden varalta.";
+
+"ResultsWaiting.Details.Message.Message3" = "Tarkistetaan lähetettyjä asiakirjan kuvia.";
+
+"ResultsWaiting.Details.Message.Message4" = "Tarkistetaan, oletko oikea henkilö";
+
+"ResultsWaiting.Details.Message.Message5" = "Tarkistetaan tietojen aitoutta ja oikeellisuutta.";
+
+"ResultsWaiting.Details.Message.Message6" = "Tarkistetaan asiakirjan tilaa ja rekistereissä olevia tietoja.";
+
+/*  */
+"Action.Cancel" = "Peruuta";
+
+/*  */
+"Action.Loading.Header" = "Ladataan...";
+
+/*  */
+"Action.Submit" = "Lähetä";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Asiakirja skannattu onnistuneesti";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Aseta asiakirja kehyksen sisälle.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Kaappaa asiakirja";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Tallenna todiste osoitteesta";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Tämä voi olla tiliote tai sähkö-, vesi- tai kaasulasku";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Tuetut tiedostot: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Tiedoston koko voi olla enintään 5 Mt";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Ladattua tiedostomuotoa ei tueta";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Esitä osoitteen todistus";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Tiedoston enimmäiskoko: 5 Mt";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Vaatimukset:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Täytyy sisältää koko nimesi ja osoitteesi";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Asiakirja ei ole vanhempi kuin 3 kuukautta";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Valitse tiedosto";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Valitse galleriasta";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Lataa asiakirja";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Lähetetään...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Tarvitsemme TRN-tunnuksesi tilisi vahvistamiseksi. Syötä TRN-tunnuksesi kuten se näkyy virallisessa asiakirjassa ja tarkista huolellisesti, että se on oikein ennen lähettämistä viivästysten välttämiseksi.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Anna veronumerosi (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "TRN-numero koostuu 9 numerosta";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "TRN-koodi:";
+
+/*  */
+"Consent.Static.Description" = "Saadakseni palvelun Palveluntarjoajalta, annan tällä suostumuksella suostumukseni siihen, että UAB \"Ondato\" vastaanottaa ja käsittelee henkilötietojani, mukaan lukien biometriset tietoni, jotka on saatu etähenkilöllisyyteni tunnistamisesta ottamalla ja/tai kuvaamalla kasvoni, henkilöllisyyteni tai asiakirjan, jota käytetään sen tunnistamiseen ja/tai niiden kuva ja niissä olevat henkilötiedot ja/tai tarkistamalla väestörekisteristä: kasvoni kuva, nimi, sukunimi, kansalaisuus, sukupuoli, henkilötunnus, syntymäaika, käytettävän asiakirjan numerot, myöntämispäivä ja voimassaoloaika, allekirjoitukseni ja näiden tietojen siirto Palveluntarjoajalle. Totean myös, että minua on informoitu siitä, että henkilötietojeni, mukaan lukien biometriset tietoni, rekisterinpitäjä, joka on määritelty tässä suostumuksessa, on Palveluntarjoaja ja UAB \"Ondato\" käsittelee henkilötietojani vain siihen asti, kunnes etätunnistusmenettely on ohi ja tulokset siirretään Palveluntarjoajalle. Totean myös, että minua on informoitu ja suostun siihen, että etätunnistusta varten saadut henkilötietoni ja sen tarkoitukset voidaan säilyttää UAB \"Ondato\" pidemmän aikaa kuin tunnistuksen suorittaminen tai sen tulosten siirto Palveluntarjoajalle kestää, mutta vain Palveluntarjoajan pyynnöstä tai UAB Ondaton sopimusvelvoitteen mukaisesti Palveluntarjoajalle, mutta ei pidempään kuin mitä on määritelty UAB \"Ondato\" ja Palveluntarjoajan välisessä sopimuksessa tai mitä Palveluntarjoaja on pyytänyt. Minua on informoitu, että voin esittää pyynnön henkilötietojani koskien saadakseni tarkempia tietoja osoitteessa info@ondato.com. Tällä ilmoitan ja vahvistan, että kaikki henkilötiedot, jotka annan etähenkilöllisyyteni tunnistamista varten, ovat oikeita ja tarkkoja, ja asiakirja, jota käytän tähän tarkoitukseen, ei ole väärennetty ja on voimassa.";
+
+/*  */
+"Consent.Static.Heading" = "Suostumus henkilötietojen käsittelyyn";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Aseta asiakirja kehyksen sisään";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Ota kuva henkilökorttisi MRZ-alueesta";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Aseta asiakirja ja MRZ-rivi kehyksen sisään";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Ota kuva henkilökorttisi etupuolesta, jossa on MRZ-rivi";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Näytä pääasiakirjasivu, joka sisältää MRZ-alueen merkityllä alueella.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Tallenna passisivu MRZ-vyöhykkeen kanssa";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Todiste osoitteesta";
+
+/*  */
+"Error.Interrupt.Description" = "Keskeytysten vuoksi prosessi on pysähtynyt. Pysy tässä sovelluksessa, kunnes olet suorittanut kaikki vaiheet.";
+
+/*  */
+"Error.Interrupt.Heading" = "Prosessi keskeytyi";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Yhdistä uudelleen jatkaaksesi";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Internet-yhteytesi on poissa";
+
+/*  */
+"FaceCapture.Validation.Description" = "Odota...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Valokuvasi vahvistaminen";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Avaa asetukset";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Pidä asiakirjaa kasvojesi lähellä ottaessasi selfietä";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Ota kuva itsestäsi, kun pidät asiakirjaa";
+
+/*  */
+"Instructions.Identification.Description" = "Jatkaaksesi tämän palvelun käyttöä sinun on vahvistettava, että täytät verkkosivuston vaatimukset.";
+
+/*  */
+"Instructions.Identification.Header" = "Tervetuloa henkilöllisyyden \n vahvistusprosessiin";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Hetkinen";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Viimeistellään viimeiset yksityiskohdat";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Otetaan kuvaa";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Aseta kasvosi kehykseen ja napauta tallenna";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Tallenna kasvosi";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Onko kasvosi selvästi näkyvissä?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Varmista, että kuva on selkeä ja luettavissa";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Pyydämme ystävällisesti ottamaan yhteyttä asiakastukeen saadaksesi lisätietoja.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Henkilöllisyytesi on hylätty.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Pyydämme ystävällisesti ottamaan yhteyttä asiakastukeen saadaksesi lisätietoja tai yritä uudelleen toisella asiakirjalla.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Henkilöllisyytesi hylättiin kielletyn maan tai osavaltion vuoksi.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Pyydämme ystävällisesti yrittämään prosessia uudelleen tai ottamaan yhteyttä asiakastukeen.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Henkilöllisyytesi on hylätty.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Ota yhteyttä asiakastukeen saadaksesi lisätietoja";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Henkilöllisyytesi on hylätty.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Pyydämme ystävällisesti ottamaan yhteyttä asiakastukeen saadaksesi lisätietoja.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Henkilöllisyytesi on hylätty ikärajoitusten vuoksi.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Kiitos kärsivällisyydestäsi";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Tietojen tallennus onnistui";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Näyttää siltä, että meillä on tavallista enemmän liikennettä. Sinut ohjataan pian uudelleen.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Pahoittelut, tämä kestää odotettua kauemmin";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Jatkaaksesi varmista, että asiakirjassa on NFC ja että se on otettu käyttöön laitteessasi.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Näyttää siltä, että et voi jatkaa ilman NFC:tä.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Aseta asiakirjasi laitteen taakse";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Skannataan... Ole hyvä ja pidä";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Yhteys katosi skannauksen aikana. Yritä uudelleen.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Yritä skannata asiakirja uudelleen.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Näyttää siltä, että prosessi keskeytyi.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Emme voineet lukea asiakirjaa. Tarkista tiedot ja yritä uudelleen.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Odottamaton vastaus sirulta. Ole hyvä ja skannaa asiakirja uudelleen.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Skannattu asiakirja ei ole kelvollinen. Yritä uudelleen tuetun asiakirjan kanssa.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Useita siruja havaittu. Skannaa vain yksi asiakirja kerrallaan.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Laitteesi ei tue NFC:tä tai se on tällä hetkellä pois päältä. Vaihda yhteensopivaan laitteeseen tai ota NFC käyttöön asetuksista.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC Ei Tuettu";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Onko vaikeuksia?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Lisää henkilökorttisi puhelimesi taakse";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Aseta henkilökorttisi puhelimesi taakse NFC-skannausta varten";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Skannaa henkilökorttisi NFC:llä";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Aseta passisi puhelimesi taakse NFC-skannausta varten";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Skannaa passisi NFC:llä";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Peruuta";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Kytke NFC päälle jatkaaksesi prosessia";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC on pois päältä";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Asetukset";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Lisää passisi ensimmäinen sivu puhelimesi taakse";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Jos kohtasit vaikeuksia NFC:n käytössä, kokeile näitä menetelmiä:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Yritä lukea asiakirjan viimeinen sivu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Yritä lukea asiakirjan valokuvasivu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Jos asiakirjassa on kansi, poista se.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Pidä asiakirjaa puhelimesi takana.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Skannaa asiakirja";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Vinkkejä kokeiltavaksi";
+
+"Action.Cancel" = "Peruuta";
+
+"CaptureResultReason.TimeOut.Description" = "Yritä uudelleen";
+
+"CaptureResultReason.TimeOut.Header" = "Aikalis";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Peruuta";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Kasvot osoittavat liian vasemmalle";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Kasvot osoittavat liian oikealle";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Kasvot eivät ole kamerassa";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Kasvot kääntyneet liian vasemmalle";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Kasvot kääntyneet liian oikealle";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Kasvot liian vasemmalla";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Kasvot liian oikealla";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Kasvot liian korkealla";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Kasvot liian matalalla";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Pidä laitetta silmien tasolla";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Siirrä kamera silmien tasolle";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Kamera liian lähellä";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Kamera liian kaukana";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Kamera liian lähellä";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Kamera liian kaukana";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Saat kasvojen kohdistusohjeita painamalla painamalla Enter-näppäintä tai välilyöntiä";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Saat kasvojen kohdistusohjeita kaksoisnapauttamalla näyttöä";
+
+"FaceTec_camera_feed_issue_action" = "YRITÄ SILTI UUDELLEEN";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Ongelma kameran syötteen suojauksessa";
+
+"FaceTec_camera_feed_issue_header" = "Ongelma kameran<br/>syötteen suojauksessa";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Tätä järjestelmää ei voida vahvistaa seuraavista syistä:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Tämä sovellus estää epäilyttävät verkkokamerakokoonpanot.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Lue lisää täältä</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Tämä sovellus estää epäilyttävät verkkokamerakokoonpanot. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Lue lisää täältä</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Mahdollinen ongelma";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Ratkaisu";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Kamera on jo toisen sovelluksen käytössä.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Kameran käyttöoikeuksia ei muisteta Firefoxissa.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Sulje toinen sovellus.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Tarkista Muista käyttöoikeudet.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Kolmannen osapuolen sovellus muokkaa videota.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Sulje/poista toinen sovellus.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Laitteistoa ei voida suojata.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Käytä toista laitetta.";
+
+"FaceTec_camera_permission_header" = "Ota kamera käyttöön";
+
+"FaceTec_camera_permission_message" = "Kameran käyttöoikeudet poistettu käytöstä.<br/>Tarkista käyttöjärjestelmäsi ja selaimesi asetukset.";
+
+"FaceTec_enter_fullscreen_action" = "AVAA KOKO NÄYTÖLLÄ";
+
+"FaceTec_enter_fullscreen_header" = "Koko näytön selfie-tila";
+
+"FaceTec_enter_fullscreen_message" = "Ennen kuin aloitamme, napsauta alla olevaa painiketta avataksesi koko näytön tilan.";
+
+"FaceTec_feedback_center_face" = "Keskitä kasvosi";
+
+"FaceTec_feedback_face_not_found" = "Aseta kasvosi kehykseen";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Katso suoraan eteenpäin";
+
+"FaceTec_feedback_face_not_upright" = "Pidä pääsi suorassa";
+
+"FaceTec_feedback_face_not_upright" = "Pidä pää suorana";
+
+"FaceTec_feedback_hold_steady" = "Pidä vakaana";
+
+"FaceTec_feedback_move_phone_away" = "Siirrä poispäin";
+
+"FaceTec_feedback_move_phone_away" = "Siirrä poispäin";
+
+"FaceTec_feedback_move_phone_closer" = "Siirrä lähemmäs";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Siirrä puhelin silmien tasolle";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Katso suoraan kameraan";
+
+"FaceTec_feedback_move_web_closer" = "Siirrä lähemmäs";
+
+"FaceTec_feedback_move_web_even_closer" = "Vielä lähemmäksi";
+
+"FaceTec_feedback_use_even_lighting" = "Valaise kasvot tasaisemmin";
+
+"FaceTec_idscan_additional_review_message" = "Vaaditaan<br/>lisätarkistus";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Näytä henkilötodistuksen takaosa";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Näytä henkilötodistuksen etuosa";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Tarkista ja vahvista";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Vieritä alas";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Vahvista, että valokuva on selkeä ja luettavissa";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Vahvista, että valokuva on selkeä ja luettavissa";
+
+"FaceTec_idscan_type_selection_header" = "Valmistaudu skannaamaan<br/>henkilötodistuksesi";
+
+"FaceTec_initializing_camera" = "Kameran syötettä suojataan";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Valmistaudu";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "Videoselfiesi";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Valmistaudu videoselfieen";
+
+"FaceTec_instructions_message_ready_1" = "Aseta kasvosi soikeaan kehykseen,";
+
+"FaceTec_instructions_message_ready_2" = "paina \"Olen valmis\" ja siirry lähemmäs";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Aseta kasvosi soikeaan kehykseen, paina \"Olen valmis\" ja siirry lähemmäs";
+
+"FaceTec_presession_brighten_your_environment" = "Lisää ympäristön valaistusta";
+
+"FaceTec_presession_conditions_too_bright" = "Liian kirkas ympäristö";
+
+"FaceTec_presession_eyes_straight_ahead" = "Katso suoraan eteenpäin";
+
+"FaceTec_presession_frame_your_face" = "Aseta kasvosi soikeaan kehykseen";
+
+"FaceTec_presession_hold_steady_1" = "Pidä vakaana: 1";
+
+"FaceTec_presession_hold_steady_2" = "Pidä vakaana: 2";
+
+"FaceTec_presession_hold_steady_3" = "Pidä vakaana: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Katso suoraan eteenpäin";
+
+"FaceTec_presession_neutral_expression" = "Neutraali ilme, ei hymyä";
+
+"FaceTec_presession_remove_dark_glasses" = "Poista tummat lasit";
+
+"FaceTec_result_facescan_upload_message" = "Ladataan<br/>salattua<br/>3D-kasvoskannausta";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Viivakoodin skannaus epäonnistui,<br/>yritä uudelleen";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Kasvot eivät vastanneet<br/>riittävän hyvin";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Henkilötodistus<br/>ei ole täysin näkyvissä";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Henkilötodistuksen tyyppiä ei tueta,<br/>käytä toista henkilötodistusta";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Henkilötunnuksen teksti ei ole luettavissa";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Kuvan ottaminen henkilötodistuksen valokuvasta<br/>valmis";
+
+"FaceTec_result_idscan_success_back_side_message" = "Henkilötodistuksen skannaus valmis";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Henkilötodistuksen etuosa<br/>skannattu";
+
+"FaceTec_result_idscan_success_front_side_message" = "Henkilötodistuksen skannaus valmis";
+
+"FaceTec_result_idscan_success_passport_message" = "Passin skannaus valmis";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Henkilötodistuksen valokuvan skannaus<br/>valmis";
+
+"FaceTec_result_idscan_unsuccess_message" = "Henkilötodistuksen valokuva<br/>ei vastannut<br/>käyttäjän kasvoja";
+
+"FaceTec_result_idscan_upload_message" = "Ladataan<br/>salattua<br/>henkilötodistusta";
+
+"FaceTec_result_success_message" = "Onnistui!";
+
+"FaceTec_retry_header" = "Yritetään uudelleen";
+
+"FaceTec_retry_ideal_image_label" = "Ihanteellinen asento";
+
+"FaceTec_retry_instruction_message_1" = "Neutraali ilme, ei hymyä";
+
+"FaceTec_retry_instruction_message_2" = "Ei häikäisyä tai räikeää valaistusta";
+
+"FaceTec_retry_instruction_message_3" = "Liian epäselvä, puhdista kamera";
+
+"FaceTec_retry_subheader_message" = "Tarvitsemme selkeämmän selfien";
+
+"FaceTec_retry_your_image_label" = "Selfiesi";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Pysäytä prosessi";
+
+"FailureScreen.TooManyAttempts.Description" = "Ota yhteyttä palveluntarjoajaan saadaksesi apua";
+
+"FailureScreen.TooManyAttempts.Header" = "Vahvistus estetty liian monen yrityksen takia";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Laite on lukittu.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Liian monta yritystä";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Laitetta ei tueta.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Epäonnistui";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Yritä myöhemmin uudelleen.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Lisenssivirhe";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Avain oli vanhentunut, sisälsi virheellistä tekstiä tai yrität alustaa verkkotunnusta, jota ei ole määritetty avaimessasi.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Avain on vanhentunut tai virheellinen";
+
+"LoadResultReason.NetworkIssues.Description" = "Ei voitu jatkaa laitteesi yhteysongelmien vuoksi";
+
+"LoadResultReason.NetworkIssues.Header" = "Verkko-ongelmat";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Resursseja ei voitu ladata.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Epäonnistui";
+
+"LoadResultReason.StillLoadingResources.Description" = "Resursseja ladataan edelleen.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Epäonnistui";
+
+"FaceTec_action_im_ready" = "Olen valmis";
+
+"ReadyScreen.Header" = "Valmistaudu videoselfieen";
+
+"RetryScreen.Action.PassiveLiveness" = "Kokeile vaihtoehtoista menetelmää";
+
+"FaceTec_action_try_again" = "Yritä uudelleen";
+
+"RetryScreen.Description" = "Tarvitsemme selkeämmän kuvan.";
+
+"RetryScreen.Header" = "Yritetään uudelleen";
+
+/*  */
+"RetryScreen.Message.Generic" = "Käytä tasaista valaistusta ja kopioi ihanteellinen asento";
+
+"UploadScreen.Description" = "Pidä tämä ikkuna auki";
+
+"UploadScreen.Header" = "Kasvokuvasi vahvistaminen";
+

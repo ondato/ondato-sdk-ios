@@ -6,35 +6,27 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		bq2QZBhIG18QUM+naGchHZl1Vkc=
+		PTb5LXdWk4NEKCdqbrp/Z+IxMsU=
 		</data>
 		<key>CombineLatest+arity.tt</key>
 		<data>
-		rLh4KL2gIA4WWQuI3yZRUs9jzxs=
-		</data>
-		<key>CompletionUploadViewController.nib</key>
-		<data>
-		N3w3rn1UdXPuVFeV6E++s8QKIB4=
-		</data>
-		<key>CompletionViewController.nib</key>
-		<data>
-		oMhKNo0WfMuevl19vJD4xjKiq2Y=
+		akjk/xQiesAjyFWAidsGXOhr4Bo=
 		</data>
 		<key>GuidePageItemViewController.nib</key>
 		<data>
-		kSsogawL5lKk5mc+0mKzcG9ysN0=
+		V7QUq5FDKG9fT9vgk9BGLjOxxfk=
 		</data>
 		<key>GuidePopupViewController.nib</key>
 		<data>
-		m8t8uSy1ujwkEjxUnF3ob0NykUw=
+		T5SiOKIQKrUsk7+PBIUsAPgItoo=
 		</data>
 		<key>Headers/OndatoSDK-Swift.h</key>
 		<data>
-		G6JRUzDff6x0XVugWSrEHZ98ab0=
+		LALZ+S/cfPNXJC5bn19rnfuWNdM=
 		</data>
 		<key>Headers/OndatoSDK.h</key>
 		<data>
-		hWDJWOh56DKyFyabvw7BqaqfCfk=
+		h1W6eZTijXYAMyhDA4pHX9TPriw=
 		</data>
 		<key>Headers/RxCocoaRuntime.h</key>
 		<data>
@@ -58,23 +50,19 @@
 		</data>
 		<key>Infallible+CombineLatest+arity.tt</key>
 		<data>
-		HDA0OyF5nkH64/wp0uJsg6ICkHU=
+		rE9k9G0TKurLk8ZiZXeD2T7bCR4=
 		</data>
 		<key>Infallible+Zip+arity.tt</key>
 		<data>
-		tXcPj2y2x0fJL/P8LujAIsgkzCo=
+		Kk3e+tawNfrF7wheRnrWrOYDOP0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NYjIVv5lS5nmSDl84lJDbKAH8qY=
-		</data>
-		<key>InfoViewController.nib</key>
-		<data>
-		15AVBpIilvpE54kkAu/5unRI3tw=
+		ziVkpfysRF1RivHqrLXJmffhoTg=
 		</data>
 		<key>InterruptedViewController.nib</key>
 		<data>
-		JgTBktjGDLDUxIKo72KUl1zekkY=
+		zfrcOglWqX2Inm3Vf3cLqKg2fMw=
 		</data>
 		<key>LogsTableViewCell.nib</key>
 		<data>
@@ -82,55 +70,47 @@
 		</data>
 		<key>LogsViewController.nib</key>
 		<data>
-		D1Ae5v560QPrKKXS4przWVSub3c=
-		</data>
-		<key>MRZScannerViewController.nib/objects-14.0+.nib</key>
-		<data>
-		Et2eyASZjQaOShd5S6mHgG2Wmto=
-		</data>
-		<key>MRZScannerViewController.nib/runtime.nib</key>
-		<data>
-		XXT5pBVHl5TtMNvCLaJ0qDyU1wk=
+		nLQus//49imdqfnvfsenzzB7tWI=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		lK5tgcuFyTGZQnrYkVOaLpHp+ak=
+		+N43wbjJe5m21gP2yaOC6EWNm9k=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8SZtUwk+UwPMnOvWiMWiQZemyWQ=
+		Z1CB822gXsV+lu+f76/itL9BPKs=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HGM8jAqYa5vBBxvsycZku9KYzbw=
+		+47M9CRIt4GKw/2jgI2UnkxJO34=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8SZtUwk+UwPMnOvWiMWiQZemyWQ=
+		Z1CB822gXsV+lu+f76/itL9BPKs=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WH95iRX2bnxsZfPfl0To06ioCqo=
+		7zmtW4uXtdvA6RIaK0uPC3uL06Y=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lK5tgcuFyTGZQnrYkVOaLpHp+ak=
+		+N43wbjJe5m21gP2yaOC6EWNm9k=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		nsX/n+u7PyOF3lKon2kduRqni8g=
+		kScDtTeb/Js1ZKtyZjHZ6aC+LMM=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UCzTSo567t8yzpIycCW7pNBX12I=
+		TUwHvPGWKlWEni7aZalXxsd1OXQ=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nsX/n+u7PyOF3lKon2kduRqni8g=
+		kScDtTeb/Js1ZKtyZjHZ6aC+LMM=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/IbJY/bTQioEHKkshzEtbFM8n3g=
+		6YfJOsP/YvxG+XQbxWyGUmFmkwo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -138,131 +118,271 @@
 		</data>
 		<key>NFCScannerViewController.nib</key>
 		<data>
-		SpMilxE0BljBcfdxy5I4Bedw/N0=
+		XeINPlL/79mRHda5UwIW5Wp3hT4=
+		</data>
+		<key>Ondato-UIConfiguration.json</key>
+		<data>
+		l/318ey+OawRkQI6rkt/5P1o4oc=
+		</data>
+		<key>OndatoChooseDocumentViewController.nib</key>
+		<data>
+		nS4nd09kq40zha2W90P40FgWDL4=
+		</data>
+		<key>OndatoDocumentTableViewCell.nib</key>
+		<data>
+		Pye2vJZV4bgafeF94RK4Ng15q3s=
 		</data>
 		<key>OndatoGDPRViewController.nib</key>
 		<data>
-		WBuz2XRvnnFYVNMjM0H63LMAxLU=
+		HLHweI6pmLbUAhPeciCsd9rnfko=
 		</data>
-		<key>OndatoStartViewController.nib</key>
+		<key>OndatoLoadingViewController.nib</key>
 		<data>
-		L4CO36v60fQ4zdG+s/Uqkb2tYzY=
+		04jivXrnpP+Wyzs/6r8YXVYkwv4=
 		</data>
 		<key>POAUploadDocumentViewController.nib</key>
 		<data>
-		ZxdlxXo8s2X/wvj6NRV0VvjApuk=
+		QBg6I9Vfp6tqVBGT5+lMCewdAzo=
 		</data>
 		<key>POAUploadTypeSelectionViewController.nib</key>
 		<data>
-		04HbjyyaECXUkuLEXiUCjSDuHbM=
+		/Lpkbwb/NNM9wRFOiZijTJyb2Ww=
 		</data>
 		<key>PersonalCodeCaptureViewController.nib</key>
 		<data>
-		2J7/1qGHFloHodqfbHdemSTv35M=
+		CPZXoj/zcSFbYPu9JkImjGs6lHM=
 		</data>
 		<key>PrimitiveSequence+Zip+arity.tt</key>
 		<data>
-		b7Ct9XsIXPuWgCVUo9m11ikaLec=
+		tycWO8TbDv7jvdkN0hsmr/xknKk=
+		</data>
+		<key>ResultScreen.nib</key>
+		<data>
+		Vc3qP73JK8hQHARBB4CGv8L/6PY=
 		</data>
 		<key>SharedSequence+Operators+arity.tt</key>
 		<data>
-		O38PgIgQY9cTBafagULVWkpA3ko=
-		</data>
-		<key>TooManyAttemptsViewController.nib</key>
-		<data>
-		rKjGbzfui6wBt0KXOcgshzyW390=
+		8LjLZagSz0sJz2zafe64BlGQChc=
 		</data>
 		<key>TutorialViewController.nib</key>
 		<data>
-		57UT97k1vvFVv5jjDkvTArzlm5M=
+		UzM/8PMKkgiT8VqGlF1NSUSF3Xs=
+		</data>
+		<key>UploadingDataScreen.nib</key>
+		<data>
+		xfk3a6l993HIs7EFsC9WUyGfPBw=
+		</data>
+		<key>WaitingScreen.nib</key>
+		<data>
+		GtkAtNtiwAl0z91zE/uL1IbTKW4=
 		</data>
 		<key>Zip+arity.tt</key>
 		<data>
-		B2i8ktkwCVMHICM/3Z4no12a6w4=
+		auzZZBm3v8ugLO+FAPFlU6RxD2s=
 		</data>
-		<key>id_sliding.json</key>
+		<key>animation_id-card-back.json</key>
+		<data>
+		fMrONaoCrCrBEug2fMD/jCJGgjY=
+		</data>
+		<key>animation_id-card-front.json</key>
+		<data>
+		o6GYAnUp5TwP2SRsmBKWUp4kkUM=
+		</data>
+		<key>animation_id-card-nfc.json</key>
+		<data>
+		VN9ZN5vMddD4ZNKg9GtbDl8aiGQ=
+		</data>
+		<key>animation_id_sliding.json</key>
 		<data>
 		tDvnYSm2V2ZS/3BEndJXeMcdSuU=
 		</data>
-		<key>ondato_bg.strings</key>
+		<key>animation_passport-front-cover.json</key>
 		<data>
-		j+eYcaqBgKbxFlFO2bMUkpq/QuI=
+		ZyFHn5Rw9ts7WoRybrWWjT+/QSA=
 		</data>
-		<key>ondato_de.strings</key>
+		<key>animation_passport-main-page.json</key>
 		<data>
-		9r+IvH15PlUCx2eCCiK3ri91AdI=
+		AK+WAJ7CBIngU2znOvycTzkBLbw=
 		</data>
-		<key>ondato_el.strings</key>
+		<key>animation_passport-nfc-back-page.json</key>
 		<data>
-		bzZYOfkIYX2bUGoTWTGTICEnrsc=
+		jtpcb9fPLJfvg6pPAoxiOGzIPgc=
 		</data>
-		<key>ondato_en.strings</key>
+		<key>animation_passport-nfc-cover.json</key>
 		<data>
-		9LvwaPqJ8PLmaFg8NnSrf+NNZYw=
+		G+2nDcYYQKKZLwkKw9ZKwR4E5GY=
 		</data>
-		<key>ondato_es.strings</key>
+		<key>animation_passport-nfc-main-page.json</key>
 		<data>
-		y23WwWoCQdXgUEISqs0Vrm1KphM=
+		jDmEDw+EFz1WTEgjuUuYS8mQDBo=
 		</data>
-		<key>ondato_et.strings</key>
+		<key>animation_passport-nfc.json</key>
 		<data>
-		CJ7peoo1Zuc2GhO6KbMww0sH3Cs=
+		e+XfhTNvECXbnv1t27ee6DJd/5I=
 		</data>
-		<key>ondato_fr.strings</key>
-		<data>
-		PnZeSR5ECPm3gcT3k9BRUdNT3M8=
-		</data>
-		<key>ondato_it.strings</key>
-		<data>
-		10JHAYA4Pz4v+HEYTX37IfQLreA=
-		</data>
-		<key>ondato_lt.strings</key>
-		<data>
-		ghCXGxwbMRVjjboCK7D3z6GEQNk=
-		</data>
-		<key>ondato_lv.strings</key>
-		<data>
-		nPCRZJ+o/BoBYwy+cvWhwZzU03Y=
-		</data>
-		<key>ondato_nl.strings</key>
-		<data>
-		xCc8wtYG754Cp3etQXLZqeMSlqo=
-		</data>
-		<key>ondato_ro.strings</key>
-		<data>
-		O+kZ74WYyjfrC9FFQ6CKtCT5hZI=
-		</data>
-		<key>ondato_ru.strings</key>
-		<data>
-		Je6sUvgP7bfQsg2UxjOWqsLrgk0=
-		</data>
-		<key>ondato_sq.strings</key>
-		<data>
-		Odz2KiUWUnDLCK1A5p09+ihMhkE=
-		</data>
-		<key>ondato_waiting_animation.mp4</key>
-		<data>
-		1ffCrrwvk7HGn28QaoyvmG2wrW0=
-		</data>
-		<key>passport_MRZ_scanning.json</key>
-		<data>
-		IjmQmKx91t1ZtNqnf86u303DWxM=
-		</data>
-		<key>passport_back_scanning.json</key>
-		<data>
-		bYf6tKUt3021du5FukLLjvjO0Jk=
-		</data>
-		<key>passport_cover.json</key>
-		<data>
-		MycwIT5os5e0lRL0iX5MxeH3Rco=
-		</data>
-		<key>passport_sliding.json</key>
+		<key>animation_passport_sliding.json</key>
 		<data>
 		QSica6KGbCS3C7I+hv4iL4Jyy3w=
 		</data>
-		<key>view_config.json</key>
+		<key>animation_selfie-with-document.json</key>
 		<data>
-		fZMZxgpFO9qsPB4ad3W7TSPZBng=
+		MF44D3Xu/BdKnKIwiA9oGoqbC+k=
+		</data>
+		<key>animation_waiting-page.json</key>
+		<data>
+		aAgRLdFYT6/DviuvdCDfi0bJF/c=
+		</data>
+		<key>autocapTestImage.jpeg</key>
+		<data>
+		8pQBULeAcxhD/e26glS9goHG5Fg=
+		</data>
+		<key>encryptedModel.bin</key>
+		<data>
+		tRa5dWzA7yLEtImEB8cMINZFET4=
+		</data>
+		<key>illustration_document-back.json</key>
+		<data>
+		XuGyya2XzXO0FMysdr4G+4GMmyQ=
+		</data>
+		<key>illustration_driving-license.json</key>
+		<data>
+		YnkgbTXW+0POanS5CbcIafFOhOs=
+		</data>
+		<key>illustration_face-capture.json</key>
+		<data>
+		fSr4UzsiCE9GTzT/1iUkxEleEFc=
+		</data>
+		<key>illustration_face-with-document.json</key>
+		<data>
+		fPyVLfvDHv5kgjKl/6L85ORvOCo=
+		</data>
+		<key>illustration_id-back.json</key>
+		<data>
+		+Fb6C0jMsmqzEq8ZqdggWuzMNsI=
+		</data>
+		<key>illustration_id-front.json</key>
+		<data>
+		FQrw5uR3kUiKGEyXm/BB48/BjTk=
+		</data>
+		<key>illustration_passport-front-cover.json</key>
+		<data>
+		PIcpipdbBKBADsKBNBrKD0+9diw=
+		</data>
+		<key>illustration_passport-main-page.json</key>
+		<data>
+		3cuJcW4doL5qCo2aYCKwyFpopJ4=
+		</data>
+		<key>illustration_proof-of-address.json</key>
+		<data>
+		N0yN2Gg5x3UDIGWs1TFfzuzhVTc=
+		</data>
+		<key>illustration_residence-permit.json</key>
+		<data>
+		bko2JnT6aGrBFC64Ecpd2ScDo78=
+		</data>
+		<key>illustration_social-identity-card.json</key>
+		<data>
+		QMptDep96sueKr1EaOfj+MvD36g=
+		</data>
+		<key>ondato_bg-BG.strings</key>
+		<data>
+		nRPkU76Wd3Ndt+qwAjt1vdRo95U=
+		</data>
+		<key>ondato_ca-ES.strings</key>
+		<data>
+		NFyvObni0BbfUfmVEknWnrvT52Y=
+		</data>
+		<key>ondato_cs-CZ.strings</key>
+		<data>
+		POdQ0fqsvL8M93lM006q65kOKHI=
+		</data>
+		<key>ondato_de-DE.strings</key>
+		<data>
+		C7oijQDrRfsWgbETfsq+p8RWd7o=
+		</data>
+		<key>ondato_el-GR.strings</key>
+		<data>
+		xvIwJHh9of9ziZSwIlLBXmrXtzY=
+		</data>
+		<key>ondato_en-GB.strings</key>
+		<data>
+		HB4VSYA3/hHkxwrhqgLdVVITGdc=
+		</data>
+		<key>ondato_es-ES.strings</key>
+		<data>
+		F+rXIUIEPhflykrc31coOmFAJkw=
+		</data>
+		<key>ondato_et-EE.strings</key>
+		<data>
+		/8YFFlN6jjspP6WSIxK+qN5qWqY=
+		</data>
+		<key>ondato_fi-FI.strings</key>
+		<data>
+		Sv1OUBJprjHYBT2NXPqD5xM008U=
+		</data>
+		<key>ondato_fr-FR.strings</key>
+		<data>
+		8M01HM2LMYwC/4lY2joJqXrMHLc=
+		</data>
+		<key>ondato_hu-HU.strings</key>
+		<data>
+		KNbACFEAVShO9aXtl9jj0ApMM7k=
+		</data>
+		<key>ondato_it-IT.strings</key>
+		<data>
+		fUBzCbO6EK7ZyZnO+zUV5Fwj8Sw=
+		</data>
+		<key>ondato_lt-LT.strings</key>
+		<data>
+		PBG0phhqvOmUk3T0gmSULh9N97w=
+		</data>
+		<key>ondato_lv-LV.strings</key>
+		<data>
+		kwfJV7OjIktKOe2QYTdr6cYBaRI=
+		</data>
+		<key>ondato_nl-NL.strings</key>
+		<data>
+		UMabPqjPo853sbJD1FhHolS4+tg=
+		</data>
+		<key>ondato_pl-PL.strings</key>
+		<data>
+		JmiXnhp7O3JVmgjPpYO3eV+Paxo=
+		</data>
+		<key>ondato_pt-BR.strings</key>
+		<data>
+		OdYQRfZ6r0jEQUD5ZkdeP/OJthA=
+		</data>
+		<key>ondato_ro-RO.strings</key>
+		<data>
+		VIlqDrvOzFQbAJFflYACpoDJbaM=
+		</data>
+		<key>ondato_ru-RU.strings</key>
+		<data>
+		SzxNHocqm1eEUhQzaJWnCiL39bU=
+		</data>
+		<key>ondato_sk-SK.strings</key>
+		<data>
+		aOg4OA0OtaAl1L0KOUQLxdRzfXk=
+		</data>
+		<key>ondato_sq-AL.strings</key>
+		<data>
+		siF/AETF/Xm2myNkPqt4D0xq4Dk=
+		</data>
+		<key>ondato_sv-SE.strings</key>
+		<data>
+		Fp1wqvi6vXPI6huSH44CZo8Qdhc=
+		</data>
+		<key>ondato_uk-UA.strings</key>
+		<data>
+		GVvPwon2l7CGSoGO/ELUEzUOoJg=
+		</data>
+		<key>ondato_vi-VN.strings</key>
+		<data>
+		4in6m1eK5AMzPKxZl3lp3UwzyJw=
+		</data>
+		<key>uncertain_age.json</key>
+		<data>
+		2uObae1+xbwQSxyi8f7K3gi83SQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -271,56 +391,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KbLZsCOZ2jZz4N6tbjbpo+Su3a+XrQl1kzb7weca5+E=
+			pXh990Qb6ufutq9hZxENUtSOWQB1wfqRBfW1tkMMp4g=
 			</data>
 		</dict>
 		<key>CombineLatest+arity.tt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pgHOh6XHBmOYQwX53Vq5YvROvpQzD1KDhyM53H8MfZI=
-			</data>
-		</dict>
-		<key>CompletionUploadViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FuaTEwaE06g0ALxFt/+PeN551b6s6dhU3iSit9wzRt0=
-			</data>
-		</dict>
-		<key>CompletionViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UtUwmPmNfwa7xzWrltFs0W/E6vtNlg/0j2GEAyirqgQ=
+			BDQFbx7eYJyZeIJ558ofnKKeh9R8fStt52gJQ4EA1B8=
 			</data>
 		</dict>
 		<key>GuidePageItemViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sP/eoQns5reJyoDXf4MgegAA48jOiWlSd4uBvJBl3Ao=
+			7VBZrhf4wzlzXLcK17VTAGlFNk5dDEq6/ECOomBACak=
 			</data>
 		</dict>
 		<key>GuidePopupViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+uWCVhNtu77L3RrmmlwJ1TkHZuOfb9sI96tjRK0StTY=
+			9KXlYzyMsOu0Laa3tpIsGcb1FyLxRk4CHwiVDEKP+NY=
 			</data>
 		</dict>
 		<key>Headers/OndatoSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EYuHT0y0FJGsuDQfCYC0dhnT51c8u/1aGYVwKDL21pA=
+			ZFU53u5x4RMrEVkwPMFrFUjH1VGVFmu/EFSvoEDPaU0=
 			</data>
 		</dict>
 		<key>Headers/OndatoSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TTUTUc4gQcR/Nw+AjKypVH2vknNJcaJ4XdA+FvYH/Wo=
+			DaxJCRzlxBuhXW/UEV3YjMnk/mnDI2aRNlXsIJGyYyc=
 			</data>
 		</dict>
 		<key>Headers/RxCocoaRuntime.h</key>
@@ -362,28 +468,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+MJme/wtPcpxqyfaIVpnI4gBxUSEpKycyfLLckk07D4=
+			OWGbI8NWmZOg5j9dvVQX4J994qRs7AtC9BthDzbCKlE=
 			</data>
 		</dict>
 		<key>Infallible+Zip+arity.tt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hzCiNUJVd2Qmvp69zIXThsb9KwUvm0Rra5DtPXIOsCg=
-			</data>
-		</dict>
-		<key>InfoViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			c8vLCVb98Vg3jmXlrZLZwhDFlPjKiM0WwTsYOjFRn7s=
+			LjaneIWbGqwqegl0+fASD7xw/NLQibcOtpO/hnyIKSg=
 			</data>
 		</dict>
 		<key>InterruptedViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qoxqoIf+OG/HCVa/x8CCC/YGBHTKHHPS3efcQEDdvRY=
+			vNYEhpnlRpBvZCYtMMTyOFKYSPk6aje+uOlFRUJGRO0=
 			</data>
 		</dict>
 		<key>LogsTableViewCell.nib</key>
@@ -397,91 +496,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iMVuupmjpoifOPuecKVdSF8UG6+reZ0ohhXvg7rSr2M=
-			</data>
-		</dict>
-		<key>MRZScannerViewController.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SxvFlN3Oq4/JCs2TtoadnQi/jV3flk8M37ZY5U/EPhA=
-			</data>
-		</dict>
-		<key>MRZScannerViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nPxc4p1mH33N5udez8HkZVoIpac4hT7znua6/uq9c3E=
+			QP2sQ7XgcN+5DzliU7JUd7ZCYbId7l28/rVADIBAtZ0=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			azUw/WjTIH9tfih11htY3tCFBSnVZBUOIvS1eNU2DRc=
+			o/sXpjhyRI+rMiBDadvc8gCqYFU7f9vnAWx0kVG06tw=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mWw9A+UTsug8N3iFHPBE0Dea/wM8wGEM45ZyUXBjiKM=
+			hXPDQ+JlpJwTG2vgj9SGugV1ySkSTPBVAA5Iow1FbqQ=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xc6t6cb56be+kMtDDpEdVW2sGXPYnDCBjkBtGYO0Bzk=
+			f8jqH3c09A7zLhznK+dQy4ZyCMvDOdxUW5Phusbs/q8=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mWw9A+UTsug8N3iFHPBE0Dea/wM8wGEM45ZyUXBjiKM=
+			hXPDQ+JlpJwTG2vgj9SGugV1ySkSTPBVAA5Iow1FbqQ=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Eb+PQvtC080Z2DNz/1k/1S1AfKXaBnbbEdpfcQMhNU=
+			9wbPbeQr8PkfyaoQa0m4aZR1pPy50rf7aBNV8KQovF0=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			azUw/WjTIH9tfih11htY3tCFBSnVZBUOIvS1eNU2DRc=
+			o/sXpjhyRI+rMiBDadvc8gCqYFU7f9vnAWx0kVG06tw=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hlQTlbUiH5vM8YWy52/INHYIaaMuj3gHkcRmQqmc8Ng=
+			7TTZ6u2nQnQtSCp7pOwKVC1JnIXNskVrojZEqkLQXWs=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rnbx/N+20JOHwLKvgv5uJxlK8DEhxZIBlusvDmOf/Dw=
+			rl7J/RsmBOcHoEkrT+xlTXJ8ks7UFhM4YbEu4vrA47w=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hlQTlbUiH5vM8YWy52/INHYIaaMuj3gHkcRmQqmc8Ng=
+			7TTZ6u2nQnQtSCp7pOwKVC1JnIXNskVrojZEqkLQXWs=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fziQ4Lyu/xY0o9d3HGp+dZZvT61gZPL7tIhi7JXG12M=
+			JB5U4H+cX+dNtvHJ6xOCXUa3aXkuVejEa07LyDE4mZo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -495,224 +580,469 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eIXj8tCzBrXMA48t6/mJ/0T7WqasfH8c7jqkM9Uc28E=
+			q4ryhC6YHak4eoncJ6RAF7/39yEhQ+j5ODCRDnP/rTA=
+			</data>
+		</dict>
+		<key>Ondato-UIConfiguration.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EQmOoBt2b1Co5YEoIMq95sMOTkCUJO+gDggWgn0E6yA=
+			</data>
+		</dict>
+		<key>OndatoChooseDocumentViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZDnS/uvhrMIzURlSmgBtq/itS9ELzMwn5SoAzkOx2eQ=
+			</data>
+		</dict>
+		<key>OndatoDocumentTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mjGkPwQca6OBAAPWIgP7BpPfPM//9eSRGu6zE/2kLwY=
 			</data>
 		</dict>
 		<key>OndatoGDPRViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cvJ6roet6Nv1Cczq9l8pJVfZyRl5H8DjLckV/TW6dBE=
+			rx6F0/G4Nt4fHDxJe30szyKMxWP6f51pCAglDh9O0KY=
 			</data>
 		</dict>
-		<key>OndatoStartViewController.nib</key>
+		<key>OndatoLoadingViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FyFzllT5CebSwz235lgUbEoS8OtH0XbMsqZ0LJ4F1Nk=
+			UbIPUuBGwtYWn6/3502kY6PevJiafXNnuGPX+3EMQTQ=
 			</data>
 		</dict>
 		<key>POAUploadDocumentViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rfH8xoFGusCYVkckxSDBVpnGQwDZQI3nEsyUW/rwzjg=
+			jO/hvSmFM0d+/FgL7hKTsFEVOZQ41yXs8Gz+4Lt7Yv8=
 			</data>
 		</dict>
 		<key>POAUploadTypeSelectionViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bWQ0yiiaZ2+req32uTnbECo8jwiE2FXhEtoA7kqtZYw=
+			jiv+JwIhQ5PPp6Q2twvQkFQv5KMQkUq+gsGTfvXDWxQ=
 			</data>
 		</dict>
 		<key>PersonalCodeCaptureViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rSFZaoItt7s7E0unMmYcDuQv4tdyY/mhqmScLKb/yKE=
+			djk4r3hhzxrZW8HWFdfKqHDIT1E2Jc2CGAor6XFBYug=
 			</data>
 		</dict>
 		<key>PrimitiveSequence+Zip+arity.tt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qC+MF4WoPWK1MFxlhGRFHMTluWB6CR656VV8m2xshlw=
+			2ZzeldBVx/p5npn1NQS9/ipoeVaMKjN1wqgLuPIKmT4=
+			</data>
+		</dict>
+		<key>ResultScreen.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nwI8nOHtkaJ2x1F411WUjzrpOAvuVzfBuOW+aE/qygU=
 			</data>
 		</dict>
 		<key>SharedSequence+Operators+arity.tt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kqr8k15iP+eofjFPppT/QfuEI/NhzcXRWXZojm/D498=
-			</data>
-		</dict>
-		<key>TooManyAttemptsViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Q4oMzd0Tob89oa+sIfPxVt6ljvugUJwwdR8FkuQ7KCw=
+			2XWMYTJNVPriSGrGhnuxQhIaZLcuIkEGPjhzs/53KBs=
 			</data>
 		</dict>
 		<key>TutorialViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t1LgORzIqPOYsCvyVlHxQRjqO5mV5JZ0MLBiTzgKQ7k=
+			ZNpHXijNbv6BlOUhAgjnbguHg7uDOHhHpvftZl41+FE=
+			</data>
+		</dict>
+		<key>UploadingDataScreen.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CcxxYlEjKTwPt891dCLQewq414f02w9vlfXbz2Ex+kc=
+			</data>
+		</dict>
+		<key>WaitingScreen.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cE2SZ7GsrHeLqNIX7TJv1HijTFt6Y6OPaihe9ALvCVQ=
 			</data>
 		</dict>
 		<key>Zip+arity.tt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8fsT5gOIaBHw3vgLHlzbtjIkNH/0llVTiHInlLN6qio=
+			B3/MKz4nbycBf426Nx5Wp7o092PT2qgtqlIXIhdadcM=
 			</data>
 		</dict>
-		<key>id_sliding.json</key>
+		<key>animation_id-card-back.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wGFh5HymsmdhIH0VU2CkahrtUYx8CIqa54Me1rwG37E=
+			</data>
+		</dict>
+		<key>animation_id-card-front.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QujuVUauYDUG5Q7mnGxSuhCu88Uqxr5O+zNF43mK2y8=
+			</data>
+		</dict>
+		<key>animation_id-card-nfc.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BEpFQ7Sec+CWQ10WWaEjcTcIplnO3WN7dZz+xBQFdgA=
+			</data>
+		</dict>
+		<key>animation_id_sliding.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			04wMCdgWzO73+8CxGw9rt/KAt2dLiOt9H/6V5WbmP5Q=
 			</data>
 		</dict>
-		<key>ondato_bg.strings</key>
+		<key>animation_passport-front-cover.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p1+l66SQCXgE0EPilr7FTLbN5mKzthU2KF6njAHupto=
+			HFQuhA2J+qJuI2B+1OMXd54YA3YtawvWdbV6Y+stItM=
 			</data>
 		</dict>
-		<key>ondato_de.strings</key>
+		<key>animation_passport-main-page.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U0t4EmdOoCQyndZO/Q6M1d0P/SDc0C/P9dLvTTFvSNc=
+			zCebCF34DmF1JU2/d2L7J/0WBKMLt6b1pLjXGZyn6UQ=
 			</data>
 		</dict>
-		<key>ondato_el.strings</key>
+		<key>animation_passport-nfc-back-page.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VLWJ3JQqTYHOsQtcibx2CZ4aJd8J90GfGCZ3fgAczgQ=
+			M8kKnPJUAhveQBxTMN8uMOMdCwgzlKeA4R3faezZYC8=
 			</data>
 		</dict>
-		<key>ondato_en.strings</key>
+		<key>animation_passport-nfc-cover.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLA0nV5dpKuYBxU+ZNhTkm9Y8ZmYeUZLCZc2MplvZTI=
+			6zRVB5DPqMtK3L8/V1wx8coRcIlmnv8aTqbZlSk3RP0=
 			</data>
 		</dict>
-		<key>ondato_es.strings</key>
+		<key>animation_passport-nfc-main-page.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g+3yyPs69Qh1Fx8s0H8j16vbG+cG/5Mx8kJMLDN09zA=
+			EKxRho+4ilvn65YMG86kODBFXQ1cs7IFRVvJrYj27Jo=
 			</data>
 		</dict>
-		<key>ondato_et.strings</key>
+		<key>animation_passport-nfc.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lr7yUixTpIVV+OAnd3Z0i0O5fg6IZ9dqUvRk4Jc4/n0=
+			9zxDZgIqCLcMeyW3yqLM7a3lkI1Bn+R//rnslQT1j80=
 			</data>
 		</dict>
-		<key>ondato_fr.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			I5nZT0kle8lsvadDXZBdX5+bN9+nWAAvJkWxQJVMU8E=
-			</data>
-		</dict>
-		<key>ondato_it.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rApipZq1g3Snoq/ps/aWhp+UZv1zb96n0rzmzvqygus=
-			</data>
-		</dict>
-		<key>ondato_lt.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6IjAefltPRnDcEZbK8d/+4kczBKmNPx7/qVRSWmVUok=
-			</data>
-		</dict>
-		<key>ondato_lv.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3FEikmALGR3zPpItL7g5s86NB1l2IefqAT1yyyT9ezs=
-			</data>
-		</dict>
-		<key>ondato_nl.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DzGe5SrvcoUuoASowKZUayvU9QzcbyKz30448r+KaNc=
-			</data>
-		</dict>
-		<key>ondato_ro.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XcE/d1RJw9uNEnidrCq1ZrIqZzchS4Zzj+lVw0cr0vE=
-			</data>
-		</dict>
-		<key>ondato_ru.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Q+DIK2H6NwufhVMQ337vFQDCjStlmgx6Or4Ct0Obrn4=
-			</data>
-		</dict>
-		<key>ondato_sq.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uRlbXAauHnW904TjVQ8fdszjMD4WsoowBqk6qbaBp/8=
-			</data>
-		</dict>
-		<key>ondato_waiting_animation.mp4</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OK4Zm+qVhejzAy+09Yfcc4imdhgoZIl5pytQu1GYItU=
-			</data>
-		</dict>
-		<key>passport_MRZ_scanning.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Jl6j1PUM+BzXmAjx5yea2DFB3lOttEov0dWrPUlPoPo=
-			</data>
-		</dict>
-		<key>passport_back_scanning.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4/PTcz/jowllTuzSQC98pAC3uS3LrF8BzQ7sa/bezFA=
-			</data>
-		</dict>
-		<key>passport_cover.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RR6M6z/yxjsWrDDlLEGDSAyShl369lzXFCPR8embUJc=
-			</data>
-		</dict>
-		<key>passport_sliding.json</key>
+		<key>animation_passport_sliding.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			w9nCEK+f+xgg+H5mYonC0cX2DN1ynT6KllKmXqBQaq4=
 			</data>
 		</dict>
-		<key>view_config.json</key>
+		<key>animation_selfie-with-document.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nvh7QtPAD0f+rO80+a49bKsZIX46ilNZLNoJNDETkvQ=
+			Z7VYs+KcthuCoi4VthizWp7lKuP5CVzPZE8IbenikJ4=
+			</data>
+		</dict>
+		<key>animation_waiting-page.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			awVoralDcploB92f+WUDni0NBVoJuFfYmZDg2WdjdyY=
+			</data>
+		</dict>
+		<key>autocapTestImage.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QkO1bM8q5YOrihDxAqJG8f55HZi1cVIYIVScWjoHrTA=
+			</data>
+		</dict>
+		<key>encryptedModel.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w/CNdu33ppZ10i4rNtCiEhQi5Z0d4WDu8jnXHGDfMjQ=
+			</data>
+		</dict>
+		<key>illustration_document-back.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7dG5hsyxpsOFpc5mWZ9chWhqoRUVosj1o2hkB+qKv0U=
+			</data>
+		</dict>
+		<key>illustration_driving-license.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yy3aQslVXwBkl8zNzYonVp91YJM6pBMuU5WAnbIWBSg=
+			</data>
+		</dict>
+		<key>illustration_face-capture.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Rt7O7j1FKVPSckXTO5DjsHI9OoqwCZ4HUtOUTsw1w7Y=
+			</data>
+		</dict>
+		<key>illustration_face-with-document.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Cgypk+8BWcAd3bAws88vxPXIHqN2pSAwEoGRjx3RsKI=
+			</data>
+		</dict>
+		<key>illustration_id-back.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gP4yn+RdMeBZsAZZBcT9yqvgW8iMHy3nhHtu4X1G1kY=
+			</data>
+		</dict>
+		<key>illustration_id-front.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ms+rcifnlNqYFYI7mAMlvVD734+Y8HsFUtYdR9AhVJc=
+			</data>
+		</dict>
+		<key>illustration_passport-front-cover.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xvAdCli1w9ov+Z/DQjVHbhFg88zKidASJV1P9BlHfac=
+			</data>
+		</dict>
+		<key>illustration_passport-main-page.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			t1O1px7mfofRyhKk8WpmVZawgccTU5cNW7oSj0t71Uk=
+			</data>
+		</dict>
+		<key>illustration_proof-of-address.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dVLrkxG3sG9F98/pYAc9SgGgyNPxcacy9FarK0gLD2o=
+			</data>
+		</dict>
+		<key>illustration_residence-permit.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/JRd4n8/2amvJ6kCVVIn1YmWiHuQF/ONIDtKWi06ugQ=
+			</data>
+		</dict>
+		<key>illustration_social-identity-card.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ym+QYZ006w1VxyvFQQg9xSbRi7I845zIejkfc1b6oA8=
+			</data>
+		</dict>
+		<key>ondato_bg-BG.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EasMPggLb+ubKvLSs9ntir3otCewktd8F6H9qpBBAhI=
+			</data>
+		</dict>
+		<key>ondato_ca-ES.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QXIBV3YojAafgjwe0A/QmxopnKjCMRS/B+vgpOxsvJQ=
+			</data>
+		</dict>
+		<key>ondato_cs-CZ.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EPvqMv2+OZhxynIvT6W+d8eKeo+0BsyuN9XyzxeyPS0=
+			</data>
+		</dict>
+		<key>ondato_de-DE.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZhhQzVmIu8XfZTo9cviqdQGyAsYkDXxxDr3VtFt1u4s=
+			</data>
+		</dict>
+		<key>ondato_el-GR.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Rert0S6y9QmlphfLe9pzupxhN+5DS1Vg4liKGEPl5Hc=
+			</data>
+		</dict>
+		<key>ondato_en-GB.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O4u1ZXkLvOICnzXCl0QlK9LAtQnMgZZ/rCd/XdzqhQ0=
+			</data>
+		</dict>
+		<key>ondato_es-ES.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UUlo7SGn7bhRT98DwyCAz54x84yKdqyh4ajDQmp/t3U=
+			</data>
+		</dict>
+		<key>ondato_et-EE.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+IXdl/gyUvJsEF7YpMap6En1yCCXpgxNJrkLXCeWiZo=
+			</data>
+		</dict>
+		<key>ondato_fi-FI.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CRarQCB0tV5rGqyS4UCUUWnW9YptFGT/c+4QGOaldwI=
+			</data>
+		</dict>
+		<key>ondato_fr-FR.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jtazbpPgLWO0riK++p5Wp10orR2yGIzVYT38818Qu5Q=
+			</data>
+		</dict>
+		<key>ondato_hu-HU.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rikGhorcpz7guA9ercqyOMDfBXoLEvWjW1LvCOjSAfQ=
+			</data>
+		</dict>
+		<key>ondato_it-IT.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fBLKzzCTFo7gHsA9SQH+ls+pYCMlEL3i7Czj+ZsE5bM=
+			</data>
+		</dict>
+		<key>ondato_lt-LT.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AO51rHYQSyeXRWqKD5hiJvazCNgWXMxPqgWYOBE8NZc=
+			</data>
+		</dict>
+		<key>ondato_lv-LV.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			J0KE7OklzY0Z42rowIwoReF7y6SW9Q23A9lDIDhHE64=
+			</data>
+		</dict>
+		<key>ondato_nl-NL.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5O6J0WM+0u05DNhAlqpe19S6WzHFr5n6Mjo79neMWoU=
+			</data>
+		</dict>
+		<key>ondato_pl-PL.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8Uicj3ZdM2y0Ksd52K/LxWWPFpe6ATJY52RBUlWo3ME=
+			</data>
+		</dict>
+		<key>ondato_pt-BR.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xjeR2KBtUNYsshHBLtZ3VAMRKi2I0abuUuJrQW4xlKM=
+			</data>
+		</dict>
+		<key>ondato_ro-RO.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Tj5DkiZE+In0e/QNNX0nZq3laI94XwRCaSbts/BqsT4=
+			</data>
+		</dict>
+		<key>ondato_ru-RU.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jr7jJdHVqhmo70weJTkuIMfRsrjoavqW2ILNw6lZMeU=
+			</data>
+		</dict>
+		<key>ondato_sk-SK.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZKIvO4ny/xfOUWY7bzwmbtmspty5raZCaYvuw48k88o=
+			</data>
+		</dict>
+		<key>ondato_sq-AL.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6omL11zr8bXRgHDuOUrqolNFZYOOsJMfcAcHMfKztTc=
+			</data>
+		</dict>
+		<key>ondato_sv-SE.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l+hiSnjd7MEZ5xWytgmWT+xpqWK5dCALghtZK6yrbXM=
+			</data>
+		</dict>
+		<key>ondato_uk-UA.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ymi0k4HpP6mrlzQnuQHjy8HCuWODCB0ixa/adrT3vWg=
+			</data>
+		</dict>
+		<key>ondato_vi-VN.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6a7Ja9PmCDk4wfJsMRIEa9Nz1gn7kByiCzlf91CxMkU=
+			</data>
+		</dict>
+		<key>uncertain_age.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CgKnfaoepZcCIiy1FqrQ6VPFuA+NCL9k+to1/BWqGXs=
 			</data>
 		</dict>
 	</dict>

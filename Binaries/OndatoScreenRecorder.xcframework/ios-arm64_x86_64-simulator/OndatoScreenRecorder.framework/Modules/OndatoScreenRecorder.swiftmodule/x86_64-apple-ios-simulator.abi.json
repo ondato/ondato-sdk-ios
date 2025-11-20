@@ -481,7 +481,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<OndatoScreenRecorder.OndatoScreenRecording?, OndatoScreenRecorder.OndatoScreenRecorderError>) -> ()",
+                "printedName": "(Swift.Result<Swift.String?, OndatoScreenRecorder.OndatoScreenRecorderError>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -491,18 +491,18 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<OndatoScreenRecorder.OndatoScreenRecording?, OndatoScreenRecorder.OndatoScreenRecorderError>",
+                    "printedName": "Swift.Result<Swift.String?, OndatoScreenRecorder.OndatoScreenRecorderError>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "OndatoScreenRecorder.OndatoScreenRecording?",
+                        "printedName": "Swift.String?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "OndatoScreenRecording",
-                            "printedName": "OndatoScreenRecorder.OndatoScreenRecording",
-                            "usr": "s:20OndatoScreenRecorder0aB9RecordingC"
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
                           }
                         ],
                         "usr": "s:Sq"
@@ -520,8 +520,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20OndatoScreenRecorder0C0C13stopRecording10completionyys6ResultOyAA0abE0CSgAA0abC5ErrorOGc_tF",
-            "mangledName": "$s20OndatoScreenRecorder0C0C13stopRecording10completionyys6ResultOyAA0abE0CSgAA0abC5ErrorOGc_tF",
+            "usr": "s:20OndatoScreenRecorder0C0C13stopRecording10completionyys6ResultOySSSgAA0abC5ErrorOGc_tF",
+            "mangledName": "$s20OndatoScreenRecorder0C0C13stopRecording10completionyys6ResultOySSSgAA0abC5ErrorOGc_tF",
             "moduleName": "OndatoScreenRecorder",
             "declAttributes": [
               "AccessControl"
@@ -1234,6 +1234,13 @@
         "moduleName": "OndatoScreenRecorder"
       },
       {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "OndatoScreenRecorder"
+      },
+      {
         "kind": "TypeDecl",
         "name": "OndatoScreenRecording",
         "printedName": "OndatoScreenRecording",
@@ -1481,28 +1488,28 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/edgaras\/Documents\/tower\/idv-sdk-ios-v2\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecorderConfiguration.swift",
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecorderConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 60,
       "length": 6,
       "value": "250000"
     },
     {
-      "filePath": "\/Users\/edgaras\/Documents\/tower\/idv-sdk-ios-v2\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecorderConfiguration.swift",
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecorderConfiguration.swift",
       "kind": "FloatLiteral",
       "offset": 100,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/edgaras\/Documents\/tower\/idv-sdk-ios-v2\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecordingAssetWriter.swift",
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecordingAssetWriter.swift",
       "kind": "BooleanLiteral",
       "offset": 1410,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/edgaras\/Documents\/tower\/idv-sdk-ios-v2\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecordingFileUtil.swift",
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecordingFileUtil.swift",
       "kind": "StringLiteral",
       "offset": 210,
       "length": 18,

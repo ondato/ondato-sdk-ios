@@ -1,0 +1,858 @@
+"Action.Close" = "Zavřít";
+
+"LanguageSelection.Header" = "Výběr jazyka";
+
+"Modals.Abort.Action.ContinueProcess" = "Pokračujte v procesu";
+
+"Modals.Abort.Action.StopProcess" = "Zastavit proces";
+
+"Modals.Abort.Heading" = "Jste si jisti, že chcete tento proces zrušit?";
+
+"Modals.Error.Description" = "Něco se pokazilo, zavřete tuto zprávu a zkuste to znovu";
+
+"Modals.Error.Heading" = "Jejda! Objevila se chyba";
+
+"Modals.Success.Description" = "Přejděte na další krok";
+
+"Modals.Success.Heading" = "Úspěch";
+
+"Action.Agree" = "Souhlasím";
+
+"Action.Disagree" = "Nesouhlasím";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Pokračovat v procesu";
+
+"Disagree.Confirmation.Action.StopProcess" = "Zastavit proces";
+
+"Disagree.Confirmation.Header" = "Odmítnutím obsahu proces zastavíte. Jste si jisti?";
+
+"Capture.Action.Capture" = "Vyfotit";
+
+"Capture.DriverLicense.Back.Description" = "Nastavte dokument dovnitř rámečku.";
+
+"Capture.DriverLicense.Back.Header" = "Vyfoťte zadní stranu";
+
+"Capture.DriverLicense.Front.Description" = "Nastavte dokument dovnitř rámečku.";
+
+"Capture.DriverLicense.Front.Header" = "Vyfoťte přední stranu";
+
+"Capture.IdCard.Back.Description" = "Nastavte dokument dovnitř rámečku.";
+
+"Capture.IdCard.Back.Header" = "Vyfoťte zadní stranu";
+
+"Capture.IdCard.Front.Description" = "Nastavte dokument dovnitř rámečku.";
+
+"Capture.IdCard.Front.Header" = "Vyfoťte přední stranu";
+
+"Capture.InternalPassport.DataPage.Header" = "Vyfoťte hlavní stránku";
+
+"Capture.InternalPassport.FrontCover.Header" = "Vyfoťte obal";
+
+"Capture.Passport.DataPage.Description" = "Nastavte dokument dovnitř rámečku.";
+
+"Capture.Passport.DataPage.Header" = "Vyfoťte hlavní stránku";
+
+"Capture.Passport.FrontCover.Header" = "Vyfoťte obal";
+
+"Capture.ResidencePermit.Back.Description" = "Nastavte dokument dovnitř rámečku.";
+
+"Capture.ResidencePermit.Back.Header" = "Vyfoťte zadní stranu";
+
+"Capture.ResidencePermit.Front.Description" = "Nastavte dokument dovnitř rámečku.";
+
+"Capture.ResidencePermit.Front.Header" = "Vyfoťte přední stranu";
+
+"Capture.SocialId.Back.Description" = "Nastavte dokument dovnitř rámečku.";
+
+"Capture.SocialId.Back.Header" = "Vyfoťte zadní stranu";
+
+"Capture.SocialId.Front.Description" = "Nastavte dokument dovnitř rámečku.";
+
+"Capture.SocialId.Front.Header" = "Vyfoťte přední stranu";
+
+"Preview.Action.Continue" = "Pokračovat";
+
+"Preview.Action.Retake" = "Vyfotit znovu";
+
+"Preview.Header" = "Je fotka jasná, zaostřená a bez odrazu?";
+
+"FaceCapture.Instructions.Action.Start" = "Začít";
+
+"FaceCapture.Instructions.Description" = "Během procesu nastavte obličej doprostřed rámečku.";
+
+"FaceCapture.Instructions.Header" = "Proveďte ověření obličejem";
+
+"FaceCapture.Instructions.Subheader" = "Správný postup:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "Tvařte se neutrálně";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "Zajistěte dobré osvětlení";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "Pořiďte ostrou fotku";
+
+"App.Button.Close" = "Zavřít";
+
+"App.Button.Continue" = "Pokračovat";
+
+"App.Errors.Default" = "Objevil se neočekávaný problém. Zkuste to znovu později";
+
+"EndPage.Action.Continue" = "Pokračovat";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Děkujeme. Nyní můžete dokončit proces.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Vše je hotovo!";
+
+"Action.Close" = "Zavřít";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Nahrajte doklad o adrese";
+
+"Document.Instructions.Action.Start" = "Začít";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Vyfoťte zadní stranu řidičského průkazu";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Vyfoťte přední stranu řidičského průkazu";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Fotka nesmí být příliš rozmazaná";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Správný postup:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Zajistěte dobré osvětlení";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Dokument musí být čitelný";
+
+"Document.Instructions.IdCard.Back.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.IdCard.Back.Heading" = "Vyfoťte zadní stranu průkazu totožnosti";
+
+"Document.Instructions.IdCard.Front.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.IdCard.Front.Heading" = "Vyfoťte přední stranu průkazu totožnosti";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Zaberte hlavní stránku dokumentu, na které bude část MRZ ve vyznačené oblasti.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Vyfoťte hlavní stránku interního pasu";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Vyfoťte vnitřní část obalu pasu";
+
+"Document.Instructions.Passport.DataPage.Description" = "Ve vyznačené oblasti zaberte také část MRZ.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Vyfoťte hlavní stránku pasu";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Vyfoťte obal pasu";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Vyfoťte zadní stranu povolení k pobytu";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Vyfoťte přední stranu povolení k pobytu";
+
+"Document.Instructions.SocialId.Back.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.SocialId.Back.Heading" = "Vyfoťte zadní stranu sociálního průkazu totožnosti";
+
+"Document.Instructions.SocialId.Front.Description" = "Umístěte dokument dovnitř rámečku";
+
+"Document.Instructions.SocialId.Front.Heading" = "Vyfoťte přední stranu sociálního průkazu totožnosti";
+
+"Document.Select.Document.DriverLicense" = "Řidický průkaz";
+
+"Document.Select.Document.IdCard" = "Občanský průkaz";
+
+"Document.Select.Document.InternalPassport" = "Interní pas";
+
+"Document.Select.Document.Passport" = "Pas";
+
+"Document.Select.Document.ResidencePermit" = "Povolení k pobytu";
+
+"Document.Select.Document.SocialId" = "Sociální průkaz totožnosti";
+
+"Document.Select.Header" = "Vyberte dokument";
+
+"FaceCapture.Instructions.Description" = "Nastavte obličej doprostřed rámečku.";
+
+"FaceCapture.Instructions.Header" = "Vyfoťte se";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Fotka musí být ostrá";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Tvařte se neutrálně";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Zajistěte dobré osvětlení";
+
+"FaceCapture.Instructions.Subheader" = "Správný postup:";
+
+"Result.Failure.Action.TryAgain" = "Zkusit znovu";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Zkuste to prosím znovu a ujistěte se, že dokument je rovnoměrně osvětlený bílým zdrojem světla.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Poskytnutá fotografie má špatné osvětlení";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Zkuste to prosím znovu a poskytněte nepoškozený dokument.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Část poskytnutého dokumentu je poškozená";
+
+"Result.Failure.DocumentFromScreen.Description" = "Pro dokončení procesu identifikace nám pošlete platnou fotku fyzického dokumentu";
+
+"Result.Failure.DocumentFromScreen.Header" = "Poskytnutá fotka dokumentu je neplatná";
+
+"Result.Failure.DocumentIsExpired.Description" = "Pro dokončení procesu identifikace nám pošlete platný dokument";
+
+"Result.Failure.DocumentIsExpired.Header" = "Platnost poskytnutého dokumentu vypršela";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Pro dokončení procesu identifikace použijte dokument z poskytnutého seznamu";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Poskytnutý typ dokumentu nesplňuje požadavky";
+
+"Result.Failure.DocumentPrinted.Description" = "Pro dokončení procesu identifikace nám pošlete platnou fotku fyzického dokumentu";
+
+"Result.Failure.DocumentPrinted.Header" = "Poskytnutá fotka dokumentu je neplatná";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Dokument musí být vyhotoven v latince";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Poskytnutý typ dokumentu nesplňuje požadavky";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Pořiďte fotku původního dokumentu";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Vaše totožnost byla zamítnuta";
+
+"Result.Failure.FacesNotMatch.Description" = "Zkuste to znovu nebo kontaktujte zákaznickou podporu";
+
+"Result.Failure.FacesNotMatch.Header" = "Fotka na dokumentu a poskytnutá selfie se neshodují";
+
+"Result.Failure.Generic.Description" = "Kontaktujte zákaznickou podporu";
+
+"Result.Failure.Generic.Header" = "Došlo k potížím s identifikací";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Zkuste to znovu a ujistěte se, že je potvrzení o bydlišti platné";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Poskytnutá fotka potvrzení o bydlišti je neplatná";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Zkuste to znovu a pošlete nám všechny potřebné fotky dokumentu";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Fotka dokumentu chybí";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Zkuste to znovu nebo kontaktujte zákaznickou podporu";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Fotka obličeje chybí";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Proces identifikace může uživatel dokončit pouze bez přítomnosti dalších osob";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Uživatel není jediným účastníkem procesu";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Zkuste to znovu a ujistěte se, že je dokument jasně čitelný a nejsou zakryty žádné údaje";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Část poskytnutého dokumentu není viditelná";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Zkuste to znovu podle uvedených pokynů. Obličej nesmí být zakrytý";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Obličej je částečně zakrytý";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Zkuste to znovu a ujistěte se, že je dokument správně nasvícený";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Poskytnutá fotka je špatně nasvícená";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Zkuste to znovu a ujistěte se, že jsou údaje na dokumentu jasně čitelné. Pokud máte nevyhovující fotoaparát, zkuste použít jiné zařízení.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Poskytnutá fotka má nízkou kvalitu";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Zkuste to znovu nebo kontaktujte zákaznickou podporu";
+
+"Result.Failure.SelfieHasNoFace.Header" = "Na poskytnuté fotce není obličej";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Zkuste to znovu nebo kontaktujte zákaznickou podporu";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Poskytnutá fotka není relevantní";
+
+"Result.Success.Header" = "Úspěch!";
+
+"ResultsWaiting.Delay.Description" = "Zdá se, že máme větší návštěvnost než obvykle. Brzy vás přesměrujeme.";
+
+"ResultsWaiting.Delay.Header" = "Je nám líto, ale trvá to déle, než jsme čekali";
+
+"ResultsWaiting.Details.Description" = "Čekání trvá v průměru 2 minuty.";
+
+"ResultsWaiting.Details.Header" = "Čekejte prosím…";
+
+"ResultsWaiting.Details.Message.Message1" = "Probíhá šifrování dat dokumentu.";
+
+"ResultsWaiting.Details.Message.Message2" = "Kontrola dokumentu na vnější poškození.";
+
+"ResultsWaiting.Details.Message.Message3" = "Probíhá kontrola fotek poskytnutých dokumentů.";
+
+"ResultsWaiting.Details.Message.Message4" = "Ověřujeme, zda jste skutečná osoba";
+
+"ResultsWaiting.Details.Message.Message5" = "Probíhá kontrola pravosti a platnosti údajů.";
+
+"ResultsWaiting.Details.Message.Message6" = "Probíhá kontrola stavu dokumentu a údajů v registrech.";
+
+/*  */
+"Action.Cancel" = "Zrušit";
+
+/*  */
+"Action.Loading.Header" = "Načítání...";
+
+/*  */
+"Action.Submit" = "Odeslat";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Dokument úspěšně naskenován";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Nastavte dokument dovnitř rámečku.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Zachytit dokument";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Zachyťte doklad o adrese";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Může se jednat o bankovní výpis nebo účet za energie";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Podporované soubory: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Soubor nesmí být větší než 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Formát nahraného souboru není podporován";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Prosím, poskytněte doklad o adrese";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Maximální velikost souboru: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Požadavky:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Musí obsahovat vaše celé jméno a adresu";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Dokument není starší než 3 měsíce";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Vyberte soubor";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Vybrat z galerie";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Nahrát dokument";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Nahrávání...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "K ověření vašeho účtu potřebujeme vaše TRN. Zadejte prosím vaše TRN tak, jak je uvedeno na oficiálním dokumentu, a před odesláním zkontrolujte, zda je správné, abyste předešli zpožděním.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Uveďte prosím své daňové registrační číslo (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "Číslo TRN se skládá z 9 číslic";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "Kód TRN:";
+
+/*  */
+"Consent.Static.Description" = "Abych mohl/a získat službu od Poskytovatele služby, tímto souhlasem vyjadřuji svůj souhlas s tím, že UAB \"Ondato\" obdrží a bude spravovat mé osobní údaje, včetně mých biometrických údajů, získaných z dálkové identifikace mé osobní identity pořízením a/nebo natáčením živého obrazu mé tváře, identity mé osoby nebo dokumentu použitého k její identifikaci a/nebo jejich obrazu a osobních údajů v nich obsažených a/nebo kontrolou v registru obyvatel: obraz mé tváře, jméno, příjmení, národnost, pohlaví, osobní kód, datum narození, čísla dokumentu, který je používán, datum vydání a platnosti, můj podpis a přenos těchto údajů Poskytovateli služby. Rovněž beru na vědomí, že jsem informován/a, že správcem mých osobních údajů, včetně mých biometrických údajů, uvedených v tomto souhlasu, je Poskytovatel služby a UAB \"Ondato\" bude zpracovávat mé osobní údaje pouze do doby, než bude dokončena dálková identifikace a výsledky budou předány Poskytovateli služby. Rovněž prohlašuji, že jsem informován/a a souhlasím s tím, že mé osobní údaje získané pro účely dálkové identifikace mohou být uchovávány UAB \"Ondato\" po delší dobu, než je potřeba k dokončení identifikace nebo přenosu jejích výsledků Poskytovateli služby, ale pouze na žádost Poskytovatele služby nebo na základě smluvní povinnosti UAB Ondato vůči Poskytovateli služby, ale ne déle, než je stanoveno ve Smlouvě uzavřené mezi UAB \"Ondato\" a Poskytovatelem služby nebo požadováno Poskytovatelem služby. Jsem informován/a, že mohu podat žádost ohledně mých osobních údajů pro podrobnější informace na info@ondato.com. Tímto prohlašuji a potvrzuji, že všechny osobní údaje, které poskytnu pro účely dálkové identifikace mé osobní identity, jsou správné a přesné a dokument, který pro tento účel použiji, není falešný a je platný.";
+
+/*  */
+"Consent.Static.Heading" = "Souhlas se zpracováním osobních údajů";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Umístěte dokument do rámečku";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Vyfoťte MRZ zónu svého průkazu totožnosti";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Umístěte dokument a řádek MRZ do rámečku";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Vyfoťte přední stranu svého průkazu totožnosti s MRZ řádkem";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Prosím ukažte hlavní stránku dokumentu, která obsahuje oblast MRZ ve vyznačené zóně.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Zachyťte stránku pasu s MRZ zónou";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Doklad o adrese";
+
+/*  */
+"Error.Interrupt.Description" = "Kvůli přerušením byl proces zastaven. Zůstaňte prosím v této aplikaci, dokud nedokončíte všechny kroky.";
+
+/*  */
+"Error.Interrupt.Heading" = "Proces byl přerušen";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Chcete-li pokračovat, znovu se připojte";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Vaše připojení k internetu je pryč";
+
+/*  */
+"FaceCapture.Validation.Description" = "Prosím, čekejte...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Ověřování vaší fotografie";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Spustit nastavení";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Při pořizování selfie držte dokument blízko obličeje";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Vyfotografujte se, zatímco držíte svůj dokument";
+
+/*  */
+"Instructions.Identification.Description" = "Abyste mohli pokračovat v používání této služby, musíte ověřit, že splňujete požadavky webových stránek.";
+
+/*  */
+"Instructions.Identification.Header" = "Vítejte v procesu \n ověřování identity";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Jen chvilku";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Dokončování posledních detailů";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Pořizování fotografie";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Zarovnejte svůj obličej do rámečku a klepněte na zachytit";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Zachyťte svůj obličej";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Je váš obličej jasně viditelný?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Ujistěte se, že je fotografie jasná a čitelná";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Žádáme vás, abyste pro více informací kontaktovali zákaznickou podporu.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Vaše identifikace byla zamítnuta.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Žádáme vás, abyste pro více informací kontaktovali zákaznickou podporu nebo to zkusili znovu s jiným dokumentem.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Vaše identifikace byla zamítnuta kvůli zakázané zemi nebo státu.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Žádáme vás, abyste proces zopakovali nebo kontaktovali zákaznickou podporu.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Vaše identifikace byla zamítnuta.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Pro více informací kontaktujte zákaznickou podporu";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Vaše identifikace byla zamítnuta.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Žádáme vás, abyste pro více informací kontaktovali zákaznickou podporu.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Vaše identifikace byla zamítnuta kvůli věkovým omezením.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Děkujeme za vaši trpělivost";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Zachycení informací bylo úspěšné";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Zdá se, že zažíváme větší provoz než obvykle. Brzy budete přesměrováni.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Omlouváme se, trvá to déle, než jsme očekávali";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Pro pokračování se ujistěte, že dokument má NFC a že je na vašem zařízení povoleno.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Vypadá to, že nemůžete pokračovat bez NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Umístěte dokument za zařízení";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Skenování... Prosím, podržte";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Spojení ztraceno během skenování. Prosím zkuste znovu.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Zkuste znovu naskenovat dokument.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Vypadá to, že proces byl přerušen.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Nepodařilo se nám přečíst dokument. Zkontrolujte prosím údaje a zkuste to znovu.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Neočekávaná odpověď od čipu. Prosím znovu naskenujte dokument.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Naskenovaný dokument není platný. Zkuste to prosím znovu s podporovaným dokumentem.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Bylo detekováno více čipů. Naskenujte prosím pouze jeden dokument najednou.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Vaše zařízení nepodporuje NFC nebo je momentálně vypnuto. Přepněte na kompatibilní zařízení nebo aktivujte NFC v nastavení.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC není podporováno";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Máte potíže?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Přiložte občanský průkaz na zadní stranu telefonu";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Položte svůj občanský průkaz na zadní stranu telefonu pro skenování NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Naskenujte svůj občanský průkaz pomocí NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Položte svůj pas na zadní stranu telefonu pro skenování NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Naskenujte svůj pas pomocí NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Zrušit";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Zapněte prosím NFC, abyste mohli pokračovat v procesu";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC je vypnuto";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Nastavení";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Přiložte první stránku pasu na zadní stranu telefonu";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Pokud jste narazili na potíže s přístupem k NFC, vyzkoušejte tyto metody:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Zkuste přečíst poslední stránku dokumentu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Zkuste přečíst stránku s fotografií dokumentu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Pokud je na dokumentu nějaký obal, odstraňte ho.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Přiložte dokument k zadní straně telefonu.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Naskenujte dokument";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Tipy k vyzkoušení";
+
+"Action.Cancel" = "Zrušit";
+
+"CaptureResultReason.TimeOut.Description" = "Zkuste to znovu";
+
+"CaptureResultReason.TimeOut.Header" = "Čas vypršel";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Zrušit";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Obličej směřuje příliš doleva";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Obličej směřuje příliš doprava";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Obličej není vidět";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Obličej je otočen příliš doleva";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Obličej je otočen příliš doprava";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Obličej je příliš vlevo";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Obličej je příliš vpravo";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Obličej je příliš vysoko";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Obličej je příliš nízko";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Podržte zařízení ve výšce očí";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Podržte fotoaparát v úrovni očí";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Fotoaparát je příliš blízko";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Fotoaparát je příliš daleko";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Fotoaparát je příliš blízko";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Fotoaparát je příliš daleko";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Pokyny k zarovnání obličeje zobrazíte stisknutím klávesy Enter nebo mezerníku";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Pokyny k zarovnání obličeje zobrazíte poklepáním na obrazovku";
+
+"FaceTec_camera_feed_issue_action" = "PŘESTO ZKUSIT ZNOVU";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Problém se zajištěním přenosu z fotoaparátu";
+
+"FaceTec_camera_feed_issue_header" = "Problém se zajištěním<br/>přenosu z fotoaparátu";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Tento systém nelze ověřit z následujících důvodů:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Tato aplikace blokuje podezřelé konfigurace webových kamer.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Další informace najdete tady</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Tato aplikace blokuje podezřelé konfigurace webových kamer. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Další informace najdete tady</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Možný problém";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Řešení";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Fotoaparát je již používán jinou aplikací.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Oprávnění fotoaparátu nejsou v aplikaci Firefox uložena.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Zavřete jinou aplikaci.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Zkontrolujte možnost Zapamatovat oprávnění.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Video upravuje aplikace třetí strany.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Zavřete/odinstalujte jinou aplikaci.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Hardware nelze zabezpečit.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Použijte jiné zařízení.";
+
+"FaceTec_camera_permission_header" = "Povolte fotoaparát";
+
+"FaceTec_camera_permission_message" = "Oprávnění fotoaparátu jsou zakázána.<br/>Zkontrolujte nastavení operačního systému a prohlížeče.";
+
+"FaceTec_enter_fullscreen_action" = "OTEVŘÍT NA CELOU OBRAZOVKU";
+
+"FaceTec_enter_fullscreen_header" = "Režim selfie na celou obrazovku";
+
+"FaceTec_enter_fullscreen_message" = "Než začneme, klikněte na tlačítko níže a otevřete režim celé obrazovky.";
+
+"FaceTec_feedback_center_face" = " Mějte svůj obličej ve středu obrazovky";
+
+"FaceTec_feedback_face_not_found" = "Mějte obličej v rámu obrazovky";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Dívejte se rovně";
+
+"FaceTec_feedback_face_not_upright" = "Držte hlavu rovně";
+
+"FaceTec_feedback_face_not_upright" = "Držte hlavu rovně";
+
+"FaceTec_feedback_hold_steady" = "Vydržte...";
+
+"FaceTec_feedback_move_phone_away" = "Oddalte se";
+
+"FaceTec_feedback_move_phone_away" = "Oddalte se";
+
+"FaceTec_feedback_move_phone_closer" = "Přibližte se";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Posuňte kameru do úrovně očí";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Podívejte se přímo do kamery";
+
+"FaceTec_feedback_move_web_closer" = "Přibližte se";
+
+"FaceTec_feedback_move_web_even_closer" = "Trochu blíže";
+
+"FaceTec_feedback_use_even_lighting" = "Mějte obličej víc na světle";
+
+"FaceTec_idscan_additional_review_message" = "Je vyžadována<br/>další kontrola";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Ukažte zadní stranu dokladu totožnosti";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Ukažte přední stranu dokladu totožnosti";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Zkontrolujte a potvrďte";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Pokračujte dolů";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Potvrďte, že je fotka ostrá a zřetelná";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Potvrďte, že je fotka ostrá a zřetelná";
+
+"FaceTec_idscan_type_selection_header" = "Připravte se na naskenování<br/>dokladu totožnosti";
+
+"FaceTec_initializing_camera" = "Zajištění přenosu z fotoaparátu";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Připravte se na";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "video selfie";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Připravte se na video selfie";
+
+"FaceTec_instructions_message_ready_1" = "Umístěte obličej do oválu,";
+
+"FaceTec_instructions_message_ready_2" = "stiskněte tlačítko Jsem připraven/a a přibližte se";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Umístěte obličej do oválu, stiskněte tlačítko Jsem připraven/a a přibližte se";
+
+"FaceTec_presession_brighten_your_environment" = "Okolí musí být světlejší";
+
+"FaceTec_presession_conditions_too_bright" = "Příliš světlé";
+
+"FaceTec_presession_eyes_straight_ahead" = " Dívejte se dopředu";
+
+"FaceTec_presession_frame_your_face" = "Obličej do oválného rámečku";
+
+"FaceTec_presession_hold_steady_1" = " Nehýbejte se: 1";
+
+"FaceTec_presession_hold_steady_2" = " Nehýbejte se: 2";
+
+"FaceTec_presession_hold_steady_3" = "Nehýbejte se: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Dívejte se dopředu";
+
+"FaceTec_presession_neutral_expression" = "Neutrální výraz, neusmívejte se";
+
+"FaceTec_presession_remove_dark_glasses" = "Sundejte si tmavé brýle";
+
+"FaceTec_result_facescan_upload_message" = "Nahrává se<br/>šifrovaný<br/>3D sken obličeje";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Čárový kód se nepodařilo naskenovat<br/>Zkuste to znovu";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Obličej se neshodoval<br/>do dostatečné míry";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Doklad totožnosti<br/>není plně viditelný";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Typ dokladu totožnosti není podporován<br/>Použijte jiný doklad totožnosti";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Text dokladu totožnosti není čitelný";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Vyfocení dokladu totožnosti<br/>bylo dokončeno";
+
+"FaceTec_result_idscan_success_back_side_message" = "Skenování dokladu totožnosti bylo dokončeno";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Přední strana dokladu totožnosti<br/>byla naskenována";
+
+"FaceTec_result_idscan_success_front_side_message" = "Skenování dokladu totožnosti bylo dokončeno";
+
+"FaceTec_result_idscan_success_passport_message" = "Skenování pasu bylo dokončeno";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Skenování průkazu totožnosti s fotografií<br/>bylo dokončeno";
+
+"FaceTec_result_idscan_unsuccess_message" = "Fotka dokladu<br/>totožnosti neodpovídá<br/>obličeji uživatele";
+
+"FaceTec_result_idscan_upload_message" = "Nahrává se<br/>šifrovaný<br/>doklad totožnosti";
+
+"FaceTec_result_success_message" = "Úspěch!";
+
+"FaceTec_retry_header" = "Zkusme to znovu";
+
+"FaceTec_retry_ideal_image_label" = "Ideální póza";
+
+"FaceTec_retry_instruction_message_1" = "Neutrální výraz, Bez úsměvu";
+
+"FaceTec_retry_instruction_message_2" = "Žádné odlesky ani extrémní osvětlení";
+
+"FaceTec_retry_instruction_message_3" = "Příliš rozmazané, vyčistěte objektiv";
+
+"FaceTec_retry_subheader_message" = "Potřebujeme jasnější video selfie";
+
+"FaceTec_retry_your_image_label" = "Vaše Selfie";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Zastavit proces";
+
+"FailureScreen.TooManyAttempts.Description" = "Kontaktujte poskytovatele služby a požádejte o pomoc";
+
+"FailureScreen.TooManyAttempts.Header" = "Ověření bylo zablokováno kvůli příliš mnoha pokusům";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Zařízení je zamčeno.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Příliš mnoho pokusů";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Zařízení není podporováno.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Nezdařilo se";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Zkuste to znovu později.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Chyba licence";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Platnost klíče vypršela, obsahoval neplatný text nebo se pokoušíte inicializovat v doméně, která není ve vašem klíči zadána.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Platnost klíče vypršela nebo je neplatný";
+
+"LoadResultReason.NetworkIssues.Description" = "Vaše zařízení nemohlo pokračovat kvůli problémům s připojením";
+
+"LoadResultReason.NetworkIssues.Header" = "Problémy se sítí";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Zdroje se nepodařilo načíst.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Nezdařilo se";
+
+"LoadResultReason.StillLoadingResources.Description" = "Probíhá načítání zdrojů.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Nezdařilo se";
+
+"FaceTec_action_im_ready" = "Jsem připraven";
+
+"ReadyScreen.Header" = "Připravte se na video selfie";
+
+"RetryScreen.Action.PassiveLiveness" = "Zkuste alternativní metodu";
+
+"FaceTec_action_try_again" = "Zkusit znovu";
+
+"RetryScreen.Description" = "Potřebujeme jasnější fotku.";
+
+"RetryScreen.Header" = "Zkusme to znovu";
+
+/*  */
+"RetryScreen.Message.Generic" = "Používejte konzistentní osvětlení a zkopírujte ideální pózu";
+
+"UploadScreen.Description" = "Nechte toto okno otevřené";
+
+"UploadScreen.Header" = "Ověření fotografie obličeje";
+

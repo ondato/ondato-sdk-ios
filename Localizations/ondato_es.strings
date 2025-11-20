@@ -1,252 +1,858 @@
-"ondato_continue_anyway" = "Continua de todos modos";
-"ondato_loading_title" = "Subiendo información";
-"ondato_loading_subtitle" = "Por favor espera…";
-"ondato_success_title" = "Registro completado correctamente ";
-"ondato_success_subtitle" = "Una vez que se confirme tu registro, te notificaremos por correo electrónico.";
-"ondato_close" = "Cierra";
-"ondato_button_capture" = "Captura";
-"ondato_try_again" = "Inténtalo de nuevo";
-"ondato_error_unauthorized_message" = "NO AUTORIZADO";
-"ondato_error_bad_request_message" = "BAD_REQUEST";
-"ondato_error_internal_server_error_message" = "Error interno del servidor";
-"ondato_error_connection_failed" = "Error de conexión";
-"ondato_error_server_is_down_message" = "El servidor está inactivo";
-"ondato_error_default_title" = "Oops…";
-"ondato_error_timeout_message" = "La sesión terminó";
-"ondato_start_button" = "Inicia";
-"ondato_error_something_wrong_title" = "Un error ocurrió";
-"ondato_consent_title" = "Consentimiento al tratamiento de los datos personales para";
-"ondato_consent_terms" = "Para obtener el servicio del Proveedor de Servicios, con este consentimiento expreso mi acuerdo de que la UAB \"Ondato\" recibirá y gestionará mis datos personales, incluyendo mis datos biométricos, obtenidos de la identificación remota de mi identidad personal, tomando y/o filmando la imagen en vivo de mi cara, la identidad de mi persona o el documento utilizado para identificarla y/o su imagen, y los datos personales contenidos en ellos y/o en el registro de población: imagen de mi cara, nombre, apellido, nacionalidad, género, código personal, fecha de nacimiento, números del documento que se está utilizando, fecha de emisión y validez, mi firma y la transferencia de dichos datos al proveedor del servicio. También observo que he sido informado que el responsable del tratamiento de mis datos personales, incluidos mis datos biométricos, especificado en este consentimiento, es el proveedor del servicio y UAB \"Ondato\" procesará mis datos personales solo hasta que termine el procedimiento de identificación remota, y los resultados serán transferidos al proveedor de servicios. También declaro que estoy informado y estoy de acuerdo en que mis datos personales obtenidos a distancia y sus fines puedan ser almacenados por la UAB \"Ondato\" durante un período de tiempo más largo que el que tarda para que se complete la identificación, o se transmitan sus resultados al proveedor de servicios, pero solo a petición del proveedor de servicios o de la obligación contractual de la UAB Ondato, pero no más de lo que se define en el Contrato que se firmó entre la UAB \"Ondato\" y el Proveedor de servicios o solicitado por el proveedor de servicios. Estoy informado de que puedo ponerme en contacto con el Proveedor de Servicios en relación con mis datos personales para obtener información más detallada. Por la presente declaro y confirmo, que todos los datos personales que proporcionaré para la identificación remota de mi identidad personal, son correctos y precisos, y el documento, que voy a utilizar para este fin no es falso y es válido.";
-"ondato_consent_agree" = "Estoy de acuerdo";
-"ondato_consent_disagree" = "No estoy de acuerdo";
-"ondato_start_identification_title" = "Bienvenido al proceso de verificación de identidad";
-"ondato_start_identification_description" = "Para seguir utilizando este servicio es necesario validar que te ajustas a los requisitos del sitio web. El proceso de verificación consta de 3 pasos.";
-"ondato_start_identification_step_1" = "1. Elige un documento";
-"ondato_start_identification_step_2" = "2. Toma una foto de tu documento";
-"ondato_start_identification_step_3" = "3. Toma una selfie";
-"ondato_choose_document_title" = "Elige un documento e inicia la verificación";
-"ondato_choose_document_passport" = "Pasaporte";
-"ondato_choose_document_id_card" = "Tarjeta de identidad";
-"ondato_choose_document_driving_licence" = "Permiso de conducción";
-"ondato_capture_passport_front_title" = "Por favor, captura la página del documento principal que contiene la zona MRZ";
-"ondato_capture_id_card_front_title" = "Por favor, captura la parte frontal de tu tarjeta de identidad";
-"ondato_capture_id_card_back_title" = "Por favor, captura la parte posterior de tu tarjeta de identidad";
-"ondato_capture_driver_licence_front_title" = "Por favor, captura la parte frontal del permiso de conducción";
-"ondato_capture_driver_license_back_title" = "Por favor, captura la parte posterior del permiso de conducción";
-"ondato_capture_check_taken_photo" = "Comprueba la calidad de la imagen capturada";
-"ondato_capture_check_taken_photo_description" = "Asegúrate de que la foto en el documento capturado es claramente visible y los datos son legibles. Si crees, que la calidad de la imagen es aceptable, por favor haz clic en el botón \"Continuar\".";
-"ondato_capture_id_card_front_instructions_description" = "Por favor, muestra la parte frontal de tu tarjeta de identidad en el área marcada y pulsa el botón \"Capturar\". El documento debe ser claramente visible, no borroso o pixelado";
-"ondato_capture_id_card_front_instructions_title" = "Por favor, captura el frente de la tarjeta de identidad";
-"ondato_capture_id_card_back_instructions_title" = "Por favor, captura la parte posterior de la tarjeta de identidad";
-"ondato_capture_id_card_back_instructions_description" = "Por favor, muestra la parte posterior de la tarjeta de identidad en el área marcada y pulsa el botón \"Capturar\". Asegúrate de que la zona MRZ sea claramente visible y que el documento no esté borroso o pixelado.";
-"ondato_capture_selfie_with_document_instructions_title" = "Captura tú mismo mientras sostienes tu documento";
-"ondato_capture_selfie_with_document_instructions_description" = "Manten el documento cerca de tu cara mientras tomas un selfie";
-"ondato_capture_driver_license_front_instructions_title" = "Por favor, captura la parte frontal del permiso de conducción";
-"ondato_capture_driver_license_front_instructions_description" = "Por favor, muestra la parte frontal del permiso de conducción en el área marcada y pulsa el botón \"Capturar\". La foto del permiso de conducir debe ser claramente visible, no borrosa o pixelada";
-"ondato_capture_driver_license_back_instructions_title" = "Por favor, captura la parte posterior del permiso de conducción";
-"ondato_capture_driver_license_back_instructions_description" = "Por favor, muestra la parte posterior del permiso de conducción en el área marcada y pulsa el botón \"Capturar\". La foto del permiso de conducir debe ser claramente visible, no borrosa o pixelada";
-"ondato_capture_passport_front_instructions_title" = "Por favor, captura la página principal del pasaporte";
-"ondato_capture_instructions_mistakes" = "Errores típicos:";
-"ondato_capture_instructions_too_blurry" = "Demasiado borrosa";
-"ondato_capture_instructions_too_small" = "Demasiado pequeña";
-"ondato_capture_instructions_bad_lighting" = "Mala iluminación";
-"ondato_capture_instructions_not_neutral" = "No es una cara neutral";
-"ondato_capture_instructions_too_dark" = "Demasiado oscuro";
-"ondato_capture_yourself_with_document_title" = "Captura tú mismo mientras sostienes tu documento";
-"ondato_capture_check_taken_photo_with_document" = "Por favor, comprueba la foto tomada";
-"ondato_capture_check_taken_photo_with_document_description" = "Asegúrate de que la foto es clara";
-"ondato_capture_face_instructions_title" = "Toma una selfie";
-"ondato_capture_face_instructions_description" = "Coloca tu cara en el centro del marco y sigue las instrucciones. La foto no debe ser borrosa y uniformemente iluminada.";
-"ondato_capture_passport_front_instructions_description" = "Por favor, muestra la página principal del documento que contiene la zona MRZ en el área marcada y pulsa \"Capturar\". La página del documento debe ser claramente visible, no borrosa o pixelada.";
-"FailedRule_PersonPhotoContainsFace_title" = "No se pudo reconocer la foto de la cara";
-"FailedRule_DocContainsFace_title" = "No se pudo reconocer la foto de la cara en el documento";
-"FailedRule_DocContainsMrz_title" = "No se pudo capturar el documento";
-"FailedRule_PersonAndDocPhotoMatch_title" = "No se pudo hacer coincidir la foto de la cara con la foto del documento";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_title" = "No se pudo reconocer la foto de la cara en el documento";
-"FailedRule_DocExpireDateInFuture_title" = "Documento caducado";
-"FailedRule_PersonAndDocumentPersonCodeMatch_title" = "No coincide con el número personal en tu documento y el formulario de registro";
-"FailedRule_PersonFaceOrDocIsMonochrome_title" = "Presentado copia en blanco y negro del documento";
-"FailedRule_DocumentContainsBothSides_title" = "Páginas del documento mezcladas";
-"FailedRule_ContainsMultipleFaces_title" = "Se detectan varias caras";
-"FailedRule_PersonFoundInComplyAdvantage_title" = "La persona con ese nombre se encuentra en la lista de sanciones";
-"FailedRule_ContainsCelebrity_title" = "Se reconoce una Celebridad";
-"FailedRule_LostAndStolen_title" = "Su documento es reconocido en la base de datos Perdidos y Robados";
-"FailedRule_PersonPhotoContainsFace_subtitle" = "Te pedimos que te tomes una selfie en tiempo real. Tu cara debe ser claramente vista, tomada en un ambiente bien iluminado y no borrosa. Por favor, asegúrate de que la cara es claramente visible";
-"FailedRule_DocContainsFace_subtitle" = "No se pudo reconocer la foto de tu cara en el documento. Te pedimos que captures la página del documento que contiene la foto de tu cara. Tu documento debe ser claramente visto, tomado en un ambiente bien iluminado, no borroso o pixelado. Por favor, asegúrate de que la foto de la cara en tu documento es claramente visible";
-"FailedRule_DocContainsMrz_subtitle" = "La exctracción de la zona MRZ no se pudo establecer. Te pedimos que captures la página del documento que contiene la zona MRZ. Tu documento debe ser claramente visto, tomado en un ambiente bien iluminado, no borroso o pixelado. Por favor, asegúrate de que la zona MRZ de tu documento es claramente legible";
-"FailedRule_PersonAndDocPhotoMatch_subtitle" = "El individuo en la selfie no coincide con el individuo en la foto del documento. Por favor, asegúrate de que el formato de subida de las fotos de tu cara es tan idéntico como en la foto del documento. Quítate las gafas y otros accesorios de la cara";
-"FailedRule_PersonAndDocPhotoMatchScoreTooHigh_subtitle" = "No se pudo reconocer la foto de tu cara en el documento. Te pedimos que captures la página del documento que contiene la foto de tu cara. Tu documento debe ser claramente visto, tomado en un ambiente bien iluminado, no borroso o pixelado. Por favor, asegúrate de que la foto de la cara en tu documento es claramente visible";
-"FailedRule_DocExpireDateInFuture_subtitle" = "Inténtalo de nuevo";
-"FailedRule_PersonAndDocumentPersonCodeMatch_subtitle" = "Tu número personal en el documento no coincide con el número perosnal en el registro. Te pedimos que envíes el documento, cuya información fue proporcionada en el formulario de registro";
-"FailedRule_PersonFaceOrDocIsMonochrome_subtitle" = "Has enviado una copia blanca y negra de tu documento. Por favor, ten en cuenta que debes tomar una foto de tu documento real. Tu documento debe ser claramente visto, tomado en un ambiente bien iluminado, no borroso o pixelado";
-"FailedRule_DocumentContainsBothSides_subtitle" = "Has enviado fotos de dos documentos diferentes. Ten en cuenta que debes capturar fotos del mismo documento. Tu documento debe ser claramente visto, tomado en un ambiente bien iluminado, no borroso o pixelado. Por favor, asegúrate de que la información en tu documento es claramente visible";
-"FailedRule_ContainsMultipleFaces_subtitle" = "Te informamos que hemos detectado varias caras durante tu identificación. Te pedimos que te asegures de que la identificación sea realizada únicamente por el titular del documento";
-"FailedRule_PersonFoundInComplyAdvantage_subtitle" = "Una persona con tu nombre se encuentra en la lista de sanciones. Revisaremos tu identificación manualmente e informaremos a la empresa sobre el resultado. Eso puede tardar un par de momentos";
-"FailedRule_ContainsCelebrity_subtitle" = "Una celebridad ha sido reconocida en una de las fotos que has subido. Por favor, ten en cuenta que debes capturar una foto de tí y tu documento personal";
-"FailedRule_LostAndStolen_subtitle" = "Tu documento ha sido reconocido en la base de datos Perdidos y Robados. Por favor, pulsa \"Inténtalo de nuevo\" y proporciona otro documento";
-"FaceTec_feedback_center_face" = "Centra tu cara";
-"FaceTec_action_continue" = "CONTINUAR";
-"FaceTec_action_im_ready" = "ESTOY LISTO";
-"FaceTec_action_try_again" = "Inténtalo de nuevo";
-"FaceTec_camera_permission_header" = "Activar la cámara";
-"FaceTec_camera_permission_message_enroll" = "Por favor, activa tu cámara selfie.";
-"FaceTec_camera_permission_message_auth" = "Tus permisos de cámara están desactivados. Toca a continuación para editar la configuración.";
-"FaceTec_camera_permission_enable_camera" = "Activar la cámara";
-"FaceTec_camera_permission_launch_settings" = "Acceder a la configuración";
-"FaceTec_feedback_face_not_found" = "Marca tu cara.";
-"FaceTec_feedback_face_not_looking_straight_ahead" = "Mirar al frente";
-"FaceTec_feedback_face_not_upright" = "Manten la cabeza recta";
-"FaceTec_feedback_hold_steady" = "Mantente estable";
-"FaceTec_feedback_move_phone_away" = "Aléjate";
-"FaceTec_feedback_move_phone_closer" = "Acércate ";
-"FaceTec_feedback_move_phone_even_closer" = "Acércate aún más";
-"FaceTec_feedback_move_phone_to_eye_level" = "Eleva la cámara hasta el nivel de los ojos";
-"FaceTec_feedback_use_even_lighting" = "Ilumina tu cara de manera más uniforme";
-"FaceTec_instructions_header_lighting" = "Ilumina tu cara de manera uniforme";
-"FaceTec_instructions_header_face_angle" = "Por favor, manten la cámara al nivel de los ojos";
+"Action.Close" = "Cerrar";
+
+"LanguageSelection.Header" = "Seleccionar idioma";
+
+"Modals.Abort.Action.ContinueProcess" = "Continuar el proceso";
+
+"Modals.Abort.Action.StopProcess" = "Detener el proceso";
+
+"Modals.Abort.Heading" = "¿Está seguro de que desea abortar este proceso?";
+
+"Modals.Error.Description" = "Algo salió mal, cierre este mensaje y vuelva a intentarlo";
+
+"Modals.Error.Heading" = "Vaya, ha ocurrido un error";
+
+"Modals.Success.Description" = "Continúe con el siguiente paso.";
+
+"Modals.Success.Heading" = "Correcto";
+
+"Action.Agree" = "Estoy de acuerdo";
+
+"Action.Disagree" = "En desacuerdo";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Continuar el proceso";
+
+"Disagree.Confirmation.Action.StopProcess" = "Detener el proceso";
+
+"Disagree.Confirmation.Header" = "Al rechazar el contenido se detendrá el proceso. ¿Estás seguro?";
+
+"Capture.Action.Capture" = "Capturar";
+
+"Capture.DriverLicense.Back.Description" = "Coloca el documento dentro del encuadre.";
+
+"Capture.DriverLicense.Back.Header" = "Capturar reverso";
+
+"Capture.DriverLicense.Front.Description" = "Coloca el documento dentro del encuadre.";
+
+"Capture.DriverLicense.Front.Header" = "Capturar anverso";
+
+"Capture.IdCard.Back.Description" = "Coloca el documento dentro del encuadre.";
+
+"Capture.IdCard.Back.Header" = "Capturar reverso";
+
+"Capture.IdCard.Front.Description" = "Coloca el documento dentro del encuadre.";
+
+"Capture.IdCard.Front.Header" = "Capturar anverso";
+
+"Capture.InternalPassport.DataPage.Header" = "Capturar la página principal";
+
+"Capture.InternalPassport.FrontCover.Header" = "Capturar la cubierta";
+
+"Capture.Passport.DataPage.Description" = "Coloca el documento dentro del encuadre.";
+
+"Capture.Passport.DataPage.Header" = "Capturar la página principal";
+
+"Capture.Passport.FrontCover.Header" = "Capturar la cubierta";
+
+"Capture.ResidencePermit.Back.Description" = "Coloca el documento dentro del encuadre.";
+
+"Capture.ResidencePermit.Back.Header" = "Capturar reverso";
+
+"Capture.ResidencePermit.Front.Description" = "Coloca el documento dentro del encuadre.";
+
+"Capture.ResidencePermit.Front.Header" = "Capturar anverso";
+
+"Capture.SocialId.Back.Description" = "Coloca el documento dentro del encuadre.";
+
+"Capture.SocialId.Back.Header" = "Capturar reverso";
+
+"Capture.SocialId.Front.Description" = "Coloca el documento dentro del encuadre.";
+
+"Capture.SocialId.Front.Header" = "Capturar anverso";
+
+"Preview.Action.Continue" = "Continuar";
+
+"Preview.Action.Retake" = "Repetir";
+
+"Preview.Header" = "¿La foto ha salido nítida, enfocada y sin reflejos?";
+
+"FaceCapture.Instructions.Action.Start" = "Iniciar";
+
+"FaceCapture.Instructions.Description" = "Durante el proceso, centra tu cara en el marco.";
+
+"FaceCapture.Instructions.Header" = "Autenticación facial";
+
+"FaceCapture.Instructions.Subheader" = "Procura que:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "tu gesto sea neutro";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "haya buena iluminación";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "la imagen sea nítida";
+
+"App.Button.Close" = "Cerrar";
+
+"App.Button.Continue" = "Continuar";
+
+"App.Errors.Default" = "Se encontró con un problema inesperado. Inténtelo de nuevo más tarde";
+
+"EndPage.Action.Continue" = "Continuar";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Gracias. Ahora puedes finalizar el proceso.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "¡Has terminado!";
+
+"Action.Close" = "Cerrar";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Sube el comprobante de tu dirección";
+
+"Document.Instructions.Action.Start" = "Empezar";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Encuadra el documento";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Captura el reverso de tu permiso de conducir";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Encuadra el documento";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Captura el anverso de tu permiso de conducir";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "La imagen no es demasiado borrosa";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Asegúrate de que:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "La iluminación es buena";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "El documento es legible";
+
+"Document.Instructions.IdCard.Back.Description" = "Encuadra el documento";
+
+"Document.Instructions.IdCard.Back.Heading" = "Captura el reverso de tu documento de identidad";
+
+"Document.Instructions.IdCard.Front.Description" = "Encuadra el documento";
+
+"Document.Instructions.IdCard.Front.Heading" = "Captura el anverso de tu documento de identidad";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Muestra la página principal del documento que contiene la zona MRZ en el área marcada.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Captura la página principal interna del pasaporte";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Encuadra el documento";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Captura la cubierta interna del pasaporte";
+
+"Document.Instructions.Passport.DataPage.Description" = "Incluye la zona MRZ en el área marcada.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Captura la página principal del pasaporte";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Encuadra el documento";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Captura la cubierta del pasaporte";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Encuadra el documento";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Captura el reverso de tu permiso de residencia";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Encuadra el documento";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Captura el anverso de tu permiso de residencia";
+
+"Document.Instructions.SocialId.Back.Description" = "Encuadra el documento";
+
+"Document.Instructions.SocialId.Back.Heading" = "Captura el reverso de tu carné de identidad social";
+
+"Document.Instructions.SocialId.Front.Description" = "Encuadra el documento";
+
+"Document.Instructions.SocialId.Front.Heading" = "Captura el anverso de tu carné de identidad social";
+
+"Document.Select.Document.DriverLicense" = "Permiso de conducir";
+
+"Document.Select.Document.IdCard" = "Documento de identidad";
+
+"Document.Select.Document.InternalPassport" = "Pasaporte interno";
+
+"Document.Select.Document.Passport" = "Pasaporte";
+
+"Document.Select.Document.ResidencePermit" = "Permiso de residencia";
+
+"Document.Select.Document.SocialId" = "(Carné de identidad social)";
+
+"Document.Select.Header" = "Selecciona tu documento";
+
+"FaceCapture.Instructions.Description" = "Coloca la cara en medio del encuadre.";
+
+"FaceCapture.Instructions.Header" = "Hazte una autofoto";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "La imagen se ve bien";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "La expresión de tu rostro es neutra";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "La iluminación es buena";
+
+"FaceCapture.Instructions.Subheader" = "Asegúrate de que:";
+
+"Result.Failure.Action.TryAgain" = "Volver a intentarlo";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Por favor, intente de nuevo y asegúrese de que el documento esté uniformemente iluminado con una fuente de luz blanca.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "La foto proporcionada tiene mala iluminación";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Por favor, intente de nuevo y proporcione un documento en buen estado.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Parte del documento proporcionado está dañado";
+
+"Result.Failure.DocumentFromScreen.Description" = "Envía una foto válida del documento físico para finalizar el proceso de identificación";
+
+"Result.Failure.DocumentFromScreen.Header" = "La foto del documento proporcionado no es válida";
+
+"Result.Failure.DocumentIsExpired.Description" = "Facilita un documento válido para finalizar el proceso de identificación";
+
+"Result.Failure.DocumentIsExpired.Header" = "El documento facilitado ha caducado";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Usa un documento de la lista proporcionada para finalizar el proceso de identificación";
+
+"Result.Failure.DocumentNotAccepted.Header" = "El tipo de documento facilitado no cumple los requisitos";
+
+"Result.Failure.DocumentPrinted.Description" = "Envía una foto válida del documento físico para finalizar el proceso de identificación";
+
+"Result.Failure.DocumentPrinted.Header" = "La foto del documento proporcionado no es válida";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Facilita un documento con caracteres latinos";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "El tipo de documento facilitado no cumple los requisitos";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Te rogamos que captures tu documento original";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Se ha rechazado tu identificación";
+
+"Result.Failure.FacesNotMatch.Description" = "Vuelve a intentarlo o ponte en contacto con el servicio de atención al cliente";
+
+"Result.Failure.FacesNotMatch.Header" = "La foto del documento y la autofoto facilitada no coinciden";
+
+"Result.Failure.Generic.Description" = "Ponte en contacto con el servicio de atención al cliente";
+
+"Result.Failure.Generic.Header" = "Ha habido un problema con tu identificación";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Vuelve a intentarlo y asegúrate de que el comprobante del documento de la dirección es válido";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "La foto del comprobante de la dirección facilitado no es válida";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Vuelve a intentarlo y facilita todas las fotos que sean necesarias de tu documento";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Falta la foto del documento";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Vuelve a intentarlo o ponte en contacto con el servicio de atención al cliente";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Falta la foto del rostro";
+
+"Result.Failure.MoreThanOnePerson.Description" = "El proceso de identificación se debe realizar sin que participen otras personas";
+
+"Result.Failure.MoreThanOnePerson.Header" = "El/La usuario/a no está a solas en el proceso";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Vuelve a intentarlo y procura que el documento se pueda leer claramente y que toda la información se vea bien";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Parte del documento no se ve bien";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Sigue las instrucciones para volver a intentarlo. Se te debe ver bien toda la cara";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Parte de la cara no se ve";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Vuelve a intentarlo y procura que todo el documento esté bien iluminado";
+
+"Result.Failure.PoorPhotoLighting.Header" = "La foto facilitada no está bien iluminada";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Vuelve a intentarlo y procura que la información del documento se pueda leer claramente. Si la cámara no hace fotos de buena calidad, intenta realizar el proceso desde otro dispositivo.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "La foto facilitada no tiene buena calidad";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Vuelve a intentarlo o ponte en contacto con el servicio de atención al cliente";
+
+"Result.Failure.SelfieHasNoFace.Header" = "En la foto facilitada no se ve ninguna cara";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Vuelve a intentarlo o ponte en contacto con el servicio de atención al cliente";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "La foto facilitada no es relevante";
+
+"Result.Success.Header" = "¡Proceso realizado correctamente!";
+
+"ResultsWaiting.Delay.Description" = "Parece que estamos teniendo más tráfico de lo habitual. Te redirigiremos en breve.";
+
+"ResultsWaiting.Delay.Header" = "Lo sentimos. Estamos tardando más de lo esperado";
+
+"ResultsWaiting.Details.Description" = "La espera es de 2 minutos de media.";
+
+"ResultsWaiting.Details.Header" = "Espera...";
+
+"ResultsWaiting.Details.Message.Message1" = "Los datos de tu documento se están cifrando.";
+
+"ResultsWaiting.Details.Message.Message2" = "El documento se está analizando en busca de daños externos.";
+
+"ResultsWaiting.Details.Message.Message3" = "Las fotos del documento que has facilitado se están revisando.";
+
+"ResultsWaiting.Details.Message.Message4" = "Validando si eres una persona real";
+
+"ResultsWaiting.Details.Message.Message5" = "Se están comprobando la autenticidad y la validez de los datos.";
+
+"ResultsWaiting.Details.Message.Message6" = "Se están comprobando el estado del documento y los datos de los registros.";
+
+/*  */
+"Action.Cancel" = "Cancelar";
+
+/*  */
+"Action.Loading.Header" = "Cargando...";
+
+/*  */
+"Action.Submit" = "Enviar";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Documento escaneado correctamente";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Coloca el documento dentro del encuadre.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Capturar documento";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Captura del comprobante de domicilio";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Podría ser un extracto bancario o un recibo de servicios públicos";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Archivos admitidos: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "El tamaño del archivo no puede superar los 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "El formato del archivo subido no es compatible";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Por favor proporcione su comprobante de domicilio";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Tamaño de archivo máximo: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Requisitos:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Debe contener su nombre completo y dirección.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "El documento no tiene más de 3 meses";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Seleccionar archivo";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Seleccionar de la galería";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Subir documento";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Subiendo...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Necesitamos su TRN para verificar su cuenta. Por favor, introduzca su TRN tal como aparece en el documento oficial y verifique que sea correcto antes de enviarlo para evitar retrasos.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Por favor, proporcione su Número de Registro de Contribuyente (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "El número TRN consta de 9 dígitos";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "Código TRN:";
+
+/*  */
+"Consent.Static.Description" = "Para obtener el servicio del Proveedor de Servicios, con este consentimiento expreso mi acuerdo de que UAB \"Ondato\" recibirá y gestionará mis datos personales, incluidos mis datos biométricos, obtenidos de la identificación remota de mi identidad personal mediante la toma y/o grabación de una imagen en vivo de mi rostro, la identidad de mi persona o el documento utilizado para identificarla y/o su imagen y los datos personales contenidos en ellos y/o verificar en el registro de población: imagen de mi rostro, nombre, apellido, nacionalidad, género, código personal, fecha de nacimiento, números del documento que se está utilizando, fecha de emisión y validez, mi firma y la transferencia de dichos datos al Proveedor de Servicios. También noto que estoy informado de que el controlador de mis datos personales, incluidos mis datos biométricos, especificados en este consentimiento es el Proveedor de Servicios y UAB \"Ondato\" procesará mis datos personales solo hasta que el procedimiento de identificación remota haya terminado y los resultados se transfieran al Proveedor de Servicios. También declaro que estoy informado y de acuerdo en que mis datos personales obtenidos para la identificación remota y sus propósitos pueden ser almacenados por UAB \"Ondato\" por un período de tiempo más largo del que se necesita para completar la identificación o la transmisión de sus resultados al Proveedor de Servicios, pero solo a solicitud del Proveedor de Servicios o por obligación contractual de UAB Ondato con el Proveedor de Servicios, pero no más tiempo del que se define en el Contrato que fue firmado entre UAB \"Ondato\" y el Proveedor de Servicios o solicitado por el Proveedor de Servicios. Estoy informado de que puedo enviar una solicitud sobre mis datos personales para obtener información más detallada en info@ondato.com. Por la presente declaro y confirmo que todos los datos personales que proporcionaré para el propósito de identificación remota de mi identidad personal son correctos y precisos, y el documento que utilizaré para este propósito no es falso y es válido.";
+
+/*  */
+"Consent.Static.Heading" = "Consentimiento para el tratamiento de datos personales";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Coloca el documento dentro del marco";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Capture la zona MRZ de su tarjeta de identidad";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Coloca el documento y la línea MRZ dentro del marco";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Capture el anverso de su tarjeta de identidad con línea MRZ";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Por favor, muestre la página principal del documento que contiene la zona MRZ en el área marcada.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Captura la página del pasaporte con la zona MRZ";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Comprobante de domicilio";
+
+/*  */
+"Error.Interrupt.Description" = "Debido a interrupciones, el proceso se ha detenido. Por favor, permanece en esta aplicación hasta que hayas completado todos los pasos.";
+
+/*  */
+"Error.Interrupt.Heading" = "El proceso fue interrumpido";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Vuelva a conectarse para continuar";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Tu conexión a Internet se ha ido";
+
+/*  */
+"FaceCapture.Validation.Description" = "Por favor, espera...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Validando tu foto";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Abrir ajustes";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Sostén el documento cerca de tu cara mientras te haces un selfie";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Captúrate mientras sostienes tu documento";
+
+/*  */
+"Instructions.Identification.Description" = "Para seguir utilizando este servicio, necesitas validar que cumples con los requisitos del sitio web.";
+
+/*  */
+"Instructions.Identification.Header" = "Bienvenido al proceso de \n verificación de identidad";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Un momento";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Finalizando los últimos detalles";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Capturando la foto";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Alinea tu cara en el marco y toca capturar";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Captura tu rostro";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "¿Tu cara es claramente visible?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Asegúrate de que la foto sea clara y legible";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Le rogamos que se ponga en contacto con el servicio de atención al cliente para obtener más información.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Su identificación ha sido rechazada.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Le rogamos que se ponga en contacto con el servicio de atención al cliente para obtener más información o intente de nuevo con otro documento.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Su identificación ha sido rechazada debido a un país o estado prohibido.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Le rogamos que vuelva a intentar el proceso o se ponga en contacto con el servicio de atención al cliente.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Su identificación ha sido rechazada.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Póngase en contacto con el servicio de atención al cliente para obtener más información";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Su identificación ha sido rechazada.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Le rogamos que se ponga en contacto con el servicio de atención al cliente para obtener más información.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Su identificación ha sido rechazada debido a restricciones de edad.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Gracias por su paciencia";
+
+/*  */
+"Result.Success.MRZ.Heading" = "La captura de información fue exitosa";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Parece que estamos experimentando más tráfico de lo habitual. Serás redirigido en breve.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Lo sentimos, está tardando más de lo esperado";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Para continuar, asegúrate de que el documento tenga NFC y que esté habilitado en tu dispositivo.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Parece que no puedes continuar sin NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Coloca tu documento detrás del dispositivo";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Escaneando... Por favor, mantenga";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Conexión perdida durante el escaneo. Inténtalo de nuevo.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Intenta escanear el documento de nuevo.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Parece que el proceso fue interrumpido.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "No se pudo leer el documento.Revise los detalles e inténtelo de nuevo.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Respuesta inesperada del chip. Vuelva a escanear el documento.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "El documento escaneado no es válido. Por favor, intenta de nuevo con uno compatible.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Se han detectado múltiples chips. Por favor, escanea solo un documento a la vez.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Tu dispositivo no es compatible con NFC o actualmente está desactivado. Por favor cambia a un dispositivo compatible o activa NFC en la configuración.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "NFC no compatible";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "¿Tienes dificultades?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Añade tu tarjeta de identificación a la parte trasera de tu teléfono";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Coloca tu tarjeta de identificación en la parte trasera de tu teléfono para el escaneo NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Escanea tu DNI con NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Coloca tu pasaporte en la parte trasera de tu teléfono para el escaneo NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Escanea tu pasaporte con NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Cancelar";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Por favor, active NFC para continuar con el proceso";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC está desactivado";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Ajustes";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Añade la primera página de tu pasaporte a la parte trasera de tu teléfono";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Si encontraste dificultades para acceder a NFC, prueba estos métodos:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Intenta leer la última página del documento.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Intenta leer la página de la foto del documento.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Si hay alguna funda en el documento, quítala.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Por favor, sostenga el documento en la parte trasera de su teléfono.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Escanear documento";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Consejos para probar";
+
+"Action.Cancel" = "Cancelar";
+
+"CaptureResultReason.TimeOut.Description" = "Vuelve a intentarlo";
+
+"CaptureResultReason.TimeOut.Header" = "Tiempo agotado";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Cancelar";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Su rostro está demasiado inclinado hacia la izquierda";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Su rostro está demasiado inclinado hacia la derecha";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "El rostro no se ve en la cámara";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Su rostro gira demasiado a la izquierda";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Su rostro gira demasiado a la derecha";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Su rostro está demasiado a la izquierda";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Su rostro está demasiado a la derecha";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Su rostro está demasiado arriba";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Su rostro está demasiado abajo";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Mantenga el dispositivo a la altura de los ojos";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Mover la cámara al nivel de los ojos";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Cámara demasiado cerca";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Cámara demasiado lejos";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Su rostro está demasiado cerca";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Su rostro está demasiado lejos";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Pulsa Intro o la barra espaciadora para ver indicaciones sobre cómo alinear el rostro";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Toca dos veces la pantalla para ver indicaciones sobre cómo alinear el rostro";
+
+"FaceTec_camera_feed_issue_action" = "VOLVER A INTENTARLO DE TODOS MODOS";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Problema al fijar la señal de la cámara";
+
+"FaceTec_camera_feed_issue_header" = "Problema al fijar<br/>la señal de la cámara";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Este sistema no se puede verificar por el siguiente motivo:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Esta aplicación bloquea los ajustes sospechosos de la cámara web.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Tienes más información aquí</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Esta aplicación bloquea los ajustes sospechosos de la cámara web. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Tienes más información aquí</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Posible problema";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Solución";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Otra aplicación ya está usando la cámara.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Firefox no recuerda los permisos de la cámara.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Cierra la otra aplicación.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Marca «Recordar permisos».";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Una aplicación externa está modificando el vídeo.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Cierra o desinstala la otra aplicación.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "El hardware no se puede asegurar.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Utiliza otro dispositivo.";
+
+"FaceTec_camera_permission_header" = "Activa la cámara";
+
+"FaceTec_camera_permission_message" = "Los permisos de la cámara están desactivados.<br/>Comprueba los ajustes del sistema operativo y el navegador.";
+
+"FaceTec_enter_fullscreen_action" = "ABRIR A PANTALLA COMPLETA";
+
+"FaceTec_enter_fullscreen_header" = "Modo selfi a pantalla completa";
+
+"FaceTec_enter_fullscreen_message" = "Antes de empezar, haz clic en el botón de abajo para abrir el modo de pantalla completa.";
+
+"FaceTec_feedback_center_face" = "Centre su rostro";
+
+"FaceTec_feedback_face_not_found" = "Encuadre su rostro";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Mire hacia el frente";
+
+"FaceTec_feedback_face_not_upright" = "Mantenga la cabeza recta";
+
+"FaceTec_feedback_face_not_upright" = "Mantenga la cabeza recta";
+
+"FaceTec_feedback_hold_steady" = "Quédese quieto";
+
+"FaceTec_feedback_move_phone_away" = "Apártese";
+
+"FaceTec_feedback_move_phone_away" = "Apártese";
+
+"FaceTec_feedback_move_phone_closer" = "Acérquese";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Coloque la cámara a la altura de los ojos";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Mira Directamente A La Cámara";
+
+"FaceTec_feedback_move_web_closer" = "Acerca la cara y rellena el óvalo";
+
+"FaceTec_feedback_move_web_even_closer" = "Aún Más Cerca";
+
+"FaceTec_feedback_use_even_lighting" = "Ilumine el rostro de forma más uniforme";
+
+"FaceTec_idscan_additional_review_message" = "Se requiere una<br/>revisión adicional";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Muestra el reverso del documento de identidad";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Muestra el anverso del documento de identidad";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Revisar y confirmar";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Desplazar";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Comprueba que la foto esté nítida y se pueda leer con claridad";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Comprueba que la foto esté nítida y se pueda leer con claridad";
+
+"FaceTec_idscan_type_selection_header" = "Prepárate para escanear<br/>tu documento de identidad";
+
+"FaceTec_initializing_camera" = "Fijando la señal de la cámara";
+
+/*  */
 "FaceTec_instructions_header_ready_1" = "Prepárate para";
-"FaceTec_instructions_header_ready_2" = "Tu selfie en vídeo";
-"FaceTec_instructions_message_ready" = "Por favor, enmarca tu cara en el pequeño óvalo, luego el gran óvalo";
-"FaceTec_result_facescan_upload_message" = "Cargando, por favor, espera";
-"FaceTec_result_success_message" = "La cara se reconoció con éxito";
-"FaceTecRetryReasonGeneric_title" = "La cara no se pudo reconocer";
-"FaceTecRetryReasonGeneric_subtitle" = "Te pedimos que te asegures de que tu cara no está obstruida por ningún artículo y no estás haciendo cualquier expresión facial inusual durante la identificación";
-"FaceTecRetryReasonBadLighting_title" = "Mala iluminación de la foto";
-"FaceTecRetryReasonBadLighting_subtitle" = "Por favor, ten en cuenta que tu identificación no tuvo éxito debido a la mala iluminación. Te pedimos que te asegures de que tu cara está iluminada uniformemente";
-"FaceTecRetryReasonFaceAngle_title" = "Formato de presentación facial no válido";
-"FaceTecRetryReasonFaceAngle_subtitle" = "Te pedimos que te asegures de que tu cara encaje correctamente en la zona marcada. Debes mirar directamente a la cámara";
-"FaceTecRetryReasonBadLightingFailureToAcquire_title" = "Iluminación brillante";
-"FaceTecRetryReasonBadLightingFailureToAcquire_subtitle" = "Por favor, ten en cuenta que durante tu identificación se detectó una fuerte iluminación alrededor de tu cara. Te pedimos que te asegurares de que tu entorno no es demasiado brillante";
-"FaceTec_instructions_message_ready_1" = "Enmarca tu cara en el óvalo";
-"FaceTec_instructions_message_ready_2" = "";
-"FaceTec_presession_hold_steady_1" = "Mantente estable para: 1";
-"FaceTec_presession_hold_steady_2" = "Mantente estable para: 2";
-"FaceTec_presession_hold_steady_3" = "Mantente estable para: 3";
-"FaceTec_presession_neutral_expression" = "Expresión neutra, sin sonreír";
-"FaceTec_presession_position_face_straight_in_oval" = "Mirar al frente";
-"FaceTec_presession_remove_dark_glasses" = "Quítate las gafas oscuras";
-"FaceTec_presession_brighten_your_environment" = "Ilumina tu ambiente";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "Tu selfi en vídeo";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Prepárate para tu selfi en vídeo";
+
+"FaceTec_instructions_message_ready_1" = "Encuadra tu rostro en el óvalo,";
+
+"FaceTec_instructions_message_ready_2" = "pulsa «Todo listo» y acércate";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Encuadra tu rostro en el óvalo, pulsa «Todo listo» y acércate";
+
+"FaceTec_presession_brighten_your_environment" = "Ilumine su entorno";
+
 "FaceTec_presession_conditions_too_bright" = "Demasiada luz";
-"FaceTec_presession_eyes_straight_ahead" = "Mirar al frente";
-"FaceTec_presession_frame_your_face" = "Enmarca tu cara en el óvalo";
-"FaceTec_retry_header" = "Vamos a intentarlo de nuevo…";
-"FaceTec_retry_ideal_image_label" = "Un pose ideal";
-"FaceTec_retry_instruction_message_1" = "Expresión neutra, sin sonreír";
-"FaceTec_retry_instruction_message_2" = "Sin deslumbramiento o iluminación extrema";
-"FaceTec_retry_instruction_message_3" = "Demasiado borroso, limpia tu cámara";
-"FaceTec_retry_subheader_message" = "Necesitamos una selfie de vídeo más clara.";
-"FaceTec_retry_your_image_label" = "Tu selfie";
-"ondato_unrelated_photo_primary" = "Tu identificación fue rechazada debido a la foto enviada no relacionada.";
-"ondato_data_does_not_match_second" = "Te pedimos que compruebes la información que se proporcionó en el formulario del cliente. La información en el formulario del cliente debe coincidir con la información en tu documento.";
-"ondato_incorrect_information_provided_second" = "Te pedimos que vuelvas a intentar el proceso o ponte en contacto con el servicio al cliente.";
-"ondato_capture_mrz_id_instructions_description" = "Por favor, muestra la parte posterior de tu tarjeta de identificación que contiene la zona MRZ.";
-"ondato_waiting_page_success_title" = "Tu identificación ha tenido éxito.";
-"ondato_waiting_page_verify_your_identity" = "Tus datos serán utilizados únicamente para verificar tu identidad.";
-"ondato_capture_mrz_instructions_title" = "Prepara tu documento para capturar la zona MRZ";
-"ondato_waiting_page_facial_photo_obscured" = "Comprobamos si tu foto facial no está obstruida por sombras y rayos de luz.";
-"ondato_prohibited_country_or_state_second" = "Te pedimos que te pongas en contacto con el proveedor de servicios para obtener más información o vuelve a intentarlo con otro";
-"ondato_underage_person_second" = "Te pedimos que te pongas en contacto con el proveedor de servicios para obtener más información.";
-"ondato_waiting_page_encrypt_data_for_final_approval" = "Ciframos los datos y los transferimos para tu aprobación final.";
-"ondato_part_of_document_is_covered_second" = "Te pedimos que vuelvas a intentar el proceso de identificación asegurándote de que el documento es claramente legible";
-"ondato_waiting_page_check_if_all_photos_uploaded" = "Comprobamos si has proporcionado todas las fotos requeridas.";
-"ondato_blurred_photo_second" = "Te pedimos que vuelvas a intentar el proceso de identificación y que te asegures de que los datos de los documentos sean claramente legibles.";
-"ondato_sanctioned_primary" = "Tu identificación fue rechazada.";
-"ondato_document_not_accepted_primary" = "Tu identificación fue rechazada debido a un documento que no es aceptable.";
-"ondato_missing_document_photo_second" = "Te pedimos que vuelvas a intentar el proceso de identificación y capturar todas las imágenes necesarias de tu documento.";
-"ondato_poor_photo_lighting_second" = "Te pedimos que vuelvas a intentar el proceso de identificación y que te asegures de que el documento esté iluminado uniformemente.";
-"ondato_waiting_page_biometric_data" = "Creamos un modelo 3D a partir de tus datos biométricos faciales.";
-"ondato_bad_media_format_second" = "Te pedimos que captures tu documento original.";
-"ondato_data_does_not_match_primary" = "Tu identificación fue rechazada debido a la falta de información en el documento y la ficha de cliente.";
-"ondato_waiting_page_success_body" = "Gracias por tu paciencia.";
-"ondato_capture_nfc_passport_title_initial" = "Agrega la primera página de tu pasaporte a la parte posterior de tu teléfono";
-"ondato_capture_nfc_failure_title" = "Parece que el proceso fue interrumpido.";
-"ondato_underage_person_primary" = "Tu identificación fue rechazada debido a restricciones de edad.";
-"ondato_expiration_date_mismatch_primary" = "Hay un problema con tu identificación.";
-"ondato_document_is_expired_second" = "Debes capturar un documento válido para terminar el proceso de identificación.";
-"app_name" = "smartscanner-mrz-parser";
-"ondato_document_with_non_latin_characters_primary" = "Tu identificación fue rechazada debido a un tipo de documento que no es aceptable";
-"ondato_nfc_off_dialog_cancel_button" = "Cancelar";
-"ondato_incorrect_information_provided_primary" = "Hay un problema con tu identificación.";
-"ondato_faces_does_not_match_primary" = "Tu identificación fue rechazada debido al desajuste de tu selfie y la imagen del documento.";
-"ondato_waiting_page_document_facial_image" = "Comprobamos si la imagen facial es claramente visible en tu documento.";
-"ondato_start_again_button" = "Empezar de nuevo";
-"ondato_capture_mrz_success_title" = "La captura de información ha tenido éxito.";
-"ondato_more_than_one_person_second" = "El proceso de identificación debe realizarse sin que otras personas participen en el proceso.";
-"ondato_capture_mrz_success_description" = "Gracias por tu paciencia.";
-"ondato_capture_mrz_failure_title" = "Parece que el proceso fue interrumpido.";
-"ondato_doc_and_bio_age_doesnt_match_second" = "Te pedimos que vuelvas a intentar el proceso o ponte en contacto con el servicio al cliente.";
-"ondato_part_of_face_is_covered_primary" = "Tu identificación fue rechazada debido a que la cara está cubierta.";
-"ondato_waiting_page_authenticity" = "Comprobamos la autenticidad y validez de los datos.";
-"ondato_passport_scan_help_step3" = "Si hay alguna portada en el documento, elimínala.";
-"ondato_passport_scan_help_step1" = "Intenta leer la última página del documento.";
-"ondato_passport_scan_help_step2" = "Intenta leer la página de fotos del documento.";
-"ondato_name_mismatch_primary" = "Hay un problema con tu identificación.";
-"ondato_duplicated_info_primary" = "Tu identificación es rechazada.";
-"ondato_miscellaneous_second" = "Te rogamos que te pongas en contacto con el proveedor de servicios para obtener más información.";
-"ondato_possible_fraud_attempt_second" = "Te rogamos que te pongas en contacto con el proveedor de servicios para obtener más información.";
-"ondato_nfc_off_dialog_description" = "Por favor, encienda NFC para ir más lejos en el proceso";
-"ondato_waiting_page_failure_close_title" = "Cerrar";
-"ondato_something_went_wrong_second" = "Por favor, inténtalo de nuevo.";
-"ondato_doc_and_bio_age_doesnt_match_primary" = "Hay un problema con tu identificación.";
-"ondato_missing_selfie_photo_second" = "Te pedimos que vuelvas a intentar el proceso de identificación de acuerdo con las instrucciones proporcionadas.";
-"ondato_waiting_page_success_continue_title" = "Continuar";
-"ondato_nfc_scan_success_title" = "Tu identificación ha tenido éxito.";
-"ondato_waiting_page_taking_longer_than_expected" = "Tu verificación está tardando más de lo esperado. Por favor, no cierres la ventana, quedan solo unos momentos.";
-"ondato_capture_nfc_instructions_description" = "Obten tu documento y prepara NFC en tu dispositivo.";
-"ondato_capture_nfc_instructions_title" = "Prepara tu documento para el análisis NFC";
-"ondato_duplicated_info_second" = "El usuario ya existe.";
-"ondato_passport_scan_help_title" = "Si tuviste dificultades para acceder a NFC, prueba estos métodos:";
-"ondato_capture_nfc_settings_instructions_title" = "Parece que no puedes continuar sin NFC.";
-"ondato_bad_media_format_primary" = "Tu identificación fue rechazada.";
-"ondato_unrelated_photo_second" = "Debes capturar un documento válido para terminar el proceso de identificación.";
-"ondato_waiting_page_ai_check" = "Comparamos la coincidencia entre tu cara y el documento.";
-"ondato_expiration_date_mismatch_second" = "Te pedimos que vuelvas a intentar el proceso o ponte en contacto con el servicio al cliente.";
-"ondato_capture_nfc_failure_description" = "Escanear NFC no tuvo éxito.";
-"ondato_waiting_page_external_damage" = "Comprobamos si tu documento tiene daños externos y si todas las marcas necesarias son visibles.";
-"ondato_nfc_off_dialog_title" = "NFC está desactivado";
-"ondato_missing_selfie_photo_primary" = "Tu identificación fue rechazada debido a la presentación incorrecta de selfies.";
-"ondato_capture_nfc_settings_instructions_description" = "Para continuar, debes asegurarte de que el documento tiene NFC y se ha activado en tu dispositivo.";
-"ondato_capture_nfc_description_initial" = "Puedes intentar colocar tu tarjeta en diferentes lugares.";
-"ondato_faces_does_not_match_second" = "Te pedimos que vuelvas a intentar el proceso de identificación o ponte en contacto con el servicio al cliente.";
-"ondato_miscellaneous_primary" = "Tu identificación fue rechazada.";
-"ondato_part_of_face_is_covered_second" = "Te pedimos que vuelvas a intentar el proceso de identificación de acuerdo con las instrucciones proporcionadas. Por favor, no te cubras la cara.";
-"ondato_part_of_document_is_covered_primary" = "Tu identificación fue rechazada debido a la información cubierta en la foto del documento.";
-"ondato_continue_button" = "Continuar";
-"ondato_prohibited_country_or_state_primary" = "Tu identificación fue rechazada debido al país o estado prohibido.";
-"ondato_possible_fraud_attempt_primary" = "Tu identificación es rechazada.";
-"ondato_waiting_page_scan_document" = "Escaneamos el texto y las marcas especiales del documento.";
-"ondato_poor_photo_quality_second" = "Te pedimos que vuelvas a intentar el proceso de identificación y asegúrate de que los datos del documento sean claramente legibles. En caso de mala calidad de la cámara, intenta iniciar el proceso en un dispositivo diferente.";
-"ondato_something_went_wrong_primary" = "Algo salió mal.";
-"ondato_waiting_page_encrypt_data" = "Ciframos tus datos y los enviamos para tu verificación.";
-"ondato_capture_nfc_id_title_initial" = "Agrega tu tarjeta de identidad en la parte posterior de tu teléfono.";
-"ondato_document_is_expired_primary" = "Tu identificación fue rechazada debido a la expiración del documento.";
-"ondato_nfc_scan_prompt_request_present" = "Por favor, manten el documento en la parte posterior de tu teléfono.";
-"ondato_capture_nfc_description_scanning" = "Ten paciencia. Esto puede tardar unos segundos o más.";
-"ondato_prohibited_nationality_primary" = "Tu identificación fue rechazada.";
-"ondato_try_alternative" = "Prueba una alternativa";
-"ondato_more_than_one_person_primary" = "Tu identificación fue rechazada debido a otras personas que participan en el proceso.";
-"ondato_nfc_scan_success_body" = "Tu identificación ha tenido éxito.";
-"ondato_name_mismatch_second" = "Te pedimos que vuelvas a intentar el proceso o ponte en contacto con el servicio al cliente.";
-"ondato_nfc_off_dialog_settings_button" = "Configuraciones";
-"ondato_start_identification_nfc_step_2" = "2. Verificar NFC";
-"ondato_waiting_page_no_other_person" = "Comprobamos si no hay otras personas en tus fotos.";
-"ondato_document_not_accepted_second" = "El documento que se ha presentado no es aceptable. Te pedimos que presentes un pasaporte o documento de identidad válido para finalizar la identificación";
-"ondato_waiting_page_documents_clearly_legible" = "Comprobamos si tu documento es claramente legible.";
-"ondato_document_with_non_latin_characters_second" = "Te pedimos que captures un documento reconocido globalmente válido con MRZ.";
-"ondato_sanctioned_second" = "Te pedimos que te pongas en contacto con el proveedor de servicios para obtener más información.";
-"ondato_capture_mrz_failure_description" = "Asegúrate de que el documento sea claramente visible, no demasiado pequeño y oscuro.";
-"ondato_missing_document_photo_primary" = "Tu identificación fue rechazada debido a la falta de foto del documento.";
-"ondato_blurred_photo_primary" = "Tu identificación fue rechazada debido a la foto borrosa.";
-"ondato_prohibited_nationality_second" = "Te pedimos que vuelvas a intentar el proceso o ponte en contacto con el servicio al cliente.";
-"ondato_poor_photo_lighting_primary" = "Tu identificación fue rechazada debido a la mala iluminación de la foto.";
-"ondato_waiting_page_data_in_registers" = "Comprobamos el estatus de tu documento y los datos en los registros.";
-"ondato_poor_photo_quality_primary" = "Tu identificación fue rechazada debido a la mala calidad de la foto.";
-"ondato_waiting_page_failure_try_again_title" = "Inténtalo de nuevo.";
-"ondato_waiting_page_document_obscured" = "Verificamos si los datos de tu documento no están oscurecidos por sombras o rayos de luz.";
 
-"ondato_interrupted_title" = "El proceso fue interrumpido";
-"ondato_interrupted_description" = "Debido a las interrupciones, el proceso se ha detenido. Permanezca en esta aplicación hasta que haya completado todos los pasos.";
+"FaceTec_presession_eyes_straight_ahead" = "Mire hacia el frente";
 
-"face_auth_too_many_attempts_title" = "Verificación bloqueada debido a demasiados intentos";
-"face_auth_too_many_attempts_description" = "Por favor, póngase en contacto con el proveedor de servicios para obtener ayuda";
-"face_auth_too_many_attempts_button" = "DETENER EL PROCESO";
+"FaceTec_presession_frame_your_face" = "Encuadre su rostro en el óvalo";
+
+"FaceTec_presession_hold_steady_1" = "Manténgase quieto durante: 1";
+
+"FaceTec_presession_hold_steady_2" = "Manténgase quieto durante: 2";
+
+"FaceTec_presession_hold_steady_3" = "Manténgase quieto durante: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Mire hacia el frente";
+
+"FaceTec_presession_neutral_expression" = "Expresión neutra, sin sonreír";
+
+"FaceTec_presession_remove_dark_glasses" = "Quítese los lentes oscuros";
+
+"FaceTec_result_facescan_upload_message" = "Subiendo el escaneo facial en 3D <br/>cifrado<br/>";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "No se ha podido escanear el código de barras<br/>Inténtalo de nuevo";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "El rostro no se parecía<br/>lo suficiente";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "El documento de identidad<br/>no se ve del todo";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "No se admite este tipo de documento de identidad<br/>Utiliza otro documento";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "No se puede leer el texto del documento de identidad";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Se ha capturado la foto<br/>del documento de identidad";
+
+"FaceTec_result_idscan_success_back_side_message" = "Se ha escaneado el documento de identidad";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Se ha escaneado el anverso<br/>del documento de identidad";
+
+"FaceTec_result_idscan_success_front_side_message" = "Se ha escaneado el documento de identidad";
+
+"FaceTec_result_idscan_success_passport_message" = "Se ha escaneado el pasaporte";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Se ha escaneado<br/>el documento de identidad con foto";
+
+"FaceTec_result_idscan_unsuccess_message" = "La foto del documento de identidad<br/>no coincide<br/>con el rostro del usuario";
+
+"FaceTec_result_idscan_upload_message" = "Subiendo el documento de identidad<br/>cifrado<br/>";
+
+"FaceTec_result_success_message" = "¡Todo correcto!";
+
+"FaceTec_retry_header" = "Intentémoslo otra vez";
+
+"FaceTec_retry_ideal_image_label" = "Pose ideal";
+
+"FaceTec_retry_instruction_message_1" = "Sin reflejos ni luces intensas";
+
+"FaceTec_retry_instruction_message_2" = "Expresión neutra, sin sonreír";
+
+"FaceTec_retry_instruction_message_3" = "Demasiado borrosa, limpie la cámara";
+
+"FaceTec_retry_subheader_message" = "Necesitamos un selfi en vídeo más claro";
+
+"FaceTec_retry_your_image_label" = "Su selfie";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Detener el proceso";
+
+"FailureScreen.TooManyAttempts.Description" = "Contacta con el proveedor del servicio si necesitas ayuda";
+
+"FailureScreen.TooManyAttempts.Header" = "Se ha bloqueado la verificación porque se han realizado demasiados intentos";
+
+"LoadResultReason.DeviceLockedOut.Description" = "El dispositivo está bloqueado.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Demasiados intentos";
+
+"LoadResultReason.DeviceNotSupported.Description" = "El dispositivo no es compatible.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Ha fallado";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Vuelve a intentarlo más tarde.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Error de licencia";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "La clave ha caducado, contenía texto no válido o estás intentando inicializar en un dominio que no está especificado en tu clave.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "La clave ha caducado o no es válida";
+
+"LoadResultReason.NetworkIssues.Description" = "No se ha podido continuar por problemas de conectividad en tu dispositivo";
+
+"LoadResultReason.NetworkIssues.Header" = "Problemas de red";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "No se han podido cargar los recursos.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Ha fallado";
+
+"LoadResultReason.StillLoadingResources.Description" = "Aún se están cargando los recursos.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Ha fallado";
+
+"FaceTec_action_im_ready" = "Todo listo";
+
+"ReadyScreen.Header" = "Prepárate para el vídeo";
+
+"RetryScreen.Action.PassiveLiveness" = "Prueba un método alternativo";
+
+"FaceTec_action_try_again" = "Volver a intentarlo";
+
+"RetryScreen.Description" = "Necesitamos una foto más clara.";
+
+"RetryScreen.Header" = "Intentémoslo otra vez";
+
+/*  */
+"RetryScreen.Message.Generic" = "Utilice una iluminación constante y copie la pose ideal";
+
+"UploadScreen.Description" = "Mantén esta ventana abierta";
+
+"UploadScreen.Header" = "Validando tu foto de cara";
+

@@ -1,0 +1,858 @@
+"Action.Close" = "Tancar";
+
+"LanguageSelection.Header" = "Selecciona l'idioma";
+
+"Modals.Abort.Action.ContinueProcess" = "Continuar el procés";
+
+"Modals.Abort.Action.StopProcess" = "Atura el procés";
+
+"Modals.Abort.Heading" = "Esteu segur que voleu avortar aquest procés?";
+
+"Modals.Error.Description" = "Alguna cosa va sortir malament, tanqui aquest missatge i torni a intentar-ho";
+
+"Modals.Error.Heading" = "Vaja, ha ocorregut un error";
+
+"Modals.Success.Description" = "Continuï amb el següent pas.";
+
+"Modals.Success.Heading" = "Correcte";
+
+"Action.Agree" = "Estic d'acord";
+
+"Action.Disagree" = "En desacord";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Continuar el procés";
+
+"Disagree.Confirmation.Action.StopProcess" = "Atura el procés";
+
+"Disagree.Confirmation.Header" = "En declinar el contingut aturaràs el procés. Estàs segur?";
+
+"Capture.Action.Capture" = "Captura";
+
+"Capture.DriverLicense.Back.Description" = "Col·loca el document dins del marc.";
+
+"Capture.DriverLicense.Back.Header" = "Torna a capturar";
+
+"Capture.DriverLicense.Front.Description" = "Col·loca el document dins del marc.";
+
+"Capture.DriverLicense.Front.Header" = "Captura la part del davant";
+
+"Capture.IdCard.Back.Description" = "Col·loca el document dins del marc.";
+
+"Capture.IdCard.Back.Header" = "Torna a capturar";
+
+"Capture.IdCard.Front.Description" = "Col·loca el document dins del marc.";
+
+"Capture.IdCard.Front.Header" = "Captura la part del davant";
+
+"Capture.InternalPassport.DataPage.Header" = "Captura la pàgina principal";
+
+"Capture.InternalPassport.FrontCover.Header" = "Captura la portada";
+
+"Capture.Passport.DataPage.Description" = "Col·loca el document dins del marc.";
+
+"Capture.Passport.DataPage.Header" = "Captura la pàgina principal";
+
+"Capture.Passport.FrontCover.Header" = "Captura la portada";
+
+"Capture.ResidencePermit.Back.Description" = "Col·loca el document dins del marc.";
+
+"Capture.ResidencePermit.Back.Header" = "Torna a capturar";
+
+"Capture.ResidencePermit.Front.Description" = "Col·loca el document dins del marc.";
+
+"Capture.ResidencePermit.Front.Header" = "Captura la part del davant";
+
+"Capture.SocialId.Back.Description" = "Col·loca el document dins del marc.";
+
+"Capture.SocialId.Back.Header" = "Torna a capturar";
+
+"Capture.SocialId.Front.Description" = "Col·loca el document dins del marc.";
+
+"Capture.SocialId.Front.Header" = "Captura la part del davant";
+
+"Preview.Action.Continue" = "Continua";
+
+"Preview.Action.Retake" = "Repeteix";
+
+"Preview.Header" = "La foto es veu clara, està enfocada i no té reflexes?";
+
+"FaceCapture.Instructions.Action.Start" = "Comença";
+
+"FaceCapture.Instructions.Description" = "Durant el procés, col·loca la cara al mig del marc.";
+
+"FaceCapture.Instructions.Header" = "Verifica la teva identitat amb la cara";
+
+"FaceCapture.Instructions.Subheader" = "Assegura't que:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "La teva expressió sigui neutra";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "La il·luminació sigui bona";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "La imatge sigui clara";
+
+"App.Button.Close" = "Tancar";
+
+"App.Button.Continue" = "Continuar";
+
+"App.Errors.Default" = "Es va trobar amb un problema inesperat. Torni a intentar-ho més tard";
+
+"EndPage.Action.Continue" = "Continuar";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Gràcies. Ara pots acabar el procés.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Ja has acabat!";
+
+"Action.Close" = "Tancar";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Puja el comprovant d'adreça";
+
+"Document.Instructions.Action.Start" = "Comença";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Fes una foto del revers del permís de conduir";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Fes una foto de l'anvers del permís de conduir";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "La imatge no està massa borrosa";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Assegura't que:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "La il·luminació sigui bona";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "El document es pugui llegir";
+
+"Document.Instructions.IdCard.Back.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.IdCard.Back.Heading" = "Fes una foto del revers del document d'identitat";
+
+"Document.Instructions.IdCard.Front.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.IdCard.Front.Heading" = "Fes una foto de l'anvers del document d'identitat";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Mostra la pàgina principal del document que conté la zona MRZ a l'àrea marcada.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Fes una foto de la pàgina principal interna del passaport";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Fes una foto de la part interna de la portada del passaport";
+
+"Document.Instructions.Passport.DataPage.Description" = "Inclou la zona MRZ a l'àrea marcada.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Fes una foto de la pàgina principal del passaport";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Fes una foto de la portada del passaport";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Fes una foto del revers del permís de residència";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Fes una foto de l'anvers del permís de residència";
+
+"Document.Instructions.SocialId.Back.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.SocialId.Back.Heading" = "Fes una foto del revers del document d'identitat";
+
+"Document.Instructions.SocialId.Front.Description" = "Col·loca el document dins del marc";
+
+"Document.Instructions.SocialId.Front.Heading" = "Fes una foto de l'anvers del document d'identitat";
+
+"Document.Select.Document.DriverLicense" = "Permís de conduir";
+
+"Document.Select.Document.IdCard" = "Document d'identitat";
+
+"Document.Select.Document.InternalPassport" = "Part interna del passaport";
+
+"Document.Select.Document.Passport" = "Passaport";
+
+"Document.Select.Document.ResidencePermit" = "Permís de residència";
+
+"Document.Select.Document.SocialId" = "Document d'identitat";
+
+"Document.Select.Header" = "Selecciona el document";
+
+"FaceCapture.Instructions.Description" = "Col·loca la cara al mig del marc.";
+
+"FaceCapture.Instructions.Header" = "Fes-te una autofoto";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "La imatge sigui clara";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "La teva expressió sigui neutra";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "La il·luminació sigui bona";
+
+"FaceCapture.Instructions.Subheader" = "Assegura't que:";
+
+"Result.Failure.Action.TryAgain" = "Torna-ho a provar";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Torneu-ho a provar i assegureu-vos que el document estigui il·luminat uniformement amb una font de llum blanca.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "La foto proporcionada té una il·luminació deficient";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Torneu-ho a provar i proporcioneu un document en bon estat.";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Part del document proporcionat està danyat";
+
+"Result.Failure.DocumentFromScreen.Description" = "Envia una foto vàlida del document físic per finalitzar el procés d'identificació";
+
+"Result.Failure.DocumentFromScreen.Header" = "La foto que ens has proporcionat del document no és vàlida";
+
+"Result.Failure.DocumentIsExpired.Description" = "Fes servir un document vàlid per finalitzar el procés d'identificació";
+
+"Result.Failure.DocumentIsExpired.Header" = "El document proporcionat ha caducat";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Fes servir un document de la llista proporcionada per finalitzar el procés d'identificació";
+
+"Result.Failure.DocumentNotAccepted.Header" = "El tipus de document proporcionat no compleix els requisits";
+
+"Result.Failure.DocumentPrinted.Description" = "Envia una foto vàlida del document físic per finalitzar el procés d'identificació";
+
+"Result.Failure.DocumentPrinted.Header" = "La foto que ens has proporcionat del document no és vàlida";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Proporciona un document amb caràcters llatins";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "El tipus de document proporcionat no compleix els requisits";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Fes una foto del document original";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "S'ha rebutjat la teva identificació";
+
+"Result.Failure.FacesNotMatch.Description" = "Torna-ho a provar o contacta amb l'equip d'assistència al client";
+
+"Result.Failure.FacesNotMatch.Header" = "La foto del document i l'autofoto que ens has proporcionat no coincideixen";
+
+"Result.Failure.Generic.Description" = "Contacta amb l'equip d'assistència al client";
+
+"Result.Failure.Generic.Header" = "Hi ha hagut un problema amb la teva identificació";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Torna-ho a provar i assegura't que el comprovant d'adreça sigui vàlid";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "La foto que ens has proporcionat del comprovant d'adreça no és vàlida";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Torna-ho a provar i proporciona totes les fotos necessàries del document";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Falta la foto del document";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Torna-ho a provar o contacta amb l'equip d'assistència";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Falta la foto de la cara";
+
+"Result.Failure.MoreThanOnePerson.Description" = "El procés d'identificació s'ha de dur a terme sense la participació d'altres persones";
+
+"Result.Failure.MoreThanOnePerson.Header" = "L'usuari no està sol durant el procés";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Torna-ho a provar i assegura't que el document es pugui llegir clarament i que no es cobreixin les dades";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Part del document proporcionat està cobert";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Torna-ho a provar seguint les instruccions proporcionades. La cara no ha d'estar coberta";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "La cara està parcialment coberta";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Torna-ho a provar i assegura't que el document estigui ben il·luminat";
+
+"Result.Failure.PoorPhotoLighting.Header" = "La foto proporcionada té una il·luminació deficient";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Torna-ho a provar i assegura't que les dades del document es puguin llegir clarament o, si la càmera no és de bona qualitat, prova d'iniciar el procés en un dispositiu diferent.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "La foto proporcionada és de mala qualitat";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Torna-ho a provar o contacta amb l'equip d'assistència";
+
+"Result.Failure.SelfieHasNoFace.Header" = "A la foto proporcionada no es veu cap cara";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Torna-ho a provar o contacta amb l'equip d'assistència";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "La foto proporcionada no és rellevant";
+
+"Result.Success.Header" = "Completat!";
+
+"ResultsWaiting.Delay.Description" = "Sembla que tenim més trànsit web del que és habitual. Se't redirigirà en breu.";
+
+"ResultsWaiting.Delay.Header" = "Està tardant més del previst";
+
+"ResultsWaiting.Details.Description" = "L'espera dura 2 minuts de mitjana.";
+
+"ResultsWaiting.Details.Header" = "Espera…";
+
+"ResultsWaiting.Details.Message.Message1" = "S'estan encriptant les dades del document.";
+
+"ResultsWaiting.Details.Message.Message2" = "S'està revisant el document per veure si hi ha danys externs.";
+
+"ResultsWaiting.Details.Message.Message3" = "S'estan comprovant les fotos proporcionades del document.";
+
+"ResultsWaiting.Details.Message.Message4" = "Validant si ets una persona real";
+
+"ResultsWaiting.Details.Message.Message5" = "S'estan comprovant l'autenticitat i la validesa de les dades.";
+
+"ResultsWaiting.Details.Message.Message6" = "S'estan comprovant l'estat i les dades dels documents als registres.";
+
+/*  */
+"Action.Cancel" = "Cancel·la";
+
+/*  */
+"Action.Loading.Header" = "Carregant...";
+
+/*  */
+"Action.Submit" = "Envia";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Document escanejat correctament";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Col·loca el document dins del marc.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Captura el document";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Captura del justificant de domicili";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Pot ser un extracte bancari o una factura de serveis públics";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Fitxers compatibles: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "El fitxer no pot fer més de 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "El format del fitxer pujat no està permès";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Proporcioni el justificant de domicili";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Mida màxima del fitxer: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Requisits:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Ha de contenir el teu nom complet i l'adreça";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "El document no té més de 3 mesos";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Selecciona un fitxer";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Selecciona de la galeria";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Carrega el document";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Carregant...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Necessitem el teu TRN per verificar el teu compte. Si us plau, introdueix el teu TRN tal com apareix al document oficial i comprova que sigui correcte abans d'enviar-lo per evitar retards.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Proporcioni el seu Número de Registre de Contribuent (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "El número TRN consta de 9 dígits";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "Codi TRN:";
+
+/*  */
+"Consent.Static.Description" = "Per tal d'obtenir el servei del Proveïdor de Serveis, amb aquest consentiment expresso el meu acord perquè UAB \"Ondato\" rebi i gestioni les meves dades personals, incloses les meves dades biomètriques, obtingudes de la identificació remota de la meva identitat personal mitjançant la presa i/o filmació d'imatge en directe de la meva cara, la identitat de la meva persona o el document utilitzat per identificar-la i/o la seva imatge i les dades personals contingudes en elles i/o la verificació en el registre de població: imatge de la meva cara, nom, cognom, nacionalitat, sexe, codi personal, data de naixement, números del document que s'està utilitzant, data d'emissió i validesa, la meva signatura i la transferència d'aquestes dades al Proveïdor de Serveis. També constato que estic informat que el responsable de les meves dades personals, incloses les meves dades biomètriques, especificades en aquest consentiment és el Proveïdor de Serveis i UAB \"Ondato\" processarà les meves dades personals només fins que el procediment d'identificació remota hagi finalitzat i els resultats seran transferits al Proveïdor de Serveis. També declaro que estic informat i accepto que les meves dades personals obtingudes per a la identificació remota i els seus propòsits poden ser emmagatzemades per UAB \"Ondato\" durant un període de temps més llarg del que es necessita per completar la identificació o la transmissió dels seus resultats al Proveïdor de Serveis, però només a petició del Proveïdor de Serveis o per obligació contractual de UAB Ondato amb el Proveïdor de Serveis, però no més temps del que es defineix en el Contracte que es va signar entre UAB \"Ondato\" i el Proveïdor de Serveis o sol·licitat pel Proveïdor de Serveis. Estic informat que puc presentar una sol·licitud sobre les meves dades personals per obtenir informació més detallada a info@ondato.com. Per la present declaro i confirmo que totes les dades personals que proporcionaré per a la identificació remota de la meva identitat personal són correctes i precises, i el document que utilitzaré per a aquest propòsit no és fals i és vàlid.";
+
+/*  */
+"Consent.Static.Heading" = "Consentiment per al tractament de dades personals";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Col·loqueu el document dins del marc";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Captura la zona MRZ del teu document d'identitat";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Col·loqueu el document i la línia MRZ dins del marc";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Captura la part davantera del teu document d'identitat amb línia MRZ";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Si us plau, mostreu la pàgina principal del document que conté la zona MRZ a l'àrea marcada.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Captureu la pàgina del passaport amb la zona MRZ";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Justificant de domicili";
+
+/*  */
+"Error.Interrupt.Description" = "A causa d'interrupcions, el procés s'ha aturat. Si us plau, romangueu en aquesta aplicació fins que hàgiu completat tots els passos.";
+
+/*  */
+"Error.Interrupt.Heading" = "El procés s'ha interromput";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Si us plau, torneu a connectar per continuar";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "La teva connexió a Internet ha desaparegut";
+
+/*  */
+"FaceCapture.Validation.Description" = "Espereu, si us plau...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Validant la teva foto";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Obre la configuració";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Mantingueu el document a prop de la cara mentre us feu una selfie";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Captura't mentre sostens el teu document";
+
+/*  */
+"Instructions.Identification.Description" = "Per continuar utilitzant aquest servei, heu de validar que compliu els requisits del lloc web.";
+
+/*  */
+"Instructions.Identification.Header" = "Benvingut al procés de \n verificació d'identitat";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Només un moment";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Finalitzant els darrers detalls";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Capturant la foto";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Alinea la cara dins del marc i toca capturar";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Captura la teva cara";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "La teva cara és clarament visible?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Assegureu-vos que la foto sigui clara i llegible";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Us demanem amablement que contacteu amb el servei d'atenció al client per obtenir més informació.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "La teva identificació ha estat rebutjada.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Us demanem amablement que contacteu amb el servei d'atenció al client per obtenir més informació o torneu-ho a provar amb un altre document.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "La teva identificació ha estat rebutjada a causa d'un país o estat prohibit.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Us demanem amablement que torneu a intentar el procés o que contacteu amb el servei d'atenció al client.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "La teva identificació ha estat rebutjada.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Si us plau, contacteu amb el servei d'atenció al client per obtenir més informació";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "La teva identificació ha estat rebutjada.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Us demanem amablement que contacteu amb el servei d'atenció al client per obtenir més informació.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "La teva identificació ha estat rebutjada a causa de les restriccions d'edat.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Gràcies per la vostra paciència";
+
+/*  */
+"Result.Success.MRZ.Heading" = "La captura d'informació ha estat exitosa";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Sembla que estem experimentant més trànsit de l'habitual. Seràs redirigit en breu.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Ho sentim, està trigant més del que esperàvem";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Per continuar, cal assegurar-se que el document té NFC i que està habilitat al dispositiu.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Sembla que no pots continuar sense NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Col·loqueu el vostre document darrere del dispositiu";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Escanejant... Si us plau, mantingueu";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Connexió perduda durant l'escaneig. Torna a intentar-ho.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Torna a intentar escanejar el document.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Sembla que el procés s'ha interromput.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "No hem pogut llegir el document. Comprova les dades i torna-ho a intentar.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Resposta inesperada del xip. Torni a escanejar el document.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "El document escanejat no és vàlid. Torneu-ho a provar amb un de compatible.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "S'han detectat múltiples xips. Si us plau, escaneu només un document a la vegada.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "El teu dispositiu no admet NFC o està desactivat. Canvia a un dispositiu compatible o activa el NFC en la configuració.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "No es compatible amb NFC";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Tens dificultats?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Afegeix el teu DNI a la part posterior del teu telèfon";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Col·loca el teu DNI a la part posterior del telèfon per a l'escaneig NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Escaneja el teu DNI amb NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Col·loca el teu passaport a la part posterior del telèfon per a l'escaneig NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Escaneja el teu passaport amb NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Cancel·la";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Si us plau, activeu el NFC per continuar amb el procés";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "El NFC està desactivat";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Configuració";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Afegeix la primera pàgina del teu passaport a la part posterior del teu telèfon";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Si heu tingut dificultats per accedir a l'NFC, proveu aquests mètodes:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Intenta llegir l'última pàgina del document.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Intenta llegir la pàgina de la foto del document.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Si hi ha alguna funda al document, traieu-la.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Mantingueu el document a la part posterior del vostre telèfon.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Escaneja document";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Consells per provar";
+
+"Action.Cancel" = "Cancel·la";
+
+"CaptureResultReason.TimeOut.Description" = "Si us plau, prova de nou";
+
+"CaptureResultReason.TimeOut.Header" = "Temps mort";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Cancel·la";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "La cara apunta massa a l'esquerra";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "La cara apunta massa a la dreta";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "La càmera no trova la cara";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "La cara està massa girada a l'esquerra";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "La cara està massa girada a la dreta";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "La cara està massa a l'esquerra";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "La cara està massa a la dreta";
+
+"FaceTec_accessibility_feedback_face_too_high" = "La cara està massa alta";
+
+"FaceTec_accessibility_feedback_face_too_low" = "La cara està massa baixa";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Mantingues el dispositiu a l'alçada dels ulls";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Mou la càmera a l'alçada dels ulls";
+
+"FaceTec_accessibility_feedback_move_away_web" = "La càmera està massa a prop";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "La càmera està massa lluny";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "La càmera està massa a prop";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "La càmera està massa lluny";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Prem Retorn o Barra d'espais per obtenir indicacions sobre l'alineació";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Toca dues vegades la pantalla per obtenir indicacions sobre l'alineació";
+
+"FaceTec_camera_feed_issue_action" = "TORNA-HO A PROVAR DE TOTES MANERES";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "D'ACORD";
+
+"FaceTec_camera_feed_issue_header" = "Problema per assegurar l'alimentació de la càmera";
+
+"FaceTec_camera_feed_issue_header" = "Problema per assegurar l'alimentació<br/>de la càmera";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Aquest sistema no es pot verificar per les causes següents:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Aquesta aplicació bloqueja les configuracions sospitoses de la càmera web.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Més informació aquí</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Aquesta aplicació bloqueja les configuracions sospitoses de la càmera web. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Més informació aquí</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Possible problema";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Arregla";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Una altra aplicació ja està utilitzant la càmera.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Els permisos de la càmera no es recorden al Firefox.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Tanca l'altra aplicació.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Verifica Recorda els permisos.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Una aplicació de tercers està modificant el vídeo.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Tanca/desinstal·la l'altra aplicació.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "El maquinari no es pot assegurar.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Utilitza un dispositiu diferent.";
+
+"FaceTec_camera_permission_header" = "Activa la càmera";
+
+"FaceTec_camera_permission_message" = "Els permisos de la càmera estan deshabilitats.<br/>Comprova la configuració del teu sistema operatiu i navegador.";
+
+"FaceTec_enter_fullscreen_action" = "OBRE LA PANTALLA COMPLETA";
+
+"FaceTec_enter_fullscreen_header" = "Mode de pantalla completa per a selfies";
+
+"FaceTec_enter_fullscreen_message" = "Abans de començar, fes clic al botó següent per obrir el mode de pantalla completa.";
+
+"FaceTec_feedback_center_face" = "Centreu el rostre.";
+
+"FaceTec_feedback_face_not_found" = "Enquadreu el rostre.";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Mireu endavant.";
+
+"FaceTec_feedback_face_not_upright" = "Poseu el cap dret.";
+
+"FaceTec_feedback_face_not_upright" = "Mantingueu el cap dret.";
+
+"FaceTec_feedback_hold_steady" = "No us mogueu.";
+
+"FaceTec_feedback_move_phone_away" = "Poseu-vos més lluny.";
+
+"FaceTec_feedback_move_phone_away" = "Poseu-vos més lluny.";
+
+"FaceTec_feedback_move_phone_closer" = "Poseu-vos més a prop.";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Poseu el telèfon a l’alçada dels ulls.";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Mireu directament a la càmera.";
+
+"FaceTec_feedback_move_web_closer" = "Poseu-vos més a prop.";
+
+"FaceTec_feedback_move_web_even_closer" = "Més a prop.";
+
+"FaceTec_feedback_use_even_lighting" = "Il·lumineu el rostre de manera més uniforme.";
+
+"FaceTec_idscan_additional_review_message" = "Cal una revisió<br/>addicional";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Mostra el revers del document d'identitat";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Mostra l'anvers del document d'identitat";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Revisa i confirma";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Desplaça avall";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Confirma que la foto és clara i llegible";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Confirma que la foto és clara i llegible";
+
+"FaceTec_idscan_type_selection_header" = "Prepara't per escanejar<br/>el teu document d'identitat";
+
+"FaceTec_initializing_camera" = "Estem assegurant l'alimentació de la càmera";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Prepara't per";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "El teu autovídeo";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Prepara't per fer-te un autovídeo";
+
+"FaceTec_instructions_message_ready_1" = "Emmarca la cara a l'oval";
+
+"FaceTec_instructions_message_ready_2" = "Prem \"Estic a punt\" i apropa't";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Emmarca la cara a l'oval, prem \"Estic a punt\" i apropa't";
+
+"FaceTec_presession_brighten_your_environment" = "Il·lumini seu entorn";
+
+"FaceTec_presession_conditions_too_bright" = "Condicions massa brillants";
+
+"FaceTec_presession_eyes_straight_ahead" = "Miri cap endavant";
+
+"FaceTec_presession_frame_your_face" = "Enmarca el seu rostre en l'oval";
+
+"FaceTec_presession_hold_steady_1" = "Romangui quiet: 1";
+
+"FaceTec_presession_hold_steady_2" = "Romangui quiet: 2";
+
+"FaceTec_presession_hold_steady_3" = "Romangui quiet: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Miri cap endavant";
+
+"FaceTec_presession_neutral_expression" = "Expressió neutral, no somriure";
+
+"FaceTec_presession_remove_dark_glasses" = "Traieu les ulleres fosques";
+
+"FaceTec_result_facescan_upload_message" = "S'està pujant el FaceScan 3D<br/>encriptat<br/>";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "No s'ha pogut escanejar el codi de barres.<br/>Torna-ho a provar";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "La cara no<br/>coincideix prou";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "El document d'identitat<br/>no es pot veure del tot";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "No s'admet aquest tipus d'identificació<br/>Utilitza un document d'identitat diferent";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "El text del document d'identitat no es pot llegir";
+
+"FaceTec_result_idscan_success_additional_review_message" = "S'ha completat<br/>la captura de la foto del document d'identitat";
+
+"FaceTec_result_idscan_success_back_side_message" = "S'ha completat l'escaneig del document d'identitat";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "S'ha escanejat<br/>l'anvers del document d'identitat";
+
+"FaceTec_result_idscan_success_front_side_message" = "S'ha completat l'escaneig del document d'identitat";
+
+"FaceTec_result_idscan_success_passport_message" = "S'ha completat l'escaneig del passaport";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "S'ha completat<br/>l'escaneig de la foto del document d'identitat";
+
+"FaceTec_result_idscan_unsuccess_message" = "La foto del document d'identitat<br/>no coincideix<br/>amb la cara de l'usuari";
+
+"FaceTec_result_idscan_upload_message" = "S'està pujant el document d'identitat<br/>encriptat<br/>";
+
+"FaceTec_result_success_message" = "Completat amb èxit!";
+
+"FaceTec_retry_header" = "Torna-ho a provar";
+
+"FaceTec_retry_ideal_image_label" = "Postura ideal";
+
+"FaceTec_retry_instruction_message_1" = "Expressió neutra, sense somriure";
+
+"FaceTec_retry_instruction_message_2" = "Sense reflexos ni il·luminació excessiva";
+
+"FaceTec_retry_instruction_message_3" = "La imatge està massa borrosa; neteja la càmera";
+
+"FaceTec_retry_subheader_message" = "Necessitem un autovídeo més clar";
+
+"FaceTec_retry_your_image_label" = "La vostra autofoto";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Atura el procés";
+
+"FailureScreen.TooManyAttempts.Description" = "Contacta amb el proveïdor del servei per rebre ajuda";
+
+"FailureScreen.TooManyAttempts.Header" = "La verificació s'ha bloquejat perquè has excedit el nombre d’intents";
+
+"LoadResultReason.DeviceLockedOut.Description" = "El dispositiu està bloquejat.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Massa intents";
+
+"LoadResultReason.DeviceNotSupported.Description" = "El dispositiu no és compatible.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Incorrecte";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Torna-ho a provar més tard.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Error de llicència";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "La clau ha caducat, el text no és vàlid o estàs intentant inicialitzar-la en un domini que no està especificat a la clau.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "La clau ha caducat o no és vàlida";
+
+"LoadResultReason.NetworkIssues.Description" = "El teu dispositiu no ha pogut continuar per problemes de connexió";
+
+"LoadResultReason.NetworkIssues.Header" = "Problemes amb la xarxa";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "No s'han pogut carregar les fonts.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Incorrecte";
+
+"LoadResultReason.StillLoadingResources.Description" = "Encara s'estan carregant les fonts.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Incorrecte";
+
+"FaceTec_action_im_ready" = "Endavant";
+
+"ReadyScreen.Header" = "Prepara't per fer-te un vídeo";
+
+"RetryScreen.Action.PassiveLiveness" = "Proveu un mètode alternatiu";
+
+"FaceTec_action_try_again" = "Torna a provar";
+
+"RetryScreen.Description" = "Necessitem una foto més clara.";
+
+"RetryScreen.Header" = "Torna-ho a provar";
+
+/*  */
+"RetryScreen.Message.Generic" = "Si us plau, utilitzeu una il·luminació coherent i copieu la postura ideal";
+
+"UploadScreen.Description" = "Mantingues aquesta finestra oberta";
+
+"UploadScreen.Header" = "Validant la foto de la teva cara";
+

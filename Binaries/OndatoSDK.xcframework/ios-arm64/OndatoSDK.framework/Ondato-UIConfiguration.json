@@ -1,0 +1,274 @@
+{
+    // Whitelabeling guide can be found here - https://ondato.atlassian.net/wiki/x/AoBau?atlOrigin=eyJpIjoiMjIxZDYzZDNmZDVjNGY2MGFhOTliYmRjNDVkN2E1ODAiLCJwIjoiYyJ9
+    // CORE STYLING
+    "brand": {
+        "colors": {
+            "primaryColor": String, // Primary brand color - used in illustration and primary button | Default: "#4968FC"
+            "textColor": String, // Text color for content | Default: "#000000"
+            "backgroundColor": String, // Base background color for screens | Default: "#FFFFFF"
+            
+            "danger": String, // Color for error states and messages | Default: "#D04555"
+            "warning": String, // Color for warning elements | Default: "#F9BB42"
+            "success": String, // Color for success elements | Default: "#28865A"
+            
+            "grey-200": String, // Button Disabled state background, Text input readonly background | Default: "#F2F5F8"
+            "grey-400": String, // Used for input element border color, also used in Text input | Default: "#BEC6D0"
+            "grey-500": String, // Used for `selectionCard` icon, Proof of Adress upload element border, Text input disabled state text color | Default: "#96A0AE"
+            "grey-600": String, // Used for Proof of Adress icon color, Text input Active state border | Default: "#6D7580"
+            "grey-700": String, // Used for feedback bar background color | Default: "#282B2F"
+            
+            //Android specific
+            "statusBarColor": String, // Default: brand.colors.primaryColor
+            "alertDialogPositiveTextColor": String, // Default:  brand.colors.primaryColor
+            "alertDialogNegativeTextColor": String // Default: brand.colors.danger
+        },
+        "baseComponentStyling": {
+            "cornerRadius": Float, //Used for all input components (Buttons, Text inputs and other elements) | Default: 6
+            "buttonPadding": { //Used for Primary and Secondary button paddings
+                "top": Float, // Default: 14
+                "bottom": Float, // Default: 14
+                "left": Float, // Default: 24
+                "right": Float // Default: 24
+            },
+            "borderWidth": Float //Used for Secondary button, Text input, Selection button border | Default: 1.0
+        },
+        //note for iOS: if custom font is provided via `Ondato.sdk.configuration.resources.fonts` fontSize and fontWeight will be overriden by that custom font
+        "typography": {
+            "heading1": {
+                "fontSize": Int, // Default: 24
+                "fontWeight": Int, // Default: 500
+                "lineHeight": Int, // Default: 32
+                "alignment": String, // Default: center
+                "color": String // Default colors.textColor
+            },
+            "heading2": {
+                "fontSize": Int, // Default: 16
+                "fontWeight": Int, // Default: 500
+                "lineHeight": Int, // Default: 18
+                "alignment": String, // Default: center
+                "color": String // Default colors.textColor
+            },
+            "body": {
+                "fontSize": Int, // Default: 16
+                "fontWeight": Int, // Default: 400
+                "lineHeight": Int, // Default: 18
+                "alignment": String, // Default: center
+                "color": String // Default colors.textColor
+            },
+            "list": {
+                "fontSize": Int, // Default: 16
+                "fontWeight": Int, // Default: 400
+                "lineHeight": Int, // Default: 18
+                "color": String // Default colors.textColor
+            },
+            "inputLabel": {
+                "fontSize": Int, // Default: 16
+                "fontWeight": Int, // Default: 400
+                "lineHeight": In,t // Default: 18
+                "color": String // Default colors.textColor
+            },
+            "button": {
+                "fontSize": Int, // Default: 16
+                "fontWeight": Int, // Default: 500
+                "lineHeight": Int, // Default: 18
+                "color": String // Default colors.textColor
+            }
+        }
+    },
+    
+    // COMPONENTS
+    "buttons": {
+        "primary": {
+            "base": {
+                "cornerRadius": Float, // Default: baseComponentStyling.cornerRadius
+                "padding": { //Default: baseComponentStyling.buttonPadding
+                    "top": Float,
+                    "bottom": Float,
+                    "left": Float,
+                    "right": Float
+                },
+                "fontSize": Int, // Default: typography.body.fontSize
+                "fontWeight": Int, // Default: typography.body.fontWeight
+                "lineHeight": Int, // Default: typography.body.lineHeight
+                "showIcon": Bool // Default: false
+            },
+            "normal": {
+                "textColor": String, // Default: brand.colors.textColor
+                "backgroundColor": String, // Default: brand.colors.primaryColor
+                "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+                "borderColor": String, // Default: colors.primaryColor
+                "iconColor": String, // Default: colors.textColor
+                "opacity": Float // Default: 1
+            },
+            "pressed": {
+                "textColor": String, // Default: brand.colors.textColor
+                "backgroundColor": String, // Default: brand.colors.primaryColor
+                "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+                "borderColor": String, // Default: colors.primaryColor
+                "iconColor": String, // Default: colors.textColor
+                "opacity": Float // Default: 0.8
+            },
+            "disabled": {
+                "textColor": String, // Default: brand.colors.grey-500
+                "backgroundColor": String, // Default: brand.colors.grey-200
+                "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+                "borderColor": String, // Default: brand.colors.grey-200
+                "iconColor": String, // Default: brand.colors.grey-500
+                "opacity": Float // Default: 1
+            }
+        },
+        "secondary": {
+            "base": {
+                "cornerRadius": Float, //Default: baseComponentStyling.cornerRadius
+                "padding": {  // Default: baseComponentStyling.buttonPadding
+                    "top": Float,
+                    "bottom": Float,
+                    "left": Float,
+                    "right": Float
+                },
+                "fontSize": Int, // Default: typography.body.fontSize
+                "fontWeight": Int, // Default: typography.body.fontWeight
+                "lineHeight": Int, // Default: typography.body.lineHeight
+                "showIcon": Bool // Default: false
+            },
+            "normal": {
+                "textColor": String, // Default: brand.colors.textColor
+                "backgroundColor": String, // Default - colors.backgroundColor
+                "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+                "borderColor": String, // Default: brand.colors.grey-400
+                "iconColor": String, // Default: brand.colors.textColor
+                "opacity": Float // Default: 1
+            },
+            "pressed": {
+                "textColor": String, // Default: brand.colors.textColor
+                "backgroundColor": String, // Default: brand.colors.grey-200
+                "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+                "borderColor": String, // Default: brand.colors.grey-600
+                "iconColor": String, // Default: brand.colors.textColor
+                "opacity": Float // Default: 1
+            },
+            "disabled": {
+                "textColor": String, // Default: brand.colors.grey-500
+                "backgroundColor": String, // Default: brand.colors.grey-200
+                "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+                "borderColor": String, // Default: brand.colors.grey-200
+                "iconColor": String, // Default: brand.colors.grey-500
+                "opacity": Float // Default: 1
+            }
+        }
+    },
+    "navigationButtons": {
+        "close": {
+            "iconColor": String, // Default: brand.colors.textColor
+        },
+        "back": {
+            "iconColor": String, // Default: brand.colors.textColor
+        }
+    },
+    "textInput": {
+        "base": {
+            "cornerRadius": Float, // Default: baseComponentStyling.cornerRadius
+            "padding": { //Default: baseComponentStyling.buttonPadding
+                "top": Float,
+                "bottom": Float,
+                "left": Float,
+                "right": Float
+            },
+            "fontSize": Int, // Default: typography.body.fontSize
+            "fontWeight": Int, // Default: typography.body.fontWeight
+            "lineHeight": Int // Default: typography.body.lineHeight
+        },
+        "normal": {
+            "backgroundColor": String, // Default: brand.colors.backgroundColor
+            "borderColour": String, // Default: brand.colors.grey-500
+            "borderWidth": Float // Default: baseComponentStyling.borderWidth
+        },
+        "focused": {
+            "backgroundColor": String, // Default: brand.colors.backgroundColor
+            "borderColour": String, // Default: brand.colors.grey-600
+            "borderWidth": Float // Default: baseComponentStyling.borderWidth
+        },
+        "disabled": {
+            "textColor": String, // Default: brand.colors.grey-400
+            "backgroundColor": String, // Default: brand.colors.backgroundColor
+            "borderColor": String, // Default: brand.colors.grey-400
+            "borderWidth": Float // Default: baseComponentStyling.borderWidth
+        },
+        "readOnly": {
+            "textColor": String, // Default: brand.colors.grey-600
+            "backgroundColor": String, // Default: brand.colors.grey-200
+            "borderColor": String, // Default: brand.colors.grey-200
+            "borderWidth": Float // Default: baseComponentStyling.borderWidth
+        },
+        "error": {
+            "textColor": String, // Default: brand.colors.danger
+            "borderColor": String // Default: brand.colors.danger
+        }
+    },
+
+    "activityIndicator": {
+        "color": String // Default: brand.colors.primaryColor
+    },
+
+    "faceScanUI": {
+        "frame": {
+            "borderColor": String, // Default: brand.colors.grey-700
+            "borderWidth": Float // Default: baseComponentStyling.borderWidth
+        },
+        "feedbackBar": {
+            "backgroundColor": String, // Default: brand.colors.grey-700
+            "textColor": String, // Default: brand.colors.grey-200
+            "cornerRadius": Float // Default: baseComponentStyling.cornerRadius
+        }
+    },
+
+    // Used for customizing the proof-of-address document upload screen
+    "documentUploadConfiguration": {
+        "borderColor": String, // Default: brand.colors.grey-500
+        "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+        "cornerRadius": Float, // Default: baseComponentStyling.cornerRadius
+        "fileDescriptionTextColor": String, // Default: brand.colors.grey-500
+        "fileIconColor": String, // Default: brand.colors.grey-600
+        "uploadAreaBackgroundOpacity": Float, // Default: 0
+        "uploadAreaBackgroundColor": String // Default: brand.colors.backgroundColor
+    },
+
+    "selectionCard": {
+        "base": {
+            "cornerRadius": Float, // Default: baseComponentStyling.cornerRadius
+            "fontSize": Int, // Default: typography.body.fontSize
+            "fontWeight": Int, // Default: typography.body.fontWeight
+            "lineHeight": Int // Default: typography.body.lineHeight
+        },
+        "normal": {
+            "textColor": String, // Default: brand.colors.textColor
+            "backgroundColor": String, // Default: brand.colors.backgroundColor
+            "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+            "borderColor": String, // Default: brand.colors.grey-400
+            "leftIconColor": String, // Default: brand.colors.grey-500
+            "rightIconColor": String // Default: brand.colors.textColor
+        },
+        "pressed": {
+            "textColor": String, // Default: brand.colors.textColor
+            "backgroundColor": String, // Default: brand.colors.grey-200
+            "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+            "borderColor": String, // Default: brand.colors.grey-400
+            "leftIconColor": String, // Default: brand.colors.grey-500
+            "rightIconColor": String // Default: brand.colors.textColor
+        },
+        "disabled": {
+            "textColor": String, // Default: brand.colors.grey-400
+            "backgroundColor": String, // Default: brand.colors.grey-200
+            "borderWidth": Float, // Default: baseComponentStyling.borderWidth
+            "borderColor": String, // Default: brand.colors.grey-200
+            "leftIconColor": String, // Default: brand.colors.grey-400
+            "rightIconColor": String // Default: brand.colors.grey-400
+        }
+    },
+    
+    "cameraScreenConfiguration": {
+        "backgroundColor": String // Default: brand.colors.grey-700
+        "opacity": Float, // Default: 0.5
+        "cornerRadius": Float // Default: brand.baseComponentStyling.cornerRadius
+    }
+}

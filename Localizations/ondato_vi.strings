@@ -1,0 +1,857 @@
+"Action.Close" = "Đóng";
+
+"LanguageSelection.Header" = "Chọn ngôn ngữ";
+
+"Modals.Abort.Action.ContinueProcess" = "Tiếp tục quá trình";
+
+"Modals.Abort.Action.StopProcess" = "Dừng quá trình";
+
+"Modals.Abort.Heading" = "Bạn có chắc chắn muốn hủy bỏ quá trình này không?";
+
+"Modals.Error.Description" = "Đã xảy ra lỗi, hãy đóng tin nhắn và thử lại";
+
+"Modals.Error.Heading" = "Oops, đã xảy ra lỗi";
+
+"Modals.Success.Description" = "Vui lòng chuyển sang bước tiếp theo";
+
+"Modals.Success.Heading" = "Thành công";
+
+"Action.Agree" = "Tôi đồng ý";
+
+"Action.Disagree" = "Không đồng ý";
+
+"Disagree.Confirmation.Action.ContinueProcess" = "Tiếp tục tiến trình";
+
+"Disagree.Confirmation.Action.StopProcess" = "Dừng quá trình";
+
+"Disagree.Confirmation.Header" = "Bằng cách từ chối nội dung, bạn sẽ dừng quá trình. Bạn chắc chắn chứ?";
+
+"Capture.Action.Capture" = "Chụp";
+
+"Capture.DriverLicense.Back.Description" = "Đặt tài liệu trong khung hình.";
+
+"Capture.DriverLicense.Back.Header" = "Chụp mặt sau";
+
+"Capture.DriverLicense.Front.Description" = "Đặt tài liệu trong khung hình.";
+
+"Capture.DriverLicense.Front.Header" = "Chụp mặt trước";
+
+"Capture.IdCard.Back.Description" = "Đặt tài liệu trong khung hình.";
+
+"Capture.IdCard.Back.Header" = "Chụp mặt sau";
+
+"Capture.IdCard.Front.Description" = "Đặt tài liệu trong khung hình.";
+
+"Capture.IdCard.Front.Header" = "Chụp mặt trước";
+
+"Capture.InternalPassport.DataPage.Header" = "Chụp trang chính";
+
+"Capture.InternalPassport.FrontCover.Header" = "Chụp trang bìa";
+
+"Capture.Passport.DataPage.Description" = "Đặt tài liệu trong khung hình.";
+
+"Capture.Passport.DataPage.Header" = "Chụp trang chính";
+
+"Capture.Passport.FrontCover.Header" = "Chụp trang bìa";
+
+"Capture.ResidencePermit.Back.Description" = "Đặt tài liệu trong khung hình.";
+
+"Capture.ResidencePermit.Back.Header" = "Chụp mặt sau";
+
+"Capture.ResidencePermit.Front.Description" = "Đặt tài liệu trong khung hình.";
+
+"Capture.ResidencePermit.Front.Header" = "Chụp mặt trước";
+
+"Capture.SocialId.Back.Description" = "Đặt tài liệu trong khung hình.";
+
+"Capture.SocialId.Back.Header" = "Chụp mặt sau";
+
+"Capture.SocialId.Front.Description" = "Đặt tài liệu trong khung hình.";
+
+"Capture.SocialId.Front.Header" = "Chụp mặt trước";
+
+"Preview.Action.Continue" = "Tiếp tục";
+
+"Preview.Action.Retake" = "Chụp lại";
+
+"Preview.Header" = "Ảnh có rõ, nét và không bị ngược sáng không?";
+
+"FaceCapture.Instructions.Action.Start" = "Bắt đầu";
+
+"FaceCapture.Instructions.Description" = "Trong quá trình này, hãy giữ khuôn mặt của bạn ở giữa khung hình.";
+
+"FaceCapture.Instructions.Header" = "Xác thực bằng khuôn mặt của bạn";
+
+"FaceCapture.Instructions.Subheader" = "Hãy đảm bảo rằng:";
+
+"FaceCapture.Instructions.Suggestions.Suggestion1" = "Giữ nét mặt tự nhiên";
+
+"FaceCapture.Instructions.Suggestions.Suggestion2" = "Có đủ ánh sáng";
+
+"FaceCapture.Instructions.Suggestions.Suggestion3" = "Hình ảnh rõ nét";
+
+"App.Button.Close" = "Đóng";
+
+"App.Button.Continue" = "Tiếp tục";
+
+"App.Errors.Default" = "Gặp phải vấn đề bất ngờ. Vui lòng thử lại sau.";
+
+"EndPage.Action.Continue" = "Tiếp tục";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Description" = "Cảm ơn bạn. Bây giờ bạn có thể hoàn tất quy trình.";
+
+/*  */
+"EndPage.PrimaryDevice.Complete.Header" = "Bạn đã hoàn thành!";
+
+"Action.Close" = "Đóng";
+
+"AdditionalDocument.ProofOfAddress.HeadingValue" = "Vui lòng tải lên giấy tờ chứng minh địa chỉ của bạn";
+
+"Document.Instructions.Action.Start" = "Bắt đầu";
+
+"Document.Instructions.DrivingLicense.Back.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.DrivingLicense.Back.Heading" = "Chụp mặt sau Giấy phép lái xe";
+
+"Document.Instructions.DrivingLicense.Front.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.DrivingLicense.Front.Heading" = "Chụp mặt trước Giấy phép lái xe";
+
+"Document.Instructions.GeneralAlertTexts.Blurriness" = "Hình ảnh không quá mờ";
+
+"Document.Instructions.GeneralAlertTexts.Heading" = "Hãy đảm bảo rằng:";
+
+"Document.Instructions.GeneralAlertTexts.Lighting" = "Có đủ ánh sáng";
+
+"Document.Instructions.GeneralAlertTexts.Readability" = "Giấy tờ dễ đọc";
+
+"Document.Instructions.IdCard.Back.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.IdCard.Back.Heading" = "Chụp mặt sau của CMND/CCCD";
+
+"Document.Instructions.IdCard.Front.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.IdCard.Front.Heading" = "Chụp mặt trước của CMND/CCCD";
+
+"Document.Instructions.InternalPassport.DataPage.Description" = "Vui lòng cho thấy trang chính của giấy tờ có vùng MRZ trong khu vực được đánh dấu.";
+
+"Document.Instructions.InternalPassport.DataPage.Heading" = "Chụp trang chính của hộ chiếu nội địa";
+
+"Document.Instructions.InternalPassport.FrontCover.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.InternalPassport.FrontCover.Heading" = "Chụp bìa của hộ chiếu nội địa";
+
+"Document.Instructions.Passport.DataPage.Description" = "Vui lòng đưa vùng MRZ vào khu vực được đánh dấu.";
+
+"Document.Instructions.Passport.DataPage.Heading" = "Chụp trang chính của hộ chiếu";
+
+"Document.Instructions.Passport.FrontCover.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.Passport.FrontCover.Heading" = "Chụp bìa của hộ chiếu";
+
+"Document.Instructions.ResidencePermit.Back.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.ResidencePermit.Back.Heading" = "Chụp mặt sau của Giấy phép cư trú";
+
+"Document.Instructions.ResidencePermit.Front.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.ResidencePermit.Front.Heading" = "Chụp mặt trước của Giấy phép cư trú";
+
+"Document.Instructions.SocialId.Back.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.SocialId.Back.Heading" = "Chụp mặt sau của Thẻ l";
+
+"Document.Instructions.SocialId.Front.Description" = "Đặt giấy tờ trong khung hình";
+
+"Document.Instructions.SocialId.Front.Heading" = "Chụp mặt trước của Thẻ làm việc";
+
+"Document.Select.Document.DriverLicense" = "Giấy phép lái xe";
+
+"Document.Select.Document.IdCard" = "CMND/CCCD";
+
+"Document.Select.Document.InternalPassport" = "Hộ chiếu nội địa";
+
+"Document.Select.Document.Passport" = "Hộ chiếu";
+
+"Document.Select.Document.ResidencePermit" = "Giấy phép cư trú";
+
+"Document.Select.Document.SocialId" = "Thẻ làm việc";
+
+"Document.Select.Header" = "Chọn giấy tờ của bạn";
+
+"FaceCapture.Instructions.Description" = "Đảm bảo khuôn mặt của bạn ở chính giữa khung hình.";
+
+"FaceCapture.Instructions.Header" = "Tự chụp ảnh chân dung";
+
+"FaceCapture.Instructions.Mistakes.Blurry" = "Hình ảnh rõ nét";
+
+"FaceCapture.Instructions.Mistakes.NotNeutral" = "Biểu cảm trung lập";
+
+"FaceCapture.Instructions.Mistakes.TooDark" = "Có đủ ánh sáng";
+
+"FaceCapture.Instructions.Subheader" = "Hãy đảm bảo rằng:";
+
+"Result.Failure.Action.TryAgain" = "Thử lại";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Description" = "Vui lòng thử lại và đảm bảo rằng tài liệu được chiếu sáng đều bằng nguồn sáng trắng.";
+
+/*  */
+"Result.Failure.ColoredAmbientLightDetected.Header" = "Ảnh cung cấp có ánh sáng kém";
+
+/*  */
+"Result.Failure.DocumentDamaged.Description" = "Vui lòng thử lại và cung cấp một tài liệu không bị hỏng. ";
+
+/*  */
+"Result.Failure.DocumentDamaged.Header" = "Một phần của tài liệu được cung cấp bị hỏng";
+
+"Result.Failure.DocumentFromScreen.Description" = "Vui lòng gửi ảnh chụp giấy tờ vật lý hợp lệ để hoàn tất quy trình nhận dạng";
+
+"Result.Failure.DocumentFromScreen.Header" = "Ảnh chụp giấy tờ được cung cấp là không hợp lệ";
+
+"Result.Failure.DocumentIsExpired.Description" = "Vui lòng cung cấp một loại giấy tờ hợp lệ để hoàn tất quy trình nhận dạng";
+
+"Result.Failure.DocumentIsExpired.Header" = "Giấy tờ được cung cấp đã hết hạn";
+
+"Result.Failure.DocumentNotAccepted.Description" = "Vui lòng sử dụng một loại giấy tờ theo danh sách được cung cấp để hoàn tất quy trình nhận dạng";
+
+"Result.Failure.DocumentNotAccepted.Header" = "Loại giấy tờ được cung cấp không đáp ứng yêu cầu";
+
+"Result.Failure.DocumentPrinted.Description" = "Vui lòng gửi ảnh chụp giấy tờ vật lý hợp lệ để hoàn tất quy trình nhận dạng";
+
+"Result.Failure.DocumentPrinted.Header" = "Ảnh chụp giấy tờ được cung cấp là không hợp lệ";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Description" = "Vui lòng cung cấp giấy tờ sử dụng ký tự Latinh";
+
+"Result.Failure.DocumentWithNonLatinCharacters.Header" = "Loại giấy tờ được cung cấp không đáp ứng yêu cầu";
+
+"Result.Failure.FacePhotoUploadFormat.Description" = "Vui lòng chụp ảnh của giấy tờ gốc";
+
+"Result.Failure.FacePhotoUploadFormat.Header" = "Thông tin nhận dạng của bạn bị từ chối";
+
+"Result.Failure.FacesNotMatch.Description" = "Vui lòng thử lại hoặc liên hệ với bộ phận hỗ trợ khách hàng";
+
+"Result.Failure.FacesNotMatch.Header" = "Ảnh trên giấy tờ không khớp với ảnh chân dung tự chụp";
+
+"Result.Failure.Generic.Description" = "Vui lòng liên hệ với bộ phận hỗ trợ khách hàng";
+
+"Result.Failure.Generic.Header" = "Đã có lỗi xảy ra trong quá trình nhận dạng";
+
+"Result.Failure.InvalidProofOfAddress.Description" = "Vui lòng thử lại và đảm bảo sử dụng giấy tờ Chứng minh địa chỉ hợp lệ";
+
+"Result.Failure.InvalidProofOfAddress.Header" = "Ảnh chụp giấy tờ Chứng minh địa chỉ mà bạn cung cấp không hợp lệ";
+
+"Result.Failure.MissingDocumentPhoto.Description" = "Vui lòng thử lại và cung cấp đầy đủ ảnh chụp giấy tờ cần thiết";
+
+"Result.Failure.MissingDocumentPhoto.Header" = "Thiếu ảnh chụp giấy tờ";
+
+"Result.Failure.MissingPersonPhoto.Description" = "Vui lòng thử lại hoặc liên hệ với bộ phận hỗ trợ khách hàng";
+
+"Result.Failure.MissingPersonPhoto.Header" = "Thiếu ảnh chụp chân dung";
+
+"Result.Failure.MoreThanOnePerson.Description" = "Người khác không được phép có mặt khi bạn thực hiện quy trình nhận dạng";
+
+"Result.Failure.MoreThanOnePerson.Header" = "Người dùng không ở một mình khi thực hiện quy trình";
+
+"Result.Failure.PartOfDocumentIsCovered.Description" = "Vui lòng thử lại và đảm bảo thông tin trên giấy tờ rõ ràng, dễ đọc và không bị che khuất";
+
+"Result.Failure.PartOfDocumentIsCovered.Header" = "Giấy tờ được cung cấp bị che khuất một phần";
+
+"Result.Failure.PartOfFaceIsCovered.Description" = "Vui lòng thử lại và làm theo hướng dẫn được cung cấp. Không được để khuôn mặt bị che khuất";
+
+"Result.Failure.PartOfFaceIsCovered.Header" = "Mặt bị che khuất một phần";
+
+"Result.Failure.PoorPhotoLighting.Description" = "Vui lòng thử lại và đảm bảo giấy tờ được chụp đủ sáng";
+
+"Result.Failure.PoorPhotoLighting.Header" = "Ảnh đã cung cấp bị thiếu sáng";
+
+"Result.Failure.PoorPhotoQuality.Description" = "Vui lòng thử lại và đảm bảo thông tin trên giấy tờ rõ ràng, dễ đọc hoặc nếu camera có chất lượng kém, hãy thử dùng thiết bị khác để thực hiện quy trình.";
+
+"Result.Failure.PoorPhotoQuality.Header" = "Ảnh được cung cấp có chất lượng kém";
+
+"Result.Failure.SelfieHasNoFace.Description" = "Vui lòng thử lại hoặc liên hệ với bộ phận hỗ trợ khách hàng";
+
+"Result.Failure.SelfieHasNoFace.Header" = "Ảnh được cung cấp không ghi hình khuôn mặt";
+
+"Result.Failure.UnrelatedPhotoSubmit.Description" = "Vui lòng thử lại hoặc liên hệ với bộ phận hỗ trợ khách hàng";
+
+"Result.Failure.UnrelatedPhotoSubmit.Header" = "Ảnh được cung cấp không liên quan";
+
+"Result.Success.Header" = "Thành công!";
+
+"ResultsWaiting.Delay.Description" = "Có vẻ như lưu lượng truy cập hệ thống của chúng tôi đang lớn hơn thường lệ. Bạn sẽ sớm được chuyển hướng.";
+
+"ResultsWaiting.Delay.Header" = "Rất tiếc, quá trình này mất nhiều thời gian hơn dự kiến";
+
+"ResultsWaiting.Details.Description" = "Thời gian chờ trung bình là 2 phút.";
+
+"ResultsWaiting.Details.Header" = "Vui lòng đợi...";
+
+"ResultsWaiting.Details.Message.Message1" = "Đang mã hóa dữ liệu trên giấy tờ của bạn.";
+
+"ResultsWaiting.Details.Message.Message2" = "Đang kiểm tra xem giấy tờ có bị hư hại bên ngoài không.";
+
+"ResultsWaiting.Details.Message.Message3" = "Đang kiểm tra ảnh chụp giấy tờ được cung cấp.";
+
+"ResultsWaiting.Details.Message.Message4" = "Đang xác thực xem bạn có phải là người thật không";
+
+"ResultsWaiting.Details.Message.Message5" = "Đang kiểm tra tính xác thực và tính hợp lệ của dữ liệu.";
+
+"ResultsWaiting.Details.Message.Message6" = "Đang kiểm tra trạng thái và dữ liệu của giấy tờ trong các hệ thống đăng ký.";
+
+/*  */
+"Action.Cancel" = "Hủy";
+
+/*  */
+"Action.Loading.Header" = "Đang tải...";
+
+/*  */
+"Action.Submit" = "Gửi";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Success" = "Tài liệu được quét thành công";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Description" = "Đặt tài liệu trong khung hình.";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.CaptureDocument" = "Chụp tài liệu";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Capture.Heading" = "Chụp bằng chứng địa chỉ";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Description" = "Đây có thể là sao kê ngân hàng hoặc hóa đơn dịch vụ tiện ích";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FilesSupported" = "Tệp được hỗ trợ: %@";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTooLarge" = "Kích thước tệp không được lớn hơn 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.FileTypeNotSupported" = "Tệp mà bạn tải lên có định dạng không được hỗ trợ";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Heading" = "Xin vui lòng cung cấp bằng chứng địa chỉ của bạn";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.MaximumFileSize" = "Kích thước tệp tối đa: 5 MB";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements" = "Yêu cầu:";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.ContainsInformation" = "Phải chứa tên đầy đủ và địa chỉ của bạn";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Requirements.DocumentExpiration" = "Tài liệu không quá 3 tháng";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFile" = "Chọn tệp";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.SelectFromGallery" = "Chọn từ thư viện";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.UploadDocument" = "Tải lên tài liệu";
+
+/*  */
+"AdditionalDocument.ProofOfAddress.Uploading" = "Đang tải lên...";
+
+/*  */
+"AdditionalDocument.Registration.Description" = "Chúng tôi cần TRN của bạn để xác minh tài khoản của bạn. Vui lòng nhập TRN của bạn như trên tài liệu chính thức và kiểm tra kỹ để đảm bảo chính xác trước khi gửi để tránh chậm trễ.";
+
+/*  */
+"AdditionalDocument.Registration.Header" = "Vui lòng cung cấp Số Đăng Ký Người Nộp Thuế (TRN)";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeDescription" = "Số TRN gồm 9 chữ số";
+
+/*  */
+"AdditionalDocument.Registration.TaxPayerCodeHeader" = "Mã TRN:";
+
+/*  */
+"Consent.Static.Description" = "Để nhận được dịch vụ từ Nhà cung cấp dịch vụ, với sự đồng ý này, tôi bày tỏ sự đồng ý rằng UAB \"Ondato\" sẽ nhận và quản lý dữ liệu cá nhân của tôi, bao gồm dữ liệu sinh trắc học của tôi, thu được từ việc nhận dạng từ xa danh tính cá nhân của tôi bằng cách chụp và/hoặc quay hình ảnh trực tiếp khuôn mặt của tôi, danh tính của tôi hoặc tài liệu được sử dụng để nhận dạng và/hoặc hình ảnh của chúng và dữ liệu cá nhân chứa trong chúng và/hoặc kiểm tra trong sổ đăng ký dân số: hình ảnh khuôn mặt của tôi, tên, họ, quốc tịch, giới tính, mã cá nhân, ngày sinh, số của tài liệu đang được sử dụng, ngày cấp và hiệu lực, chữ ký của tôi và việc chuyển giao dữ liệu đó cho Nhà cung cấp dịch vụ. Tôi cũng lưu ý rằng tôi đã được thông báo rằng người kiểm soát dữ liệu cá nhân của tôi, bao gồm dữ liệu sinh trắc học của tôi, được chỉ định trong sự đồng ý này là Nhà cung cấp dịch vụ và UAB \"Ondato\" sẽ xử lý dữ liệu cá nhân của tôi chỉ cho đến khi quy trình nhận dạng từ xa kết thúc và kết quả sẽ được chuyển giao cho Nhà cung cấp dịch vụ. Tôi cũng tuyên bố rằng tôi đã được thông báo và đồng ý rằng dữ liệu cá nhân của tôi thu được cho việc nhận dạng từ xa và các mục đích của nó có thể được lưu trữ bởi UAB \"Ondato\" trong thời gian dài hơn so với thời gian cần thiết để hoàn thành việc nhận dạng hoặc truyền kết quả của nó cho Nhà cung cấp dịch vụ, nhưng chỉ theo yêu cầu của Nhà cung cấp dịch vụ hoặc nghĩa vụ hợp đồng của UAB Ondato với Nhà cung cấp dịch vụ, nhưng không lâu hơn thời gian được định nghĩa trong Hợp đồng đã ký giữa UAB \"Ondato\" và Nhà cung cấp dịch vụ hoặc được yêu cầu bởi Nhà cung cấp dịch vụ. Tôi được thông báo rằng tôi có thể gửi yêu cầu liên quan đến dữ liệu cá nhân của mình để biết thêm thông tin chi tiết tại info@ondato.com. Bằng văn bản này, tôi tuyên bố và xác nhận rằng tất cả dữ liệu cá nhân tôi sẽ cung cấp cho mục đích nhận dạng từ xa danh tính cá nhân của tôi là đúng và chính xác, và tài liệu mà tôi sẽ sử dụng cho mục đích này không phải là giả và hợp lệ.";
+
+/*  */
+"Consent.Static.Heading" = "Đồng ý xử lý dữ liệu cá nhân";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Description" = "Đặt tài liệu vào bên trong khung";
+
+/*  */
+"Document.Instructions.IdCard.MRZ.Heading" = "Chụp vùng MRZ của thẻ căn cước của bạn";
+
+/*  */
+"Document.Instructions.MrzID.Front.Description" = "Đặt tài liệu và dòng MRZ vào bên trong khung";
+
+/*  */
+"Document.Instructions.MrzID.Front.Heading" = "Chụp mặt trước của thẻ căn cước của bạn với dòng MRZ";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Description" = "Vui lòng hiển thị trang tài liệu chính chứa vùng MRZ trong khu vực đã đánh dấu.";
+
+/*  */
+"Document.Instructions.Passport.MRZ.Heading" = "Chụp ảnh trang hộ chiếu với khu vực MRZ";
+
+/*  */
+"Document.Select.Document.ProofOfAddress" = "Bằng chứng địa chỉ";
+
+/*  */
+"Error.Interrupt.Description" = "Do bị gián đoạn, quá trình đã dừng lại. Vui lòng ở lại trên ứng dụng này cho đến khi bạn hoàn thành tất cả các bước.";
+
+/*  */
+"Error.Interrupt.Heading" = "Quá trình đã bị gián đoạn";
+
+/*  */
+"Error.NoInternetConnection.Description" = "Vui lòng kết nối lại để tiếp tục";
+
+/*  */
+"Error.NoInternetConnection.Heading" = "Kết nối internet của bạn đã mất";
+
+/*  */
+"FaceCapture.Validation.Description" = "Vui lòng đợi...";
+
+/*  */
+"FaceCapture.Validation.Header" = "Đang xác thực ảnh của bạn";
+
+/*  */
+"FaceTec_camera_permission_launch_settings" = "Khởi chạy cài đặt";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Description" = "Giữ tài liệu gần mặt bạn khi chụp ảnh selfie";
+
+/*  */
+"FaceWithDocumentCapture.Instructions.Heading" = "Chụp ảnh bạn trong khi cầm tài liệu của bạn";
+
+/*  */
+"Instructions.Identification.Description" = "Để tiếp tục sử dụng dịch vụ này, bạn cần xác nhận rằng bạn đáp ứng các yêu cầu của trang web.";
+
+/*  */
+"Instructions.Identification.Header" = "Chào mừng đến với quy trình \n xác minh danh tính";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Description" = "Chỉ một chút";
+
+/* Used when KYC.complete is called and the next step is NOT a waiting page */
+"Loading.FinalizingDetails.Heading" = "Hoàn thiện chi tiết cuối";
+
+/*  */
+"PassiveFaceCapture.Capture.ButtonLoading" = "Đang chụp ảnh";
+
+/*  */
+"PassiveFaceCapture.Capture.Description" = "Căn chỉnh khuôn mặt của bạn trong khung và nhấn chụp";
+
+/*  */
+"PassiveFaceCapture.Capture.Header" = "Chụp khuôn mặt của bạn";
+
+/*  */
+"PassiveFaceCapture.Review.Header" = "Khuôn mặt của bạn có rõ ràng không?";
+
+/* This text could be used for photo review step below the header */
+"Preview.Description" = "Đảm bảo rằng ảnh rõ ràng và có thể đọc được";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Description" = "Chúng tôi vui lòng yêu cầu bạn liên hệ bộ phận hỗ trợ khách hàng để biết thêm thông tin.";
+
+/*  */
+"Result.Failure.PossibleFraudAttempt.Heading" = "Giấy tờ tùy thân của bạn bị từ chối.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Description" = "Chúng tôi vui lòng yêu cầu bạn liên hệ bộ phận hỗ trợ khách hàng để biết thêm thông tin hoặc thử lại với tài liệu khác.";
+
+/*  */
+"Result.Failure.ProhibitedCountryOrState.Heading" = "Giấy tờ tùy thân của bạn bị từ chối do quốc gia hoặc tiểu bang bị cấm.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Description" = "Chúng tôi vui lòng yêu cầu bạn thử lại quy trình hoặc liên hệ bộ phận hỗ trợ khách hàng.";
+
+/*  */
+"Result.Failure.ProhibitedNationality.Heading" = "Giấy tờ tùy thân của bạn bị từ chối.";
+
+/*  */
+"Result.Failure.Sanctioned.Description" = "Vui lòng liên hệ bộ phận hỗ trợ khách hàng để biết thêm thông tin";
+
+/*  */
+"Result.Failure.Sanctioned.Heading" = "Giấy tờ tùy thân của bạn bị từ chối.";
+
+/*  */
+"Result.Failure.UnderagePerson.Description" = "Chúng tôi vui lòng yêu cầu bạn liên hệ bộ phận hỗ trợ khách hàng để biết thêm thông tin.";
+
+/*  */
+"Result.Failure.UnderagePerson.Heading" = "Giấy tờ tùy thân của bạn bị từ chối do hạn chế về độ tuổi.";
+
+/*  */
+"Result.Success.MRZ.Description" = "Cảm ơn bạn đã kiên nhẫn";
+
+/*  */
+"Result.Success.MRZ.Heading" = "Thu thập thông tin thành công";
+
+/*  */
+"ResultsWaiting.Delay.Description" = "Có vẻ như chúng tôi đang gặp lưu lượng truy cập nhiều hơn bình thường. Bạn sẽ được chuyển hướng trong giây lát.";
+
+/*  */
+"ResultsWaiting.Delay.Header" = "Xin lỗi, việc này mất nhiều thời gian hơn dự kiến";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Description" = "Để tiếp tục, bạn cần đảm bảo rằng tài liệu có NFC và nó đã được bật trên thiết bị của bạn.";
+
+/*  */
+"AdditionalDocument.Instructions.NFC.Settings.Heading" = "Có vẻ như bạn không thể tiếp tục mà không có NFC.";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Intro" = "Đặt tài liệu của bạn phía sau thiết bị";
+
+/*  */
+"AdditionalDocument.NFC.Capture.Scanning" = "Đang quét... Vui lòng giữ";
+
+/*  */
+"AdditionalDocument.NFC.Failure.ConnectionLost" = "Mất kết nối trong quá trình quét. Vui lòng thử lại.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Description" = "Thử quét lại tài liệu.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.Heading" = "Có vẻ như quá trình đã bị gián đoạn.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidMRZkey" = "Chúng tôi không thể đọc được tài liệu. Vui lòng kiểm tra chi tiết và thử lại.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidResponse" = "Phản hồi không mong đợi từ chip. Vui lòng quét lại tài liệu.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.InvalidTag" = "Tài liệu được quét không hợp lệ. Vui lòng thử lại với một tài liệu được hỗ trợ.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.MoreThanOneTag" = "Phát hiện nhiều chip. Vui lòng quét từng tài liệu một.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedDescrption" = "Thiết bị của bạn không hỗ trợ NFC hoặc hiện đang bị tắt. Hãy chuyển sang thiết bị tương thích hoặc kích hoạt NFC trong cài đặt.";
+
+/*  */
+"AdditionalDocument.NFC.Failure.NotSupportedTitle" = "Không hỗ trợ NFC";
+
+/*  */
+"AdditionalDocument.NFC.HavingDifficulties" = "Gặp khó khăn?";
+
+/*  */
+"AdditionalDocument.NFC.IdCard.Capture.Heading" = "Đặt thẻ ID của bạn vào mặt sau của điện thoại";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Description" = "Đặt thẻ ID của bạn lên mặt sau điện thoại để quét NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.IdCard.Header" = "Quét thẻ ID của bạn bằng NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Description" = "Đặt hộ chiếu của bạn lên mặt sau điện thoại để quét NFC";
+
+/*  */
+"AdditionalDocument.NFC.Instructions.Passport.Heading" = "Quét hộ chiếu của bạn bằng NFC";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.CancelButton" = "Hủy";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Description" = "Vui lòng bật NFC để tiếp tục quá trình";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.Heading" = "NFC đã tắt";
+
+/*  */
+"AdditionalDocument.NFC.OffDialog.SettingsButton" = "Cài đặt";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Capture.Heading" = "Đặt trang đầu tiên của hộ chiếu vào mặt sau của điện thoại";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Heading" = "Nếu bạn gặp khó khăn khi truy cập NFC, hãy thử các phương pháp sau:";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan1" = "Thử đọc trang cuối của tài liệu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan2" = "Thử đọc trang ảnh của tài liệu.";
+
+/*  */
+"AdditionalDocument.NFC.Passport.Help.Scan3" = "Nếu có bất kỳ bìa nào trên tài liệu, hãy tháo nó ra.";
+
+/*  */
+"AdditionalDocument.NFC.Scanning.Heading" = "Vui lòng giữ tài liệu ở mặt sau điện thoại của bạn.";
+
+/*  */
+"AdditionalDocument.NFC.Start" = "Quét tài liệu";
+
+/*  */
+"AdditionalDocument.NFC.Tips" = "Mẹo để thử";
+
+"Action.Cancel" = "Hủy";
+
+"CaptureResultReason.TimeOut.Description" = "Vui lòng thử lại";
+
+"CaptureResultReason.TimeOut.Header" = "Hết thời gian";
+
+/*  */
+"FaceTec_accessibility_cancel_button" = "Hủy";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_left" = "Mặt hướng quá lệch về bên trái";
+
+"FaceTec_accessibility_feedback_face_looking_too_far_right" = "Mặt hướng quá lệch về bên phải";
+
+"FaceTec_accessibility_feedback_face_not_in_camera" = "Khuôn mặt chưa vào khung hình của camera";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_left" = "Mặt xoay quá lệch về bên trái";
+
+"FaceTec_accessibility_feedback_face_rotated_too_far_right" = "Mặt xoay quá lệch về bên phải";
+
+"FaceTec_accessibility_feedback_face_too_far_left" = "Vị trí khuôn mặt lệch trái quá nhiều";
+
+"FaceTec_accessibility_feedback_face_too_far_right" = "Vị trí khuôn mặt lệch phải quá nhiều";
+
+"FaceTec_accessibility_feedback_face_too_high" = "Vị trí khuôn mặt quá cao";
+
+"FaceTec_accessibility_feedback_face_too_low" = "Vị trí khuôn mặt quá thấp";
+
+"FaceTec_accessibility_feedback_hold_phone_to_eye_level" = "Giữ thiết bị ngang tầm mắt";
+
+"FaceTec_accessibility_feedback_hold_to_eye_level_web" = "Di chuyển camera đến ngang tầm mắt";
+
+"FaceTec_accessibility_feedback_move_away_web" = "Camera quá gần";
+
+"FaceTec_accessibility_feedback_move_closer_web" = "Camera quá xa";
+
+"FaceTec_accessibility_feedback_move_phone_away" = "Camera quá gần";
+
+"FaceTec_accessibility_feedback_move_phone_closer" = "Camera quá xa";
+
+/*  */
+"FaceTec_accessibility_key_down_guidance" = "Nhấn Enter hoặc phím cách để được hướng dẫn căn chỉnh khuôn mặt";
+
+/*  */
+"FaceTec_accessibility_tap_guidance" = "Nhấn đúp vào màn hình để được hướng dẫn căn chỉnh khuôn mặt";
+
+"FaceTec_camera_feed_issue_action" = "VUI LÒNG THỬ LẠI LẦN NỮA";
+
+"FaceTec_camera_feed_issue_action_firefox_permissions_error" = "OK";
+
+"FaceTec_camera_feed_issue_header" = "Sự cố lấy nguồn cấp camera";
+
+"FaceTec_camera_feed_issue_header" = "Sự cố<br/> lấy nguồn cấp camera";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Không thể xác minh hệ thống này vì những lý do sau:";
+
+"FaceTec_camera_feed_issue_subheader_message" = "Ứng dụng này chặn các cấu hình webcam đáng ngờ.<br/><a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Tìm hiểu thêm tại đây</a>.";
+
+"FaceTec_camera_feed_issue_subtable_message" = "Ứng dụng này chặn các cấu hình webcam đáng ngờ. <a href='https://livenesscheckhelp.com/' target='_blank' style='text-decoration:underline; font:inherit; pointer-events:all;'>Tìm hiểu thêm tại đây</a>.";
+
+"FaceTec_camera_feed_issue_table_header_1" = "Sự cố có thể xảy ra";
+
+"FaceTec_camera_feed_issue_table_header_2" = "Khắc phục";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1" = "Một Ứng dụng khác đang sử dụng camera.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_1_firefox_permissions_error" = "Quyền truy cập camera chưa được ghi nhớ trong Firefox.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2" = "Đóng Ứng dụng khác đó.";
+
+"FaceTec_camera_feed_issue_table_row_1_cell_2_firefox_permissions_error" = "Đánh dấu chọn Ghi nhớ quyền.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_1" = "Ứng dụng của bên thứ ba đang sửa đổi video.";
+
+"FaceTec_camera_feed_issue_table_row_2_cell_2" = "Đóng/Gỡ cài đặt Ứng dụng còn lại.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_1" = "Phần cứng không có khả năng được bảo mật.";
+
+"FaceTec_camera_feed_issue_table_row_3_cell_2" = "Sử dụng Thiết bị khác.";
+
+"FaceTec_camera_permission_header" = "Bật camera";
+
+"FaceTec_camera_permission_message" = "Đã tắt quyền truy cập camera.<br/>Vui lòng kiểm tra cài đặt hệ điều hành và trình duyệt của bạn.";
+
+"FaceTec_enter_fullscreen_action" = "MỞ TOÀN MÀN HÌNH";
+
+"FaceTec_enter_fullscreen_header" = "Chế độ tự chụp chân dung toàn màn hình";
+
+"FaceTec_enter_fullscreen_message" = "Trước khi bắt đầu, vui lòng nhấp vào nút bên dưới để mở chế độ toàn màn hình.";
+
+"FaceTec_feedback_center_face" = "Căn giữa khuôn mặt của bạn";
+
+"FaceTec_feedback_face_not_found" = "Đóng khung khuôn mặt bạn";
+
+"FaceTec_feedback_face_not_looking_straight_ahead" = "Hãy nhìn về phía trước";
+
+"FaceTec_feedback_face_not_upright" = "Hãy giữ thẳng đầu";
+
+"FaceTec_feedback_face_not_upright" = "Giữ đầu thẳng";
+
+"FaceTec_feedback_hold_steady" = "Giữ vững";
+
+"FaceTec_feedback_move_phone_away" = "Hãy di chuyển ra xa";
+
+"FaceTec_feedback_move_phone_away" = "Hãy di chuyển ra xa";
+
+"FaceTec_feedback_move_phone_closer" = "Hãy tiến lại gần hơn";
+
+"FaceTec_feedback_move_phone_to_eye_level" = "Hãy di chuyển điện thoại ngang tầm mắt";
+
+"FaceTec_feedback_move_to_eye_level_web" = "Hãy nhìn thẳng vào máy ảnh";
+
+"FaceTec_feedback_move_web_closer" = "Hãy tiến lại gần hơn";
+
+"FaceTec_feedback_move_web_even_closer" = "Gần hơn nữa";
+
+"FaceTec_feedback_use_even_lighting" = "Hãy chỉnh ánh sáng trên khuôn mặt đồng đều hơn";
+
+"FaceTec_idscan_additional_review_message" = "Bắt buộc<br/>xem xét thêm";
+
+"FaceTec_idscan_capture_id_back_instruction_message" = "Hiển thị mặt sau giấy tờ tùy thân";
+
+"FaceTec_idscan_capture_id_front_instruction_message" = "Hiển thị mặt trước giấy tờ tùy thân";
+
+"FaceTec_idscan_ocr_confirmation_main_header" = "Xem xét và xác nhận";
+
+"FaceTec_idscan_ocr_confirmation_scroll_message" = "Cuộn xuống";
+
+"FaceTec_idscan_review_id_back_instruction_message" = "Xác nhận ảnh rõ nét và dễ đọc";
+
+"FaceTec_idscan_review_id_front_instruction_message" = "Xác nhận ảnh rõ nét và dễ đọc";
+
+"FaceTec_idscan_type_selection_header" = "Chuẩn bị quét<br/>giấy tờ tùy thân của bạn";
+
+"FaceTec_initializing_camera" = "Đang lấy nguồn cấp camera";
+
+/*  */
+"FaceTec_instructions_header_ready_1" = "Chuẩn bị sẵn sàng để";
+
+/*  */
+"FaceTec_instructions_header_ready_2" = "tự quay video chân dung";
+
+/*  */
+"FaceTec_instructions_header_ready_desktop" = "Chuẩn bị sẵn sàng để tự quay video chân dung";
+
+"FaceTec_instructions_message_ready_1" = "Căn khuôn mặt vào trong hình bầu dục,";
+
+"FaceTec_instructions_message_ready_2" = "Nhấn vào Tôi đã sẵn sàng, rồi dịch chuyển đến gần hơn";
+
+/*  */
+"FaceTec_instructions_message_ready_desktop" = "Căn khuôn mặt vào trong hình bầu dục, nhấn vào Tôi đã sẵn sàng, rồi di chuyển đến gần hơn";
+
+"FaceTec_presession_brighten_your_environment" = "Làm Sáng Môi Trường Xung Quanh";
+
+"FaceTec_presession_conditions_too_bright" = "Điều Kiện Xung Quanh Quá Sáng";
+
+"FaceTec_presession_eyes_straight_ahead" = " Nhìn Thẳng Về Phía Trước";
+
+"FaceTec_presession_frame_your_face" = "Chỉnh Vị Trí Khuôn Mặt Vào Hình Oval";
+
+"FaceTec_presession_hold_steady_1" = "Giữ Ổn Định trong: 1";
+
+"FaceTec_presession_hold_steady_2" = "Giữ Ổn Định trong: 2";
+
+"FaceTec_presession_hold_steady_3" = "Giữ Ổn Định trong: 3";
+
+"FaceTec_presession_look_straight_ahead" = "Nhìn Thẳng Về Phía Trước";
+
+"FaceTec_presession_neutral_expression" = "Biểu Cảm Tự Nhiên, Không Cười";
+
+"FaceTec_presession_remove_dark_glasses" = "Tháo Kính Râm";
+
+"FaceTec_result_facescan_upload_message" = "Đang tải<br/>3D FaceScan<br/>được mã hóa lên";
+
+"FaceTec_result_idscan_retry_barcode_not_read_message" = "Quét mã vạch không thành công,<br/>Vui lòng thử lại";
+
+"FaceTec_result_idscan_retry_face_did_not_match_message" = "Khuôn mặt không<br/>đủ độ khớp";
+
+"FaceTec_result_idscan_retry_id_not_fully_visible_message" = "Giấy tờ tùy thân<br/>không hiển thị đầy đủ";
+
+"FaceTec_result_idscan_retry_id_type_not_suppported_message" = "Loại giấy tờ tùy thân không được hỗ trợ<br/>Vui lòng sử dụng giấy tờ tùy thân khác";
+
+"FaceTec_result_idscan_retry_ocr_results_not_good_enough_message" = "Không đọc được chữ trên giấy tờ tùy thân";
+
+"FaceTec_result_idscan_success_additional_review_message" = "Đã hoàn tất<br/>chụp ảnh giấy tờ tùy thân";
+
+"FaceTec_result_idscan_success_back_side_message" = "Đã hoàn tất quét giấy tờ tùy thân";
+
+"FaceTec_result_idscan_success_front_side_back_next_message" = "Đã quét mặt trước<br/>giấy tờ tùy thân";
+
+"FaceTec_result_idscan_success_front_side_message" = "Đã hoàn tất quét giấy tờ tùy thân";
+
+"FaceTec_result_idscan_success_passport_message" = "Đã hoàn tất quét hộ chiếu";
+
+"FaceTec_result_idscan_success_user_confirmation_message" = "Đã hoàn tất quét<br/>giấy tờ tùy thân có ảnh";
+
+"FaceTec_result_idscan_unsuccess_message" = "Ảnh giấy tờ tùy thân<br/>không khớp với khuôn mặt<br/>của người dùng";
+
+"FaceTec_result_idscan_upload_message" = "Đang tải<br/>giấy tờ tùy thân<br/>được mã hóa lên";
+
+"FaceTec_result_success_message" = "Thành công!";
+
+"FaceTec_retry_header" = "Hãy thử lại lần nữa";
+
+"FaceTec_retry_ideal_image_label" = "Tư thế lý tưởng";
+
+"FaceTec_retry_instruction_message_1" = "Biểu cảm bình thường, không cười";
+
+"FaceTec_retry_instruction_message_2" = "Ánh sáng không chói hoặc quá mạnh";
+
+"FaceTec_retry_instruction_message_3" = "Quá mờ, hãy lau sạch camera";
+
+"FaceTec_retry_subheader_message" = "Chúng tôi cần video chân dung tự quay rõ nét hơn";
+
+"FaceTec_retry_your_image_label" = "Ảnh của bạn";
+
+"FailureScreen.TooManyAttempts.Actions.EndProcess" = "Dừng quá trình";
+
+"FailureScreen.TooManyAttempts.Description" = "Vui lòng liên hệ với nhà cung cấp dịch vụ để được hỗ trợ";
+
+"FailureScreen.TooManyAttempts.Header" = "Đã chặn xác minh do bạn đã thử quá nhiều lần";
+
+"LoadResultReason.DeviceLockedOut.Description" = "Thiết bị đã bị khóa.";
+
+"LoadResultReason.DeviceLockedOut.Header" = "Quá nhiều lần thực hiện";
+
+"LoadResultReason.DeviceNotSupported.Description" = "Thiết bị không được hỗ trợ.";
+
+"LoadResultReason.DeviceNotSupported.Header" = "Không thành công";
+
+"LoadResultReason.FaceTecLicenceError.Description" = "Vui lòng thử lại sau.";
+
+"LoadResultReason.FaceTecLicenceError.Header" = "Lỗi bản quyền";
+
+"LoadResultReason.KeyExpiredOrInvalid.Description" = "Mã khóa đã hết hạn, chứa văn bản không hợp lệ hoặc bạn đang cố gắng khởi tạo trên một miền không được chỉ định trong Mã khóa của mình.";
+
+"LoadResultReason.KeyExpiredOrInvalid.Header" = "Mã khóa đã hết hạn hoặc không hợp lệ";
+
+"LoadResultReason.NetworkIssues.Description" = "Không thể tiếp tục do sự cố kết nối trên thiết bị của bạn";
+
+"LoadResultReason.NetworkIssues.Header" = "Sự cố mạng";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Description" = "Không thể tải tài nguyên.";
+
+"LoadResultReason.ResourcesCouldNotBeLoadedOnLastInit.Header" = "Không thành công";
+
+"LoadResultReason.StillLoadingResources.Description" = "Vẫn đang tải tài nguyên.";
+
+"LoadResultReason.StillLoadingResources.Header" = "Không thành công";
+
+"FaceTec_action_im_ready" = "Tôi đã sẵn sàng";
+
+"ReadyScreen.Header" = "Hãy sẵn sàng thực hiện video tự quay";
+
+"RetryScreen.Action.PassiveLiveness" = "Thử phương pháp thay thế";
+
+"FaceTec_action_try_again" = "Thử lại";
+
+"RetryScreen.Description" = "Chúng tôi cần ảnh chụp rõ hơn.";
+
+"RetryScreen.Header" = "Hãy thử lại";
+
+/*  */
+"RetryScreen.Message.Generic" = "Vui lòng sử dụng ánh sáng phù hợp và sao chép tư thế lý tưởng";
+
+"UploadScreen.Description" = "Giữ cửa sổ này mở";
+
+"UploadScreen.Header" = "Xác thực ảnh khuôn mặt của bạn";
