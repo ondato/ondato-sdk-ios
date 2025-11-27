@@ -11,6 +11,7 @@
 * [Customising SDK](#customising-sdk)
 * [Localization](#localization)
 * [Logs](#logs)
+* [Old version V2](#old-version-v2)
 
 
 ## Overview
@@ -447,13 +448,10 @@ The OndatoFlowDelegate also has optional methods to replace Ondato windows/views
     @objc optional func viewControllerForLoading() -> OndatoLoadingViewControllerType?
     @objc optional func viewForScanProcessing() -> UIView?
     @objc optional func viewForLoading() -> UIView?
+    
     @objc optional func documentCapture(instructionsViewControllerFor documentType: OndatoDocumentType, documentPart: OndatoDocumentPart) -> OndatoInstructionViewControllerType?
     @objc optional func additionalDocumentCapture(instructionsViewControllerFor additionalDocumentType: OndatoAdditionalDocumentType) -> OndatoInstructionViewControllerType?
-    @objc optional func nfcCapture(instructionsViewControllerFor documentType: OndatoDocumentType, documentComponent: OndatoNFCCaptureComponent) -> OndatoInstructionViewControllerType?
     @objc optional func faceCapture(instructionsViewControllerFor faceCaptureType: OndatoFaceCaptureType) -> OndatoInstructionViewControllerType?
-    
-    @objc optional func completionViewController() -> OndatoCompletionViewControllerType?
-    
     @objc optional func chooseDocumentViewController(documentTypes: OndatoDocumentTypes) -> OndatoChooseDocumentViewControllerType?
 ```
 ## provided classes for custom ViewControllers
@@ -461,11 +459,6 @@ The OndatoFlowDelegate also has optional methods to replace Ondato windows/views
 ```swift
 class OndatoLoadingViewControllerType: UIViewController {
     var closeButtonPressed: (() -> Void)?
-}
-
-class OndatoCompletionViewControllerType: UIViewController {
-    var closeButtonPressed: (() -> Void)?
-    var restartButtonPressed: (() -> Void)?
 }
 
 class OndatoInstructionViewControllerType: UIViewController {
@@ -584,3 +577,5 @@ Error log level gives info about screen recording problems, unsuccessful api cal
 ```swift
 OndatoLog.shared.logs // returns [String]
 ```
+## Old version V2
+Link to deprecated version of SDK [README](https://github.com/ondato/ondato-sdk-ios/blob/release/2.6.9/readme.md)
