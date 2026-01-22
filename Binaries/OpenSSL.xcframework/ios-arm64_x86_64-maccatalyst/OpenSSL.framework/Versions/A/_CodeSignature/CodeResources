@@ -6,7 +6,11 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		ouObf1+smjLKldYJ8khcgjPL1IM=
+		OjsE/QS+Oj3YOgtGhNy4Hajqnww=
+		</data>
+		<key>Resources/PrivacyInfo.xcprivacy</key>
+		<data>
+		AL1dh5ctObXBjoBiabSJ86M3HQs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -92,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2qywD0Fgda5HByP3ZND/lwP0pfwx6IHhvok3Yx3n7/8=
+			gJirlUUwfW4snMKK6ZXW/aDolZthZ8wD1ncWsCq7J/8=
 			</data>
 		</dict>
 		<key>Headers/buffer.h</key>
@@ -141,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CGqgtmG6nelhivyUik0agt+XCkBvbFu2+mBXKnIKYvA=
+			fg/dq6hfs9ESYq7ixgJyWS3uGmI0pSqUsGuv0cClQ1A=
 			</data>
 		</dict>
 		<key>Headers/comp.h</key>
@@ -218,14 +222,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9W4MKcEkAXyBXG89DCQT4DyBytri6EwsMl/CxnGf1Vk=
+			RtDEiea4BjeSz52Bk/UnOPDY/spOuERV4KNZY21BqeA=
 			</data>
 		</dict>
 		<key>Headers/dherr.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mx9wGdjZXh1fxSaAiegzGCmvdBaxiokIJmq2ACeq4OM=
+			cpkNxez4V74yHIi5IVAshTZX+AnsU+r5GgEcCZqFdw0=
 			</data>
 		</dict>
 		<key>Headers/dsa.h</key>
@@ -435,14 +439,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c46CtFqufKsWUIpBKIl9vY65IWWWBeTUFep72v0r3Zw=
+			Opeaj8UOd4cbIXbtV6e/S+nr7u8pAf/rjqJnCaBupXA=
 			</data>
 		</dict>
 		<key>Headers/opensslv.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JrJWz/kKAPkRW/+c/vbQJl1LrrQnmMUWvJIhMk8RJRE=
+			DKEsKrqL++JMTAaGHp1XuTnF5y0cCPN5ikQtaY3rdZk=
 			</data>
 		</dict>
 		<key>Headers/ossl_typ.h</key>
@@ -736,7 +740,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GGSPtWtXVTqwxCWXYJqPiWNRbXP5t4fbGIAg1cqH87o=
+			p+eKGFhpfnWUC0FroftvThNXIuiMDCgK+Kl5l1xUQ9o=
 			</data>
 		</dict>
 		<key>Headers/x509v3err.h</key>
@@ -750,14 +754,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uYLfMx9MVaDkDRzLb4iDSgMnBd0/Lofbg3kPaGqRxP0=
+			Iyk3YE2iKlYEZnIdRRtNf4piXHBV2iLaIdaHtxJFxL8=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W558Mg0yuIXfa5mWWT8ef/galcF4cejSsfOYrkgjCes=
+			/svN2qAG/ubxQXnpuXGiAisqKURhBRkeZTeanqyKag8=
+			</data>
+		</dict>
+		<key>Resources/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WpuPwM3bECAbtHzCgEs/AExyUUdmItJb/E61TtRuEIQ=
 			</data>
 		</dict>
 	</dict>

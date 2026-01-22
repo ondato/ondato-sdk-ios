@@ -2570,16 +2570,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "OndatoSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "OndatoSDK"
       },
       {
@@ -2708,23 +2698,6 @@
         "declAttributes": [
           "AccessControl"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "OnnxRuntimeBindings",
-        "printedName": "OnnxRuntimeBindings",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "VideoToolbox",
-        "printedName": "VideoToolbox",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK"
       },
       {
         "kind": "Import",
@@ -3949,13 +3922,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "OndatoSDK",
         "declAttributes": [
           "RawDocComment"
@@ -4110,120 +4076,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CryptoKit",
-        "printedName": "CryptoKit",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Security",
-        "printedName": "Security",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ONNXModelCrypto",
-        "printedName": "ONNXModelCrypto",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "decryptedModelPath",
-            "printedName": "decryptedModelPath(privateKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9OndatoSDK15ONNXModelCryptoC18decryptedModelPath10privateKey10Foundation3URLVSS_tKFZ",
-            "mangledName": "$s9OndatoSDK15ONNXModelCryptoC18decryptedModelPath10privateKey10Foundation3URLVSS_tKFZ",
-            "moduleName": "OndatoSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "deleteTemporaryDecryptedModel",
-            "printedName": "deleteTemporaryDecryptedModel(path:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9OndatoSDK15ONNXModelCryptoC29deleteTemporaryDecryptedModel4pathy10Foundation3URLV_tKFZ",
-            "mangledName": "$s9OndatoSDK15ONNXModelCryptoC29deleteTemporaryDecryptedModel4pathy10Foundation3URLV_tKFZ",
-            "moduleName": "OndatoSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:9OndatoSDK15ONNXModelCryptoC",
-        "mangledName": "$s9OndatoSDK15ONNXModelCryptoC",
-        "moduleName": "OndatoSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -4338,442 +4190,6 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CryptoKit",
-        "printedName": "CryptoKit",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Security",
-        "printedName": "Security",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ONNXModelCryptoError",
-        "printedName": "ONNXModelCryptoError",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "failedToDeleteTemporaryModel",
-            "printedName": "failedToDeleteTemporaryModel",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OndatoSDK.ONNXModelCryptoError.Type) -> (any Swift.Error) -> OndatoSDK.ONNXModelCryptoError",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(any Swift.Error) -> OndatoSDK.ONNXModelCryptoError",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO28failedToDeleteTemporaryModelyACs0E0_pcACmF",
-            "mangledName": "$s9OndatoSDK20ONNXModelCryptoErrorO28failedToDeleteTemporaryModelyACs0E0_pcACmF",
-            "moduleName": "OndatoSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "failedToLoadEncryptedModel",
-            "printedName": "failedToLoadEncryptedModel",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OndatoSDK.ONNXModelCryptoError.Type) -> (any Swift.Error) -> OndatoSDK.ONNXModelCryptoError",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(any Swift.Error) -> OndatoSDK.ONNXModelCryptoError",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO26failedToLoadEncryptedModelyACs0E0_pcACmF",
-            "mangledName": "$s9OndatoSDK20ONNXModelCryptoErrorO26failedToLoadEncryptedModelyACs0E0_pcACmF",
-            "moduleName": "OndatoSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "failedToFindEncryptedModel",
-            "printedName": "failedToFindEncryptedModel",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OndatoSDK.ONNXModelCryptoError.Type) -> OndatoSDK.ONNXModelCryptoError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ONNXModelCryptoError",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError",
-                    "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO26failedToFindEncryptedModelyA2CmF",
-            "mangledName": "$s9OndatoSDK20ONNXModelCryptoErrorO26failedToFindEncryptedModelyA2CmF",
-            "moduleName": "OndatoSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "failedToSaveFileToTempDir",
-            "printedName": "failedToSaveFileToTempDir",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OndatoSDK.ONNXModelCryptoError.Type) -> (any Swift.Error) -> OndatoSDK.ONNXModelCryptoError",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(any Swift.Error) -> OndatoSDK.ONNXModelCryptoError",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO016failedToSaveFileG7TempDiryACs0E0_pcACmF",
-            "mangledName": "$s9OndatoSDK20ONNXModelCryptoErrorO016failedToSaveFileG7TempDiryACs0E0_pcACmF",
-            "moduleName": "OndatoSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "rsaUnsupported",
-            "printedName": "rsaUnsupported",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OndatoSDK.ONNXModelCryptoError.Type) -> OndatoSDK.ONNXModelCryptoError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ONNXModelCryptoError",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError",
-                    "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO14rsaUnsupportedyA2CmF",
-            "mangledName": "$s9OndatoSDK20ONNXModelCryptoErrorO14rsaUnsupportedyA2CmF",
-            "moduleName": "OndatoSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "rsaDecryptionFailed",
-            "printedName": "rsaDecryptionFailed",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OndatoSDK.ONNXModelCryptoError.Type) -> (Swift.String) -> OndatoSDK.ONNXModelCryptoError",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> OndatoSDK.ONNXModelCryptoError",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO19rsaDecryptionFailedyACSScACmF",
-            "mangledName": "$s9OndatoSDK20ONNXModelCryptoErrorO19rsaDecryptionFailedyACSScACmF",
-            "moduleName": "OndatoSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "failedToDecryptPrivateKeyFromBase64",
-            "printedName": "failedToDecryptPrivateKeyFromBase64",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OndatoSDK.ONNXModelCryptoError.Type) -> OndatoSDK.ONNXModelCryptoError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ONNXModelCryptoError",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError",
-                    "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO35failedToDecryptPrivateKeyFromBase64yA2CmF",
-            "mangledName": "$s9OndatoSDK20ONNXModelCryptoErrorO35failedToDecryptPrivateKeyFromBase64yA2CmF",
-            "moduleName": "OndatoSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "failedToCreateSecKey",
-            "printedName": "failedToCreateSecKey",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OndatoSDK.ONNXModelCryptoError.Type) -> (Swift.String) -> OndatoSDK.ONNXModelCryptoError",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> OndatoSDK.ONNXModelCryptoError",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OndatoSDK.ONNXModelCryptoError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ONNXModelCryptoError",
-                        "printedName": "OndatoSDK.ONNXModelCryptoError",
-                        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO20failedToCreateSecKeyyACSScACmF",
-            "mangledName": "$s9OndatoSDK20ONNXModelCryptoErrorO20failedToCreateSecKeyyACSScACmF",
-            "moduleName": "OndatoSDK"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:9OndatoSDK20ONNXModelCryptoErrorO",
-        "mangledName": "$s9OndatoSDK20ONNXModelCryptoErrorO",
-        "moduleName": "OndatoSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Error",
-            "printedName": "Error",
-            "usr": "s:s5ErrorP",
-            "mangledName": "$ss5ErrorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -6079,7 +5495,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8206,13 +7623,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "OndatoSDK",
         "declAttributes": [
           "RawDocComment"
@@ -9141,6 +8551,16 @@
         "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "OndatoSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "OndatoAutocapture",
+        "printedName": "OndatoAutocapture",
+        "declKind": "Import",
+        "moduleName": "OndatoSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10209,8 +9629,8 @@
           },
           {
             "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
+            "name": "identifier",
+            "printedName": "identifier",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10220,8 +9640,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9OndatoSDK0A17SupportedLanguageO8rawValueSSvp",
-            "mangledName": "$s9OndatoSDK0A17SupportedLanguageO8rawValueSSvp",
+            "usr": "s:9OndatoSDK0A17SupportedLanguageO10identifierSSvp",
+            "mangledName": "$s9OndatoSDK0A17SupportedLanguageO10identifierSSvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "AccessControl"
@@ -10240,8 +9660,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A17SupportedLanguageO8rawValueSSvg",
-                "mangledName": "$s9OndatoSDK0A17SupportedLanguageO8rawValueSSvg",
+                "usr": "s:9OndatoSDK0A17SupportedLanguageO10identifierSSvg",
+                "mangledName": "$s9OndatoSDK0A17SupportedLanguageO10identifierSSvg",
                 "moduleName": "OndatoSDK",
                 "accessorKind": "get"
               }
@@ -10290,7 +9710,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(rawValue:)",
+            "printedName": "init(identifier:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10314,13 +9734,85 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9OndatoSDK0A17SupportedLanguageO8rawValueACSgSS_tcfc",
-            "mangledName": "$s9OndatoSDK0A17SupportedLanguageO8rawValueACSgSS_tcfc",
+            "usr": "s:9OndatoSDK0A17SupportedLanguageO10identifierACSgSS_tcfc",
+            "mangledName": "$s9OndatoSDK0A17SupportedLanguageO10identifierACSgSS_tcfc",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OndatoSDK.OndatoSupportedLanguage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OndatoSupportedLanguage",
+                    "printedName": "OndatoSDK.OndatoSupportedLanguage",
+                    "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9OndatoSDK0A17SupportedLanguageO8rawValueACSgSi_tcfc",
+            "mangledName": "$s9OndatoSDK0A17SupportedLanguageO8rawValueACSgSi_tcfc",
+            "moduleName": "OndatoSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9OndatoSDK0A17SupportedLanguageO8rawValueSivp",
+            "mangledName": "$s9OndatoSDK0A17SupportedLanguageO8rawValueSivp",
+            "moduleName": "OndatoSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9OndatoSDK0A17SupportedLanguageO8rawValueSivg",
+                "mangledName": "$s9OndatoSDK0A17SupportedLanguageO8rawValueSivg",
+                "moduleName": "OndatoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Var",
@@ -10436,9 +9928,9 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
@@ -10647,23 +10139,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Accelerate",
-        "printedName": "Accelerate",
         "declKind": "Import",
         "moduleName": "OndatoSDK",
         "declAttributes": [
@@ -12878,23 +12353,6 @@
       },
       {
         "kind": "Import",
-        "name": "OnnxRuntimeBindings",
-        "printedName": "OnnxRuntimeBindings",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "VideoToolbox",
-        "printedName": "VideoToolbox",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -14963,13 +14421,6 @@
         "kind": "Import",
         "name": "FaceTecSDK",
         "printedName": "FaceTecSDK",
-        "declKind": "Import",
-        "moduleName": "OndatoSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "OndatoSDK"
       },
@@ -23960,13 +23411,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -32260,105 +31704,63 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
       "kind": "StringLiteral",
-      "offset": 1212,
+      "offset": 1282,
       "length": 25,
       "value": "\"ondato-tutorial-warning\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
       "kind": "StringLiteral",
-      "offset": 1471,
+      "offset": 1541,
       "length": 19,
       "value": "\"ondato-arrow-left\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
       "kind": "StringLiteral",
-      "offset": 1723,
+      "offset": 1793,
       "length": 22,
       "value": "\"ondato_chevron_right\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
       "kind": "StringLiteral",
-      "offset": 1987,
+      "offset": 2057,
       "length": 7,
       "value": "\"xmark\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
       "kind": "StringLiteral",
-      "offset": 2063,
+      "offset": 2133,
       "length": 13,
       "value": "\"ondato_logo\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
       "kind": "StringLiteral",
-      "offset": 2304,
+      "offset": 2374,
       "length": 20,
       "value": "\"ondato_no_internet\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
       "kind": "StringLiteral",
-      "offset": 2412,
+      "offset": 2482,
       "length": 21,
       "value": "\"ondato_success-icon\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
       "kind": "StringLiteral",
-      "offset": 2480,
+      "offset": 2550,
       "length": 19,
       "value": "\"ondato_error-icon\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
-      "kind": "StringLiteral",
-      "offset": 4377,
-      "length": 33,
-      "value": "\"ondato-choose-document-passport\""
-    },
-    {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
-      "kind": "StringLiteral",
-      "offset": 4470,
-      "length": 42,
-      "value": "\"ondato-choose-document-internal-passport\""
-    },
-    {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
-      "kind": "StringLiteral",
-      "offset": 4562,
-      "length": 38,
-      "value": "\"ondato-choose-document-identity-card\""
-    },
-    {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
-      "kind": "StringLiteral",
-      "offset": 4662,
-      "length": 45,
-      "value": "\"ondato-choose-document-social-identity-card\""
-    },
-    {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
-      "kind": "StringLiteral",
-      "offset": 4765,
-      "length": 40,
-      "value": "\"ondato-choose-document-driving-license\""
-    },
-    {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
-      "kind": "StringLiteral",
-      "offset": 4864,
-      "length": 41,
-      "value": "\"ondato-choose-document-residence-permit\""
-    },
-    {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Resources\/OndatoImages.swift",
       "kind": "Dictionary",
-      "offset": 5311,
+      "offset": 5308,
       "length": 3,
       "value": "[]"
     },
@@ -34444,21 +33846,21 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 681,
+      "offset": 756,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 848,
+      "offset": 923,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1187,
+      "offset": 1262,
       "length": 4,
       "value": "true"
     },
@@ -34521,161 +33923,161 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 132,
+      "offset": 114,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 144,
+      "offset": 126,
       "length": 2,
       "value": "2"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 156,
+      "offset": 138,
       "length": 2,
       "value": "3"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 168,
+      "offset": 150,
       "length": 2,
       "value": "4"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 180,
+      "offset": 162,
       "length": 2,
       "value": "5"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 192,
+      "offset": 174,
       "length": 2,
       "value": "6"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 204,
+      "offset": 186,
       "length": 2,
       "value": "7"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 216,
+      "offset": 198,
       "length": 2,
       "value": "8"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 228,
+      "offset": 210,
       "length": 2,
       "value": "9"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 240,
+      "offset": 222,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 252,
+      "offset": 234,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 264,
+      "offset": 246,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 276,
+      "offset": 258,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 288,
+      "offset": 270,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 300,
+      "offset": 282,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 312,
+      "offset": 294,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 324,
+      "offset": 306,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 336,
+      "offset": 318,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 348,
+      "offset": 330,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 360,
+      "offset": 342,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 372,
+      "offset": 354,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 366,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoSupportedLanguage.swift",
       "kind": "IntegerLiteral",
-      "offset": 396,
+      "offset": 378,
       "length": 2,
       "value": "23"
     },
@@ -35842,6 +35244,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/DocumentTypeSelection\/DocumentTypeSelectionCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 617,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/Identification\/KYC\/Models\/IDV+KYC+Face.swift",
       "kind": "StringLiteral",
       "offset": 425,
@@ -36180,91 +35589,98 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2009,
+      "offset": 2014,
+      "length": 29,
+      "value": "\"UiErrorAutocaptureNoFeature\""
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2070,
       "length": 18,
       "value": "\"UiViewMRZCapture\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2056,
+      "offset": 2117,
       "length": 22,
       "value": "\"UiViewMRZCaptureFail\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2108,
+      "offset": 2169,
       "length": 20,
       "value": "\"UiViewRegistration\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2151,
+      "offset": 2212,
       "length": 18,
       "value": "\"UiErrorNoNetwork\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2200,
+      "offset": 2261,
       "length": 50,
       "value": "\"UiViewAdditionalDocumentProofOfAddressSelectType\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2285,
+      "offset": 2346,
       "length": 46,
       "value": "\"UiViewAdditionalDocumentUploadProofOfAddress\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2369,
+      "offset": 2430,
       "length": 33,
       "value": "\"UiViewAdditionalDocumentCapture\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2445,
+      "offset": 2506,
       "length": 38,
       "value": "\"UiViewAdditionalDocumentInstructions\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2527,
+      "offset": 2588,
       "length": 39,
       "value": "\"UiViewAdditionalDocumentCaptureReview\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2619,
+      "offset": 2680,
       "length": 7,
       "value": "\"KycId\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2642,
+      "offset": 2703,
       "length": 5,
       "value": "\"Idv\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2667,
+      "offset": 2728,
       "length": 9,
       "value": "\"Consent\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/OndatoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2697,
+      "offset": 2758,
       "length": 20,
       "value": "\"FaceAuthentication\""
     },
@@ -37235,13 +36651,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Controllers\/CaptureScreen\/Autocapture\/Matrix.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1883,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/OndatoSDK3\/Frameworks\/Lottie\/Sources\/Private\/NodeRenderSystem\/Nodes\/RenderContainers\/GroupNode.swift",
       "kind": "StringLiteral",
       "offset": 2085,
@@ -37443,6 +36852,13 @@
       "offset": 2713,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Helpers\/OndatoFlowDelegate.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2753,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/OndatoSelectLanguageView.swift",
@@ -38084,21 +37500,21 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Helpers\/OndatoLocalizeController.swift",
       "kind": "Dictionary",
-      "offset": 416,
+      "offset": 418,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Helpers\/OndatoLocalizeController.swift",
       "kind": "Dictionary",
-      "offset": 496,
+      "offset": 498,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Helpers\/OndatoLocalizeController.swift",
       "kind": "Dictionary",
-      "offset": 564,
+      "offset": 566,
       "length": 3,
       "value": "[]"
     },

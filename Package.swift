@@ -20,7 +20,11 @@ let package = Package(
         .library(name: "OndatoScreenRecorder",
                  targets: [
                     "OndatoScreenRecorder"
-                 ])
+                 ]),
+        .library(name: "OndatoAutocapture",
+                targets: [
+                    "OndatoAutocapture"
+                ])
     ],
     targets: [
         .binaryTarget(name: "OndatoSDK",
@@ -32,6 +36,8 @@ let package = Package(
         .binaryTarget(name: "OpenSSL",
                       path: "Binaries/OpenSSL.xcframework"),
         .binaryTarget(name: "OndatoScreenRecorder",
-                      path: "Binaries/OndatoScreenRecorder.xcframework")
+                      path: "Binaries/OndatoScreenRecorder.xcframework"),
+        .binaryTarget(name: "OndatoAutocapture",
+                      path: "Binaries/OndatoAutocapture.xcframework")
     ]
 )

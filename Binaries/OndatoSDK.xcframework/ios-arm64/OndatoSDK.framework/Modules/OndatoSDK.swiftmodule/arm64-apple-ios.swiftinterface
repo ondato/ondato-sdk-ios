@@ -4,14 +4,12 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import AVKit
-import Accelerate
 import CoreGraphics
 import CoreImage
 import CoreLocation
 import CoreNFC
 import CoreServices
 import CoreText
-import CryptoKit
 import Darwin
 import DeveloperToolsSupport
 import Dispatch
@@ -23,12 +21,10 @@ import MobileCoreServices
 import Photos
 import PhotosUI
 import QuartzCore
-import Security
 import Swift
 import SwiftUI
 import SystemConfiguration
 import UIKit
-import VideoToolbox
 import Vision
 import WebKit
 import _Concurrency
@@ -125,21 +121,6 @@ extension Foundation.Bundle {
   #endif
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class ONNXModelCrypto {
-  public static func decryptedModelPath(privateKey: Swift.String) throws -> Foundation.URL
-  public static func deleteTemporaryDecryptedModel(path: Foundation.URL) throws
-  @objc deinit
-}
-public enum ONNXModelCryptoError : Swift.Error {
-  case failedToDeleteTemporaryModel(any Swift.Error)
-  case failedToLoadEncryptedModel(any Swift.Error)
-  case failedToFindEncryptedModel
-  case failedToSaveFileToTempDir(any Swift.Error)
-  case rsaUnsupported
-  case rsaDecryptionFailed(Swift.String)
-  case failedToDecryptPrivateKeyFromBase64
-  case failedToCreateSecKey(Swift.String)
-}
 @objc(OndatoAnimations) public class OndatoAnimations : ObjectiveC.NSObject {
   @objc public var waitingScreenAnimationFilePath: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
@@ -222,7 +203,7 @@ public class ConsentFormatter {
   public init(htmlText: Swift.String)
   @objc deinit
 }
-@objc(OndatoSupportedLanguage) public enum OndatoSupportedLanguage : Swift.Int, Swift.RawRepresentable {
+@objc(OndatoSupportedLanguage) public enum OndatoSupportedLanguage : Swift.Int {
   case BG
   case CA
   case CS
@@ -247,16 +228,22 @@ public class ConsentFormatter {
   case SV
   case UA
   case VI
-  public typealias RawValue = Swift.String
-  public var rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue {
+  public var identifier: Swift.String {
     get
   }
   public var displayName: Swift.String {
     get
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: OndatoSDK.OndatoSupportedLanguage.RawValue)
+  public init?(identifier: Swift.String)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 extension OndatoSDK.OndatoSupportedLanguage : Swift.CaseIterable {
   public typealias AllCases = [OndatoSDK.OndatoSupportedLanguage]
@@ -598,7 +585,7 @@ public struct OSVersion : Swift.Encodable {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLocalizeHelper) public class OndatoLocalizeHelper : ObjectiveC.NSObject {
   @objc public static let shared: OndatoSDK.OndatoLocalizeHelper
-  @objc public var language: OndatoSDK.OndatoSupportedLanguage.RawValue {
+  @objc public var language: Swift.String {
     get
   }
   @objc public func setLangauge(_ language: OndatoSDK.OndatoSupportedLanguage)
@@ -619,6 +606,7 @@ extension OndatoSDK.OndatoDocumentType : Swift.Hashable {}
 extension OndatoSDK.OndatoDocumentType : Swift.RawRepresentable {}
 extension OndatoSDK.OndatoSupportedLanguage : Swift.Equatable {}
 extension OndatoSDK.OndatoSupportedLanguage : Swift.Hashable {}
+extension OndatoSDK.OndatoSupportedLanguage : Swift.RawRepresentable {}
 extension OndatoSDK.OndatoDocumentPart : Swift.Equatable {}
 extension OndatoSDK.OndatoDocumentPart : Swift.Hashable {}
 extension OndatoSDK.OndatoDocumentPart : Swift.RawRepresentable {}
