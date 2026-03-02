@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OndatoSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFoundation
 import AVKit
 import CoreGraphics
@@ -110,23 +110,21 @@ extension Foundation.Bundle {
     get
   }
 }
-@objc(OndatoFonts) public class OndatoFonts : ObjectiveC.NSObject {
-  @objc public var heading1: UIKit.UIFont?
-  @objc public var heading2: UIKit.UIFont?
-  @objc public var normal: UIKit.UIFont?
-  @objc public var list: UIKit.UIFont?
-  @objc public var button: UIKit.UIFont?
+public struct OndatoFonts {
+  public var heading1: UIKit.UIFont?
+  public var heading2: UIKit.UIFont?
+  public var normal: UIKit.UIFont?
+  public var list: UIKit.UIFont?
+  public var button: UIKit.UIFont?
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(heading1: UIKit.UIFont? = nil, heading2: UIKit.UIFont? = nil, normal: UIKit.UIFont? = nil, list: UIKit.UIFont? = nil, button: UIKit.UIFont? = nil)
+  public init(heading1: UIKit.UIFont? = nil, heading2: UIKit.UIFont? = nil, normal: UIKit.UIFont? = nil, list: UIKit.UIFont? = nil, button: UIKit.UIFont? = nil)
   #endif
-  @objc deinit
 }
-@objc(OndatoAnimations) public class OndatoAnimations : ObjectiveC.NSObject {
-  @objc public var waitingScreenAnimationFilePath: Swift.String?
+public struct OndatoAnimations {
+  public var waitingScreenAnimationFilePath: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(waitingScreen: Swift.String?)
+  public init(waitingScreen: Swift.String?)
   #endif
-  @objc deinit
 }
 @objc(OndatoLocalizationBundle) public class OndatoLocalizationBundle : ObjectiveC.NSObject {
   @objc public static func bundle(with bundle: Foundation.Bundle, tableName: Swift.String) -> OndatoSDK.OndatoLocalizationBundle
@@ -160,7 +158,10 @@ public struct OndatoDocumentImages {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Ondato) public class Ondato : ObjectiveC.NSObject {
   @objc public static let sdk: OndatoSDK.Ondato
   @objc weak public var delegate: (any OndatoSDK.OndatoFlowDelegate)?
-  @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
+  public var configuration: OndatoSDK.OndatoServiceConfiguration {
+    get
+    set
+  }
   @objc public func setIdentityVerificationId(_ id: Swift.String)
   @objc public func setSetupId(_ setupId: Swift.String)
   @objc public func setClientId(_ clientId: Swift.String)
@@ -309,14 +310,13 @@ extension OndatoSDK.AnyValue : Swift.ExpressibleByDictionaryLiteral {
 extension Swift.Dictionary where Key == Swift.String, Value == OndatoSDK.AnyValue {
   public func toStringKeyAndRemoveNilObjects() -> [Swift.String : OndatoSDK.AnyValue]
 }
-@objc(OndatoResources) public class OndatoResources : ObjectiveC.NSObject {
-  @objc public var animations: OndatoSDK.OndatoAnimations
-  @objc public var fonts: OndatoSDK.OndatoFonts
-  @objc public var images: OndatoSDK.OndatoImages
+public struct OndatoResources {
+  public var animations: OndatoSDK.OndatoAnimations
+  public var fonts: OndatoSDK.OndatoFonts
+  public var images: OndatoSDK.OndatoImages
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(animations: OndatoSDK.OndatoAnimations? = nil, fonts: OndatoSDK.OndatoFonts? = nil, images: OndatoSDK.OndatoImages? = nil)
+  public init(animations: OndatoSDK.OndatoAnimations? = nil, fonts: OndatoSDK.OndatoFonts? = nil, images: OndatoSDK.OndatoImages? = nil)
   #endif
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OndatoLog : ObjectiveC.NSObject {
   public static let shared: OndatoSDK.OndatoLog
@@ -500,21 +500,19 @@ public struct OSVersion : Swift.Encodable {
   #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(OndatoServiceConfiguration) public class OndatoServiceConfiguration : ObjectiveC.NSObject {
-  @objc public var resources: OndatoSDK.OndatoResources
-  @objc public var flowConfiguration: OndatoSDK.OndatoFlowConfiguration
-  @objc public var mode: OndatoSDK.OndatoEnvironment
-  @objc override dynamic public init()
-  @objc deinit
+public struct OndatoServiceConfiguration {
+  public var resources: OndatoSDK.OndatoResources
+  public var flowConfiguration: OndatoSDK.OndatoFlowConfiguration
+  public var mode: OndatoSDK.OndatoEnvironment
+  public init()
 }
-@_inheritsConvenienceInitializers @objc(OndatoFlowConfiguration) public class OndatoFlowConfiguration : ObjectiveC.NSObject {
-  @objc public var skipRegistrationIfDriverLicense: Swift.Bool
-  @objc public var showTranslationKeys: Swift.Bool
-  @objc public var showNoInternetConnectionView: Swift.Bool
-  @objc public var disablePdfFileUpload: Swift.Bool
-  @objc public var switchPrimaryButtons: Swift.Bool
-  @objc override dynamic public init()
-  @objc deinit
+public struct OndatoFlowConfiguration {
+  public var skipRegistrationIfDriverLicense: Swift.Bool
+  public var showTranslationKeys: Swift.Bool
+  public var showNoInternetConnectionView: Swift.Bool
+  public var disablePdfFileUpload: Swift.Bool
+  public var switchPrimaryButtons: Swift.Bool
+  public init()
 }
 @_hasMissingDesignatedInitializers @objc(OndatoDocumentTypes) public class OndatoDocumentTypes : ObjectiveC.NSObject {
   public var types: [OndatoSDK.OndatoDocumentType]

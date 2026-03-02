@@ -2870,14 +2870,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(py)heading1",
-            "mangledName": "$s9OndatoSDK0A5FontsC8heading1So6UIFontCSgvp",
+            "usr": "s:9OndatoSDK0A5FontsV8heading1So6UIFontCSgvp",
+            "mangledName": "$s9OndatoSDK0A5FontsV8heading1So6UIFontCSgvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -2902,13 +2901,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)heading1",
-                "mangledName": "$s9OndatoSDK0A5FontsC8heading1So6UIFontCSgvg",
+                "usr": "s:9OndatoSDK0A5FontsV8heading1So6UIFontCSgvg",
+                "mangledName": "$s9OndatoSDK0A5FontsV8heading1So6UIFontCSgvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -2937,13 +2933,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)setHeading1:",
-                "mangledName": "$s9OndatoSDK0A5FontsC8heading1So6UIFontCSgvs",
+                "usr": "s:9OndatoSDK0A5FontsV8heading1So6UIFontCSgvs",
+                "mangledName": "$s9OndatoSDK0A5FontsV8heading1So6UIFontCSgvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -2958,8 +2951,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A5FontsC8heading1So6UIFontCSgvM",
-                "mangledName": "$s9OndatoSDK0A5FontsC8heading1So6UIFontCSgvM",
+                "usr": "s:9OndatoSDK0A5FontsV8heading1So6UIFontCSgvM",
+                "mangledName": "$s9OndatoSDK0A5FontsV8heading1So6UIFontCSgvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2987,14 +2980,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(py)heading2",
-            "mangledName": "$s9OndatoSDK0A5FontsC8heading2So6UIFontCSgvp",
+            "usr": "s:9OndatoSDK0A5FontsV8heading2So6UIFontCSgvp",
+            "mangledName": "$s9OndatoSDK0A5FontsV8heading2So6UIFontCSgvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3019,13 +3011,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)heading2",
-                "mangledName": "$s9OndatoSDK0A5FontsC8heading2So6UIFontCSgvg",
+                "usr": "s:9OndatoSDK0A5FontsV8heading2So6UIFontCSgvg",
+                "mangledName": "$s9OndatoSDK0A5FontsV8heading2So6UIFontCSgvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -3054,13 +3043,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)setHeading2:",
-                "mangledName": "$s9OndatoSDK0A5FontsC8heading2So6UIFontCSgvs",
+                "usr": "s:9OndatoSDK0A5FontsV8heading2So6UIFontCSgvs",
+                "mangledName": "$s9OndatoSDK0A5FontsV8heading2So6UIFontCSgvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -3075,8 +3061,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A5FontsC8heading2So6UIFontCSgvM",
-                "mangledName": "$s9OndatoSDK0A5FontsC8heading2So6UIFontCSgvM",
+                "usr": "s:9OndatoSDK0A5FontsV8heading2So6UIFontCSgvM",
+                "mangledName": "$s9OndatoSDK0A5FontsV8heading2So6UIFontCSgvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3104,14 +3090,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(py)normal",
-            "mangledName": "$s9OndatoSDK0A5FontsC6normalSo6UIFontCSgvp",
+            "usr": "s:9OndatoSDK0A5FontsV6normalSo6UIFontCSgvp",
+            "mangledName": "$s9OndatoSDK0A5FontsV6normalSo6UIFontCSgvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3136,13 +3121,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)normal",
-                "mangledName": "$s9OndatoSDK0A5FontsC6normalSo6UIFontCSgvg",
+                "usr": "s:9OndatoSDK0A5FontsV6normalSo6UIFontCSgvg",
+                "mangledName": "$s9OndatoSDK0A5FontsV6normalSo6UIFontCSgvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -3171,13 +3153,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)setNormal:",
-                "mangledName": "$s9OndatoSDK0A5FontsC6normalSo6UIFontCSgvs",
+                "usr": "s:9OndatoSDK0A5FontsV6normalSo6UIFontCSgvs",
+                "mangledName": "$s9OndatoSDK0A5FontsV6normalSo6UIFontCSgvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -3192,8 +3171,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A5FontsC6normalSo6UIFontCSgvM",
-                "mangledName": "$s9OndatoSDK0A5FontsC6normalSo6UIFontCSgvM",
+                "usr": "s:9OndatoSDK0A5FontsV6normalSo6UIFontCSgvM",
+                "mangledName": "$s9OndatoSDK0A5FontsV6normalSo6UIFontCSgvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3221,14 +3200,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(py)list",
-            "mangledName": "$s9OndatoSDK0A5FontsC4listSo6UIFontCSgvp",
+            "usr": "s:9OndatoSDK0A5FontsV4listSo6UIFontCSgvp",
+            "mangledName": "$s9OndatoSDK0A5FontsV4listSo6UIFontCSgvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3253,13 +3231,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)list",
-                "mangledName": "$s9OndatoSDK0A5FontsC4listSo6UIFontCSgvg",
+                "usr": "s:9OndatoSDK0A5FontsV4listSo6UIFontCSgvg",
+                "mangledName": "$s9OndatoSDK0A5FontsV4listSo6UIFontCSgvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -3288,13 +3263,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)setList:",
-                "mangledName": "$s9OndatoSDK0A5FontsC4listSo6UIFontCSgvs",
+                "usr": "s:9OndatoSDK0A5FontsV4listSo6UIFontCSgvs",
+                "mangledName": "$s9OndatoSDK0A5FontsV4listSo6UIFontCSgvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -3309,8 +3281,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A5FontsC4listSo6UIFontCSgvM",
-                "mangledName": "$s9OndatoSDK0A5FontsC4listSo6UIFontCSgvM",
+                "usr": "s:9OndatoSDK0A5FontsV4listSo6UIFontCSgvM",
+                "mangledName": "$s9OndatoSDK0A5FontsV4listSo6UIFontCSgvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3338,14 +3310,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(py)button",
-            "mangledName": "$s9OndatoSDK0A5FontsC6buttonSo6UIFontCSgvp",
+            "usr": "s:9OndatoSDK0A5FontsV6buttonSo6UIFontCSgvp",
+            "mangledName": "$s9OndatoSDK0A5FontsV6buttonSo6UIFontCSgvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3370,13 +3341,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)button",
-                "mangledName": "$s9OndatoSDK0A5FontsC6buttonSo6UIFontCSgvg",
+                "usr": "s:9OndatoSDK0A5FontsV6buttonSo6UIFontCSgvg",
+                "mangledName": "$s9OndatoSDK0A5FontsV6buttonSo6UIFontCSgvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -3405,13 +3373,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)setButton:",
-                "mangledName": "$s9OndatoSDK0A5FontsC6buttonSo6UIFontCSgvs",
+                "usr": "s:9OndatoSDK0A5FontsV6buttonSo6UIFontCSgvs",
+                "mangledName": "$s9OndatoSDK0A5FontsV6buttonSo6UIFontCSgvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -3426,8 +3391,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A5FontsC6buttonSo6UIFontCSgvM",
-                "mangledName": "$s9OndatoSDK0A5FontsC6buttonSo6UIFontCSgvM",
+                "usr": "s:9OndatoSDK0A5FontsV6buttonSo6UIFontCSgvM",
+                "mangledName": "$s9OndatoSDK0A5FontsV6buttonSo6UIFontCSgvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3443,7 +3408,7 @@
                 "kind": "TypeNominal",
                 "name": "OndatoFonts",
                 "printedName": "OndatoSDK.OndatoFonts",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts"
+                "usr": "s:9OndatoSDK0A5FontsV"
               },
               {
                 "kind": "TypeNominal",
@@ -3522,56 +3487,22 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)initWithHeading1:heading2:normal:list:button:",
-            "mangledName": "$s9OndatoSDK0A5FontsC8heading18heading26normal4list6buttonACSo6UIFontCSg_A4Ktcfc",
+            "usr": "s:9OndatoSDK0A5FontsV8heading18heading26normal4list6buttonACSo6UIFontCSg_A4Ktcfc",
+            "mangledName": "$s9OndatoSDK0A5FontsV8heading18heading26normal4list6buttonACSo6UIFontCSg_A4Ktcfc",
             "moduleName": "OndatoSDK",
-            "objc_name": "initWithHeading1:heading2:normal:list:button:",
             "declAttributes": [
               "AccessControl",
-              "ObjC",
               "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OndatoFonts",
-                "printedName": "OndatoSDK.OndatoFonts",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts(im)init",
-            "mangledName": "$s9OndatoSDK0A5FontsCACycfc",
-            "moduleName": "OndatoSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
             ],
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts",
-        "mangledName": "$s9OndatoSDK0A5FontsC",
+        "declKind": "Struct",
+        "usr": "s:9OndatoSDK0A5FontsV",
+        "mangledName": "$s9OndatoSDK0A5FontsV",
         "moduleName": "OndatoSDK",
-        "objc_name": "OndatoFonts",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -3587,55 +3518,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -4265,14 +4147,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations(py)waitingScreenAnimationFilePath",
-            "mangledName": "$s9OndatoSDK0A10AnimationsC30waitingScreenAnimationFilePathSSSgvp",
+            "usr": "s:9OndatoSDK0A10AnimationsV30waitingScreenAnimationFilePathSSSgvp",
+            "mangledName": "$s9OndatoSDK0A10AnimationsV30waitingScreenAnimationFilePathSSSgvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -4297,13 +4178,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations(im)waitingScreenAnimationFilePath",
-                "mangledName": "$s9OndatoSDK0A10AnimationsC30waitingScreenAnimationFilePathSSSgvg",
+                "usr": "s:9OndatoSDK0A10AnimationsV30waitingScreenAnimationFilePathSSSgvg",
+                "mangledName": "$s9OndatoSDK0A10AnimationsV30waitingScreenAnimationFilePathSSSgvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -4332,13 +4210,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations(im)setWaitingScreenAnimationFilePath:",
-                "mangledName": "$s9OndatoSDK0A10AnimationsC30waitingScreenAnimationFilePathSSSgvs",
+                "usr": "s:9OndatoSDK0A10AnimationsV30waitingScreenAnimationFilePathSSSgvs",
+                "mangledName": "$s9OndatoSDK0A10AnimationsV30waitingScreenAnimationFilePathSSSgvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -4353,8 +4228,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A10AnimationsC30waitingScreenAnimationFilePathSSSgvM",
-                "mangledName": "$s9OndatoSDK0A10AnimationsC30waitingScreenAnimationFilePathSSSgvM",
+                "usr": "s:9OndatoSDK0A10AnimationsV30waitingScreenAnimationFilePathSSSgvM",
+                "mangledName": "$s9OndatoSDK0A10AnimationsV30waitingScreenAnimationFilePathSSSgvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -4370,7 +4245,7 @@
                 "kind": "TypeNominal",
                 "name": "OndatoAnimations",
                 "printedName": "OndatoSDK.OndatoAnimations",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations"
+                "usr": "s:9OndatoSDK0A10AnimationsV"
               },
               {
                 "kind": "TypeNominal",
@@ -4388,55 +4263,21 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations(im)initWithWaitingScreen:",
-            "mangledName": "$s9OndatoSDK0A10AnimationsC13waitingScreenACSSSg_tcfc",
+            "usr": "s:9OndatoSDK0A10AnimationsV13waitingScreenACSSSg_tcfc",
+            "mangledName": "$s9OndatoSDK0A10AnimationsV13waitingScreenACSSSg_tcfc",
             "moduleName": "OndatoSDK",
-            "objc_name": "initWithWaitingScreen:",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OndatoAnimations",
-                "printedName": "OndatoSDK.OndatoAnimations",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations(im)init",
-            "mangledName": "$s9OndatoSDK0A10AnimationsCACycfc",
-            "moduleName": "OndatoSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations",
-        "mangledName": "$s9OndatoSDK0A10AnimationsC",
+        "declKind": "Struct",
+        "usr": "s:9OndatoSDK0A10AnimationsV",
+        "mangledName": "$s9OndatoSDK0A10AnimationsV",
         "moduleName": "OndatoSDK",
-        "objc_name": "OndatoAnimations",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -4452,55 +4293,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -6930,20 +6722,16 @@
                 "kind": "TypeNominal",
                 "name": "OndatoServiceConfiguration",
                 "printedName": "OndatoSDK.OndatoServiceConfiguration",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration"
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)Ondato(py)configuration",
-            "mangledName": "$s9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationCvp",
+            "usr": "s:9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationVvp",
+            "mangledName": "$s9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationVvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -6954,17 +6742,13 @@
                     "kind": "TypeNominal",
                     "name": "OndatoServiceConfiguration",
                     "printedName": "OndatoSDK.OndatoServiceConfiguration",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration"
+                    "usr": "s:9OndatoSDK0A20ServiceConfigurationV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)Ondato(im)configuration",
-                "mangledName": "$s9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationCvg",
+                "usr": "s:9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationVvg",
+                "mangledName": "$s9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationVvg",
                 "moduleName": "OndatoSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -6981,17 +6765,13 @@
                     "kind": "TypeNominal",
                     "name": "OndatoServiceConfiguration",
                     "printedName": "OndatoSDK.OndatoServiceConfiguration",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration"
+                    "usr": "s:9OndatoSDK0A20ServiceConfigurationV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)Ondato(im)setConfiguration:",
-                "mangledName": "$s9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationCvs",
+                "usr": "s:9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationVvs",
+                "mangledName": "$s9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationVvs",
                 "moduleName": "OndatoSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -7006,8 +6786,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationCvM",
-                "mangledName": "$s9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationCvM",
+                "usr": "s:9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationVvM",
+                "mangledName": "$s9OndatoSDK0A0C13configurationAA0A20ServiceConfigurationVvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -11658,17 +11438,16 @@
                 "kind": "TypeNominal",
                 "name": "OndatoAnimations",
                 "printedName": "OndatoSDK.OndatoAnimations",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations"
+                "usr": "s:9OndatoSDK0A10AnimationsV"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(py)animations",
-            "mangledName": "$s9OndatoSDK0A9ResourcesC10animationsAA0A10AnimationsCvp",
+            "usr": "s:9OndatoSDK0A9ResourcesV10animationsAA0A10AnimationsVvp",
+            "mangledName": "$s9OndatoSDK0A9ResourcesV10animationsAA0A10AnimationsVvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -11681,17 +11460,14 @@
                     "kind": "TypeNominal",
                     "name": "OndatoAnimations",
                     "printedName": "OndatoSDK.OndatoAnimations",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations"
+                    "usr": "s:9OndatoSDK0A10AnimationsV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(im)animations",
-                "mangledName": "$s9OndatoSDK0A9ResourcesC10animationsAA0A10AnimationsCvg",
+                "usr": "s:9OndatoSDK0A9ResourcesV10animationsAA0A10AnimationsVvg",
+                "mangledName": "$s9OndatoSDK0A9ResourcesV10animationsAA0A10AnimationsVvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -11708,17 +11484,14 @@
                     "kind": "TypeNominal",
                     "name": "OndatoAnimations",
                     "printedName": "OndatoSDK.OndatoAnimations",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations"
+                    "usr": "s:9OndatoSDK0A10AnimationsV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(im)setAnimations:",
-                "mangledName": "$s9OndatoSDK0A9ResourcesC10animationsAA0A10AnimationsCvs",
+                "usr": "s:9OndatoSDK0A9ResourcesV10animationsAA0A10AnimationsVvs",
+                "mangledName": "$s9OndatoSDK0A9ResourcesV10animationsAA0A10AnimationsVvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -11733,8 +11506,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A9ResourcesC10animationsAA0A10AnimationsCvM",
-                "mangledName": "$s9OndatoSDK0A9ResourcesC10animationsAA0A10AnimationsCvM",
+                "usr": "s:9OndatoSDK0A9ResourcesV10animationsAA0A10AnimationsVvM",
+                "mangledName": "$s9OndatoSDK0A9ResourcesV10animationsAA0A10AnimationsVvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -11750,17 +11523,16 @@
                 "kind": "TypeNominal",
                 "name": "OndatoFonts",
                 "printedName": "OndatoSDK.OndatoFonts",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts"
+                "usr": "s:9OndatoSDK0A5FontsV"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(py)fonts",
-            "mangledName": "$s9OndatoSDK0A9ResourcesC5fontsAA0A5FontsCvp",
+            "usr": "s:9OndatoSDK0A9ResourcesV5fontsAA0A5FontsVvp",
+            "mangledName": "$s9OndatoSDK0A9ResourcesV5fontsAA0A5FontsVvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -11773,17 +11545,14 @@
                     "kind": "TypeNominal",
                     "name": "OndatoFonts",
                     "printedName": "OndatoSDK.OndatoFonts",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts"
+                    "usr": "s:9OndatoSDK0A5FontsV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(im)fonts",
-                "mangledName": "$s9OndatoSDK0A9ResourcesC5fontsAA0A5FontsCvg",
+                "usr": "s:9OndatoSDK0A9ResourcesV5fontsAA0A5FontsVvg",
+                "mangledName": "$s9OndatoSDK0A9ResourcesV5fontsAA0A5FontsVvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -11800,17 +11569,14 @@
                     "kind": "TypeNominal",
                     "name": "OndatoFonts",
                     "printedName": "OndatoSDK.OndatoFonts",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts"
+                    "usr": "s:9OndatoSDK0A5FontsV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(im)setFonts:",
-                "mangledName": "$s9OndatoSDK0A9ResourcesC5fontsAA0A5FontsCvs",
+                "usr": "s:9OndatoSDK0A9ResourcesV5fontsAA0A5FontsVvs",
+                "mangledName": "$s9OndatoSDK0A9ResourcesV5fontsAA0A5FontsVvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -11825,8 +11591,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A9ResourcesC5fontsAA0A5FontsCvM",
-                "mangledName": "$s9OndatoSDK0A9ResourcesC5fontsAA0A5FontsCvM",
+                "usr": "s:9OndatoSDK0A9ResourcesV5fontsAA0A5FontsVvM",
+                "mangledName": "$s9OndatoSDK0A9ResourcesV5fontsAA0A5FontsVvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -11846,13 +11612,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(py)images",
-            "mangledName": "$s9OndatoSDK0A9ResourcesC6imagesAA0A6ImagesCvp",
+            "usr": "s:9OndatoSDK0A9ResourcesV6imagesAA0A6ImagesCvp",
+            "mangledName": "$s9OndatoSDK0A9ResourcesV6imagesAA0A6ImagesCvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -11869,13 +11634,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(im)images",
-                "mangledName": "$s9OndatoSDK0A9ResourcesC6imagesAA0A6ImagesCvg",
+                "usr": "s:9OndatoSDK0A9ResourcesV6imagesAA0A6ImagesCvg",
+                "mangledName": "$s9OndatoSDK0A9ResourcesV6imagesAA0A6ImagesCvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -11896,13 +11658,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(im)setImages:",
-                "mangledName": "$s9OndatoSDK0A9ResourcesC6imagesAA0A6ImagesCvs",
+                "usr": "s:9OndatoSDK0A9ResourcesV6imagesAA0A6ImagesCvs",
+                "mangledName": "$s9OndatoSDK0A9ResourcesV6imagesAA0A6ImagesCvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -11917,8 +11676,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A9ResourcesC6imagesAA0A6ImagesCvM",
-                "mangledName": "$s9OndatoSDK0A9ResourcesC6imagesAA0A6ImagesCvM",
+                "usr": "s:9OndatoSDK0A9ResourcesV6imagesAA0A6ImagesCvM",
+                "mangledName": "$s9OndatoSDK0A9ResourcesV6imagesAA0A6ImagesCvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -11934,7 +11693,7 @@
                 "kind": "TypeNominal",
                 "name": "OndatoResources",
                 "printedName": "OndatoSDK.OndatoResources",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources"
+                "usr": "s:9OndatoSDK0A9ResourcesV"
               },
               {
                 "kind": "TypeNominal",
@@ -11945,7 +11704,7 @@
                     "kind": "TypeNominal",
                     "name": "OndatoAnimations",
                     "printedName": "OndatoSDK.OndatoAnimations",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoAnimations"
+                    "usr": "s:9OndatoSDK0A10AnimationsV"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -11960,7 +11719,7 @@
                     "kind": "TypeNominal",
                     "name": "OndatoFonts",
                     "printedName": "OndatoSDK.OndatoFonts",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoFonts"
+                    "usr": "s:9OndatoSDK0A5FontsV"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -11983,55 +11742,21 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(im)initWithAnimations:fonts:images:",
-            "mangledName": "$s9OndatoSDK0A9ResourcesC10animations5fonts6imagesAcA0A10AnimationsCSg_AA0A5FontsCSgAA0A6ImagesCSgtcfc",
+            "usr": "s:9OndatoSDK0A9ResourcesV10animations5fonts6imagesAcA0A10AnimationsVSg_AA0A5FontsVSgAA0A6ImagesCSgtcfc",
+            "mangledName": "$s9OndatoSDK0A9ResourcesV10animations5fonts6imagesAcA0A10AnimationsVSg_AA0A5FontsVSgAA0A6ImagesCSgtcfc",
             "moduleName": "OndatoSDK",
-            "objc_name": "initWithAnimations:fonts:images:",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OndatoResources",
-                "printedName": "OndatoSDK.OndatoResources",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources(im)init",
-            "mangledName": "$s9OndatoSDK0A9ResourcesCACycfc",
-            "moduleName": "OndatoSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources",
-        "mangledName": "$s9OndatoSDK0A9ResourcesC",
+        "declKind": "Struct",
+        "usr": "s:9OndatoSDK0A9ResourcesV",
+        "mangledName": "$s9OndatoSDK0A9ResourcesV",
         "moduleName": "OndatoSDK",
-        "objc_name": "OndatoResources",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -12047,55 +11772,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -17753,18 +17429,17 @@
                 "kind": "TypeNominal",
                 "name": "OndatoResources",
                 "printedName": "OndatoSDK.OndatoResources",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources"
+                "usr": "s:9OndatoSDK0A9ResourcesV"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(py)resources",
-            "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC9resourcesAA0A9ResourcesCvp",
+            "usr": "s:9OndatoSDK0A20ServiceConfigurationV9resourcesAA0A9ResourcesVvp",
+            "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV9resourcesAA0A9ResourcesVvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -17777,17 +17452,14 @@
                     "kind": "TypeNominal",
                     "name": "OndatoResources",
                     "printedName": "OndatoSDK.OndatoResources",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources"
+                    "usr": "s:9OndatoSDK0A9ResourcesV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(im)resources",
-                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC9resourcesAA0A9ResourcesCvg",
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV9resourcesAA0A9ResourcesVvg",
+                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV9resourcesAA0A9ResourcesVvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -17804,17 +17476,14 @@
                     "kind": "TypeNominal",
                     "name": "OndatoResources",
                     "printedName": "OndatoSDK.OndatoResources",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoResources"
+                    "usr": "s:9OndatoSDK0A9ResourcesV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(im)setResources:",
-                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC9resourcesAA0A9ResourcesCvs",
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV9resourcesAA0A9ResourcesVvs",
+                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV9resourcesAA0A9ResourcesVvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -17829,8 +17498,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A20ServiceConfigurationC9resourcesAA0A9ResourcesCvM",
-                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC9resourcesAA0A9ResourcesCvM",
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV9resourcesAA0A9ResourcesVvM",
+                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV9resourcesAA0A9ResourcesVvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -17846,18 +17515,17 @@
                 "kind": "TypeNominal",
                 "name": "OndatoFlowConfiguration",
                 "printedName": "OndatoSDK.OndatoFlowConfiguration",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration"
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(py)flowConfiguration",
-            "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC04flowD0AA0a4FlowD0Cvp",
+            "usr": "s:9OndatoSDK0A20ServiceConfigurationV04flowD0AA0a4FlowD0Vvp",
+            "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV04flowD0AA0a4FlowD0Vvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -17870,17 +17538,14 @@
                     "kind": "TypeNominal",
                     "name": "OndatoFlowConfiguration",
                     "printedName": "OndatoSDK.OndatoFlowConfiguration",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration"
+                    "usr": "s:9OndatoSDK0A17FlowConfigurationV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(im)flowConfiguration",
-                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC04flowD0AA0a4FlowD0Cvg",
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV04flowD0AA0a4FlowD0Vvg",
+                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV04flowD0AA0a4FlowD0Vvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -17897,17 +17562,14 @@
                     "kind": "TypeNominal",
                     "name": "OndatoFlowConfiguration",
                     "printedName": "OndatoSDK.OndatoFlowConfiguration",
-                    "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration"
+                    "usr": "s:9OndatoSDK0A17FlowConfigurationV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(im)setFlowConfiguration:",
-                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC04flowD0AA0a4FlowD0Cvs",
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV04flowD0AA0a4FlowD0Vvs",
+                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV04flowD0AA0a4FlowD0Vvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -17922,8 +17584,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A20ServiceConfigurationC04flowD0AA0a4FlowD0CvM",
-                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC04flowD0AA0a4FlowD0CvM",
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV04flowD0AA0a4FlowD0VvM",
+                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV04flowD0AA0a4FlowD0VvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -17943,14 +17605,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(py)mode",
-            "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC4modeAA0A11EnvironmentOvp",
+            "usr": "s:9OndatoSDK0A20ServiceConfigurationV4modeAA0A11EnvironmentOvp",
+            "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV4modeAA0A11EnvironmentOvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -17967,13 +17628,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(im)mode",
-                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC4modeAA0A11EnvironmentOvg",
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV4modeAA0A11EnvironmentOvg",
+                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV4modeAA0A11EnvironmentOvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -17994,13 +17652,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(im)setMode:",
-                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC4modeAA0A11EnvironmentOvs",
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV4modeAA0A11EnvironmentOvs",
+                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV4modeAA0A11EnvironmentOvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -18015,8 +17670,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A20ServiceConfigurationC4modeAA0A11EnvironmentOvM",
-                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC4modeAA0A11EnvironmentOvM",
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV4modeAA0A11EnvironmentOvM",
+                "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV4modeAA0A11EnvironmentOvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -18032,37 +17687,25 @@
                 "kind": "TypeNominal",
                 "name": "OndatoServiceConfiguration",
                 "printedName": "OndatoSDK.OndatoServiceConfiguration",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration"
+                "usr": "s:9OndatoSDK0A20ServiceConfigurationV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration(im)init",
-            "mangledName": "$s9OndatoSDK0A20ServiceConfigurationCACycfc",
+            "usr": "s:9OndatoSDK0A20ServiceConfigurationVACycfc",
+            "mangledName": "$s9OndatoSDK0A20ServiceConfigurationVACycfc",
             "moduleName": "OndatoSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@OndatoSDK@objc(cs)OndatoServiceConfiguration",
-        "mangledName": "$s9OndatoSDK0A20ServiceConfigurationC",
+        "declKind": "Struct",
+        "usr": "s:9OndatoSDK0A20ServiceConfigurationV",
+        "mangledName": "$s9OndatoSDK0A20ServiceConfigurationV",
         "moduleName": "OndatoSDK",
-        "objc_name": "OndatoServiceConfiguration",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -18078,55 +17721,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -18148,14 +17742,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(py)skipRegistrationIfDriverLicense",
-            "mangledName": "$s9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvp",
+            "usr": "s:9OndatoSDK0A17FlowConfigurationV31skipRegistrationIfDriverLicenseSbvp",
+            "mangledName": "$s9OndatoSDK0A17FlowConfigurationV31skipRegistrationIfDriverLicenseSbvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -18172,13 +17765,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)skipRegistrationIfDriverLicense",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvg",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV31skipRegistrationIfDriverLicenseSbvg",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV31skipRegistrationIfDriverLicenseSbvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -18199,13 +17789,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)setSkipRegistrationIfDriverLicense:",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvs",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV31skipRegistrationIfDriverLicenseSbvs",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV31skipRegistrationIfDriverLicenseSbvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -18220,8 +17807,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvM",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC31skipRegistrationIfDriverLicenseSbvM",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV31skipRegistrationIfDriverLicenseSbvM",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV31skipRegistrationIfDriverLicenseSbvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -18241,14 +17828,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(py)showTranslationKeys",
-            "mangledName": "$s9OndatoSDK0A17FlowConfigurationC19showTranslationKeysSbvp",
+            "usr": "s:9OndatoSDK0A17FlowConfigurationV19showTranslationKeysSbvp",
+            "mangledName": "$s9OndatoSDK0A17FlowConfigurationV19showTranslationKeysSbvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -18265,13 +17851,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)showTranslationKeys",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC19showTranslationKeysSbvg",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV19showTranslationKeysSbvg",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV19showTranslationKeysSbvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -18292,13 +17875,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)setShowTranslationKeys:",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC19showTranslationKeysSbvs",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV19showTranslationKeysSbvs",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV19showTranslationKeysSbvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -18313,8 +17893,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A17FlowConfigurationC19showTranslationKeysSbvM",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC19showTranslationKeysSbvM",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV19showTranslationKeysSbvM",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV19showTranslationKeysSbvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -18334,14 +17914,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(py)showNoInternetConnectionView",
-            "mangledName": "$s9OndatoSDK0A17FlowConfigurationC28showNoInternetConnectionViewSbvp",
+            "usr": "s:9OndatoSDK0A17FlowConfigurationV28showNoInternetConnectionViewSbvp",
+            "mangledName": "$s9OndatoSDK0A17FlowConfigurationV28showNoInternetConnectionViewSbvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -18358,13 +17937,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)showNoInternetConnectionView",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC28showNoInternetConnectionViewSbvg",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV28showNoInternetConnectionViewSbvg",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV28showNoInternetConnectionViewSbvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -18385,13 +17961,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)setShowNoInternetConnectionView:",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC28showNoInternetConnectionViewSbvs",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV28showNoInternetConnectionViewSbvs",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV28showNoInternetConnectionViewSbvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -18406,8 +17979,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A17FlowConfigurationC28showNoInternetConnectionViewSbvM",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC28showNoInternetConnectionViewSbvM",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV28showNoInternetConnectionViewSbvM",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV28showNoInternetConnectionViewSbvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -18427,14 +18000,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(py)disablePdfFileUpload",
-            "mangledName": "$s9OndatoSDK0A17FlowConfigurationC20disablePdfFileUploadSbvp",
+            "usr": "s:9OndatoSDK0A17FlowConfigurationV20disablePdfFileUploadSbvp",
+            "mangledName": "$s9OndatoSDK0A17FlowConfigurationV20disablePdfFileUploadSbvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -18451,13 +18023,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)disablePdfFileUpload",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC20disablePdfFileUploadSbvg",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV20disablePdfFileUploadSbvg",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV20disablePdfFileUploadSbvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -18478,13 +18047,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)setDisablePdfFileUpload:",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC20disablePdfFileUploadSbvs",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV20disablePdfFileUploadSbvs",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV20disablePdfFileUploadSbvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -18499,8 +18065,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A17FlowConfigurationC20disablePdfFileUploadSbvM",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC20disablePdfFileUploadSbvM",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV20disablePdfFileUploadSbvM",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV20disablePdfFileUploadSbvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -18520,14 +18086,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(py)switchPrimaryButtons",
-            "mangledName": "$s9OndatoSDK0A17FlowConfigurationC20switchPrimaryButtonsSbvp",
+            "usr": "s:9OndatoSDK0A17FlowConfigurationV20switchPrimaryButtonsSbvp",
+            "mangledName": "$s9OndatoSDK0A17FlowConfigurationV20switchPrimaryButtonsSbvp",
             "moduleName": "OndatoSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -18544,13 +18109,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)switchPrimaryButtons",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC20switchPrimaryButtonsSbvg",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV20switchPrimaryButtonsSbvg",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV20switchPrimaryButtonsSbvg",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -18571,13 +18133,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)setSwitchPrimaryButtons:",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC20switchPrimaryButtonsSbvs",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV20switchPrimaryButtonsSbvs",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV20switchPrimaryButtonsSbvs",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -18592,8 +18151,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9OndatoSDK0A17FlowConfigurationC20switchPrimaryButtonsSbvM",
-                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC20switchPrimaryButtonsSbvM",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV20switchPrimaryButtonsSbvM",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationV20switchPrimaryButtonsSbvM",
                 "moduleName": "OndatoSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -18609,37 +18168,25 @@
                 "kind": "TypeNominal",
                 "name": "OndatoFlowConfiguration",
                 "printedName": "OndatoSDK.OndatoFlowConfiguration",
-                "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration"
+                "usr": "s:9OndatoSDK0A17FlowConfigurationV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration(im)init",
-            "mangledName": "$s9OndatoSDK0A17FlowConfigurationCACycfc",
+            "usr": "s:9OndatoSDK0A17FlowConfigurationVACycfc",
+            "mangledName": "$s9OndatoSDK0A17FlowConfigurationVACycfc",
             "moduleName": "OndatoSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@OndatoSDK@objc(cs)OndatoFlowConfiguration",
-        "mangledName": "$s9OndatoSDK0A17FlowConfigurationC",
+        "declKind": "Struct",
+        "usr": "s:9OndatoSDK0A17FlowConfigurationV",
+        "mangledName": "$s9OndatoSDK0A17FlowConfigurationV",
         "moduleName": "OndatoSDK",
-        "objc_name": "OndatoFlowConfiguration",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -18655,55 +18202,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -30535,14 +30033,14 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/FaceCapture\/FaceCaptureCoordinator.swift",
       "kind": "Array",
-      "offset": 1443,
+      "offset": 1465,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/FaceCapture\/FaceCaptureCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1789,
+      "offset": 1821,
       "length": 5,
       "value": "false"
     },
@@ -31347,7 +30845,7 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Controllers\/CaptureScreen\/OndatoCaptureScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2776,
+      "offset": 2788,
       "length": 1,
       "value": "1"
     },
@@ -32397,28 +31895,28 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Ondato.swift",
       "kind": "StringLiteral",
-      "offset": 411,
+      "offset": 1055,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Ondato.swift",
       "kind": "StringLiteral",
-      "offset": 448,
+      "offset": 1092,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Ondato.swift",
       "kind": "StringLiteral",
-      "offset": 486,
+      "offset": 1130,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Ondato.swift",
       "kind": "StringLiteral",
-      "offset": 528,
+      "offset": 1172,
       "length": 2,
       "value": "\"\""
     },
@@ -33853,14 +33351,14 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 923,
+      "offset": 928,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCameraController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1262,
+      "offset": 1267,
       "length": 4,
       "value": "true"
     },
@@ -34105,49 +33603,49 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCamera.swift",
       "kind": "BooleanLiteral",
-      "offset": 561,
+      "offset": 566,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCamera.swift",
       "kind": "IntegerLiteral",
-      "offset": 782,
+      "offset": 787,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCamera.swift",
       "kind": "IntegerLiteral",
-      "offset": 839,
+      "offset": 844,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCamera.swift",
       "kind": "BooleanLiteral",
-      "offset": 1100,
+      "offset": 1105,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCamera.swift",
       "kind": "BooleanLiteral",
-      "offset": 1373,
+      "offset": 1378,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCamera.swift",
       "kind": "BooleanLiteral",
-      "offset": 1555,
+      "offset": 1560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/OndatoCamera.swift",
       "kind": "BooleanLiteral",
-      "offset": 1749,
+      "offset": 1754,
       "length": 5,
       "value": "false"
     },
@@ -35127,35 +34625,35 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Controllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 6694,
+      "offset": 6885,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Controllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 6709,
+      "offset": 6900,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Controllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 6737,
+      "offset": 6928,
       "length": 23,
       "value": "2"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Controllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 6774,
+      "offset": 6965,
       "length": 12,
       "value": "3"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Controllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 6800,
+      "offset": 6991,
       "length": 15,
       "value": "4"
     },
@@ -36303,21 +35801,21 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/AgeVerification\/AgeVerificationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 831,
+      "offset": 841,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/AgeVerification\/AgeVerificationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 879,
+      "offset": 889,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/AgeVerification\/AgeVerificationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 996,
+      "offset": 1006,
       "length": 5,
       "value": "false"
     },
@@ -37038,7 +36536,7 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Views\/Camera\/Feed\/OndatoCamera+Feed.swift",
       "kind": "BooleanLiteral",
-      "offset": 631,
+      "offset": 636,
       "length": 5,
       "value": "false"
     },
@@ -37080,21 +36578,35 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 508,
+      "offset": 427,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 575,
+      "offset": 488,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 630,
+      "offset": 537,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 595,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 644,
       "length": 5,
       "value": "false"
     },
@@ -37102,20 +36614,6 @@
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 694,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 749,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Configuration\/OndatoServiceConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 805,
       "length": 5,
       "value": "false"
     },

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		tGbtSiDtLAl/62sV2DDNugYdyeQ=
+		51ZrwTG8m7RMHU4KID4UJj3KfmA=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -14,19 +14,19 @@
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		6UEQ/wAmTft8rxt5UsKjvy2UjDM=
+		YEmIsnyHvD0pTDu4zhsmY+KEoM8=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TsOYVa8twAGMTcbNo1rU5El0Aj0=
+		WdVi+et4UmAIoSkBsb56qotyhGE=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6UEQ/wAmTft8rxt5UsKjvy2UjDM=
+		YEmIsnyHvD0pTDu4zhsmY+KEoM8=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pYcaYT5ZeaRXRJchwKPd3sqlLK8=
+		O7dbuay2DiS9Oq2wtc/dkrF/wgQ=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		QixQeUYp5ewHZnu3KbxKUa5ZUAA=
+		KgEqmzZ6777nOxWqnDO+MP+60k4=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		tYMm4d3+tTG8AxN9IaM/698s2oM=
+		VREfPaI/FYBk08aPRF4OU+1mwH0=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QixQeUYp5ewHZnu3KbxKUa5ZUAA=
+		KgEqmzZ6777nOxWqnDO+MP+60k4=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AHsXmHJphgMF5ZlNfH8+7yuyZpA=
+		3fJoWRJT0DHb4UI/QEUs2R8cxmo=
 		</data>
 		<key>encryptedModel.bin</key>
 		<data>
@@ -66,28 +66,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Es5+3pE4K3B/1hDJ/+Bqc54QI6d5cOjkm81tKUypxc=
+			e6CoS5dgg6tid3uwajMoht9sylnwNHjCQCynxeDiDN0=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VDdoa1zJfxMU7ew36ufNYhukT9EtWwq9jMVA7vo2R6M=
+			k+/jGLulqNG1y+0kFu1VStLRuKmN5ZKL7jk9pCOoHhk=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Es5+3pE4K3B/1hDJ/+Bqc54QI6d5cOjkm81tKUypxc=
+			e6CoS5dgg6tid3uwajMoht9sylnwNHjCQCynxeDiDN0=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5MBrm2VK3Yb6PG3HIu5i/TavV8R5wV2AeKAJlh1lj24=
+			LJQZVqqQaKt3IJsmOYtNIfzZGf7KL5rm4mUHwp6FNt4=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -101,28 +101,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tlH48Y9KS/jtnSK0ooM7y1XZFGWmWUtaJquVdnP9I/U=
+			wFJ0m0O/Ei2JAv70LCp8ydVkReNRDqfz0X5rjvmaiSo=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tJ4xDaJ++SZKHi+6oXNG01JfIpAbGou9Ximf609yPrQ=
+			uRkbNfK64/AuziE1aVRdecv+6g1ept90XRZQXtYkIeM=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tlH48Y9KS/jtnSK0ooM7y1XZFGWmWUtaJquVdnP9I/U=
+			wFJ0m0O/Ei2JAv70LCp8ydVkReNRDqfz0X5rjvmaiSo=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OOcrLz9ZHsrGY6tFJx/ID4tKeNrLpkZdgzQbIP5/xrU=
+			C/WHggLH1nvweVzAQmcfzsRGnQ4BpW0sVyCOXrMzR1I=
 			</data>
 		</dict>
 		<key>encryptedModel.bin</key>

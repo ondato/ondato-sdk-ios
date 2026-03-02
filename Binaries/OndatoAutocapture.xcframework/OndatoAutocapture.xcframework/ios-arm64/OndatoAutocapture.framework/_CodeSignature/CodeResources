@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		W2qJoEFnzpXRJKemxzfG4iSggk0=
+		661Abj0hwvcpPFMzz+3sOReOzJc=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -14,19 +14,19 @@
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		e4FnXSCtZdE0Taixc9gNXA5S5kM=
+		n7APW7wyuMG48b8tYVOx9wNmp2g=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		mmSsuSpd4R1EeMUAY4zi67Ep5i4=
+		/ukX5tIaAx7KQORYnEsRAmiWahE=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		e4FnXSCtZdE0Taixc9gNXA5S5kM=
+		n7APW7wyuMG48b8tYVOx9wNmp2g=
 		</data>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		LUzcdjlVyENUzS7mUl/yD4Kuf0s=
+		n35w2pb7pOt1jd4BZp0WnENOJYo=
 		</data>
 		<key>encryptedModel.bin</key>
 		<data>
@@ -46,28 +46,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bLVZLvl2kX0dmI4DY8onkkJAxhv/USDizhMfPhRjXfc=
+			m4+GoA14n93oVTPSM08ZQCUeVZMcIObZWjAQ7Ggl6mY=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kONlecC5BE1yrtCw1nG5Tb1AQlHRbGWMEsDEXheWcq0=
+			eP7nQgo/vUKoF6Fh1NgJr6+oa8faNPKd593nu0nCbRk=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bLVZLvl2kX0dmI4DY8onkkJAxhv/USDizhMfPhRjXfc=
+			m4+GoA14n93oVTPSM08ZQCUeVZMcIObZWjAQ7Ggl6mY=
 			</data>
 		</dict>
 		<key>Modules/OndatoAutocapture.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eWsrLO2M05s6uaDVlCZDO/XQSm/CsYlHllQ0o4RWfJc=
+			RX83Av1jeZVDGPsRvWkdrqenCX1ChgG0dJuAv1wzE5c=
 			</data>
 		</dict>
 		<key>encryptedModel.bin</key>
