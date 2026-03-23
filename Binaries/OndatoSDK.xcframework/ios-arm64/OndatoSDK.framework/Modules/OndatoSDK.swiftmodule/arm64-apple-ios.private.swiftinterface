@@ -33,16 +33,18 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers @objc(OndatoServiceError) public class OndatoServiceError : ObjectiveC.NSObject {
   @objc(OndatoServiceErrorType) public enum OndatoServiceErrorType : Swift.Int {
-    case cancelled
-    case consentDenied
-    case invalidServerResponse
-    case invalidCredentials
-    case recorderPermissions
-    case unexpectedInternalError
-    case verificationFailed
+    case badFlowSetup
+    case consentDeclined
+    case failureExit
+    case invalidID
+    case unauthorized
+    case internalServerError
+    case aborted
     case nfcNotSupported
-    case missingModule
-    case hostCanceled
+    case recorderFailure
+    case tooManyAttempts
+    case noAvailableDocumentTypes
+    case generic
     #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
     #endif

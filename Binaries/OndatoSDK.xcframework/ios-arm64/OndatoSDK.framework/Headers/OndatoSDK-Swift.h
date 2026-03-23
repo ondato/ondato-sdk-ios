@@ -471,16 +471,18 @@ SWIFT_CLASS_NAMED("OndatoServiceError")
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoServiceErrorType, "OndatoServiceErrorType", open) {
-  OndatoServiceErrorTypeCancelled = 0,
-  OndatoServiceErrorTypeConsentDenied = 1,
-  OndatoServiceErrorTypeInvalidServerResponse = 2,
-  OndatoServiceErrorTypeInvalidCredentials = 3,
-  OndatoServiceErrorTypeRecorderPermissions = 4,
-  OndatoServiceErrorTypeUnexpectedInternalError = 5,
-  OndatoServiceErrorTypeVerificationFailed = 6,
+  OndatoServiceErrorTypeBadFlowSetup = 0,
+  OndatoServiceErrorTypeConsentDeclined = 1,
+  OndatoServiceErrorTypeFailureExit = 2,
+  OndatoServiceErrorTypeInvalidID = 3,
+  OndatoServiceErrorTypeUnauthorized = 4,
+  OndatoServiceErrorTypeInternalServerError = 5,
+  OndatoServiceErrorTypeAborted = 6,
   OndatoServiceErrorTypeNfcNotSupported = 7,
-  OndatoServiceErrorTypeMissingModule = 8,
-  OndatoServiceErrorTypeHostCanceled = 9,
+  OndatoServiceErrorTypeRecorderFailure = 8,
+  OndatoServiceErrorTypeTooManyAttempts = 9,
+  OndatoServiceErrorTypeNoAvailableDocumentTypes = 10,
+  OndatoServiceErrorTypeGeneric = 11,
 };
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoSupportedLanguage, "OndatoSupportedLanguage", open) {

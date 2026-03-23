@@ -1,0 +1,6 @@
+framework module OndatoAutocapture {
+  umbrella header "OndatoAutocapture.h"
+  export *
+
+  module * { export * }
+}

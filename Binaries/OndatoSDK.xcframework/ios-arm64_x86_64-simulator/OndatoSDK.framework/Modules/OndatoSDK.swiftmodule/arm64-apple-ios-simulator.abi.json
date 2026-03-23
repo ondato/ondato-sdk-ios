@@ -23,8 +23,8 @@
             "children": [
               {
                 "kind": "Var",
-                "name": "cancelled",
-                "printedName": "cancelled",
+                "name": "badFlowSetup",
+                "printedName": "badFlowSetup",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -54,8 +54,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO9cancelledyA2EmF",
-                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO9cancelledyA2EmF",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO12badFlowSetupyA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO12badFlowSetupyA2EmF",
                 "moduleName": "OndatoSDK",
                 "declAttributes": [
                   "ObjC"
@@ -64,8 +64,8 @@
               },
               {
                 "kind": "Var",
-                "name": "consentDenied",
-                "printedName": "consentDenied",
+                "name": "consentDeclined",
+                "printedName": "consentDeclined",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -95,8 +95,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO13consentDeniedyA2EmF",
-                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO13consentDeniedyA2EmF",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO15consentDeclinedyA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO15consentDeclinedyA2EmF",
                 "moduleName": "OndatoSDK",
                 "declAttributes": [
                   "ObjC"
@@ -105,8 +105,8 @@
               },
               {
                 "kind": "Var",
-                "name": "invalidServerResponse",
-                "printedName": "invalidServerResponse",
+                "name": "failureExit",
+                "printedName": "failureExit",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -136,8 +136,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO21invalidServerResponseyA2EmF",
-                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO21invalidServerResponseyA2EmF",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO11failureExityA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO11failureExityA2EmF",
                 "moduleName": "OndatoSDK",
                 "declAttributes": [
                   "ObjC"
@@ -146,8 +146,8 @@
               },
               {
                 "kind": "Var",
-                "name": "invalidCredentials",
-                "printedName": "invalidCredentials",
+                "name": "invalidID",
+                "printedName": "invalidID",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -177,8 +177,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO18invalidCredentialsyA2EmF",
-                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO18invalidCredentialsyA2EmF",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO9invalidIDyA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO9invalidIDyA2EmF",
                 "moduleName": "OndatoSDK",
                 "declAttributes": [
                   "ObjC"
@@ -187,8 +187,8 @@
               },
               {
                 "kind": "Var",
-                "name": "recorderPermissions",
-                "printedName": "recorderPermissions",
+                "name": "unauthorized",
+                "printedName": "unauthorized",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -218,8 +218,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO19recorderPermissionsyA2EmF",
-                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO19recorderPermissionsyA2EmF",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO12unauthorizedyA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO12unauthorizedyA2EmF",
                 "moduleName": "OndatoSDK",
                 "declAttributes": [
                   "ObjC"
@@ -228,8 +228,8 @@
               },
               {
                 "kind": "Var",
-                "name": "unexpectedInternalError",
-                "printedName": "unexpectedInternalError",
+                "name": "internalServerError",
+                "printedName": "internalServerError",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -259,8 +259,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO018unexpectedInternalD0yA2EmF",
-                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO018unexpectedInternalD0yA2EmF",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO014internalServerD0yA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO014internalServerD0yA2EmF",
                 "moduleName": "OndatoSDK",
                 "declAttributes": [
                   "ObjC"
@@ -269,8 +269,8 @@
               },
               {
                 "kind": "Var",
-                "name": "verificationFailed",
-                "printedName": "verificationFailed",
+                "name": "aborted",
+                "printedName": "aborted",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -300,8 +300,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO18verificationFailedyA2EmF",
-                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO18verificationFailedyA2EmF",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO7abortedyA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO7abortedyA2EmF",
                 "moduleName": "OndatoSDK",
                 "declAttributes": [
                   "ObjC"
@@ -351,8 +351,8 @@
               },
               {
                 "kind": "Var",
-                "name": "missingModule",
-                "printedName": "missingModule",
+                "name": "recorderFailure",
+                "printedName": "recorderFailure",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -382,8 +382,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO13missingModuleyA2EmF",
-                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO13missingModuleyA2EmF",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO15recorderFailureyA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO15recorderFailureyA2EmF",
                 "moduleName": "OndatoSDK",
                 "declAttributes": [
                   "ObjC"
@@ -392,8 +392,8 @@
               },
               {
                 "kind": "Var",
-                "name": "hostCanceled",
-                "printedName": "hostCanceled",
+                "name": "tooManyAttempts",
+                "printedName": "tooManyAttempts",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -423,13 +423,95 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO12hostCanceledyA2EmF",
-                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO12hostCanceledyA2EmF",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO15tooManyAttemptsyA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO15tooManyAttemptsyA2EmF",
                 "moduleName": "OndatoSDK",
                 "declAttributes": [
                   "ObjC"
                 ],
                 "fixedbinaryorder": 9
+              },
+              {
+                "kind": "Var",
+                "name": "noAvailableDocumentTypes",
+                "printedName": "noAvailableDocumentTypes",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OndatoSDK.OndatoServiceError.OndatoServiceErrorType.Type) -> OndatoSDK.OndatoServiceError.OndatoServiceErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoServiceErrorType",
+                        "printedName": "OndatoSDK.OndatoServiceError.OndatoServiceErrorType",
+                        "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OndatoSDK.OndatoServiceError.OndatoServiceErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OndatoServiceErrorType",
+                            "printedName": "OndatoSDK.OndatoServiceError.OndatoServiceErrorType",
+                            "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO24noAvailableDocumentTypesyA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO24noAvailableDocumentTypesyA2EmF",
+                "moduleName": "OndatoSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 10
+              },
+              {
+                "kind": "Var",
+                "name": "generic",
+                "printedName": "generic",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OndatoSDK.OndatoServiceError.OndatoServiceErrorType.Type) -> OndatoSDK.OndatoServiceError.OndatoServiceErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoServiceErrorType",
+                        "printedName": "OndatoSDK.OndatoServiceError.OndatoServiceErrorType",
+                        "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OndatoSDK.OndatoServiceError.OndatoServiceErrorType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OndatoServiceErrorType",
+                            "printedName": "OndatoSDK.OndatoServiceError.OndatoServiceErrorType",
+                            "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9OndatoSDK0A12ServiceErrorC0acD4TypeO7genericyA2EmF",
+                "mangledName": "$s9OndatoSDK0A12ServiceErrorC0acD4TypeO7genericyA2EmF",
+                "moduleName": "OndatoSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 11
               },
               {
                 "kind": "Constructor",
@@ -29123,65 +29205,79 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
       "kind": "IntegerLiteral",
-      "offset": 201,
-      "length": 13,
+      "offset": 204,
+      "length": 15,
       "value": "1"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
       "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 21,
+      "offset": 233,
+      "length": 11,
       "value": "2"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
       "kind": "IntegerLiteral",
-      "offset": 263,
-      "length": 18,
+      "offset": 258,
+      "length": 9,
       "value": "3"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
       "kind": "IntegerLiteral",
-      "offset": 295,
-      "length": 19,
+      "offset": 281,
+      "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
       "kind": "IntegerLiteral",
-      "offset": 328,
-      "length": 23,
+      "offset": 307,
+      "length": 19,
       "value": "5"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
       "kind": "IntegerLiteral",
-      "offset": 365,
-      "length": 18,
+      "offset": 340,
+      "length": 7,
       "value": "6"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
       "kind": "IntegerLiteral",
-      "offset": 397,
+      "offset": 361,
       "length": 15,
       "value": "7"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
       "kind": "IntegerLiteral",
-      "offset": 426,
-      "length": 13,
+      "offset": 390,
+      "length": 15,
       "value": "8"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
       "kind": "IntegerLiteral",
-      "offset": 453,
-      "length": 12,
+      "offset": 419,
+      "length": 15,
       "value": "9"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 448,
+      "length": 24,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Models\/OndatoServiceError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 486,
+      "length": 7,
+      "value": "11"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/OndatoSDK3\/Frameworks\/RxSwift\/Observables\/SwitchIfEmpty.swift",
@@ -29557,7 +29653,7 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/AdditionalDocumentCapture\/AdditionalDocumentCaptureCoordinator.swift",
       "kind": "Array",
-      "offset": 1090,
+      "offset": 1120,
       "length": 2,
       "value": "[]"
     },
@@ -30439,42 +30535,49 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/Identification\/KYC\/IDV+KYC.swift",
       "kind": "Array",
-      "offset": 475,
+      "offset": 553,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/Identification\/KYC\/IDV+KYC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 602,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/Identification\/KYC\/IDV+KYC.swift",
       "kind": "Array",
-      "offset": 769,
+      "offset": 1022,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/Identification\/KYC\/IDV+KYC.swift",
       "kind": "BooleanLiteral",
-      "offset": 923,
+      "offset": 1176,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/Identification\/KYC\/IDV+KYC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1513,
+      "offset": 1766,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/Identification\/KYC\/IDV+KYC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1566,
+      "offset": 1819,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/Identification\/KYC\/IDV+KYC.swift",
       "kind": "BooleanLiteral",
-      "offset": 10900,
+      "offset": 11651,
       "length": 5,
       "value": "false"
     },
@@ -33666,7 +33769,7 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/DocumentCapture\/DocumentCaptureCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1368,
+      "offset": 1398,
       "length": 5,
       "value": "false"
     },
@@ -34737,14 +34840,14 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/DocumentTypeSelection\/DocumentTypeSelectionCoordinator.swift",
       "kind": "Array",
-      "offset": 320,
+      "offset": 350,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/DocumentTypeSelection\/DocumentTypeSelectionCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 617,
+      "offset": 647,
       "length": 5,
       "value": "false"
     },
@@ -35801,21 +35904,21 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/AgeVerification\/AgeVerificationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 841,
+      "offset": 871,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/AgeVerification\/AgeVerificationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 889,
+      "offset": 919,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/AgeVerification\/AgeVerificationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1006,
+      "offset": 1036,
       "length": 5,
       "value": "false"
     },
@@ -37131,7 +37234,7 @@
     {
       "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/SDK\/Sources\/Coordinators\/NFCCapture\/NFCCaptureCoordinator.swift",
       "kind": "Array",
-      "offset": 1348,
+      "offset": 1378,
       "length": 2,
       "value": "[]"
     },
