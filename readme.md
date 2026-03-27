@@ -577,5 +577,24 @@ Error log level gives info about screen recording problems, unsuccessful api cal
 ```swift
 OndatoLog.shared.logs // returns [String]
 ```
+
+## Available failure statuses
+
+| Status name                 | Status message                                                    |
+|-----------------------------|-------------------------------------------------------------------|
+| badFlowSetup                | “The setup has no steps or is misconfigured“                      |
+| consentDeclined             | “User has declined consent”                                       |
+| failureExit                 | “Process failed by rejection, cancelled by user”                  |
+| invalidID                   | “Invalid session ID or access token provided”                     |
+| unauthorized                | “Session ID does not have access to this resource”                |
+| internalServerError         | “Internal server error”                                           |
+| aborted                     | “User has aborted the process”                                    |
+| nfcNotSupported             | “NFC is not supported in NFC mandatory or optional mode”          |
+| recorderFailure             | “Screen recorder cannot be started on the device”                 |
+| tooManyAttempts             | “Number of max attempts reached when trying to authenticate face” |
+| noAvailableDocumentTypes    | “The setup has no available document types”                       |
+| generic                     | “Unknown error”                                                   |
+
+---
 ## Old version V2
 Link to deprecated version of SDK [README](https://github.com/ondato/ondato-sdk-ios/blob/release/2.6.9/readme.md)
