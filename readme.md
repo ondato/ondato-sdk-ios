@@ -54,6 +54,10 @@ Add `OndatoSDK` package product to your target.
 ```
 pod 'OndatoSDK'
 ```
+`Note`: From 3.2.1 `OndatoAutocapture` module is introduced and needs to be added separately if you want to use this functionality:
+```
+pod 'OndatoAutocapture'
+```
 
 `Note`: As off v2.6.0 `OndatoNFC` and `OndatoScreenRecorder` need to be added separately:
 * If you use NFC functionality provided by `Ondato` add
