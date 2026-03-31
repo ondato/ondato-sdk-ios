@@ -185,7 +185,6 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
       "buttonPadding": { "top": 14, "bottom": 14, "left": 24, "right": 24 }, //Used for Primary and Secondary button paddings
       "borderWidth": 1.0 //Used for Secondary button, Text input, Selection button border
     },
-    // IMPORTANT! For iOS the font size, weight is taken from Font file.
     "typography": {
       "heading1": { "fontSize": 24, "fontWeight": 500, "lineHeight": 32, "alignment": "center" },
       "heading2": { "fontSize": 16, "fontWeight": 500, "lineHeight": 18, "alignment": "center" },
