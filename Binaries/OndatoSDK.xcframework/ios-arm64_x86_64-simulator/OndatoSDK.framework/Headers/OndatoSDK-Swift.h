@@ -307,6 +307,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @protocol OndatoFlowDelegate;
+@class OndatoServiceConfiguration;
 @class NSString;
 @class NSData;
 @class OndatoViewController;
@@ -315,20 +316,28 @@ SWIFT_CLASS_NAMED("Ondato")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Ondato * _Nonnull sdk;)
 + (Ondato * _Nonnull)sdk SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, weak) id <OndatoFlowDelegate> _Nullable delegate;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@property (nonatomic, strong) OndatoServiceConfiguration * _Nonnull configuration;
 - (void)setIdentityVerificationId:(NSString * _Nonnull)id;
 - (void)setSetupId:(NSString * _Nonnull)setupId;
 - (void)setClientId:(NSString * _Nonnull)clientId;
 - (void)setClientSecret:(NSString * _Nonnull)clientSecret;
 - (BOOL)setWhitelabel:(NSData * _Nonnull)data error:(NSError * _Nullable * _Nullable)error;
 - (OndatoViewController * _Nonnull)instantiateOndatoViewController SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoAdditionalDocumentType, "OndatoAdditionalDocumentType", open) {
   OndatoAdditionalDocumentTypeProofOfAddress = 0,
   OndatoAdditionalDocumentTypeSelfieWithDocument = 1,
 };
+
+SWIFT_CLASS_NAMED("OndatoAnimations")
+@interface OndatoAnimations : NSObject
+@property (nonatomic, copy) NSString * _Nullable waitingScreenAnimationFilePath;
+- (nonnull instancetype)initWithWaitingScreen:(NSString * _Nullable)waitingScreen OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @class NSBundle;
 @class NSCoder;
@@ -342,6 +351,12 @@ SWIFT_CLASS_NAMED("OndatoCompletionViewControllerType")
 @interface OndatoCompletionViewControllerType : UIViewController
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS_NAMED("OndatoDocumentImages")
+@interface OndatoDocumentImages : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoDocumentPart, "OndatoDocumentPart", open) {
@@ -378,6 +393,16 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoFaceCaptureType, "OndatoFaceCaptureTyp
   OndatoFaceCaptureTypeFaceAuth = 2,
 };
 
+SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
+@interface OndatoFlowConfiguration : NSObject
+@property (nonatomic) BOOL skipRegistrationIfDriverLicense;
+@property (nonatomic) BOOL showTranslationKeys;
+@property (nonatomic) BOOL showNoInternetConnectionView;
+@property (nonatomic) BOOL disablePdfFileUpload;
+@property (nonatomic) BOOL switchPrimaryButtons;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class OndatoLoadingViewControllerType;
 @class UIView;
 @class OndatoInstructionViewControllerType;
@@ -400,8 +425,26 @@ SWIFT_PROTOCOL_NAMED("OndatoFlowDelegate")
 - (void)flowDidFailWithIdentificationId:(NSString * _Nullable)identificationId error:(OndatoServiceError * _Nonnull)error;
 @end
 
+@class UIFont;
+SWIFT_CLASS_NAMED("OndatoFonts")
+@interface OndatoFonts : NSObject
+@property (nonatomic, strong) UIFont * _Nullable heading1;
+@property (nonatomic, strong) UIFont * _Nullable heading2;
+@property (nonatomic, strong) UIFont * _Nullable normal;
+@property (nonatomic, strong) UIFont * _Nullable list;
+@property (nonatomic, strong) UIFont * _Nullable button;
+- (nonnull instancetype)initWithHeading1:(UIFont * _Nullable)heading1 heading2:(UIFont * _Nullable)heading2 normal:(UIFont * _Nullable)normal list:(UIFont * _Nullable)list button:(UIFont * _Nullable)button OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIImage;
 SWIFT_CLASS_NAMED("OndatoImages")
 @interface OndatoImages : NSObject
+@property (nonatomic, strong) UIImage * _Nullable warning;
+@property (nonatomic, strong) UIImage * _Nullable backButton;
+@property (nonatomic, strong) UIImage * _Nullable closeButton;
+@property (nonatomic, strong) OndatoDocumentImages * _Nonnull documentImages;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -410,6 +453,14 @@ SWIFT_CLASS_NAMED("OndatoInstructionViewControllerType")
 @interface OndatoInstructionViewControllerType : UIViewController
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS_NAMED("OndatoLanguageUtils")
+@interface OndatoLanguageUtils : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OndatoLanguageUtils * _Nonnull shared;)
++ (OndatoLanguageUtils * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)languageToString:(NSInteger)language SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS_NAMED("OndatoLoadingViewControllerType")
@@ -463,6 +514,24 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoNFCCaptureComponent, "OndatoNFCCapture
   OndatoNFCCaptureComponentMrz = 0,
   OndatoNFCCaptureComponentNfc = 1,
 };
+
+SWIFT_CLASS_NAMED("OndatoResources")
+@interface OndatoResources : NSObject
+@property (nonatomic, strong) OndatoAnimations * _Nonnull animations;
+@property (nonatomic, strong) OndatoFonts * _Nonnull fonts;
+@property (nonatomic, strong) OndatoImages * _Nonnull images;
+- (nonnull instancetype)initWithAnimations:(OndatoAnimations * _Nullable)animations fonts:(OndatoFonts * _Nullable)fonts images:(OndatoImages * _Nullable)images OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS_NAMED("OndatoServiceConfiguration")
+@interface OndatoServiceConfiguration : NSObject
+@property (nonatomic, strong) OndatoResources * _Nonnull resources;
+@property (nonatomic, strong) OndatoFlowConfiguration * _Nonnull flowConfiguration;
+@property (nonatomic) enum OndatoServerMode mode;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 SWIFT_CLASS_NAMED("OndatoServiceError")
 @interface OndatoServiceError : NSObject
@@ -837,6 +906,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @protocol OndatoFlowDelegate;
+@class OndatoServiceConfiguration;
 @class NSString;
 @class NSData;
 @class OndatoViewController;
@@ -845,20 +915,28 @@ SWIFT_CLASS_NAMED("Ondato")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Ondato * _Nonnull sdk;)
 + (Ondato * _Nonnull)sdk SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, weak) id <OndatoFlowDelegate> _Nullable delegate;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@property (nonatomic, strong) OndatoServiceConfiguration * _Nonnull configuration;
 - (void)setIdentityVerificationId:(NSString * _Nonnull)id;
 - (void)setSetupId:(NSString * _Nonnull)setupId;
 - (void)setClientId:(NSString * _Nonnull)clientId;
 - (void)setClientSecret:(NSString * _Nonnull)clientSecret;
 - (BOOL)setWhitelabel:(NSData * _Nonnull)data error:(NSError * _Nullable * _Nullable)error;
 - (OndatoViewController * _Nonnull)instantiateOndatoViewController SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoAdditionalDocumentType, "OndatoAdditionalDocumentType", open) {
   OndatoAdditionalDocumentTypeProofOfAddress = 0,
   OndatoAdditionalDocumentTypeSelfieWithDocument = 1,
 };
+
+SWIFT_CLASS_NAMED("OndatoAnimations")
+@interface OndatoAnimations : NSObject
+@property (nonatomic, copy) NSString * _Nullable waitingScreenAnimationFilePath;
+- (nonnull instancetype)initWithWaitingScreen:(NSString * _Nullable)waitingScreen OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @class NSBundle;
 @class NSCoder;
@@ -872,6 +950,12 @@ SWIFT_CLASS_NAMED("OndatoCompletionViewControllerType")
 @interface OndatoCompletionViewControllerType : UIViewController
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS_NAMED("OndatoDocumentImages")
+@interface OndatoDocumentImages : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, OndatoDocumentPart, "OndatoDocumentPart", open) {
@@ -908,6 +992,16 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoFaceCaptureType, "OndatoFaceCaptureTyp
   OndatoFaceCaptureTypeFaceAuth = 2,
 };
 
+SWIFT_CLASS_NAMED("OndatoFlowConfiguration")
+@interface OndatoFlowConfiguration : NSObject
+@property (nonatomic) BOOL skipRegistrationIfDriverLicense;
+@property (nonatomic) BOOL showTranslationKeys;
+@property (nonatomic) BOOL showNoInternetConnectionView;
+@property (nonatomic) BOOL disablePdfFileUpload;
+@property (nonatomic) BOOL switchPrimaryButtons;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class OndatoLoadingViewControllerType;
 @class UIView;
 @class OndatoInstructionViewControllerType;
@@ -930,8 +1024,26 @@ SWIFT_PROTOCOL_NAMED("OndatoFlowDelegate")
 - (void)flowDidFailWithIdentificationId:(NSString * _Nullable)identificationId error:(OndatoServiceError * _Nonnull)error;
 @end
 
+@class UIFont;
+SWIFT_CLASS_NAMED("OndatoFonts")
+@interface OndatoFonts : NSObject
+@property (nonatomic, strong) UIFont * _Nullable heading1;
+@property (nonatomic, strong) UIFont * _Nullable heading2;
+@property (nonatomic, strong) UIFont * _Nullable normal;
+@property (nonatomic, strong) UIFont * _Nullable list;
+@property (nonatomic, strong) UIFont * _Nullable button;
+- (nonnull instancetype)initWithHeading1:(UIFont * _Nullable)heading1 heading2:(UIFont * _Nullable)heading2 normal:(UIFont * _Nullable)normal list:(UIFont * _Nullable)list button:(UIFont * _Nullable)button OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIImage;
 SWIFT_CLASS_NAMED("OndatoImages")
 @interface OndatoImages : NSObject
+@property (nonatomic, strong) UIImage * _Nullable warning;
+@property (nonatomic, strong) UIImage * _Nullable backButton;
+@property (nonatomic, strong) UIImage * _Nullable closeButton;
+@property (nonatomic, strong) OndatoDocumentImages * _Nonnull documentImages;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -940,6 +1052,14 @@ SWIFT_CLASS_NAMED("OndatoInstructionViewControllerType")
 @interface OndatoInstructionViewControllerType : UIViewController
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS_NAMED("OndatoLanguageUtils")
+@interface OndatoLanguageUtils : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OndatoLanguageUtils * _Nonnull shared;)
++ (OndatoLanguageUtils * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)languageToString:(NSInteger)language SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS_NAMED("OndatoLoadingViewControllerType")
@@ -993,6 +1113,24 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OndatoNFCCaptureComponent, "OndatoNFCCapture
   OndatoNFCCaptureComponentMrz = 0,
   OndatoNFCCaptureComponentNfc = 1,
 };
+
+SWIFT_CLASS_NAMED("OndatoResources")
+@interface OndatoResources : NSObject
+@property (nonatomic, strong) OndatoAnimations * _Nonnull animations;
+@property (nonatomic, strong) OndatoFonts * _Nonnull fonts;
+@property (nonatomic, strong) OndatoImages * _Nonnull images;
+- (nonnull instancetype)initWithAnimations:(OndatoAnimations * _Nullable)animations fonts:(OndatoFonts * _Nullable)fonts images:(OndatoImages * _Nullable)images OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS_NAMED("OndatoServiceConfiguration")
+@interface OndatoServiceConfiguration : NSObject
+@property (nonatomic, strong) OndatoResources * _Nonnull resources;
+@property (nonatomic, strong) OndatoFlowConfiguration * _Nonnull flowConfiguration;
+@property (nonatomic) enum OndatoServerMode mode;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 SWIFT_CLASS_NAMED("OndatoServiceError")
 @interface OndatoServiceError : NSObject

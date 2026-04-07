@@ -112,21 +112,23 @@ extension Foundation.Bundle {
     get
   }
 }
-public struct OndatoFonts {
-  public var heading1: UIKit.UIFont?
-  public var heading2: UIKit.UIFont?
-  public var normal: UIKit.UIFont?
-  public var list: UIKit.UIFont?
-  public var button: UIKit.UIFont?
+@objc(OndatoFonts) public class OndatoFonts : ObjectiveC.NSObject {
+  @objc public var heading1: UIKit.UIFont?
+  @objc public var heading2: UIKit.UIFont?
+  @objc public var normal: UIKit.UIFont?
+  @objc public var list: UIKit.UIFont?
+  @objc public var button: UIKit.UIFont?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(heading1: UIKit.UIFont? = nil, heading2: UIKit.UIFont? = nil, normal: UIKit.UIFont? = nil, list: UIKit.UIFont? = nil, button: UIKit.UIFont? = nil)
+  @objc public init(heading1: UIKit.UIFont? = nil, heading2: UIKit.UIFont? = nil, normal: UIKit.UIFont? = nil, list: UIKit.UIFont? = nil, button: UIKit.UIFont? = nil)
   #endif
+  @objc deinit
 }
-public struct OndatoAnimations {
-  public var waitingScreenAnimationFilePath: Swift.String?
+@objc(OndatoAnimations) public class OndatoAnimations : ObjectiveC.NSObject {
+  @objc public var waitingScreenAnimationFilePath: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(waitingScreen: Swift.String?)
+  @objc public init(waitingScreen: Swift.String?)
   #endif
+  @objc deinit
 }
 @objc(OndatoLocalizationBundle) public class OndatoLocalizationBundle : ObjectiveC.NSObject {
   @objc public static func bundle(with bundle: Foundation.Bundle, tableName: Swift.String) -> OndatoSDK.OndatoLocalizationBundle
@@ -138,10 +140,10 @@ public struct OndatoAnimations {
   public var additionalDocumentCaptureInstructions: [OndatoSDK.OndatoAdditionalDocumentType : UIKit.UIImage]?
   public var faceCaptureInstructions: [OndatoSDK.OndatoFaceCaptureType : UIKit.UIImage]?
   public var nfcCaptureInstructions: [OndatoSDK.OndatoDocumentType : [OndatoSDK.OndatoNFCCaptureComponent : UIKit.UIImage]]?
-  public var warning: UIKit.UIImage?
-  public var backButton: UIKit.UIImage?
-  public var closeButton: UIKit.UIImage?
-  public var documentImages: OndatoSDK.OndatoDocumentImages
+  @objc public var warning: UIKit.UIImage?
+  @objc public var backButton: UIKit.UIImage?
+  @objc public var closeButton: UIKit.UIImage?
+  @objc public var documentImages: OndatoSDK.OndatoDocumentImages
   #if compiler(>=5.3) && $NonescapableTypes
   public init(documentCaptureInstructions: [OndatoSDK.OndatoDocumentType : [OndatoSDK.OndatoDocumentPart : UIKit.UIImage]]? = nil, additionalDocumentCaptureInstructions: [OndatoSDK.OndatoAdditionalDocumentType : UIKit.UIImage]? = nil, warning: UIKit.UIImage? = nil, backButton: UIKit.UIImage? = nil, closeButton: UIKit.UIImage? = nil)
   #endif
@@ -153,17 +155,15 @@ extension OndatoSDK.OndatoDocumentType : Swift.CaseIterable {
   }
   public typealias AllCases = [OndatoSDK.OndatoDocumentType]
 }
-public struct OndatoDocumentImages {
-  public let selectionCardIcons: [OndatoSDK.OndatoDocumentType : UIKit.UIImage]
+@objc(OndatoDocumentImages) public class OndatoDocumentImages : ObjectiveC.NSObject {
+  final public let selectionCardIcons: [OndatoSDK.OndatoDocumentType : UIKit.UIImage]
   public init(selectionCardIcons: [OndatoSDK.OndatoDocumentType : UIKit.UIImage])
+  @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Ondato) public class Ondato : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(Ondato) public class Ondato : ObjectiveC.NSObject {
   @objc public static let sdk: OndatoSDK.Ondato
   @objc weak public var delegate: (any OndatoSDK.OndatoFlowDelegate)?
-  public var configuration: OndatoSDK.OndatoServiceConfiguration {
-    get
-    set
-  }
+  @objc public var configuration: OndatoSDK.OndatoServiceConfiguration
   @objc public func setIdentityVerificationId(_ id: Swift.String)
   @objc public func setSetupId(_ setupId: Swift.String)
   @objc public func setClientId(_ clientId: Swift.String)
@@ -171,6 +171,7 @@ public struct OndatoDocumentImages {
   @objc public func setWhitelabel(_ data: Foundation.Data) throws
   @objc public func instantiateOndatoViewController() -> OndatoSDK.OndatoViewController
   public func closeSDK()
+  @objc override dynamic public init()
   @objc deinit
 }
 extension UIKit.UILabel {
@@ -195,6 +196,12 @@ extension UIKit.UILabel {
     set
   }
   #endif
+}
+@_inheritsConvenienceInitializers @objc(OndatoLanguageUtils) public class OndatoLanguageUtils : ObjectiveC.NSObject {
+  @objc public static let shared: OndatoSDK.OndatoLanguageUtils
+  @objc public func languageToString(_ language: Swift.Int) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(OndatoLogManager) public class OndatoLogManager : ObjectiveC.NSObject {
   @objc public static let manager: OndatoSDK.OndatoLogManager
@@ -312,13 +319,14 @@ extension OndatoSDK.AnyValue : Swift.ExpressibleByDictionaryLiteral {
 extension Swift.Dictionary where Key == Swift.String, Value == OndatoSDK.AnyValue {
   public func toStringKeyAndRemoveNilObjects() -> [Swift.String : OndatoSDK.AnyValue]
 }
-public struct OndatoResources {
-  public var animations: OndatoSDK.OndatoAnimations
-  public var fonts: OndatoSDK.OndatoFonts
-  public var images: OndatoSDK.OndatoImages
+@objc(OndatoResources) public class OndatoResources : ObjectiveC.NSObject {
+  @objc public var animations: OndatoSDK.OndatoAnimations
+  @objc public var fonts: OndatoSDK.OndatoFonts
+  @objc public var images: OndatoSDK.OndatoImages
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(animations: OndatoSDK.OndatoAnimations? = nil, fonts: OndatoSDK.OndatoFonts? = nil, images: OndatoSDK.OndatoImages? = nil)
+  @objc public init(animations: OndatoSDK.OndatoAnimations? = nil, fonts: OndatoSDK.OndatoFonts? = nil, images: OndatoSDK.OndatoImages? = nil)
   #endif
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OndatoLog : ObjectiveC.NSObject {
   public static let shared: OndatoSDK.OndatoLog
@@ -502,19 +510,21 @@ public struct OSVersion : Swift.Encodable {
   #endif
   @objc deinit
 }
-public struct OndatoServiceConfiguration {
-  public var resources: OndatoSDK.OndatoResources
-  public var flowConfiguration: OndatoSDK.OndatoFlowConfiguration
-  public var mode: OndatoSDK.OndatoEnvironment
-  public init()
+@_inheritsConvenienceInitializers @objc(OndatoServiceConfiguration) public class OndatoServiceConfiguration : ObjectiveC.NSObject {
+  @objc public var resources: OndatoSDK.OndatoResources
+  @objc public var flowConfiguration: OndatoSDK.OndatoFlowConfiguration
+  @objc public var mode: OndatoSDK.OndatoEnvironment
+  @objc override dynamic public init()
+  @objc deinit
 }
-public struct OndatoFlowConfiguration {
-  public var skipRegistrationIfDriverLicense: Swift.Bool
-  public var showTranslationKeys: Swift.Bool
-  public var showNoInternetConnectionView: Swift.Bool
-  public var disablePdfFileUpload: Swift.Bool
-  public var switchPrimaryButtons: Swift.Bool
-  public init()
+@_inheritsConvenienceInitializers @objc(OndatoFlowConfiguration) public class OndatoFlowConfiguration : ObjectiveC.NSObject {
+  @objc public var skipRegistrationIfDriverLicense: Swift.Bool
+  @objc public var showTranslationKeys: Swift.Bool
+  @objc public var showNoInternetConnectionView: Swift.Bool
+  @objc public var disablePdfFileUpload: Swift.Bool
+  @objc public var switchPrimaryButtons: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(OndatoDocumentTypes) public class OndatoDocumentTypes : ObjectiveC.NSObject {
   public var types: [OndatoSDK.OndatoDocumentType]

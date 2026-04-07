@@ -4,3 +4,8 @@ framework module OndatoAutocapture {
 
   module * { export * }
 }
+
+module OndatoAutocapture.Swift {
+  header "OndatoAutocapture-Swift.h"
+  requires objc
+}

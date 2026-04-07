@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "OndatoNFC"
-  spec.version      = "3.2.3"
+  spec.version      = "3.2.4"
   spec.platform     = :ios
   spec.summary      = "Ondato iOS NFC"
   spec.ios.deployment_target = "13.0"
