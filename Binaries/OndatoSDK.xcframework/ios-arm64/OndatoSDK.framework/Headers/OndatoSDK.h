@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RxCocoaRuntime.h"
 
 //! Project version number for OndatoSDK.
 FOUNDATION_EXPORT double OndatoSDK3VersionNumber;

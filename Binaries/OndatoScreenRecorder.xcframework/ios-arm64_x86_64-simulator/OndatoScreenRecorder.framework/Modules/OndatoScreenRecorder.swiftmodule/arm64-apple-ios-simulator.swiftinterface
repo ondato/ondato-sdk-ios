@@ -1,8 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios15-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OndatoScreenRecorder
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OndatoScreenRecorder
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import AVFoundation
+import Combine
 import Foundation
 @_exported import OndatoScreenRecorder
 import Photos
@@ -11,58 +12,45 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum OndatoScreenRecorderError : Swift.Error {
-  case permissionDenied
-  case microphonePermissionDenied
-  case unknown
-  case other(any Swift.Error)
-  case recordingCorrupted
+public protocol OndatoScreenRecorderFactoryProtocol {
+  func make() -> any OndatoScreenRecorder.OndatoScreenRecorderProtocol
 }
-extension OndatoScreenRecorder.Recorder {
-  public enum Status {
-    case idle
-    case recordingStarted
-    case failed(OndatoScreenRecorder.Recorder.Status.Error)
-    case recordingStopped
-    case assetWritingCompleted(fileURL: Swift.String)
-  }
+public class OndatoDefaultScreenRecorderFactory : OndatoScreenRecorder.OndatoScreenRecorderFactoryProtocol {
+  public init()
+  public func make() -> any OndatoScreenRecorder.OndatoScreenRecorderProtocol
+  @objc deinit
 }
-extension OndatoScreenRecorder.Recorder.Status {
-  public enum Error : Swift.Error {
-    case microphoneNotEnabled, restoppingRecording, flowInterrupted
-    case recorderStopped((any Swift.Error)?)
-    case recordingCorrupted
-    case recorderError((any Swift.Error)?)
-  }
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Recorder : ObjectiveC.NSObject {
-  public typealias RecordingID = Swift.String
-  public static let shared: OndatoScreenRecorder.Recorder
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OndatoDefaultScreenRecorder : ObjectiveC.NSObject, OndatoScreenRecorder.OndatoScreenRecorderProtocol {
+  public static let shared: OndatoScreenRecorder.OndatoDefaultScreenRecorder
   public var isRecording: Swift.Bool {
     get
   }
-  public func setStatusObserver(_ observer: @escaping (OndatoScreenRecorder.Recorder.Status) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func startRecording(id: OndatoScreenRecorder.Recorder.RecordingID, completion: @escaping (Swift.Result<Swift.Void, OndatoScreenRecorder.OndatoScreenRecorderError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func stopRecording(completion: @escaping (Swift.Result<OndatoScreenRecorder.OndatoScreenRecording.Base64Encoded?, OndatoScreenRecorder.OndatoScreenRecorderError>) -> Swift.Void)
-  #endif
+  public var status: Combine.PassthroughSubject<OndatoScreenRecorder.OndatoScreenRecorderStatus, Swift.Never>
+  public func startRecording(id: Swift.String) async throws(OndatoScreenRecorder.OndatoScreenRecorderError)
+  public func stopRecording() async throws(OndatoScreenRecorder.OndatoScreenRecorderError) -> Swift.String?
   @objc deinit
 }
-extension OndatoScreenRecorder.Recorder : ReplayKit.RPScreenRecorderDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
+extension OndatoScreenRecorder.OndatoDefaultScreenRecorder : ReplayKit.RPScreenRecorderDelegate {
   @objc dynamic public func screenRecorder(_ screenRecorder: ReplayKit.RPScreenRecorder, didStopRecordingWith previewViewController: ReplayKit.RPPreviewViewController?, error: (any Swift.Error)?)
-  #endif
 }
-@_hasMissingDesignatedInitializers public class OndatoScreenRecording {
-  public typealias Base64Encoded = Swift.String
-  public var url: Foundation.URL?
-  @objc deinit
+public protocol OndatoScreenRecorderProtocol {
+  var isRecording: Swift.Bool { get }
+  var status: Combine.PassthroughSubject<OndatoScreenRecorder.OndatoScreenRecorderStatus, Swift.Never> { get }
+  func startRecording(id: Swift.String) async throws(OndatoScreenRecorder.OndatoScreenRecorderError)
+  func stopRecording() async throws(OndatoScreenRecorder.OndatoScreenRecorderError) -> Swift.String?
 }
-@_hasMissingDesignatedInitializers public class OndatoVideoHelper {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public class func data(from url: Foundation.URL?) -> Foundation.Data?
-  #endif
-  @objc deinit
+public enum OndatoScreenRecorderError : Swift.Error {
+  case permissionDenied
+  case microphonePermissionDenied
+  case recordingCorrupted
+  case restoppingRecording
+  case flowInterrupted
+  case recorderError(any Swift.Error)
+}
+public enum OndatoScreenRecorderStatus {
+  case idle
+  case recordingStarted
+  case failed(OndatoScreenRecorder.OndatoScreenRecorderError)
+  case recordingStopped
+  case assetWritingCompleted(fileURL: Swift.String)
 }

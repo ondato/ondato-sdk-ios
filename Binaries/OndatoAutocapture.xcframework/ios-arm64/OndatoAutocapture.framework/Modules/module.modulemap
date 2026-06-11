@@ -7,5 +7,4 @@ framework module OndatoAutocapture {
 
 module OndatoAutocapture.Swift {
   header "OndatoAutocapture-Swift.h"
-  requires objc
 }

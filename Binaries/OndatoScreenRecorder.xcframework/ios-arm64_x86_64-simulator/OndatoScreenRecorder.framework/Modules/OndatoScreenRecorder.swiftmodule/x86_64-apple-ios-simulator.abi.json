@@ -16,6 +16,172 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OndatoScreenRecorder"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "OndatoScreenRecorder"
+      },
+      {
+        "kind": "Import",
+        "name": "ReplayKit",
+        "printedName": "ReplayKit",
+        "declKind": "Import",
+        "moduleName": "OndatoScreenRecorder",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OndatoScreenRecorderFactoryProtocol",
+        "printedName": "OndatoScreenRecorderFactoryProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "make",
+            "printedName": "make()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OndatoScreenRecorderProtocol",
+                "printedName": "any OndatoScreenRecorder.OndatoScreenRecorderProtocol",
+                "usr": "s:20OndatoScreenRecorder0abC8ProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OndatoScreenRecorder0abC15FactoryProtocolP4makeAA0abcE0_pyF",
+            "mangledName": "$s20OndatoScreenRecorder0abC15FactoryProtocolP4makeAA0abcE0_pyF",
+            "moduleName": "OndatoScreenRecorder",
+            "genericSig": "<τ_0_0 where τ_0_0 : OndatoScreenRecorder.OndatoScreenRecorderFactoryProtocol>",
+            "sugared_genericSig": "<Self where Self : OndatoScreenRecorder.OndatoScreenRecorderFactoryProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20OndatoScreenRecorder0abC15FactoryProtocolP",
+        "mangledName": "$s20OndatoScreenRecorder0abC15FactoryProtocolP",
+        "moduleName": "OndatoScreenRecorder",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OndatoDefaultScreenRecorderFactory",
+        "printedName": "OndatoDefaultScreenRecorderFactory",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OndatoDefaultScreenRecorderFactory",
+                "printedName": "OndatoScreenRecorder.OndatoDefaultScreenRecorderFactory",
+                "usr": "s:20OndatoScreenRecorder0a7DefaultbC7FactoryC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20OndatoScreenRecorder0a7DefaultbC7FactoryCACycfc",
+            "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC7FactoryCACycfc",
+            "moduleName": "OndatoScreenRecorder",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "make",
+            "printedName": "make()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OndatoScreenRecorderProtocol",
+                "printedName": "any OndatoScreenRecorder.OndatoScreenRecorderProtocol",
+                "usr": "s:20OndatoScreenRecorder0abC8ProtocolP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OndatoScreenRecorder0a7DefaultbC7FactoryC4makeAA0abC8Protocol_pyF",
+            "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC7FactoryC4makeAA0abC8Protocol_pyF",
+            "moduleName": "OndatoScreenRecorder",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20OndatoScreenRecorder0a7DefaultbC7FactoryC",
+        "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC7FactoryC",
+        "moduleName": "OndatoScreenRecorder",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "OndatoScreenRecorderFactoryProtocol",
+            "printedName": "OndatoScreenRecorderFactoryProtocol",
+            "usr": "s:20OndatoScreenRecorder0abC15FactoryProtocolP",
+            "mangledName": "$s20OndatoScreenRecorder0abC15FactoryProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OndatoScreenRecorder",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "ReplayKit",
         "printedName": "ReplayKit",
         "declKind": "Import",
@@ -27,6 +193,668 @@
         "printedName": "Photos",
         "declKind": "Import",
         "moduleName": "OndatoScreenRecorder"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "OndatoScreenRecorder"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OndatoDefaultScreenRecorder",
+        "printedName": "OndatoDefaultScreenRecorder",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OndatoDefaultScreenRecorder",
+                "printedName": "OndatoScreenRecorder.OndatoDefaultScreenRecorder",
+                "usr": "c:@M@OndatoScreenRecorder@objc(cs)OndatoDefaultScreenRecorder"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C6sharedACvpZ",
+            "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C6sharedACvpZ",
+            "moduleName": "OndatoScreenRecorder",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OndatoDefaultScreenRecorder",
+                    "printedName": "OndatoScreenRecorder.OndatoDefaultScreenRecorder",
+                    "usr": "c:@M@OndatoScreenRecorder@objc(cs)OndatoDefaultScreenRecorder"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C6sharedACvgZ",
+                "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C6sharedACvgZ",
+                "moduleName": "OndatoScreenRecorder",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRecording",
+            "printedName": "isRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C11isRecordingSbvp",
+            "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C11isRecordingSbvp",
+            "moduleName": "OndatoScreenRecorder",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C11isRecordingSbvg",
+                "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C11isRecordingSbvg",
+                "moduleName": "OndatoScreenRecorder",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<OndatoScreenRecorder.OndatoScreenRecorderStatus, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OndatoScreenRecorderStatus",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                    "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvp",
+            "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvp",
+            "moduleName": "OndatoScreenRecorder",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<OndatoScreenRecorder.OndatoScreenRecorderStatus, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvg",
+                "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvg",
+                "moduleName": "OndatoScreenRecorder",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<OndatoScreenRecorder.OndatoScreenRecorderStatus, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvs",
+                "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvs",
+                "moduleName": "OndatoScreenRecorder",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvM",
+                "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvM",
+                "moduleName": "OndatoScreenRecorder",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startRecording",
+            "printedName": "startRecording(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C14startRecording2idySS_tYaAA0abC5ErrorOYKF",
+            "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C14startRecording2idySS_tYaAA0abC5ErrorOYKF",
+            "moduleName": "OndatoScreenRecorder",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopRecording",
+            "printedName": "stopRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OndatoScreenRecorder0a7DefaultbC0C13stopRecordingSSSgyYaAA0abC5ErrorOYKF",
+            "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C13stopRecordingSSSgyYaAA0abC5ErrorOYKF",
+            "moduleName": "OndatoScreenRecorder",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "screenRecorder",
+            "printedName": "screenRecorder(_:didStopRecordingWith:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RPScreenRecorder",
+                "printedName": "ReplayKit.RPScreenRecorder",
+                "usr": "c:objc(cs)RPScreenRecorder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ReplayKit.RPPreviewViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RPPreviewViewController",
+                    "printedName": "ReplayKit.RPPreviewViewController",
+                    "usr": "c:objc(cs)RPPreviewViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OndatoScreenRecorder@objc(cs)OndatoDefaultScreenRecorder(im)screenRecorder:didStopRecordingWithPreviewViewController:error:",
+            "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C06screenC0_20didStopRecordingWith5errorySo08RPScreenC0C_So23RPPreviewViewControllerCSgs5Error_pSgtF",
+            "moduleName": "OndatoScreenRecorder",
+            "objc_name": "screenRecorder:didStopRecordingWithPreviewViewController:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@OndatoScreenRecorder@objc(cs)OndatoDefaultScreenRecorder",
+        "mangledName": "$s20OndatoScreenRecorder0a7DefaultbC0C",
+        "moduleName": "OndatoScreenRecorder",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "OndatoScreenRecorderProtocol",
+            "printedName": "OndatoScreenRecorderProtocol",
+            "usr": "s:20OndatoScreenRecorder0abC8ProtocolP",
+            "mangledName": "$s20OndatoScreenRecorder0abC8ProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "OndatoScreenRecorder",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OndatoScreenRecorderProtocol",
+        "printedName": "OndatoScreenRecorderProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isRecording",
+            "printedName": "isRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20OndatoScreenRecorder0abC8ProtocolP11isRecordingSbvp",
+            "mangledName": "$s20OndatoScreenRecorder0abC8ProtocolP11isRecordingSbvp",
+            "moduleName": "OndatoScreenRecorder",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OndatoScreenRecorder0abC8ProtocolP11isRecordingSbvg",
+                "mangledName": "$s20OndatoScreenRecorder0abC8ProtocolP11isRecordingSbvg",
+                "moduleName": "OndatoScreenRecorder",
+                "genericSig": "<τ_0_0 where τ_0_0 : OndatoScreenRecorder.OndatoScreenRecorderProtocol>",
+                "sugared_genericSig": "<Self where Self : OndatoScreenRecorder.OndatoScreenRecorderProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<OndatoScreenRecorder.OndatoScreenRecorderStatus, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OndatoScreenRecorderStatus",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                    "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20OndatoScreenRecorder0abC8ProtocolP6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvp",
+            "mangledName": "$s20OndatoScreenRecorder0abC8ProtocolP6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvp",
+            "moduleName": "OndatoScreenRecorder",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<OndatoScreenRecorder.OndatoScreenRecorderStatus, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OndatoScreenRecorder0abC8ProtocolP6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvg",
+                "mangledName": "$s20OndatoScreenRecorder0abC8ProtocolP6status7Combine18PassthroughSubjectCyAA0abC6StatusOs5NeverOGvg",
+                "moduleName": "OndatoScreenRecorder",
+                "genericSig": "<τ_0_0 where τ_0_0 : OndatoScreenRecorder.OndatoScreenRecorderProtocol>",
+                "sugared_genericSig": "<Self where Self : OndatoScreenRecorder.OndatoScreenRecorderProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startRecording",
+            "printedName": "startRecording(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OndatoScreenRecorder0abC8ProtocolP14startRecording2idySS_tYaAA0abC5ErrorOYKF",
+            "mangledName": "$s20OndatoScreenRecorder0abC8ProtocolP14startRecording2idySS_tYaAA0abC5ErrorOYKF",
+            "moduleName": "OndatoScreenRecorder",
+            "genericSig": "<τ_0_0 where τ_0_0 : OndatoScreenRecorder.OndatoScreenRecorderProtocol>",
+            "sugared_genericSig": "<Self where Self : OndatoScreenRecorder.OndatoScreenRecorderProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopRecording",
+            "printedName": "stopRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OndatoScreenRecorder0abC8ProtocolP13stopRecordingSSSgyYaAA0abC5ErrorOYKF",
+            "mangledName": "$s20OndatoScreenRecorder0abC8ProtocolP13stopRecordingSSSgyYaAA0abC5ErrorOYKF",
+            "moduleName": "OndatoScreenRecorder",
+            "genericSig": "<τ_0_0 where τ_0_0 : OndatoScreenRecorder.OndatoScreenRecorderProtocol>",
+            "sugared_genericSig": "<Self where Self : OndatoScreenRecorder.OndatoScreenRecorderProtocol>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20OndatoScreenRecorder0abC8ProtocolP",
+        "mangledName": "$s20OndatoScreenRecorder0abC8ProtocolP",
+        "moduleName": "OndatoScreenRecorder",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OndatoScreenRecorder"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "OndatoScreenRecorder",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -109,8 +937,8 @@
           },
           {
             "kind": "Var",
-            "name": "unknown",
-            "printedName": "unknown",
+            "name": "recordingCorrupted",
+            "printedName": "recordingCorrupted",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -140,14 +968,88 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20OndatoScreenRecorder0abC5ErrorO7unknownyA2CmF",
-            "mangledName": "$s20OndatoScreenRecorder0abC5ErrorO7unknownyA2CmF",
+            "usr": "s:20OndatoScreenRecorder0abC5ErrorO18recordingCorruptedyA2CmF",
+            "mangledName": "$s20OndatoScreenRecorder0abC5ErrorO18recordingCorruptedyA2CmF",
             "moduleName": "OndatoScreenRecorder"
           },
           {
             "kind": "Var",
-            "name": "other",
-            "printedName": "other",
+            "name": "restoppingRecording",
+            "printedName": "restoppingRecording",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OndatoScreenRecorder.OndatoScreenRecorderError.Type) -> OndatoScreenRecorder.OndatoScreenRecorderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OndatoScreenRecorderError",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError",
+                    "usr": "s:20OndatoScreenRecorder0abC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoScreenRecorderError",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError",
+                        "usr": "s:20OndatoScreenRecorder0abC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20OndatoScreenRecorder0abC5ErrorO19restoppingRecordingyA2CmF",
+            "mangledName": "$s20OndatoScreenRecorder0abC5ErrorO19restoppingRecordingyA2CmF",
+            "moduleName": "OndatoScreenRecorder"
+          },
+          {
+            "kind": "Var",
+            "name": "flowInterrupted",
+            "printedName": "flowInterrupted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OndatoScreenRecorder.OndatoScreenRecorderError.Type) -> OndatoScreenRecorder.OndatoScreenRecorderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OndatoScreenRecorderError",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError",
+                    "usr": "s:20OndatoScreenRecorder0abC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoScreenRecorderError",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError",
+                        "usr": "s:20OndatoScreenRecorder0abC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20OndatoScreenRecorder0abC5ErrorO15flowInterruptedyA2CmF",
+            "mangledName": "$s20OndatoScreenRecorder0abC5ErrorO15flowInterruptedyA2CmF",
+            "moduleName": "OndatoScreenRecorder"
+          },
+          {
+            "kind": "Var",
+            "name": "recorderError",
+            "printedName": "recorderError",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -190,45 +1092,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20OndatoScreenRecorder0abC5ErrorO5otheryACs0D0_pcACmF",
-            "mangledName": "$s20OndatoScreenRecorder0abC5ErrorO5otheryACs0D0_pcACmF",
-            "moduleName": "OndatoScreenRecorder"
-          },
-          {
-            "kind": "Var",
-            "name": "recordingCorrupted",
-            "printedName": "recordingCorrupted",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OndatoScreenRecorder.OndatoScreenRecorderError.Type) -> OndatoScreenRecorder.OndatoScreenRecorderError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OndatoScreenRecorderError",
-                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError",
-                    "usr": "s:20OndatoScreenRecorder0abC5ErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OndatoScreenRecorderError",
-                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError",
-                        "usr": "s:20OndatoScreenRecorder0abC5ErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20OndatoScreenRecorder0abC5ErrorO18recordingCorruptedyA2CmF",
-            "mangledName": "$s20OndatoScreenRecorder0abC5ErrorO18recordingCorruptedyA2CmF",
+            "usr": "s:20OndatoScreenRecorder0abC5ErrorO08recorderD0yACs0D0_pcACmF",
+            "mangledName": "$s20OndatoScreenRecorder0abC5ErrorO08recorderD0yACs0D0_pcACmF",
             "moduleName": "OndatoScreenRecorder"
           }
         ],
@@ -237,7 +1102,8 @@
         "mangledName": "$s20OndatoScreenRecorder0abC5ErrorO",
         "moduleName": "OndatoScreenRecorder",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -249,17 +1115,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -279,173 +1145,103 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Recorder",
-        "printedName": "Recorder",
+        "name": "OndatoScreenRecorderStatus",
+        "printedName": "OndatoScreenRecorderStatus",
         "children": [
           {
             "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
+            "name": "idle",
+            "printedName": "idle",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Recorder",
-                "printedName": "OndatoScreenRecorder.Recorder",
-                "usr": "c:@M@OndatoScreenRecorder@objc(cs)Recorder"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20OndatoScreenRecorder0C0C6sharedACvpZ",
-            "mangledName": "$s20OndatoScreenRecorder0C0C6sharedACvpZ",
-            "moduleName": "OndatoScreenRecorder",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Recorder",
-                    "printedName": "OndatoScreenRecorder.Recorder",
-                    "usr": "c:@M@OndatoScreenRecorder@objc(cs)Recorder"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20OndatoScreenRecorder0C0C6sharedACvgZ",
-                "mangledName": "$s20OndatoScreenRecorder0C0C6sharedACvgZ",
-                "moduleName": "OndatoScreenRecorder",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isRecording",
-            "printedName": "isRecording",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20OndatoScreenRecorder0C0C11isRecordingSbvp",
-            "mangledName": "$s20OndatoScreenRecorder0C0C11isRecordingSbvp",
-            "moduleName": "OndatoScreenRecorder",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20OndatoScreenRecorder0C0C11isRecordingSbvg",
-                "mangledName": "$s20OndatoScreenRecorder0C0C11isRecordingSbvg",
-                "moduleName": "OndatoScreenRecorder",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "setStatusObserver",
-            "printedName": "setStatusObserver(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OndatoScreenRecorder.Recorder.Status) -> ()",
+                "printedName": "(OndatoScreenRecorder.OndatoScreenRecorderStatus.Type) -> OndatoScreenRecorder.OndatoScreenRecorderStatus",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "OndatoScreenRecorderStatus",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                    "usr": "s:20OndatoScreenRecorder0abC6StatusO"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Status",
-                    "printedName": "OndatoScreenRecorder.Recorder.Status",
-                    "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
+                    "name": "Metatype",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                      }
+                    ]
                   }
                 ]
               }
             ],
-            "declKind": "Func",
-            "usr": "s:20OndatoScreenRecorder0C0C17setStatusObserveryyyAC0E0OcF",
-            "mangledName": "$s20OndatoScreenRecorder0C0C17setStatusObserveryyyAC0E0OcF",
-            "moduleName": "OndatoScreenRecorder",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
+            "declKind": "EnumElement",
+            "usr": "s:20OndatoScreenRecorder0abC6StatusO4idleyA2CmF",
+            "mangledName": "$s20OndatoScreenRecorder0abC6StatusO4idleyA2CmF",
+            "moduleName": "OndatoScreenRecorder"
           },
           {
-            "kind": "Function",
-            "name": "startRecording",
-            "printedName": "startRecording(id:completion:)",
+            "kind": "Var",
+            "name": "recordingStarted",
+            "printedName": "recordingStarted",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<(), OndatoScreenRecorder.OndatoScreenRecorderError>) -> ()",
+                "printedName": "(OndatoScreenRecorder.OndatoScreenRecorderStatus.Type) -> OndatoScreenRecorder.OndatoScreenRecorderStatus",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "OndatoScreenRecorderStatus",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                    "usr": "s:20OndatoScreenRecorder0abC6StatusO"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<(), OndatoScreenRecorder.OndatoScreenRecorderError>",
+                    "name": "Metatype",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20OndatoScreenRecorder0abC6StatusO16recordingStartedyA2CmF",
+            "mangledName": "$s20OndatoScreenRecorder0abC6StatusO16recordingStartedyA2CmF",
+            "moduleName": "OndatoScreenRecorder"
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OndatoScreenRecorder.OndatoScreenRecorderStatus.Type) -> (OndatoScreenRecorder.OndatoScreenRecorderError) -> OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OndatoScreenRecorder.OndatoScreenRecorderError) -> OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
                       },
                       {
                         "kind": "TypeNominal",
@@ -453,50 +1249,91 @@
                         "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError",
                         "usr": "s:20OndatoScreenRecorder0abC5ErrorO"
                       }
-                    ],
-                    "usr": "s:s6ResultO"
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                      }
+                    ]
                   }
                 ]
               }
             ],
-            "declKind": "Func",
-            "usr": "s:20OndatoScreenRecorder0C0C14startRecording2id10completionySS_ys6ResultOyytAA0abC5ErrorOGctF",
-            "mangledName": "$s20OndatoScreenRecorder0C0C14startRecording2id10completionySS_ys6ResultOyytAA0abC5ErrorOGctF",
-            "moduleName": "OndatoScreenRecorder",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
+            "declKind": "EnumElement",
+            "usr": "s:20OndatoScreenRecorder0abC6StatusO6failedyAcA0abC5ErrorOcACmF",
+            "mangledName": "$s20OndatoScreenRecorder0abC6StatusO6failedyAcA0abC5ErrorOcACmF",
+            "moduleName": "OndatoScreenRecorder"
           },
           {
-            "kind": "Function",
-            "name": "stopRecording",
-            "printedName": "stopRecording(completion:)",
+            "kind": "Var",
+            "name": "recordingStopped",
+            "printedName": "recordingStopped",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<Swift.String?, OndatoScreenRecorder.OndatoScreenRecorderError>) -> ()",
+                "printedName": "(OndatoScreenRecorder.OndatoScreenRecorderStatus.Type) -> OndatoScreenRecorder.OndatoScreenRecorderStatus",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "OndatoScreenRecorderStatus",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                    "usr": "s:20OndatoScreenRecorder0abC6StatusO"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<Swift.String?, OndatoScreenRecorder.OndatoScreenRecorderError>",
+                    "name": "Metatype",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20OndatoScreenRecorder0abC6StatusO16recordingStoppedyA2CmF",
+            "mangledName": "$s20OndatoScreenRecorder0abC6StatusO16recordingStoppedyA2CmF",
+            "moduleName": "OndatoScreenRecorder"
+          },
+          {
+            "kind": "Var",
+            "name": "assetWritingCompleted",
+            "printedName": "assetWritingCompleted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OndatoScreenRecorder.OndatoScreenRecorderStatus.Type) -> (Swift.String) -> OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(fileURL: Swift.String)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -504,968 +1341,40 @@
                             "printedName": "Swift.String",
                             "usr": "s:SS"
                           }
-                        ],
-                        "usr": "s:Sq"
-                      },
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus.Type",
+                    "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "OndatoScreenRecorderError",
-                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderError",
-                        "usr": "s:20OndatoScreenRecorder0abC5ErrorO"
+                        "name": "OndatoScreenRecorderStatus",
+                        "printedName": "OndatoScreenRecorder.OndatoScreenRecorderStatus",
+                        "usr": "s:20OndatoScreenRecorder0abC6StatusO"
                       }
-                    ],
-                    "usr": "s:s6ResultO"
+                    ]
                   }
                 ]
               }
             ],
-            "declKind": "Func",
-            "usr": "s:20OndatoScreenRecorder0C0C13stopRecording10completionyys6ResultOySSSgAA0abC5ErrorOGc_tF",
-            "mangledName": "$s20OndatoScreenRecorder0C0C13stopRecording10completionyys6ResultOySSSgAA0abC5ErrorOGc_tF",
-            "moduleName": "OndatoScreenRecorder",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "Status",
-            "printedName": "Status",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "idle",
-                "printedName": "idle",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(OndatoScreenRecorder.Recorder.Status.Type) -> OndatoScreenRecorder.Recorder.Status",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Status",
-                        "printedName": "OndatoScreenRecorder.Recorder.Status",
-                        "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "OndatoScreenRecorder.Recorder.Status.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Status",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:20OndatoScreenRecorder0C0C6StatusO4idleyA2EmF",
-                "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO4idleyA2EmF",
-                "moduleName": "OndatoScreenRecorder"
-              },
-              {
-                "kind": "Var",
-                "name": "recordingStarted",
-                "printedName": "recordingStarted",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(OndatoScreenRecorder.Recorder.Status.Type) -> OndatoScreenRecorder.Recorder.Status",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Status",
-                        "printedName": "OndatoScreenRecorder.Recorder.Status",
-                        "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "OndatoScreenRecorder.Recorder.Status.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Status",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:20OndatoScreenRecorder0C0C6StatusO16recordingStartedyA2EmF",
-                "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO16recordingStartedyA2EmF",
-                "moduleName": "OndatoScreenRecorder"
-              },
-              {
-                "kind": "Var",
-                "name": "failed",
-                "printedName": "failed",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(OndatoScreenRecorder.Recorder.Status.Type) -> (OndatoScreenRecorder.Recorder.Status.Error) -> OndatoScreenRecorder.Recorder.Status",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(OndatoScreenRecorder.Recorder.Status.Error) -> OndatoScreenRecorder.Recorder.Status",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Status",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "OndatoScreenRecorder.Recorder.Status.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Status",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:20OndatoScreenRecorder0C0C6StatusO6failedyA2E5ErrorOcAEmF",
-                "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO6failedyA2E5ErrorOcAEmF",
-                "moduleName": "OndatoScreenRecorder"
-              },
-              {
-                "kind": "Var",
-                "name": "recordingStopped",
-                "printedName": "recordingStopped",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(OndatoScreenRecorder.Recorder.Status.Type) -> OndatoScreenRecorder.Recorder.Status",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Status",
-                        "printedName": "OndatoScreenRecorder.Recorder.Status",
-                        "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "OndatoScreenRecorder.Recorder.Status.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Status",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:20OndatoScreenRecorder0C0C6StatusO16recordingStoppedyA2EmF",
-                "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO16recordingStoppedyA2EmF",
-                "moduleName": "OndatoScreenRecorder"
-              },
-              {
-                "kind": "Var",
-                "name": "assetWritingCompleted",
-                "printedName": "assetWritingCompleted",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(OndatoScreenRecorder.Recorder.Status.Type) -> (Swift.String) -> OndatoScreenRecorder.Recorder.Status",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.String) -> OndatoScreenRecorder.Recorder.Status",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Status",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Tuple",
-                            "printedName": "(fileURL: Swift.String)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "OndatoScreenRecorder.Recorder.Status.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Status",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:20OndatoScreenRecorder0C0C6StatusO21assetWritingCompletedyAESS_tcAEmF",
-                "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO21assetWritingCompletedyAESS_tcAEmF",
-                "moduleName": "OndatoScreenRecorder"
-              },
-              {
-                "kind": "TypeDecl",
-                "name": "Error",
-                "printedName": "Error",
-                "children": [
-                  {
-                    "kind": "Var",
-                    "name": "microphoneNotEnabled",
-                    "printedName": "microphoneNotEnabled",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(OndatoScreenRecorder.Recorder.Status.Error.Type) -> OndatoScreenRecorder.Recorder.Status.Error",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Metatype",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error.Type",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                                "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "EnumElement",
-                    "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO20microphoneNotEnabledyA2GmF",
-                    "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO5ErrorO20microphoneNotEnabledyA2GmF",
-                    "moduleName": "OndatoScreenRecorder"
-                  },
-                  {
-                    "kind": "Var",
-                    "name": "restoppingRecording",
-                    "printedName": "restoppingRecording",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(OndatoScreenRecorder.Recorder.Status.Error.Type) -> OndatoScreenRecorder.Recorder.Status.Error",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Metatype",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error.Type",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                                "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "EnumElement",
-                    "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO19restoppingRecordingyA2GmF",
-                    "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO5ErrorO19restoppingRecordingyA2GmF",
-                    "moduleName": "OndatoScreenRecorder"
-                  },
-                  {
-                    "kind": "Var",
-                    "name": "flowInterrupted",
-                    "printedName": "flowInterrupted",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(OndatoScreenRecorder.Recorder.Status.Error.Type) -> OndatoScreenRecorder.Recorder.Status.Error",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Metatype",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error.Type",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                                "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "EnumElement",
-                    "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO15flowInterruptedyA2GmF",
-                    "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO5ErrorO15flowInterruptedyA2GmF",
-                    "moduleName": "OndatoScreenRecorder"
-                  },
-                  {
-                    "kind": "Var",
-                    "name": "recorderStopped",
-                    "printedName": "recorderStopped",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(OndatoScreenRecorder.Recorder.Status.Error.Type) -> ((any Swift.Error)?) -> OndatoScreenRecorder.Recorder.Status.Error",
-                        "children": [
-                          {
-                            "kind": "TypeFunc",
-                            "name": "Function",
-                            "printedName": "((any Swift.Error)?) -> OndatoScreenRecorder.Recorder.Status.Error",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                                "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "(any Swift.Error)?",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Error",
-                                    "printedName": "any Swift.Error",
-                                    "usr": "s:s5ErrorP"
-                                  }
-                                ],
-                                "usr": "s:Sq"
-                              }
-                            ]
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Metatype",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error.Type",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                                "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "EnumElement",
-                    "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO15recorderStoppedyAGsAF_pSgcAGmF",
-                    "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO5ErrorO15recorderStoppedyAGsAF_pSgcAGmF",
-                    "moduleName": "OndatoScreenRecorder"
-                  },
-                  {
-                    "kind": "Var",
-                    "name": "recordingCorrupted",
-                    "printedName": "recordingCorrupted",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(OndatoScreenRecorder.Recorder.Status.Error.Type) -> OndatoScreenRecorder.Recorder.Status.Error",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                            "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Metatype",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error.Type",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                                "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "EnumElement",
-                    "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO18recordingCorruptedyA2GmF",
-                    "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO5ErrorO18recordingCorruptedyA2GmF",
-                    "moduleName": "OndatoScreenRecorder"
-                  },
-                  {
-                    "kind": "Var",
-                    "name": "recorderError",
-                    "printedName": "recorderError",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(OndatoScreenRecorder.Recorder.Status.Error.Type) -> ((any Swift.Error)?) -> OndatoScreenRecorder.Recorder.Status.Error",
-                        "children": [
-                          {
-                            "kind": "TypeFunc",
-                            "name": "Function",
-                            "printedName": "((any Swift.Error)?) -> OndatoScreenRecorder.Recorder.Status.Error",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                                "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "(any Swift.Error)?",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Error",
-                                    "printedName": "any Swift.Error",
-                                    "usr": "s:s5ErrorP"
-                                  }
-                                ],
-                                "usr": "s:Sq"
-                              }
-                            ]
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Metatype",
-                            "printedName": "OndatoScreenRecorder.Recorder.Status.Error.Type",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "OndatoScreenRecorder.Recorder.Status.Error",
-                                "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "EnumElement",
-                    "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO08recorderE0yAGsAF_pSgcAGmF",
-                    "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO5ErrorO08recorderE0yAGsAF_pSgcAGmF",
-                    "moduleName": "OndatoScreenRecorder"
-                  }
-                ],
-                "declKind": "Enum",
-                "usr": "s:20OndatoScreenRecorder0C0C6StatusO5ErrorO",
-                "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO5ErrorO",
-                "moduleName": "OndatoScreenRecorder",
-                "isFromExtension": true,
-                "conformances": [
-                  {
-                    "kind": "Conformance",
-                    "name": "Copyable",
-                    "printedName": "Copyable",
-                    "usr": "s:s8CopyableP",
-                    "mangledName": "$ss8CopyableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Error",
-                    "printedName": "Error",
-                    "usr": "s:s5ErrorP",
-                    "mangledName": "$ss5ErrorP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Sendable",
-                    "printedName": "Sendable",
-                    "usr": "s:s8SendableP",
-                    "mangledName": "$ss8SendableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "SendableMetatype",
-                    "printedName": "SendableMetatype",
-                    "usr": "s:s16SendableMetatypeP",
-                    "mangledName": "$ss16SendableMetatypeP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:20OndatoScreenRecorder0C0C6StatusO",
-            "mangledName": "$s20OndatoScreenRecorder0C0C6StatusO",
-            "moduleName": "OndatoScreenRecorder",
-            "isFromExtension": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "screenRecorder",
-            "printedName": "screenRecorder(_:didStopRecordingWith:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RPScreenRecorder",
-                "printedName": "ReplayKit.RPScreenRecorder",
-                "usr": "c:objc(cs)RPScreenRecorder"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ReplayKit.RPPreviewViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RPPreviewViewController",
-                    "printedName": "ReplayKit.RPPreviewViewController",
-                    "usr": "c:objc(cs)RPPreviewViewController"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@OndatoScreenRecorder@objc(cs)Recorder(im)screenRecorder:didStopRecordingWithPreviewViewController:error:",
-            "mangledName": "$s20OndatoScreenRecorder0C0C06screenC0_20didStopRecordingWith5errorySo08RPScreenC0C_So23RPPreviewViewControllerCSgs5Error_pSgtF",
-            "moduleName": "OndatoScreenRecorder",
-            "objc_name": "screenRecorder:didStopRecordingWithPreviewViewController:error:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
+            "declKind": "EnumElement",
+            "usr": "s:20OndatoScreenRecorder0abC6StatusO21assetWritingCompletedyACSS_tcACmF",
+            "mangledName": "$s20OndatoScreenRecorder0abC6StatusO21assetWritingCompletedyACSS_tcACmF",
+            "moduleName": "OndatoScreenRecorder"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@OndatoScreenRecorder@objc(cs)Recorder",
-        "mangledName": "$s20OndatoScreenRecorder0C0C",
+        "declKind": "Enum",
+        "usr": "s:20OndatoScreenRecorder0abC6StatusO",
+        "mangledName": "$s20OndatoScreenRecorder0abC6StatusO",
         "moduleName": "OndatoScreenRecorder",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OndatoScreenRecorder"
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "OndatoScreenRecorder"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OndatoScreenRecording",
-        "printedName": "OndatoScreenRecording",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "url",
-            "printedName": "url",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20OndatoScreenRecorder0aB9RecordingC3url10Foundation3URLVSgvp",
-            "mangledName": "$s20OndatoScreenRecorder0aB9RecordingC3url10Foundation3URLVSgvp",
-            "moduleName": "OndatoScreenRecorder",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.URL?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20OndatoScreenRecorder0aB9RecordingC3url10Foundation3URLVSgvg",
-                "mangledName": "$s20OndatoScreenRecorder0aB9RecordingC3url10Foundation3URLVSgvg",
-                "moduleName": "OndatoScreenRecorder",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.URL?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20OndatoScreenRecorder0aB9RecordingC3url10Foundation3URLVSgvs",
-                "mangledName": "$s20OndatoScreenRecorder0aB9RecordingC3url10Foundation3URLVSgvs",
-                "moduleName": "OndatoScreenRecorder",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20OndatoScreenRecorder0aB9RecordingC3url10Foundation3URLVSgvM",
-                "mangledName": "$s20OndatoScreenRecorder0aB9RecordingC3url10Foundation3URLVSgvM",
-                "moduleName": "OndatoScreenRecorder",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:20OndatoScreenRecorder0aB9RecordingC",
-        "mangledName": "$s20OndatoScreenRecorder0aB9RecordingC",
-        "moduleName": "OndatoScreenRecorder",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "ReplayKit",
-        "printedName": "ReplayKit",
-        "declKind": "Import",
-        "moduleName": "OndatoScreenRecorder",
-        "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OndatoScreenRecorder",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OndatoScreenRecorder"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OndatoVideoHelper",
-        "printedName": "OndatoVideoHelper",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "data",
-            "printedName": "data(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20OndatoScreenRecorder0A11VideoHelperC4data4from10Foundation4DataVSgAF3URLVSg_tFZ",
-            "mangledName": "$s20OndatoScreenRecorder0A11VideoHelperC4data4from10Foundation4DataVSgAF3URLVSg_tFZ",
-            "moduleName": "OndatoScreenRecorder",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
         ],
-        "declKind": "Class",
-        "usr": "s:20OndatoScreenRecorder0A11VideoHelperC",
-        "mangledName": "$s20OndatoScreenRecorder0A11VideoHelperC",
-        "moduleName": "OndatoScreenRecorder",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -1488,32 +1397,32 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecorderConfiguration.swift",
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/DataLayer\/OndatoScreenRecordingFileUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 18,
+      "value": "\"ScreenRecordings\""
+    },
+    {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/DomainLayer\/Private\/OndatoScreenRecorderConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 60,
       "length": 6,
       "value": "250000"
     },
     {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecorderConfiguration.swift",
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/DomainLayer\/Private\/OndatoScreenRecorderConfiguration.swift",
       "kind": "FloatLiteral",
       "offset": 100,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecordingAssetWriter.swift",
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/DomainLayer\/Private\/OndatoScreenRecordingAssetWriter.swift",
       "kind": "BooleanLiteral",
       "offset": 1410,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/OndatoScreenRecorder\/OndatoScreenRecorder\/OndatoScreenRecordingFileUtil.swift",
-      "kind": "StringLiteral",
-      "offset": 210,
-      "length": 18,
-      "value": "\"ScreenRecordings\""
     }
   ]
 }

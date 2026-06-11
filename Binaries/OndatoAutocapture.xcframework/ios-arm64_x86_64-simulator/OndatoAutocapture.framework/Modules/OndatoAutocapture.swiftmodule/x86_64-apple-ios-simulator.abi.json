@@ -768,17 +768,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -811,7 +811,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/edgaras\/Documents\/azure\/idv-sdk-ios\/OndatoAutocapture\/OndatoAutocapture\/Autocapture\/Matrix.swift",
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/OndatoAutocapture\/OndatoAutocapture\/Autocapture\/Matrix.swift",
       "kind": "BooleanLiteral",
       "offset": 1883,
       "length": 4,

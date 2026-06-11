@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OndatoNFC
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OndatoNFC
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import CommonCrypto
 import CoreNFC
 import CryptoKit
@@ -69,9 +69,7 @@ public enum DocTypeEnum : Swift.String {
   case TD1
   case TD2
   case OTHER
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   @available(iOS 13, macOS 10.15, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -273,9 +271,7 @@ public enum DataGroupId : Swift.Int, Swift.CaseIterable {
   case Unknown
   public func getName() -> Swift.String
   public static func getIDFromName(name: Swift.String) -> OndatoNFC.DataGroupId
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   @available(iOS 13, macOS 10.15, *)
   public typealias AllCases = [OndatoNFC.DataGroupId]
   @available(iOS 13, macOS 10.15, *)
@@ -320,9 +316,7 @@ public class PACEInfo : OndatoNFC.SecurityInfo {
   override public func getObjectIdentifier() -> Swift.String
   override public func getProtocolOIDString() -> Swift.String
   public func getVersion() -> Swift.Int
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getParameterId() -> Swift.Int?
-  #endif
   public func getParameterSpec() throws -> Swift.Int32
   public func getMappingType() throws -> OndatoNFC.PACEMappingType
   public func getKeyAgreementAlgorithm() throws -> Swift.String
@@ -365,9 +359,7 @@ public class BACHandler {
   public var kifd: [Swift.UInt8]
   public init()
   public init(tagReader: OndatoNFC.TagReader)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func performBACAndGetSessionKeys(mrzKey: Swift.String, completed: @escaping (_ error: OndatoNFC.NFCPassportReaderError?) -> ())
-  #endif
   public func sessionKeys(data: [Swift.UInt8]) throws -> ([Swift.UInt8], [Swift.UInt8], [Swift.UInt8])
   @objc deinit
 }
@@ -408,11 +400,9 @@ public enum NFCPassportReaderError : Swift.Error {
 }
 @available(iOS 13, macOS 10.15, *)
 extension OndatoNFC.NFCPassportReaderError : Foundation.LocalizedError {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 @available(iOS 13, macOS 10.15, *)
 public enum OpenSSLError : Swift.Error {
@@ -427,11 +417,9 @@ public enum OpenSSLError : Swift.Error {
 }
 @available(iOS 13, macOS 10.15, *)
 extension OndatoNFC.OpenSSLError : Foundation.LocalizedError {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 public enum PassiveAuthenticationError : Swift.Error {
   case UnableToParseSODHashes(Swift.String)
@@ -439,11 +427,9 @@ public enum PassiveAuthenticationError : Swift.Error {
   case SODMissing(Swift.String)
 }
 extension OndatoNFC.PassiveAuthenticationError : Foundation.LocalizedError {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 public enum LogLevel : Swift.Int, Swift.CaseIterable {
   case verbose
@@ -451,9 +437,7 @@ public enum LogLevel : Swift.Int, Swift.CaseIterable {
   case info
   case warning
   case error
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [OndatoNFC.LogLevel]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [OndatoNFC.LogLevel] {
@@ -523,31 +507,21 @@ public class NFCPassportModel {
   public var passportMRZ: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var placeOfBirth: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var residenceAddress: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var phoneNumber: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var documentSigningCertificate: OndatoNFC.X509Wrapper? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var countrySigningCertificate: OndatoNFC.X509Wrapper? {
     get
   }
-  #endif
   public var LDSVersion: Swift.String {
     get
   }
@@ -602,30 +576,22 @@ public class NFCPassportModel {
   public var isChipAuthenticationSupported: Swift.Bool {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var passportImage: UIKit.UIImage? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var signatureImage: UIKit.UIImage? {
     get
   }
-  #endif
   public var activeAuthenticationSupported: Swift.Bool {
     get
   }
   public init()
   public init(from dump: [Swift.String : Swift.String])
   public func addDataGroup(_ id: OndatoNFC.DataGroupId, dataGroup: OndatoNFC.DataGroup)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getDataGroup(_ id: OndatoNFC.DataGroupId) -> OndatoNFC.DataGroup?
-  #endif
   public func dumpPassportData(selectedDataGroups: [OndatoNFC.DataGroupId], includeActiveAuthenticationData: Swift.Bool = false) -> [Swift.String : Swift.String]
   public func getHashesForDatagroups(hashAlgorythm: Swift.String) -> [OndatoNFC.DataGroupId : [Swift.UInt8]]
-  #if compiler(>=5.3) && $NonescapableTypes
   public func verifyPassport(masterListURL: Foundation.URL?, useCMSVerification: Swift.Bool = false)
-  #endif
   public func verifyActiveAuthentication(challenge: [Swift.UInt8], signature: [Swift.UInt8])
   @objc deinit
 }
@@ -646,14 +612,10 @@ extension OndatoNFC.NFCViewDisplayMessage {
 @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class OpenSSLUtils {
   public static func getOpenSSLError() -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, *)
   public static func getPublicKeyData(from key: Swift.OpaquePointer) -> [Swift.UInt8]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, *)
   public static func decodePublicKeyFromBytes(pubKeyData: [Swift.UInt8], params: Swift.OpaquePointer) -> Swift.OpaquePointer?
-  #endif
   public static func computeSharedSecret(privateKeyPair: Swift.OpaquePointer, publicKey: Swift.OpaquePointer) -> [Swift.UInt8]
   @objc deinit
 }
@@ -666,14 +628,10 @@ public class PACEHandler {
 @objc @available(iOS 13, *)
 public class PassportReader : ObjectiveC.NSObject {
   public var passiveAuthenticationUsesOpenSSL: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(logLevel: OndatoNFC.LogLevel = .info, masterListURL: Foundation.URL? = nil)
-  #endif
   public func setMasterListURL(_ masterListURL: Foundation.URL)
   public func overrideNFCDataAmountToRead(amount: Swift.Int)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func readPassport(mrzKey: Swift.String, tags: [OndatoNFC.DataGroupId] = [], skipSecureElements: Swift.Bool = true, skipCA: Swift.Bool = false, skipPACE: Swift.Bool = false, customDisplayMessage: ((OndatoNFC.NFCViewDisplayMessage) -> Swift.String?)? = nil, completed: @escaping (OndatoNFC.NFCPassportModel?, OndatoNFC.NFCPassportReaderError?) -> ())
-  #endif
   @objc deinit
 }
 @available(iOS 13, *)
@@ -706,9 +664,7 @@ public class SecureMessaging {
 @available(iOS 13, macOS 10.15, *)
 public class ASN1Item : Swift.CustomDebugStringConvertible {
   public init(line: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getChild(_ child: Swift.Int) -> OndatoNFC.ASN1Item?
-  #endif
   public func getNumberOfChildren() -> Swift.Int
   public var debugDescription: Swift.String {
     get
@@ -791,9 +747,7 @@ public enum CertificateItem : Swift.String {
   case publicKeyAlgorithm
   case notBefore
   case notAfter
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   @available(iOS 13, macOS 10.15, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -803,35 +757,17 @@ public enum CertificateItem : Swift.String {
 @available(iOS 13, macOS 10.15, *)
 public class X509Wrapper {
   final public let cert: Swift.OpaquePointer
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(with cert: Swift.OpaquePointer?)
-  #endif
   public func getItemsAsDict() -> [OndatoNFC.CertificateItem : Swift.String]
   public func certToPEM() -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getFingerprint() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getNotBeforeDate() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getNotAfterDate() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getSerialNumber() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getSignatureAlgorithm() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getPublicKeyAlgorithm() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getIssuerName() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getSubjectName() -> Swift.String?
-  #endif
   @objc deinit
 }
 @available(iOS 13, macOS 10.15, *)

@@ -10,47 +10,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fStMKBQ8ssvV+boLGINKouIGut0=
+		zQw1V/krZyTLn/voq3ZeKGKvoF4=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		mqjamakIJjp3zLdWGBjOJ4v7AIk=
+		j58AoydTqcXdYnP05cLuwmBr//M=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rpg5po5UbhMC3QZhNztlyK0mUEo=
+		I3Gbj34eRHd9bBr0+ND6b6ks8l4=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		m/H/dDZs5xKYqg3RTYRy1k0zb2E=
+		DgSIWBJSXmgwMmmi1Npj2AfSPXs=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rpg5po5UbhMC3QZhNztlyK0mUEo=
+		I3Gbj34eRHd9bBr0+ND6b6ks8l4=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WjYTFWU9Xwp4hpHvtwkFZ2XPdm8=
+		MgckcrjQrB3FLUI/gkTShBAZ7AI=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		mqjamakIJjp3zLdWGBjOJ4v7AIk=
+		j58AoydTqcXdYnP05cLuwmBr//M=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8siQz7CJPxnD+Rq26Qd0ztkYSLE=
+		xTFYfno4JrvlkLdCXVv6GQ/j9Mw=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LIhWy56+HSaN7e2nEHAYeBFz608=
+		tInjWnnquji/k4VZZ3cegJk++ZE=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8siQz7CJPxnD+Rq26Qd0ztkYSLE=
+		xTFYfno4JrvlkLdCXVv6GQ/j9Mw=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1zfOSTXZw9x75Q3DNLwXrcviY00=
+		om7z0Vcu+jZYEZuU8aeoT8ehtjQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,70 +70,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tlf2z7BJQfAI2Pl5nudYOVGOOQRO5ri0+AX3ycFPS6I=
+			U3r3mH4EBebE4pKG6uOgoZjhCuP0zYdBrNP01booaRU=
 			</data>
 		</dict>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SgC33DYcsinjP7L9aFYm11uwRDqfBLYghmqgs34qo3w=
+			MkeYt/tY+Vrf5fPDhs+nT2mo/cSLKCNsc0R9KD5qSFY=
 			</data>
 		</dict>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xUge7LkSuzq0QhdCDocjurmWL5HZqis9fxmgWSqu37o=
+			BmdUUTBKBnFWoygtJ53Ma4ZavJGXq7Zfq73fKxcpTms=
 			</data>
 		</dict>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SgC33DYcsinjP7L9aFYm11uwRDqfBLYghmqgs34qo3w=
+			MkeYt/tY+Vrf5fPDhs+nT2mo/cSLKCNsc0R9KD5qSFY=
 			</data>
 		</dict>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6IqJTVCymdEkSlqafACf1W6NlpxExho+/Obau8W/4nU=
+			iuxnS3GFvt4xEkBfNwg59ntEnIoaDvvAGTZ/dJX/bV4=
 			</data>
 		</dict>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tlf2z7BJQfAI2Pl5nudYOVGOOQRO5ri0+AX3ycFPS6I=
+			U3r3mH4EBebE4pKG6uOgoZjhCuP0zYdBrNP01booaRU=
 			</data>
 		</dict>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IDB4WmplYfUalgu+wiaF0fiNf7z2KcHNKn64Odl8mYM=
+			EZqiartvoywVh3PEHvq210KtY627cQVS5ZJMmtOI0+E=
 			</data>
 		</dict>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xKSXxx73v/LB/9j++MzpG4b0KTgt/pNW+NuWwb7pzJE=
+			Rc+d+5sr1OlQ8aL5NWZfFZ5IoUiZNd+mgaCKBrclnyg=
 			</data>
 		</dict>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IDB4WmplYfUalgu+wiaF0fiNf7z2KcHNKn64Odl8mYM=
+			EZqiartvoywVh3PEHvq210KtY627cQVS5ZJMmtOI0+E=
 			</data>
 		</dict>
 		<key>Modules/OndatoNFC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FcOsqJoLlyirx2TYUdSBHezNfhoQWqlz2UofCqBSzMk=
+			yXSB8zhag2lBq2bNtpXyeWgxJXyQqZzciIRQz4ca4Vw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

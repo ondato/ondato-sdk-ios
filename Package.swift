@@ -22,9 +22,9 @@ let package = Package(
                     "OndatoScreenRecorder"
                  ]),
         .library(name: "OndatoAutocapture",
-                targets: [
+                 targets: [
                     "OndatoAutocapture"
-                ])
+                 ]),
     ],
     targets: [
         .binaryTarget(name: "OndatoSDK",

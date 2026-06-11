@@ -7,5 +7,4 @@ framework module OndatoSDK {
 
 module OndatoSDK.Swift {
   header "OndatoSDK-Swift.h"
-  requires objc
 }

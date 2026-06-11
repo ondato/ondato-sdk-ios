@@ -54,10 +54,16 @@ Add `OndatoSDK` package product to your target.
 ```
 pod 'OndatoSDK'
 ```
-`Note`: From 3.2.1 `OndatoAutocapture` module is introduced and needs to be added separately if you want to use this functionality:
-```
-pod 'OndatoAutocapture'
-```
+
+> [!IMPORTANT]
+> Most, if not all configurations have automatic document capture (`OndatoAutocapture`) enabled for identity verification flows inside internal systems **by default**
+> Starting with version 3.5.1, there are two ways to integrate the SDK:
+> 1. By using `OndatoSDK`, which contains `OndatoAutocapture`;
+> 2. By using `OndatoSDK-Core` and `OndatoAutocapture` modules separately.
+>
+> **You do not need to add either `OndatoSDK-Core` or `OndatoAutocapture` packages if `OndatoSDK` package is used.**
+>
+> If your flows are not using automatic document capture (`OndatoAutocapture`), you might want to use `OndatoSDK-Core` (beware of missing module errors, if using flows with automatic document capture enabled), which does not have `OndatoAutocapture` included.
 
 `Note`: As off v2.6.0 `OndatoNFC` and `OndatoScreenRecorder` need to be added separately:
 * If you use NFC functionality provided by `Ondato` add
@@ -111,6 +117,7 @@ class OndatoFlowConfiguration {
     var showNoInternetConnectionView: Bool
     var disablePdfFileUpload: Bool
     var switchPrimaryButtons: Bool
+    var showComplianceTextDocSelect: Bool = false
 }
 ```
 
@@ -177,6 +184,7 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
       "grey500": "#96A0AE", //Color for "Select card" icon, Proof of Adress upload element border, Text input disabled state text color
       "grey600": "#6D7580", //Color for Proof of Adress icon color, Text input Active state border
       "grey700": "#282B2F", //Color for feedback bar background color
+      "certificateColor": "#6D7580", //Color for Document selection certificate icons
       //Android specific
       "statusBarColor": "#64749c" //Default: brand.colors.primaryColor
     },
@@ -185,6 +193,7 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
       "buttonPadding": { "top": 14, "bottom": 14, "left": 24, "right": 24 }, //Used for Primary and Secondary button paddings
       "borderWidth": 1.0 //Used for Secondary button, Text input, Selection button border
     },
+    // IMPORTANT! For iOS the font size, weight is taken from Font file.
     "typography": {
       "heading1": { "fontSize": 24, "fontWeight": 500, "lineHeight": 32, "alignment": "center" },
       "heading2": { "fontSize": 16, "fontWeight": 500, "lineHeight": 18, "alignment": "center" },
@@ -412,6 +421,13 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
     "backgroundColor": "#282B2F", //Type: String  |  Default: brand.colors.grey700
     "opacity": 0.5, // Type: Float
     "cornerRadius": 6.0 //Type: Float  |   Default: brand.baseComponentStyling.cornerRadius
+  },
+  "modalConfiguration": {
+    "backgroundColor": "#FFFFFF", // Type: String | Default: brand.colors.background
+    "textColor": "#000000", // Type: String | Default: brand.colors.text
+    "cornerRadius": 6.0, // Type: Float
+    "backdropColor": "#282B2F", // Type: String | Default: brand.colors.grey700
+    "backdropOpacity": 0.5 // Type: Float
   }
 }
 ```
@@ -451,10 +467,13 @@ The OndatoFlowDelegate also has optional methods to replace Ondato windows/views
     @objc optional func viewControllerForLoading() -> OndatoLoadingViewControllerType?
     @objc optional func viewForScanProcessing() -> UIView?
     @objc optional func viewForLoading() -> UIView?
-    
     @objc optional func documentCapture(instructionsViewControllerFor documentType: OndatoDocumentType, documentPart: OndatoDocumentPart) -> OndatoInstructionViewControllerType?
     @objc optional func additionalDocumentCapture(instructionsViewControllerFor additionalDocumentType: OndatoAdditionalDocumentType) -> OndatoInstructionViewControllerType?
+    @objc optional func nfcCapture(instructionsViewControllerFor documentType: OndatoDocumentType, documentComponent: OndatoNFCCaptureComponent) -> OndatoInstructionViewControllerType?
     @objc optional func faceCapture(instructionsViewControllerFor faceCaptureType: OndatoFaceCaptureType) -> OndatoInstructionViewControllerType?
+    
+    @objc optional func completionViewController() -> OndatoCompletionViewControllerType?
+    
     @objc optional func chooseDocumentViewController(documentTypes: OndatoDocumentTypes) -> OndatoChooseDocumentViewControllerType?
 ```
 ## provided classes for custom ViewControllers
@@ -462,6 +481,11 @@ The OndatoFlowDelegate also has optional methods to replace Ondato windows/views
 ```swift
 class OndatoLoadingViewControllerType: UIViewController {
     var closeButtonPressed: (() -> Void)?
+}
+
+class OndatoCompletionViewControllerType: UIViewController {
+    var closeButtonPressed: (() -> Void)?
+    var restartButtonPressed: (() -> Void)?
 }
 
 class OndatoInstructionViewControllerType: UIViewController {
