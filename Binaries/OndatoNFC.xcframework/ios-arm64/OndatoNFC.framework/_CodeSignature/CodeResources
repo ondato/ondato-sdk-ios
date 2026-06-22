@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vgKT8dfjX2HDBuIupvS3yvGJY74=
+		qhRt9wlQU6MqkoGwd+izTD3rw2k=
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/OndatoNFC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		FdxwWM8LdJQiM44bikUVO5KzqL0=
+		o14fleuvdbfrG/ezbhAwN8t/5T8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M1F0PWlAK669LqLmEAkLstHta5/a6UBTPxph+xXJtIY=
+			KcAZclkry+mYQBpBC/QKZm/1I2WXIK7qGq40E/xPlqk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

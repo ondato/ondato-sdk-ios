@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C8EoA3L7cCB5gRpTnQSCk/6Q/qg=
+		7N4OkCzm/ZP0xXjBhiGozAH5zJQ=
 		</data>
 		<key>InterruptedViewController.nib</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dHIqy6yE+YYmRV4vdsVyv8OCLTs=
+		qM0sxQhOSYbNJqY3W3U8xYf06CM=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TBJPrCagaMlmjVzrR9418r1WvsU=
+		seSYl2IeS3rGhFypM6A1V0AKBh4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -443,7 +443,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0sSpxc9PsPsijaBHiClKbASDPxTs7AAVEw/Uz9N+muk=
+			OGunB5lc9vEdvTR2cj/cc5Ub0t6SUr7vqJmh1qAJJTU=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -478,7 +478,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VN8L+ww27VuicOeU6jexx5KR/yRCUCZ/r1sZawoV6FE=
+			wbUBSldPcONi5XqBp3YpTjLqcR5MttBd78jGr31FPAU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
