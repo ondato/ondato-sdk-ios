@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
   spec.name         = "OndatoAutocapture"
-  spec.version      = "3.6.0"
+  spec.version      = "3.6.1"
   spec.platform     = :ios
   spec.summary      = "Ondato iOS Autocapture"
-  spec.ios.deployment_target = "13.0"
+  spec.ios.deployment_target = "15.0"
   spec.license      = 'Apache-2.0'
   spec.homepage     = "https://gitlab.com/ondato/ondato-sdk-ios"
   spec.authors      = { "Ondato" => "info@ondato.com" }

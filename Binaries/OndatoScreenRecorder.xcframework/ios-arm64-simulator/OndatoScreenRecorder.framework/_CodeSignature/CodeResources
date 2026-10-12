@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		w3YKL5hC8AysmVb3FG+23R6rncE=
+		3AgNks7avX8C77/B67w4xo+3GzU=
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		UBjzi2eDZI1jSEOza+5b7m1VWrI=
+		P+rJLoHpPEq0E8Hmch+mrQCDF4I=
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pB7nR0Kw1kbds8SYJqQIMfuCFFY=
+		VEYpQomXm8V6OquoBJe4eNxBr+A=
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UBjzi2eDZI1jSEOza+5b7m1VWrI=
+		P+rJLoHpPEq0E8Hmch+mrQCDF4I=
 		</data>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OQ2p4UXxJrjokSVLb8PugUuDmKs=
+		R68z43rnB7TI+TNM2zlNUGoBPcA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -57,28 +57,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CxqL5GhwVO/ucOAA6RgBA8erbQAtCQXnSLDhf9cDGAc=
+			V5Ra4xdA2+TeO6goBOfO7VmZhHvwguYUZAudiu7eA9Y=
 			</data>
 		</dict>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TssmZ2WGUp5NAleF6YNySBKKLctI++x24FAzY6hU4+g=
+			/nYW+FX1EVjFWA7tEDEWK2f9K8EUMD6hGDLh9UiCFrM=
 			</data>
 		</dict>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CxqL5GhwVO/ucOAA6RgBA8erbQAtCQXnSLDhf9cDGAc=
+			V5Ra4xdA2+TeO6goBOfO7VmZhHvwguYUZAudiu7eA9Y=
 			</data>
 		</dict>
 		<key>Modules/OndatoScreenRecorder.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NSTt4mlHmOkEcG2arDeELQJT2MuTKprIpdnNcQpd+RA=
+			nzSQjKqWrWodnEden0tl799106jiiwTTvkz83mVnfKI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
