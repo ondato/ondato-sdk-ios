@@ -1,4 +1,4 @@
-// swift-tools-version: 5.4
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,12 +6,12 @@ import PackageDescription
 let package = Package(
     name: "OndatoSDK",
     platforms: [
-        .iOS(.v13),
+        .iOS(.v15),
     ],
     products: [
         .library(name: "OndatoSDK",
                  targets: [
-                    "OndatoSDK", "FaceTecSDK"
+                    "OndatoSDKDependencies"
                  ]),
         .library(name: "OndatoNFC",
                  targets: [
@@ -26,7 +26,17 @@ let package = Package(
                     "OndatoAutocapture"
                  ]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/airbnb/lottie-spm.git", .upToNextMajor(from: "4.5.2")),
+    ],
     targets: [
+        .target(name: "OndatoSDKDependencies",
+                dependencies: [
+                    "OndatoSDK",
+                    "FaceTecSDK",
+                    .product(name: "Lottie", package: "lottie-spm"),
+                ],
+                path: "Sources/OndatoSDKDependencies"),
         .binaryTarget(name: "OndatoSDK",
                       path: "Binaries/OndatoSDK.xcframework"),
         .binaryTarget(name: "FaceTecSDK",

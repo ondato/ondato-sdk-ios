@@ -668,6 +668,7 @@
         "declKind": "Import",
         "moduleName": "OndatoSDK",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -2191,7 +2192,10 @@
         "name": "Lottie",
         "printedName": "Lottie",
         "declKind": "Import",
-        "moduleName": "OndatoSDK"
+        "moduleName": "OndatoSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -3506,6 +3510,7 @@
         "declKind": "Import",
         "moduleName": "OndatoSDK",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -3927,6 +3932,16 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "OndatoSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -5769,7 +5784,10 @@
         "name": "Lottie",
         "printedName": "Lottie",
         "declKind": "Import",
-        "moduleName": "OndatoSDK"
+        "moduleName": "OndatoSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -7758,6 +7776,7 @@
         "declKind": "Import",
         "moduleName": "OndatoSDK",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -11272,7 +11291,10 @@
         "name": "Lottie",
         "printedName": "Lottie",
         "declKind": "Import",
-        "moduleName": "OndatoSDK"
+        "moduleName": "OndatoSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -14096,7 +14118,10 @@
         "name": "Lottie",
         "printedName": "Lottie",
         "declKind": "Import",
-        "moduleName": "OndatoSDK"
+        "moduleName": "OndatoSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -17017,7 +17042,10 @@
         "name": "Lottie",
         "printedName": "Lottie",
         "declKind": "Import",
-        "moduleName": "OndatoSDK"
+        "moduleName": "OndatoSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -17065,7 +17093,10 @@
         "name": "Lottie",
         "printedName": "Lottie",
         "declKind": "Import",
-        "moduleName": "OndatoSDK"
+        "moduleName": "OndatoSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -19890,8 +19921,7 @@
           "SynthesizedProtocol",
           "SynthesizedProtocol",
           "SynthesizedProtocol",
-          "SynthesizedProtocol",
-          "Sendable"
+          "SynthesizedProtocol"
         ],
         "isFromExtension": true,
         "isExternal": true,
@@ -20061,7 +20091,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -20403,8 +20432,7 @@
         "moduleName": "UIKit",
         "declAttributes": [
           "SynthesizedProtocol",
-          "NonSendable",
-          "Sendable"
+          "NonSendable"
         ],
         "isExternal": true,
         "conformances": [
@@ -20616,7 +20644,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -21281,7 +21308,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -21430,6 +21456,13 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
           {
             "kind": "Conformance",
             "name": "CVarArg",
@@ -21962,7 +21995,7 @@
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/TintedLottieView.swift",
       "kind": "Dictionary",
-      "offset": 364,
+      "offset": 374,
       "length": 3,
       "value": "[]"
     },
@@ -23003,6 +23036,27 @@
       "value": "\"ondato_error-icon\""
     },
     {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/Resources\/OndatoImages.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6766,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/Resources\/OndatoImages.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7023,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/Resources\/OndatoImages.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7035,
+      "length": 2,
+      "value": "24"
+    },
+    {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Models\/KYC\/KYCConfiguration\/DocumentTypeSelectionConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 486,
@@ -23285,56 +23339,56 @@
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/Buttons\/OndatoSwiftUIButton.swift",
       "kind": "StringLiteral",
-      "offset": 1541,
+      "offset": 1745,
       "length": 9,
       "value": "\"Taitlas\""
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/Buttons\/OndatoSwiftUIButton.swift",
       "kind": "StringLiteral",
-      "offset": 1619,
+      "offset": 1823,
       "length": 9,
       "value": "\"Taitlas\""
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/Buttons\/OndatoSwiftUIButton.swift",
       "kind": "FloatLiteral",
-      "offset": 1683,
+      "offset": 1887,
       "length": 4,
       "value": "24.0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/Buttons\/OndatoSwiftUIButton.swift",
       "kind": "StringLiteral",
-      "offset": 1742,
+      "offset": 1946,
       "length": 9,
       "value": "\"Taitlas\""
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/Buttons\/OndatoSwiftUIButton.swift",
       "kind": "StringLiteral",
-      "offset": 1820,
+      "offset": 2024,
       "length": 9,
       "value": "\"Taitlas\""
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/Buttons\/OndatoSwiftUIButton.swift",
       "kind": "StringLiteral",
-      "offset": 1898,
+      "offset": 2102,
       "length": 9,
       "value": "\"Taitlas\""
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/Buttons\/OndatoSwiftUIButton.swift",
       "kind": "StringLiteral",
-      "offset": 1978,
+      "offset": 2182,
       "length": 9,
       "value": "\"Taitlas\""
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/Buttons\/OndatoSwiftUIButton.swift",
       "kind": "FloatLiteral",
-      "offset": 2042,
+      "offset": 2246,
       "length": 4,
       "value": "24.0"
     },
@@ -23530,7 +23584,7 @@
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Coordinators\/AdditionalDocumentCapture\/ProofOfAddressFlowCoordinator.swift",
       "kind": "Array",
-      "offset": 383,
+      "offset": 411,
       "length": 2,
       "value": "[]"
     },
@@ -23663,7 +23717,7 @@
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/SwiftUI\/OndatoNavigationView.swift",
       "kind": "FloatLiteral",
-      "offset": 818,
+      "offset": 622,
       "length": 4,
       "value": "24.0"
     },
@@ -23684,7 +23738,7 @@
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/CaptureInstructionsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 422,
+      "offset": 431,
       "length": 5,
       "value": "false"
     },
@@ -24538,56 +24592,56 @@
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 737,
+      "offset": 746,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 770,
+      "offset": 779,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 823,
+      "offset": 832,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 6930,
+      "offset": 6939,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 6945,
+      "offset": 6954,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 6973,
+      "offset": 6982,
       "length": 23,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 7010,
+      "offset": 7019,
       "length": 12,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Completion\/Waiting\/Waiting.swift",
       "kind": "IntegerLiteral",
-      "offset": 7036,
+      "offset": 7045,
       "length": 15,
       "value": "4"
     },
@@ -25483,7 +25537,7 @@
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/NFCScanner\/NFCScannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 721,
+      "offset": 730,
       "length": 4,
       "value": "true"
     },
@@ -25812,154 +25866,154 @@
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Tutorial\/TutorialView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6475,
+      "offset": 6484,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Tutorial\/TutorialView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6511,
+      "offset": 6520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/ViewControllers\/Tutorial\/TutorialView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10936,
+      "offset": 10945,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 512,
+      "offset": 520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 547,
+      "offset": 595,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 578,
+      "offset": 626,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 822,
+      "offset": 870,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 965,
+      "offset": 1013,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 974,
+      "offset": 1022,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 985,
+      "offset": 1033,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 995,
+      "offset": 1043,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1076,
+      "offset": 1124,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1104,
+      "offset": 1152,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1323,
+      "offset": 1371,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1329,
+      "offset": 1377,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1406,
+      "offset": 1454,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1474,
+      "offset": 1522,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1580,
+      "offset": 1628,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1636,
+      "offset": 1684,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1645,
+      "offset": 1693,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1657,
+      "offset": 1705,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/OndatoSelectLanguageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1667,
+      "offset": 1715,
       "length": 2,
       "value": "32"
     },

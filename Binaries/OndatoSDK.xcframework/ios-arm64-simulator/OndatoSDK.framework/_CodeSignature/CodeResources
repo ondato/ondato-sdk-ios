@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		FA2qyEa47fATYcaR31jMdC5inlE=
+		T2QGXKGoKiz5OOAjZF+cWyKoR2c=
 		</data>
 		<key>GuidePageItemViewController.nib</key>
 		<data>
-		vy7Sogm/hvDhRqRVwdhAZRaku5Y=
+		2N4NFjknvyqu6O7DFrH0E/x8NmY=
 		</data>
 		<key>GuidePopupViewController.nib</key>
 		<data>
-		T5SiOKIQKrUsk7+PBIUsAPgItoo=
+		S8ZIh9OG0hT1CzxIgD+HpQHp8Vs=
 		</data>
 		<key>Headers/OndatoSDK-Swift.h</key>
 		<data>
-		Dyeg9u3XKZ2kCWyVVbppg3oF/nI=
+		Mv0vezBx2MbqijQ4qlYtqj7GukY=
 		</data>
 		<key>Headers/OndatoSDK.h</key>
 		<data>
@@ -26,39 +26,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DWtvG46U9F6YYEojpBjaxq8236A=
+		dXb7lnfqxu2y9DhUBgzFGl4T+oI=
 		</data>
 		<key>InterruptedViewController.nib</key>
 		<data>
-		zfrcOglWqX2Inm3Vf3cLqKg2fMw=
+		GKxl8i8S0T0ak5w2kUo7SNqPk9I=
 		</data>
 		<key>LogsTableViewCell.nib</key>
 		<data>
-		37YZoECuAZ9f1uzTWpsdtnn8WSA=
+		oYwKNJ+dg16ZYR/oKzrFKcSBdWw=
 		</data>
 		<key>LogsViewController.nib</key>
 		<data>
-		nLQus//49imdqfnvfsenzzB7tWI=
+		AIcUGKelVqajeu277SYOU0JGZ98=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		H1fzC76JOPM4RyxwbROjF/R44f0=
+		fqabaISfK7TA4TwyujoHuKYV4sM=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ySOfwyzG18e5RW248h5R/zTIa7k=
+		kuqLV3dvwbnbQotNv5NOfiCz2w8=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		sER/RmQAh1kdA+1ubwO4MxpM78k=
+		OelmzKknfBATuWh73ay0kKgOAPU=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nC2F/LJGStJNmLgOxpFZxdD45QA=
+		HvliIFHibZP7bJym8MNYL6TBfvQ=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Xq3O8MUznfOGWBKZR25TUPHGUjk=
+		7NgvI7dz93lhnrtXymwRVX0BLcc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>NFCScannerViewController.nib</key>
 		<data>
-		copsTuCh4z8QCruYWZlJTyoUuno=
+		xyc+CxtTKBRQhYaEoZeS/0JG2dI=
 		</data>
 		<key>Ondato-UIConfiguration.json</key>
 		<data>
@@ -74,31 +74,31 @@
 		</data>
 		<key>OndatoLoadingViewController.nib</key>
 		<data>
-		04jivXrnpP+Wyzs/6r8YXVYkwv4=
+		ND8uNSW3S0PAOkJ96Q1EE7DNjYY=
 		</data>
 		<key>POAUploadDocumentViewController.nib</key>
 		<data>
-		QBg6I9Vfp6tqVBGT5+lMCewdAzo=
+		0lv/rlNStAm7RIzFDf14xfO5drY=
 		</data>
 		<key>POAUploadTypeSelectionViewController.nib</key>
 		<data>
-		h/IBh8zsAGy47esBGauWuUh0E1k=
+		OyvNrQC8QvSWtGjaArCgaJbXBCs=
 		</data>
 		<key>PersonalCodeCaptureViewController.nib</key>
 		<data>
-		CPZXoj/zcSFbYPu9JkImjGs6lHM=
+		/5pA3susauWQC6kWd+4MWC/7gFM=
 		</data>
 		<key>ResultScreen.nib</key>
 		<data>
-		Vc3qP73JK8hQHARBB4CGv8L/6PY=
+		lCBAPn22E+ojjs5XyWaBitVIR44=
 		</data>
 		<key>UploadingDataScreen.nib</key>
 		<data>
-		xfk3a6l993HIs7EFsC9WUyGfPBw=
+		VzyhUnwz66OIzPrN1lTPPB3ZwPU=
 		</data>
 		<key>WaitingScreen.nib</key>
 		<data>
-		mwEPOZU+hKdaTsMHQBYf9ey6Awc=
+		iFBiNCezQvN66m55YNAOoR9pFP0=
 		</data>
 		<key>animation_id-card-back.json</key>
 		<data>
@@ -323,28 +323,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sm7pF92Ukw1bcRrBGJDY+Z+l/5lJE58DJfYOv4Tpal8=
+			W8JSB+R25E+8301RM5GLr0Abv07HXmBX0m81Lm8mgdE=
 			</data>
 		</dict>
 		<key>GuidePageItemViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XuTyvFZtWZ177WgzjD6fyHcdkfNaUoRNnrNobLF3AAM=
+			FVVt+m/BQjQBx0UP1mjdqGFJ7tBgiad1dyzeRh47vuQ=
 			</data>
 		</dict>
 		<key>GuidePopupViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9KXlYzyMsOu0Laa3tpIsGcb1FyLxRk4CHwiVDEKP+NY=
+			jD3SA7V6+QUaG9bKMO58LDwOyZOyNV++C7mZh1fl2AI=
 			</data>
 		</dict>
 		<key>Headers/OndatoSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfJym13xurvQeg6Cs2kJddTDDxrQTVswn8Kslf3vQDw=
+			d2HIr+rxhPUDpNRhwnEuHYNB5XXOMGVn06T21aFoicE=
 			</data>
 		</dict>
 		<key>Headers/OndatoSDK.h</key>
@@ -358,56 +358,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vNYEhpnlRpBvZCYtMMTyOFKYSPk6aje+uOlFRUJGRO0=
+			jjj0Shg5aUWsNNiR8o3TC0GOH2DRh9Tx6j9y/nMfMLU=
 			</data>
 		</dict>
 		<key>LogsTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			48ELp2oW1Zr4qIPfK5Nj+JCJsUXrcVM+UoZUd6Hzp+E=
+			D7Ycf1vlSzOE0GNNzQrn4vlsO7SGcAUzWq/ZjE4a7u4=
 			</data>
 		</dict>
 		<key>LogsViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QP2sQ7XgcN+5DzliU7JUd7ZCYbId7l28/rVADIBAtZ0=
+			QhRmNF6L1+AodsaU4Hbhynn49ue0yne+9m9O//EdFRs=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sdE7P1WIVi9DAT1phurm6150qM0pbzGaXB58mDoz1Dw=
+			BDE1a8RPAVgE4aSJ7wpGhIGr6OiuduWE4r4UjeU0M4M=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXELYvgmnJQKktXPEcetjI/tSFfaSGlZX3L66+1393E=
+			gRjX2toLhVqFrLwQ+p+L3qi4HCb/zULAH6l1wFAfJWE=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ujNAzUmWPH7Crjo7OU6NaIYyhZ62tGAvdgSEtFO8KYU=
+			Ad6n7NJw+0rtZ35oVbAnIzQnouZ8pSBpMQsqflJILc4=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KqErZcpavZahDYDsc3LT/rpp63UTKnqCfICNCZCE8fU=
+			4WD/DH5bsyfpzhmQOEROOkpqskkYx4qFT+zJ2Be3vwo=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OvLgflHhdtE2F9wtDXrDQCbNHKHbo09M9NMKykNkBCg=
+			KBGir+re9iajgMxJBanJyrmZ3jgVAH/ene6IaaPH7EU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -421,7 +421,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1VWdopeu9Ad0A7lFl8/y2SoL+i7Cqz85sHhXKKEyHaA=
+			nK4TSyyZqENhZNZYA/Ol6ueADjx982zUARDzOei3bf4=
 			</data>
 		</dict>
 		<key>Ondato-UIConfiguration.json</key>
@@ -435,49 +435,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UbIPUuBGwtYWn6/3502kY6PevJiafXNnuGPX+3EMQTQ=
+			DFqKUf4IiPT5b9Gs+1A0KL3PmDat9P57fWslu2taFT8=
 			</data>
 		</dict>
 		<key>POAUploadDocumentViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jO/hvSmFM0d+/FgL7hKTsFEVOZQ41yXs8Gz+4Lt7Yv8=
+			p+MzJFLDdThv5i2ops2puHAjOBFrLDQrxbNnjWZAbtw=
 			</data>
 		</dict>
 		<key>POAUploadTypeSelectionViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XIl9N19UJ7rJRsIU0IAbSxvc/UMzUiWfP5i+7HuyJx4=
+			e/t/ooSw6a4eZjGvZ0+rrUDlOIShuDU3o3fn7h7mKZM=
 			</data>
 		</dict>
 		<key>PersonalCodeCaptureViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			djk4r3hhzxrZW8HWFdfKqHDIT1E2Jc2CGAor6XFBYug=
+			OZuUn89I7S1M3IiJzzMHhJaHdb83d62jcU5XiTZIPf0=
 			</data>
 		</dict>
 		<key>ResultScreen.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nwI8nOHtkaJ2x1F411WUjzrpOAvuVzfBuOW+aE/qygU=
+			eo38wMtD36rU5fgEsOM+UMNgkg6vKNcQr+YADCYsHNY=
 			</data>
 		</dict>
 		<key>UploadingDataScreen.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CcxxYlEjKTwPt891dCLQewq414f02w9vlfXbz2Ex+kc=
+			+k1eBrxQUv+ULIDhtWzH8MoaSpSPRaX7PCjgcYEWLMM=
 			</data>
 		</dict>
 		<key>WaitingScreen.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xP9cXsXXIcYrajXYyX79T71QRE5NBbdrtul7jtighd8=
+			JKxEGe3Pcg9n61BQLEcmn9Wf7dhDL57mRA2fTNQgbQ4=
 			</data>
 		</dict>
 		<key>animation_id-card-back.json</key>
