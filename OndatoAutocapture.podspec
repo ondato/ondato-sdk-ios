@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "OndatoAutocapture"
-  spec.version      = "3.6.1"
+  spec.version      = "3.6.2"
   spec.platform     = :ios
   spec.summary      = "Ondato iOS Autocapture"
   spec.ios.deployment_target = "15.0"

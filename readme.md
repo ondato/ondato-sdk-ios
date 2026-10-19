@@ -7,6 +7,7 @@
 * [Configuration](#configuration)
 * [JSON Configuration](#json-configuration)
 * [Starting the flow](#starting-the-flow)
+* [Closing the flow](#closing-the-flow)
 * [OndatoSDK delegate](#ondatoflowdelegate)
 * [Customising SDK](#customising-sdk)
 * [Localization](#localization)
@@ -25,13 +26,16 @@ This SDK provides a drop-in set of screens and tools for iOS applications to all
 
 \* Note: the SDK is only responsible for capturing and uploading photos/videos. You still need to access the [Ondato API](https://ondato.atlassian.net/wiki/spaces/PUB/pages/2334359560/Customer+onboarding+KYC+mobile+SDK+integration) to create and manage checks.
 
-## Important note
+## Important notes
 
-We recommend you to lock your app to a portrait orientation.
+- We recommend you to lock your app to a portrait orientation.
+- **All SDK APIs must be called on the main thread.** This includes configuring the SDK (`setIdentityVerificationId`, `configuration`, `setWhitelabel`, localization and log settings), instantiating and presenting the SDK view controller, and calling `closeSDK()`. `OndatoFlowDelegate` methods are also called on the main thread.
+- Only one SDK flow can run at a time. See [Starting the flow](#starting-the-flow).
 
 ## Getting started
 
 - SDK supports iOS 15.0 and up
+- The SDK binaries are built with Xcode 26 (Swift 6.x). Simulator slices are arm64 only, so Intel-based simulators are not supported.
 
 ### 1. App permissions
 
@@ -41,31 +45,60 @@ The Ondato SDK makes use of the device Camera. You will be required to have the 
 <string>Required for document and facial capture</string>
 ```
 
+#### NFC
+
+If you use `OndatoNFC`, your app also needs:
+
+1. The `NFCReaderUsageDescription` key in `Info.plist`:
+```
+<key>NFCReaderUsageDescription</key>
+<string>Required to read passport and ID card chips</string>
+```
+2. The ISO 7816 application identifier used by e-passports and eID cards in `Info.plist`:
+```
+<key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+<array>
+    <string>A0000002471001</string>
+</array>
+```
+3. The **Near Field Communication Tag Reading** capability, which adds the following to your app's entitlements:
+```
+<key>com.apple.developer.nfc.readersession.formats</key>
+<array>
+    <string>TAG</string>
+</array>
+```
+
 ### 2. Installation 
+
+> [!IMPORTANT]
+> Most, if not all configurations have automatic document capture (`OndatoAutocapture`) enabled for identity verification flows inside internal systems **by default**. If your flow uses automatic document capture and `OndatoAutocapture` is not integrated, you will get missing module errors.
 
 ### SPM
 
-Add `OndatoSDK` package product to your target.
+Add the `OndatoSDK` package product to your target.
 
-`Note`: since v2.6.0 `OndatoNFC` and `OndatoScreenRecorder` need to be added separately. Add each package product as per need to your target.
+The following package products need to be added separately, as per need:
+* `OndatoAutocapture` - automatic document capture. **With SPM, `OndatoSDK` does not include `OndatoAutocapture`**, so add it if your flows use automatic document capture.
+* `OndatoNFC` - NFC chip reading
+* `OndatoScreenRecorder` - screen recording
 
 ### CocoaPods
 
+There are two ways to integrate the SDK with CocoaPods:
+1. `OndatoSDK`, which already contains `OndatoAutocapture`:
 ```
 pod 'OndatoSDK'
 ```
+2. `OndatoSDK-Core`, which does not contain `OndatoAutocapture`. Use it if your flows do not use automatic document capture, or add `OndatoAutocapture` alongside it:
+```
+pod 'OndatoSDK-Core'
+pod 'OndatoAutocapture'
+```
 
-> [!IMPORTANT]
-> Most, if not all configurations have automatic document capture (`OndatoAutocapture`) enabled for identity verification flows inside internal systems **by default**
-> Starting with version 3.5.1, there are two ways to integrate the SDK:
-> 1. By using `OndatoSDK`, which contains `OndatoAutocapture`;
-> 2. By using `OndatoSDK-Core` and `OndatoAutocapture` modules separately.
->
-> **You do not need to add either `OndatoSDK-Core` or `OndatoAutocapture` packages if `OndatoSDK` package is used.**
->
-> If your flows are not using automatic document capture (`OndatoAutocapture`), you might want to use `OndatoSDK-Core` (beware of missing module errors, if using flows with automatic document capture enabled), which does not have `OndatoAutocapture` included.
+**You do not need to add either `OndatoSDK-Core` or `OndatoAutocapture` if `OndatoSDK` is used.**
 
-`Note`: As off v2.6.0 `OndatoNFC` and `OndatoScreenRecorder` need to be added separately:
+`OndatoNFC` and `OndatoScreenRecorder` need to be added separately:
 * If you use NFC functionality provided by `Ondato` add
 ```
 pod 'OndatoNFC'
@@ -74,7 +107,7 @@ to your podfile
 
 * If you use Screen Recorder functionality provided by `Ondato` add
 ```
-pod `OndatoScreenRecorder`
+pod 'OndatoScreenRecorder'
 ```
 to your podfile
 
@@ -101,7 +134,7 @@ class OndatoServiceConfiguration {
 }
 ```
 
-`mode`  can be set to either test or live
+`mode` can be set to either test or live (default is `test`)
 ```swift
 enum OndatoEnvironment {
     case test
@@ -112,14 +145,21 @@ enum OndatoEnvironment {
 `flowConfiguration` holds several flow configuration options
 ```swift
 class OndatoFlowConfiguration {
-    var skipRegistrationIfDriverLicense: Bool
-    var showTranslationKeys: Bool
-    var showNoInternetConnectionView: Bool
-    var disablePdfFileUpload: Bool
-    var switchPrimaryButtons: Bool
+    var skipRegistrationIfDriverLicense: Bool = false
+    var showTranslationKeys: Bool = false
+    var showNoInternetConnectionView: Bool = true
+    var disablePdfFileUpload: Bool = false
+    var switchPrimaryButtons: Bool = false
     var showComplianceTextDocSelect: Bool = false
+    var enableAgreeButtonAfterScrolling: Bool = true
+    var termsAgreementButtonTimeout: Double = 0
 }
 ```
+
+* `enableAgreeButtonAfterScrolling` - the consent screen's agree button stays disabled until the user has scrolled through the terms. A tooltip explains why the button is disabled.
+* `termsAgreementButtonTimeout` - time in seconds before the consent screen's agree button becomes enabled. `0` means no timeout.
+
+If both are set, the agree button is enabled only after the user has scrolled to the end **and** the timeout has passed.
 
 To provide custom resources configure corresponding property of `OndatoResources`
 ```swift
@@ -272,7 +312,7 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
         "iconColor": "#96A0AE", //Type: String  |  Default: brand.colors.grey500
         "opacity": 1.0 //Type: Float
       }
-    }
+    },
     "iconButton": {  // delete document button
         "base": {
                 "cornerRadius": 10  //Default: brand.baseComponentStyling.cornerRadius
@@ -326,8 +366,7 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
       "padding": { "top": 14, "bottom": 14, "left": 24, "right": 24 },  //Default: brand.baseComponentStyling.buttonPadding
       "fontSize": 16,     //Type: Number  |   Default: typography.body.fontSize
       "fontWeight": 500,  //Type: Number  |   Default: typography.body.fontWeight
-      "lineHeight": 22,   //Type: Number  |   Default: typography.body.lineHeight
-      "placeholderTextColor": "#BEC6D0" //Type: String  |  Default: brand.colors.grey400
+      "lineHeight": 22    //Type: Number  |   Default: typography.body.lineHeight
     },
     "normal": {
       "textColor": "#000000",        //Type: String  |  Default: brand.colors.textColor
@@ -335,7 +374,7 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
       "borderColor": "#96A0AE",      //Type: String  |  Default: brand.colors.grey500
       "borderWidth": 1.0             //Type: Float   |  Default: brand.baseComponentStyling.borderWidth
     },
-    "selected": {
+    "focused": {
       "textColor": "#000000", //Type: String  |  Default: brand.colors.textColor
       "backgroundColor": "#FFFFFF", //Type: String  |   Default: brand.colors.backgroundColor
       "borderColor": "#6D7580", //Type: String  |  Default: brand.colors.grey600
@@ -411,7 +450,7 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
   "documentUploadConfiguration": {
     "borderColor": "#96A0AE", //Type: String  |  Default: brand.colors.grey500
     "borderWidth": 1.0, //Type: Float   |  Default: brand.baseComponentStyling.borderWidth
-    "cornerRadius": 6.0, //Type: Float  |   Default: brand.baseComponentStyling.cornerRadius
+    "borderRadius": 6.0, //Type: Float  |   Default: brand.baseComponentStyling.cornerRadius
     "fileDescriptionTextColor": "#96A0AE", //Type: String  |  Default: brand.colors.grey500
     "fileIconColor": "#6D7580", //Type: String  |  Default: brand.colors.grey600
     "uploadAreaBackgroundOpacity": 0,
@@ -422,16 +461,26 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
     "opacity": 0.5, // Type: Float
     "cornerRadius": 6.0 //Type: Float  |   Default: brand.baseComponentStyling.cornerRadius
   },
+  // Used for all pop-ups, including the document and face capture guideline pop-ups
   "modalConfiguration": {
     "backgroundColor": "#FFFFFF", // Type: String | Default: brand.colors.background
     "textColor": "#000000", // Type: String | Default: brand.colors.text
     "cornerRadius": 6.0, // Type: Float
     "backdropColor": "#282B2F", // Type: String | Default: brand.colors.grey700
     "backdropOpacity": 0.5 // Type: Float
+  },
+  // Used for the consent screen tooltip explaining why the agree button is disabled
+  "tooltip": {
+    "textColor": "#F2F5F8", //Type: String  |  Default: brand.colors.grey200
+    "backgroundColor": "#282B2F", //Type: String  |  Default: brand.colors.grey700
+    "cornerRadius": 6, //Type: Float  |   Default: brand.baseComponentStyling.cornerRadius
+    "fontSize": 16, //Type: Number  |   Default: typography.body.fontSize
+    "fontWeight": 400, //Type: Number  |   Default: typography.body.fontWeight
+    "lineHeight": 18 //Type: Number  |   Default: typography.body.lineHeight
   }
 }
 ```
-Note that all these values are optional - if any of the parameters mentioned in the whitelabel JSON file are not included inside it, then the SDK will use the default values for these UI components.
+Note that all these values are optional - if any of the parameters mentioned in the whitelabel JSON file are not included inside it, then the SDK will use the default values for these UI components. The comments in the example above are for documentation only; JSON passed to `setWhitelabel` must not contain comments.
 
 ## Starting the flow
 
@@ -444,12 +493,26 @@ sdk.modalPresentationStyle = .fullScreen
 present(sdk, animated: true, completion: nil) 
 ```
 
-## OndatoFlowDelegate
+The verification session starts when the SDK view controller is first shown, not when it is instantiated.
 
-To handle result your view controller should implement `OndatoFlowDelegate` methods `onSuccess` and `onFailure` which contains `OndatoServiceError`:
+Only one SDK flow can run at a time. If you present another SDK view controller while a flow is already running, the new one is dismissed immediately and the running flow continues. To start a new flow, wait for the current one to finish (see [OndatoFlowDelegate](#ondatoflowdelegate)) or close it with `closeSDK()`.
+
+## Closing the flow
+
+To close a running flow from your app, call:
 
 ```swift
-Ondato.sdk.delegate = T: OndatoFlowDelegate
+Ondato.sdk.closeSDK()
+```
+
+This dismisses the SDK screens and calls `flowDidFail(identificationId:error:)` with the `aborted` error.
+
+## OndatoFlowDelegate
+
+To handle the result, set `Ondato.sdk.delegate` and implement the required `OndatoFlowDelegate` methods `flowDidSucceed` and `flowDidFail`. The failure method contains an `OndatoServiceError`. Both methods are called on the main thread.
+
+```swift
+Ondato.sdk.delegate = self // an object conforming to OndatoFlowDelegate
 
 func flowDidSucceed(identificationId: String?) { // provided identificationId
     
@@ -458,6 +521,8 @@ func flowDidFail(identificationId: String?, error: OndatoServiceError) { // prov
     
 }
 ```
+
+`delegate` is a `weak` property, so keep a strong reference to your delegate object for the duration of the flow.
 ## Customising SDK
 You might want to replace some default OndatoSDK screens with your custom ViewControllers. To do that implement OndatoFlowDelegate protocol functions that you need. These functions have to return specified types of view controllers. Your custom view controllers should subclass these types [provided below](#provided-classes-for-custom-viewcontrollers)
 
@@ -497,7 +562,7 @@ class OndatoInstructionViewControllerType: UIViewController {
 class OndatoChooseDocumentViewControllerType: UIViewController {
     var closeButtonPressed: (() -> Void)?
     var backButtonPressed: (() -> Void)?
-    var onDocumentSelected: ((OndatoDocumentType) -> Void)?
+    var documentSelected: ((OndatoDocumentType) -> Void)?
 }
 ```
 Depending on your account configuration settings you will use some of document types and parts listed here:
@@ -550,36 +615,65 @@ class CustomInstructionsViewController: OndatoInstructionViewControllerType {
 ```
 ## Localization
 
-Ondato iOS SDK already comes with out-of-the-box translations. Including:
-- Bulgarian (bg) 🇧🇬
-- German (de) 🇩🇪
-- Greek (el) 🇬🇷
-- English (en) 🇬🇧
-- Spanish (es) 🇪🇸
-- Estonian (et) 🇪🇪
-- French (fr) 🇫🇷
-- Italian (it) 🇮🇹
-- Lithuanian (lt) 🇱🇹
-- Latvian (lv) 🇱🇻
-- Dutch (nl) 🇳🇱
-- Romanian (ro)
-- Russian (ru) 🇷🇺
-- Albanian (sq) 🇦🇱
-...
+Ondato iOS SDK comes with out-of-the-box translations for the following languages:
 
-For a full list of supported languages see `OndatoSupportedLanguage`
+| Language | `OndatoSupportedLanguage` | Language code | Example translation file |
+|---|---|---|---|
+| Albanian | `.SQ` | `sq` | `ondato_sq-AL.strings` |
+| Bulgarian | `.BG` | `bg` | `ondato_bg-BG.strings` |
+| Catalan | `.CA` | `ca` | `ondato_ca-ES.strings` |
+| Chinese (Simplified) | `.CN` | `cn` | `ondato_zh-CN.strings` |
+| Czech | `.CS` | `cs` | `ondato_cs-CZ.strings` |
+| Danish | `.DK` | `dk` | `ondato_da-DK.strings` |
+| Dutch | `.NL` | `nl` | `ondato_nl-NL.strings` |
+| English | `.EN` | `en` | `ondato_en-GB.strings` |
+| Estonian | `.ET` | `et` | `ondato_et-EE.strings` |
+| Finnish | `.FI` | `fi` | `ondato_fi-FI.strings` |
+| French | `.FR` | `fr` | `ondato_fr-FR.strings` |
+| German | `.DE` | `de` | `ondato_de-DE.strings` |
+| Greek | `.EL` | `el` | `ondato_el-GR.strings` |
+| Hungarian | `.HU` | `hu` | `ondato_hu-HU.strings` |
+| Italian | `.IT` | `it` | `ondato_it-IT.strings` |
+| Korean | `.KR` | `kr` | `ondato_ko-KR.strings` |
+| Latvian | `.LV` | `lv` | `ondato_lv-LV.strings` |
+| Lithuanian | `.LT` | `lt` | `ondato_lt-LT.strings` |
+| Polish | `.PL` | `pl` | `ondato_pl-PL.strings` |
+| Portuguese (Brazil) | `.PT` | `pt` | `ondato_pt-BR.strings` |
+| Romanian | `.RO` | `ro` | `ondato_ro-RO.strings` |
+| Russian | `.RU` | `ru` | `ondato_ru-RU.strings` |
+| Slovak | `.SK` | `sk` | `ondato_sk-SK.strings` |
+| Spanish | `.ES` | `es` | `ondato_es-ES.strings` |
+| Swedish | `.SV` | `sv` | `ondato_sv-SE.strings` |
+| Thai | `.TH` | `th` | `ondato_th-TH.strings` |
+| Ukrainian | `.UA` | `uk` | `ondato_uk-UA.strings` |
+| Vietnamese | `.VI` | `vi` | `ondato_vi-VN.strings` |
+
+`Note`: the language code is what `setLanguage(code:)`, `setLocalizationBundle(_:languageCode:)` and `setLocalization(table:languageCode:)` expect, and what `OndatoLocalizeHelper.shared.language` returns. For some languages it differs from the ISO code, e.g. Ukrainian is `uk` (`.UA`), Chinese is `cn`, Danish is `dk` and Korean is `kr`.
+
+To set the SDK language, use either the enum or a language code:
 
 ```swift
-OndatoLocalizeHelper.shared.language = OndatoLanguage.EN // .BG, .CA, .CS, .DE, .ES, .ET, .FI, .FR, .HU, .EL, .IT, .LT, .LV, .NL, .PL, .PT, .RO, .RU, .SK, .SQ, .SV, .UA, .VI
+OndatoLocalizeHelper.shared.setLangauge(.EN)
+// or
+OndatoLocalizeHelper.shared.setLanguage(code: "en")
 ```
 
-To override any localization strings, please pass a `Bundle` and a tableName within that bundle for a `.strings` file that contains the necessary translations. A example translation file with all the keys is provided next to the Framework files
+The currently selected language can be read from `OndatoLocalizeHelper.shared.language`.
+
+To override any localization strings, pass a `Bundle` and a table name within that bundle for a `.strings` file that contains the necessary translations. Example translation files with all the keys for every supported language are provided in the [Localizations](Localizations) folder.
 ```swift
 let bundle = Bundle.main
-/// let bundle = Bundle.main.path(forResource: "lt", ofType: "bundle")
-let localizationBundle = OndatoLocalizationBundle(bundle: budle, tableName: "Localizable")
-/// let localizationBundle = OndatoLocalizationBundle.bundle(with: bundle, tableName: "Localizable")
-OndatoLocalizeHelper.setLocalizationBundle(bundle, for: .LT)
+let localizationBundle = OndatoLocalizationBundle(bundle: bundle, tableName: "Localizable")
+OndatoLocalizeHelper.shared.setLocalizationBundle(localizationBundle, for: .LT)
+// or
+OndatoLocalizeHelper.shared.setLocalizationBundle(localizationBundle, languageCode: "lt")
+```
+
+You can also override strings with a dictionary:
+```swift
+OndatoLocalizeHelper.shared.setLocalization(table: ["<key>": "<translation>"], for: .LT)
+// or
+OndatoLocalizeHelper.shared.setLocalization(table: ["<key>": "<translation>"], languageCode: "lt")
 ```
 ## Logs
 There are three levels of logs, which can be set by calling 

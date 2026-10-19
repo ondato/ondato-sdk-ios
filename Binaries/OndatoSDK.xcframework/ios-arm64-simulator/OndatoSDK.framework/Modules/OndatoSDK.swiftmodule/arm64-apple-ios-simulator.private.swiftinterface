@@ -393,6 +393,7 @@ extension Swift::Dictionary where Key == Swift::String, Value == OndatoSDK::AnyV
   }
   @_Concurrency::MainActor @preconcurrency @objc override dynamic public func setViewControllers(_ viewControllers: [UIKit::UIViewController]?, direction: UIKit::UIPageViewController.UIKit::NavigationDirection, animated: Swift::Bool, completion: ((Swift::Bool) -> Swift::Void)? = nil)
   @_Concurrency::MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift::Bool)
   @_Concurrency::MainActor @preconcurrency @objc override dynamic public init(transitionStyle style: UIKit::UIPageViewController.UIKit::TransitionStyle, navigationOrientation: UIKit::UIPageViewController.UIKit::NavigationOrientation, options: [UIKit::UIPageViewController.UIKit::OptionsKey : Any]? = nil)
   @_Concurrency::MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation::NSCoder)
   @objc deinit

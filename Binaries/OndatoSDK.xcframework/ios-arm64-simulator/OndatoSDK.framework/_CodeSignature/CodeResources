@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		T2QGXKGoKiz5OOAjZF+cWyKoR2c=
+		r6d1+zp+JkScdoBJM0PfQEMGJPE=
 		</data>
 		<key>GuidePageItemViewController.nib</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/OndatoSDK-Swift.h</key>
 		<data>
-		Mv0vezBx2MbqijQ4qlYtqj7GukY=
+		90IyaQDB6rrMcU85UFIuihFVXLg=
 		</data>
 		<key>Headers/OndatoSDK.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dXb7lnfqxu2y9DhUBgzFGl4T+oI=
+		o23enwINMfH4oiPks0dNiem4ax0=
 		</data>
 		<key>InterruptedViewController.nib</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		fqabaISfK7TA4TwyujoHuKYV4sM=
+		bf8OgOGLZo52sNpe0aHbmTDmlEY=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kuqLV3dvwbnbQotNv5NOfiCz2w8=
+		+tVJutm7NVGJozaRrfxOejpnMnI=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HvliIFHibZP7bJym8MNYL6TBfvQ=
+		qIX3KCJfAO5YQUCDJKPcD02CyNA=
 		</data>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7NgvI7dz93lhnrtXymwRVX0BLcc=
+		ChnNiiEzd1fRKbbTYCijJJQ0oyw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -323,7 +323,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W8JSB+R25E+8301RM5GLr0Abv07HXmBX0m81Lm8mgdE=
+			yn4Nwop2Fa5fOtgvviSXmAbsw/Pg31RQl6RyhGLPyqk=
 			</data>
 		</dict>
 		<key>GuidePageItemViewController.nib</key>
@@ -344,7 +344,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d2HIr+rxhPUDpNRhwnEuHYNB5XXOMGVn06T21aFoicE=
+			ofW2xy7/yD+7z8PViLEeC3V9462L0GG73moEkuRN6CI=
 			</data>
 		</dict>
 		<key>Headers/OndatoSDK.h</key>
@@ -379,14 +379,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BDE1a8RPAVgE4aSJ7wpGhIGr6OiuduWE4r4UjeU0M4M=
+			bKHrBPviT41+wuSS9Tl8wK+v0+Kz8bQsbOfx+uin16U=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gRjX2toLhVqFrLwQ+p+L3qi4HCb/zULAH6l1wFAfJWE=
+			NwML10xm2LiXW2sBN5SEh+Xoz+3B3PQYAR1YGFljTOo=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -400,14 +400,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4WD/DH5bsyfpzhmQOEROOkpqskkYx4qFT+zJ2Be3vwo=
+			RULpi9O2Pea9OXjmAsdetB3vtk9/jeq/dWS4rfzwXSQ=
 			</data>
 		</dict>
 		<key>Modules/OndatoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KBGir+re9iajgMxJBanJyrmZ3jgVAH/ene6IaaPH7EU=
+			s5+S7RBfIR6g/FBLHWjjZLftgWZ3fCYd4pQDTvenmEE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
