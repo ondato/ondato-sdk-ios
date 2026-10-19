@@ -13471,6 +13471,39 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OndatoSDK@objc(cs)OndatoViewController(im)viewDidAppear:",
+            "mangledName": "$s9OndatoSDK0A14ViewControllerC13viewDidAppearyySbF",
+            "moduleName": "OndatoSDK",
+            "overriding": true,
+            "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(transitionStyle:navigationOrientation:options:)",
@@ -26030,6 +26063,20 @@
       "offset": 215,
       "length": 10,
       "value": "\"Optional\""
+    },
+    {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Coordinators\/OndatoFlow\/DefaultOndatoFlowCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 715,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Coordinators\/OndatoFlow\/DefaultOndatoFlowCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 751,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Models\/Configuration\/OndatoServiceConfiguration.swift",
