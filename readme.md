@@ -31,6 +31,7 @@ This SDK provides a drop-in set of screens and tools for iOS applications to all
 - We recommend you to lock your app to a portrait orientation.
 - **All SDK APIs must be called on the main thread.** This includes configuring the SDK (`setIdentityVerificationId`, `configuration`, `setWhitelabel`, localization and log settings), instantiating and presenting the SDK view controller, and calling `closeSDK()`. `OndatoFlowDelegate` methods are also called on the main thread.
 - Only one SDK flow can run at a time. See [Starting the flow](#starting-the-flow).
+- **Since 3.6.0, the bundled FaceTec SDK terminates the app when the Xcode debugger is attached.** This is a FaceTec security feature. See [Debugging your app](#debugging-your-app).
 
 ## Getting started
 
@@ -110,6 +111,50 @@ to your podfile
 pod 'OndatoScreenRecorder'
 ```
 to your podfile
+
+### Debugging your app
+
+Starting with **3.6.0**, the SDK bundles FaceTec SDK 9.7.137. The production FaceTec framework terminates the app when a debugger (e.g. Xcode) is attached. Release builds, TestFlight and launching the app without Xcode are not affected.
+
+To debug the face capture step, replace the FaceTec framework with FaceTec's development framework in **Debug** builds:
+
+1. Download [`FaceTecSDKForDevelopment-9.7.137.zip`](https://github.com/ondato/ondato-sdk-ios/releases/download/3.6.2/FaceTecSDKForDevelopment-9.7.137.zip) (works with SDK 3.6.0, 3.6.1 and 3.6.2), unzip it and place `FaceTecSDKForDevelopment.xcframework` in the same folder as your `.xcodeproj`.
+   * Do **not** add it to your target or link it — the script below handles it.
+2. In your app target, go to **Build Phases**, add **New Run Script Phase** and move it to the **very end** (after `Embed Frameworks` / `[CP] Embed Pods Frameworks`). Untick **Based on dependency analysis** and paste:
+```sh
+# Ondato SDK: use the FaceTec development framework for Debug device builds,
+# so the app can be debugged. Release builds and archives keep the production framework.
+set -euo pipefail
+
+FACETEC_DEV_XCFRAMEWORK="${PROJECT_DIR}/FaceTecSDKForDevelopment.xcframework"
+
+if [ "${CONFIGURATION}" != "Debug" ] || [ "${PLATFORM_NAME}" != "iphoneos" ] || [ "${ACTION}" = "install" ]; then
+    echo "FaceTecSDK: skipping development framework swap"
+    exit 0
+fi
+
+SLICE="${FACETEC_DEV_XCFRAMEWORK}/ios-arm64/FaceTecSDK.framework"
+EMBEDDED_FRAMEWORK="${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FaceTecSDK.framework"
+
+[ -d "${SLICE}" ] || { echo "error: ${SLICE} not found"; exit 1; }
+[ -d "${EMBEDDED_FRAMEWORK}" ] || { echo "error: FaceTecSDK.framework is not embedded yet - move this phase to the end"; exit 1; }
+
+rsync -a --delete "${SLICE}/" "${EMBEDDED_FRAMEWORK}/"
+codesign --force --sign "${EXPANDED_CODE_SIGN_IDENTITY:-${CODE_SIGN_IDENTITY:--}}" \
+    --preserve-metadata=identifier,entitlements,flags "${EMBEDDED_FRAMEWORK}"
+
+echo "FaceTecSDK: framework replaced with FaceTecSDKForDevelopment"
+```
+3. In your app target's **Build Settings**, set **User Script Sandboxing** (`ENABLE_USER_SCRIPT_SANDBOXING`) to **No**.
+4. Clean and build for a device. The build log should contain `FaceTecSDK: framework replaced with FaceTecSDKForDevelopment`.
+
+> [!NOTE]
+> If you use CocoaPods, check the phase is still the last one after `pod install`.
+
+> [!WARNING]
+> Never ship the development framework. The script only runs for the `Debug` configuration on devices and is skipped when archiving.
+
+If you don't need to debug the face capture step, you can instead disable **Debug executable** in your scheme (**Edit Scheme → Run → Info**), or launch the app from the device home screen.
 
 ### 3. Initializing and configuring the SDK 
 
