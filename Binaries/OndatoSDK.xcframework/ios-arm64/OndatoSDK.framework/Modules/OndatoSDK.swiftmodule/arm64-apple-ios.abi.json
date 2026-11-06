@@ -9086,6 +9086,129 @@
           },
           {
             "kind": "Var",
+            "name": "HR",
+            "printedName": "HR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OndatoSDK.OndatoSupportedLanguage.Type) -> OndatoSDK.OndatoSupportedLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OndatoSupportedLanguage",
+                    "printedName": "OndatoSDK.OndatoSupportedLanguage",
+                    "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OndatoSDK.OndatoSupportedLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoSupportedLanguage",
+                        "printedName": "OndatoSDK.OndatoSupportedLanguage",
+                        "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage@OndatoSupportedLanguageHR",
+            "mangledName": "$s9OndatoSDK0A17SupportedLanguageO2HRyA2CmF",
+            "moduleName": "OndatoSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 28
+          },
+          {
+            "kind": "Var",
+            "name": "SL",
+            "printedName": "SL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OndatoSDK.OndatoSupportedLanguage.Type) -> OndatoSDK.OndatoSupportedLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OndatoSupportedLanguage",
+                    "printedName": "OndatoSDK.OndatoSupportedLanguage",
+                    "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OndatoSDK.OndatoSupportedLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoSupportedLanguage",
+                        "printedName": "OndatoSDK.OndatoSupportedLanguage",
+                        "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage@OndatoSupportedLanguageSL",
+            "mangledName": "$s9OndatoSDK0A17SupportedLanguageO2SLyA2CmF",
+            "moduleName": "OndatoSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 29
+          },
+          {
+            "kind": "Var",
+            "name": "PT_PT",
+            "printedName": "PT_PT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OndatoSDK.OndatoSupportedLanguage.Type) -> OndatoSDK.OndatoSupportedLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OndatoSupportedLanguage",
+                    "printedName": "OndatoSDK.OndatoSupportedLanguage",
+                    "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OndatoSDK.OndatoSupportedLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OndatoSupportedLanguage",
+                        "printedName": "OndatoSDK.OndatoSupportedLanguage",
+                        "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@OndatoSDK@E@OndatoSupportedLanguage@OndatoSupportedLanguagePT_PT",
+            "mangledName": "$s9OndatoSDK0A17SupportedLanguageO03PT_E0yA2CmF",
+            "moduleName": "OndatoSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 30
+          },
+          {
+            "kind": "Var",
             "name": "identifier",
             "printedName": "identifier",
             "children": [
@@ -18635,6 +18758,106 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "simulateBackCameraUnavailable",
+            "printedName": "simulateBackCameraUnavailable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9OndatoSDK0A17FlowConfigurationC29simulateBackCameraUnavailableSbvp",
+            "mangledName": "$s9OndatoSDK0A17FlowConfigurationC29simulateBackCameraUnavailableSbvp",
+            "moduleName": "OndatoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "SDKInternalTesting"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationC29simulateBackCameraUnavailableSbvg",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC29simulateBackCameraUnavailableSbvg",
+                "moduleName": "OndatoSDK",
+                "implicit": true,
+                "spi_group_names": [
+                  "SDKInternalTesting"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationC29simulateBackCameraUnavailableSbvs",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC29simulateBackCameraUnavailableSbvs",
+                "moduleName": "OndatoSDK",
+                "implicit": true,
+                "spi_group_names": [
+                  "SDKInternalTesting"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9OndatoSDK0A17FlowConfigurationC29simulateBackCameraUnavailableSbvM",
+                "mangledName": "$s9OndatoSDK0A17FlowConfigurationC29simulateBackCameraUnavailableSbvM",
+                "moduleName": "OndatoSDK",
+                "implicit": true,
+                "spi_group_names": [
+                  "SDKInternalTesting"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -24161,6 +24384,27 @@
       "value": "27"
     },
     {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Public\/OndatoSupportedLanguage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 438,
+      "length": 2,
+      "value": "28"
+    },
+    {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Public\/OndatoSupportedLanguage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 450,
+      "length": 2,
+      "value": "29"
+    },
+    {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Public\/OndatoSupportedLanguage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 462,
+      "length": 5,
+      "value": "30"
+    },
+    {
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/PresentationLayer\/UI\/Views\/FeedbackBarView.swift",
       "kind": "BooleanLiteral",
       "offset": 1296,
@@ -26159,6 +26403,13 @@
       "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Models\/Configuration\/OndatoServiceConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 1178,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vilmantas.basinovas\/Documents\/dev\/idv-sdk-ios\/SDK\/Sources\/DomainLayer\/Models\/Configuration\/OndatoServiceConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1381,
       "length": 5,
       "value": "false"
     },
