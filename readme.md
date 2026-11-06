@@ -114,11 +114,18 @@ to your podfile
 
 ### Debugging your app
 
-Starting with **3.6.0**, the SDK bundles FaceTec SDK 9.7.137. The production FaceTec framework terminates the app when a debugger (e.g. Xcode) is attached. Release builds, TestFlight and launching the app without Xcode are not affected.
+Starting with **3.6.0**, the SDK bundles a FaceTec SDK whose production framework terminates the app when a debugger (e.g. Xcode) is attached. Release builds, TestFlight and launching the app without Xcode are not affected.
 
 To debug the face capture step, replace the FaceTec framework with FaceTec's development framework in **Debug** builds:
 
-1. Download [`FaceTecSDKForDevelopment-9.7.137.zip`](https://github.com/ondato/ondato-sdk-ios/releases/download/3.6.2/FaceTecSDKForDevelopment-9.7.137.zip) (works with SDK 3.6.0, 3.6.1 and 3.6.2), unzip it and place `FaceTecSDKForDevelopment.xcframework` in the same folder as your `.xcodeproj`.
+1. Download the development framework that matches your SDK version, unzip it and place `FaceTecSDKForDevelopment.xcframework` in the same folder as your `.xcodeproj`.
+
+   | SDK version | FaceTec SDK | Development framework |
+   |---|---|---|
+   | 3.6.3 | 9.7.147 | [`FaceTecSDKForDevelopment-9.7.147.zip`](https://github.com/ondato/ondato-sdk-ios/releases/download/3.6.3/FaceTecSDKForDevelopment-9.7.147.zip) |
+   | 3.6.0 – 3.6.2 | 9.7.137 | [`FaceTecSDKForDevelopment-9.7.137.zip`](https://github.com/ondato/ondato-sdk-ios/releases/download/3.6.2/FaceTecSDKForDevelopment-9.7.137.zip) |
+
+   The development framework must be the same FaceTec version as the one bundled with the SDK.
    * Do **not** add it to your target or link it — the script below handles it.
 2. In your app target, go to **Build Phases**, add **New Run Script Phase** and move it to the **very end** (after `Embed Frameworks` / `[CP] Embed Pods Frameworks`). Untick **Based on dependency analysis** and paste:
 ```sh
@@ -668,6 +675,7 @@ Ondato iOS SDK comes with out-of-the-box translations for the following language
 | Bulgarian | `.BG` | `bg` | `ondato_bg-BG.strings` |
 | Catalan | `.CA` | `ca` | `ondato_ca-ES.strings` |
 | Chinese (Simplified) | `.CN` | `cn` | `ondato_zh-CN.strings` |
+| Croatian | `.HR` | `hr` | `ondato_hr-HR.strings` |
 | Czech | `.CS` | `cs` | `ondato_cs-CZ.strings` |
 | Danish | `.DK` | `dk` | `ondato_da-DK.strings` |
 | Dutch | `.NL` | `nl` | `ondato_nl-NL.strings` |
@@ -684,16 +692,18 @@ Ondato iOS SDK comes with out-of-the-box translations for the following language
 | Lithuanian | `.LT` | `lt` | `ondato_lt-LT.strings` |
 | Polish | `.PL` | `pl` | `ondato_pl-PL.strings` |
 | Portuguese (Brazil) | `.PT` | `pt` | `ondato_pt-BR.strings` |
+| Portuguese (Portugal) | `.PT_PT` | `pt-PT` | `ondato_pt-PT.strings` |
 | Romanian | `.RO` | `ro` | `ondato_ro-RO.strings` |
 | Russian | `.RU` | `ru` | `ondato_ru-RU.strings` |
 | Slovak | `.SK` | `sk` | `ondato_sk-SK.strings` |
+| Slovenian | `.SL` | `sl` | `ondato_sl-SI.strings` |
 | Spanish | `.ES` | `es` | `ondato_es-ES.strings` |
 | Swedish | `.SV` | `sv` | `ondato_sv-SE.strings` |
 | Thai | `.TH` | `th` | `ondato_th-TH.strings` |
 | Ukrainian | `.UA` | `uk` | `ondato_uk-UA.strings` |
 | Vietnamese | `.VI` | `vi` | `ondato_vi-VN.strings` |
 
-`Note`: the language code is what `setLanguage(code:)`, `setLocalizationBundle(_:languageCode:)` and `setLocalization(table:languageCode:)` expect, and what `OndatoLocalizeHelper.shared.language` returns. For some languages it differs from the ISO code, e.g. Ukrainian is `uk` (`.UA`), Chinese is `cn`, Danish is `dk` and Korean is `kr`.
+`Note`: the language code is what `setLanguage(code:)`, `setLocalizationBundle(_:languageCode:)` and `setLocalization(table:languageCode:)` expect, and what `OndatoLocalizeHelper.shared.language` returns. For some languages it differs from the ISO code, e.g. Ukrainian is `uk` (`.UA`), Chinese is `cn`, Danish is `dk` and Korean is `kr`. Portuguese (Portugal) uses the full tag `pt-PT` (case-sensitive), because `pt` is Portuguese (Brazil).
 
 To set the SDK language, use either the enum or a language code:
 
