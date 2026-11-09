@@ -495,7 +495,7 @@ To configure UI provide a JSON object via public `setWhitelabel(_ data: Data) th
   "documentUploadConfiguration": {
     "borderColor": "#96A0AE", //Type: String  |  Default: brand.colors.grey500
     "borderWidth": 1.0, //Type: Float   |  Default: brand.baseComponentStyling.borderWidth
-    "borderRadius": 6.0, //Type: Float  |   Default: brand.baseComponentStyling.cornerRadius
+    "cornerRadius": 6.0, //Type: Float  |   Default: brand.baseComponentStyling.cornerRadius
     "fileDescriptionTextColor": "#96A0AE", //Type: String  |  Default: brand.colors.grey500
     "fileIconColor": "#6D7580", //Type: String  |  Default: brand.colors.grey600
     "uploadAreaBackgroundOpacity": 0,
