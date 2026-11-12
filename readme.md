@@ -122,7 +122,7 @@ To debug the face capture step, replace the FaceTec framework with FaceTec's dev
 
    | SDK version | FaceTec SDK | Development framework |
    |---|---|---|
-   | 3.6.3 | 9.7.147 | [`FaceTecSDKForDevelopment-9.7.147.zip`](https://github.com/ondato/ondato-sdk-ios/releases/download/3.6.3/FaceTecSDKForDevelopment-9.7.147.zip) |
+   | 3.6.3 | 9.7.147 | [`FaceTecSDKForDevelopment.xcframework.zip`](https://github.com/ondato/ondato-sdk-ios/releases/download/3.6.3/FaceTecSDKForDevelopment.xcframework.zip) |
    | 3.6.0 – 3.6.2 | 9.7.137 | [`FaceTecSDKForDevelopment-9.7.137.zip`](https://github.com/ondato/ondato-sdk-ios/releases/download/3.6.2/FaceTecSDKForDevelopment-9.7.137.zip) |
 
    The development framework must be the same FaceTec version as the one bundled with the SDK.
